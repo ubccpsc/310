@@ -1,10 +1,10 @@
-### UBC CPSC 310 ###
+# UBC CPSC 310 #
 
-# Current Term #
+### Current Term ###
 
 * [2016 September](https://github.com/ubccpsc/310/tree/2017t1)
 
-# Past Terms #
+### Past Terms ###
 
 * [2016 January](https://sites.google.com/site/cpsc3102015w1/)
 * [2015 May](https://sites.google.com/site/ubccs3102015s1/)
