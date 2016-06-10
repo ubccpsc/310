@@ -6,7 +6,7 @@ CPSC 310 is not being offered in the current term.
 
 ### Upcoming Term ###
 
-* [2016 September](https://github.com/ubccpsc/310/tree/2017t1)
+* [2016 September](https://github.com/ubccpsc/310/tree/2016sept)
 
 ### Past Terms ###
 
