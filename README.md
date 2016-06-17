@@ -5,9 +5,9 @@
 
 ## Overview
 
-The world runs on software and CPSC 310 is all about taking the skills and knowledge you learned in CPSC 210 (Software Construction) and extending your skills to enable you to design and build non-trivial software systems. The course will involve a signficant challenging project that we will start working on in the first lecture and will continue to evolve until the last week of class; do not underestimate the engineering effort this project will require.
+The world runs on software and CPSC 310 is all about taking the skills and knowledge you learned in CPSC 210 (Software Construction) and extending your abilities to design and build non-trivial software systems. The course will involve a signficant challenging project that we will start working on in the first lecture and will continue to evolve until the last week of class; do not underestimate the engineering effort this project will require.
 
-Classes will be highly interactive and will involve working with your project partner (and soemetimes teaming up with other groups as well). While some reading materials will be posted online, most of the in-class material will not be available outside of class.
+Classes will be highly interactive and will involve working with your project partner (and soemetimes teaming up with other groups as well). Each module will have reading materials posted online (rather than slides); most of the in-class material will not be available electronically. The readings should be done *before* class or the in-class discussion and activities may not make sense.
 
 Some of the topics we will cover in 310 this term include:
 
@@ -44,8 +44,8 @@ Thursday 1700-2000, [PHARM 1101](https://www.google.ca/maps/place/UBC+Faculty+of
 
 | Date        | Topic                         | Reading |
 | :--         |:--                            | :-- |
-| Sept 8      | Course & Project Intro        | TBD   |
-| Sept 15     | Rest & Testability            | TBD   |
+| Sept 8      | Course & Project Intro        | [Course Syllabus](README.md), [Project Description](project/README.md) |
+| Sept 15     | Rest & Testability            | REST, Testability, [AutoTest](project/AutoTest.md) |
 | Sept 22     | Asyc & More                   | TBD   |
 | Sept 29     | Agile & User Stories          | TBD   |
 | Oct 6       | Specifications                | TBD   |
