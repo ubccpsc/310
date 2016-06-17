@@ -41,8 +41,8 @@ Some of the topics we will cover in 310 this term include:
 
 Thursday 1700-2000, [PHARM 1101](https://www.google.ca/maps/place/UBC+Faculty+of+Pharmaceutical+Sciences/@49.2615914,-123.2486782,17z/data=!4m21!1m15!4m14!1m6!1m2!1s0x548672cbc595e6a1:0xab34e40e58012409!2sICICS+Computer+Science,+2366+Main+Mall,+Vancouver,+BC+V6T+1Z4!2m2!1d-123.2488201!2d49.2611817!1m6!1m2!1s0x548672c8e6d17b6b:0x2f4024c0ac3282d9!2sUBC+Faculty+of+Pharmaceutical+Sciences,+Pharmaceutical+Sciences+Building,+Wesbrook+Mall,+Vancouver,+BC+V6T+1Z3!2m2!1d-123.243277!2d49.262386!3m4!1s0x0000000000000000:0x2f4024c0ac3282d9!8m2!3d49.2623861!4d-123.2432771)
 
-| Date        | Topic      | Reading |
-| :---------  |:---------- | :-----|
+| Date        | Topic                         | Reading |
+| :--         |:--                            | :-- |
 | Sept 8      | Course & Project Intro        | TBD   |
 | Sept 15     | Rest & Testability            | TBD   |
 | Sept 22     | Asyc & More                   | TBD   |
@@ -62,14 +62,6 @@ Thursday 1700-2000, [PHARM 1101](https://www.google.ca/maps/place/UBC+Faculty+of
 The project is an integral part of this course. The projet will be difficult and time consuming. Projects will be completed in pairs (everyone **must** have a partner). You should expect the project to take ~6 hours / week / person (13 weeks * 2 people * 6 hours = 156 hours). It is extremely important you not leave project deliverables until the last moment.
 
 The project will represent a 'full stack' web development project developed using Node. You are free to use Javascript, Typescript, or Coffeescript for your assignments, but the packages you use will be strictly limited. Each project deliverable will be marked using an automated private test suite; you will have access to a public automated test suite as well. While the public test suite will enable you to test that your project conforms to the interface of the private suite it will be insufficient to gague how complete your solution is. You are encouraged to create a private fork of the public test suite and extend it yourself to further validate each deliverable. Additional details will be given on the [AutoTest](project/AutoTest.md) page.
-
-
-#### Allowable pacakges
-
-The packages you can use are limited. The packages below, and the packages they require, are all you are permitted to use. It is notable that a database is **NOT** permitted to be used; the data in this course is sufficiently simple for in-memory manipulation using the features built into the programming language.
-
-* [restify](https://www.npmjs.com/package/restify)
-* [jszip](https://www.npmjs.com/package/jszip)
 
 #### Project Deliverables
 
