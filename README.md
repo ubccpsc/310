@@ -5,7 +5,7 @@
 
 ## Overview
 
-The world runs on software and CPSC 310 is all about taking the skills and knowledge you learned in CPSC 210 (Software Construction) and extending your skills to enable you to design and build non-trivial software systems. The course will involve a signficant challenging project that we will start working on in the first lecture and will continue to evolve until the last week of class.
+The world runs on software and CPSC 310 is all about taking the skills and knowledge you learned in CPSC 210 (Software Construction) and extending your skills to enable you to design and build non-trivial software systems. The course will involve a signficant challenging project that we will start working on in the first lecture and will continue to evolve until the last week of class; do not underestimate the engineering effort this project will require.
 
 Classes will be highly interactive and will involve working with your project partner (and soemetimes teaming up with other groups as well). While some reading materials will be posted online, most of the in-class material will not be available outside of class.
 
@@ -14,7 +14,7 @@ Some of the topics we will cover in 310 this term include:
 * REST & Async Programming
 * Software Specifications
 * Agile Development
-* Design (lots here!)
+* Design (this is the primary course focus)
 * Refactoring
 * Information Security
 
@@ -28,14 +28,15 @@ Some of the topics we will cover in 310 this term include:
 
 #### Labs:
 
-| Lab Section | Time       | Room  | TAs        |
-| :---------  |:---------- | :-----|:-----------|
-| TBD         | TBD        | TBD   |TBD         |
-| TBD         | TBD        | TBD   |TBD         |
-| TBD         | TBD        | TBD   |TBD         |
-| TBD         | TBD        | TBD   |TBD         |
-| TBD         | TBD        | TBD   |TBD         |
-| TBD         | TBD        | TBD   |TBD         |
+| Lab Section | Time           | Room        | TAs        |
+| :--         |:--             | :--         |:--         |
+| L1A         | Fri; 1400-1600 | ICICS 008   |TBD         |
+| L1B         | Wed; 1100-1300 | ICICS 008   |TBD         |
+| L1C         | Wed; 1500-1700 | ICICS 008   |TBD         |
+| L1D         | Wed; 1300-1500 | ICICS 008   |TBD         |
+| L1E         | Tue; 1700-1900 | ICICS 008   |TBD         |
+| L1F         | Th; 1400-1600  | ICICS X350  |TBD         |
+| L1G         | Th; 1030-1230  | ICICS 008   |TBD         |
 
 #### Lecture: 
 
@@ -61,25 +62,26 @@ Thursday 1700-2000, [PHARM 1101](https://www.google.ca/maps/place/UBC+Faculty+of
 
 The project is an integral part of this course. The projet will be difficult and time consuming. Projects will be completed in pairs (everyone **must** have a partner). You should expect the project to take ~6 hours / week / person (13 weeks * 2 people * 6 hours = 156 hours). It is extremely important you not leave project deliverables until the last moment.
 
-The project will represent a 'full stack' web development project developed using Node. You are free to use Javascript, Typescript, or Coffeescript for your assignments, but the packages you use will be strictly limited. Each project deliverable will be marked using an automated private test suite; you will have access to a public automated test suite as well. While the public test suite will enable you to test that your project conforms to the interface of the private suite it will be insufficient to gague how complete your solution is. You are encouraged to create a private fork of the public test suite and extend it yourself to further validate each deliverable. Additional details will be given on the [AutoTest](project/AutoTest.md) page.
+See the [full project description](project/README.md) for complete details.
 
-#### Project Deliverables
-
-The project will proceed in a series of four sprints. Each deliverable builds on the prior submission evolving your project from a small seed into a fully-fledged system.
-
-1. [Deliverable 1](project/Deliverable1.md) (Due September 26 @ 0800)
-
-1. [Deliverable 2](project/Deliverable2.md) (Due October 17 @ 0800)
-
-1. [Deliverable 3](project/Deliverable3.md) (Due November 7 @ 0800)
-
-1. [Deliverable 4](project/Deliverable4.md) (Due November 28 @ 0800)
-
-#### Assessment
+#### Project Assessment
 
 Engineers use automated test suites to validate that their software is working as expected. We will evaluate your project deliverables similarly using [AutoTest](project/AutoTest.md).
 
 In addition to AutoTest, each team member will be independently asked a small number of questions in the lab to assess their understanding of the solution. While it is reasonable for team members to be more knowledgable about different parts of the system, it is expected that you will understand your entire solution at a high level and be able to provide spcific in-depth insight to some meaningful components of your solution.
+
+## Course Schedule
+
+
+* September 26: Project [Deliverable 1](project/Deliverable1.md)
+
+* October 17: Project [Deliverable 2](project/Deliverable2.md)
+
+* October 20: Midterm (sample midterms are not available)
+
+* November 7: Project [Deliverable 3](project/Deliverable3.md)
+
+* November 28: Project [Deliverable 4](project/Deliverable4.md)
 
 ## Grading
 
