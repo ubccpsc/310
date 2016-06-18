@@ -1,6 +1,10 @@
-# Project: TBD
+# Project: insightUBC
 
-The project will represent a 'full stack' web development project developed using Node. You are free to use Javascript, Typescript, or Coffeescript for your assignments, but the packages you use will be strictly limited. Each project deliverable will be marked using an automated private test suite; you will have access to a public automated test suite as well. While the public test suite will enable you to test that your project conforms to the interface of the private suite it will be insufficient to gague how complete your solution is. You are encouraged to create a private fork of the public test suite and extend it yourself to further validate each deliverable. Additional details will be given on the [AutoTest](project/AutoTest.md) page.
+UBC is a big place, and involves a large number of people doing a variety of tasks. The goal of this project is to provide a way to perform some of the tasks required to run the university and to enable effective querying of the metadata from around campus. This will involve working with courses, prerequisites, past course averages, room scheduling, and timetable creation.
+
+To enable you to focus on the key subsystems, data models, and algorithms, this project will abstract away most UI concerns; we will provide a reference interface that will connect to your system using network requests. The project will represent a 'full stack' web development project developed using Node. You are free to use Javascript, Typescript, or CoffeeScript for your assignments, but the packages and libraries you use will be strictly limited.
+
+Each project deliverable will be marked using an automated private test suite; you will have access to a public automated test suite as well. While the public test suite will enable you to test that your project conforms to the interface of the private suite, it will be insufficient to gage how complete your solution is. You are encouraged to create a private fork of the public test suite and extend it yourself to further validate each deliverable. Additional details are available on the [AutoTest](project/AutoTest.md) page.
 
 ## Teams
 
@@ -22,7 +26,7 @@ Your project will have to be JavaScript ES5 compatible; you can write it in eith
 
 ## Allowable packages
 
-The packages you can use are limited. The packages below, and the packages they require, are all you are permitted to use. It is notable that a database is **NOT** permitted to be used; the data in this course is sufficiently simple for in-memory manipulation using the features built into the programming language. 
+The packages and external libraries (aka all of the code you did not write yourself) you can use are limited. The packages below, and the packages they require, are all you are permitted to use. It is notable that a database is **NOT** permitted to be used; the data in this course is sufficiently simple for in-memory manipulation using the features built into the programming language. 
 
 * [typescript](https://www.npmjs.com/package/typescript)
 * [coffeescript](https://www.npmjs.com/package/coffee-script)
@@ -33,19 +37,19 @@ The packages you can use are limited. The packages below, and the packages they 
 
 Each deliverable will evaluated in two ways:
 
-* [AutoTest](AutoTest.md) compliance.
-* Oral questions (in lab).
+* [AutoTest](AutoTest.md) validation (functional completeness).
+* Oral questions in lab (design validation).
 
-The weighting of these criteria will vary from deliverable to deliverable. The best way to succeed with the AutoTest aspect of the grade is to:
+The weighting of these criteria will vary from deliverable to deliverable. The best way to maximize your AutoTest grade is to:
 
 1. Create a private fork of the public AutoTest suite to run locally on your machine (as you can run this as often as you wish). 
 
 1. Do a test submit with AutoTest to make sure you at least pass the public tests when we run it on our infrastructure.
 
-1. Extend your fork of the public suite with additional tests that more comprehenisively test your code against the project requirements.
+1. Extend your fork of the public suite with additional tests that more comprehensively test your code against the project requirements.
 
 1. When you believe your suite to be effective, submit it to be run against the private suite. Remember: you can only submit to the private suite once every 12 hours!
 
-For the oral questions, make sure both teammates have a clear understanding of how the system works at a high level (the major components, data structures, design decisions, and algorithms). Each team member should also be able to clearly describe their individual techincal contributions to the deliverable.
+For the oral questions, make sure both teammates have a clear understanding of how the system works at a high level (the major components, data structures, design decisions, and algorithms). Each team member should also be able to clearly describe their individual technical contributions to the deliverable.
 
 

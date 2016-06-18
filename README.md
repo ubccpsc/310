@@ -5,9 +5,9 @@
 
 ## Overview
 
-The world runs on software and CPSC 310 is all about taking the skills and knowledge you learned in CPSC 210 (Software Construction) and extending your abilities to design and build non-trivial software systems. The course will involve a signficant challenging project that we will start working on in the first lecture and will continue to evolve until the last week of class; do not underestimate the engineering effort this project will require.
+The world runs on software and CPSC 310 is all about taking the skills and knowledge you learned in CPSC 210 (Software Construction) and extending your abilities to design and build non-trivial software systems. The course will involve a significant challenging project that we will start working on in the first lecture and will continue to evolve until the last week of class; do not underestimate the engineering effort this project will require.
 
-Classes will be highly interactive and will involve working with your project partner (and soemetimes teaming up with other groups as well). Each module will have reading materials posted online (rather than slides); most of the in-class material will not be available electronically. The readings should be done *before* class or the in-class discussion and activities may not make sense.
+Classes will be highly interactive and will involve working with your project partner (and sometimes teaming up with other groups as well). Each module will have reading materials posted online (rather than slides); most of the in-class material will not be available electronically. The readings should be done *before* class or the in-class discussion and activities may not make sense.
 
 Some of the topics we will cover in 310 this term include:
 
@@ -60,7 +60,7 @@ Thursday 1700-2000, [PHARM 1101](https://www.google.ca/maps/place/UBC+Faculty+of
 
 ## Project
 
-The project is an integral part of this course. The projet will be difficult and time consuming. Projects will be completed in pairs (everyone **must** have a partner). You should expect the project to take ~6 hours / week / person (13 weeks * 2 people * 6 hours = 156 hours). It is extremely important you not leave project deliverables until the last moment.
+The project is an integral part of this course. The project will be difficult and time consuming. Projects will be completed in pairs (everyone **must** have a partner). You should expect the project to take ~6 hours / week / person (13 weeks * 2 people * 6 hours = 156 hours). It is extremely important you not leave project deliverables until the last moment.
 
 See the [full project description](project/README.md) for complete details.
 
@@ -68,7 +68,7 @@ See the [full project description](project/README.md) for complete details.
 
 Engineers use automated test suites to validate that their software is working as expected. We will evaluate your project deliverables similarly using [AutoTest](project/AutoTest.md).
 
-In addition to AutoTest, each team member will be independently asked a small number of questions in the lab to assess their understanding of the solution. While it is reasonable for team members to be more knowledgable about different parts of the system, it is expected that you will understand your entire solution at a high level and be able to provide spcific in-depth insight to some meaningful components of your solution.
+In addition to AutoTest, each team member will be independently asked a small number of questions in the lab to assess their understanding of the solution. While it is reasonable for team members to be more knowledgable about different parts of the system, it is expected that you will understand your entire solution at a high level and be able to provide specific in-depth insight to some meaningful components of your solution.
 
 ## Course Schedule
 
@@ -96,13 +96,13 @@ To pass the course and receive credit you must achieve a passing grade on **both
 <a name="waitlist"></a>
 ### Waitlist
 
-There is extremely high demand for this course this term. If you are on the waitlist and wish to join the class, please come to the front after **EVERY** class to sign in. Those students who have signed into every class by September 16 will be forwarded to the advisors who will insert students into available spots by the add/drop deadline. This does not guarantee you will be admitted, but without signing in every class you will not be elligible. Students on the waitlist should not form groups with students who are already enrolled in case your whole group does not make it into the course this term.
+There is extremely high demand for this course this term. If you are on the waitlist and wish to join the class, please come to the front after **EVERY** class to sign in. Those students who have signed into every class by September 16 will be forwarded to the advisors who will insert students into available spots by the add/drop deadline. This does not guarantee you will be admitted, but without signing in every class you will not be eligible. Students on the waitlist should not form groups with students who are already enrolled in case your whole group does not make it into the course this term.
 
 ### Accommodation
 
 Lab attendance is mandatory. If you must miss a lab, please notify your TA directly; your overall project mark will reflect your participation.
-If you are sick and unable to write the midterm, please contact Reidas soon as possible -- provide medical documentation.
-Students who miss the final exam due to illness should consult the Faculty of Science Policy on missed exams. Note that students who do  not have suffiicient standing during the term may not qualify for academic concession if they miss the final.
+If you are sick and unable to write the midterm, please contact Reid as soon as possible -- provide medical documentation.
+Students who miss the final exam due to illness should consult the Faculty of Science Policy on missed exams. Note that students who do  not have sufficient standing during the term may not qualify for academic concession if they miss the final.
 Students who require dispensation based on their unique circumstances should refer to the UBC policy on Academic Concessions.
 Cell phones, calculators, translators, and all other electronic devices are prohibited on desks during exams. They must be turned off and placed in your bag or on the ground. Students who need exam accommodation must make an official request to the Access and Diversity Office.
 
