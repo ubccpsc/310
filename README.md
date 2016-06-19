@@ -1,7 +1,15 @@
 # UBC CPSC 310 - Software Engineering
-## September - December 2016
+September -> December 2016 (2016T1)
 
-## Waitlist: [See Here](#waitlist)
+## Important Notes:
+
+* Waitlist: [See Here](#waitlist)
+
+Before the first class (whether you are on the waitlist or are registered):
+
+* Make sure you have a Github account
+* Please go over the Sept 8 readings
+* Bring your laptop to class (it will not always be needed, but will be helpful the first day)
 
 ## Overview
 
@@ -62,7 +70,7 @@ Thursday 1700-2000, [PHARM 1101](https://www.google.ca/maps/place/UBC+Faculty+of
 
 The project is an integral part of this course. The project will be difficult and time consuming. Projects will be completed in pairs (everyone **must** have a partner). You should expect the project to take ~6 hours / week / person (13 weeks * 2 people * 6 hours = 156 hours). It is extremely important you not leave project deliverables until the last moment.
 
-See the [full project description](project/README.md) for complete details.
+See the [full project description](project/README.md) for complete details. 
 
 #### Project Assessment
 

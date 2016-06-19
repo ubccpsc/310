@@ -24,6 +24,8 @@ The vast majority of software is written by development teams. Even within large
 
 Your project will have to be JavaScript ES5 compatible; you can write it in either pure JS, CoffeeScript, or TypeScript (we will use TypeScript in lecture). The language you choose as a team is up to you so choose wisely. The course staff may not have experience with your language choice so it will be up to you to problem solve language-specific issues.
 
+All development will take place on Github. You will need a Github account; we will create the repository for your group after the course add/drop date.
+
 ## Allowable packages
 
 The packages and external libraries (aka all of the code you did not write yourself) you can use are limited. The packages below, and the packages they require, are all you are permitted to use. It is notable that a database is **NOT** permitted to be used; the data in this course is sufficiently simple for in-memory manipulation using the features built into the programming language. 
