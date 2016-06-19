@@ -85,8 +85,8 @@ In addition to AutoTest, each team member will be independently asked a small nu
 
 ## Grading
 
-* Midterm 20%
-* Project 40% 
+* Midterm 10%
+* Project 50% 
 * Final 40%
 
 To pass the course and receive credit you must achieve a passing grade on **both** the project and the final exam.

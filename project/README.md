@@ -54,5 +54,5 @@ For the oral questions, make sure both teammates have a clear understanding of h
 
 ## Bootstrap Implementation
 
-We have created a bootstrap project for you. It is recommended you install and run this project before the first class (we will build on it in that lecture). This project will make sure you have your tools and environment correctly configured for our reference UI and for AutoTest. Full details will be posted in early September.
+We have created a bootstrap project for you. It is recommended you install and run this project before the first class (we will build on it in that lecture). This project will make sure you have your tools and environment correctly configured for our reference UI and for AutoTest. ***Full details will be posted in early September.***
 
