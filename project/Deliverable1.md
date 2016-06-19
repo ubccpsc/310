@@ -1,3 +1,4 @@
 # Deliverable 1
 
-### Details to follow.
+Deliverable description will be posted before the first lecture.
+

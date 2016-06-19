@@ -2,7 +2,7 @@
 
 UBC is a big place, and involves a large number of people doing a variety of tasks. The goal of this project is to provide a way to perform some of the tasks required to run the university and to enable effective querying of the metadata from around campus. This will involve working with courses, prerequisites, past course averages, room scheduling, and timetable creation.
 
-To enable you to focus on the key subsystems, data models, and algorithms, this project will abstract away most UI concerns; we will provide a reference interface that will connect to your system using network requests. The project will represent a 'full stack' web development project developed using Node. You are free to use Javascript, Typescript, or CoffeeScript for your assignments, but the packages and libraries you use will be strictly limited.
+To enable you to focus on the key abstractions, data models, and algorithms, this project will remove most UI concerns; we will provide a reference interface that will connect to your system using network requests. The project will represent a 'full stack' web development project using [Node](https://nodejs.org). You are free to use Javascript, Typescript, or CoffeeScript for your project, but the packages and libraries you use will be strictly limited.
 
 Each project deliverable will be marked using an automated private test suite; you will have access to a public automated test suite as well. While the public test suite will enable you to test that your project conforms to the interface of the private suite, it will be insufficient to gage how complete your solution is. You are encouraged to create a private fork of the public test suite and extend it yourself to further validate each deliverable. Additional details are available on the [AutoTest](project/AutoTest.md) page.
 
@@ -52,4 +52,7 @@ The weighting of these criteria will vary from deliverable to deliverable. The b
 
 For the oral questions, make sure both teammates have a clear understanding of how the system works at a high level (the major components, data structures, design decisions, and algorithms). Each team member should also be able to clearly describe their individual technical contributions to the deliverable.
 
+## Bootstrap Implementation
+
+We have created a bootstrap project for you. It is recommended you install and run this project before the first class (we will build on it in that lecture). This project will make sure you have your tools and environment correctly configured for our reference UI and for AutoTest. Full details will be posted in early September.
 

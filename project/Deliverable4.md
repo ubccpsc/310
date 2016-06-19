@@ -1,3 +1,3 @@
 # Deliverable 4
 
-### Details to follow.
+Deliverable description will be posted *after* Delierable 3 has been submitted.
