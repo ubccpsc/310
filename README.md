@@ -106,6 +106,10 @@ To pass the course and receive credit you must achieve a passing grade on **both
 
 There is extremely high demand for this course this term. If you are on the waitlist and wish to join the class, please come to the front after **EVERY** class to sign in. Those students who have signed into every class by September 16 will be forwarded to the advisors who will insert students into available spots by the add/drop deadline. This does not guarantee you will be admitted, but without signing in every class you will not be eligible. Students on the waitlist should not form groups with students who are already enrolled in case your whole group does not make it into the course this term.
 
+### Late Submissions
+
+All project deliverables must be submitted on time. Late submissions cannot be accepted.
+
 ### Accommodation
 
 Lab attendance is mandatory. If you must miss a lab, please notify your TA directly; your overall project mark will reflect your participation.
