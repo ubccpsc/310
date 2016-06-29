@@ -28,7 +28,7 @@ Some of the topics we will cover in 310 this term include:
 
 ## Contact
 
-#### Instructor: TBD
+#### Instructor: [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
 
 #### TAs: TBD
 
