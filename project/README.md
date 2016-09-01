@@ -52,9 +52,9 @@ The weighting of these criteria will vary from deliverable to deliverable. The b
 
 1. When you believe your suite to be effective, submit it to be run against the private suite. Remember: you can only submit to the private suite once every 12 hours!
 
-For the oral questions, make sure both teammates have a clear understanding of how the system works at a high level (the major components, data structures, design decisions, and algorithms). Each team member should also be able to clearly describe their individual technical contributions to the deliverable.
+For the oral questions, make sure both teammates have a clear understanding of how the system works at a high level (the major components, data structures, design decisions, and algorithms). Each team member should also be able to clearly describe their individual technical contributions to the deliverable. The answers to the oral questions may be used as traditional marks, or as a scaling factor on your AutoTest score (e.g., if you get 80% from AutoTest and 50% from the oral questions because it was clear you did not contribute effectively to the deliverable, your deliverable grade would be 40%).
 
 ## Bootstrap Implementation
 
-We have created a bootstrap project for you. It is recommended you install and run this project before the first class (we will build on it in that lecture). This project will make sure you have your tools and environment correctly configured for our reference UI and for AutoTest. ***Full details will be posted in early September.***
+We have created a bootstrap project for you. It is recommended you install and run this project before the first class (we will build on it in that lecture). This project will make sure you have your tools and environment correctly configured for our reference UI and for AutoTest. **Full details will be posted in early September.**
 
