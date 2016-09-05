@@ -121,7 +121,7 @@ To pass the course and receive credit you must achieve a passing grade on *both*
 
 ## Course Goals
 
-This is the first offering of a new version of CPSC 310 and will likely differ from past instances of the course. Our primary goal with this course is to help you learn how to create non-trivial software systems from an abstract set of requirements. This requires intentional practice and experience. Being able to effectively build real systems depends upon flexibility in domain, abstraction, tools, languages, frameworks, and environments. 
+This is the first offering of a new version of CPSC 310 and will likely differ from past instances of the course. Our primary goal with this course is to help you learn how to create non-trivial software systems from an abstract set of requirements. This requires intentional practice and experience. Being able to effectively build real systems depends upon flexibility in domain, abstraction, tools, languages, frameworks, and environments. To this end, the project has been tightly integrated with the course materials and will involve a significant development effort.
 
 The course project embodies an experiential learning environment: we have constrained several aspects to mimic the kinds of reasonable constraints you would likely encounter on a real team. As with real systems, requirements will seem clear at a high level, but will probably lack some important details. Your choices of languages and frameworks have also been fixed. It is expected you will _not_ be familiar with these; being able to quickly learn and adapt to different toolsets is a fundamental skill in modern development. Finally, our use of AutoTest can be considered a form of acceptance testing, which is an industry norm used to validate that software performs as expected.
 
@@ -134,6 +134,8 @@ While CPSC 310 will be a challenging course, we hope it will integrate many of t
 ### Waitlist
 
 There is extremely high demand for this course this term. If you are on the waitlist and wish to join the class, please come to the front after **EVERY** class to sign in. Those students who have signed into every class by September 16 will be forwarded to the advisors who will insert students into available spots by the add/drop deadline. This does not guarantee you will be admitted, but without signing in every class you will not be eligible. Students on the waitlist should not form groups with students who are already enrolled in case your whole group does not make it into the course this term. Unfortunately, the instructor is not able to override class seat assignments or the waitlist itself.
+
+If you are on the waitlist you should still attend and sign into a lab section so you understand what is happening in the course, and so you do not miss out on the lab attendance marks.
 
 ### Late Submissions
 

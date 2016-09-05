@@ -39,6 +39,12 @@ The packages and external libraries (aka all of the code you did not write yours
 * [restify](https://www.npmjs.com/package/restify)
 * [jszip](https://www.npmjs.com/package/jszip)
 
+## Repositories
+
+All development will take place in Github repositories that we will create for you in a private organization for the course. You will be automatically added to your repo after you have specified your groups in your lab section in the first week. Repositories will only be created for teams where both students are registered in the course; this list will finalize on Sept 20, so if you are on a waitlist you might need to wait until then to specify your team and have a repository created.
+
+That said, instructions will be given in your labs during the first week so you can start working effectively on the first deliverable before the repositories are ready.
+
 ## Assessment
 
 Each deliverable will evaluated in two ways:
@@ -56,7 +62,9 @@ The weighting of these criteria will vary from deliverable to deliverable. The b
 
 1. When you believe your suite to be effective, submit it to be run against the private suite. Remember: you can only submit to the private suite once every 12 hours!
 
-For the oral questions, make sure both teammates have a clear understanding of how the system works at a high level (the major components, data structures, design decisions, and algorithms). Each team member should also be able to clearly describe their individual technical contributions to the deliverable. The answers to the oral questions may be used as traditional marks, or as a scaling factor on your AutoTest score (e.g., if you get 80% from AutoTest and 50% from the oral questions because it was clear you did not contribute effectively to the deliverable, your deliverable grade would be 40%). Attendance will be tracked in each lab (from the add-drop deadline until the end of the term) and will be worth up to 10% of your final grade.
+For the oral questions, make sure both teammates have a clear understanding of how the system works at a high level (the major components, data structures, design decisions, and algorithms). Each team member should also be able to clearly describe their individual technical contributions to the deliverable. The answers to the oral questions may be used as traditional marks, or as a scaling factor on your AutoTest score (e.g., if you get 80% from AutoTest and 50% from the oral questions because it was clear you did not contribute effectively to the deliverable, your deliverable grade would be 40%). 
+
+Each deliverable will be worth 10% of your final grade. Attendance will be tracked in each lab and will be worth up to 10% of your final grade. Finally, your final project will be executed against the private test suite from all four deliverables; this will be worth 10% of your final grade.
 
 ## Labs
 
