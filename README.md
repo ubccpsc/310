@@ -82,7 +82,7 @@ Note: there will not be any labs during the first week of class.
 | L1F         | Th; 1400-1600  | ICICS X350  |TBD                    |
 | L1G         | Th; 1030-1230  | ICICS 008   |TBD                    |
 
-Both team members will be required to attend each lab. More details to follow by the second week of class.
+Both team members will be required to attend each lab. 
 
 ## Project
 
@@ -90,7 +90,7 @@ The project is an integral part of this course. **The project will be difficult 
 
 The intent of this project is to give you the opportunity to concretely apply the course concepts on a real system, but with fewer constraints than were possible in CPSC 210. At the same time, the system does have _some_ constraints to simulate a real system specified by real clients. A strong test emphasis reenforces the importance (and difficulty) of building high-quality software in practice.
 
-See the [full project description](project/README.md) for complete details. 
+See the [full project description](project/README.md) for complete details about the project, the lab, and finding partners.
 
 #### Project Assessment
 
@@ -101,11 +101,11 @@ In addition to AutoTest, each team member will be independently asked a small nu
 ## Deliverable Schedule
 
 
-* September 26: Project [Deliverable 1](project/Deliverable1.md)
-
-* October 17: Project [Deliverable 2](project/Deliverable2.md)
+* October 3: Project [Deliverable 1](project/Deliverable1.md)
 
 * October 20: Midterm (sample midterms are not available)
+
+* October 24: Project [Deliverable 2](project/Deliverable2.md)
 
 * November 7: Project [Deliverable 3](project/Deliverable3.md)
 

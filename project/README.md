@@ -8,13 +8,17 @@ Each project deliverable will be marked using an automated private test suite; y
 
 ## Teams
 
-The vast majority of software is written by development teams. Even within large organizations, 'feature teams' usually comprise of a small set of developers within a larger team context. We will be working in pairs this term. If you cannot find a partner, we will pair you with someone in the class once the class list has been finalized (although if you should *really* try hard to find a partner you would work well with on your own). You must use the same partner for the duration of the project. It is important that you choose your partner carefully as you will heavily rely on them throughout the term. 
+The vast majority of software is written by development teams. Even within large organizations, 'feature teams' usually comprise of a small set of developers within a larger team context. We will be working in pairs this term. Your partner must be in the same lab section as you; if you want to work with someone who is in another section, one of you will have to transfer lab sections.
+
+Your partner selection is ***extremely*** important; be sure to carefully make this choice as you will be responsible for working as a team for the remainder of the term. You must use the same partner for the duration of the project. If do not have a team organized after the first lecture, please go to your lab and find a partner there. Everyone should have partners by Sept 16 (the end of the first week of labs). 
+
+If you are registered in the class, please do not form a team with students on the waitlist as if they may not make it into the class by the add/drop date. Also: the first deliverable is due very early, so the sooner you finalize your team, the sooner you can get started.
 
 ## Deliverables
 
-1. [Deliverable 1](Deliverable1.md) (Due September 26 @ noon)
+1. [Deliverable 1](Deliverable1.md) (Due October 3 @ noon)
 
-1. [Deliverable 2](Deliverable2.md) (Due October 17 @ noon)
+1. [Deliverable 2](Deliverable2.md) (Due October 24 @ noon)
 
 1. [Deliverable 3](Deliverable3.md) (Due November 7 @ noon)
 
@@ -54,6 +58,11 @@ The weighting of these criteria will vary from deliverable to deliverable. The b
 
 For the oral questions, make sure both teammates have a clear understanding of how the system works at a high level (the major components, data structures, design decisions, and algorithms). Each team member should also be able to clearly describe their individual technical contributions to the deliverable. The answers to the oral questions may be used as traditional marks, or as a scaling factor on your AutoTest score (e.g., if you get 80% from AutoTest and 50% from the oral questions because it was clear you did not contribute effectively to the deliverable, your deliverable grade would be 40%). Attendance will be tracked in each lab (from the add-drop deadline until the end of the term) and will be worth up to 10% of your final grade.
 
+## Labs
+
+Lab attendance is mandatory for both team members each week as you will be meeting with the TAs to have a scrum meeting and to discuss your progress.
+
+One a deliverable description has been released, each team will create a milestone schedule, called ```MilestoneX.md``` in the root of their project directory. This file will detail your milestones, one for each week, for the deliverable. Each milestone should clearly state what you plan to accomplish that week. The TAs will review your progress with you with respect to your milestone description each week.
 
 ## Bootstrap Implementation
 
