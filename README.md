@@ -48,6 +48,8 @@ Some of the topics we will cover in 310 this term include:
 
 #### Labs:
 
+Note: there will not be any labs during the first week of class.
+
 | Lab Section | Time           | Room        | TAs                   |
 | :--         |:--             | :--         |:--                    |
 | L1A         | Fri; 1400-1600 | ICICS 008   |TBD                    |
