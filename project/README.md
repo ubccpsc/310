@@ -12,13 +12,13 @@ The vast majority of software is written by development teams. Even within large
 
 ## Deliverables
 
-1. [Deliverable 1](Deliverable1.md) (Due September 26 @ 1800)
+1. [Deliverable 1](Deliverable1.md) (Due September 26 @ noon)
 
-1. [Deliverable 2](Deliverable2.md) (Due October 17 @ 1800)
+1. [Deliverable 2](Deliverable2.md) (Due October 17 @ noon)
 
-1. [Deliverable 3](Deliverable3.md) (Due November 7 @ 1800)
+1. [Deliverable 3](Deliverable3.md) (Due November 7 @ noon)
 
-1. [Deliverable 4](Deliverable4.md) (Due November 28 @ 1800)
+1. [Deliverable 4](Deliverable4.md) (Due November 28 @ noon)
 
 ## Language and Environment
 
@@ -28,7 +28,7 @@ All development will take place on Github. You will need a Github account; we wi
 
 ## Allowable packages
 
-The packages and external libraries (aka all of the code you did not write yourself) you can use are limited. The packages below, and the packages they require, are all you are permitted to use. It is notable that a database is **NOT** permitted to be used; the data in this course is sufficiently simple for in-memory manipulation using the features built into the programming language. 
+The packages and external libraries (aka all of the code you did not write yourself) you can use are limited. The packages below, and the packages they require, are all you are permitted to use. It is notable that a database is **NOT** permitted to be used; the data in this course is sufficiently simple for in-memory manipulation using the features built into the programming language. Essentially if you are typing ```npm install``` it is probably not permitted.
 
 * [typescript](https://www.npmjs.com/package/typescript)
 * [coffeescript](https://www.npmjs.com/package/coffee-script)
@@ -52,9 +52,11 @@ The weighting of these criteria will vary from deliverable to deliverable. The b
 
 1. When you believe your suite to be effective, submit it to be run against the private suite. Remember: you can only submit to the private suite once every 12 hours!
 
-For the oral questions, make sure both teammates have a clear understanding of how the system works at a high level (the major components, data structures, design decisions, and algorithms). Each team member should also be able to clearly describe their individual technical contributions to the deliverable. The answers to the oral questions may be used as traditional marks, or as a scaling factor on your AutoTest score (e.g., if you get 80% from AutoTest and 50% from the oral questions because it was clear you did not contribute effectively to the deliverable, your deliverable grade would be 40%).
+For the oral questions, make sure both teammates have a clear understanding of how the system works at a high level (the major components, data structures, design decisions, and algorithms). Each team member should also be able to clearly describe their individual technical contributions to the deliverable. The answers to the oral questions may be used as traditional marks, or as a scaling factor on your AutoTest score (e.g., if you get 80% from AutoTest and 50% from the oral questions because it was clear you did not contribute effectively to the deliverable, your deliverable grade would be 40%). Attendance will be tracked in each lab (from the add-drop deadline until the end of the term) and will be worth up to 10% of your final grade.
+
 
 ## Bootstrap Implementation
 
-We have created a bootstrap project for you. It is recommended you install and run this project before the first class (we will build on it in that lecture). This project will make sure you have your tools and environment correctly configured for our reference UI and for AutoTest. **Full details will be posted in early September.**
+We have created a bootstrap project for you but you will not be able to access it until during the first week of labs. The project will make sure you have your tools and environment correctly configured for our reference UI and for AutoTest.
+
 

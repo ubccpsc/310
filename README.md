@@ -46,23 +46,9 @@ Some of the topics we will cover in 310 this term include:
 
 ## Schedule
 
-#### Labs:
-
-Note: there will not be any labs during the first week of class.
-
-| Lab Section | Time           | Room        | TAs                   |
-| :--         |:--             | :--         |:--                    |
-| L1A         | Fri; 1400-1600 | ICICS 008   |TBD                    |
-| L1B         | Wed; 1100-1300 | ICICS 008   |TBD                    |
-| L1C         | Wed; 1500-1700 | ICICS 008   |NOTE: Likely Cancelled |
-| L1D         | Wed; 1300-1500 | ICICS 008   |TBD                    |
-| L1E         | Tue; 1700-1900 | ICICS 008   |TBD                    |
-| L1F         | Th; 1400-1600  | ICICS X350  |TBD                    |
-| L1G         | Th; 1030-1230  | ICICS 008   |TBD                    |
-
 #### Lecture: 
 
-Thursday 1700-2000, [PHARM 1101](https://www.google.ca/maps/place/UBC+Faculty+of+Pharmaceutical+Sciences/@49.2615914,-123.2486782,17z/data=!4m21!1m15!4m14!1m6!1m2!1s0x548672cbc595e6a1:0xab34e40e58012409!2sICICS+Computer+Science,+2366+Main+Mall,+Vancouver,+BC+V6T+1Z4!2m2!1d-123.2488201!2d49.2611817!1m6!1m2!1s0x548672c8e6d17b6b:0x2f4024c0ac3282d9!2sUBC+Faculty+of+Pharmaceutical+Sciences,+Pharmaceutical+Sciences+Building,+Wesbrook+Mall,+Vancouver,+BC+V6T+1Z3!2m2!1d-123.243277!2d49.262386!3m4!1s0x0000000000000000:0x2f4024c0ac3282d9!8m2!3d49.2623861!4d-123.2432771)
+Thursdays 1700-2000, [PHARM 1101](https://www.google.ca/maps/place/UBC+Faculty+of+Pharmaceutical+Sciences/@49.2615914,-123.2486782,17z/data=!4m21!1m15!4m14!1m6!1m2!1s0x548672cbc595e6a1:0xab34e40e58012409!2sICICS+Computer+Science,+2366+Main+Mall,+Vancouver,+BC+V6T+1Z4!2m2!1d-123.2488201!2d49.2611817!1m6!1m2!1s0x548672c8e6d17b6b:0x2f4024c0ac3282d9!2sUBC+Faculty+of+Pharmaceutical+Sciences,+Pharmaceutical+Sciences+Building,+Wesbrook+Mall,+Vancouver,+BC+V6T+1Z3!2m2!1d-123.243277!2d49.262386!3m4!1s0x0000000000000000:0x2f4024c0ac3282d9!8m2!3d49.2623861!4d-123.2432771)
 
 This list is a rough guide only. It will be accurate for the current week 48h before each lecture (e.g., by 5pm on Tuesday).
 
@@ -82,6 +68,22 @@ This list is a rough guide only. It will be accurate for the current week 48h be
 | Nov 24      | Information Security          | TBD   |
 | Dec 1       | Wrap-up                       | TBD   |
 
+#### Labs:
+
+Note: there will not be any labs during the first week of class.
+
+| Lab Section | Time           | Room        | TAs                   |
+| :--         |:--             | :--         |:--                    |
+| L1A         | Fri; 1400-1600 | ICICS 008   |TBD                    |
+| L1B         | Wed; 1100-1300 | ICICS 008   |TBD                    |
+| L1C         | Wed; 1500-1700 | ICICS 008   |NOTE: Likely Cancelled |
+| L1D         | Wed; 1300-1500 | ICICS 008   |TBD                    |
+| L1E         | Tue; 1700-1900 | ICICS 008   |TBD                    |
+| L1F         | Th; 1400-1600  | ICICS X350  |TBD                    |
+| L1G         | Th; 1030-1230  | ICICS 008   |TBD                    |
+
+Both team members will be required to attend each lab. More details to follow by the second week of class.
+
 ## Project
 
 The project is an integral part of this course. **The project will be difficult and time consuming**. Projects will be completed in pairs (everyone *must* have a partner). Your partner must be in the same lab section as you. You should expect the project to take ~6 hours / week / person (13 weeks * 2 people * 6 hours = 156 hours). It is extremely important you not leave project deliverables until the last moment.
@@ -96,7 +98,7 @@ Engineers use automated test suites to validate that their software is working a
 
 In addition to AutoTest, each team member will be independently asked a small number of questions in the lab to assess their understanding of the solution. While it is reasonable for team members to be more knowledgable about different parts of the system, it is expected that you will understand your entire solution at a high level and be able to provide specific in-depth insight to some meaningful components of your solution.
 
-## Course Schedule
+## Deliverable Schedule
 
 
 * September 26: Project [Deliverable 1](project/Deliverable1.md)
@@ -116,6 +118,15 @@ In addition to AutoTest, each team member will be independently asked a small nu
 * Final 30%
 
 To pass the course and receive credit you must achieve a passing grade on *both* the project and the final exam. Sample midterm and final exams will not be available.
+
+## Course Goals
+
+This is the first offering of a new version of CPSC 310 and will likely differ from past instances of the course. Our primary goal with this course is to help you learn how to create non-trivial software systems from an abstract set of requirements. This requires intentional practice and experience. Being able to effectively build real systems depends upon flexibility in domain, abstraction, tools, languages, frameworks, and environments. 
+
+The course project embodies an experiential learning environment: we have constrained several aspects to mimic the kinds of reasonable constraints you would likely encounter on a real team. As with real systems, requirements will seem clear at a high level, but will probably lack some important details. Your choices of languages and frameworks have also been fixed. It is expected you will _not_ be familiar with these; being able to quickly learn and adapt to different toolsets is a fundamental skill in modern development. Finally, our use of AutoTest can be considered a form of acceptance testing, which is an industry norm used to validate that software performs as expected.
+
+While CPSC 310 will be a challenging course, we hope it will integrate many of the ideas and concepts from your prior courses and help you to learn how to apply them in modern software systems.
+
 
 ## Policies
 
