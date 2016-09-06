@@ -44,6 +44,10 @@ Some of the topics we will cover in 310 this term include:
 * Nam Giang
 * Prithu Banerjee
 
+### Piazza
+
+[Piazza](piazza.com/ubc.ca/winterterm12016/cpsc310) has been configured for this term. Please be mindful of the UBC Academic Misconduct Policy with respect to posting project solutions on Piazza.
+
 ## Schedule
 
 #### Lecture: 
