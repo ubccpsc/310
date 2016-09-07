@@ -76,15 +76,15 @@ This list is a rough guide only. It will be accurate for the current week 48h be
 
 Note: there will not be any labs during the first week of class.
 
-| Lab Section | Time           | Room        | TAs                   |
-| :--         |:--             | :--         |:--                    |
-| L1A         | Fri; 1400-1600 | ICICS 008   |TBD                    |
-| L1B         | Wed; 1100-1300 | ICICS 008   |TBD                    |
-| L1C         | Wed; 1500-1700 | ICICS 008   |NOTE: Likely Cancelled |
-| L1D         | Wed; 1300-1500 | ICICS 008   |TBD                    |
-| L1E         | Tue; 1700-1900 | ICICS 008   |TBD                    |
-| L1F         | Th; 1400-1600  | ICICS X350  |TBD                    |
-| L1G         | Th; 1030-1230  | ICICS 008   |TBD                    |
+| Lab Section | Time           | Room        | TAs                    |
+| :--         |:--             | :--         | :--                    |
+| L1A         | Fri; 1400-1600 | ICICS 008   | Prithu, Stewart        |
+| L1B         | Wed; 1100-1300 | ICICS 008   | Nam, Nick              |
+| L1C         | Wed; 1500-1700 | ICICS 008   | NOTE: Likely Cancelled |
+| L1D         | Wed; 1300-1500 | ICICS 008   | Arthur, Prithu         |
+| L1E         | Tue; 1700-1900 | ICICS 008   | Rodrigo, Nick          |
+| L1F         | Th; 1400-1600  | ICICS X350  | Rodrigo, Stewart       |
+| L1G         | Th; 1030-1230  | ICICS 008   | Nam, Arthur            |
 
 Both team members will be required to attend each lab. 
 
