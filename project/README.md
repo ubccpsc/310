@@ -28,7 +28,7 @@ If you are registered in the class, please do not form a team with students on t
 
 Your project will have to be JavaScript ES5 compatible; you can write it in either pure JS, CoffeeScript, or TypeScript (we will use TypeScript in lecture). The language you choose as a team is up to you so choose wisely. The course staff may not have experience with your language choice so it will be up to you to problem solve language-specific issues.
 
-All development will take place on Github. You will need a Github account; we will create the repository for your group after the course add/drop date.
+All development will take place on Github. You will need a Github account; we will create the repository for your group after the course add/drop date. Being familiar with git is essential; please take a look at the 'getting started' part of the [Atlassian Git Introduction](https://www.atlassian.com/git/tutorials/what-is-version-control) before the first lab.
 
 ## Allowable packages
 
