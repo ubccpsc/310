@@ -3,6 +3,11 @@
 # UBC CPSC 310 - Software Engineering
 September 8, 2016 -> December 1, 2016 (```2016T1```)
 
+## First Lecture Links
+
+* [Sample Repository](https://goo.gl/forms/0G3o369xPqRSmThI3) for in class use.
+* [Entrance Survey](https://goo.gl/forms/0G3o369xPqRSmThI3) Please let us know what you want out of CPSC 310!
+
 ## Waitlist: [See Here](#waitlist)
 
 ### Course details still in flux; expect to encounter inconsistencies in these materials.
