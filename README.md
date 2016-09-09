@@ -51,7 +51,7 @@ Some of the topics we will cover in 310 this term include:
 
 ### Piazza
 
-[Piazza](piazza.com/ubc.ca/winterterm12016/cpsc310) has been configured for this term. Please be mindful of the UBC Academic Misconduct Policy with respect to posting project solutions on Piazza.
+[Piazza](https://piazza.com/ubc.ca/winterterm12016/cpsc310) has been configured for this term. Please be mindful of the UBC Academic Misconduct Policy with respect to posting project solutions on Piazza.
 
 ## Schedule
 
