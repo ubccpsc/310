@@ -5,7 +5,7 @@ September 8, 2016 -> December 1, 2016 (```2016T1```)
 
 ## First Lecture Links
 
-* [Sample Repository](https://goo.gl/forms/0G3o369xPqRSmThI3) for in class use.
+* [Sample Repository](https://github.com/rtholmes/cpsc310starter) for in class use. LINK FIXED!
 * [Entrance Survey](https://goo.gl/forms/0G3o369xPqRSmThI3) Please let us know what you want out of CPSC 310!
 
 ## Waitlist: [See Here](#waitlist)
