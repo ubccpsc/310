@@ -64,8 +64,8 @@ This list is a rough guide only. It will be accurate for the current week 48h be
 | Date        | Topic                         | Reading |
 | :--         |:--                            | :-- |
 | Sept 8      | Course & Project Intro        | [Syllabus](README.md), [Introduction](readings/Introduction.md), [Project Description](project/README.md) |
-| Sept 15     | Rest & Testability            | REST, Testability, [AutoTest](project/AutoTest.md) |
-| Sept 22     | Asyc & More                   | TBD   |
+| Sept 15     | Languages & Testing           | Programming Languages, Testing/Testability, [AutoTest](project/AutoTest.md) |
+| Sept 22     | APIs, REST, & Asyc            | TBD   |
 | Sept 29     | Agile & User Stories          | TBD   |
 | Oct 6       | Specifications                | TBD   |
 | Oct 13      | Technical Communication       | TBD   |
