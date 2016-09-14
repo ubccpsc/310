@@ -98,7 +98,7 @@ The project is an integral part of this course. **The project will be difficult 
 
 The intent of this project is to give you the opportunity to concretely apply the course concepts on a real system, but with fewer constraints than were possible in CPSC 210. At the same time, the system does have _some_ constraints to simulate a real system specified by real clients. A strong test emphasis reenforces the importance (and difficulty) of building high-quality software in practice.
 
-See the [full project description](project/README.md) for complete details about the project, the lab, and finding partners.
+See the [full project description](project/README.md) for complete details about the project, the lab, project grading, and finding partners.
 
 #### Project Assessment
 
