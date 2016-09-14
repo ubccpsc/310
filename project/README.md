@@ -64,7 +64,7 @@ The weighting of these criteria will vary from deliverable to deliverable. The b
 
 1. When you believe your suite to be effective, submit it to be run against the private suite. Remember: you can only submit to the private suite once every 12 hours!
 
-For the oral questions, make sure both teammates have a clear understanding of how the system works at a high level (the major components, data structures, design decisions, and algorithms). Each team member should also be able to clearly describe their individual technical contributions to the deliverable. The answers to the oral questions may be used as traditional marks, or as a scaling factor on your AutoTest score (e.g., if you get 80% from AutoTest and 50% from the oral questions because it was clear you did not contribute effectively to the deliverable, your deliverable grade would be 40%). 
+For the oral questions, make sure both teammates have a clear understanding of how the system works at a high level (the major components, data structures, design decisions, and algorithms). Each team member should also be able to clearly describe their individual technical contributions to the deliverable. The answers to the oral questions may be used as traditional marks, or as a scaling factor on your AutoTest score (e.g., if you get 80% from AutoTest and 50% from the oral questions because it was clear you did not contribute effectively to the deliverable, your deliverable grade would be 40%). These oral questions will take place in labs the week the deliverable was due; if you do not attend this lab, you could receive 0% for the deliverable.
 
 Each deliverable will be worth 10% of your final grade. Attendance will be tracked in each lab and will be worth up to 10% of your final grade. Finally, your final project will be executed against the private test suite from all four deliverables; this will be worth 10% of your final grade.
 
@@ -73,7 +73,7 @@ We will be running [Measure of software similarity (MOSS)](https://theory.stanfo
 
 ## Labs
 
-Lab attendance is mandatory for both team members each week as you will be meeting with the TAs to have a scrum meeting and to discuss your progress.
+Lab attendance is mandatory for both team members each week as you will be meeting with the TAs to have a scrum meeting and to discuss your progress (10% / 12 labs === ~0.8% / lab).
 
 One a deliverable description has been released, each team will create a milestone schedule, called ```MilestoneX.md``` in the root of their project directory. This file will detail your milestones, one for each week, for the deliverable. Each milestone should clearly state what you plan to accomplish that week. The TAs will review your progress with you with respect to your milestone description each week.
 
