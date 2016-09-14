@@ -75,6 +75,14 @@ We will be running [Measure of software similarity (MOSS)](https://theory.stanfo
 
 Lab attendance is mandatory for both team members each week as you will be meeting with the TAs to have a scrum meeting and to discuss your progress (10% / 12 labs === ~0.8% / lab).
 
+### First Lab
+
+Since we won't have projects fully configured yet, the first lab will be more directed than the others this term. Full details can be found in [Lab1.md](Lab1.md).
+
+### Subsequent Labs
+
+More Details TBD.
+
 One a deliverable description has been released, each team will create a milestone schedule, called ```MilestoneX.md``` in the root of their project directory. This file will detail your milestones, one for each week, for the deliverable. Each milestone should clearly state what you plan to accomplish that week. The TAs will review your progress with you with respect to your milestone description each week.
 
 ## Bootstrap Implementation
