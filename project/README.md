@@ -24,7 +24,7 @@ If you are registered in the class, please do not form a team with students on t
 
 1. [Deliverable 4](Deliverable4.md) (Due November 28 @ noon)
 
-## Language and Environment
+## Language and environment
 
 Your project will have to be JavaScript ES5 compatible; you can write it in either pure JS, CoffeeScript, or TypeScript (we will use TypeScript in lecture). The language you choose as a team is up to you so choose wisely. The course staff may not have experience with your language choice so it will be up to you to problem solve language-specific issues.
 
@@ -75,18 +75,18 @@ We will be running [Measure of software similarity (MOSS)](https://theory.stanfo
 
 Lab attendance is mandatory for both team members each week as you will be meeting with the TAs to have a scrum meeting and to discuss your progress (10% / 12 labs === ~0.8% / lab).
 
-### First Lab
+### First lab
 
 Since we won't have projects fully configured yet, the first lab will be more directed than the others this term. Full details can be found in [Lab1.md](Lab1.md).
 
-### Subsequent Labs
+### Subsequent labs
 
-More Details TBD.
+You must specify your project group by the end of the second lab. Both team members must sign into [ClassPortal](http://skaha.cs.ubc.ca:8020) to register their Github users. IMPORTANT: both team mates must be registered in the course and registered in the same lab section.
 
-One a deliverable description has been released, each team will create a milestone schedule, called ```MilestoneX.md``` in the root of their project directory. This file will detail your milestones, one for each week, for the deliverable. Each milestone should clearly state what you plan to accomplish that week. The TAs will review your progress with you with respect to your milestone description each week.
+Full details about what to do in each lab after the first week can be found in [LabN.md](LabN.md).
 
-## Bootstrap Implementation
+## Bootstrap implementation
 
-We have created a bootstrap project for you but you will not be able to access it until during the first week of labs. The project will make sure you have your tools and environment correctly configured for our reference UI and for AutoTest.
+We have created a bootstrap project for you but you will not be able to access it until during the second week of labs, after you have specified your project team. Once the project is configured, Github should send you email inviting you to your team's repository.
 
 
