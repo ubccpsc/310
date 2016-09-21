@@ -79,6 +79,7 @@ More details about testability can be found in [Bob Binder's](http://robertvbind
 
 ### Coverage
 
+XXX: This will come later.
 
 ### Why not test?
 
@@ -97,14 +98,12 @@ There is a more [modern discussion](http://www.sicpers.info/2012/09/an-apology-t
 It is also important to accurately consider the costs of test automated testing. Writing tests takes time. Executing tests takes time. Diagnosing failing tests take time. Fixing tests that were incorrect takes time (tests are programs too!). But catching real faults can save money, as can increased velocity enabled through better understanding how shippable your code is. While it is easier to account for the costs than the benefits, most large teams have invested heavily in automated test suites, although many large teams are actively investigating test prioritization and minimization schemes to reduce the delay between making a change and having a meaningful test result.
 
 
-### Resources
+### Other Resources
 
-Another great talk about how [Google stores](https://www.youtube.com/watch?v=W71BTkUbdqE) its source code.
-
-
-* Parnin: https://docs.google.com/presentation/d/1EWfjObwBNx5ukoRWua_-qET4TtULHeqo4w9koCRlP_Y/edit#slide=id.p
-
-* Mit: http://measure.cc.gt.atl.ga.us/classes/cs6300/Lectures/class18testing.pdf
+* Another great talk about how [Google stores](https://www.youtube.com/watch?v=W71BTkUbdqE) its source code.
+* Steve Easterbrook [testing 1](http://www.cs.toronto.edu/~sme/CSC302/notes/16-Testing1.pdf).
+* Steve Easterbrook [testing 2](http://www.cs.toronto.edu/~sme/CSC302/notes/17-Testing2.pdf).
+* MIT testing [slides](http://measure.cc.gt.atl.ga.us/classes/cs6300/Lectures/class18testing.pdf).
 
 ---
 ![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") Reid Holmes
