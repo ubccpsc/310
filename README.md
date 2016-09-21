@@ -3,10 +3,12 @@
 # UBC CPSC 310 - Software Engineering
 September 8, 2016 -> December 1, 2016 (```2016T1```)
 
-## First Lecture Links
+## Third Lecture
 
-* [Sample Repository](https://github.com/rtholmes/cpsc310starter) for in class use. LINK FIXED!
-* [Entrance Survey](https://goo.gl/forms/0G3o369xPqRSmThI3) Please let us know what you want out of CPSC 310!
+* You should be able to see your project repo and public repo in the [Github org](https://github.com/orgs/CS310-2016Fall/). If you can't it is because you either have not signed up fully on ClassPortal (aka with two team mates both of whom have signed in) or because you have not accepted an email from GitHub.
+
+* If you don't have a group yet, you must organize one this week. Sign up on [ClassPortal](http://skaha.cs.ubc.ca:8020); please use a non-mobile version of Chrome, Firefox, or Edge (we're working on it). 
+
 
 ## Waitlist: [See Here](#waitlist)
 
@@ -47,7 +49,7 @@ Some of the topics we will cover in 310 this term include:
 * Arthur de Sousa Marques
 * Stewart Grant
 * Nam Giang
-* Prithu Banerjee
+* Dylan Dong
 
 ### Piazza
 
@@ -85,12 +87,25 @@ Note: there will not be any labs during the first week of class.
 | :--         |:--             | :--         | :--                    |
 | L1E         | Tue; 1700-1900 | ICICS 008   | Rodrigo, Nick          |
 | L1B         | Wed; 1100-1300 | ICICS 008   | Nam, Nick              |
-| L1D         | Wed; 1300-1500 | ICICS 008   | Arthur, Prithu         |
+| L1D         | Wed; 1300-1500 | ICICS 008   | Arthur, Dylan          |
 | L1G         | Th; 1030-1230  | ICICS 008   | Nam, Arthur            |
 | L1F         | Th; 1400-1600  | ICICS X350  | Rodrigo, Stewart       |
-| L1A         | Fri; 1400-1600 | ICICS 008   | Prithu, Stewart        |
+| L1A         | Fri; 1400-1600 | ICICS 008   | Dylan, Stewart         |
 
 Both team members will be required to attend each lab. 
+
+#### TA Office Hours
+
+We are sorting the details out now, full details will be up this week.
+
+| Time             | Room            | TA          |
+| :--              | :--             | :--         |
+| Mon; 1600-1700   | X341            | Nam         |
+| Tues; 1600-1700  | X151            | Dylan       |
+| Wed; 1600-1700   | X151            | Arthur      |
+| Th; TBD          | TBD             | Rodrigo     |
+| Fri; 0900-1000   | X150 - Table 2  | Nick        |
+| Fri; TBD         | TBD             | Stewart     |
 
 ## Project
 
@@ -169,3 +184,12 @@ Each student is responsible for understanding and abiding by the University and 
 Everyone involved with CPSC 310 is responsible for understanding and abiding by the University's Respectful Environment Statement.
 
 The Statement of Principle of UBC's Respectful Environment Statement is "The best possible environment for working, learning and living is one in which respect, civility, diversity, opportunity and inclusion are valued. Everyone at the University of British Columbia is expected to conduct themselves in a manner that upholds these principles in all communications and interactions with fellow UBC community members and the public in all University-related settings."
+
+
+### Archived bits 
+
+#### First Lecture Links
+
+* [Sample Repository](https://github.com/rtholmes/cpsc310starter) for in class use.
+* ~~[Entrance Survey](https://goo.gl/forms/0G3o369xPqRSmThI3) Please let us know what you want out of CPSC 310!~~
+

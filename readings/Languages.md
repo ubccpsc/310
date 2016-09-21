@@ -71,5 +71,4 @@ In these examples we can see that there are far more commonalities between these
 
 
 ---
-
 ![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") Reid Holmes
