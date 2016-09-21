@@ -103,7 +103,7 @@ We are sorting the details out now, full details will be up this week.
 | Mon; 1600-1700   | X341            | Nam         |
 | Tues; 1600-1700  | X151            | Dylan       |
 | Wed; 1600-1700   | X151            | Arthur      |
-| Th; TBD          | TBD             | Rodrigo     |
+| Th; 1600-1700    | X139            | Rodrigo     |
 | Fri; 0900-1000   | X150 - Table 2  | Nick        |
 | Fri; TBD         | TBD             | Stewart     |
 
