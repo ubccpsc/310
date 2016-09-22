@@ -27,8 +27,8 @@ The deliverable relies on the following REST endpoints:
  * The processed data structure should be persisted to disk; your system should be able to load this persisted value into memory for answering queries. 
  * Ultimately, a dataset must be ```PUT``` **or** loaded from disk before queries can be successfully answered.
  * Response Codes and message formats:
-     * ```204```: the operation was successful; if the ```id``` was new (not previously ```PUT``` in this session or cached).
-     * ```201```: the operation was successful; if the ```id``` was previously ```PUT``` in this session or cached from a previous session.
+     * ```204```: the operation was successful and the ```id``` was new (not ```PUT``` in this session or was previously cached).
+     * ```201```: the operation was successful and the ```id``` already existed (was ```PUT``` in this session or was previously cached).
      * ```400```: the operation failed. The body should contain ```{error: 'my text'}``` to explain what went wrong.
 
 
