@@ -12,7 +12,7 @@ This data has been obtained from [UBC PAIR](http://pair.ubc.ca/) and has not bee
 
 The bootstrap project you will be provided with already has the implementation to load the data from the zip, but you will need to parse it in an adequate data structure of your choice. 
 
-You are **not** allowed to store the data in a database, but you are encouraged to process the data into a format of your choosing that you can persist to disk for quicker or more convenient access.
+You are **not** allowed to store the data in a database, but you are encouraged to process the data into a format of your choosing that you can persist (cache) to disk for quicker or more convenient access. Make sure you do not commit this cached file to version control or AutoTest will figure it out and tests will fail in ways you do not expect.
 
 You are **not** allowed to modify the data in any way other than to convert it to the data structure. Your implementation will be tested with the original copy of the dataset, so any modification will most likely lead to tests failing.
 
@@ -45,7 +45,6 @@ The deliverable relies on the following REST endpoints:
  * Response Codes and message formats:
      * ```204```: the operation was successful.
      * ```404```: the operation was unsuccessful because the delete was for a resource that was not previously ```PUT```.
-     * ```400```: the operation failed; body should contain ```{error: 'my text'}``` providing extra detail. 
 
 You will not have to modify the ```GET /``` endpoint. The ```PUT /dataset:id``` and ```POST /query``` endpoint skeletons have been provided, but you will have to implement them. ```DELETE /dataset:id``` is not implemented at all; you will have to add this from scratch.
 
