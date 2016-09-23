@@ -56,26 +56,33 @@ A [status code reference](https://httpstatuses.com/) is available if you want to
 
 The goal of the deliverable is to build the backend to reply to query about the dataset. The query will be based on the EBNF described below. Note, this EBNF is for the WHERE portion of the query only.
 
-### PREAMBLE
-
-```'GET': [ string* ]``` // specify the columns in the final query
-
 ### WHERE [EBNF](https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_Form)  
 
 *Note: this EBNF is not complete and will be extended in future deliverables*
 *Number and string are Javascript types.*  
-
 ```
-LOGIC ::= 'AND' | 'OR' | 'NOT'  
+QUERY  ::='{' PREAMBLE ', ' QUERYBODY ', ' POSTAMBLE '}'
+
+PREAMBLE ::= 'GET: [' string (',' string)* ']'
+QUERYBODY ::= 'WHERE:'  FILTER 
+POSTAMBLE ::= ('ORDER:' string ', ')? 'AS: TABLE'
+
+LOGIC ::= 'AND' | 'OR' 
+NEGATION ::= 'NOT :' FILTER
 MCOMPARATOR ::= 'LT' | 'GT' | 'EQ'  
 MCOMPARISON ::= MCOMPARATOR ':{' string ':' number '}'  
 SCOMPARISON ::= 'IS:{' string ':' [*]? string [*]? '}'  
-FILTER ::= '{' (LOGICCOMPARISON | MCOMPARISON | SCOMPARISON) '}'  
-LOGICCOMPARISON ::= LOGIC ':{' FILTER '}'  
+FILTER ::= (LOGICCOMPARISON | MCOMPARISON | SCOMPARISON | NEGATION) 
+LOGICCOMPARISON ::= LOGIC ':{' FILTER (', ' FILTER)* '}'  
 VIEW ::= 'TABLE'  
 string ::= [a-zA-Z0-9]+  
-number ::= [1-9]*[0-9]+  
+number ::= [1-9]*[0-9]+ ('.' [0-9]+ )?
 ```
+
+### PREAMBLE
+
+```'GET': [ string* ]``` // specify the columns in the final query as an array of strings
+
 
 ### POSTAMBLE
 
