@@ -18,7 +18,7 @@ You are **not** allowed to modify the data in any way other than to convert it t
 
 ## REST endpoints
 
-The deliverable relies on the following REST endpoints:
+The deliverable relies on the following [REST endpoints](http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm):
 
 * **```GET /```** returns the query interface for the UI; this is only provided for your convenience and will not be tested.
 
