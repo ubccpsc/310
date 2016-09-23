@@ -31,6 +31,13 @@ The deliverable relies on the following [REST endpoints](http://www.ics.uci.edu/
      * ```201```: the operation was successful and the ```id``` already existed (was ```PUT``` in this session or was previously cached).
      * ```400```: the operation failed. The body should contain ```{error: 'my text'}``` to explain what went wrong.
 
+* **```DELETE /dataset/:id```** deletes the existing dataset stored. 
+ * This will delete both disk and memory caches for the dataset for the ```id``` meaning that subsequent queries for that ```id``` should fail unless a new ```PUT``` happens first.
+ * Response Codes and message formats:
+     * ```204```: the operation was successful.
+     * ```404```: the operation was unsuccessful because the delete was for a resource that was not previously ```PUT```.
+
+The ```:id``` portion of the ```PUT``` and ```DELETE``` endpoints represent a variable name that is extracted from the endpoint URL. For the URL ```http://localhost:4321/dataset/courses```, ```courses``` is the ```id```. You can see in ```RouteHandler``` how the ```id``` variable is extracted and used.
 
 * **```POST /query```** sends the query to the application. The query will be in JSON format in the post body. 
  * Query term prefixes (e.g. ```courses```) will correspond to the dataset required by the query. These prefixes correspond exactly t the ```id``` in the ```PUT``` endpoint.
@@ -40,13 +47,7 @@ The deliverable relies on the following [REST endpoints](http://www.ics.uci.edu/
      * ```424```: the query failed because it depends on a resource that has not been ```PUT```. The body should contain ```{missing: ['key1'...]}```.
      * ```400```: the query failed; body should contain ```{error: 'my text'}``` providing extra detail.
 
-* **```DELETE /dataset/:id```** deletes the existing dataset stored. 
- * This will delete both disk and memory caches for the dataset for the ```id``` meaning that subsequent queries for that ```id``` should fail unless a new ```PUT``` happens first.
- * Response Codes and message formats:
-     * ```204```: the operation was successful.
-     * ```404```: the operation was unsuccessful because the delete was for a resource that was not previously ```PUT```.
-
-You will not have to modify the ```GET /``` endpoint. The ```PUT /dataset:id``` and ```POST /query``` endpoint skeletons have been provided, but you will have to implement them. ```DELETE /dataset:id``` is not implemented at all; you will have to add this from scratch.
+You will not have to modify the ```GET /``` endpoint. The ```PUT /dataset/:id``` and ```POST /query``` endpoint skeletons have been provided, but you will have to implement them. ```DELETE /dataset/:id``` is not implemented at all; you will have to add this from scratch.
 
 The UI is already provided in the project. There is nothing to gain from modifying it as we will not test any of the UI code and will only interact with your system through the endpoints specified above.
 
@@ -364,7 +365,7 @@ The result of this query would be:
 
 
 
-##Testing
+## Testing
 
 The best way to test your system is via your own unit test suite. You can write these unit tests by following the examples in ```test/``` and running them with ```npm run test```. This will be the quickest and easiest way to ensure your system is behaving correctly and to make sure regressions are not introduced as you proceed further in the project.
 
@@ -374,4 +375,22 @@ To ensure your code conforms with the API our marking suite expects, there are t
 
 * A private test suite, that you will not have source-level access to. You will be able to request to run it against your implementation every 12h by submitting a command to Github; full details will be available in the [AutoTest](Autotest.md) documentation.
 
+## Getting started
 
+This deliverable might seem intimidating, but keep in mind that this project has the same interaction mechanism as most software systems:
+
+1. It consumes input data (the zip file -- ```PUT```).
+1. It transforms the data (according to the query -- ```POST```).
+1. It returns a result (for all endpoints).
+
+There is no best way to get started, but you can consider each of these in turn. Some possible options that could be pursued in any order (or skipped entirely):
+
+* Start by looking at the data file we have provided (the zip file in your ```d1public``` repository) and understanding what kind of data you will be analyzing and maipulating. This will help you think about the kind of data structure you want to create (this is the precursor to step 1 above).
+
+* Look at the sample queries in the deliverable description and the public suite. From these queries, figure out how you would want the data arranged so you can answer these queries (this is the precursor to step 2 above).
+
+* Ignoring the provided data, create some fake data (maybe for one section). Write the portion of the system that queries this data (this is step 2 above).
+
+* Like the above, using some fake data and a fake query processor, write the code that would return the data correctly and with the correct error codes (this is step 3 above).
+
+Trying to keep all of the requirements in mind at once is going to be overwhelming. Tackling a single task that you can accomplish in an hour is going to be much more effective. Iteratively growing your project from small task to small task is going to be the best way to make forward progress.
