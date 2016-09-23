@@ -105,7 +105,7 @@ We are sorting the details out now, full details will be up this week.
 | Wed; 1600-1700   | X151            | Arthur      |
 | Th; 1600-1700    | X139            | Rodrigo     |
 | Fri; 0900-1000   | X150 - Table 2  | Nick        |
-| Fri; TBD         | TBD             | Stewart     |
+| Fri; 1600-1700   | X150 - Table 3  | Stewart     |
 
 ## Project
 
