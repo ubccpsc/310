@@ -67,7 +67,7 @@ This list is a rough guide only. Readings will likely be updated even after clas
 | :--         |:--                            | :-- |
 | Sept 8      | Course & Project Intro        | [Syllabus](README.md), [Introduction](readings/Introduction.md), [Project Description](project/README.md) |
 | Sept 15     | Languages & Testing           | [Programming Languages](readings/Languages.md), [Testing/Testability](readings/Testing.md), [AutoTest](project/AutoTest.md) |
-| Sept 22     | APIs, REST, Async             | [APIs & REST](readings/API.md) |
+| Sept 22     | Assertions, APIs, REST, & Async | [APIs & REST](readings/API.md), [Async](readings/Async.md) |
 | Sept 29     | Agile & User Stories          | TBD   |
 | Oct 6       | Specifications                | TBD   |
 | Oct 13      | Technical Communication       | TBD   |

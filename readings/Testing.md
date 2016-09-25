@@ -77,9 +77,11 @@ The above properties all aim to support making it possible to automate the execu
 
 More details about testability can be found in [Bob Binder's](http://robertvbinder.com/wp-content/uploads/rvb-pdf/talks/GTAC-2010-Binder-Testability.pdf) GTAC [talk](https://www.youtube.com/watch?v=1keyEiJHqPw). [Miško Hevery](https://www.youtube.com/watch?v=XcT4yYu_TTs) has a cool walkthrough video of live coding a refactoring to enable a simple system to be more testable. A nice collection of [testability links](http://stackoverflow.com/a/2085988/3133691) have been compiled on StackOverflow.
 
+<!---
 ### Coverage
 
-XXX: This will come later.
+TODO: This will come later.
+--->
 
 ### Why not test?
 
@@ -97,13 +99,33 @@ There is a more [modern discussion](http://www.sicpers.info/2012/09/an-apology-t
 
 It is also important to accurately consider the costs of test automated testing. Writing tests takes time. Executing tests takes time. Diagnosing failing tests take time. Fixing tests that were incorrect takes time (tests are programs too!). But catching real faults can save money, as can increased velocity enabled through better understanding how shippable your code is. While it is easier to account for the costs than the benefits, most large teams have invested heavily in automated test suites, although many large teams are actively investigating test prioritization and minimization schemes to reduce the delay between making a change and having a meaningful test result.
 
+<!---
+TODO: Assertions
+### Behaviour driven development (BDD)
+
+Given/When/Then (GWT)
+
+https://dannorth.net/introducing-bdd/
+
+One assertion per test (more applicable to Arrange, Act, and Assert): http://programmaticallyspeaking.com/one-assertion-per-test-please.html 
+
+BDD is GWT, TDD is AAA. <- interesting analogy
+
+Chai expectation docs are really the best for this:
+http://chaijs.com/api/bdd/
+
+chai assertions: http://dailyjs.com/2012/02/23/chai/
+--->
 
 ### Other Resources
 
 * Another great talk about how [Google stores](https://www.youtube.com/watch?v=W71BTkUbdqE) its source code.
 * Steve Easterbrook [testing 1](http://www.cs.toronto.edu/~sme/CSC302/notes/16-Testing1.pdf).
 * Steve Easterbrook [testing 2](http://www.cs.toronto.edu/~sme/CSC302/notes/17-Testing2.pdf).
+* Laurie Williams [black box testing notes](http://agile.csc.ncsu.edu/SEMaterials/BlackBox.pdf).
+* Laurie Williams [white box testing notes](http://agile.csc.ncsu.edu/SEMaterials/WhiteBox.pdf).
 * MIT testing [slides](http://measure.cc.gt.atl.ga.us/classes/cs6300/Lectures/class18testing.pdf).
+* Jim Cordy's [quality assurance](http://research.cs.queensu.ca/home/cordy/cisc327/index.html) course.
 
 ---
 ![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") Reid Holmes
