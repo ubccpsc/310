@@ -84,6 +84,8 @@ fs.readdir(source).then(function(files) {
 });
 ```
 
+Promises can only have three states, _pending_ before it is done its task, _fulfilled_ if the task has completed successfully, and _rejected_ if the task has completed erroneously. Promises can only transition to _fulfilled_ or _rejected_ once and cannot change between _fulfilled_ and _rejected_. One nice feature of Promises is that their returned value enables them to be composed; for example you can easily ensure a set of async functions are all complete before moving on to the next task (```Promise.all```).
+
 ### References
 
 * Discussion of some [challenges](https://www.quora.com/What-is-the-difference-between-deadlock-and-livelock-deadlock-infinite-recursion-and-starvation/answer/Akash-Kava) with concurrent programming.
