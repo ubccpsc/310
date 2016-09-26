@@ -245,8 +245,8 @@ The result for this would look like:
 	"WHERE": {
 		"OR": [
 			{"AND": [
-				{"GT": {"courses_avg": 70}},
-				{"IS": {"courses_dept": "adhe"}}
+					{"GT": {"courses_avg": 70}},
+					{"IS": {"courses_dept": "adhe"}}
       			]},
       			{"EQ": {"courses_avg": 90}}
 		]
