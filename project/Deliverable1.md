@@ -44,7 +44,7 @@ The ```:id``` portion of the ```PUT``` and ```DELETE``` endpoints represent a va
  * NOTE: the server may be shutdown between the ```PUT``` and the ```POST```. This endpoint should always check for a persisted data structure on disk before returning a missing dataset error.
  * Response Codes and message formats:
      * ```200```: the query was successfully answered. The result should be sent in JSON according in the response body.
-     * ```424```: the query failed because it depends on a resource that has not been ```PUT```. The body should contain ```{missing: ['key1'...]}```.
+     * ```424```: the query failed because it depends on a resource that has not been ```PUT```. The body should contain ```{missing: ['id1', 'id2'...]}```.
      * ```400```: the query failed; body should contain ```{error: 'my text'}``` providing extra detail.
 
 You will not have to modify the ```GET /``` endpoint. The ```PUT /dataset/:id``` and ```POST /query``` endpoint skeletons have been provided, but you will have to implement them. ```DELETE /dataset/:id``` is not implemented at all; you will have to add this from scratch.
