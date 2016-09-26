@@ -69,13 +69,16 @@ QUERYBODY ::= 'WHERE:'  FILTER
 POSTAMBLE ::= ('ORDER:' string ', ')? 'AS: TABLE'
 
 LOGIC ::= 'AND' | 'OR' 
-NEGATION ::= 'NOT :' FILTER
-MCOMPARATOR ::= 'LT' | 'GT' | 'EQ'  
+MCOMPARATOR ::= 'LT' | 'GT' | 'EQ' 
+
+LOGICCOMPARISON ::= LOGIC ':[{' FILTER (', {' FILTER '}')* '}]'  
 MCOMPARISON ::= MCOMPARATOR ':{' string ':' number '}'  
 SCOMPARISON ::= 'IS:{' string ':' [*]? string [*]? '}'  
-FILTER ::= (LOGICCOMPARISON | MCOMPARISON | SCOMPARISON | NEGATION) 
-LOGICCOMPARISON ::= LOGIC ':{' FILTER (', ' FILTER)* '}'  
+NEGATION ::= 'NOT :' FILTER
+
+FILTER ::= (LOGICCOMPARISON | MCOMPARISON | SCOMPARISON | NEGATION)
 VIEW ::= 'TABLE'  
+
 string ::= [a-zA-Z0-9]+  
 number ::= [1-9]*[0-9]+ ('.' [0-9]+ )?
 ```
@@ -87,7 +90,7 @@ number ::= [1-9]*[0-9]+ ('.' [0-9]+ )?
 
 ### POSTAMBLE
 
-```'ORDER': 'string'``` // string is the column name to sort on
+```'ORDER': 'string'``` // string is the column name to sort on; the string _must_ be in the ```GET``` array or the query is invalid
 
 ```'AS': 'TABLE'``` // specifies the return format (see examples below)
 
@@ -99,14 +102,14 @@ The list of valid keys is:
 
 The queries you will run will be using the following keys:
 
-* **courses_dept**: The department that offered the course.
-* **courses_id**: The course number.
-* **courses_avg**: The average of the course offering.
-* **courses_instructor**: The instructor teaching the course offering.
-* **courses_title**: The name of the course.
-* **courses_pass**: The number of students that passed the course offering.
-* **courses_fail**: The number of students that failed the course offering.
-* **courses_audit**: The number of students that audited the course offering.
+* **courses_dept**: ```string```; The department that offered the course.
+* **courses_id**: ```string```; The course number (will be treated as a string (e.g., 499b)).
+* **courses_avg**: ```number```; The average of the course offering.
+* **courses_instructor**: ```string```; The instructor teaching the course offering.
+* **courses_title**: ```string```; The name of the course.
+* **courses_pass**: ```number```; The number of students that passed the course offering.
+* **courses_fail**: ```number```; The number of students that failed the course offering.
+* **courses_audit**: ```number```; The number of students that audited the course offering.
 
 Note: these keys are different than may be present in the data. Since you are not allowed to modify the data, you will have to come up with a way to translate them.
 
@@ -373,7 +376,7 @@ To ensure your code conforms with the API our marking suite expects, there are t
 
 * A public test suite that you will have complete access to.  You are allowed to run this as many times as you want and are encouraged to add your own integration tests to the suite if you want to 'guess' the kinds of tests we will try in the private suite. We will automatically provision this for your team in Github.
 
-* A private test suite, that you will not have source-level access to. You will be able to request to run it against your implementation every 12h by submitting a command to Github; full details will be available in the [AutoTest](Autotest.md) documentation.
+* A private test suite, that you will not have source-level access to. You will be able to request to run it against your implementation every 12h by invoking the ```@CPSC310bot``` Github bot; full details will be available in the [AutoTest](AutoTest.md) documentation.
 
 ## Getting started
 
