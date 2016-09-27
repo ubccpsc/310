@@ -71,7 +71,7 @@ POSTAMBLE ::= ('ORDER:' string ', ')? 'AS: TABLE'
 LOGIC ::= 'AND' | 'OR' 
 MCOMPARATOR ::= 'LT' | 'GT' | 'EQ' 
 
-LOGICCOMPARISON ::= LOGIC ':[{' FILTER (', {' FILTER '}')* '}]'  
+LOGICCOMPARISON ::= LOGIC ':[{' FILTER ('}, {' FILTER )* '}]'  
 MCOMPARISON ::= MCOMPARATOR ':{' string ':' number '}'  
 SCOMPARISON ::= 'IS:{' string ':' [*]? string [*]? '}'  
 NEGATION ::= 'NOT :' FILTER
