@@ -121,7 +121,7 @@ Two simple queries are shown below:
 ##### Simple query
 ```
 {
-	"GET": ["courses_dept, courses_avg"],
+	"GET": ["courses_dept", "courses_avg"],
 	"WHERE": {
 		"GT": {
 			"courses_avg": 90
