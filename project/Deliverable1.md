@@ -64,33 +64,34 @@ The goal of the deliverable is to build the backend to reply to query about the 
 ```
 QUERY  ::='{' PREAMBLE ', ' QUERYBODY ', ' POSTAMBLE '}'
 
-PREAMBLE ::= 'GET: [' string (',' string)* ']'
+PREAMBLE ::= 'GET: [' key (',' key)* ']'
 QUERYBODY ::= 'WHERE:'  FILTER 
-POSTAMBLE ::= ('ORDER:' string ', ')? 'AS: TABLE'
+POSTAMBLE ::= ('ORDER:' key ', ')? 'AS: TABLE'
 
 LOGIC ::= 'AND' | 'OR' 
 MCOMPARATOR ::= 'LT' | 'GT' | 'EQ' 
 
 LOGICCOMPARISON ::= LOGIC ':[{' FILTER ('}, {' FILTER )* '}]'  
-MCOMPARISON ::= MCOMPARATOR ':{' string ':' number '}'  
-SCOMPARISON ::= 'IS:{' string ':' [*]? string [*]? '}'  
+MCOMPARISON ::= MCOMPARATOR ':{' key ':' number '}'  
+SCOMPARISON ::= 'IS:{' key ':' [*]? string [*]? '}'  
 NEGATION ::= 'NOT :{' FILTER '}'
 
 FILTER ::= (LOGICCOMPARISON | MCOMPARISON | SCOMPARISON | NEGATION)
 VIEW ::= 'TABLE'  
 
-string ::= [a-zA-Z0-9,_]+  
+key ::= string '_' string
+string ::= [a-zA-Z0-9]+  
 number ::= [1-9]*[0-9]+ ('.' [0-9]+ )?
 ```
 
 ### PREAMBLE
 
-```'GET': [ string* ]``` // specify the columns in the final query as an array of strings
+```'GET': [ key* ]``` // specify the columns in the final query as an array of strings
 
 
 ### POSTAMBLE
 
-```'ORDER': 'string'``` // string is the column name to sort on; the string _must_ be in the ```GET``` array or the query is invalid
+```'ORDER': key``` // string is the column name to sort on; the string _must_ be in the ```GET``` array or the query is invalid
 
 ```'AS': 'TABLE'``` // specifies the return format (see examples below)
 
