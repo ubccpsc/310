@@ -79,7 +79,7 @@ NEGATION ::= 'NOT :{' FILTER '}'
 FILTER ::= (LOGICCOMPARISON | MCOMPARISON | SCOMPARISON | NEGATION)
 VIEW ::= 'TABLE'  
 
-string ::= [a-zA-Z0-9]+  
+string ::= [a-zA-Z0-9,_]+  
 number ::= [1-9]*[0-9]+ ('.' [0-9]+ )?
 ```
 
