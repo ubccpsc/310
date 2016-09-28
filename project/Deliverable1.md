@@ -74,7 +74,7 @@ MCOMPARATOR ::= 'LT' | 'GT' | 'EQ'
 LOGICCOMPARISON ::= LOGIC ':[{' FILTER ('}, {' FILTER )* '}]'  
 MCOMPARISON ::= MCOMPARATOR ':{' string ':' number '}'  
 SCOMPARISON ::= 'IS:{' string ':' [*]? string [*]? '}'  
-NEGATION ::= 'NOT :' FILTER
+NEGATION ::= 'NOT :{' FILTER '}'
 
 FILTER ::= (LOGICCOMPARISON | MCOMPARISON | SCOMPARISON | NEGATION)
 VIEW ::= 'TABLE'  
