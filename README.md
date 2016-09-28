@@ -63,21 +63,21 @@ Thursdays 1700-2000, [PHARM 1101](https://www.google.ca/maps/place/UBC+Faculty+o
 
 This list is a rough guide only. Readings will likely be updated even after class has completed.
 
-| Date        | Topic                         | Readings |
-| :--         |:--                            | :-- |
-| Sept 8      | Course & Project Intro        | [Syllabus](README.md), [Introduction](readings/Introduction.md), [Project Description](project/README.md) |
-| Sept 15     | Languages & Testing           | [Programming Languages](readings/Languages.md), [Testing/Testability](readings/Testing.md), [AutoTest](project/AutoTest.md) |
-| Sept 22     | Assertions, APIs, REST, & Async | [APIs & REST](readings/API.md), [Async](readings/Async.md) |
-| Sept 29     | Agile & User Stories          | TBD   |
-| Oct 6       | Specifications                | TBD   |
-| Oct 13      | Technical Communication       | TBD   |
-| Oct 20      | Design                        | TBD   |
-| Oct 27      | Design                        | TBD   |
-| Nov 3       | Design                        | TBD   |
-| Nov 10      | Refactoring & Tradeoffs       | TBD   |
-| Nov 17      | Class *might* be cancelled    | TBD   |
-| Nov 24      | Information Security          | TBD   |
-| Dec 1       | Wrap-up                       | TBD   |
+| Date        | Topic                                       | Readings |
+| :--         |:--                                          | :--      |
+| Sept 8      | Course & Project Intro                      | [Syllabus](README.md), [Introduction](readings/Introduction.md), [Project Description](project/README.md) |
+| Sept 15     | Languages & Testing                         | [Programming Languages](readings/Languages.md), [Testing/Testability](readings/Testing.md), [AutoTest](project/AutoTest.md) |
+| Sept 22     | Assertions, APIs, REST, & Async             | [APIs & REST](readings/API.md), [Async](readings/Async.md) |
+| Sept 29     | Agile & User Stories + Guest                | TBD   |
+| Oct 6       | Specifications                              | TBD   |
+| Oct 13      | Cloud Guest & Technical Communication       | TBD   |
+| Oct 20      | Design                                      | TBD   |
+| Oct 27      | Design                                      | TBD   |
+| Nov 3       | Design                                      | TBD   |
+| Nov 10      | Refactoring & Tradeoffs                     | TBD   |
+| Nov 17      | Class *might* be cancelled                  | TBD   |
+| Nov 24      | Information Security                        | TBD   |
+| Dec 1       | Wrap-up                                     | TBD   |
 
 #### Labs:
 

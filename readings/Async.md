@@ -84,7 +84,27 @@ fs.readdir(source).then(function(files) {
 });
 ```
 
-Promises can only have three states, _pending_ before it is done its task, _fulfilled_ if the task has completed successfully, and _rejected_ if the task has completed erroneously. Promises can only transition to _fulfilled_ or _rejected_ once and cannot change between _fulfilled_ and _rejected_. One nice feature of Promises is that their returned value enables them to be composed; for example you can easily ensure a set of async functions are all complete before moving on to the next task (```Promise.all```).
+Promises can only have three states, _pending_ before it is done its task, _fulfilled_ if the task has completed successfully, and _rejected_ if the task has completed erroneously. Promises can only transition to _fulfilled_ or _rejected_ once and cannot change between _fulfilled_ and _rejected_; this process is called _settling_. [HTML5Rocks](http://www.html5rocks.com/en/tutorials/es6/promises/) has an extremely through walkthrough of promises where you can see how many of its features are used in practice.
+
+At their core, promises are objects with two methods ```then``` and ```catch```. ```then``` is called when the promise is settled successfully while ```catch``` is called when the promise is settled with an error. These methods both themselves return promises enabling them to be chained as in the example above (three ```then``` functions called in sequence). It is important to note that there can also be multiple ```catch``` statements (e.g., in a 5 step flow you could catch after the first two, fix the problem, and then continue the flow while still having a final catch at the end).
+
+One nice feature of Promises is that they are able to be composed; this is especially helpful when you are trying to manage multiple concurrent promise executions in parallel. This is the explicit goal of ```Promise.all```:
+
+```
+let processList:GroupRepoDescription[] = [];
+for (var toProcess of completeGroups) {
+	processList.push(<any>gpc.getStats("CS310-2016Fall", toProcess.name)); // getStats is async
+}
+
+Promise.all(processList).then(function (provisionedRepos: GroupRepoResult[]) {
+	Log.info("Creation complete: " + provisionedRepos.length);
+	// can also iterate through the individual results
+}).catch(function(err) {
+	Log.error("Creation failed: "+err);
+});
+```
+
+When working with promises it is _strongly_ encouraged that you end every ```then``` sequence with a ```catch``` even if you do not do any meaningful error handling (like we do above). This is because promises settle asynchronously and will fail silently if rejections are not caught; they will not escape to a global error handler. Another common mistake when working with promises is that ```then``` is not applied to the right object. In the above example if you called then inside the ```for``` loop you would not be notified when all promises are done but one-by-one as they execute. Adding verbose debug messages can really help here so you can keep track of the order your functions and callbacks are executing.
 
 ### References
 
