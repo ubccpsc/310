@@ -96,7 +96,7 @@ Both team members will be required to attend each lab.
 
 #### TA Office Hours
 
-We are sorting the details out now, full details will be up this week.
+TAs will be available every day of the week for additional help, should your team need additional advice:
 
 | Time             | Room            | TA          |
 | :--              | :--             | :--         |

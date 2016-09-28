@@ -44,7 +44,7 @@ The ```:id``` portion of the ```PUT``` and ```DELETE``` endpoints represent a va
  * NOTE: the server may be shutdown between the ```PUT``` and the ```POST```. This endpoint should always check for a persisted data structure on disk before returning a missing dataset error.
  * Response Codes and message formats:
      * ```200```: the query was successfully answered. The result should be sent in JSON according in the response body.
-     * ```424```: the query failed because it depends on a resource that has not been ```PUT```. The body should contain ```{missing: ['key1'...]}```.
+     * ```424```: the query failed because it depends on a resource that has not been ```PUT```. The body should contain ```{missing: ['id1', 'id2'...]}```.
      * ```400```: the query failed; body should contain ```{error: 'my text'}``` providing extra detail.
 
 You will not have to modify the ```GET /``` endpoint. The ```PUT /dataset/:id``` and ```POST /query``` endpoint skeletons have been provided, but you will have to implement them. ```DELETE /dataset/:id``` is not implemented at all; you will have to add this from scratch.
@@ -64,30 +64,34 @@ The goal of the deliverable is to build the backend to reply to query about the 
 ```
 QUERY  ::='{' PREAMBLE ', ' QUERYBODY ', ' POSTAMBLE '}'
 
-PREAMBLE ::= 'GET: [' string (',' string)* ']'
+PREAMBLE ::= 'GET: [' key (',' key)* ']'
 QUERYBODY ::= 'WHERE:'  FILTER 
-POSTAMBLE ::= ('ORDER:' string ', ')? 'AS: TABLE'
+POSTAMBLE ::= ('ORDER:' key ', ')? 'AS: TABLE'
 
 LOGIC ::= 'AND' | 'OR' 
-NEGATION ::= 'NOT :' FILTER
-MCOMPARATOR ::= 'LT' | 'GT' | 'EQ'  
-MCOMPARISON ::= MCOMPARATOR ':{' string ':' number '}'  
-SCOMPARISON ::= 'IS:{' string ':' [*]? string [*]? '}'  
-FILTER ::= (LOGICCOMPARISON | MCOMPARISON | SCOMPARISON | NEGATION) 
-LOGICCOMPARISON ::= LOGIC ':{' FILTER (', ' FILTER)* '}'  
+MCOMPARATOR ::= 'LT' | 'GT' | 'EQ' 
+
+LOGICCOMPARISON ::= LOGIC ':[{' FILTER ('}, {' FILTER )* '}]'  
+MCOMPARISON ::= MCOMPARATOR ':{' key ':' number '}'  
+SCOMPARISON ::= 'IS:{' key ':' [*]? string [*]? '}'  
+NEGATION ::= 'NOT :{' FILTER '}'
+
+FILTER ::= (LOGICCOMPARISON | MCOMPARISON | SCOMPARISON | NEGATION)
 VIEW ::= 'TABLE'  
-string ::= [a-zA-Z0-9]+  
+
+key ::= string '_' string
+string ::= [a-zA-Z0-9,_-]+  
 number ::= [1-9]*[0-9]+ ('.' [0-9]+ )?
 ```
 
 ### PREAMBLE
 
-```'GET': [ string* ]``` // specify the columns in the final query as an array of strings
+```'GET': [ key* ]``` // specify the columns in the final query as an array of strings
 
 
 ### POSTAMBLE
 
-```'ORDER': 'string'``` // string is the column name to sort on
+```'ORDER': key``` // string is the column name to sort on; the string _must_ be in the ```GET``` array or the query is invalid
 
 ```'AS': 'TABLE'``` // specifies the return format (see examples below)
 
@@ -99,14 +103,14 @@ The list of valid keys is:
 
 The queries you will run will be using the following keys:
 
-* **courses_dept**: The department that offered the course.
-* **courses_id**: The course number.
-* **courses_avg**: The average of the course offering.
-* **courses_instructor**: The instructor teaching the course offering.
-* **courses_title**: The name of the course.
-* **courses_pass**: The number of students that passed the course offering.
-* **courses_fail**: The number of students that failed the course offering.
-* **courses_audit**: The number of students that audited the course offering.
+* **courses_dept**: ```string```; The department that offered the course.
+* **courses_id**: ```string```; The course number (will be treated as a string (e.g., 499b)).
+* **courses_avg**: ```number```; The average of the course offering.
+* **courses_instructor**: ```string```; The instructor teaching the course offering.
+* **courses_title**: ```string```; The name of the course.
+* **courses_pass**: ```number```; The number of students that passed the course offering.
+* **courses_fail**: ```number```; The number of students that failed the course offering.
+* **courses_audit**: ```number```; The number of students that audited the course offering.
 
 Note: these keys are different than may be present in the data. Since you are not allowed to modify the data, you will have to come up with a way to translate them.
 
@@ -117,7 +121,7 @@ Two simple queries are shown below:
 ##### Simple query
 ```
 {
-	"GET": ["courses_dept"],
+	"GET": ["courses_dept", "courses_avg"],
 	"WHERE": {
 		"GT": {
 			"courses_avg": 90
@@ -133,122 +137,120 @@ The result for this would look like:
 ```
 { render: 'TABLE',
   result:
-   [ { courses_dept: 'civl' },
-     { courses_dept: 'adhe' },
-     { courses_dept: 'adhe' },
-     { courses_dept: 'adhe' },
-     { courses_dept: 'adhe' },
-     { courses_dept: 'adhe' },
-     { courses_dept: 'adhe' },
-     { courses_dept: 'anat' },
-     { courses_dept: 'anat' },
-     { courses_dept: 'anth' },
-     { courses_dept: 'apbi' },
-     { courses_dept: 'apsc' },
-     { courses_dept: 'apsc' },
-     { courses_dept: 'apsc' },
-     { courses_dept: 'apsc' },
-     { courses_dept: 'apsc' },
-     { courses_dept: 'apsc' },
-     { courses_dept: 'apsc' },
-     { courses_dept: 'apsc' },
-     { courses_dept: 'apsc' },
-     { courses_dept: 'apsc' },
-     { courses_dept: 'apsc' },
-     { courses_dept: 'arst' },
-     { courses_dept: 'arst' },
-     { courses_dept: 'arst' },
-     { courses_dept: 'arst' },
-     { courses_dept: 'arth' },
-     { courses_dept: 'arth' },
-     { courses_dept: 'arth' },
-     { courses_dept: 'arth' },
-     { courses_dept: 'arth' },
-     { courses_dept: 'arth' },
-     { courses_dept: 'astr' },
-     { courses_dept: 'astr' },
-     { courses_dept: 'atsc' },
-     { courses_dept: 'atsc' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'audi' },
-     { courses_dept: 'babs' },
-     { courses_dept: 'babs' },
-     { courses_dept: 'bams' },
-     { courses_dept: 'bams' },
-     { courses_dept: 'bioc' },
-     { courses_dept: 'bioc' },
-     { courses_dept: 'bioc' },
-     { courses_dept: 'bioc' },
+   [ { courses_dept: 'cnps', courses_avg: 90.02 },
+     { courses_dept: 'dhyg', courses_avg: 90.03 },
+     { courses_dept: 'epse', courses_avg: 90.03 },
+     { courses_dept: 'epse', courses_avg: 90.05 },
+     { courses_dept: 'kin', courses_avg: 90.05 },
+     { courses_dept: 'kin', courses_avg: 90.05 },
+     { courses_dept: 'epse', courses_avg: 90.05 },
+     { courses_dept: 'edcp', courses_avg: 90.06 },
+     { courses_dept: 'civl', courses_avg: 90.06 },
+     { courses_dept: 'edst', courses_avg: 90.06 },
+     { courses_dept: 'nurs', courses_avg: 90.06 },
+     { courses_dept: 'edst', courses_avg: 90.06 },
+     { courses_dept: 'civl', courses_avg: 90.06 },
+     { courses_dept: 'sowk', courses_avg: 90.06 },
+     { courses_dept: 'edst', courses_avg: 90.06 },
+     { courses_dept: 'edst', courses_avg: 90.06 },
+     { courses_dept: 'sowk', courses_avg: 90.06 },
+     { courses_dept: 'psyc', courses_avg: 90.06 },
+     { courses_dept: 'psyc', courses_avg: 90.06 },
+     { courses_dept: 'cnps', courses_avg: 90.06 },
+     { courses_dept: 'cnps', courses_avg: 90.06 },
+     { courses_dept: 'edcp', courses_avg: 90.06 },
+     { courses_dept: 'nurs', courses_avg: 90.06 },
+     { courses_dept: 'cnps', courses_avg: 90.07 },
+     { courses_dept: 'epse', courses_avg: 90.07 },
+     { courses_dept: 'pcth', courses_avg: 90.07 },
+     { courses_dept: 'educ', courses_avg: 90.07 },
+     { courses_dept: 'eece', courses_avg: 90.07 },
+     { courses_dept: 'eece', courses_avg: 90.07 },
+     { courses_dept: 'pcth', courses_avg: 90.07 },
+     { courses_dept: 'epse', courses_avg: 90.07 },
+     { courses_dept: 'nurs', courses_avg: 90.07 },
+     { courses_dept: 'nurs', courses_avg: 90.07 },
+     { courses_dept: 'epse', courses_avg: 90.07 },
+     { courses_dept: 'eece', courses_avg: 90.07 },
+     { courses_dept: 'econ', courses_avg: 90.07 },
+     { courses_dept: 'econ', courses_avg: 90.07 },
+     { courses_dept: 'eece', courses_avg: 90.07 },
+     { courses_dept: 'eosc', courses_avg: 90.08 },
+     { courses_dept: 'epse', courses_avg: 90.08 },
+     { courses_dept: 'etec', courses_avg: 90.08 },
+     { courses_dept: 'dhyg', courses_avg: 90.08 },
+     { courses_dept: 'plan', courses_avg: 90.08 },
+     { courses_dept: 'plan', courses_avg: 90.08 },
+     { courses_dept: 'dhyg', courses_avg: 90.08 },
+     { courses_dept: 'etec', courses_avg: 90.09 },
+     { courses_dept: 'epse', courses_avg: 90.09 },
+     { courses_dept: 'bioc', courses_avg: 90.1 },
+     { courses_dept: 'bioc', courses_avg: 90.1 },
+     { courses_dept: 'epse', courses_avg: 90.1 },
+     { courses_dept: 'lled', courses_avg: 90.1 },
+     { courses_dept: 'phar', courses_avg: 90.1 },
+     { courses_dept: 'phar', courses_avg: 90.1 },
+     { courses_dept: 'cons', courses_avg: 90.1 },
+     { courses_dept: 'etec', courses_avg: 90.1 },
+     { courses_dept: 'etec', courses_avg: 90.1 },
+     { courses_dept: 'cons', courses_avg: 90.1 },
+     { courses_dept: 'civl', courses_avg: 90.11 },
+     { courses_dept: 'civl', courses_avg: 90.11 },
+     { courses_dept: 'audi', courses_avg: 90.11 },
+     { courses_dept: 'spph', courses_avg: 90.11 },
+     { courses_dept: 'edcp', courses_avg: 90.11 },
+     { courses_dept: 'path', courses_avg: 90.11 },
+     { courses_dept: 'audi', courses_avg: 90.11 },
+     { courses_dept: 'epse', courses_avg: 90.11 },
+     { courses_dept: 'epse', courses_avg: 90.11 },
+     { courses_dept: 'audi', courses_avg: 90.12 },
+     { courses_dept: 'audi', courses_avg: 90.12 },
+     { courses_dept: 'cnps', courses_avg: 90.12 },
+     { courses_dept: 'surg', courses_avg: 90.13 },
+     { courses_dept: 'sowk', courses_avg: 90.13 },
+     { courses_dept: 'surg', courses_avg: 90.13 },
+     { courses_dept: 'sowk', courses_avg: 90.13 },
+     { courses_dept: 'econ', courses_avg: 90.13 },
+     { courses_dept: 'medg', courses_avg: 90.13 },
+     { courses_dept: 'econ', courses_avg: 90.13 },
+     { courses_dept: 'medg', courses_avg: 90.13 },
+     { courses_dept: 'educ', courses_avg: 90.14 },
+     { courses_dept: 'edcp', courses_avg: 90.14 },
+     { courses_dept: 'edcp', courses_avg: 90.14 },
+     { courses_dept: 'thtr', courses_avg: 90.14 },
+     { courses_dept: 'etec', courses_avg: 90.14 },
+     { courses_dept: 'mtrl', courses_avg: 90.14 },
+     { courses_dept: 'kin', courses_avg: 90.14 },
+     { courses_dept: 'thtr', courses_avg: 90.14 },
+     { courses_dept: 'mtrl', courses_avg: 90.14 },
+     { courses_dept: 'phar', courses_avg: 90.15 },
+     { courses_dept: 'phar', courses_avg: 90.15 },
+     { courses_dept: 'phar', courses_avg: 90.15 },
+     { courses_dept: 'phar', courses_avg: 90.15 },
+     { courses_dept: 'epse', courses_avg: 90.15 },
+     { courses_dept: 'eosc', courses_avg: 90.15 },
+     { courses_dept: 'eosc', courses_avg: 90.15 },
+     { courses_dept: 'econ', courses_avg: 90.17 },
+     { courses_dept: 'mech', courses_avg: 90.17 },
+     { courses_dept: 'adhe', courses_avg: 90.17 },
+     { courses_dept: 'biol', courses_avg: 90.17 },
+     { courses_dept: 'biol', courses_avg: 90.17 },
+     { courses_dept: 'russ', courses_avg: 90.17 },
+     { courses_dept: 'mech', courses_avg: 90.17 },
      ... 2071 more items ] }
 ```
 ##### Complex query
 ```
 {
-	"GET": ["courses_dept", "courses_id"],
+	"GET": ["courses_dept", "courses_id", "courses_avg"],
 	"WHERE": {
-		"OR": {
-			"AND": {
-				"GT": {
-					"courses_avg": 70
-				},
-				"IS": {"courses_dept": "adhe"}
-      		},
-      		"EQ": {"courses_avg": 90}
-		}
+		"OR": [
+			{"AND": [
+					{"GT": {"courses_avg": 70}},
+					{"IS": {"courses_dept": "adhe"}}
+      			]},
+      			{"EQ": {"courses_avg": 90}}
+		]
   	},
 	"ORDER": "courses_avg",
 	"AS": "TABLE"
@@ -260,106 +262,106 @@ The result of this query would be:
 ```
 { render: 'TABLE',
   result:
-   [ { courses_dept: 'adhe', courses_id: '412' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '327' },
-     { courses_dept: 'adhe', courses_id: '328' },
-     { courses_dept: 'adhe', courses_id: '328' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '329' },
-     { courses_dept: 'adhe', courses_id: '330' },
-     { courses_dept: 'adhe', courses_id: '330' },
-     { courses_dept: 'adhe', courses_id: '330' },
-     { courses_dept: 'adhe', courses_id: '330' },
-     { courses_dept: 'adhe', courses_id: '330' },
-     { courses_dept: 'adhe', courses_id: '330' },
-     { courses_dept: 'adhe', courses_id: '330' },
-     { courses_dept: 'adhe', courses_id: '330' },
-     { courses_dept: 'adhe', courses_id: '330' },
-     { courses_dept: 'adhe', courses_id: '330' },
-     { courses_dept: 'adhe', courses_id: '330' },
-     { courses_dept: 'adhe', courses_id: '330' },
-     { courses_dept: 'adhe', courses_id: '330' },
-     { courses_dept: 'adhe', courses_id: '330' },
-     { courses_dept: 'adhe', courses_id: '330' },
-     { courses_dept: 'adhe', courses_id: '330' },
-     { courses_dept: 'adhe', courses_id: '330' },
-     { courses_dept: 'adhe', courses_id: '330' },
-     { courses_dept: 'adhe', courses_id: '330' },
-     { courses_dept: 'adhe', courses_id: '330' },
-     { courses_dept: 'adhe', courses_id: '330' },
-     { courses_dept: 'adhe', courses_id: '330' },
-     { courses_dept: 'adhe', courses_id: '330' },
-     { courses_dept: 'adhe', courses_id: '330' },
-     { courses_dept: 'adhe', courses_id: '330' },
-     { courses_dept: 'adhe', courses_id: '330' },
+   [ { courses_dept: 'adhe', courses_id: '412', courses_avg: 70.53 },
+     { courses_dept: 'adhe', courses_id: '412', courses_avg: 70.53 },
+     { courses_dept: 'adhe', courses_id: '329', courses_avg: 70.56 },
+     { courses_dept: 'adhe', courses_id: '329', courses_avg: 72.29 },
+     { courses_dept: 'adhe', courses_id: '329', courses_avg: 72.93 },
+     { courses_dept: 'adhe', courses_id: '329', courses_avg: 73.79 },
+     { courses_dept: 'adhe', courses_id: '329', courses_avg: 75.67 },
+     { courses_dept: 'adhe', courses_id: '412', courses_avg: 75.68 },
+     { courses_dept: 'adhe', courses_id: '329', courses_avg: 75.91 },
+     { courses_dept: 'adhe', courses_id: '412', courses_avg: 76.17 },
+     { courses_dept: 'adhe', courses_id: '412', courses_avg: 76.22 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 76.59 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 76.63 },
+     { courses_dept: 'adhe', courses_id: '329', courses_avg: 77 },
+     { courses_dept: 'adhe', courses_id: '412', courses_avg: 77.28 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 77.42 },
+     { courses_dept: 'adhe', courses_id: '329', courses_avg: 77.5 },
+     { courses_dept: 'adhe', courses_id: '412', courses_avg: 77.58 },
+     { courses_dept: 'adhe', courses_id: '412', courses_avg: 77.58 },
+     { courses_dept: 'adhe', courses_id: '329', courses_avg: 77.59 },
+     { courses_dept: 'adhe', courses_id: '329', courses_avg: 77.77 },
+     { courses_dept: 'adhe', courses_id: '412', courses_avg: 78 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 78.21 },
+     { courses_dept: 'adhe', courses_id: '329', courses_avg: 78.24 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 78.41 },
+     { courses_dept: 'adhe', courses_id: '412', courses_avg: 78.57 },
+     { courses_dept: 'adhe', courses_id: '412', courses_avg: 78.77 },
+     { courses_dept: 'adhe', courses_id: '412', courses_avg: 78.81 },
+     { courses_dept: 'adhe', courses_id: '412', courses_avg: 78.81 },
+     { courses_dept: 'adhe', courses_id: '330', courses_avg: 78.85 },
+     { courses_dept: 'adhe', courses_id: '412', courses_avg: 78.9 },
+     { courses_dept: 'adhe', courses_id: '328', courses_avg: 78.91 },
+     { courses_dept: 'adhe', courses_id: '328', courses_avg: 78.91 },
+     { courses_dept: 'adhe', courses_id: '329', courses_avg: 79 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 79.19 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 79.47 },
+     { courses_dept: 'adhe', courses_id: '330', courses_avg: 79.5 },
+     { courses_dept: 'adhe', courses_id: '329', courses_avg: 79.83 },
+     { courses_dept: 'adhe', courses_id: '412', courses_avg: 80.25 },
+     { courses_dept: 'adhe', courses_id: '329', courses_avg: 80.33 },
+     { courses_dept: 'adhe', courses_id: '330', courses_avg: 80.4 },
+     { courses_dept: 'adhe', courses_id: '329', courses_avg: 80.44 },
+     { courses_dept: 'adhe', courses_id: '412', courses_avg: 80.55 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 80.76 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 81.45 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 81.45 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 81.62 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 81.67 },
+     { courses_dept: 'adhe', courses_id: '329', courses_avg: 81.71 },
+     { courses_dept: 'adhe', courses_id: '329', courses_avg: 81.85 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 81.89 },
+     { courses_dept: 'adhe', courses_id: '330', courses_avg: 82 },
+     { courses_dept: 'adhe', courses_id: '329', courses_avg: 82.49 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 82.73 },
+     { courses_dept: 'adhe', courses_id: '329', courses_avg: 82.76 },
+     { courses_dept: 'adhe', courses_id: '329', courses_avg: 82.78 },
+     { courses_dept: 'adhe', courses_id: '330', courses_avg: 82.81 },
+     { courses_dept: 'adhe', courses_id: '412', courses_avg: 83.02 },
+     { courses_dept: 'adhe', courses_id: '412', courses_avg: 83.05 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 83.07 },
+     { courses_dept: 'adhe', courses_id: '330', courses_avg: 83.16 },
+     { courses_dept: 'adhe', courses_id: '330', courses_avg: 83.29 },
+     { courses_dept: 'adhe', courses_id: '329', courses_avg: 83.34 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 83.41 },
+     { courses_dept: 'adhe', courses_id: '330', courses_avg: 83.45 },
+     { courses_dept: 'adhe', courses_id: '329', courses_avg: 83.45 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 83.47 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 83.57 },
+     { courses_dept: 'adhe', courses_id: '330', courses_avg: 83.64 },
+     { courses_dept: 'adhe', courses_id: '330', courses_avg: 83.68 },
+     { courses_dept: 'adhe', courses_id: '329', courses_avg: 83.69 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 83.71 },
+     { courses_dept: 'adhe', courses_id: '330', courses_avg: 83.74 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 83.83 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 83.9 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 84 },
+     { courses_dept: 'adhe', courses_id: '412', courses_avg: 84.04 },
+     { courses_dept: 'adhe', courses_id: '412', courses_avg: 84.07 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 84.14 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 84.3 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 84.52 },
+     { courses_dept: 'adhe', courses_id: '329', courses_avg: 84.57 },
+     { courses_dept: 'adhe', courses_id: '329', courses_avg: 84.78 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 84.87 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 84.9 },
+     { courses_dept: 'adhe', courses_id: '330', courses_avg: 85 },
+     { courses_dept: 'adhe', courses_id: '330', courses_avg: 85.04 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 85.04 },
+     { courses_dept: 'adhe', courses_id: '330', courses_avg: 85.06 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 85.12 },
+     { courses_dept: 'adhe', courses_id: '330', courses_avg: 85.2 },
+     { courses_dept: 'adhe', courses_id: '412', courses_avg: 85.29 },
+     { courses_dept: 'adhe', courses_id: '329', courses_avg: 85.39 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 85.6 },
+     { courses_dept: 'adhe', courses_id: '329', courses_avg: 85.7 },
+     { courses_dept: 'adhe', courses_id: '330', courses_avg: 85.72 },
+     { courses_dept: 'adhe', courses_id: '330', courses_avg: 85.8 },
+     { courses_dept: 'adhe', courses_id: '330', courses_avg: 85.8 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 85.81 },
+     { courses_dept: 'adhe', courses_id: '327', courses_avg: 85.81 },
      ... 152 more items ] }
 ```    
 
@@ -373,7 +375,7 @@ To ensure your code conforms with the API our marking suite expects, there are t
 
 * A public test suite that you will have complete access to.  You are allowed to run this as many times as you want and are encouraged to add your own integration tests to the suite if you want to 'guess' the kinds of tests we will try in the private suite. We will automatically provision this for your team in Github.
 
-* A private test suite, that you will not have source-level access to. You will be able to request to run it against your implementation every 12h by submitting a command to Github; full details will be available in the [AutoTest](Autotest.md) documentation.
+* A private test suite, that you will not have source-level access to. You will be able to request to run it against your implementation every 12h by invoking the ```@CPSC310bot``` Github bot; full details will be available in the [AutoTest](AutoTest.md) documentation.
 
 ## Getting started
 
