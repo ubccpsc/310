@@ -64,21 +64,22 @@ The goal of the deliverable is to build the backend to reply to query about the 
 ```
 QUERY  ::='{' PREAMBLE ', ' QUERYBODY ', ' POSTAMBLE '}'
 
-PREAMBLE ::= 'GET: [' string (',' string)* ']'
+PREAMBLE ::= 'GET: [' key (',' key)* ']'
 QUERYBODY ::= 'WHERE:'  FILTER 
-POSTAMBLE ::= ('ORDER:' string ', ')? 'AS: TABLE'
+POSTAMBLE ::= ('ORDER:' key ', ')? 'AS: TABLE'
 
 LOGIC ::= 'AND' | 'OR' 
 MCOMPARATOR ::= 'LT' | 'GT' | 'EQ' 
 
 LOGICCOMPARISON ::= LOGIC ':[{' FILTER ('}, {' FILTER )* '}]'  
-MCOMPARISON ::= MCOMPARATOR ':{' string ':' number '}'  
-SCOMPARISON ::= 'IS:{' string ':' [*]? string [*]? '}'  
+MCOMPARISON ::= MCOMPARATOR ':{' key ':' number '}'  
+SCOMPARISON ::= 'IS:{' key ':' [*]? string [*]? '}'  
 NEGATION ::= 'NOT :{' FILTER '}'
 
 FILTER ::= (LOGICCOMPARISON | MCOMPARISON | SCOMPARISON | NEGATION)
 VIEW ::= 'TABLE'  
 
+key ::= string '_' string
 string ::= [a-zA-Z0-9,_-]+  
 number ::= [1-9]*[0-9]+ ('.' [0-9]+ )?
 ```
