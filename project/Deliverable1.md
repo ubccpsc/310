@@ -86,7 +86,7 @@ number ::= [1-9]*[0-9]+ ('.' [0-9]+ )?
 
 ### PREAMBLE
 
-```'GET': [ key* ]``` // specify the columns in the final query as an array of strings
+```'GET': [ key* ]``` // specify the columns and their order in the final query as an array of strings
 
 
 ### POSTAMBLE
