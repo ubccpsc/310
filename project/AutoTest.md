@@ -46,3 +46,6 @@ We will monitor test suite executions and will re-order the suites from time to 
 
 Your final deliverable will always be the state of your repository at the deadline, regardless of when your final submission to the AutoTest suite took place.
 
+
+---
+![] (../readings/figures/CCSA.png "Creative Commons: Attribution-ShareAlike") Reid Holmes

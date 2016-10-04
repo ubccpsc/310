@@ -117,3 +117,7 @@ describe and motivate the highest priority features from the product backlog for
 * [Why](http://spectrum.ieee.org/computing/software/why-software-fails) software fails article.
 
 * [Jim Cordy's](http://research.cs.queensu.ca/home/cordy/cisc327/327%20Lecture%202%20Fall%202016.pdf) slides on software processes.
+
+
+---
+![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") Reid Holmes

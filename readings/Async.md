@@ -122,7 +122,11 @@ When working with promises it is _strongly_ encouraged that you end every ```the
 
 * While promises seem really fancy, [how they are implemented](http://www.mattgreer.org/articles/promises-in-wicked-detail/) is relatively straightforward (or even more [straighforward](https://www.promisejs.org/implementing/)).
 
-* Sencha also haso   a nice [promise intro](https://www.sencha.com/blog/asynchronous-javascript-promises/).
+* Sencha also has a nice [promise intro](https://www.sencha.com/blog/asynchronous-javascript-promises/).
+
+
+---
+![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") Reid Holmes
 
 
 
