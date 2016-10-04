@@ -86,6 +86,8 @@ fs.readdir(source).then(function(files) {
 
 Promises can only have three states, _pending_ before it is done its task, _fulfilled_ if the task has completed successfully, and _rejected_ if the task has completed erroneously. Promises can only transition to _fulfilled_ or _rejected_ once and cannot change between _fulfilled_ and _rejected_; this process is called _settling_. [HTML5Rocks](http://www.html5rocks.com/en/tutorials/es6/promises/) has an extremely through walkthrough of promises where you can see how many of its features are used in practice.
 
+<img src="./figures/promise-states.png" width="512px" alt="promise states">
+
 At their core, promises are objects with two methods ```then``` and ```catch```. ```then``` is called when the promise is settled successfully while ```catch``` is called when the promise is settled with an error. These methods both themselves return promises enabling them to be chained as in the example above (three ```then``` functions called in sequence). It is important to note that there can also be multiple ```catch``` statements (e.g., in a 5 step flow you could catch after the first two, fix the problem, and then continue the flow while still having a final catch at the end).
 
 One nice feature of Promises is that they are able to be composed; this is especially helpful when you are trying to manage multiple concurrent promise executions in parallel. This is the explicit goal of ```Promise.all```:
@@ -116,11 +118,11 @@ When working with promises it is _strongly_ encouraged that you end every ```the
 
 * Article about the event loop that includes some detail about [closures](http://blog.carbonfive.com/2013/10/27/the-javascript-event-loop-explained/).
 
-* A collection of promise use cases can be found [here](http://exploringjs.com/es6/ch_promises.html). 
+* A collection of promise use cases can be found [here](http://exploringjs.com/es6/ch_promises.html) and [further examples](https://www.promisejs.org/patterns/). 
 
-* While promises seem really fancy, [how they are implemented](http://www.mattgreer.org/articles/promises-in-wicked-detail/) is relatively straightforward.
+* While promises seem really fancy, [how they are implemented](http://www.mattgreer.org/articles/promises-in-wicked-detail/) is relatively straightforward (or even more [straighforward](https://www.promisejs.org/implementing/)).
 
-* Sencha also ha a nice [promise intro](https://www.sencha.com/blog/asynchronous-javascript-promises/).
+* Sencha also haso   a nice [promise intro](https://www.sencha.com/blog/asynchronous-javascript-promises/).
 
 
 
