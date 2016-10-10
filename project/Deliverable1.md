@@ -84,6 +84,8 @@ string ::= [a-zA-Z0-9,_-]+
 number ::= [1-9]*[0-9]+ ('.' [0-9]+ )?
 ```
 
+An [alternate representation](Deliverable1_EBNF.xhtml) of the EBNF is also available.
+
 ### PREAMBLE
 
 ```'GET': [ key* ]``` // specify the columns and their order in the final query as an array of strings
