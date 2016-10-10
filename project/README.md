@@ -16,13 +16,13 @@ If you are registered in the class, please do not form a team with students on t
 
 ## Deliverables
 
-1. [Deliverable 1](Deliverable1.md) (Due October 3 @ noon)
+1. [Deliverable 1](Deliverable1.md) (Due October 10 @ noon)
 
 1. [Deliverable 2](Deliverable2.md) (Due October 24 @ noon)
 
-1. [Deliverable 3](Deliverable3.md) (Due November 7 @ noon)
+1. [Deliverable 3](Deliverable3.md) (Due November 14 @ noon)
 
-1. [Deliverable 4](Deliverable4.md) (Due November 28 @ noon)
+1. [Deliverable 4](Deliverable4.md) (Due December 5 @ noon)
 
 ## Language and environment
 
@@ -66,7 +66,9 @@ The weighting of these criteria will vary from deliverable to deliverable. The b
 
 You do not need to submit your code; we will automatically pull your code at the due date and run the tests against it. The state of your main branch at the moment the deliverable is due is your responsibility.
 
-The oral questions will assign individual marks to each teammate to make sure both teammates have a clear understanding of how the system works at a high level (the major components, data structures, design decisions, and algorithms). Each team member should also be able to clearly describe their individual technical contributions to the deliverable. The answers to the oral questions will be used as a scaling factor on your AutoTest score (e.g., if you get 80% from AutoTest and 50% from the oral questions because it was clear you did not contribute effectively to the deliverable, your deliverable grade would be 40%). These oral questions will take place in labs the week the deliverable was due; if you do not attend this lab, you could receive 0% for the deliverable.
+The oral questions will assign individual marks to each teammate to make sure both teammates have a clear understanding of how the system works at a high level (the major components, data structures, design decisions, and algorithms). Each team member should also be able to clearly describe their individual technical contributions to the deliverable. The answers to the oral questions will be used as a scaling factor on your AutoTest score (e.g., if you get 80% from AutoTest and 50% from the oral questions because it was clear you did not contribute effectively to the deliverable, your deliverable grade would be 40%). 
+
+These oral questions will take place in labs the week the deliverable was due; if you do not attend this lab, you could receive 0% for the deliverable. Being an effective teammate involves both technical contribution and teamwork; if one team member 'shuts out' the other from contributing to the project, this can also have a detrimental influence on your multiplier. Teammates should be courteous to one another by keeping open lines of communication, and by pulling their weight while ensuring that others have the opportunity to pull theirs too.
 
 Each deliverable will be worth 10% of your final grade. Attendance will be tracked in each lab and will be worth up to 10% of your final grade. Finally, your final project will be executed against the private test suite from all four deliverables; this will be worth 10% of your final grade.
 
