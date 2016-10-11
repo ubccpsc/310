@@ -180,3 +180,6 @@ This deliverable will have a slight change in assessment. The AutoTest suite wil
 
 There will not be a public test suite for this deliverable, ```InsightFacadeSpec.ts``` takes this role. The private suite should be released in a few days, we will make a post to Piazza when it is ready.
 
+### Getting started
+
+Regardless of how you did on D1, you are strongly advised to start with the ```InsightFacade``` refactor. This will make it so your code is easier to test. Next, write some tests for some D1 queries and make sure your system works. If you did not complete D1 this is especially important and is a better use of your time than continuing to work on D1 directly. Finally, work on GROUP and APPLY and their associated tests.
