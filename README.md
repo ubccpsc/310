@@ -26,7 +26,7 @@ Some of the topics we will cover in 310 this term include:
 
 ## Contact
 
-#### Instructor: [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
+#### Instructor: [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/) Office hours 930-1030 ICCS 308.
 
 #### TAs:
 
@@ -65,6 +65,7 @@ This list is a rough guide only. Readings will likely be updated even after clas
 | Nov 17      | Class *might* be cancelled                  | TBD   |
 | Nov 24      | Information Security                        | TBD   |
 | Dec 1       | Wrap-up                                     | TBD   |
+| Dec 9       | Final Exam 1200-1420                        | Location TBD   |
 
 #### Labs:
 
