@@ -3,28 +3,15 @@
 # UBC CPSC 310 - Software Engineering
 September 8, 2016 -> December 1, 2016 (```2016T1```)
 
-## Third Lecture
-
-* You should be able to see your project repo and public repo in the [Github org](https://github.com/orgs/CS310-2016Fall/). If you can't it is because you either have not signed up fully on ClassPortal (aka with two team mates both of whom have signed in) or because you have not accepted an email from GitHub.
-
-* If you don't have a group yet, you must organize one this week. Sign up on [ClassPortal](http://skaha.cs.ubc.ca:8020); please use a non-mobile version of Chrome, Firefox, or Edge (we're working on it). 
-
-
 ## Waitlist: [See Here](#waitlist)
 
 ### Course details still in flux; expect to encounter inconsistencies in these materials.
-
-Before the first class (whether you are on the waitlist or are registered):
-
-* Make sure you have a Github account
-* Please go over the Sept 8 reading and project documents 
-* Bring your laptop to class (it will not always be needed, but will be helpful the first class)
 
 ## Overview
 
 The world runs on software and CPSC 310 is all about taking the skills and knowledge you learned in [CPSC 210](https://sites.google.com/site/ubccpsc210/) (Software Construction) and extending your abilities to design and build non-trivial software systems. The course will involve a significant challenging project that we will start working on in the first lecture and will continue to evolve until the last week of class; do not underestimate the engineering effort this project will require.
 
-Classes will be highly interactive and will involve working with your project partner (and sometimes teaming up with other groups as well). Each module will have reading materials posted online (rather than slides); most of the in-class material will be designed to support the readings, not replace them, and will not be available electronically. The readings should be done *before* class or the in-class discussion and activities may not make sense.
+Classes will be highly interactive and will involve working with your project partner (and sometimes teaming up with other groups as well). Each module will have reading materials posted online (rather than slides); most of the in-class material will be designed to support the readings, not replace them, and will not be available electronically. The readings will contain the core content we will discuss in class but will not contain the concrete hands-on activities, you will need to come to class to participate in the activities for them to be beneficial.
 
 We have chosen to take a reading-based approach for this class instead of a slide-based approach to enable more class time to be available for hands-on activities while still providing a comprehensive reference of the background materials for the course. 
 
