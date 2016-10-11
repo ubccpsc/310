@@ -83,7 +83,7 @@ Here is some further clarification about the EBNF that might be helpful for vali
 
 * ```APPLY``` enables the above listed computations on a group. The result of an ```APPLY``` should be a record containing the ```GROUP``` terms, and the terms defined by the ```APPLY```. ```MAX/MIN/AVG``` should only be requested of numeric keys, while ```COUNT``` just counts the number of rows in the group.
 
-* ```ORDER``` matches on multiple fields; these are read from first to last (e.g., ```ORDER: {dir: 'up', keys: ['courses_dept', 'courses_id`]}``` will first sort on ```courses_dept``` and only use ```courses_id``` to break ties (e.g., to order courses that are all from within the same department). ```ORDER``` terms can also be terms defined in the ```APPLY``` block. Ordering should be according to the ```<``` operator in TypeScript/JavaScript, not by ```localeCompare``` or the default ```sort()``` implementation.
+* ```ORDER``` matches on multiple fields; these are read from first to last (e.g., ```ORDER: {dir: 'up', keys: ['courses_dept', 'courses_id`]}``` will first sort on ```courses_dept``` and only use ```courses_id``` to break ties (e.g., to order courses that are all from within the same department). ```ORDER``` terms can also be terms defined in the ```APPLY``` block. Ordering should be according to the ```<``` operator in TypeScript/JavaScript, not by ```localeCompare``` or the default ```sort()``` implementation. Note: This ```ORDER``` format is different than in D1 (which just accepted a single string); your implementation should support both D1 and D2 syntax for the ```ORDER``` element.
 
 * ```WHERE``` is completely independent of ```GROUP```/```APPLY```; your solution should not need to change, except to add support for ```courses_uuid```.
 
@@ -180,3 +180,6 @@ This deliverable will have a slight change in assessment. The AutoTest suite wil
 
 There will not be a public test suite for this deliverable, ```InsightFacadeSpec.ts``` takes this role. The private suite should be released in a few days, we will make a post to Piazza when it is ready.
 
+### Getting started
+
+Regardless of how you did on D1, you are strongly advised to start with the ```InsightFacade``` refactor. This will make it so your code is easier to test. Next, write some tests for some D1 queries and make sure your system works. If you did not complete D1 this is especially important and is a better use of your time than continuing to work on D1 directly. Finally, work on GROUP and APPLY and their associated tests.
