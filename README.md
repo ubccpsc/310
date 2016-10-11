@@ -69,7 +69,7 @@ This list is a rough guide only. Readings will likely be updated even after clas
 | Sept 15     | Languages & Testing                         | [Programming Languages](readings/Languages.md), [Testing/Testability](readings/Testing.md), [AutoTest](project/AutoTest.md) |
 | Sept 22     | Assertions, APIs, REST, & Async             | [APIs & REST](readings/API.md), [Async](readings/Async.md) |
 | Sept 29     | Process, Agile (with Greg Smolyn)           | [Process](readings/Process.md)   |
-| Oct 6       | Specifications                              | TBD   |
+| Oct 6       | Specifications                              | [Specifications](readings/Specifications.md)   |
 | Oct 13      | Cloud Guest & Technical Communication       | TBD   |
 | Oct 20      | Design                                      | TBD   |
 | Oct 27      | Design                                      | TBD   |
