@@ -66,7 +66,7 @@ string ::= [a-zA-Z0-9,_-]+
 number ::= [1-9]*[0-9]+ ('.' [0-9]+ )?
 
 
-GROUP ::= '[' string+ ']'                                                        /* new */
+GROUP ::= '[' key+ ']'                                                           /* new */
 APPLY ::= '[' (string ': {' APPLYTOKEN ':' key '}')+ ']'                         /* new */
 APPLYTOKEN ::= 'MAX' | 'MIN' | 'AVG' | 'COUNT'                                   /* new */
 ```
