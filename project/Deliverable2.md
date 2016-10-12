@@ -67,7 +67,7 @@ number ::= [1-9]*[0-9]+ ('.' [0-9]+ )?
 
 
 GROUP ::= '[' key+ '],'                                                          /* new */
-APPLY ::= '[' (string ': {' APPLYTOKEN ':' key '}')+ '],'                        /* new */
+APPLY ::= '[' ( '{' string ': {' APPLYTOKEN ':' key '}}' )+ '],'                 /* new */
 APPLYTOKEN ::= 'MAX' | 'MIN' | 'AVG' | 'COUNT'                                   /* new */
 ```
 
