@@ -44,10 +44,10 @@ QUERY  ::='{' PREAMBLE ', ' QUERYBODY ', ' POSTAMBLE '}'
 
 PREAMBLE ::= 'GET: [' string (',' string)* ']'                                   /* updated */
 QUERYBODY ::= 'WHERE:'  FILTER | '{}'                                            /* updated */
-POSTAMBLE ::= SORT? VIEW                                                         /* updated */
+POSTAMBLE ::= GROUP? APLLY? SORT? VIEW                                           /* updated */
 
 
-SORT ::= 'ORDER: { dir:'  DIRECTION ', keys  : [ ' string (',' string)* ']}'     /* new */
+SORT ::= 'ORDER: { dir:'  DIRECTION ', keys  : [ ' string (',' string)* ']},'    /* new */
 DIRECTION ::= 'UP' | 'DOWN'                                                      /* new */
 VIEW ::= 'AS: TABLE'                                                             /* new */
 
@@ -66,8 +66,8 @@ string ::= [a-zA-Z0-9,_-]+
 number ::= [1-9]*[0-9]+ ('.' [0-9]+ )?
 
 
-GROUP ::= '[' key+ ']'                                                           /* new */
-APPLY ::= '[' (string ': {' APPLYTOKEN ':' key '}')+ ']'                         /* new */
+GROUP ::= '[' key+ '],'                                                          /* new */
+APPLY ::= '[' (string ': {' APPLYTOKEN ':' key '}')+ '],'                        /* new */
 APPLYTOKEN ::= 'MAX' | 'MIN' | 'AVG' | 'COUNT'                                   /* new */
 ```
 
@@ -108,7 +108,8 @@ Here is some further clarification about the EBNF that might be helpful for vali
   	"WHERE": {},
   	"GROUP": [ "courses_dept", "courses_id" ],
   	"APPLY": [ {"courseAverage": {"AVG": "courses_avg"}}, {"maxFail": {"MAX": "courses_fail"}} ],
-  	"ORDER": { "dir": "UP", "keys": ["courseAverage", "maxFail", "course_dept", "courses_id"]}
+  	"ORDER": { "dir": "UP", "keys": ["courseAverage", "maxFail", "course_dept", "courses_id"]},
+   "AS":"TABLE"
 }
 
 # Find the courses offered the most times
@@ -117,7 +118,8 @@ Here is some further clarification about the EBNF that might be helpful for vali
   	"WHERE": {},
   	"GROUP": [ "courses_dept", "courses_id" ],
   	"APPLY": [ {"numSections": {"COUNT": "courses_uuid"}} ],
-  	"ORDER": { "dir": 'UP', "keys": ["numSections", "courses_dept", "courses_id"]}
+  	"ORDER": { "dir": 'UP', "keys": ["numSections", "courses_dept", "courses_id"]},
+   "AS":"TABLE"
 }
 ```
 
