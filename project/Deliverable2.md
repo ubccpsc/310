@@ -44,7 +44,7 @@ QUERY  ::='{' PREAMBLE ', ' QUERYBODY ', ' POSTAMBLE '}'
 
 PREAMBLE ::= 'GET: [' string (',' string)* ']'                                   /* updated */
 QUERYBODY ::= 'WHERE:'  FILTER | '{}'                                            /* updated */
-POSTAMBLE ::= GROUP? APLLY? SORT? VIEW                                           /* updated */
+POSTAMBLE ::= GROUP? APPLY? SORT? VIEW                                           /* updated */
 
 
 SORT ::= 'ORDER: { dir:'  DIRECTION ', keys  : [ ' string (',' string)* ']},'    /* new */
