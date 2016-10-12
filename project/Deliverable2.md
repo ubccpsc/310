@@ -42,7 +42,7 @@ The primary objective of this deliverable is to extend the [query language](Deli
 ```
 QUERY  ::='{' PREAMBLE ', ' QUERYBODY ', ' POSTAMBLE '}'
 
-PREAMBLE ::= 'GET: [' key (',' key)* ']'
+PREAMBLE ::= 'GET: [' string (',' string)* ']'                                   /* updated */
 QUERYBODY ::= 'WHERE:'  FILTER | '{}'                                            /* updated */
 POSTAMBLE ::= SORT? VIEW                                                         /* updated */
 
