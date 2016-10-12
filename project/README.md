@@ -70,27 +70,29 @@ The oral questions will assign individual marks to each teammate to make sure bo
 
 These oral questions will take place in labs the week the deliverable was due; if you do not attend this lab, you could receive 0% for the deliverable. Being an effective teammate involves both technical contribution and teamwork; if one team member 'shuts out' the other from contributing to the project, this can also have a detrimental influence on your multiplier. Teammates should be courteous to one another by keeping open lines of communication, and by pulling their weight while ensuring that others have the opportunity to pull theirs too.
 
-Each deliverable will be worth 10% of your final grade. Attendance will be tracked in each lab and will be worth up to 10% of your final grade. Finally, your final project will be executed against the private test suite from all four deliverables; this will be worth 10% of your final grade.
+Each deliverable will be worth 10% of your final grade. Attendance will be tracked in each lab and will be worth up to 10% of your final grade. Finally, your final project will be executed against the private test suite from all deliverables we run AutoTest against (to check for regressions from prior deliverables).
+
+* Deliverable 1: 10%
+* Deliverable 2: 10%
+* Deliverable 3: 10%
+* Deliverable 4: 10%
+* Final AutoTest: 10%
+* Lab attendance: 10%
 
 We will be running [Measure of software similarity (MOSS)](https://theory.stanford.edu/~aiken/moss/) on all deliverable submissions. Any projects that contain code derived from other projects that we have not provided will receive 0% on that deliverable.
 
 
 ## Labs
 
-Lab attendance is mandatory for both team members each week as you will be meeting with the TAs to have a scrum meeting and to discuss your progress (10% / 12 labs === ~0.8% / lab).
+Lab attendance is mandatory for both team members each week as you will be meeting with the TAs to have a scrum meeting and to discuss your progress (10% / 12 labs === ~0.8% / lab). You must specify your project group by the end of the second lab. Both team members must sign into [ClassPortal](http://skaha.cs.ubc.ca:8020) to register their Github users. IMPORTANT: both team mates must be registered in the course and registered in the same lab section.
 
-### First lab
+* ***First Lab:*** Since we won't have projects fully configured yet, the first lab will be more directed than the others this term. Full details can be found in [Lab1.md](Lab1.md).
 
-Since we won't have projects fully configured yet, the first lab will be more directed than the others this term. Full details can be found in [Lab1.md](Lab1.md).
+* ***Subsequent labs:*** Full details about what to do in each lab after the first week can be found in [LabN.md](LabN.md).
 
-### Subsequent labs
-
-You must specify your project group by the end of the second lab. Both team members must sign into [ClassPortal](http://skaha.cs.ubc.ca:8020) to register their Github users. IMPORTANT: both team mates must be registered in the course and registered in the same lab section.
-
-Full details about what to do in each lab after the first week can be found in [LabN.md](LabN.md).
-
+<!--
 ## Bootstrap implementation
 
 We have created a bootstrap project for you but you will not be able to access it until during the second week of labs, after you have specified your project team. Once the project is configured, Github should send you email inviting you to your team's repository.
-
+-->
 
