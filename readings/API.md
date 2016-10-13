@@ -28,7 +28,9 @@ Many popular libraries have great APIs. While the [JDK](https://docs.oracle.com/
 
 [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) is an architectural style heavily used in web-based systems for providing services between different systems (and interfaces).  REST defines a means of connecting systems together that focuses on their interfaces rather than their implementations. In this way, REST provides a language to define a specific kind of APIs for communicating across a network. REST services are transported over the network using the [HTTP protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol).
 
+<!---
 TODO: topology figure (browser/server, app/server, server/server).
+--->
 
 REST services define their resources using uniform resource identifiers (URIs). URIs differ from URLs in that a URI does not define its network location and access mechanism (e.g., ```/dataset``` is a URI while ```http://foo.com/dataset``` is a URL).
 
