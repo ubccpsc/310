@@ -1,3 +1,4 @@
+<!--- Split APIs and REST into different readings, add API design principles --->
 # API
 
 Application Programming Interfaces (API) describe the programmatic interfaces used for interacting with a software system. APIs can exist on many levels, from the method to class to online service. The primary purpose of APIs are to hide implementation details from the API consumer. This makes a system easier to use and enables the API owner to change their underlying implementation without affecting any API clients. 
