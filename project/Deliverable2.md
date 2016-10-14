@@ -19,7 +19,7 @@ The [REST endpoints](Deliverable1.md#rest-endpoints) for this deliverable are un
 
 There is one addition to the [valid keys](Deliverable1.md#valid-keys) from Deliverable 1.
 
-* **courses_uuid**: ```number``` This is the unique id of a class offering. 
+* **courses_uuid**: ```string``` This is the unique id of a class offering. 
 
 This is unfortunately confusing, but cannot be helped given the data source we already have. You can assume that the ```id``` field in each record in the ```courses``` dataset can be mapped to ```courses_uuid```. Just to be clear, this is _not_ ```courses_id``` which you mapped from the ```Course``` field.
 
