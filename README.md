@@ -57,10 +57,10 @@ This list is a rough guide only. Readings will likely be updated even after clas
 | Sept 22     | Assertions, APIs, REST, & Async             | [APIs & REST](readings/API.md), [Async](readings/Async.md) |
 | Sept 29     | Process, Agile (with Greg Smolyn)           | [Process](readings/Process.md)   |
 | Oct 6       | Specifications                              | [Specifications](readings/Specifications.md)   |
-| Oct 13      | Cloud Guest & Technical Communication       | TBD   |
-| Oct 20      | Design                                      | TBD   |
-| Oct 27      | Design                                      | TBD   |
-| Nov 3       | Design                                      | TBD   |
+| Oct 13      | Cloud Guest & Technical Abstractions        | TBD   |
+| Oct 20      | Technical Abstractions & Design Principles  | TBD   |
+| Oct 27      | Design Patterns & Midterm                   | TBD   |
+| Nov 3       | Design Patterns                             | TBD   |
 | Nov 10      | Refactoring & Tradeoffs                     | TBD   |
 | Nov 17      | Class *might* be cancelled                  | TBD   |
 | Nov 24      | Information Security                        | TBD   |
