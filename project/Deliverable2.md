@@ -62,9 +62,6 @@ NEGATION ::= 'NOT :{' FILTER '}'
 FILTER ::= (LOGICCOMPARISON | MCOMPARISON | SCOMPARISON | NEGATION) 
 
 key ::= string '_' string
-string ::= [a-zA-Z0-9,_-]+  
-number ::= [1-9]*[0-9]+ ('.' [0-9]+ )?
-
 
 GROUP ::= '[' key+ '],'                                                          /* new */
 APPLY ::= '[' ( '{' string ': {' APPLYTOKEN ':' key '}}' )+ '],'                 /* new */
@@ -72,6 +69,8 @@ APPLYTOKEN ::= 'MAX' | 'MIN' | 'AVG' | 'COUNT'                                  
 ```
 
 Here is some further clarification about the EBNF that might be helpful for validating and answering queries:
+
+* ```number``` and ```string``` are valid JavaScript ```number```/```string``` values. Note, some ```string```s require escaping if you are using them as keys in JSON. 
 
 * An empty (```{}```) ```WHERE``` clause signals that all rows should be returned.
 
