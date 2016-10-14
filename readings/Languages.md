@@ -69,6 +69,10 @@ isSplit(input) {
 
 In these examples we can see that there are far more commonalities between these methods than differences. JavaScript is an untyped language, Java is a strongly typed language, and TypeScript augments JavaScript with type checking; even with these large underlying differences their syntax (and in this case even semantics) are nearly identical.
 
+### References
+
+* Gerald Sussman's [role of programming](https://www.youtube.com/watch?v=arMH5GjBwUQ) talk.
+
 
 ---
 ![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") Reid Holmes

@@ -36,7 +36,7 @@ It is only by convention that ```err``` is passed first; this depends on the dev
 
 This problem becomes harder to manage one callbacks depend on the output of previous callback functions; this is extremely common (e.g., read a directory list (async) and then read a specific file (async)). This pattern arrises from our natural desire to want the apparent execution to proceed from top-to-bottom in the source code file. This style of error handling is much like you would see in C code where return values were checked for error statuses (instead of the error being in a function param). One significant problem with callback-based error handling is that exceptions cannot be effectively caught. That is, since the callback is not being executed in the context of its originating function there is no 'parent' method for the catch to exist in. More details and tips about this can be found [here](https://ruben.verborgh.org/blog/2012/12/31/asynchronous-error-handling-in-javascript/). Nested callbacks are often referred to as [callback hell](http://callbackhell.com/).
 
-```
+```javascript
 fs.readdir(source, function (err, files) {
   	if (err) {
     	// handle
@@ -69,7 +69,7 @@ fs.readdir(source, function (err, files) {
 
 Although promises do enable try/catch to work properly, they do not provide any functionality that would not be possible with callbacks alone. Their main benefit is that they are easier for developers to read and understand making it more likely that developers will 'do the right thing' in these often-complex program sequences. Adapting the callback example from above, a promise-ified version would look like:
 
-```
+```typescript
 var file = null;
 fs.readdir(source).then(function(files) {
 	file = files[0];
@@ -92,7 +92,7 @@ At their core, promises are objects with two methods ```then``` and ```catch```.
 
 One nice feature of Promises is that they are able to be composed; this is especially helpful when you are trying to manage multiple concurrent promise executions in parallel. This is the explicit goal of ```Promise.all```:
 
-```
+```typescript
 let processList:GroupRepoDescription[] = [];
 for (var toProcess of completeGroups) {
 	processList.push(<any>gpc.getStats("CS310-2016Fall", toProcess.name)); // getStats is async
