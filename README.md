@@ -4,6 +4,10 @@
 
 * [2016 September](https://github.com/ubccpsc/310/tree/2016sept)
 
+## Upcoming Term
+
+* [2017 January](https://github.com/ubccpsc/310/tree/2017jan)
+
 ### Past Terms
 
 * [2016 January](https://sites.google.com/site/cpsc3102015w1/)
