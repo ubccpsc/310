@@ -22,7 +22,7 @@ TODO: EXAMPLE
 
 Two common problems manifest with callbacks in practice. First, handling errors is difficult because callbacks are invoked but they do not _return_ a value. This means any information about the execution of the function making the callback must take place in the parameters. Node-based JavaScript addresses this with the [error-first](http://fredkschott.com/post/2014/03/understanding-error-first-callbacks-in-node-js/) idiom. For example:
 
-```
+```javascript
 fs.readFile('/cpsc310.csv', function(err, data) {
 	if (err) {
 	   // handle
