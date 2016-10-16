@@ -64,7 +64,7 @@ FILTER ::= (LOGICCOMPARISON | MCOMPARISON | SCOMPARISON | NEGATION)
 key ::= string '_' string
 
 GROUP ::= '[' key+ '],'                                                          /* new */
-APPLY ::= '[' ( '{' string ': {' APPLYTOKEN ':' key '}}' )+ '],'                 /* new */
+APPLY ::= '[' ( '{' string ': {' APPLYTOKEN ':' key '}}' )* '],'                 /* new */
 APPLYTOKEN ::= 'MAX' | 'MIN' | 'AVG' | 'COUNT'                                   /* new */
 ```
 
