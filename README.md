@@ -57,9 +57,9 @@ This list is a rough guide only. Readings will likely be updated even after clas
 | Sept 8      | Course & Project Intro                      | [Syllabus](README.md), [Introduction](readings/Introduction.md), [Project Description](project/README.md) |
 | Sept 15     | Languages & Testing                         | [Programming Languages](readings/Languages.md), [Testing/Testability](readings/Testing.md), [AutoTest](project/AutoTest.md) |
 | Sept 22     | Assertions, APIs, REST, & Async             | [APIs & REST](readings/API.md), [Async](readings/Async.md) |
-| Sept 29     | Process, Agile (with Greg Smolyn)           | [Process](readings/Process.md)   |
-| Oct 6       | Specifications                              | [Specifications](readings/Specifications.md)   |
-| Oct 13      | Cloud Guest & Technical Abstractions        | TBD   |
+| Sept 29     | Process, Agile (with Greg Smolyn)           | [Process](readings/Process.md) |
+| Oct 6       | Specifications                              | [Specifications](readings/Specifications.md) |
+| Oct 13      | Cloud Guest & Abstraction                   | [Abstraction](readings/Abstraction.md) |
 | Oct 20      | Technical Abstractions & Design Principles  | TBD   |
 | Oct 27      | Design Patterns & Midterm                   | TBD   |
 | Nov 3       | Design Patterns                             | TBD   |
@@ -67,7 +67,7 @@ This list is a rough guide only. Readings will likely be updated even after clas
 | Nov 17      | Class *might* be cancelled                  | TBD   |
 | Nov 24      | Information Security                        | TBD   |
 | Dec 1       | Wrap-up                                     | TBD   |
-| Dec 9       | Final Exam 1200-1420                        | Location TBD   |
+| Dec 9       | Final Exam 1200-1420                        | Location TBD |
 
 
 ## Project
