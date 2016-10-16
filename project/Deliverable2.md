@@ -107,7 +107,7 @@ Here is some further clarification about the EBNF that might be helpful for vali
   	"WHERE": {},
   	"GROUP": [ "courses_dept", "courses_id" ],
   	"APPLY": [ {"courseAverage": {"AVG": "courses_avg"}}, {"maxFail": {"MAX": "courses_fail"}} ],
-  	"ORDER": { "dir": "UP", "keys": ["courseAverage", "maxFail", "course_dept", "courses_id"]},
+  	"ORDER": { "dir": "UP", "keys": ["courseAverage", "maxFail", "courses_dept", "courses_id"]},
     "AS":"TABLE"
 }
 
@@ -117,7 +117,7 @@ Here is some further clarification about the EBNF that might be helpful for vali
   	"WHERE": {},
   	"GROUP": [ "courses_dept", "courses_id" ],
   	"APPLY": [ {"numSections": {"COUNT": "courses_uuid"}} ],
-  	"ORDER": { "dir": 'UP', "keys": ["numSections", "courses_dept", "courses_id"]},
+  	"ORDER": { "dir": "UP", "keys": ["numSections", "courses_dept", "courses_id"]},
     "AS":"TABLE"
 }
 ```

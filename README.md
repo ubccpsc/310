@@ -46,39 +46,29 @@ Some of the topics we will cover in 310 this term include:
 
 ## Schedule
 
-#### Labs:
-
-| Lab Section | Time           | Room        | TAs                   |
-| :--         |:--             | :--         |:--                    |
-| L1A         | Fri; 1400-1600 | ICICS 008   |TBD                    |
-| L1B         | Wed; 1100-1300 | ICICS 008   |TBD                    |
-| L1C         | Wed; 1500-1700 | ICICS 008   |NOTE: Likely Cancelled |
-| L1D         | Wed; 1300-1500 | ICICS 008   |TBD                    |
-| L1E         | Tue; 1700-1900 | ICICS 008   |TBD                    |
-| L1F         | Th; 1400-1600  | ICICS X350  |TBD                    |
-| L1G         | Th; 1030-1230  | ICICS 008   |TBD                    |
-
 #### Lecture: 
 
-Thursday 1700-2000, [PHARM 1101](https://www.google.ca/maps/place/UBC+Faculty+of+Pharmaceutical+Sciences/@49.2615914,-123.2486782,17z/data=!4m21!1m15!4m14!1m6!1m2!1s0x548672cbc595e6a1:0xab34e40e58012409!2sICICS+Computer+Science,+2366+Main+Mall,+Vancouver,+BC+V6T+1Z4!2m2!1d-123.2488201!2d49.2611817!1m6!1m2!1s0x548672c8e6d17b6b:0x2f4024c0ac3282d9!2sUBC+Faculty+of+Pharmaceutical+Sciences,+Pharmaceutical+Sciences+Building,+Wesbrook+Mall,+Vancouver,+BC+V6T+1Z3!2m2!1d-123.243277!2d49.262386!3m4!1s0x0000000000000000:0x2f4024c0ac3282d9!8m2!3d49.2623861!4d-123.2432771)
+Thursdays 1700-2000, [PHARM 1101](https://www.google.ca/maps/place/UBC+Faculty+of+Pharmaceutical+Sciences/@49.2615914,-123.2486782,17z/data=!4m21!1m15!4m14!1m6!1m2!1s0x548672cbc595e6a1:0xab34e40e58012409!2sICICS+Computer+Science,+2366+Main+Mall,+Vancouver,+BC+V6T+1Z4!2m2!1d-123.2488201!2d49.2611817!1m6!1m2!1s0x548672c8e6d17b6b:0x2f4024c0ac3282d9!2sUBC+Faculty+of+Pharmaceutical+Sciences,+Pharmaceutical+Sciences+Building,+Wesbrook+Mall,+Vancouver,+BC+V6T+1Z3!2m2!1d-123.243277!2d49.262386!3m4!1s0x0000000000000000:0x2f4024c0ac3282d9!8m2!3d49.2623861!4d-123.2432771)
 
-This list is a rough guide only. It will be accurate for the current week 48h before each lecture (e.g., by 5pm on Tuesday).
+This list is a rough guide only. Readings will likely be updated even after class has completed.
 
-| Date        | Topic                         | Reading |
-| :--         |:--                            | :-- |
-| Sept 8      | Course & Project Intro        | [Syllabus](README.md), [Introduction](reading/Introduction.md), [Project Description](project/README.md) |
-| Sept 15     | Rest & Testability            | REST, Testability, [AutoTest](project/AutoTest.md) |
-| Sept 22     | Asyc & More                   | TBD   |
-| Sept 29     | Agile & User Stories          | TBD   |
-| Oct 6       | Specifications                | TBD   |
-| Oct 13      | Technical Communication       | TBD   |
-| Oct 20      | Design                        | TBD   |
-| Oct 27      | Design                        | TBD   |
-| Nov 3       | Design                        | TBD   |
-| Nov 10      | Refactoring & Tradeoffs       | TBD   |
-| Nov 17      | Class *might* be cancelled    | TBD   |
-| Nov 24      | Information Security          | TBD   |
-| Dec 1       | Wrap-up                       | TBD   |
+| Date        | Topic                                       | Readings |
+| :--         |:--                                          | :--      |
+| Sept 8      | Course & Project Intro                      | [Syllabus](README.md), [Introduction](readings/Introduction.md), [Project Description](project/README.md) |
+| Sept 15     | Languages & Testing                         | [Programming Languages](readings/Languages.md), [Testing/Testability](readings/Testing.md), [AutoTest](project/AutoTest.md) |
+| Sept 22     | Assertions, APIs, REST, & Async             | [APIs & REST](readings/API.md), [Async](readings/Async.md) |
+| Sept 29     | Process, Agile (with Greg Smolyn)           | [Process](readings/Process.md)   |
+| Oct 6       | Specifications                              | [Specifications](readings/Specifications.md)   |
+| Oct 13      | Cloud Guest & Technical Abstractions        | TBD   |
+| Oct 20      | Technical Abstractions & Design Principles  | TBD   |
+| Oct 27      | Design Patterns & Midterm                   | TBD   |
+| Nov 3       | Design Patterns                             | TBD   |
+| Nov 10      | Refactoring & Tradeoffs                     | TBD   |
+| Nov 17      | Class *might* be cancelled                  | TBD   |
+| Nov 24      | Information Security                        | TBD   |
+| Dec 1       | Wrap-up                                     | TBD   |
+| Dec 9       | Final Exam 1200-1420                        | Location TBD   |
+
 
 ## Project
 
