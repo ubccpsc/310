@@ -59,7 +59,7 @@ This list is a rough guide only. Readings will likely be updated even after clas
 | Sept 22     | Assertions, APIs, REST, & Async             | [APIs & REST](readings/API.md), [Async](readings/Async.md) |
 | Sept 29     | Process, Agile (with Greg Smolyn)           | [Process](readings/Process.md) |
 | Oct 6       | Specifications                              | [Specifications](readings/Specifications.md) |
-| Oct 13      | Cloud Guest & Abstraction                   | [Abstraction](readings/Abstraction.md) |
+| Oct 13      | Cloud Guest & Abstraction                   | [Cloud computing](readings/Assorted.md#cloud-computing), [Abstraction](readings/Abstraction.md) |
 | Oct 20      | Technical Abstractions & Design Principles  | TBD   |
 | Oct 27      | Design Patterns & Midterm                   | TBD   |
 | Nov 3       | Design Patterns                             | TBD   |

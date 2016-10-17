@@ -83,4 +83,8 @@ Encapsulation is related to information hiding and is practiced most concretely 
 * Original [information hiding](http://www.cs.umd.edu/class/spring2003/cmsc838p/Design/criteria.pdf) paper.
 
 
+---
+![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") Reid Holmes
+
+
 
