@@ -1,28 +1,14 @@
 # Abstraction
 
-So now we’re getting into the design part of the course. (you might note we’re following waterfall in that respect: from specs to design)
-The most tool available to architects and designers is abstraction.
-* This is all about focusing on the _key_ information for a given task while eliding unnecessary detail. (e.g., a UX designer might focus on UI flows, but would not reason about backend cryptographic protocols).
-* The ‘right’ abstraction will vary task to task.
-https://en.wikipedia.org/wiki/Abstraction_(software_engineering)
-
-Abstraction: Focusing on essential details while suppressing extraneous information for a given task.
-
-
-In SE you will most also hear this with the terms ‘information hiding’ and ‘encapsulation’. 
-Information hiding was first proposed by David Parnas in 1972; this can be thought of as the basic rationale behind APIs: by describing the expected behaviour of the API you can “hide” the implementation behind it.
-Encapsulation is related to information hiding and is practiced most concretely in OO programming languages like Java, C#/C++, or TypeScript.  This is all about interfaces, polymorphism, and member visibility.
-
+Abstraction is the fundamental technique used by software engineers to be able to manage the complexity of their systems. Abstraction enables engineers to focus on the _key_ information for a given task while eliding unnecessary detail. (e.g., a UX designer might focus on UI flows, but would not reason about backend cryptographic protocols). The 'right' abstraction will vary from task to task. The most high-level and common kinds of abstractions relate to control and data abstraction.
 
 #### Data abstraction
 
-So let’s take a concrete look at an example of data abstraction from 210:
-By explicitly describing what data the method requires, modifies, and what effects it returns, the API consumer can ignore the internal implementation.
-Really this is all about defining the contract of the class, that is its preconditions (expects), postconditions (provides), and invariants (must always be true).
-Recognizes that state-based errors are incredibly difficult to manage; type system usually can’t protect you against these.
+Data abstraction is the process of explicitly separating the abstract properties of a data type and its concrete implementation. The primary benefit of data abstraction is that it enables client code to be oblivious of the underlying implementation of a data type allowing it to be upgraded and improved without impacting client code.
 
+For example, a ```Vector``` in Java is implemented using an array, but the JDK authors could choose to change this implementation (say to a linked list) without impacting client programs. A Java ```HashMap``` is stored as an array of linked lists. In both cases, client code can be oblivious of the underlying implementation as long as they understand the behaviour of the methods provided by ```Vector``` and ```HashMap```. 
 
-XXX
+Here is a concrete example of data abstraction from [CPSC 210](https://sites.google.com/site/ubccpsc2102015s2/schedule/ubc-cpsc-210-robust-classes.pdf?attredirects=0&d=1):
 
 ```typescript
 // Creates a new team.
@@ -32,7 +18,7 @@ XXX
  public createTeam(name: string):boolean {...} 
 ```
 
-XXX
+By explicitly describing the data the method requires, modifies, and its side effects, client code can be completely oblivious of the underlying implementation used by ```createTeam(..)```. What we are really trying to do in this example is define the method's contract, that is its preconditions (expects), postconditions (provides), and invariants (must always be true). Correctly and adequately documenting these abstractions is important because state-based errors are a common source of difficult-to-diagnose faults in modern systems that type systems provide little defence against.
 
 #### Control abstraction
 
@@ -84,13 +70,17 @@ makeTeam(teamName: string, memberName: string) {
 }
 ```
 
-### Encapsulation
+### Information hiding 
 
-XXX
+Software engineers often talk about abstraction in terms of _information hiding_.  Information hiding was first proposed by David Parnas in 1972 as a means for separating the parts of the program that are most likely to change from those parts that are more static. Information hiding is a high-level motivation for APIs: by describing the expected behaviour of the API you can "hide" the implementation behind it. 
 
+Information hiding is a specific, common, and important form of abstraction that intentionally seeks to identify 'that which varies' from 'that which stays the same'. This is important, because all abstractions in code come with a cost: trying to understand a system with unnecessary abstractions can add complexity and difficulty, while balancing this complexity against trying to evolve a system lacking necessary abstractions is a challenging task.
+
+Encapsulation is related to information hiding and is practiced most concretely in object-oriented programming languages like Java, C#/C++, or TypeScript.  Encapsulation is concerned with delineating the contractual interface with its interface. The most common language feature for supporting encapsulation is the interface whereby the interface describes the public contract and the concrete class describes the implementation (along with its supporting private methods and fields).
 
 ### References
 
-* https://sites.google.com/site/ubccpsc2102015s2/schedule/ubc-cpsc-210-robust-classes.pdf?attredirects=0&d=1
+* Original [information hiding](http://www.cs.umd.edu/class/spring2003/cmsc838p/Design/criteria.pdf) paper.
+
 
 
