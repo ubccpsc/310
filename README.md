@@ -32,7 +32,7 @@ Some of the topics we will cover in 310 this term include:
 
 ## Contact
 
-#### Instructor: [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/) Office hours 930-1030 ICCS 308.
+#### Instructor: [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/) Office hours: Wednesday 930-1030 308.
 
 #### TAs:
 
