@@ -119,13 +119,13 @@ In addition to AutoTest, each team member will be independently asked a small nu
 ## Course Schedule
 
 
-* September 26: Project [Deliverable 1](project/Deliverable1.md)
+* October 10: Project [Deliverable 1](project/Deliverable1.md)
 
-* October 17: Project [Deliverable 2](project/Deliverable2.md)
+* October 24: Project [Deliverable 2](project/Deliverable2.md)
 
-* October 20: Midterm (sample midterms are not available)
+* October 27: Midterm (sample midterms are not available)
 
-* November 7: Project [Deliverable 3](project/Deliverable3.md)
+* November 14: Project [Deliverable 3](project/Deliverable3.md)
 
 * November 28: Project [Deliverable 4](project/Deliverable4.md)
 
