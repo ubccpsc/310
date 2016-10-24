@@ -3,6 +3,7 @@
 # UBC CPSC 310 - Software Engineering
 September 8, 2016 -> December 1, 2016 (```2016T1```)
 
+<!---
 ## Waitlist: [See Here](#waitlist)
 
 ### Course details still in flux; expect to encounter inconsistencies in these materials.
@@ -12,6 +13,7 @@ Before the first class (whether you are on the waitlist or are registered):
 * Make sure you have a Github account
 * Please go over the Sept 8 reading and project documents 
 * Bring your laptop to class (it will not always be needed, but will be helpful the first class)
+--->
 
 ## Overview
 
@@ -64,12 +66,12 @@ This list is a rough guide only. Readings will likely be updated even after clas
 | Oct 27      | Design Patterns & Midterm                   | TBD   |
 | Nov 3       | Design Patterns                             | TBD   |
 | Nov 10      | Refactoring & Tradeoffs                     | TBD   |
-| Nov 17      | Class *might* be cancelled                  | TBD   |
+| Nov 17      | Class cancelled                             | N/A   |
 | Nov 24      | Information Security                        | TBD   |
 | Dec 1       | Wrap-up                                     | TBD   |
 | Dec 9       | Final Exam 1200-1420                        | Location TBD |
 
-[Piazza](https://piazza.com/ubc.ca/winterterm12016/cpsc310) has been configured for this term. Please be mindful of the UBC Academic Misconduct Policy with respect to posting project solutions on Piazza.
+[Piazza](https://piazza.com/ubc.ca/winterterm12016/cpsc310) has been configured for this term. Please be mindful of the UBC Academic Misconduct Policy with respect to posting project solutions and when interacting with your peers and course staff. We will do our best to be involved in Piazza discussions but will be most responsive during the week.
 
 ### Labs:
 
