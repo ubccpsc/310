@@ -55,36 +55,7 @@ Geocoding an address to a latitude/longitude pair is usually performed using onl
 ## Query examples
 
 ```
-// find the rooms in DMP
-{
-    "GET": ["rooms_fullname", "rooms_number"],
-    "WHERE": {"IS": {"rooms_shortname": "DMP"}} ,
-    "ORDER": { "dir": "UP", "keys": ["rooms_number"]},
-    "AS": "TABLE"
-}
-
-// count the number of rooms with > 160 seats
-{
-    "GET": ["numRooms"],
-    "WHERE": {"GT": {"rooms_seats": 160}} ,
-    "GROUP": [ ],
-    "APPLY": [ {"numRooms": {"COUNT": "rooms_id"}} ],
-    "AS": "TABLE"
-}
-
-// list rooms with moveable tables in a bounding box
-{
-    "GET": ["rooms_fullname", "rooms_number"],
-    "WHERE": {"AND": [
-	    {"GT": {"rooms_lat": 49.261292}},
-	    {"GT": {"rooms_lon": -123.245214}},
-	    {"LT": {"rooms_lat": 49.262966}},
-	    {"LT": {"rooms_lon": -123.249886}},
-	    {"IS": {"rooms_furniture": "*Movable Tables*"}},
-    ]},
-    "ORDER": { "dir": "UP", "keys": ["rooms_number"]},
-    "AS": "TABLE"
-}
+// Queries will be added once the dataset is finalized.
 ```
 
 ## Testing
