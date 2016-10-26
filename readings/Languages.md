@@ -23,7 +23,9 @@ There is also an important distinction to be made between the static representat
 
 ### Learning new languages
 
-While languages come in all shapes and sizes (e.g., strongly typed, weakly typed, dynamically typed, statically typed, functional, object-oriented) at their core they each try to satisfy the two main goals listed above. Although learning a new programming language can seem like a daunting task, languages all come from common pedigrees that make it easier to try to understand at a high level how the new language corresponds to your existing one.
+While languages come in all shapes and sizes (e.g., strongly typed, weakly typed, dynamically typed, statically typed, functional, object-oriented) at their core they each try to satisfy the two main goals listed above. Although learning a new programming language can seem like a daunting task, languages all come from common pedigrees that make it easier to try to understand at a high level how the new language corresponds to your existing one.  This [great image](https://paradigmeprogrammation.files.wordpress.com/2013/05/paradigmsdiagrameng108.jpg) shows the conceptual lineages of many popular programming languages and can be helpful to recognize how similar many languages are in practice.
+
+Being able to quickly self-learn new languages is a fundamental skill for all software engineers. Language choices are infrequently made, which means the vast majority of teams you join will already be using a set language that you will not have control over choosing (and may even be an internal language that has not been released). 
 
 Consider the following three snippets:
 
@@ -69,10 +71,12 @@ isSplit(input) {
 
 In these examples we can see that there are far more commonalities between these methods than differences. JavaScript is an untyped language, Java is a strongly typed language, and TypeScript augments JavaScript with type checking; even with these large underlying differences their syntax (and in this case even semantics) are nearly identical.
 
+
 ### References
 
 * Gerald Sussman's [role of programming](https://www.youtube.com/watch?v=arMH5GjBwUQ) talk.
 
+* A practical [article](https://www.siliconrepublic.com/enterprise/typescript-programming-javascript) on some TypeScript benefits in practice.
 
 ---
 ![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") Reid Holmes
