@@ -36,8 +36,8 @@ NOTE: We will _NOT_ POST any queries that use both datasets concurrently (aka ``
 
 In addition to the valid keys from [Deliverable 1](Deliverable1.md#valid-keys) and from [Deliverable 2](Deliverable2.md#valid-keys), this deliverable adds a variety of new keys.
 
-* **rooms_fullName**: ```string```; Full building name (e.g., "Hugh Dempster Pavilion").
-* **rooms_shortName**: ```string```; Short building name (e.g., "DMP").
+* **rooms_fullname**: ```string```; Full building name (e.g., "Hugh Dempster Pavilion").
+* **rooms_shortname**: ```string```; Short building name (e.g., "DMP").
 * **rooms_number**: ```number```; The room number.
 * **rooms_name**: ```string```; The room id; should be ```rooms_shortname```+"_"+```rooms_number```.
 * **rooms_address**: ```string```; The building address. (e.g., "6245 Agronomy Road V6T 1Z4").
