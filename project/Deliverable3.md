@@ -50,13 +50,15 @@ In addition to the valid keys from [Deliverable 1](Deliverable1.md#valid-keys) a
 
 We are also adding on field to the ```courses``` dataset: 
 
-* **courses_year**: ```number```; This key represents the year the course was offered. If the ```"Section":"overall"``` property is set, the year should be 1900 (we will not be using these in D3 or D4 and this will help get these sections out of the way).
+* **courses_year**: ```number```; This key represents the year the course was offered. If the ``` "Section":"overall" ``` property is set, the year should be 1900 (we will not be using these in D3 or D4 and this will help get these sections out of the way).
 
 Note: these keys are different than may be present in the data. Since you are not allowed to modify the data, you will have to come up with a way to translate them. Unlike Deliverable 1, the data source will require some parsing and analysis before it is ready to be consumed (it is HTML).
 
 Geocoding an address to a latitude/longitude pair is usually performed using online web services. To avoid problems with our spamming different geolocation providers we will be providing a web service for you to use for this purpose. To form a query, send a GET request to:
 
-```http://skaha.cs.ubc.ca:8022/api/v1/team<YOUR-TEAM-NUMBER>/<ADDRESS>```
+```
+http://skaha.cs.ubc.ca:8022/api/v1/team<YOUR-TEAM-NUMBER>/<ADDRESS>
+```
 
 The response will match the following interface (either you will get lat/lon or error, but never both):
 
@@ -119,7 +121,6 @@ OUTPUT:
  }
  
 OUTPUT: TBD
-
 ```
 
 ## Testing
