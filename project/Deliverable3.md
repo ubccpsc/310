@@ -38,7 +38,7 @@ In addition to the valid keys from [Deliverable 1](Deliverable1.md#valid-keys) a
 
 * **rooms_fullname**: ```string```; Full building name (e.g., "Hugh Dempster Pavilion").
 * **rooms_shortname**: ```string```; Short building name (e.g., "DMP").
-* **rooms_number**: ```number```; The room number.
+* **rooms_number**: ```string```; The room number. Not always a number, so represented as a string.
 * **rooms_name**: ```string```; The room id; should be ```rooms_shortname```+"_"+```rooms_number```.
 * **rooms_address**: ```string```; The building address. (e.g., "6245 Agronomy Road V6T 1Z4").
 * **rooms_lat**: ```number```; The latitude of the building. Instructions for getting this field are below.
@@ -91,9 +91,19 @@ Since we are hosting this service it _could_ be killed by DOS attacks, please tr
 
 OUTPUT:
 
-{"render":"TABLE","result":
-[{"rooms_fullname":"Hugh Dempster Pavilion","rooms_number":"101"},{"rooms_fullname":"Hugh Dempster Pavilion","rooms_number":"110"},{"rooms_fullname":"Hugh Dempster Pavilion","rooms_number":"201"},{"rooms_fullname":"Hugh Dempster Pavilion","rooms_number":"301"},{"rooms_fullname":"Hugh Dempster Pavilion","rooms_number":"310"}
-]}
+{ render: 'TABLE',
+  result: 
+   [ { rooms_fullname: 'Hugh Dempster Pavilion',
+       rooms_number: '101' },
+     { rooms_fullname: 'Hugh Dempster Pavilion',
+       rooms_number: '110' },
+     { rooms_fullname: 'Hugh Dempster Pavilion',
+       rooms_number: '201' },
+     { rooms_fullname: 'Hugh Dempster Pavilion',
+       rooms_number: '301' },
+     { rooms_fullname: 'Hugh Dempster Pavilion',
+       rooms_number: '310' } ] }
+       
 
 // count the number of rooms with > 160 seats in each building
  {
@@ -106,10 +116,32 @@ OUTPUT:
  
 OUTPUT:
 
-{"render":"TABLE","result":
-[{"rooms_shortname":"BIOL","numRooms":1},{"rooms_shortname":"BUCH","numRooms":2},{"rooms_shortname":"CHBE","numRooms":1},{"rooms_shortname":"CHEM","numRooms":2},{"rooms_shortname":"FSC","numRooms":1},{"rooms_shortname":"GEOG","numRooms":1},{"rooms_shortname":"HEBB","numRooms":1},{"rooms_shortname":"HENN","numRooms":1},{"rooms_shortname":"ANGU","numRooms":1},{"rooms_shortname":"LSK","numRooms":2},{"rooms_shortname":"LSC","numRooms":2},{"rooms_shortname":"MCML","numRooms":1},{"rooms_shortname":"MATH","numRooms":1},{"rooms_shortname":"SCRF","numRooms":1},{"rooms_shortname":"OSBO","numRooms":1},{"rooms_shortname":"SRC","numRooms":3},{"rooms_shortname":"WESB","numRooms":1},{"rooms_shortname":"SWNG","numRooms":4},{"rooms_shortname":"WOOD","numRooms":2}
-]} 
-
+{ render: 'TABLE',
+  result: 
+   [ { rooms_shortname: 'BIOL', numRooms: 1 },
+     { rooms_shortname: 'BUCH', numRooms: 2 },
+     { rooms_shortname: 'CIRS', numRooms: 1 },
+     { rooms_shortname: 'CHBE', numRooms: 1 },
+     { rooms_shortname: 'CHEM', numRooms: 2 },
+     { rooms_shortname: 'ESB', numRooms: 1 },
+     { rooms_shortname: 'FSC', numRooms: 1 },
+     { rooms_shortname: 'GEOG', numRooms: 1 },
+     { rooms_shortname: 'HEBB', numRooms: 1 },
+     { rooms_shortname: 'HENN', numRooms: 1 },
+     { rooms_shortname: 'ANGU', numRooms: 1 },
+     { rooms_shortname: 'LSK', numRooms: 2 },
+     { rooms_shortname: 'LSC', numRooms: 2 },
+     { rooms_shortname: 'MCML', numRooms: 1 },
+     { rooms_shortname: 'MATH', numRooms: 1 },
+     { rooms_shortname: 'SCRF', numRooms: 1 },
+     { rooms_shortname: 'PHRM', numRooms: 2 },
+     { rooms_shortname: 'OSBO', numRooms: 1 },
+     { rooms_shortname: 'SRC', numRooms: 3 },
+     { rooms_shortname: 'WESB', numRooms: 1 },
+     { rooms_shortname: 'SWNG', numRooms: 4 },
+     { rooms_shortname: 'WOOD', numRooms: 2 } ] }
+     
+     
 // list rooms with moveable tables in a bounding box
  {
      "GET": ["rooms_fullname", "rooms_number", "rooms_seats"],
@@ -126,20 +158,31 @@ OUTPUT:
 
 OUTPUT: 
 
-{ render: 'TABLE', result: 
-   [{ rooms_fullname: 'Chemical and Biological Engineering Building', rooms_number: 103, rooms_seats: 60 },
-     { rooms_fullname: 'MacLeod', rooms_number: 214, rooms_seats: 60 },
-     { rooms_fullname: 'MacLeod', rooms_number: 220, rooms_seats: 40 },
-     { rooms_fullname: 'MacLeod', rooms_number: 242, rooms_seats: 60 },
-     { rooms_fullname: 'MacLeod', rooms_number: 254, rooms_seats: 84 },
-     { rooms_fullname: 'Civil and Mechanical Engineering', rooms_number: 1206, rooms_seats: 26 },
-     { rooms_fullname: 'Civil and Mechanical Engineering', rooms_number: 1210, rooms_seats: 22 }
-   ]}
-
+  result: 
+   [ { rooms_fullname: 'Chemical and Biological Engineering Building',
+       rooms_number: '103',
+       rooms_seats: 60 },
+     { rooms_fullname: 'Civil and Mechanical Engineering',
+       rooms_number: '1206',
+       rooms_seats: 26 },
+     { rooms_fullname: 'Civil and Mechanical Engineering',
+       rooms_number: '1210',
+       rooms_seats: 22 },
+     { rooms_fullname: 'MacLeod',
+       rooms_number: '214',
+       rooms_seats: 60 },
+     { rooms_fullname: 'MacLeod',
+       rooms_number: '220',
+       rooms_seats: 40 },
+     { rooms_fullname: 'MacLeod',
+       rooms_number: '242',
+       rooms_seats: 60 },
+     { rooms_fullname: 'MacLeod',
+       rooms_number: '254',
+       rooms_seats: 84 } ] }
+       
 ```
 
 ## Testing
 
 The [testing](Deliverable2.md#testing) requirements and grading provisions for this deliverable are unchanged from Deliverable 2.
-
-
