@@ -26,4 +26,4 @@ Development teams also leverage cloud resources while they develop their systems
 --->
 
 ---
-![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") Reid Holmes
+![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)

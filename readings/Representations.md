@@ -91,4 +91,4 @@ A more common example is to detail how the state machine is entered/exited and t
 
 
 ---
-![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") Reid Holmes
+![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)

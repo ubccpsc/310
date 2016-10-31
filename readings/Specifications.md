@@ -78,4 +78,4 @@ We have more NFP metric examples but they're more appropriate for 410
 * A [reflection](https://blog.codinghorror.com/development-is-inherently-wicked/) on software being a wicked problem.
 
 ---
-![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") Reid Holmes
+![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)

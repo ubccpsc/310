@@ -62,3 +62,6 @@ As a concrete example, if a client is trying to undertake a complex multi-step o
 Servers are responsible for sending back detailed information about the resources they are returning so that clients have the ability to make further requests of the server with the correct URIs.
 
 Several good REST API examples exist online, although the [Paypal API](https://developer.paypal.com/docs/api/) and [Strava](https://strava.github.io/api/) APIs stand out for their great documentation and examples.
+
+---
+![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)

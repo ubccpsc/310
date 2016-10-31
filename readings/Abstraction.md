@@ -98,7 +98,7 @@ Thinking about change is also related to encapsulation in that thinking concrete
 
 
 ---
-![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") Reid Holmes
+![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
 
 
 

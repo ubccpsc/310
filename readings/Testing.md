@@ -128,5 +128,4 @@ chai assertions: http://dailyjs.com/2012/02/23/chai/
 * Jim Cordy's [quality assurance](http://research.cs.queensu.ca/home/cordy/cisc327/index.html) course.
 
 ---
-![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") Reid Holmes
-
+![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)

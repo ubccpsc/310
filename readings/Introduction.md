@@ -50,7 +50,5 @@ The most obvious difference between the definition of programming and software e
 One of the main goals of this course is to give you a deeper understanding and appreciation for the complexity involved in designing, building, and evolving high-quality software systems. To that end, we will be investigating many of the different dimensions of software engineering captured in the definition above.
 
 ---
-
-![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") Reid Holmes
-
+![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
 

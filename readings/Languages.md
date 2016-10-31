@@ -79,4 +79,4 @@ In these examples we can see that there are far more commonalities between these
 * A practical [article](https://www.siliconrepublic.com/enterprise/typescript-programming-javascript) on some TypeScript benefits in practice.
 
 ---
-![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") Reid Holmes
+![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
