@@ -62,7 +62,7 @@ This list is a rough guide only. Readings will likely be updated even after clas
 | Sept 29     | Process, Agile (with Greg Smolyn)           | [Process](readings/Process.md) |
 | Oct 6       | Specifications                              | [Specifications](readings/Specifications.md) |
 | Oct 13      | Cloud Guest & Abstraction                   | [Cloud computing](readings/Assorted.md#cloud-computing), [Abstraction](readings/Abstraction.md) |
-| Oct 20      | Technical Abstractions & Design Principles  | TBD   |
+| Oct 20      | Technical Representations & Design Principles  | [Technical Representations](readings/Representations.md)   |
 | Oct 27      | Design Patterns & Midterm                   | TBD   |
 | Nov 3       | Design Patterns                             | TBD   |
 | Nov 10      | Refactoring & Tradeoffs                     | TBD   |
