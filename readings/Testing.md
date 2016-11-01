@@ -127,5 +127,10 @@ chai assertions: http://dailyjs.com/2012/02/23/chai/
 * MIT testing [slides](http://measure.cc.gt.atl.ga.us/classes/cs6300/Lectures/class18testing.pdf).
 * Jim Cordy's [quality assurance](http://research.cs.queensu.ca/home/cordy/cisc327/index.html) course.
 
+<!--
+On misusing coverage:
+http://docplayer.net/102363-How-to-misuse-code-coverage.html
+-->
+
 ---
 ![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)

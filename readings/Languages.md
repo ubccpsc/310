@@ -78,5 +78,7 @@ In these examples we can see that there are far more commonalities between these
 
 * A practical [article](https://www.siliconrepublic.com/enterprise/typescript-programming-javascript) on some TypeScript benefits in practice.
 
+* Why you should learn [a new language](http://blog.cleancoder.com/uncle-bob/2016/09/01/TheLurn.html) every year.
+
 ---
 ![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)

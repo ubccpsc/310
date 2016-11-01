@@ -194,6 +194,8 @@ While ```Car``` now relies on ```IBrake``` there is still one place in code wher
 
 ### References
 
+* A [nice overview](http://www.codemag.com/article/1001061) of design principles and why they are useful with more concrete examples of the principles.
+
 * [Design principles and patterns](https://web.archive.org/web/20150906155800/http://www.objectmentor.com/resources/articles/Principles_and_Patterns.pdf).
 
 * [Single responsibility](https://web.archive.org/web/20110722075209/http://www.objectmentor.com/resources/articles/srp.pdf) principle.
