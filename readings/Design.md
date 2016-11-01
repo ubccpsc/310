@@ -50,9 +50,9 @@ While this sounds simple, in practice it is tempting to add additional similar f
 
 ```typescript
 class Book {
-  public getTitle() { .. }
-  public getAuthor() { .. }
-  public getContent(..) { .. }
+  getTitle() { .. }
+  getAuthor() { .. }
+  getContent(..) { .. }
 }
 ```
 
@@ -61,9 +61,9 @@ After several iterations this class could be modified to add e-reader functional
 ```typescript
 class Book {
   var currentPage: number;
-  public getTitle() { .. }
-  public getAuthor() { .. }
-  public getContent(..) { .. }
+  getTitle() { .. }
+  getAuthor() { .. }
+  getContent(..) { .. }
   getCurrentPage() { .. }
   save() { .. }
   getLibraryLocation() { .. }
@@ -75,25 +75,25 @@ These features _seem_ (and are) related to books, but extend the original intent
 
 ```typescript
 class Book {
-  public getTitle() { .. }
-  public getAuthor() { .. }
-  public getContent(..) { .. }
+  getTitle() { .. }
+  getAuthor() { .. }
+  getContent(..) { .. }
 }
 
 class BookReader {
   var currentPage: number;
-  public setBook(book: Book) { .. }
+  setBook(book: Book) { .. }
   turnPage(..) {..}
   goToPage(..) {..}
   getCurrentPage() {..}
 }
 
 class BookLocator {
-  public getLocation(book: Book) { .. }
+  getLocation(book: Book) { .. }
 }
 
 class BookPersistence {
-  public save(book: Book) { .. }
+  save(book: Book) { .. }
 }
 ```
 
