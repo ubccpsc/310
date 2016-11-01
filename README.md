@@ -54,22 +54,22 @@ Thursdays 1700-2000, [PHARM 1101](https://www.google.ca/maps/place/UBC+Faculty+o
 
 This list is a rough guide only. Readings will likely be updated even after class has completed.
 
-| Date        | Topic                                       | Readings |
-| :--         |:--                                          | :--      |
-| Sept 8      | Course & Project Intro                      | [Syllabus](README.md), [Introduction](readings/Introduction.md), [Project Description](project/README.md) |
-| Sept 15     | Languages & Testing                         | [Programming Languages](readings/Languages.md), [Testing/Testability](readings/Testing.md), [AutoTest](project/AutoTest.md) |
-| Sept 22     | Assertions, APIs, REST, & Async             | [APIs & REST](readings/API.md), [Async](readings/Async.md) |
-| Sept 29     | Process, Agile (with Greg Smolyn)           | [Process](readings/Process.md) |
-| Oct 6       | Specifications                              | [Specifications](readings/Specifications.md) |
-| Oct 13      | Cloud Guest & Abstraction                   | [Cloud computing](readings/Assorted.md#cloud-computing), [Abstraction](readings/Abstraction.md) |
-| Oct 20      | Technical Representations & Design Principles  | [Technical Representations](readings/Representations.md)   |
-| Oct 27      | Design Patterns & Midterm                   | TBD   |
-| Nov 3       | Design Patterns                             | TBD   |
-| Nov 10      | Refactoring & Tradeoffs                     | TBD   |
-| Nov 17      | Class cancelled                             | N/A   |
-| Nov 24      | Information Security                        | TBD   |
-| Dec 1       | Wrap-up                                     | TBD   |
-| Dec 9       | Final Exam 1200-1420                        | Location TBD |
+| Date        | Topics (may span multiple lectures)                                       |
+| :--         |:--                                          | 
+| Sept 8      | [Syllabus](README.md), [Introduction](readings/Introduction.md), [Project Description](project/README.md) |
+| Sept 15     | [Programming Languages](readings/Languages.md), [Testing/Testability](readings/Testing.md), [AutoTest](project/AutoTest.md) |
+| Sept 22     | [APIs & REST](readings/API.md), [Async](readings/Async.md) | <!--- + assertions -->
+| Sept 29     | [Process](readings/Process.md) (with Greg Smolyn) |
+| Oct 6       | [Specifications](readings/Specifications.md) |
+| Oct 13      | [Cloud Computing](readings/Assorted.md#cloud-computing) (with Sergii Baidachnyi), [Abstraction](readings/Abstraction.md) |
+| Oct 20      | [Technical Representations](readings/Representations.md)|
+| Oct 27      | [Design Principles](readings/Design.md), Midterm                 |
+| Nov 3       | Design Patterns                                | <!-- + dependency injection -->
+| Nov 10      | Design Patterns                        |
+| Nov 17      | _Class cancelled_                                |
+| Nov 24      | Information Security, Refactoring & Tradeoffs                           |
+| Dec 1       | Wrap-up, Special topics                                        |
+| Dec 9       | Final Exam 1200-1420 (Location TBD) |
 
 [Piazza](https://piazza.com/ubc.ca/winterterm12016/cpsc310) has been configured for this term. Please be mindful of the UBC Academic Misconduct Policy with respect to posting project solutions and when interacting with your peers and course staff. We will do our best to be involved in Piazza discussions but will be most responsive during the week.
 
