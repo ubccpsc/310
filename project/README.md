@@ -79,7 +79,18 @@ Each deliverable will be worth 10% of your final grade. Attendance will be track
 * Final AutoTest: 10%
 * Lab attendance: 10%
 
-We will be running [Measure of software similarity (MOSS)](https://theory.stanford.edu/~aiken/moss/) on all deliverable submissions. Any projects that contain code derived from other projects that we have not provided will receive 0% on that deliverable.
+We will be running [Measure of software similarity (MOSS)](https://theory.stanford.edu/~aiken/moss/) on all deliverable submissions after the final AutoTest run. Any projects that contain code derived from other projects, other than that we provided, will receive 0% on the project.
+
+
+## Late policy
+
+It is possible to submit an AutoTest deliverable (D1, D2, & D3) 'late' for partial marks. Appeals for late marks must be made by the Deliverable 4 deadline (November 28). Late deliverables will be subject to the following penalty:
+
+* 1 deliverable late: 20% (e.g., D1 by D2, D2 by D3, or D3 by D4).
+* 2 deliverables late: 40% (e.g., D1 by D3, D2 by D4).
+* 3 deliverables late: 60% (e.g., D1 by D4).
+
+Late deliverables can only increase the test passing rate, the retrospective multipliers and test coverage rate from the original deliverable will still be used. The # of deliverables late depends on the timestamp of the commit you ran you deliverable against (the # of deliverables late increments after each deliverable deadline). To apply for the late policy, please fill out the [late deliverable request](https://goo.gl/forms/9P4DBfXBBhuPHTqM2) form by the Deliverable 4 deadline.
 
 
 ## Labs
