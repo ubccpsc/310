@@ -69,7 +69,7 @@ This list is a rough guide only. Readings will likely be updated even after clas
 | Nov 17      | _Class cancelled_                                |
 | Nov 24      | Information Security, Refactoring & Tradeoffs                           |
 | Dec 1       | Wrap-up, Special topics                                        |
-| Dec 9       | Final Exam 1200-1420 (Location TBD) |
+| Dec 9       | Final Exam 1200 - 1420 in [HEBB 100](http://students.ubc.ca/campus/discover/buildings-and-classrooms/HEBB) |
 
 [Piazza](https://piazza.com/ubc.ca/winterterm12016/cpsc310) has been configured for this term. Please be mindful of the UBC Academic Misconduct Policy with respect to posting project solutions and when interacting with your peers and course staff. We will do our best to be involved in Piazza discussions but will be most responsive during the week.
 
