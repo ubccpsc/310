@@ -8,7 +8,7 @@ Given the constraints above, the most prevalent quality validation approach in u
 
 > Program testing can be used to show the presence of bugs, but never to show their absence! [Edsger Dijkstra]
 
-This is because what we are evaluating is whether the probability that there are no bugs in a system given that the tests pass is not actually 0. Since tests themselves are programs (and can have bugs) and specifications are often incomplete or imprecise we therefore must admit that the chance a defect slipping through a set of tests is > 0 [(online discussion)](http://tonyxzt.blogspot.ca/2010/01/tests-can-show-presence-of-bugs-not.html).
+This is because what we are evaluating is whether the probability that there are no bugs in a system given that the tests pass is not actually 0. Since tests themselves are programs (and can have bugs) and specifications are often incomplete or imprecise we therefore must admit that the chance of a defect slipping through a set of tests is > 0 [(online discussion)](http://tonyxzt.blogspot.ca/2010/01/tests-can-show-presence-of-bugs-not.html).
 
 The modern test cycle is summarized below. The cycle between steps 1-7 can occur many times before the code is ready to commit. 
 
@@ -23,7 +23,7 @@ The modern test cycle is summarized below. The cycle between steps 1-7 can occur
 9. Commit/push change.
 10. Pull new changes.
 
-Steps 2/7 may not happen on small teams or when testing happens solely on a single development machine. The code that is developed in steps 1/5 could involve either writing test or product code. In TDD the first develop step would be to write tests for features that haven't been written yet to guide future development.
+Steps 2/7 may not happen on small teams or when testing happens solely on a single development machine. The code that is developed in steps 1/5 could involve either writing test or product code. In Test-Driven Development (TDD) the first develop step would be to write tests for features that haven't been written yet to guide future development.
 
 <img src="figures/test-cycle.png" width="512px">
 
@@ -39,9 +39,9 @@ A number of different terms are commonly used in the testing space:
 * ```Repeatability```: The likelihood that running the same test twice under the same conditions will yield the same result.
 
 
-There are a number of different *level* of test; these range in size, complexity, execution duration, repeatability, along with how easy they are to write, maintain, and debug.
+There are a number of different *levels* of test; these range in size, complexity, execution duration, repeatability, along with how easy they are to write, maintain, and debug.
 
-* ```Unit```: Unit tests exercise individual components, usually methods or functions, in isolation. This kind of testing is usually quick to write and incur low maintenance effort since they touch such small parts of the system. They typically ensure that the unit fulfills its contract making test failures more straightforward to understand.
+* ```Unit```: Unit tests exercise individual components, usually methods or functions, in isolation. This kind of testing is usually quick to write and the tests incur low maintenance effort since they touch such small parts of the system. They typically ensure that the unit fulfills its contract making test failures more straightforward to understand.
 * ```Integration```: Integration tests exercise groups of components to ensure that their contained units interact correctly together. Integration tests touch much larger pieces of the system and are more prone to spurious failure. Since these tests validate many different units in concert, identifying the root-cause of a specific failure can be difficult.
 * ```End-to-End```: Also referred to as *acceptance* testing, these tests typically validate entire customer flows. They are especially useful for validating quality attributes (such as performance and usability) that cannot be captured in isolation. These tests are great for ensuring that the system behaves correctly but provide little guidance for understanding why a failure arose or how it could be fixed.
 * ```A|B```: A special subset of testing that is typically employed in production environments. In A|B testing, two different versions are compared at runtime to validate which one performs 'best'. A|B testing is often used to validate business decisions, rather than evaluate functional correctness.
@@ -87,7 +87,7 @@ TODO: This will come later.
 
 There are a number of reasons why software systems are not tested with automated suites. These range from "bad design" to "slow", "boring", "doesn't catch bugs" and "that's QA's job". Ultimately, testing does have a cost: tests are programs too and take time to write, debug, and execute and must also be evolved along with the system. 
 
-One core paradox of automated test suites is how they are used. If you think about a test only provides value when it fails by catching a bug that would have otherwise made it to production. This means then that all passing tests are just a waste of computational cycles. At the same time though, passing tests _do_ give us the warm feeling that we have not introduced unexpected regression bugs into our systems. But at the same time, these feelings only work if we believe our test suite is capable of finding faults and _could_ fail. Yes: this contradicts the 'we should only run failing tests' implication above. 
+One core paradox of automated test suites is how they are used. If you think that a test only provides value when it fails by catching a bug that would have otherwise made it to production, then that all passing tests are just a waste of computational cycles. At the same time though, passing tests _do_ give us the warm feeling that we have not introduced unexpected regression bugs into our systems. But at the same time, these feelings only work if we believe our test suite is capable of finding faults and _could_ fail. Yes: this contradicts the 'we should only run failing tests' implication above. 
 
 An area of interesting future research would be to figure out how often a suite needs to fail to impart trust, while also figuring out how few passing tests you could run to have a sense of confidence in your automated suite. 
 
@@ -97,7 +97,7 @@ It has been long held that the cost of fixing a fault rises exponentially with h
 
 There is a more [modern discussion](http://www.sicpers.info/2012/09/an-apology-to-readers-of-test-driven-ios-development/) however that openly wonders if these costs are not relevant for more modern-styles of software development and programming languages.
 
-It is also important to accurately consider the costs of test automated testing. Writing tests takes time. Executing tests takes time. Diagnosing failing tests take time. Fixing tests that were incorrect takes time (tests are programs too!). But catching real faults can save money, as can increased velocity enabled through better understanding how shippable your code is. While it is easier to account for the costs than the benefits, most large teams have invested heavily in automated test suites, although many large teams are actively investigating test prioritization and minimization schemes to reduce the delay between making a change and having a meaningful test result.
+It is also important to accurately consider the costs of automated testing. Writing tests takes time. Executing tests takes time. Diagnosing failing tests take time. Fixing tests that were incorrect takes time (tests are programs too!). But catching real faults can save money, as can increased velocity enabled through better understanding how shippable your code is. While it is easier to account for the costs than the benefits, most large teams have invested heavily in automated test suites, although many large teams are actively investigating test prioritization and minimization schemes to reduce the delay between making a change and having a meaningful test result.
 
 <!---
 TODO: Assertions
