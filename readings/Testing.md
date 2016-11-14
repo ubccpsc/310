@@ -31,7 +31,7 @@ Steps 2/7 may not happen on small teams or when testing happens solely on a sing
 
 A number of different terms are commonly used in the testing space:
 
-* ```SUT/CUT```: System / under test. This is the thing that you are actually trying to validate.
+* ```SUT/CUT```: System / code under test. This is the thing that you are actually trying to validate.
 * ```White box testing```: When testing in a white box manner one typically carefully examines the program source code in order to identify potentially problematic sets of inputs or control flow paths.
 * ```Black box testing```: Black box testing validates programs without any knowledge of how the system is implemented. This form of testing relies heavily on predicting problematic inputs by examining public API signatures and any available documentation for the CUT.
 * ```Effectiveness```: The simplest way to reason about the effectiveness of a test or test suite is to measure the probability the test will find a real fault (per unit of effort, which can be something like developer creation / maintenance time or number of test executions).
