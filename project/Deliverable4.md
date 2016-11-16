@@ -10,7 +10,7 @@ Your code should reside in ```src/rest/public``` and ```src/rest/views```. The c
 
 ## Tasks
 
-The key intent of these tasks is to provide a simple and intuitive UI for invoking your REST backend and for displaying data from it. It is not appropriate to ask users to write/view your query language, but other than this restriction you are free to develop whatever UI you would like.
+The key intent of these tasks is to provide a simple and intuitive UI for invoking your REST backend and for displaying data from it. It is not appropriate to ask users to write/view your query language, but other than this restriction you are free to develop whatever UI you would like (although building some kind of faceted search UI will probably easiest).
 
 1) **Course explorer (20%):** provide a usable interface for interacting with the ```courses``` dataset. It should be possible to query sections by various properties:
 
@@ -53,4 +53,43 @@ Each of the four above tasks have their values attached to the descriptions. You
 
 Marks will be based on completeness (aka can your UI perform the listed functionality in a usable way). The final task will additionally be evaluated in terms of novelty.
 
+## Contribution statement
+ 
+In your repository, each teammate should commit a file called ```/D4-contrib_<GitHubId>.md```. This file should contain a short description of your concrete contributions to your D4 code. All that is required is a few sentences followed by links to some of your key Github commits (full links so we can click on them would be appreciated) for Deliverable 4. If you do not have any (or very few) commits, you may use additional space to explain your concrete contributions. This should be committed before you meet with your TAs in the lab as you will refer to this file in your meeting with them.
 
+## Task checklist
+
+For each of the main points below (numbered), your score will be a percentage of the completed tasks (bullets). Each task is worth 2 points: one for rudimentary functionality and one for polished functionality. The differentiation between the two will consider how errors are handled, whether the UI is easy to use, and how well it works (essentially did you do a good job implementing a feature or a bare minimum job). The score for the point is the fraction of completed tasks.
+
+
+1. Course & Section exploration (20%)
+ * Show all of the sections in department X.
+ * Show all of the courses in department X ordered by [the most failing students || the most passing students || average grade].
+ * Previous task, allow sorting by more than one field.
+ * Find all the sections taught by instructor Y.
+ * Show all of the key details for courses in the university with filters for course titles, department, and sizes.
+ * Previous task, allow filtering by more than one field concurrently.
+  
+2. Room exploration (20%)
+ * Show all rooms in building X.
+ * Show all rooms within X meters of building X.
+ * Show all rooms over size X.
+ * Previous task within X meters of building X.
+ * Show all rooms with type X or furniture X.
+ * Previous task within X meters of building X.
+ 
+3. Scheduling (40%)
+ * Show you interface for selecting the subset of rooms to be used for the schedule.
+ * Allow rooms to be filtered by building name AND/OR distance from building X.
+ * Show you interface for selecting the subset of courses to be used for the schedule.
+ * Allow courses to be filtered by department AND/OR course number. 
+ * Show your interface for displaying a timetable.
+ * Show that your scheduling algorithm correctly determines the right number of sections to schedule for the courses selected.
+ * Show that your scheduling algorithm correctly determines the right number of seats for the sections being scheduled.
+ * Show that the quality measure is being displayed for your schedule.
+
+4. Novel contribution (20%)
+ * Convince the TA that your task is *useful* and makes meaningful use of the data provided by your REST API.
+ * Convince the TA that your task is *interesting* and makes meaningful use of the data provided by your REST API.
+ 
+ 
