@@ -44,7 +44,7 @@ Some of the topics we will cover in 310 this term include:
 * Arthur de Sousa Marques
 * Stewart Grant
 * Nam Giang
-* Prithu Banerjee
+* Dylan Dong
 
 ## Schedule
 
@@ -67,8 +67,8 @@ This list is a rough guide only. Readings will likely be updated even after clas
 | Nov 3       | Design Patterns                                | <!-- + dependency injection -->
 | Nov 10      | Design Patterns                        |
 | Nov 17      | _Class cancelled_                                |
-| Nov 24      | Information Security, Refactoring & Tradeoffs                           |
-| Dec 1       | Wrap-up, Special topics                                        |
+| Nov 24      | IP, Patents, & Trademarks (with Alistair Forester), MV*, Code Smells                           |
+| Dec 1       | Information Security, Refactoring, & Wrap-up |
 | Dec 9       | Final Exam 1200 - 1420 in [HEBB 100](http://students.ubc.ca/campus/discover/buildings-and-classrooms/HEBB) |
 
 [Piazza](https://piazza.com/ubc.ca/winterterm12016/cpsc310) has been configured for this term. Please be mindful of the UBC Academic Misconduct Policy with respect to posting project solutions and when interacting with your peers and course staff. We will do our best to be involved in Piazza discussions but will be most responsive during the week.
