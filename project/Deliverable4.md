@@ -1,7 +1,5 @@
 # Deliverable 4: insightUBC UI
 
-#### NOTE: These requirements subject to change; we are posting them early so you can have a preview of what is to come in the final deliverable (which has a pretty tight timeline). The spec will be firm by the Deliverable 3 due date (or earlier).
-
 [Deliverable 1](Deliverable1.md) built a query engine to answer queries about UBC course sections. [Deliverable 2](Deliverable2.md) extended the query engine to aggregate answers about actual courses. [Deliverable 3](Deliverable3.md) extended the query engine to support details about course spaces on campus. Ultimately you have built a robust backend for quickly and flexibly querying a diverse dataset. This is a great foundation, but is not especially useable.
 
 This deliverable will take advantage of this backend and using it for building an interface that can be used to perform meaningful tasks. You can use *any* frameworks you want (React, Angular, OnsenUI, jQuery), but are not required to use any frameworks if you want to work in pure JavaScript/TypeScript. You can also incorporate any online APIs you wish to use.
