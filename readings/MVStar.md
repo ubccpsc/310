@@ -87,6 +87,14 @@ public interface IView {
 
 A more typical MVP design is shown below. In this example, ```ViewController``` and ```OutlineController``` each have one View associated with them. Updates to the controller are mediated by an ```EventBus```, while the ```AppController``` marshals requests between the Presenters and the Model. The ```AppController``` also is responsible for dynamically starting and stopping the Presenters and configuring the View each Presenter is bound to.
 
+At runtime, MVP works as follows (for a user View update).
+
+1. The View notifies the Presenter of the change; the data passed between the View and Presenter consists only of method calls with primitive parameter types.
+1. The Presenter modifies the Model as required.
+1. The Model, which is the subject in the observer pattern notifies all of its observers that it has changed.
+1. The EventBus (or the Presenter, if an EventBus is not being used), acting as the observer in the pattern, receives the notify event. 
+1. The Presenter determines how the View should be updated and refreshes it as required, although again only with primitive values.
+
 <img src="./figures/patterns_mvp-example.png" width="512px" alt="mvp">
 
 Compared to MVC, MVP is more testable, and minimizes bloated views. Also while MVP still uses the observer to track changes to the Model, the EventBus makes it easier to keep track of updates within the system (as does the fact that the views are not receiving these updates directly). MVP's main downside is that the views tend to contain a lot of boilerplate primitive code that just updates UI widgets with values and calls methods within the Presenter in response to user actions. 
@@ -98,6 +106,10 @@ Model View ViewModel is the most recent in this line of popular extensions to MV
 In MVVM the ViewModel acts more like the Presenter in MVP and contains most of the application logic for the system, where the ViewController instead focuses on preparing data in a way that is amenable for data binding (and responding to user-driven events appropriately).
 
 <img src="./figures/patterns_mvvm.png" width="512px" alt="mvvm">
+
+<!--
+TODO: add data binding example here
+-->
 
 ### References
 
