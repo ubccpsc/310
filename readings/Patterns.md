@@ -43,7 +43,7 @@ http://www.codeproject.com/Articles/12183/Design-Your-Soccer-Engine-and-Learn-Ho
 
 The Strategy design pattern enables encapsulation of algorithms. This lets client programs depend on the algorithmic interface without having to depend (or know about) the concrete underlying implementation being used. This allows new algorithms to be easily defined and added to a system without changing any client code.
 
-The strategy pattern is often used to avoid subclassing the client. In our example below, you could imagine ```Client``` being extended by ```CelciusStrategy```, ```KelvinStrategy```, and ```FarenheitStrategy```. While this would work, it would mean that ```Client``` would have to be changed to add a new form of temperature conversion. The pattern also supplants the even simpler approach whereby the code would have a series of conditional statements to choose the right temperature multiplier (which would also require ```Client``` changes to extend):
+The strategy pattern is often used to avoid subclassing the client. In our example below, you could imagine ```Client``` being extended by ```CelsiusStrategy```, ```KelvinStrategy```, and ```FahrenheitStrategy```. While this would work, it would mean that ```Client``` would have to be changed to add a new form of temperature conversion. The pattern also supplants the even simpler approach whereby the code would have a series of conditional statements to choose the right temperature multiplier (which would also require ```Client``` changes to extend):
 
 ```
 if (tempScheme === 'C') {
