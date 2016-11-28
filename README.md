@@ -65,9 +65,9 @@ This list is a rough guide only. Readings will likely be updated even after clas
 | Oct 20      | [Technical Representations](readings/Representations.md)|
 | Oct 27      | [Design Principles](readings/Design.md), Midterm                 |
 | Nov 3       | Design Patterns                                | <!-- + dependency injection -->
-| Nov 10      | Design Patterns                        |
+| Nov 10      | Design Patterns (see last week's reading)                       |
 | Nov 17      | _Class cancelled_                                |
-| Nov 24      | IP, Patents, & Trademarks (with Alistair Forester), MV*, Code Smells                           |
+| Nov 24      | [IP, Patents, & Trademarks](readings/Patents_Copyright_IP.pdf) (with Alistair Forester), [MV*](readings/MVStar.md)                           |
 | Dec 1       | Information Security, Refactoring, & Wrap-up |
 | Dec 9       | Final Exam 1200 - 1420 in [HEBB 100](http://students.ubc.ca/campus/discover/buildings-and-classrooms/HEBB) |
 
