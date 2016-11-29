@@ -64,8 +64,8 @@ This list is a rough guide only. Readings will likely be updated even after clas
 | Oct 13      | [Cloud Computing](readings/Assorted.md#cloud-computing) (with Sergii Baidachnyi), [Abstraction](readings/Abstraction.md) |
 | Oct 20      | [Technical Representations](readings/Representations.md)|
 | Oct 27      | [Design Principles](readings/Design.md), Midterm                 |
-| Nov 3       | Design Patterns                                | <!-- + dependency injection -->
-| Nov 10      | Design Patterns (see last week's reading)                       |
+| Nov 3       | [Design Patterns](readings/Patterns.md) | <!-- + dependency injection -->
+| Nov 10      | [Design Patterns](readings/Patterns.md)                       |
 | Nov 17      | _Class cancelled_                                |
 | Nov 24      | [IP, Patents, & Trademarks](readings/Patents_Copyright_IP.pdf) (with Alistair Forester), [MV*](readings/MVStar.md)                           |
 | Dec 1       | Information Security, Refactoring, & Wrap-up |
