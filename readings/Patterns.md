@@ -180,7 +180,7 @@ Ultimately the decorator pattern provides excellent support for maintaining the 
 
 Composites provide a mechanism for treating groups of objects the same as individual objects (often known as part-whole hierarchies). Systems often start with individual objects, but over time gain the ability to group objects together. Adding logic to differentiate individual objects from group objects adds unnecessary complexity to code. The composite pattern, through the composite (```Manager``` in the example below) uses composition to maintain a list of children while still itself being the parent component type (```Empoyee``` below). 
 
-The introduction of the composite  means any client can treat both managers and developers as employees (e.g., by asking for their names or ids uniformly), whether they have reports or not. This frees client code from checking if the ```Employee``` reference they have is a ```Manager``` or a ```Developer```, and enabling ```Manager``s to appropriately traverse all of their reports appropriately.
+The introduction of the composite  means any client can treat both managers and developers as employees (e.g., by asking for their names or ids uniformly), whether they have reports or not. This frees client code from checking if the ```Employee``` reference they have is a ```Manager``` or a ```Developer```, and enabling a ```Manager``` to appropriately traverse all of their reports appropriately (even if some of their reports are themselves a ```Manager```).
 
 <img src="./figures/patterns_composite-example.png" width="320px" alt="composite diagram">
 
@@ -223,7 +223,23 @@ But to the client whether an employee is a ```Manager``` or ```Developer``` woul
 
 ### Visitor
 
-XXX
+The visitor pattern enables operations to be performed on an object hierarchy without directly modifying the hierarchy itself (either by adding new classes or methods). The primary motivation for the pattern is that given a large set of objects it is often necessary to perform tasks on them that is not a part of their core responsibilities; this pollutes their classes and adds non-essential code to their classes that is spread across all classes. By providing an external mechanism for performing these tasks, the visitor extracts the code from the class hierarchy itself, while also bringing together all of the code for that task that would otherwise be spread across the object structure.
+
+The visitor does require one new method be added to every class in the structure being traversed, which is a method called ```accept(visitor: Visitor): void```. While this is a change to the objects, all future visitors will work with this interface, enabling additional visitors to be added transparently to the system. The pattern acknowledges that the tasks we want to perform _on_ a set of objects vary much more often than the core responsibilities of the objects themselves, so paying this one-time cost to enable future extensibility is often worthwhile.
+
+
+For instance, in the diagram below one could imagine adding ```numReports``` or ```topLangs``` methos to ```Manager``` and ```Developer```, but instead we have created a ```TopLangsVisitor``` and ```NumReportsVisitor``` which both traverse the hierarchy directly. Each ```accept(v: Visitor)``` method immedeatly calls ```v.visit(this)``` which uses dynamic dispatch to call the right visitor method. The method within the visitor can then interrogate the provided object to retrieve the required information and maintain a running tally of the answer that can be reported after the traversal is complete (the visitor can accumulate state in its own fields). Note, ```Manager::accept(Visitor)```  would be slightly different (e.g., each object will ensure that its correct children (or composite components) are visited appropriately):
+
+```
+	public accept(v: Visitor): void {
+		for (var r of this.directReports) {
+			r.accept(v);
+		}
+		v.visit(this);
+	}
+```
+
+While adding new visitors is easy, adding new concrete types to the type hierarchy is hard. This is because every visitor needs an ```accept``` method for every type that is being traversed which could result in many visitors being impacted. Also, due to the runtime operation of the visitor being dictated by dynamic dispatch, it is often challenging to understand how the visitor works, if a problem is ever encountered.
 
 <!--
 <img src="./figures/patterns-visitor.png" width="512px" alt="visitor diagram">
