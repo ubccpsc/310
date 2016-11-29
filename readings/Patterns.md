@@ -178,13 +178,48 @@ Ultimately the decorator pattern provides excellent support for maintaining the 
 
 ### Composite
 
-It is common practice for XXX
+Composites provide a mechanism for treating groups of objects the same as individual objects (often known as part-whole hierarchies). Systems often start with individual objects, but over time gain the ability to group objects together. Adding logic to differentiate individual objects from group objects adds unnecessary complexity to code. The composite pattern, through the composite (```Manager``` in the example below) uses composition to maintain a list of children while still itself being the parent component type (```Empoyee``` below). 
+
+The introduction of the composite  means any client can treat both managers and developers as employees (e.g., by asking for their names or ids uniformly), whether they have reports or not. This frees client code from checking if the ```Employee``` reference they have is a ```Manager``` or a ```Developer```, and enabling ```Manager``s to appropriately traverse all of their reports appropriately.
+
+<img src="./figures/patterns_composite-example.png" width="320px" alt="composite diagram">
+
+In the example below, the default implementation of ```Employee::getBudget()``` would just be:
+
+```
+	public getBudget():number {
+		return this.salary;
+	}
+```
+
+But the implementation of ```Manager::getBudget()``` would be:
+
+```
+	public getBudget():number {
+		var budget = this.salary;
+		for (var report: this.directReports) {
+			budget += report.getBudget();
+		}
+		return budget;
+	}
+```
+
+But to the client whether an employee is a ```Manager``` or ```Developer``` would be totally transparent.
+
+```
+	// employee 1233 has no reports
+	var e1 = getEmployee(1233);
+	Log.info(e1.getBudget());
+	
+	// employee 1234 has 4 direct and 35 indirect reports
+	var e2 = getEmployee(1234);
+	Log.info(e2.getBudget());
+```
 
 <!--
 <img src="./figures/patterns-composite.png" width="512px" alt="composite diagram">
 -->
 
-<img src="./figures/patterns_composite-example.png" width="320px" alt="composite diagram">
 
 ### Visitor
 
