@@ -5,6 +5,8 @@ January 4, 2017 -> April 5, 2017 (```2016T2```). These are the official resource
 
 ## This is a development-heavy four-credit course. Plan your timetable accordingly. If you are not familiar with TypeScript, please start looking at it now.
 
+### This is a pair-programming course: If you want to work with someone specific for your project, be sure that both of you register for the _SAME_ lab section.
+
 ## Waitlist: [See Here](#waitlist)
 
 ### Course details still in flux; expect to encounter inconsistencies in these materials.
@@ -145,7 +147,7 @@ While CPSC 310 will be a challenging course, we hope it will integrate many of t
 <a name="waitlist"></a>
 ### Waitlist
 
-We are going to over-enroll both sections of the course on the first day and purge the waitlist then. If you are not in the course on the first day, you will not be able to join later in the term.
+We are going to over-enroll both sections of the course on the first day and purge the waitlist. If you are not in the course on the first day, you will not be able to join later in the term.
 
 <!---
 There is extremely high demand for this course this term. If you are on the waitlist and wish to join the class, please come to the front after **EVERY** class to sign in. Those students who have signed into every class by September 16 will be forwarded to the advisors who will insert students into available spots by the add/drop deadline. This does not guarantee you will be admitted, but without signing in every class you will not be eligible. Students on the waitlist should not form groups with students who are already enrolled in case your whole group does not make it into the course this term. Unfortunately, the instructor is not able to override class seat assignments or the waitlist itself.
