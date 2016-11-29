@@ -245,7 +245,7 @@ While adding new visitors is easy, adding new concrete types to the type hierarc
 <img src="./figures/patterns-visitor.png" width="512px" alt="visitor diagram">
 -->
 
-<img src="./figures/patterns_visitor-example.png" width="512px" alt="visitor diagram">
+<img src="./figures/patterns_visitor-example.png" width="640px" alt="visitor diagram">
 
 <!--
 Dropped due to lack of time:
