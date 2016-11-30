@@ -53,7 +53,7 @@ Marks will be based on completeness (aka can your UI perform the listed function
 
 ## Contribution statement
  
-In your repository, each teammate should commit a file called ```/D4-contrib_<GitHubId>.md```. This file should contain a short description of your concrete contributions to your D4 code. All that is required is a few sentences followed by links to some of your key Github commits (full links so we can click on them would be appreciated) for Deliverable 4. If you do not have any (or very few) commits, you may use additional space to explain your concrete contributions. This should be committed before you meet with your TAs in the lab as you will refer to this file in your meeting with them.
+In your repository, each teammate should commit a file called ```/D4-contrib_<GitHubId>.md```. This file should contain a short description of your concrete contributions to your D4 code. All that is required is a few sentences followed by links to some of your key Github commits (full links so we can click on them would be appreciated) for Deliverable 4. If you do not have any (or very few) commits, you may use additional space to explain your concrete contributions. This should be committed before you meet with your TAs in the lab as you will refer to this file in your meeting with them. As with D1, D2, and D3, your D4 deliverable score will be scaled by your contribution to the deliverable.
 
 ## Task checklist
 
