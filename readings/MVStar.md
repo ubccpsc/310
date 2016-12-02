@@ -119,6 +119,10 @@ TODO: add data binding example here
 
 * MVP [document](http://www.wildcrest.com/Potel/Portfolio/mvp.pdf).
 
+<!-- 
+other links:
+http://www.teehanlax.com/blog/model-view-viewmodel-for-ios/
+-->
 
 ---
 ![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)

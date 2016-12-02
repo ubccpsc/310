@@ -124,8 +124,11 @@ chai assertions: http://dailyjs.com/2012/02/23/chai/
 * Steve Easterbrook [testing 2](http://www.cs.toronto.edu/~sme/CSC302/notes/17-Testing2.pdf).
 * Laurie Williams [black box testing notes](http://agile.csc.ncsu.edu/SEMaterials/BlackBox.pdf).
 * Laurie Williams [white box testing notes](http://agile.csc.ncsu.edu/SEMaterials/WhiteBox.pdf).
+* Laurie Williams [automated testing notes](http://agile.csc.ncsu.edu/SEMaterials/AgileTesting.pdf) 
 * MIT testing [slides](http://measure.cc.gt.atl.ga.us/classes/cs6300/Lectures/class18testing.pdf).
 * Jim Cordy's [quality assurance](http://research.cs.queensu.ca/home/cordy/cisc327/index.html) course.
+
+<!-- look at laurie's automated testing notes more -->
 
 <!--
 On misusing coverage:
