@@ -29,7 +29,16 @@ Most development environments provide extensive support for refactoring tools. T
 
 ### Refactoring list
 
-XXX
+Martin Fowler has documented the most common refactorings in his comprehensive [book](http://www.martinfowler.com/books/refactoring.html). While he details dozens of these, some of the most common refactorings are:
+
+* Rename (class/field/method).
+* Move (class/field/method).
+* Extract class/interface/method.
+* Push down/pull up field/method.
+* Replace magic number/string with constant.
+* Replace inheritance with delegation.
+
+We will discuss some of these more concretely below in the context of how they can improve program structure.
 
 # Code smells
 
