@@ -38,7 +38,78 @@ Martin Fowler has documented the most common refactorings in his comprehensive [
 * Replace magic number/string with constant.
 * Replace inheritance with delegation.
 
+<!---
 We will discuss some of these more concretely below in the context of how they can improve program structure.
+-->
+
+For example, the code below evolved from being just about printing a value to also computing it. To address this, the developer decided to refactor it so the method has a more specific responsibility and performs an extract method refactoring; before the code looked like this:
+
+```
+public printOwing() {
+	printBanner();
+	var owing = 0;
+	for (var t of this.tasks) {
+		owing += t.getValue();
+	} 
+	//print details
+	Log.info(“amount: " + owing);
+}
+```
+
+After, a private method ```getOwing``` has been extracted and ```printOwing``` has been simplified to:
+
+```
+public printOwing() {
+	printBanner();
+	//print details
+	Log.info(“amount: " + this.getOwing());
+}
+
+private getOwing() {
+	var owing = 0;
+	for (var t of this.tasks) {
+		owing += t.getValue();
+	}
+	return owing;
+}
+```
+
+In another instance, a developer realizes upon adding a new feature (```CourseProcessor```) that it shares similar structure to another existing feature and having both complicates the client code.
+
+```
+class RoomsParser {
+	public parseRooms(zip: JSZip) {
+	// ...
+	}
+}
+class CourseProcessor {
+	public processCourses(id: String, zip: JSZip) {
+		// ...
+	}
+}
+```
+
+To simplify the client the developer performs an extract interface refactoring to change the code to:
+
+```
+interface IParser {
+	public parse(id: String zip: JSZip) {
+		// ...
+	}
+}
+
+class RoomsParser implements IParser {
+	public parse(id: String, zip: JSZip) {
+		// ...
+	}
+}
+
+class CourseProcessor implements IParser {
+	public parse(id: String, zip: JSZip) {
+		// ...
+	}
+}
+```
 
 # Code smells
 
