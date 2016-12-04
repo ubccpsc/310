@@ -113,11 +113,29 @@ class CourseProcessor implements IParser {
 
 # Code smells
 
-XXX
+Code smells are symptoms of specific code deficiencies. Given that code quality can often be hard to quantify, but can be often be identified by 'feel', smells give names to often encountered structural deficiencies. Smells are never absolute: they are usually informally identified and are sometimes not signs of poor code (e.g., highly generic library and framework code often violate many smells). At their core, code smells highlight properties of code that could be detrimental to:
+
+* debugging
+* understanding
+* quality
+
+Specific smells often match up with refactorings that are best able to resolve them; for this reason, smells and refactorings are often discussed in tandem. We will discuss several of these below:
+
+* **Duplicated code**: This represents one of the most common code smells and is identified by code being duplicated throughout the system. If the duplicates take place in the same class an _extract method_ refactoring can be used to have all copies in the class use the same single implementation. If the code is in related classes a method can be pushed up into a common supertype. If the duplicate code is in unrelated classes, a more complex analysis is often needed.
+
+* **Long method**: The single responsibility principle specifies that a method should do one thing and do it well. When methods get too long, it is a sign that feature creep has caused the method to become less focused. While thresholds are hard to set, fitting the code on one screen is a simple rule of thumb (although one that can be legitimately broken).  As with duplicate code, _extract method_ refactorings are often used to split up these methods, as could _extract class_ if functionality is to be delegated to another class.
+
+* **Large class**: As with long method, large class captures classes that have grown beyond their original mandate. _Extract class_ and _extract method_ refactorings are often used in these cases.
+
+* **Long parameter list**: Methods that take large numbers of parameters are hard to understand and are again often symptomatic of code that is doing too much. These methods can either be split, or one can _introduce parameter object_ to better capture and enforce the parameters for the method.
+
+* **Others**: While working on code it is often observed that most changes involve modifying a specific code element; this is known as a _divergent change_ and signals that one class has become much more important than it should have (perhaps has become a god class). Another example is identified by simple coherent changes requiring changes across a system; in these case _shotgun surgery_ may be required to finish the task which is often the sign of poor system cohesion. Finally, _feature envy_ occurs when a method uses other classes more than it uses its own which often suggests that the method is in the wrong place.
+
+Software is built iteratively over a long period of time. Even good past design decisions will need to be updated as requirements change or the environment changes. Smells are just one way to identify such problems, and refactorings are only one way (although a common one) to improve the structure of a system.
 
 ### References
 
-* Technical Debt: http://martinfowler.com/bliki/TechnicalDebt.html
+* Martin Fowler's [technical debt](http://martinfowler.com/bliki/TechnicalDebt.html) discussion.
 
 ---
 ![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
