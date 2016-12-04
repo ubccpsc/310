@@ -46,15 +46,15 @@ Each of these personas will have different motivations, goals, and techniques av
 
 Several security principles have been developed to help mitigate some of these vectors (this is an incredibly incomplete list):
 
-* ***Defence in depth***: XXX
+* ***Defence in depth***: A small violation should not easily lead to a big one. This means that security should not only be implemented at the perimeter of the system and internal controls should still be present. Varying internal security measures can further help avoiding failure propagation. As with most security countermeasures this negatively impacts system complexity and can decrease system usability (as is true for many of these principles). 
 
-* ***Least privilege***: XXX
+* ***Least privilege***: Coarse-grained privileges allow both malicious and accidental access to unauthorized data. Implementing roles and access control lists are one of the most common ways of avoiding these exploits, although this only really works once the subjects, assets, and policies for the system has been carefully specified.
 
-* ***Separation of duties***: XXX
+* ***Separation of duties***: Sensitive or critical actions in a secure system should not be left to a single user. This applies to both authorized (to avoid accidents) and unauthorized parties (to avoid broad exploits). This kind of separation is often apparent in accounting systems whereby actions must be approved by second or third parties to ensure compliance and correctness.
 
-* ***Strong authentication***: XXX
+* ***Strong authentication***: Making it hard for unauthorized users to gain access to the system can be enhanced using strong passwords or some kind two-factor (or multi-factor) authentication. In two-factor authentication, users must both know something (like their password) and have something (like a phone, chip-with-pin card, or number-generating fob). This makes it so if only one part of the mechanism was lost (for instance the password written on a post-it note) the system could not be directly breached.
 
-* ***Non-repudiation***: XXX
+* ***Non-repudiation***: System users must be held accountable. Non-repudiation means auditing system behaviour to track how the system is being used. Auditing is an essential tool for tracking the extent to which unauthorized parties have accessed the system and what they have done. It is also useful for ensuring that authorized parties know their usage of the system is being traced. One downside of this approach is that audit logs themselves can contain sensitive information (or point to it) and must themselves be carefully secured.
 
 
 ### References
