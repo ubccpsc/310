@@ -68,7 +68,7 @@ This list is a rough guide only. Readings will likely be updated even after clas
 | Nov 10      | [Design Patterns](readings/Patterns.md)                       |
 | Nov 17      | _Class cancelled_                                |
 | Nov 24      | [IP, Patents, & Trademarks](readings/Patents_Copyright_IP.pdf) (with Alistair Forester), [MV*](readings/MVStar.md)                           |
-| Dec 1       | Information Security, Refactoring, & Wrap-up |
+| Dec 1       | Information Security, [Refactoring](readings/Refactoring.md), & Wrap-up |
 | Dec 9       | Final Exam 1200 - 1420 in [HEBB 100](http://students.ubc.ca/campus/discover/buildings-and-classrooms/HEBB) |
 
 [Piazza](https://piazza.com/ubc.ca/winterterm12016/cpsc310) has been configured for this term. Please be mindful of the UBC Academic Misconduct Policy with respect to posting project solutions and when interacting with your peers and course staff. We will do our best to be involved in Piazza discussions but will be most responsive during the week.
