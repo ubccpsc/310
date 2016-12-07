@@ -16,6 +16,8 @@ Three high-level requirements pervade most software security discussions:
 * ***Integrity***: Ensuring that only authorized parties can manipulate data, and only in an approved manner.
 * ***Availability***: Resources should always be accessible by authorized users on appropriate occasions.
 
+In a security context, _assets_ are the systems and data being secured. _Subjects_ are the people, both legitimate and otherwise, who are interacting with the system and data. The _policies_ are the rules associated with the system; these are key for determining which subjects are permitted to view, interact with, or modify which assets. The _threats_ to the system are the violations of the policies that can be employed to break the security of the system.
+
 There are four high-level steps involved in securing systems:
 
 1. ***Understanding***: Before we can secure a system we need to understand the system and its context.
