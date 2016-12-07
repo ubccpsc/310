@@ -79,7 +79,7 @@ In another instance, a developer realizes upon adding a new feature (```CoursePr
 ```typescript
 class RoomsParser {
 	public parseRooms(zip: JSZip) {
-	// ...
+		// ...
 	}
 }
 class CourseProcessor {
