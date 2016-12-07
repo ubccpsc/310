@@ -239,7 +239,7 @@ For instance, in the diagram below one could imagine adding ```numReports``` or 
 	}
 ```
 
-While adding new visitors is easy, adding new concrete types to the type hierarchy is hard. This is because every visitor needs an ```accept``` method for every type that is being traversed which could result in many visitors being impacted. Also, due to the runtime operation of the visitor being dictated by dynamic dispatch, it is often challenging to understand how the visitor works, if a problem is ever encountered.
+While adding new visitors is easy, adding new concrete types to the type hierarchy is hard. This is because every visitor needs a ```visit``` method for every type that is being traversed which could result in many visitors being impacted. Also, due to the runtime operation of the visitor being dictated by dynamic dispatch, it is often challenging to understand how the visitor works, if a problem is ever encountered.
 
 <!--
 <img src="./figures/patterns-visitor.png" width="512px" alt="visitor diagram">
