@@ -25,20 +25,22 @@ For example, the class diagram below could be used to generate the text that fol
 
 ```typescript
 
-interface IInsightFacade {   addDataset(id: string, content: string)   removeDataset(id: string)   performQuery(query: QueryRequest) }
+interface IInsightFacade { 	addDataset(id: string, content: string); 	removeDataset(id: string); 	performQuery(query: QueryRequest); }
 
-class QueryController {  performQuery(datasets: Dataset[],
-              query: QueryRequest) }
+class InsightFacade implements IInsightFacade {
+	// impl here
+}
+	
+class QueryController { 	performQuery(datasets: Dataset[], query: QueryRequest) { } }
 
-class DatasetController {   addDataset(id: string, content: string)   removeDataset(id: string)   getDatasets() }
+class DatasetController { 	addDataset(id: string, content: string) { } 	removeDataset(id: string) { } 	getDatasets() { } }
 
-class Log {   trace(msg: string) { … }   info(msg: string) { … }   warn(msg: string) { … }
-  error(msg: string, 
-        stack?:Stack) { … } }
+class Log { 	trace(msg: string) { } 	info(msg: string) { } 	warn(msg: string) { }
+	error(msg: string, stack?:Stack) { } }
 
-class YourFacadeSpec {   it(‘…’) { … } }
+class YourFacadeSpec { 	it(‘…’) { } }
 
-class AutoTestFacadeSpec {   it(‘…’) { … } }
+class AutoTestFacadeSpec { 	it(‘…’) { } }
 
 ```
 
