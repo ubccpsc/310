@@ -63,5 +63,9 @@ Several security principles have been developed to help mitigate some of these v
 
 * [Web application](http://martinfowler.com/articles/web-security-basics.html#ProtectUserSessions) discussion.
 
+* [Secure by design](http://www.slideshare.net/EoinWoods1/secure-by-design-security-design-principles-for-the-rest-of-us) Eoin Woods GOTO slides.
+
+* OWASP [threat modelling](https://www.owasp.org/index.php/Threat_Risk_Modeling) wiki page.
+
 ---
 ![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)

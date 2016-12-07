@@ -30,7 +30,7 @@ Being able to quickly self-learn new languages is a fundamental skill for all so
 Consider the following three snippets:
 
 #### Java
-```
+```java
 public boolean isSplit(String input) {
 	this.lastString = input;
 
@@ -44,7 +44,7 @@ public boolean isSplit(String input) {
 ```
 
 #### TypeScript
-```
+```typescript
 public isSplit(input: string): boolean {
 	this.lastString = input;
 
@@ -57,7 +57,7 @@ public isSplit(input: string): boolean {
 ```
 
 #### JavaScript
-```
+```javascript
 isSplit(input) {
 	this.lastString = input;
 

@@ -44,7 +44,7 @@ We will discuss some of these more concretely below in the context of how they c
 
 For example, the code below evolved from being just about printing a value to also computing it. To address this, the developer decided to refactor it so the method has a more specific responsibility and performs an extract method refactoring; before the code looked like this:
 
-```
+```typescript
 public printOwing() {
 	printBanner();
 	var owing = 0;
@@ -58,7 +58,7 @@ public printOwing() {
 
 After, a private method ```getOwing``` has been extracted and ```printOwing``` has been simplified to:
 
-```
+```typescript
 public printOwing() {
 	printBanner();
 	//print details
@@ -76,7 +76,7 @@ private getOwing() {
 
 In another instance, a developer realizes upon adding a new feature (```CourseProcessor```) that it shares similar structure to another existing feature and having both complicates the client code.
 
-```
+```typescript
 class RoomsParser {
 	public parseRooms(zip: JSZip) {
 	// ...
@@ -91,7 +91,7 @@ class CourseProcessor {
 
 To simplify the client the developer performs an extract interface refactoring to change the code to:
 
-```
+```typescript
 interface IParser {
 	public parse(id: String zip: JSZip) {
 		// ...
