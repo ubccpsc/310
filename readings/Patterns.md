@@ -197,7 +197,7 @@ But the implementation of ```Manager::getBudget()``` would be:
 ```
 	public getBudget():number {
 		var budget = this.salary;
-		for (var report: this.directReports) {
+		for (let report of this.directReports) {
 			budget += report.getBudget();
 		}
 		return budget;
