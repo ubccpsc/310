@@ -33,7 +33,7 @@ At runtime, MVC works as follows (for a user View update).
 
 Below is a simple MVC example that clarifies that multiple view options are available to the controller (although typically only one of them is bound at a time).
 
-<img src="./figures/patterns_mvc-example.png" width="512px" alt="mvc">
+<img src="./figures/patterns_mvc-example.png" width="640px" alt="mvc">
 
 MVC has two primary drawbacks.
 
@@ -67,9 +67,9 @@ The view is significantly simpler in MVP than MVC. Most notably, the view _never
 
 Presenters in MVP play the role Controllers were always meant to play in MVC: that is, they _actually_ contain all of the application logic. Presenters tend to be complex, but are easily unit tested given the nature of the communication path with the View. Together with a mock view, the Presenters can often be tested with traditional unit testing approaches without requiring a fake UI to be spun up (e.g., the MockView can just be a regular object, it does not need access to the DOM or any other window-specific features).
 
-The View and Presenter interfaces are tightly bound to each other; this is because each needs to know the public interface of the other to enable communication.
+The View and Presenter interfaces are tightly bound to each other; this is because each needs to know the public interface of the other to enable communication. 
 
-```
+```typescript
 // sample view/presenter interface
 public interface IView {
 	public setPresenter(p: IPresenter);
@@ -78,14 +78,14 @@ public interface IView {
 	public interface IPresenter {
 		public onCancel();
 		public onAction(action: String);
-   	   public createView(): IView;
+		public createView(): IView;
 	}
 }
 ```
 
 <img src="./figures/patterns_mvp.png" width="512px" alt="mvp">
 
-A more typical MVP design is shown below. In this example, ```ViewController``` and ```OutlineController``` each have one View associated with them. Updates to the controller are mediated by an ```EventBus```, while the ```AppController``` marshals requests between the Presenters and the Model. The ```AppController``` also is responsible for dynamically starting and stopping the Presenters and configuring the View each Presenter is bound to.
+A more typical MVP design is shown below. In this example, ```ViewPresenter``` and ```OutlinePresenter``` each have one View associated with them (but this view could be set to any of the available options, depending on the runtime circumstance). Updates to the controller are optionally mediated by an ```EventBus```, while the ```AppController``` is responsible for dynamically starting and stopping the Presenters and configuring the View each Presenter is bound to (```AppController``` often listens to lifecycle event queues from the ```EventBus```).
 
 At runtime, MVP works as follows (for a user View update).
 
@@ -95,7 +95,7 @@ At runtime, MVP works as follows (for a user View update).
 1. The EventBus (or the Presenter, if an EventBus is not being used), acting as the observer in the pattern, receives the notify event. 
 1. The Presenter determines how the View should be updated and refreshes it as required, although again only with primitive values.
 
-<img src="./figures/patterns_mvp-example.png" width="512px" alt="mvp">
+<img src="./figures/patterns_mvp-example.png" width="640px" alt="mvp">
 
 Compared to MVC, MVP is more testable, and minimizes bloated views. Also while MVP still uses the observer to track changes to the Model, the EventBus makes it easier to keep track of updates within the system (as does the fact that the views are not receiving these updates directly). MVP's main downside is that the views tend to contain a lot of boilerplate primitive code that just updates UI widgets with values and calls methods within the Presenter in response to user actions. 
 
