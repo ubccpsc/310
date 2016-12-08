@@ -20,7 +20,7 @@ While this might suggest that refactoring the original code is the best course o
 
 ### Viscosity
 
-A highly-viscous is software whose design is easy to break. Good designs making adhering to the design easier than violating it. Viscous designs also lead developers to break prior design decisions to get their tasks complete; these hacks contribute to future technical debt within the system. 
+Software with highly viscous design makes it easier to violate the design than conform to it. Good designs making adhering to the design easier than violating it. Viscous designs also lead developers to break prior design decisions to get their tasks complete; these hacks contribute to future technical debt within the system. 
 
 Viscosity also affects software development tasks. When Builds, tests, commits, and deployments are slow, developers will often 'batch' actions to save time, even if these batches may not be the best or safest way to work.
 
