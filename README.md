@@ -2,14 +2,15 @@
 
 ## Current Term
 
-* [2016 September](https://github.com/ubccpsc/310/tree/2016sept)
+* [2017 January](https://github.com/ubccpsc/310/tree/2017jan)
 
 ## Upcoming Term
 
-* [2017 January](https://github.com/ubccpsc/310/tree/2017jan)
+* Not yet scheduled
 
 ### Past Terms
 
+* [2016 September](https://github.com/ubccpsc/310/tree/2016sept)
 * [2016 January](https://sites.google.com/site/cpsc3102015w1/)
 * [2015 May](https://sites.google.com/site/ubccs3102015s1/)
 * [2015 January](https://sites.google.com/site/ubccs3102014w2/)
