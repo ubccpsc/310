@@ -188,3 +188,10 @@ There will not be a public test suite for this deliverable, ```InsightFacadeSpec
 ### Getting started
 
 Regardless of how you did on D1, you are strongly advised to start with the ```InsightFacade``` refactor. This will make it so your code is easier to test. Next, write some tests for some D1 queries and make sure your system works. If you did not complete D1 this is especially important and is a better use of your time than continuing to work on D1 directly. Finally, work on GROUP and APPLY and their associated tests.
+
+## Contribution statement
+
+In your repository, each teammate should commit a file called ```/D2-contrib_<GitHubId>.md```. This file should contain a short description of your concrete contributions to this deliverable's code. All that is required is a few sentences followed by links to some of your key Github commits (full links so we can click on them would be appreciated) for the deliverable. If you do not have any (or very few) commits, you may use additional space to explain your concrete contributions. This should be committed before you meet with your TAs in the lab as you will refer to this file in your meeting with them.
+
+The first two lines of the file should also list your final test pass rate on Monday @ noon and your code coverage rate (computed as described above) on Monday @ noon.
+

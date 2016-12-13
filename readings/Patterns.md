@@ -110,6 +110,14 @@ Clearly the Sate and Strategy patterns look structurally identical. And, except 
 TODO: extend with statechart-based example & code from more than one state vs global state.
 -->
 
+<!-- 
+student submitted links
+https://www.youtube.com/watch?v=MGEx35FjBuo 
+
+with before/after code:
+https://sourcemaking.com/design_patterns/state/java/1
+-->
+
 ### Facade
 
 The Facade is a structural pattern to provide a unified set of interfaces for a subsystem. Subsystems can contain a large amount of code that even if well designed can be difficult for a client to learn to correctly use. Facades provide coherent simplifications of modules for performing common tasks. It is not uncommon for a subsystem to have multiple facades for different client use cases. Facades are usually easy to implement once you have a complex subsystem that you want to provide a more unified high-level interface to. 
@@ -271,6 +279,8 @@ Dropped due to lack of time:
 * Great overview of [most](https://sourcemaking.com/design_patterns) design patterns with concrete examples.
 
 * Repository of [many design patterns](https://github.com/torokmark/design_patterns_in_typescript) implemented in TypeScript.
+
+* Interesting article on language-specific support for [decorators](https://dzone.com/articles/is-inheritance-dead).
 
 ---
 ![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
