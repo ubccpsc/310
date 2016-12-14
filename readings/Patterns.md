@@ -283,4 +283,4 @@ Dropped due to lack of time:
 * Interesting article on language-specific support for [decorators](https://dzone.com/articles/is-inheritance-dead).
 
 ---
-![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
+![https://creativecommons.org/licenses/by-sa/3.0/] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
