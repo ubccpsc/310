@@ -64,4 +64,4 @@ Servers are responsible for sending back detailed information about the resource
 Several good REST API examples exist online, although the [Paypal API](https://developer.paypal.com/docs/api/) and [Strava](https://strava.github.io/api/) APIs stand out for their great documentation and examples.
 
 ---
-![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
+[![](figures/CCSA.png "Creative Commons: Attribution-ShareAlike")](https://creativecommons.org/licenses/by-sa/3.0/) [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)

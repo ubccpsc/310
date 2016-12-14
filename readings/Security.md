@@ -70,4 +70,4 @@ Several security principles have been developed to help mitigate some of these v
 * OWASP [threat modelling](https://www.owasp.org/index.php/Threat_Risk_Modeling) wiki page.
 
 ---
-![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
+[![](figures/CCSA.png "Creative Commons: Attribution-ShareAlike")](https://creativecommons.org/licenses/by-sa/3.0/) [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)

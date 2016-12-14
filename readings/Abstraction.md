@@ -96,9 +96,5 @@ Thinking about change is also related to encapsulation in that thinking concrete
 
 * Original [information hiding](http://www.cs.umd.edu/class/spring2003/cmsc838p/Design/criteria.pdf) paper.
 
-
 ---
-![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
-
-
-
+[![](figures/CCSA.png "Creative Commons: Attribution-ShareAlike")](https://creativecommons.org/licenses/by-sa/3.0/) [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)

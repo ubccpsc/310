@@ -16,13 +16,13 @@ If you are registered in the class, please do not form a team with students on t
 
 ## Deliverables
 
-1. [Deliverable 1](Deliverable1.md) (Due October 10 @ noon)
+1. Deliverable 1 (Due October 10 @ noon)
 
-1. [Deliverable 2](Deliverable2.md) (Due October 24 @ noon)
+1. Deliverable 2 (Due October 24 @ noon)
 
-1. [Deliverable 3](Deliverable3.md) (Due November 14 @ noon)
+1. Deliverable 3 (Due November 14 @ noon)
 
-1. [Deliverable 4](Deliverable4.md) (Due November 28 @ noon)
+1. Deliverable 4 (Due November 28 @ noon)
 
 ## Language and environment
 

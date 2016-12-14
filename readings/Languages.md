@@ -81,4 +81,4 @@ In these examples we can see that there are far more commonalities between these
 * Why you should learn [a new language](http://blog.cleancoder.com/uncle-bob/2016/09/01/TheLurn.html) every year.
 
 ---
-![] (figures/CCSA.png "Creative Commons: Attribution-ShareAlike") [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
+[![](figures/CCSA.png "Creative Commons: Attribution-ShareAlike")](https://creativecommons.org/licenses/by-sa/3.0/) [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
