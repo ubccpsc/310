@@ -125,6 +125,8 @@ In addition to AutoTest, each team member will be independently asked a small nu
 
 * March 27: Project [Deliverable 4](project/Deliverable4.md)
 
+* March 27: Project [Deliverable 5](project/Deliverable5.md)
+
 ## Grading
 
 * Midterm 10%
