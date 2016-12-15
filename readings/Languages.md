@@ -80,5 +80,7 @@ In these examples we can see that there are far more commonalities between these
 
 * Why you should learn [a new language](http://blog.cleancoder.com/uncle-bob/2016/09/01/TheLurn.html) every year.
 
+* Languages are all related. [This article](https://eev.ee/blog/2016/12/01/lets-stop-copying-c/) reenforces how some ideas propagate (without justification) through programming languages.
+
 ---
 [![](figures/CCSA.png "Creative Commons: Attribution-ShareAlike")](https://creativecommons.org/licenses/by-sa/3.0/) [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
