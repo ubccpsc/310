@@ -32,31 +32,47 @@ Some of the topics we will cover in 310 this term include:
 
 #### Instructors:
 
-* [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/) (January 4 - March 3)
-* [Elisa baniassad](https://www.cs.ubc.ca/people/elisa-baniassad) (March 6 - April 5)
+* [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/) (January 4 - Feb 23)
+* [Gail Murphy](https://blogs.ubc.ca/gailcmurphy/) (February 27 - March 3)
+* [Elisa Baniassad](https://www.cs.ubc.ca/people/elisa-baniassad) (March 6 - April 5)
 
 #### TAs:
 
-* TBD
+* Giovanni Viviani (GTA)
+* Nick Bradley (GTA)
+* Rodrigo Araujo (GTA)
+* Bang Wen (Bowen) Su
+* Chia-Chen Chu
+* Katharine Cavers
+* Fabian Tam
+* Lucas Zamprogno
+* Zixuan Yin
+* Man Kit (Andy) Yeung
+* Junze Wu
+* Theodore Lau
+* Ryan Koon
+* Daniel Choi
+* Joanne Chen
+* MoHan Zhang
 
 ### Piazza
 
+<!--
 Piazza will be used but has not been configured.
+-->
 
-<!---
-[Piazza](https://piazza.com/ubc.ca/winterterm12016/cpsc310) has been configured for this term. Please be mindful of the UBC Academic Misconduct Policy with respect to posting project solutions on Piazza.
---->
+[Piazza](piazza.com/ubc.ca/winterterm22016/cpsc310) has been configured for this term. Please be mindful of the UBC Academic Misconduct Policy with respect to posting project solutions on Piazza. 
 
 ## Schedule
 
 #### Lectures: 
 
-* 201: MWF 0900-0950: Room TBD.
-* 202: MWF 1400-1450: Room TBD.
+* 201: MWF 0900-0950: [PHARM 1201](https://www.google.ca/maps/place/UBC+Faculty+of+Pharmaceutical+Sciences/@49.2615914,-123.2486782,17z/data=!4m21!1m15!4m14!1m6!1m2!1s0x548672cbc595e6a1:0xab34e40e58012409!2sICICS+Computer+Science,+2366+Main+Mall,+Vancouver,+BC+V6T+1Z4!2m2!1d-123.2488201!2d49.2611817!1m6!1m2!1s0x548672c8e6d17b6b:0x2f4024c0ac3282d9!2sUBC+Faculty+of+Pharmaceutical+Sciences,+Pharmaceutical+Sciences+Building,+Wesbrook+Mall,+Vancouver,+BC+V6T+1Z3!2m2!1d-123.243277!2d49.262386!3m4!1s0x0000000000000000:0x2f4024c0ac3282d9!8m2!3d49.2623861!4d-123.2432771).
+* 202: MWF 1400-1450: [SWNG 121](https://www.google.ca/maps/place/West+Mall+Swing+Space/@49.2627197,-123.2548329,18.12z/data=!4m5!3m4!1s0x548672ca7f5f71c1:0x5594f7f497661f04!8m2!3d49.2627865!4d-123.2543814).
 
 
 <!---
-Thursdays 1700-2000, [PHARM 1101](https://www.google.ca/maps/place/UBC+Faculty+of+Pharmaceutical+Sciences/@49.2615914,-123.2486782,17z/data=!4m21!1m15!4m14!1m6!1m2!1s0x548672cbc595e6a1:0xab34e40e58012409!2sICICS+Computer+Science,+2366+Main+Mall,+Vancouver,+BC+V6T+1Z4!2m2!1d-123.2488201!2d49.2611817!1m6!1m2!1s0x548672c8e6d17b6b:0x2f4024c0ac3282d9!2sUBC+Faculty+of+Pharmaceutical+Sciences,+Pharmaceutical+Sciences+Building,+Wesbrook+Mall,+Vancouver,+BC+V6T+1Z3!2m2!1d-123.243277!2d49.262386!3m4!1s0x0000000000000000:0x2f4024c0ac3282d9!8m2!3d49.2623861!4d-123.2432771)
+Thursdays 1700-2000, 
 --->
 
 This list is a week-by-week guide only. Readings will likely be updated even after class has completed. Schedule extremely subject to change
@@ -68,10 +84,10 @@ This list is a week-by-week guide only. Readings will likely be updated even aft
 | Jan 16      | Assertions, APIs, REST, & Async             | TBD   |
 | Jan 23      | Process, Agile                              | TBD   |
 | Jan 30      | Specifications                              | TBD   |
-| Feb 6       | Cloud & Technical Abstractions              | TBD   |
-| Feb 13      | Information Security & TBD                  | TBD   |
+| Feb 6       | Decomposition & Technical Abstractions      | TBD   |
+| Feb 13      | Cloud & Information Security                | TBD   |
 | Feb 20      | Reading Week                                | TBD   |
-| Feb 27      | TBD & Midterm (Mar 3)                       | TBD   |
+| Feb 27      | Midterm (Mar 3) & Guest Lectures            | TBD   |
 | Mar 6       | Design                                      | TBD   |
 | Mar 13      | Design                                      | TBD   |
 | Mar 20      | Design                                      | TBD   |
@@ -84,17 +100,40 @@ Note: there will not be any labs during the first week of class.
 
 | Lab Section | Time           | Room        | TAs                    |
 | :--         |:--             | :--         | :--                    |
-| TBD         | TBD				 | TBD		     | TBD                    |
+| L2N         | Tue 0930-1130	 | TBD		     | TBD                    |
+| L2G         | Mon	1000-1200	 | TBD		     | TBD                    |
+| L2J         | Mon	1700-1900	 | TBD		     | TBD                    |
+| L2A         | Tue 1330-1530  | TBD		     | TBD                    |
+| L2H         | Tue 1530-1730	 | TBD		     | TBD                    |
+| L2C         | Wed 1000-1200	 | TBD		     | TBD                    |
+| L2K         | Wed 1200-1400	 | TBD		     | TBD                    |
+| L2E         | Wed 1600-1800	 | TBD		     | TBD                    |
+| L2B         | Thu 1030-1230	 | TBD		     | TBD                    |
+| L2F         | Thu 1700-1900	 | TBD		     | TBD                    |
+| L2M         | Fri 1100-1300	 | TBD		     | TBD                    |
+| L2D         | Fri 1500-1700	 | TBD		     | TBD                    |
 
 Both team members will be required to attend each lab. 
 
 #### TA Office Hours
 
-TAs will be available every day of the week for additional help, should your team need additional advice:
+In addition to the 24 hours of labs per week, there are also ~12 hours of TA office hours per week. These have been clustered later in the week, but some are available on each day, to better meet anticipated demands.
 
-| Time             | Room            | TA          |
-| :--              | :--             | :--         |
-| TBD; TBD-TBD     | TBD             | TBD         |
+|Time						| TA				| Room |
+| :--						| :--				| :-- |  
+|Monday @ 1600-1700		|Daniel Choi		| TBD |  
+|Tuesday @ 0900-1000	|Man Kit (Andy) Yeung | TBD |
+|Tuesday @ 1200-1300	|Chia-Chen Chu	| TBD |
+|Wednesday @ 1600-1700	|Zixuan Yin		| TBD |
+|Thursday @ 1000-1100	|Joanne Chen		| TBD |
+|Thursday @ 1400-1500	|Bang Wen (Bowen) Su | TBD |
+|Thursday @ 1500-1600	|Lucas Zamprogno	| TBD |
+|Thursday @ 1600-1700	|Fabian Tam		| TBD |
+|Friday @ 0800-0900		|Ryan Koon		| TBD |
+|Friday @ 1000-1100		|Junze Wu			| TBD |
+|Friday @ 1500-1600		|MoHan Zhang		| TBD |
+|Friday @ 1600-1700		|Theodore Lau		| TBD |
+
 
 ## Project
 
