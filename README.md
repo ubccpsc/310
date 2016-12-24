@@ -179,7 +179,7 @@ To pass the course and receive credit you must achieve a passing grade on *both*
 
 ## Course Goals
 
-This is the second offering of a new version of CPSC 310 and will likely differ from past instances of the course. Our primary goal with this course is to help you learn how to create non-trivial software systems from an abstract set of requirements. This requires intentional practice and experience. Being able to effectively build real systems depends upon flexibility in domain, abstraction, tools, languages, frameworks, and environments. To this end, the project has been tightly integrated with the course materials and will involve a significant development effort.
+This is the second offering of a new version of CPSC 310 and will likely differ from instances of the course from prior years. Our primary goal with this course is to help you learn how to design and build non-trivial modern software systems from an abstract set of requirements. This requires [deliberate practice](http://expertenough.com/1423/deliberate-practice) and experience. Being able to effectively build real systems depends upon flexibility in domain, abstraction, tools, languages, frameworks, and environments. To this end, the project has been tightly integrated with the course materials and will involve a significant development effort.
 
 The course project embodies an experiential learning environment: we have constrained several aspects to mimic the kinds of reasonable constraints you would likely encounter on a real team. As with real systems, requirements will seem clear at a high level, but will probably lack some important details. Your choices of languages and frameworks have also been fixed. It is expected you will _not_ be familiar with these; being able to quickly learn and adapt to different toolsets is a fundamental skill in modern development. Finally, our use of AutoTest can be considered a form of acceptance testing, which is an industry norm used to validate that software performs as expected.
 
@@ -200,15 +200,15 @@ If you are on the waitlist you should still attend and sign into a lab section s
 --->
 ### Late Submissions
 
-All project deliverables must be submitted on time. Late submissions cannot be accepted.
+The project late policy is described [here](project/README.md#late-policy). Only Deliverables 1, 2, and 3 can be submitted late. Deliverable 4 and 5 cannot be late.
 
 ### Accommodation
 
 Lab attendance is mandatory. If you must miss a lab, please notify your TA directly; your overall project mark will reflect your participation.
 If you are sick and unable to write the midterm, please contact Reid as soon as possible -- provide medical documentation.
-Students who miss the final exam due to illness should consult the Faculty of Science Policy on missed exams. Note that students who do  not have sufficient standing during the term may not qualify for academic concession if they miss the final.
-Students who require dispensation based on their unique circumstances should refer to the UBC policy on Academic Concessions.
-Cell phones, calculators, translators, and all other electronic devices are prohibited on desks during exams. They must be turned off and placed in your bag or on the ground. Students who need exam accommodation must make an official request to the Access and Diversity Office.
+Students who miss the midterm or final exam due to illness should consult the Faculty of Science Policy on missed exams. Students who do not have sufficient standing during the term may not qualify for academic concession if they miss the final.
+Students who require dispensation based on their unique circumstances should refer to the [UBC policy on Academic Concessions](http://www.calendar.ubc.ca/vancouver/?tree=3,48,0,0).
+Phones, tablets, calculators, translators, and all other electronic devices are prohibited on desks during exams. They must be turned off and placed in your bag or on the ground. Students who need exam accommodation must make an official request to the [Access and Diversity Office](https://students.ubc.ca/about-student-services/access-diversity).
 
 ### Academic Conduct
 
@@ -219,7 +219,7 @@ Each student is responsible for understanding and abiding by the University and 
 
 ### Respectful Environment
 
-Everyone involved with CPSC 310 is responsible for understanding and abiding by the University's Respectful Environment Statement.
+Everyone involved with CPSC 310 is responsible for understanding and abiding by UBC's [Respectful Environment Statement](http://www.hr.ubc.ca/respectful-environment/).
 
 The Statement of Principle of UBC's Respectful Environment Statement is "The best possible environment for working, learning and living is one in which respect, civility, diversity, opportunity and inclusion are valued. Everyone at the University of British Columbia is expected to conduct themselves in a manner that upholds these principles in all communications and interactions with fellow UBC community members and the public in all University-related settings."
 
