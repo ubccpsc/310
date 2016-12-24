@@ -96,7 +96,7 @@ This list is a week-by-week guide only. Readings will likely be updated even aft
 
 #### Labs:
 
-Note: there will not be any labs during the first week of class.
+**There will not be any labs during the first week of class.**
 
 | Lab Section | Time           | Room        | TAs                    |
 | :--         |:--             | :--         | :--                    |
@@ -116,6 +116,8 @@ Note: there will not be any labs during the first week of class.
 Both team members will be required to attend each lab. 
 
 #### TA Office Hours
+
+**There will not be any office hours during the first week of class. Also, these hours are all subject to change, always check back here!**
 
 In addition to the 24 hours of labs per week, there are also ~12 hours of TA office hours per week. These have been clustered later in the week, but some are available on each day, to better meet anticipated demands.
 
