@@ -50,6 +50,7 @@ While CPSC 310 will be a challenging course, we hope it will integrate many of t
 * Giovanni Viviani (GTA)
 * Nick Bradley (GTA)
 * Rodrigo Araujo (GTA)
+* Felix Grund (GTA)
 * Bang Wen (Bowen) Su
 * Chia-Chen Chu
 * Katharine Cavers
@@ -92,39 +93,39 @@ This list is a week-by-week guide only. Readings will likely be updated even aft
 
 | Week        | Topic                                       | Readings |
 | :--         |:--                                          | :--      |
-| Jan 2       | Course & Project Intro                      | TBD   |
-| Jan 9       | Languages & Testing                         | TBD   |
-| Jan 16      | Assertions, APIs, REST, & Async             | TBD   |
+| Jan 2       | Course & Project Intro, Languages           | TBD   |
+| Jan 9       | Async, Testing                              | TBD   |
+| Jan 16      | Assertions, APIs, REST                      | TBD   |
 | Jan 23      | Process, Agile                              | TBD   |
 | Jan 30      | Specifications                              | TBD   |
-| Feb 6       | Decomposition & Technical Abstractions      | TBD   |
-| Feb 13      | Cloud & Information Security                | TBD   |
+| Feb 6       | Decomposition, Technical Abstractions       | TBD   |
+| Feb 13      | Cloud, Information Security                 | TBD   |
 | Feb 20      | Reading Week                                | TBD   |
-| Feb 27      | Midterm (Mar 3) & Guest Lectures            | TBD   |
+| Feb 27      | Midterm (Mar 3),  Guest Lectures            | TBD   |
 | Mar 6       | Design                                      | TBD   |
 | Mar 13      | Design                                      | TBD   |
 | Mar 20      | Design                                      | TBD   |
-| Mar 27      | Refactoring & Code Smells                   | TBD   |
+| Mar 27      | Refactoring,  Code Smells                   | TBD   |
 | Apr 3       | TBD & Wrap-up				
 
 #### Labs:
 
 **There will not be any labs during the first week of class.**
 
-| Lab Section | Time           | Room        | TAs                    |
-| :--         |:--             | :--         | :--                    |
-| L2G         | Mon	1000-1200	 | TBD		     | TBD                    |
-| L2J         | Mon	1700-1900	 | TBD		     | TBD                    |
-| L2N         | Tue 0930-1130	 | TBD		     | TBD                    |
-| L2A         | Tue 1330-1530  | TBD		     | TBD                    |
-| L2H         | Tue 1530-1730	 | TBD		     | TBD                    |
-| L2C         | Wed 1000-1200	 | TBD		     | TBD                    |
-| L2K         | Wed 1200-1400	 | TBD		     | TBD                    |
-| L2E         | Wed 1600-1800	 | TBD		     | TBD                    |
-| L2B         | Thu 1030-1230	 | TBD		     | TBD                    |
-| L2F         | Thu 1700-1900	 | TBD		     | TBD                    |
-| L2M         | Fri 1100-1300	 | TBD		     | TBD                    |
-| L2D         | Fri 1500-1700	 | TBD		     | TBD                    |
+| Lab 	| Time				| Room			| TAs |
+| :-- 	|:-- 				| :-- 			| :-- |
+| L2G	| Mon 1000-1200	| ICICS 008	| TBD |
+| L2J	| Mon 1700-1900	| ICICS 008	| TBD |
+| L2N	| Tue 0930-1130	| ICICS 008	| TBD |
+| L2A	| Tue 1330-1530	| ICICS 008	| TBD |
+| L2H	| Tue 1530-1730	| ICICS 008	| TBD |
+| L2C	| Wed 1000-1200	| ICICS 008	| TBD |
+| L2K	| Wed 1200-1400	| ICICS 008	| TBD |
+| L2E	| Wed 1600-1800	| ICICS 008	| TBD |
+| L2B	| Thu 1030-1230	| ICICS 008	| TBD |
+| L2F	| Thu 1700-1900	| ICICS 008	| TBD |
+| L2M	| Fri 1100-1300	| ICICS 008	| TBD |
+| L2D	| Fri 1500-1700	| ICICS 008	| TBD |
 
 Both team members will be required to attend each lab. 
 
@@ -136,20 +137,19 @@ In addition to the 24 hours of labs per week, there are also ~12 hours of TA off
 
 |Time						| TA				| Room |
 | :--						| :--				| :-- |  
-|Monday @ 1600-1700		|Daniel Choi		| TBD |  
-|Tuesday @ 0900-1000	|Man Kit (Andy) Yeung | TBD |
-|Tuesday @ 1200-1300	|Chia-Chen Chu	| TBD |
-|Wednesday @ 1600-1700	|Zixuan Yin		| TBD |
-|Thursday @ 1000-1100	|Joanne Chen		| TBD |
-|Thursday @ 1300-1400 	|Katharine Cavers| TBD |
-|Thursday @ 1400-1500	|Bang Wen (Bowen) Su | TBD |
-|Thursday @ 1500-1600	|Lucas Zamprogno	| TBD |
-|Thursday @ 1600-1700	|Fabian Tam		| TBD |
-|Friday @ 0800-0900		|Ryan Koon		| TBD |
-|Friday @ 1000-1100		|Junze Wu			| TBD |
-|Friday @ 1500-1600		|MoHan Zhang		| TBD |
-|Friday @ 1600-1700		|Theodore Lau		| TBD |
-
+|Monday @ 1600-1700		| Daniel Choi		| TBD |  
+|Tuesday @ 0900-1000	| Man Kit (Andy) Yeung | TBD |
+|Tuesday @ 1200-1300	| Chia-Chen Chu	| TBD |
+|Wednesday @ 1600-1700	| Zixuan Yin		| TBD |
+|Thursday @ 1000-1100	| Joanne Chen		| TBD |
+|Thursday @ 1300-1400 	| Katharine Cavers | TBD |
+|Thursday @ 1400-1500	| Bang Wen (Bowen) Su | TBD |
+|Thursday @ 1500-1600	| Lucas Zamprogno | TBD |
+|Thursday @ 1600-1700	| Fabian Tam		| TBD |
+|Friday @ 0800-0900		| Ryan Koon		| TBD |
+|Friday @ 1000-1100		| Junze Wu		| TBD |
+|Friday @ 1500-1600		| MoHan Zhang		| TBD |
+|Friday @ 1600-1700		| Theodore Lau	| TBD |
 
 ## Project
 
@@ -196,13 +196,11 @@ In addition to AutoTest, each team member will be independently asked a small nu
 
 To pass the course and receive credit you must achieve a passing grade on *both* the project and the final exam. Sample midterm and final exams will not be available.
 
-| Component					| Proportion | 
-| :--							| :--	     	|
-| Project | 60% |
-| Midterm Exam | 10% |
-| Final Exam | 30% |
-
-
+| Component		| Proportion 	| 
+| :--				| :-- 			|
+| Project 		| 60 % 		|
+| Midterm Exam	| 10 %			|
+| Final Exam		| 30 %			|
 
 
 ## Policies
