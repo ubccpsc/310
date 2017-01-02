@@ -28,6 +28,15 @@ Some of the topics we will cover in 310 this term include:
 * Refactoring
 * Information Security
 
+## Course Goals
+
+This is the second offering of a new version of CPSC 310 and will likely differ from instances of the course from prior years. Our primary goal with this course is to help you learn how to design and build non-trivial modern software systems from an abstract set of requirements. This requires [deliberate practice](http://expertenough.com/1423/deliberate-practice) and experience. Being able to effectively build real systems depends upon flexibility in domain, abstraction, tools, languages, frameworks, and environments. To this end, the project has been tightly integrated with the course materials and will involve a significant development effort.
+
+The course project embodies an experiential learning environment: we have constrained several aspects to mimic the kinds of reasonable constraints you would likely encounter on a real team. As with real systems, requirements will seem clear at a high level, but will probably lack some important details. Your choices of languages and frameworks have also been fixed. It is expected you will _not_ be familiar with these; being able to quickly learn and adapt to different toolsets is a fundamental skill in modern development. Finally, our use of AutoTest can be considered a form of acceptance testing, which is an industry norm used to validate that software performs as expected.
+
+While CPSC 310 will be a challenging course, we hope it will integrate many of the ideas and concepts from your prior courses and help you to learn how to apply them in modern software systems.
+
+
 ## Contact
 
 #### Instructors:
@@ -62,6 +71,10 @@ Piazza will be used but has not been configured.
 -->
 
 [Piazza](piazza.com/ubc.ca/winterterm22016/cpsc310) has been configured for this term. Please be mindful of the UBC Academic Misconduct Policy with respect to posting project solutions on Piazza. 
+
+### Getting help
+
+For *project / language help*, there will be 24 hours of labs and 12 hours of TA office hours per week. TA office hours later in the week are likely to be _much_ busier than those earlier in the week; to accommodate this we have scheduled 8 of the 12 hours on Thursday and Friday, but seeking help on Monday / Tuesday / Wednesday and in lab are less likely to be busy. For *course content help*, we will also schedule Prof office hours, but these are TBD. Piazza will also be available for both course content and project assistance.
 
 ## Schedule
 
@@ -100,9 +113,9 @@ This list is a week-by-week guide only. Readings will likely be updated even aft
 
 | Lab Section | Time           | Room        | TAs                    |
 | :--         |:--             | :--         | :--                    |
-| L2N         | Tue 0930-1130	 | TBD		     | TBD                    |
 | L2G         | Mon	1000-1200	 | TBD		     | TBD                    |
 | L2J         | Mon	1700-1900	 | TBD		     | TBD                    |
+| L2N         | Tue 0930-1130	 | TBD		     | TBD                    |
 | L2A         | Tue 1330-1530  | TBD		     | TBD                    |
 | L2H         | Tue 1530-1730	 | TBD		     | TBD                    |
 | L2C         | Wed 1000-1200	 | TBD		     | TBD                    |
@@ -140,7 +153,9 @@ In addition to the 24 hours of labs per week, there are also ~12 hours of TA off
 
 ## Project
 
-The project is an integral part of this course. **The project will be difficult and time consuming**. Projects will be completed in pairs (everyone *must* have a partner, and you must work with the same parter for the duration of the term). Your partner needs to be in the same lab section as you. You should expect the project to take ~6 hours / week / person (13 weeks * 2 people * 6 hours = 156 hours). It is extremely important you not leave project deliverables until the last moment. It is impossible to stress strongly enough how important this is; 36h over three weeks is no problem, but over a weekend is impossible.
+The project is an integral part of this course. **The project will be difficult and time consuming**. Projects will be completed in pairs (everyone *must* have a partner, and you must work with the same parter for the duration of the term). Your partner needs to be in the same lab section as you. You should expect the project to take ~6 hours / week / person (13 weeks * 2 people * 6 hours = 156 hours). It is extremely important you not leave project deliverables until the last moment. It is impossible to stress strongly enough how important this is; 36h over three weeks is no problem, but over a weekend is *impossible*. These time estimates are based on effective effort, if you are multitasking or just randomly trying to cobble something together without a plan or tests, the project may take much longer.
+
+The project will rely heavily on self-learning. The course content is necessarily broad to provide coverage that will be applicable to *most* software development projects. It is important to remember that the project is a *single* software project that will utilize only a subset of the in-class material; the lectures will not serve as a tutorial for the project, it is expected that you will have to use your own creativity to reason about the project requirements, design a solution, and build and validate it yourself.
 
 The intent of this project is to give you the opportunity to concretely apply the course concepts on a real system, but with fewer constraints than were possible in CPSC 210. At the same time, the system does have _some_ constraints to simulate a real system specified by real clients. A strong test emphasis reenforces the importance (and difficulty) of building high-quality software in practice.
 
@@ -157,13 +172,21 @@ In addition to AutoTest, each team member will be independently asked a small nu
 
 * January 16: Project [Deliverable 0](project/Deliverable0.md)
 
-* February 6: Project [Deliverable 1](project/Deliverable1.md)
+<!-- 3 weeks -->
 
-* February 27: Project [Deliverable 2](project/Deliverable2.md)
+* February 6: Project [Deliverable 1](project/Deliverable1.md) 
+
+<!-- 3 weeks -->
+
+* February 27: Project [Deliverable 2](project/Deliverable2.md) 
 
 * Mar 3: Midterm (sample midterms are not available)
 
-* March 13: Project [Deliverable 3](project/Deliverable3.md)
+<!-- 2 weeks -->
+
+* March 13: Project [Deliverable 3](project/Deliverable3.md) 
+
+<!-- 2 weeks -->
 
 * March 27: Project [Deliverable 4](project/Deliverable4.md)
 
@@ -171,19 +194,15 @@ In addition to AutoTest, each team member will be independently asked a small nu
 
 ## Grading
 
-* Midterm 10%
-* Project 60% 
-* Final 30%
-
 To pass the course and receive credit you must achieve a passing grade on *both* the project and the final exam. Sample midterm and final exams will not be available.
 
-## Course Goals
+| Component					| Proportion | 
+| :--							| :--	     	|
+| Project | 60% |
+| Midterm Exam | 10% |
+| Final Exam | 30% |
 
-This is the second offering of a new version of CPSC 310 and will likely differ from instances of the course from prior years. Our primary goal with this course is to help you learn how to design and build non-trivial modern software systems from an abstract set of requirements. This requires [deliberate practice](http://expertenough.com/1423/deliberate-practice) and experience. Being able to effectively build real systems depends upon flexibility in domain, abstraction, tools, languages, frameworks, and environments. To this end, the project has been tightly integrated with the course materials and will involve a significant development effort.
 
-The course project embodies an experiential learning environment: we have constrained several aspects to mimic the kinds of reasonable constraints you would likely encounter on a real team. As with real systems, requirements will seem clear at a high level, but will probably lack some important details. Your choices of languages and frameworks have also been fixed. It is expected you will _not_ be familiar with these; being able to quickly learn and adapt to different toolsets is a fundamental skill in modern development. Finally, our use of AutoTest can be considered a form of acceptance testing, which is an industry norm used to validate that software performs as expected.
-
-While CPSC 310 will be a challenging course, we hope it will integrate many of the ideas and concepts from your prior courses and help you to learn how to apply them in modern software systems.
 
 
 ## Policies
@@ -191,7 +210,7 @@ While CPSC 310 will be a challenging course, we hope it will integrate many of t
 <a name="waitlist"></a>
 ### Waitlist
 
-We are going to over-enroll both sections of the course on the first day and purge the waitlist. If you are not in the course on the first day, you will not be able to join later in the term.
+We are going to overenroll both sections of the course on the first day and purge the waitlist. If you are not in the course on the first day, you will not be able to join later in the term. This is to enable group formation during the first week, rather than waiting until the add/drop date.
 
 <!---
 There is extremely high demand for this course this term. If you are on the waitlist and wish to join the class, please come to the front after **EVERY** class to sign in. Those students who have signed into every class by September 16 will be forwarded to the advisors who will insert students into available spots by the add/drop deadline. This does not guarantee you will be admitted, but without signing in every class you will not be eligible. Students on the waitlist should not form groups with students who are already enrolled in case your whole group does not make it into the course this term. Unfortunately, the instructor is not able to override class seat assignments or the waitlist itself.
