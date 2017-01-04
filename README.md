@@ -141,7 +141,7 @@ In addition to the 24 hours of labs per week, there are also ~12 hours of TA off
 |Tuesday @ 0900-1000	| Man Kit (Andy) Yeung | TBD |
 |Tuesday @ 1200-1300	| Chia-Chen (Timothy) Chu | TBD |
 |Wednesday @ 1600-1700	| Zixuan Yin		| TBD |
-|Thursday @ 1000-1100	| Joanne Chen		| TBD |
+|Thursday @ 0930-1030	| Joanne Chen		| TBD |
 |Thursday @ 1300-1400 	| Katharine Cavers | TBD |
 |Thursday @ 1400-1500	| Bang Wen (Bowen) Su | TBD |
 |Thursday @ 1500-1600	| Lucas Zamprogno | TBD |
