@@ -52,7 +52,7 @@ While CPSC 310 will be a challenging course, we hope it will integrate many of t
 * Rodrigo Araujo (GTA)
 * Felix Grund (GTA)
 * Bang Wen (Bowen) Su
-* Chia-Chen Chu
+* Chia-Chen (Timothy) Chu
 * Katharine Cavers
 * Fabian Tam
 * Lucas Zamprogno
@@ -71,7 +71,7 @@ While CPSC 310 will be a challenging course, we hope it will integrate many of t
 Piazza will be used but has not been configured.
 -->
 
-[Piazza](piazza.com/ubc.ca/winterterm22016/cpsc310) has been configured for this term. Please be mindful of the UBC Academic Misconduct Policy with respect to posting project solutions on Piazza. 
+[Piazza](https://piazza.com/ubc.ca/winterterm22016/cpsc310) has been configured for this term. Please be mindful of the UBC Academic Misconduct Policy with respect to posting project solutions on Piazza. 
 
 ### Getting help
 
@@ -94,7 +94,7 @@ This list is a week-by-week guide only. Readings will likely be updated even aft
 | Week        | Topic                                       | Readings |
 | :--         |:--                                          | :--      |
 | Jan 2       | Course & Project Intro, Languages           | TBD   |
-| Jan 9       | Async, Testing                              | TBD   |
+| Jan 9       | Async, Testing, Teamwork                    | TBD   |
 | Jan 16      | Assertions, APIs, REST                      | TBD   |
 | Jan 23      | Process, Agile                              | TBD   |
 | Jan 30      | Specifications                              | TBD   |
@@ -139,7 +139,7 @@ In addition to the 24 hours of labs per week, there are also ~12 hours of TA off
 | :--						| :--				| :-- |  
 |Monday @ 1600-1700		| Daniel Choi		| TBD |  
 |Tuesday @ 0900-1000	| Man Kit (Andy) Yeung | TBD |
-|Tuesday @ 1200-1300	| Chia-Chen Chu	| TBD |
+|Tuesday @ 1200-1300	| Chia-Chen (Timothy) Chu | TBD |
 |Wednesday @ 1600-1700	| Zixuan Yin		| TBD |
 |Thursday @ 1000-1100	| Joanne Chen		| TBD |
 |Thursday @ 1300-1400 	| Katharine Cavers | TBD |
@@ -148,7 +148,7 @@ In addition to the 24 hours of labs per week, there are also ~12 hours of TA off
 |Thursday @ 1600-1700	| Fabian Tam		| TBD |
 |Friday @ 0800-0900		| Ryan Koon		| TBD |
 |Friday @ 1000-1100		| Junze Wu		| TBD |
-|Friday @ 1500-1600		| MoHan Zhang		| TBD |
+|Friday @ 1200-1300		| MoHan Zhang		| TBD |
 |Friday @ 1600-1700		| Theodore Lau	| TBD |
 
 ## Project

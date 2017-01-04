@@ -77,21 +77,22 @@ The deliverable retrospective will assign individual marks to each teammate to m
 
 These oral questions will take place in labs the week the deliverable was due; if you do not attend this lab, you will receive 0% for the deliverable. Also, submitting your contribution file by the deliverable due date is required; without this you will also receive 0%. Being an effective teammate involves both technical contribution _and_ teamwork; if one team member 'shuts out' the other from contributing to the project, this can also have a detrimental influence on both multipliers. Teammates should be courteous to one another by keeping open lines of communication, and by pulling their weight while ensuring that others have the opportunity to pull theirs too.
 
-Each deliverable will be worth 10% of your final grade. Course participation will be worth 10% of your final grade. Finally, your final project will be executed against the private test suite from all deliverables we run AutoTest against (to check for regressions from prior deliverables).
+Each deliverable will be worth 10% of your final grade. Only Deliverable 0 is completed individually, all other deliverables must be completed in teams.
 
-* Deliverable 0: 0%
+<!--- Course participation will be worth 10% of your final grade. Finally, your final project will be executed against the private test suite from all deliverables we run AutoTest against (to check for regressions from prior deliverables). --->
+
+* Deliverable 0: 10%
 * Deliverable 1: 10%
 * Deliverable 2: 10%
 * Deliverable 3: 10%
 * Deliverable 4: 10%
 * Deliverable 5: 10%
-* Participation: 10%
 
 We will be running [Measure of software similarity (MOSS)](https://theory.stanford.edu/~aiken/moss/) on all deliverable submissions. Any projects that contain code derived from other projects that we have not provided will receive 0% on that deliverable.
 
 ## Late policy
 
-It is possible to submit an AutoTest deliverable (D1, D2, & D3) 'late' for partial marks. Appeals for late marks must be made by the Deliverable 4 deadline. Late deliverables will be subject to the following penalty:
+It is possible to submit a team-based AutoTest deliverable (D1, D2, & D3) 'late' for partial marks. D0, D4, and D5 cannot be submitted late. Appeals for late marks must be made by the Deliverable 4 deadline. Late deliverables will be subject to the following penalty:
 
 * 1 deliverable late: 40% (e.g., D1 by D2, D2 by D3, or D3 by D4).
 * 2 deliverables late: 50% (e.g., D1 by D3, D2 by D4).
