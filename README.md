@@ -89,7 +89,7 @@ For *project / language help*, there will be 24 hours of labs and 12 hours of TA
 Thursdays 1700-2000, 
 --->
 
-This list is a week-by-week guide only. Readings will likely be updated even after class has completed. Schedule extremely subject to change
+This list is a week-by-week guide only. Readings will be posted by the Monday after lecture, slides will **not** be posted. Schedule subject to change.
 
 | Week        | Topic                                       | Readings |
 | :--         |:--                                          | :--      |
