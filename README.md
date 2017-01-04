@@ -89,13 +89,13 @@ For *project / language help*, there will be 24 hours of labs and 12 hours of TA
 Thursdays 1700-2000, 
 --->
 
-This list is a week-by-week guide only. Readings will be posted by the Monday after lecture, slides will **not** be posted. Schedule subject to change.
+This list is a week-by-week guide only. Readings will likely be updated even after class has completed. Schedule extremely subject to change
 
 | Week        | Topic                                       | Readings |
 | :--         |:--                                          | :--      |
-| Jan 2       | Course & Project Intro, Languages           | TBD   |
-| Jan 9       | Async, Testing, Teamwork                    | TBD   |
-| Jan 16      | Assertions, APIs, REST                      | TBD   |
+| Jan 2       | [Course Intro](readings/Introduction.md), Languages           | TBD   |
+| Jan 9       | Async, Project, Teamwork                     | TBD   |
+| Jan 16      | Testing & Assertions, APIs, REST                      | TBD   |
 | Jan 23      | Process, Agile                              | TBD   |
 | Jan 30      | Specifications                              | TBD   |
 | Feb 6       | Decomposition, Technical Abstractions       | TBD   |
@@ -141,7 +141,7 @@ In addition to the 24 hours of labs per week, there are also ~12 hours of TA off
 |Tuesday @ 0900-1000	| Man Kit (Andy) Yeung | TBD |
 |Tuesday @ 1200-1300	| Chia-Chen (Timothy) Chu | TBD |
 |Wednesday @ 1600-1700	| Zixuan Yin		| TBD |
-|Thursday @ 0930-1030	| Joanne Chen		| TBD |
+|Thursday @ 1000-1100	| Joanne Chen		| TBD |
 |Thursday @ 1300-1400 	| Katharine Cavers | TBD |
 |Thursday @ 1400-1500	| Bang Wen (Bowen) Su | TBD |
 |Thursday @ 1500-1600	| Lucas Zamprogno | TBD |
