@@ -153,7 +153,7 @@ In addition to the 24 hours of labs per week, there are also ~12 hours of TA off
 
 ## Project
 
-The project is an integral part of this course. **The project will be difficult and time consuming**. Projects will be completed in pairs (everyone *must* have a partner, and you must work with the same parter for the duration of the term). Your partner needs to be in the same lab section as you. You should expect the project to take ~6 hours / week / person (13 weeks * 2 people * 6 hours = 156 hours). It is extremely important you not leave project deliverables until the last moment. It is impossible to stress strongly enough how important this is; 36h over three weeks is no problem, but over a weekend is *impossible*. These time estimates are based on effective effort, if you are multitasking or just randomly trying to cobble something together without a plan or tests, the project may take much longer.
+The project is an integral part of this course. **The project will be difficult and time consuming**. Projects will be completed in pairs (everyone *must* have a partner, and you must work with the same parter for the duration of the term). Your partner needs to be in the same lab section as you. The project will proceed in 5 2-3 week sprints; the requirements for each sprint is detailed in a deliverable document. You should expect the project to take ~6 hours / week / person (13 weeks * 2 people * 6 hours = 156 hours). It is extremely important you not leave project deliverables until the last moment. It is impossible to stress strongly enough how important this is; 36h over three weeks is no problem, but over a weekend is *impossible*. These time estimates are based on effective effort, if you are multitasking or just randomly trying to cobble something together without a plan or tests, the project may take much longer.
 
 The project will rely heavily on self-learning. The course content is necessarily broad to provide coverage that will be applicable to *most* software development projects. It is important to remember that the project is a *single* software project that will utilize only a subset of the in-class material; the lectures will not serve as a tutorial for the project, it is expected that you will have to use your own creativity to reason about the project requirements, design a solution, and build and validate it yourself.
 
@@ -167,30 +167,30 @@ Engineers use automated test suites to validate that their software is working a
 
 In addition to AutoTest, each team member will be independently asked a small number of questions in the lab to assess their understanding of the solution. While it is reasonable for team members to be more knowledgable about different parts of the system, it is expected that you will understand your entire solution at a high level and be able to provide specific in-depth insight to some meaningful components of your solution.
 
-## Deliverable Schedule
+## Project Sprint Schedule
 
 
-* January 16: Project [Deliverable 0](project/Deliverable0.md)
-
-<!-- 3 weeks -->
-
-* February 6: Project [Deliverable 1](project/Deliverable1.md) 
+* January 16: Sprint 0 ([Deliverable 0](project/Deliverable0.md))
 
 <!-- 3 weeks -->
 
-* February 27: Project [Deliverable 2](project/Deliverable2.md) 
+* February 6: Sprint 1 ([Deliverable 1](project/Deliverable1.md))
+
+<!-- 3 weeks -->
+
+* February 27: Sprint 2 ([Deliverable 2](project/Deliverable2.md)) 
 
 * Mar 3: Midterm (sample midterms are not available)
 
 <!-- 2 weeks -->
 
-* March 13: Project [Deliverable 3](project/Deliverable3.md) 
+* March 13: Sprint 3 ([Deliverable 3](project/Deliverable3.md))
 
 <!-- 2 weeks -->
 
-* March 27: Project [Deliverable 4](project/Deliverable4.md)
+* March 27: Sprint 4 ([Deliverable 4](project/Deliverable4.md))
 
-* March 27: Project [Deliverable 5](project/Deliverable5.md)
+* March 27: Sprint 5 ([Deliverable 5](project/Deliverable5.md))
 
 ## Grading
 

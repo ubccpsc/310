@@ -2,9 +2,11 @@
 
 UBC is a big place, and involves a large number of people doing a variety of tasks. The goal of this project is to provide a way to perform some of the tasks required to run the university and to enable effective querying of the metadata from around campus. This will involve working with courses, prerequisites, past course averages, room scheduling, and timetable creation.
 
-This will be a full stack web development project split into four deliverables. The first three deliverables are server-side development using [Node](https://nodejs.org). Development will be done with TypeScript and the packages and libraries you use will be strictly limited. If you do not know TypeScript, you are encouraged to start investigating the language soon. Its syntax is extremely similar to Java so it should be relatively easy to transition to given your prior experience. It is important to note we will spend very little time in lecture and lab teaching this language; you will be expected to learn it on your own time.
+This will be a full stack web development project split into four sprints. The first three sprints are server-side development using [Node](https://nodejs.org). The fourth sprint is client-side development using the UI frameworks of your choosing. A fifth deliverable will also happen, but does not have dedicated time allocated to it because it is an aggregation of the first three sprints. 
 
-Three of the five project deliverables will be marked using an automated test suite. The feedback you will receive from this suite will be limited. To succeed at the project you will need to create your own private test suite to further validate each deliverable. Additional details are available on the [AutoTest](AutoTest.md) page.
+Development will be done with TypeScript and the packages and libraries you use will be strictly limited (for the first three sprints). If you do not know TypeScript, you are encouraged to start investigating the language soon. Its syntax is extremely similar to Java so it should be relatively easy to transition to given your prior experience. It is important to note we will spend very little time in lecture and lab teaching this language; you will be expected to learn it on your own time.
+
+Three of the five sprint deliverables will be marked using an automated test suite. The feedback you will receive from this suite will be limited. To succeed at the project you will need to create your own private test suite to further validate each deliverable. Additional details are available on the [AutoTest](AutoTest.md) page.
 
 ## Teams
 
@@ -18,19 +20,19 @@ If you are registered in the class, please do not form a team with students on t
 
 ## Deliverables
 
-Deliverable 0 is an individual activity to help you get acquainted with TypeScript and AutoTest. Deliverables 1-5 will be part of your project.
+Sprint 0 is an individual activity to help you get acquainted with TypeScript and AutoTest. Sprints 1-5 will be part of your project.
 
-1. [Deliverable 0](Deliverable0.md) 
+1. Sprint 0 - [Deliverable 0](Deliverable0.md) 
 
-1. [Deliverable 1](Deliverable1.md) 
+1. Sprint 1 - [Deliverable 1](Deliverable1.md) 
 
-1. [Deliverable 2](Deliverable2.md) 
+1. Sprint 2 - [Deliverable 2](Deliverable2.md) 
 
-1. [Deliverable 3](Deliverable3.md) 
+1. Sprint 3 - [Deliverable 3](Deliverable3.md) 
 
-1. [Deliverable 4](Deliverable4.md) 
+1. Sprint 4 - [Deliverable 4](Deliverable4.md) 
 
-1. [Deliverable 5](Deliverable5.md) 
+1. Sprint 5 - [Deliverable 5](Deliverable5.md) 
 
 ## Language and environment
 
@@ -77,6 +79,8 @@ The deliverable retrospective will assign individual marks to each teammate to m
 
 These oral questions will take place in labs the week the deliverable was due; if you do not attend this lab, you will receive 0% for the deliverable. Also, submitting your contribution file by the deliverable due date is required; without this you will also receive 0%. Being an effective teammate involves both technical contribution _and_ teamwork; if one team member 'shuts out' the other from contributing to the project, this can also have a detrimental influence on both multipliers. Teammates should be courteous to one another by keeping open lines of communication, and by pulling their weight while ensuring that others have the opportunity to pull theirs too.
 
+Deliverables 1-4 will also require you to add a deliverable contribution file to your repository for each teammember. If you do not do this, your retrospective multiplier will be 0. It is also extremely important to ensure you are committing code to your repository, if you do not commit anything, the TA will not know that you actually did any work.
+
 Each deliverable will be worth 10% of your final grade. Only Deliverable 0 is completed individually, all other deliverables must be completed in teams.
 
 <!--- Course participation will be worth 10% of your final grade. Finally, your final project will be executed against the private test suite from all deliverables we run AutoTest against (to check for regressions from prior deliverables). --->
@@ -92,7 +96,7 @@ We will be running [Measure of software similarity (MOSS)](https://theory.stanfo
 
 ## Late policy
 
-It is possible to submit a team-based AutoTest deliverable (D1, D2, & D3) 'late' for partial marks. D0, D4, and D5 cannot be submitted late. Appeals for late marks must be made by the Deliverable 4 deadline. Late deliverables will be subject to the following penalty:
+It is possible to submit a team-based AutoTest deliverable (D1, D2, & D3) 'late' for partial marks. D0, D4, and D5 cannot be submitted late. Appeals for late marks must be made by the Deliverable 4 deadline; a form for submitting late deliverables will be TBD. Late deliverables will be subject to the following penalty:
 
 * 1 deliverable late: 40% (e.g., D1 by D2, D2 by D3, or D3 by D4).
 * 2 deliverables late: 50% (e.g., D1 by D3, D2 by D4).
