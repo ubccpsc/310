@@ -93,7 +93,7 @@ This list is a week-by-week guide only. Readings will likely be updated even aft
 
 | Week        | Topic                                       | Readings |
 | :--         |:--                                          | :--      |
-| Jan 2       | [Course Intro](readings/Introduction.md), Languages           | TBD   |
+| Jan 2       | [Course Intro](readings/Introduction.md), [Languages](readings/Languages.md)           | TBD   |
 | Jan 9       | Async, Project, Teamwork                     | TBD   |
 | Jan 16      | Testing & Assertions, APIs, REST                      | TBD   |
 | Jan 23      | Process, Agile                              | TBD   |
