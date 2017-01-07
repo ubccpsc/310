@@ -91,21 +91,21 @@ Thursdays 1700-2000,
 
 This list is a week-by-week guide only. Readings will likely be updated even after class has completed. Schedule extremely subject to change
 
-| Week        | Topic                                       | Readings |
-| :--         |:--                                          | :--      |
-| Jan 2       | [Course Intro](readings/Introduction.md), [Languages](readings/Languages.md)           | TBD   |
-| Jan 9       | Async, Project, Teamwork                     | TBD   |
-| Jan 16      | Testing & Assertions, APIs, REST                      | TBD   |
-| Jan 23      | Process, Agile                              | TBD   |
-| Jan 30      | Specifications                              | TBD   |
-| Feb 6       | Decomposition, Technical Abstractions       | TBD   |
-| Feb 13      | Cloud, Information Security                 | TBD   |
-| Feb 20      | Reading Week                                | TBD   |
-| Feb 27      | Midterm (Mar 3),  Guest Lectures            | TBD   |
-| Mar 6       | Design                                      | TBD   |
-| Mar 13      | Design                                      | TBD   |
-| Mar 20      | Design                                      | TBD   |
-| Mar 27      | Refactoring,  Code Smells                   | TBD   |
+| Week        | Topic & Readings |
+| :--         |:--                                          |
+| Jan 2       | [Course Intro](readings/Introduction.md), [Languages](readings/Languages.md) |
+| Jan 9       | Async, Project, Teamwork                    |
+| Jan 16      | Testing & Assertions, APIs, REST            |
+| Jan 23      | Process, Agile                              |
+| Jan 30      | Specifications                              |
+| Feb 6       | Decomposition, Technical Abstractions       |
+| Feb 13      | Cloud, Information Security                 |
+| Feb 20      | Reading Week                                |
+| Feb 27      | Midterm (Mar 3),  Guest Lectures            |
+| Mar 6       | Design                                      |
+| Mar 13      | Design                                      |
+| Mar 20      | Design                                      |
+| Mar 27      | Refactoring,  Code Smells                   |
 | Apr 3       | TBD & Wrap-up				
 
 #### Labs:

@@ -12,6 +12,56 @@ Programming languages have two main goals:
 
 These two constraints are often in opposition to one another. There is a tension between making a programming language easy to read and understand by developers and making it imprecise for machine analysis and transformation. 
 
+### Learning new languages
+
+While languages come in all shapes and sizes (e.g., strongly typed, weakly typed, dynamically typed, statically typed, functional, object-oriented) at their core they each try to satisfy the two main goals listed above. Although learning a new programming language can seem like a daunting task, languages all come from common pedigrees that make it easier to try to understand at a high level how the new language corresponds to your existing one.  This [great image](https://paradigmeprogrammation.files.wordpress.com/2013/05/paradigmsdiagrameng108.jpg) shows the conceptual lineages of many popular programming languages and can be helpful to recognize how similar many languages are in practice.
+
+Being able to quickly self-learn new languages is a fundamental skill for all software engineers. Language choices are infrequently made, which means the vast majority of teams you join will already be using a set language that you will not have control over choosing (and may even be an internal language that has not been released). 
+
+Consider the following three snippets:
+
+#### Java
+```java
+public boolean isSplit(String input) {
+	this.lastString = input;
+
+	String[] parts = input.split(",");
+	for (String s : parts) {
+		System.out.println(s);
+	}
+	return parts.length > 0;
+}
+
+```
+
+#### TypeScript
+```typescript
+public isSplit(input: string): boolean {
+	this.lastString = input;
+
+	let parts = input.split(",");
+	for (var s of parts) {
+		console.log(s);
+	}
+	return parts.length > 1;
+}
+```
+
+#### JavaScript
+```javascript
+isSplit(input) {
+	this.lastString = input;
+
+	let parts = input.split(",");
+	for (var s of parts) {
+		console.log(s);
+	}
+	return parts.length > 1;
+}
+```
+
+In these examples we can see that there are far more commonalities between these methods than differences. JavaScript is an untyped language, Java is a strongly typed language, and TypeScript augments JavaScript with type checking; even with these large underlying differences their syntax (and in this case even semantics) are nearly identical.
+
 ### Language properties
 
 Syntax and semantics define the form and meaning of programming languages. The syntax of the language defines the grammar (tokens) and the legal order that these tokens can be used in valid programs. [EBNF](https://en.wikipedia.org/wiki/Extended_Backus-Naur_Form) is often used to define the legal syntax of a language precisely. In contrast to syntax, the semantics of the language capture the actual meaning of the ordered tokens. Some statements can be syntactically valid while being semantically meaningless (e.g., ```if (foo === foo)``` will always be true and has no semantic value, while still being syntactically correct).
@@ -149,56 +199,6 @@ age = '10'; // ok
 TODO: This should be added next year
 #### Functional vs. imperative
 --->
-
-### Learning new languages
-
-While languages come in all shapes and sizes (e.g., strongly typed, weakly typed, dynamically typed, statically typed, functional, object-oriented) at their core they each try to satisfy the two main goals listed above. Although learning a new programming language can seem like a daunting task, languages all come from common pedigrees that make it easier to try to understand at a high level how the new language corresponds to your existing one.  This [great image](https://paradigmeprogrammation.files.wordpress.com/2013/05/paradigmsdiagrameng108.jpg) shows the conceptual lineages of many popular programming languages and can be helpful to recognize how similar many languages are in practice.
-
-Being able to quickly self-learn new languages is a fundamental skill for all software engineers. Language choices are infrequently made, which means the vast majority of teams you join will already be using a set language that you will not have control over choosing (and may even be an internal language that has not been released). 
-
-Consider the following three snippets:
-
-#### Java
-```java
-public boolean isSplit(String input) {
-	this.lastString = input;
-
-	String[] parts = input.split(",");
-	for (String s : parts) {
-		System.out.println(s);
-	}
-	return parts.length > 0;
-}
-
-```
-
-#### TypeScript
-```typescript
-public isSplit(input: string): boolean {
-	this.lastString = input;
-
-	let parts = input.split(",");
-	for (var s of parts) {
-		console.log(s);
-	}
-	return parts.length > 1;
-}
-```
-
-#### JavaScript
-```javascript
-isSplit(input) {
-	this.lastString = input;
-
-	let parts = input.split(",");
-	for (var s of parts) {
-		console.log(s);
-	}
-	return parts.length > 1;
-}
-```
-
-In these examples we can see that there are far more commonalities between these methods than differences. JavaScript is an untyped language, Java is a strongly typed language, and TypeScript augments JavaScript with type checking; even with these large underlying differences their syntax (and in this case even semantics) are nearly identical.
 
 
 ### References
