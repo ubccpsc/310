@@ -135,21 +135,22 @@ Both team members will be required to attend each lab.
 
 In addition to the 24 hours of labs per week, there are also ~12 hours of TA office hours per week. These have been clustered later in the week, but some are available on each day, to better meet anticipated demands.
 
+
 |Time						| TA				| Room |
 | :--						| :--				| :-- |  
-|Monday @ 1600-1700		| Daniel Choi		| TBD |  
-|Tuesday @ 0900-1000	| Man Kit (Andy) Yeung | TBD |
-|Tuesday @ 1200-1300	| Chia-Chen (Timothy) Chu | TBD |
-|Wednesday @ 1600-1700	| Zixuan Yin		| TBD |
-|Thursday @ 1000-1100	| Joanne Chen		| TBD |
-|Thursday @ 1300-1400 	| Katharine Cavers | TBD |
-|Thursday @ 1400-1500	| Bang Wen (Bowen) Su | TBD |
-|Thursday @ 1500-1600	| Lucas Zamprogno | TBD |
-|Thursday @ 1600-1700	| Fabian Tam		| TBD |
-|Friday @ 0800-0900		| Ryan Koon		| TBD |
-|Friday @ 1000-1100		| Junze Wu		| TBD |
-|Friday @ 1200-1300		| MoHan Zhang		| TBD |
-|Friday @ 1600-1700		| Theodore Lau	| TBD |
+|Monday @ 1600-1700		|Daniel Choi		| ICCSX139 |  
+|Tuesday @ 0900-1000	|Man Kit (Andy) Yeung | X150 - Table 3 |
+|Tuesday @ 1200-1300	|Chia-Chen (Timothy) Chu | X150 - Table 4 |
+|Wednesday @ 1600-1700	|Zixuan Yin		| X150 - Table 4 |
+|Thursday @ 0930-1030	|Joanne Chen		| X150 - Table 4 |
+|Thursday @ 1300-1400 	|Katharine Cavers | X150 - Table 1 |
+|Thursday @ 1400-1500	|Bang Wen (Bowen) Su | ICCSX337 |
+|Thursday @ 1500-1600	|Lucas Zamprogno	| X150 - Table 1 |
+|Thursday @ 1600-1700	|Fabian Tam		| X150 - Table 1 | 
+|Friday @ 0800-0900		|Ryan Koon		| X150 - Table 3 |
+|Friday @ 1000-1100		|Junze Wu			| X150 - Table 2 |
+|Friday @ 1200-1300		|MoHan Zhang		| X150 - Table 1 |
+|Friday @ 1600-1700		|Theodore Lau		| ICCSX151 |
 
 ## Project
 
