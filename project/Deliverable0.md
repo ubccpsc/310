@@ -34,19 +34,19 @@ The math operations should only be on the numbers in arrays within the JSON file
 Only 1, 2, 3 should be used. You only need to consider direct arrays (first example) or property value arrays (second example), but do not need to consider nested arrays: (e.g., (http://skaha.cs.ubc.ca:11313/822d.json) ```{"val": {"foo": [1, 2, 3]}}```). Also, only numbers should be considered (e.g., for ```[1, "2", 3]``` the ```2``` is a string and should not be considered).
 
 ```
-add('http://skaha.cs.ubc.ca:11313/822d.json') -> fulfill(0)
+add(['http://skaha.cs.ubc.ca:11313/822d.json']) -> fulfill(0)
 
-add('http://skaha.cs.ubc.ca:11313/822d.json', 'http://skaha.cs.ubc.ca:11313/4968.json') -> fulfill(12)
+add(['http://skaha.cs.ubc.ca:11313/822d.json', 'http://skaha.cs.ubc.ca:11313/4968.json']) -> fulfill(12)
 
-add() -> fulfill(0)
+add([]) -> fulfill(0)
 
-add('invalidURL') -> reject('Error: URL could not be retrieved')
+add(['invalidURL']) -> reject('Error: URL could not be retrieved')
 
-multiply('http://skaha.cs.ubc.ca:11313/822d.json') -> fulfill(0)
+multiply(['http://skaha.cs.ubc.ca:11313/822d.json']) -> fulfill(0)
 
-multiply('http://skaha.cs.ubc.ca:11313/822d.json', 'http://skaha.cs.ubc.ca:11313/4968.json') -> fulfill(40)
+multiply(['http://skaha.cs.ubc.ca:11313/822d.json', 'http://skaha.cs.ubc.ca:11313/4968.json']) -> fulfill(40)
 
-multiply('URLwithInvalidJSON') -> reject('Error: Could not parse JSON')
+multiply(['URLwithInvalidJSON']) -> reject('Error: Could not parse JSON')
 ```
 
 
