@@ -34,15 +34,17 @@ The math operations should only be on the numbers in arrays within the JSON file
 Only 1, 2, 3 should be used. You only need to consider direct arrays (first example) or property value arrays (second example), but do not need to consider nested arrays: (e.g., (http://skaha.cs.ubc.ca:11313/822d.json) ```{"val": {"foo": [1, 2, 3]}}```). Also, only numbers should be considered (e.g., for ```[1, "2", 3]``` the ```2``` is a string and should not be considered).
 
 ```
-add(['http://skaha.cs.ubc.ca:11313/822d.json']) -> fulfill(0)
+add(['http://skaha.cs.ubc.ca:11313/822d.json']) -> reject('Error: No number was provided')
 
 add(['http://skaha.cs.ubc.ca:11313/822d.json', 'http://skaha.cs.ubc.ca:11313/4968.json']) -> fulfill(12)
 
-add([]) -> fulfill(0)
+add([]) -> reject('Error: No number was provided')
 
 add(['invalidURL']) -> reject('Error: URL could not be retrieved')
 
-multiply(['http://skaha.cs.ubc.ca:11313/822d.json']) -> fulfill(0)
+add(['invalidURL', 'http://skaha.cs.ubc.ca:11313/4968.json']) -> reject('Error: URL could not be retrieved')
+
+multiply(['http://skaha.cs.ubc.ca:11313/822d.json']) -> reject('Error: No number was provided')
 
 multiply(['http://skaha.cs.ubc.ca:11313/822d.json', 'http://skaha.cs.ubc.ca:11313/4968.json']) -> fulfill(40)
 
@@ -54,8 +56,6 @@ multiply(['URLwithInvalidJSON']) -> reject('Error: Could not parse JSON')
 
 The best way to test your system is via your own unit test suite. You can write these unit tests by following the examples in ```test/``` and running them with ```yarn test```. This will be the quickest and easiest way to ensure your system is behaving correctly and to make sure regressions are not introduced as you proceed further in the project.
 
-### AutoTest is not yet configured, as soon as it is ready we will remove this note. AutoTest only works from the repos we create though, so trying this will not do anything right now anyways.
-
 AutoTest can also be invoked every 12h by making a ```@CPSC310bot``` comment in a GitHub commit message; full details will be available in the [AutoTest](AutoTest.md) documentation.
 
 The AutoTest suite will comprise 80% of your mark. The remaining 20% will be derived from your test coverage score for your files in ```src/```. You can check your score (as we will) by running ```yarn cover```. Your grade will correspond to the fraction your tests cover (e.g., 90% coverage will give you 18/20). Recognizing that hitting 100% will take more trouble than it is worth, we will give you a maximum 5% bonus for your coverage score, although you cannot get over 100% on this component. For example, if your coverage rate is 97% you will get 100%. If it is 76% you will get 81%. 
@@ -66,7 +66,7 @@ This deliverable is fairly straightforward but will involve a new language for m
 
 It is important that you start by getting the code to compile and the existing tests to run. From there you can start to build out your solution. Getting hung up on language tutorials, articles, and Youtube videos is not the way to go with this deliverable.
 
-Some URLS that you can use are 
+Some URLS that you can use are: 
 * http://skaha.cs.ubc.ca:11313/0.json
 * http://skaha.cs.ubc.ca:11313/1.json
 * http://skaha.cs.ubc.ca:11313/2.json
@@ -81,3 +81,6 @@ Some URLS that you can use are
 * http://skaha.cs.ubc.ca:11313/944a.json
 * http://skaha.cs.ubc.ca:11313/b43f.json
 * http://skaha.cs.ubc.ca:11313/jdw3.json
+
+Remember that our test suite will also use additional files so be sure to generate your own test data files as well.
+

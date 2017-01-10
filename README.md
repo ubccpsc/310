@@ -7,7 +7,7 @@ January 4, 2017 -> April 5, 2017 (```2016T2```). These are the official resource
 
 ## About the labs
 
-### This is a pair-programming course: If you want to work with someone specific for your project, be sure that both of you register for the _SAME_ lab section. We do not have the ability to move people around between labs; please either monitor the SSC for space in your preferred lab sections, move to another lab with space, or find a partner in the lab you are registered in. Teams **must** be firm by the time of your lab the week of Jan 16.
+This is a pair-programming course: If you want to work with someone specific for your project, be sure that both of you register for the _SAME_ lab section. We do not have the ability to move people around between labs; please either monitor the SSC for space in your preferred lab sections, move to another lab with space, or find a partner in the lab you are registered in. Teams **must** be firm by the time of your lab the week of Jan 16. If you do not have a partner, it is your responsibility to notify the TA in lab that week so you can be paired up. If you do not have a partner at the end of your lab that week, you will not be able to complete the project (50% of your final grade). Finding a partner is **your** responsibility and is key to your having a great term, please take the time to do this right.
 
 ## Waitlist: [See Here](#waitlist)
 
@@ -73,7 +73,7 @@ While CPSC 310 will be a challenging course, we hope it will integrate many of t
 Piazza will be used but has not been configured.
 -->
 
-[Piazza](https://piazza.com/ubc.ca/winterterm22016/cpsc310) has been configured for this term. Please be mindful of the UBC Academic Misconduct Policy with respect to posting project solutions on Piazza. 
+[Piazza](https://piazza.com/ubc.ca/winterterm22016/cpsc310) has been configured for this term. Please be mindful of the UBC Academic Misconduct Policy with respect to posting project solutions on Piazza. It is _extremely_ helpful if your Piazza name corresponds to your name in the SSC in the advent we need to help you with a problem with your project, repositories, or grades.
 
 ### Getting help
 
