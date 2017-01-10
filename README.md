@@ -5,7 +5,9 @@ January 4, 2017 -> April 5, 2017 (```2016T2```). These are the official resource
 
 ## This is a development-heavy four-credit course. Plan your timetable accordingly. If you are not familiar with TypeScript, please start looking at it now.
 
-### This is a pair-programming course: If you want to work with someone specific for your project, be sure that both of you register for the _SAME_ lab section.
+## About the labs
+
+### This is a pair-programming course: If you want to work with someone specific for your project, be sure that both of you register for the _SAME_ lab section. We do not have the ability to move people around between labs; please either monitor the SSC for space in your preferred lab sections, move to another lab with space, or find a partner in the lab you are registered in. Teams **must** be firm by the time of your lab the week of Jan 16.
 
 ## Waitlist: [See Here](#waitlist)
 
