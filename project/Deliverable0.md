@@ -28,25 +28,25 @@ The parameter takes a list of URLs, each of these URLs corresponds to a JSON fil
 The math operations should only be on the numbers in arrays within the JSON file, e.g. for (http://skaha.cs.ubc.ca:11313/7b77.json):
 
 ```
-{ id: 'foo', bar: false, baz: 6, values: [1, 2, 3] }
+{ "id": "foo", "bar": false, "baz": 6, "values": [1, 2, 3] }
 ```
 
-Only 1, 2, 3 should be used. You only need to consider direct arrays (first example) or property value arrays (second example), but do not need to consider nested arrays: (e.g., (http://skaha.cs.ubc.ca:11313/822d.json) ```{val: {foo: [1, 2, 3]}}```). Also, only numbers should be considered (e.g., for ```[1, '2', 3]``` the ```2``` is a string and should not be considered).
+Only 1, 2, 3 should be used. You only need to consider direct arrays (first example) or property value arrays (second example), but do not need to consider nested arrays: (e.g., (http://skaha.cs.ubc.ca:11313/822d.json) ```{"val": {"foo": [1, 2, 3]}}```). Also, only numbers should be considered (e.g., for ```[1, "2", 3]``` the ```2``` is a string and should not be considered).
 
 ```
-add('http://skaha.cs.ubc.ca:11313/822d.json') -> fulfill(0)
+add(['http://skaha.cs.ubc.ca:11313/822d.json']) -> fulfill(0)
 
-add('http://skaha.cs.ubc.ca:11313/822d.json', 'http://skaha.cs.ubc.ca:11313/4968.json') -> fulfill(12)
+add(['http://skaha.cs.ubc.ca:11313/822d.json', 'http://skaha.cs.ubc.ca:11313/4968.json']) -> fulfill(12)
 
-add() -> fulfill(0)
+add([]) -> fulfill(0)
 
-add('invalidURL') -> reject('Error: URL could not be retrieved')
+add(['invalidURL']) -> reject('Error: URL could not be retrieved')
 
-multiply('http://skaha.cs.ubc.ca:11313/822d.json') -> fulfill(0)
+multiply(['http://skaha.cs.ubc.ca:11313/822d.json']) -> fulfill(0)
 
-multiply('http://skaha.cs.ubc.ca:11313/822d.json', 'http://skaha.cs.ubc.ca:11313/4968.json') -> fulfill(40)
+multiply(['http://skaha.cs.ubc.ca:11313/822d.json', 'http://skaha.cs.ubc.ca:11313/4968.json']) -> fulfill(40)
 
-multiply('URLwithInvalidJSON') -> reject('Error: Could not parse JSON')
+multiply(['URLwithInvalidJSON']) -> reject('Error: Could not parse JSON')
 ```
 
 
@@ -65,3 +65,19 @@ The AutoTest suite will comprise 80% of your mark. The remaining 20% will be der
 This deliverable is fairly straightforward but will involve a new language for most of you, along with a new tooling environment. Please do not delay getting started: the sooner you start, the more times you can invoke AutoTest on your solution.
 
 It is important that you start by getting the code to compile and the existing tests to run. From there you can start to build out your solution. Getting hung up on language tutorials, articles, and Youtube videos is not the way to go with this deliverable.
+
+Some URLS that you can use are 
+* http://skaha.cs.ubc.ca:11313/0.json
+* http://skaha.cs.ubc.ca:11313/1.json
+* http://skaha.cs.ubc.ca:11313/2.json
+* http://skaha.cs.ubc.ca:11313/4543.json
+* http://skaha.cs.ubc.ca:11313/4544.json
+* http://skaha.cs.ubc.ca:11313/4666.json
+* http://skaha.cs.ubc.ca:11313/4670.json
+* http://skaha.cs.ubc.ca:11313/4968.json
+* http://skaha.cs.ubc.ca:11313/4969.json
+* http://skaha.cs.ubc.ca:11313/7b77.json
+* http://skaha.cs.ubc.ca:11313/822d.json
+* http://skaha.cs.ubc.ca:11313/944a.json
+* http://skaha.cs.ubc.ca:11313/b43f.json
+* http://skaha.cs.ubc.ca:11313/jdw3.json
