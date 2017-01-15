@@ -94,8 +94,8 @@ This list is a week-by-week guide only. Readings will likely be updated even aft
 | Week        | Topic & Readings |
 | :--         |:--                                          |
 | Jan 2       | [Course Intro](readings/Introduction.md), [Languages](readings/Languages.md) |
-| Jan 9       | [Async](readings/Async.md), Project, Teamwork                    |
-| Jan 16      | Testing & Assertions, APIs, REST            |
+| Jan 9       | [Async](readings/Async.md), [Testing](readings/Testing.md), Teamwork                    |
+| Jan 16      | Assertions, Project, APIs, REST            |
 | Jan 23      | Process, Agile                              |
 | Jan 30      | Specifications                              |
 | Feb 6       | Decomposition, Technical Abstractions       |
@@ -198,10 +198,10 @@ In addition to AutoTest, each team member will be independently asked a small nu
 To pass the course and receive credit you must achieve a passing grade on *both* the project and the final exam. Sample midterm and final exams will not be available.
 
 | Component		| Proportion 	| 
-| :--				| :-- 			|
-| Project 		| 60 % 		|
+| :--			| :-- 			|
+| Project 		| 60 %			|
 | Midterm Exam	| 10 %			|
-| Final Exam		| 30 %			|
+| Final Exam	| 30 %			|
 
 
 ## Policies
