@@ -207,7 +207,7 @@ The code has 60% statement coverage (lines 2, 4, 6), 50% decision coverage (only
 
 ```typescript
 // 100% statement coverage
-eval(0, false, false);
+eval(0, true, true);
 
 // 100% decision coverage
 eval(0, true, true);
