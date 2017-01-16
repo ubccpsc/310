@@ -16,6 +16,8 @@ You are **not** allowed to store the data in a database, but you are encouraged 
 
 You are **not** allowed to modify the data in any way other than to convert it to the data structure. Your implementation will be tested with the original copy of the dataset, so any modification will most likely lead to tests failing.
 
+The dataset zip file can be found here: [https://github.com/ubccpsc/310/blob/2017jan/project/courses.zip](https://github.com/ubccpsc/310/blob/2017jan/project/courses.zip)
+
 
 ## Query Engine
 
