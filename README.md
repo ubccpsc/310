@@ -114,20 +114,20 @@ This list is a week-by-week guide only. Readings will likely be updated even aft
 
 **There will not be any labs during the first week of class.**
 
-| Lab 	| Time				| Room			| TAs |
-| :-- 	|:-- 				| :-- 			| :-- |
-| L2G	| Mon 1000-1200	| ICICS 008	| TBD |
-| L2J	| Mon 1700-1900	| ICICS 008	| TBD |
-| L2N	| Tue 0930-1130	| ICICS 008	| TBD |
-| L2A	| Tue 1330-1530	| ICICS 008	| TBD |
-| L2H	| Tue 1530-1730	| ICICS 008	| TBD |
-| L2C	| Wed 1000-1200	| ICICS 008	| TBD |
-| L2K	| Wed 1200-1400	| ICICS 008	| TBD |
-| L2E	| Wed 1600-1800	| ICICS 008	| TBD |
-| L2B	| Thu 1030-1230	| ICICS 008	| TBD |
-| L2F	| Thu 1700-1900	| ICICS 008	| TBD |
-| L2M	| Fri 1100-1300	| ICICS 008	| TBD |
-| L2D	| Fri 1500-1700	| ICICS 008	| TBD |
+| Lab 	| Time				| Room			|
+| :-- 	|:-- 				| :-- 			| 
+| L2G	| Mon 1000-1200	| ICICS 008	|
+| L2J	| Mon 1700-1900	| ICICS 008	|
+| L2N	| Tue 0930-1130	| ICICS 008	|
+| L2A	| Tue 1330-1530	| ICICS 008	|
+| L2H	| Tue 1530-1730	| ICICS 008	|
+| L2C	| Wed 1000-1200	| ICICS 008	|
+| L2K	| Wed 1200-1400	| ICICS 008	|
+| L2E	| Wed 1600-1800	| ICICS 008	|
+| L2B	| Thu 1030-1230	| ICICS 008	|
+| L2F	| Thu 1700-1900	| ICICS 008	|
+| L2M	| Fri 1100-1300	| ICICS 008	|
+| L2D	| Fri 1500-1700	| ICICS 008	|
 
 Both team members will be required to attend each lab. 
 
@@ -149,10 +149,10 @@ In addition to the 24 hours of labs per week, there are also ~12 hours of TA off
 |Thursday @ 1400-1500	|Bang Wen (Bowen) Su | ICCSX337 |
 |Thursday @ 1500-1600	|Lucas Zamprogno	| X150 - Table 1 |
 |Thursday @ 1600-1700	|Fabian Tam		| X150 - Table 1 | 
-|Friday @ 0800-0900		|Ryan Koon		| X150 - Table 3 |
+|Friday @ 0800-0900		|Theodore Lau		| ICCSX151 |
 |Friday @ 1000-1100		|Junze Wu			| X150 - Table 2 |
 |Friday @ 1200-1300		|MoHan Zhang		| X150 - Table 1 |
-|Friday @ 1600-1700		|Theodore Lau		| ICCSX151 |
+|Friday @ 1700-1800		|Ryan Koon + Theodore Lau		| X150 - Table 3 |
 
 ## Project
 
