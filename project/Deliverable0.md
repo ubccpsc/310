@@ -84,3 +84,9 @@ Some URLS that you can use are:
 
 Remember that our test suite will also use additional files so be sure to generate your own test data files as well.
 
+<!--
+TODO for next term:
+* drop multiply, doesn't really add anything over add itself
+* add private tests
+* differentiate _consuming_ promises (e.g., rp) with creating promises (e.g., fulfill).
+-->
