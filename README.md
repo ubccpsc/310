@@ -143,6 +143,7 @@ In addition to the 24 hours of labs per week, there are also ~12 hours of TA off
 |Monday @ 1600-1700		|Daniel Choi		| ICCSX139 |  
 |Tuesday @ 0900-1000	|Man Kit (Andy) Yeung | X150 - Table 3 |
 |Tuesday @ 1200-1300	|Chia-Chen (Timothy) Chu | X150 - Table 4 |
+|Wednesday @ 1200-1300	|Man Kit (Andy) Yeung | ICCSX241 |
 |Wednesday @ 1600-1700	|Zixuan Yin		| X150 - Table 4 |
 |Thursday @ 0930-1030	|Joanne Chen		| X150 - Table 4 |
 |Thursday @ 1300-1400 	|Katharine Cavers | X150 - Table 1 |
@@ -153,6 +154,7 @@ In addition to the 24 hours of labs per week, there are also ~12 hours of TA off
 |Friday @ 1000-1100		|Junze Wu			| X150 - Table 2 |
 |Friday @ 1200-1300		|MoHan Zhang		| X150 - Table 1 |
 |Friday @ 1700-1800		|Ryan Koon + Theodore Lau		| X150 - Table 3 |
+
 
 ## Project
 
