@@ -52,7 +52,7 @@ An [alternate representation](Deliverable1_EBNF.xhtml) of the EBNF is also avail
 
 ### OPTIONS
 
-```'ORDER': key``` // string is the column name to sort on; the string _must_ be in the ```GET``` array or the query is invalid
+```'ORDER': key``` // string is the column name to sort on; the string _must_ be in the ```COLUMNS``` array or the query is invalid
 
 ```'FORM': 'TABLE'``` // specifies the return format (see examples below)
 
