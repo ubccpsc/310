@@ -27,8 +27,8 @@ The goal of the deliverable is to build the backend to reply to query about the 
 ```
 QUERY ::='{'BODY ', ' OPTIONS '}'
 
-BODY ::= 'WHERE:'  FILTER 
-OPTIONS ::= COLUMNS ', ' ('ORDER:' key ', ')? VIEW
+BODY ::= 'WHERE:{'  FILTER '}'
+OPTIONS ::= 'OPTIONS:{' COLUMNS ', ' ('ORDER:' key ', ')? VIEW '}'
 
 FILTER ::= (LOGICCOMPARISON | MCOMPARISON | SCOMPARISON | NEGATION)
 
