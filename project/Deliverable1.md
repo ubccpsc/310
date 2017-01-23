@@ -71,7 +71,7 @@ The queries you will run will be using the following keys:
 * **courses_pass**: ```number```; The number of students that passed the course offering.
 * **courses_fail**: ```number```; The number of students that failed the course offering.
 * **courses_audit**: ```number```; The number of students that audited the course offering.
-* **courses_uuid**: ```string```; This is the unique id of a class offering.
+* **courses_uuid**: ```string```; The unique id of a course offering.
 
 
 Note: these keys are different than may be present in the data. Since you are not allowed to modify the data, you will have to come up with a way to translate them.  
