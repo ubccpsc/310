@@ -99,6 +99,10 @@ There is a more [modern discussion](http://www.sicpers.info/2012/09/an-apology-t
 
 It is also important to accurately consider the costs of automated testing. Writing tests takes time. Executing tests takes time. Diagnosing failing tests take time. Fixing tests that were incorrect takes time (tests are programs too!). But catching real faults can save money, as can increased velocity enabled through better understanding how shippable your code is. While it is easier to account for the costs than the benefits, most large teams have invested heavily in automated test suites, although many large teams are actively investigating test prioritization and minimization schemes to reduce the delay between making a change and having a meaningful test result.
 
+<!--- TODO:
+Testing as an engineering discipline notes
+-->
+
 ### Assertions
 
 A key skill when creating automated unit tests is evaluating the _correctness_ of the code under test. While a compiler can validate the syntax of a program, a test suite is required to ensure its runtime behaviour matches its specification. Assertions are the primary piece of machinery used to evaluate correctness within automated unit test suites. Given that [jUnit](http://junit.org/) was one of the early (and still most popular) unit testing frameworks, it is unsurprising that many modern frameworks provide features similar to jUnit's [assertion features](https://github.com/junit-team/junit4/wiki/Assertions) for evaluating program outputs.
@@ -246,7 +250,9 @@ The stronger the coverage criteria, the more stringently we can say the code was
 
 * Great article on [testability](https://www.toptal.com/qa/how-to-write-testable-code-and-why-it-matters).
 
-<!-- look at laurie's automated testing notes more -->
+<!-- look at Laurie's automated testing notes more -->
+
+<!-- look at Jim's automated testing notes more -->
 
 <!--
 On misusing coverage:

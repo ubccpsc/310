@@ -97,7 +97,7 @@ This list is a week-by-week guide only. Readings will likely be updated even aft
 | :--         |:--                                          |
 | Jan 2       | [Course Intro](readings/Introduction.md), [Languages](readings/Languages.md) |
 | Jan 9       | [Async](readings/Async.md), [Testing](readings/Testing.md), Teamwork                    |
-| Jan 16      | Assertions, Project, APIs, REST            |
+| Jan 16      | Assertions, Project, [APIs](readings/API.md), REST            |
 | Jan 23      | Process, Agile                              |
 | Jan 30      | Specifications                              |
 | Feb 6       | Decomposition, Technical Abstractions       |
