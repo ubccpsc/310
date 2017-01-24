@@ -1,6 +1,6 @@
 # Deliverable 0: Async Development
 
-### We need to create your repo for this deliverable, these will be setup on Monday morning. You **MUST** register your GitHub username with the [ClassPortal](http://skaha.cs.ubc.ca:11310) for this to work.
+### We need to create your repo for this deliverable, these will be setup on Monday morning. You **MUST** register your GitHub username with the [ClassPortal](http://skaha.cs.ubc.ca:11310) for this to work. You cannot change your GitHub id during the term.
 
 Asynchronous development requires different programming idioms than synchronous development. This deliverable requires a set of asynchronous tasks be completed to calculate an end number. 
 
@@ -84,3 +84,9 @@ Some URLS that you can use are:
 
 Remember that our test suite will also use additional files so be sure to generate your own test data files as well.
 
+<!--
+TODO for next term:
+* drop multiply, doesn't really add anything over add itself
+* add private tests
+* differentiate _consuming_ promises (e.g., rp) with creating promises (e.g., fulfill).
+-->

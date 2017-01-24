@@ -43,7 +43,7 @@ While CPSC 310 will be a challenging course, we hope it will integrate many of t
 
 #### Instructors:
 
-* [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/) (January 4 - Feb 23)
+* [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/) (January 4 - Feb 23) (Office Hours Tuesdays 1400-1500 ICICS 308)
 * [Gail Murphy](https://blogs.ubc.ca/gailcmurphy/) (February 27 - March 3)
 * [Elisa Baniassad](https://www.cs.ubc.ca/people/elisa-baniassad) (March 6 - April 5)
 
@@ -97,8 +97,8 @@ This list is a week-by-week guide only. Readings will likely be updated even aft
 | :--         |:--                                          |
 | Jan 2       | [Course Intro](readings/Introduction.md), [Languages](readings/Languages.md) |
 | Jan 9       | [Async](readings/Async.md), [Testing](readings/Testing.md), Teamwork                    |
-| Jan 16      | Assertions, Project, [APIs](readings/API.md), REST            |
-| Jan 23      | Process, Agile                              |
+| Jan 16      | [Assertions](https://github.com/ubccpsc/310/blob/2017jan/readings/Testing.md#assertions), [Project](project/README.md), Automation, [APIs](readings/API.md) & REST            |
+| Jan 23      | User Stories, Agile, Process                |
 | Jan 30      | Specifications                              |
 | Feb 6       | Decomposition, Technical Abstractions       |
 | Feb 13      | Cloud, Information Security                 |
@@ -114,20 +114,20 @@ This list is a week-by-week guide only. Readings will likely be updated even aft
 
 **There will not be any labs during the first week of class.**
 
-| Lab 	| Time				| Room			| TAs |
-| :-- 	|:-- 				| :-- 			| :-- |
-| L2G	| Mon 1000-1200	| ICICS 008	| TBD |
-| L2J	| Mon 1700-1900	| ICICS 008	| TBD |
-| L2N	| Tue 0930-1130	| ICICS 008	| TBD |
-| L2A	| Tue 1330-1530	| ICICS 008	| TBD |
-| L2H	| Tue 1530-1730	| ICICS 008	| TBD |
-| L2C	| Wed 1000-1200	| ICICS 008	| TBD |
-| L2K	| Wed 1200-1400	| ICICS 008	| TBD |
-| L2E	| Wed 1600-1800	| ICICS 008	| TBD |
-| L2B	| Thu 1030-1230	| ICICS 008	| TBD |
-| L2F	| Thu 1700-1900	| ICICS 008	| TBD |
-| L2M	| Fri 1100-1300	| ICICS 008	| TBD |
-| L2D	| Fri 1500-1700	| ICICS 008	| TBD |
+| Lab 	| Time				| Room			|
+| :-- 	|:-- 				| :-- 			| 
+| L2G	| Mon 1000-1200	| ICICS 008	|
+| L2J	| Mon 1700-1900	| ICICS 008	|
+| L2N	| Tue 0930-1130	| ICICS 008	|
+| L2A	| Tue 1330-1530	| ICICS 008	|
+| L2H	| Tue 1530-1730	| ICICS 008	|
+| L2C	| Wed 1000-1200	| ICICS 008	|
+| L2K	| Wed 1200-1400	| ICICS 008	|
+| L2E	| Wed 1600-1800	| ICICS 008	|
+| L2B	| Thu 1030-1230	| ICICS 008	|
+| L2F	| Thu 1700-1900	| ICICS 008	|
+| L2M	| Fri 1100-1300	| ICICS 008	|
+| L2D	| Fri 1500-1700	| ICICS 008	|
 
 Both team members will be required to attend each lab. 
 
@@ -143,16 +143,18 @@ In addition to the 24 hours of labs per week, there are also ~12 hours of TA off
 |Monday @ 1600-1700		|Daniel Choi		| ICCSX139 |  
 |Tuesday @ 0900-1000	|Man Kit (Andy) Yeung | X150 - Table 3 |
 |Tuesday @ 1200-1300	|Chia-Chen (Timothy) Chu | X150 - Table 4 |
+|Wednesday @ 1200-1300	|Man Kit (Andy) Yeung | ICCSX241 |
 |Wednesday @ 1600-1700	|Zixuan Yin		| X150 - Table 4 |
 |Thursday @ 0930-1030	|Joanne Chen		| X150 - Table 4 |
 |Thursday @ 1300-1400 	|Katharine Cavers | X150 - Table 1 |
 |Thursday @ 1400-1500	|Bang Wen (Bowen) Su | ICCSX337 |
 |Thursday @ 1500-1600	|Lucas Zamprogno	| X150 - Table 1 |
 |Thursday @ 1600-1700	|Fabian Tam		| X150 - Table 1 | 
-|Friday @ 0800-0900		|Ryan Koon		| X150 - Table 3 |
+|Friday @ 0800-0900		|Theodore Lau		| ICCSX151 |
 |Friday @ 1000-1100		|Junze Wu			| X150 - Table 2 |
 |Friday @ 1200-1300		|MoHan Zhang		| X150 - Table 1 |
-|Friday @ 1600-1700		|Theodore Lau		| ICCSX151 |
+|Friday @ 1700-1800		|Ryan Koon + Theodore Lau		| X150 - Table 3 |
+
 
 ## Project
 

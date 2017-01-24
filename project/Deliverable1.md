@@ -8,13 +8,13 @@ You are responsible for the software design and implementation. You cannot use a
 
 ## Dataset
 
-This data has been obtained from [UBC PAIR](http://pair.ubc.ca/) and has not been modified in any way. The data is provided as a zip file: inside of the zip you will find a file for each of the courses offered at UBC. Each of those file contains JSON object containing the information about each offering of the course. 
-
-The bootstrap project you will be provided with already has the implementation to load the data from the zip, but you will need to parse it in an adequate data structure of your choice. 
+This data has been obtained from [UBC PAIR](http://pair.ubc.ca/) and has not been modified in any way. The data is provided as a zip file: inside of the zip you will find a file for each of the courses offered at UBC. Each of those file contains JSON object containing the information about each offering of the course and you will need to parse it in an adequate data structure of your choice. 
 
 You are **not** allowed to store the data in a database, but you are encouraged to process the data into a format of your choosing that you can persist (cache) to disk for quicker or more convenient access. Make sure you do not commit this cached file to version control or AutoTest will figure it out and tests will fail in ways you do not expect.
 
 You are **not** allowed to modify the data in any way other than to convert it to the data structure. Your implementation will be tested with the original copy of the dataset, so any modification will most likely lead to tests failing.
+
+The dataset zip file can be found here: [https://github.com/ubccpsc/310/blob/2017jan/project/courses.zip](https://github.com/ubccpsc/310/blob/2017jan/project/courses.zip)
 
 
 ## Query Engine
@@ -27,8 +27,8 @@ The goal of the deliverable is to build the backend to reply to query about the 
 ```
 QUERY ::='{'BODY ', ' OPTIONS '}'
 
-BODY ::= 'WHERE:'  FILTER 
-OPTIONS ::= COLUMNS ', ' ('ORDER:' key ', ')? VIEW
+BODY ::= 'WHERE:{'  FILTER '}'
+OPTIONS ::= 'OPTIONS:{' COLUMNS ', ' ('ORDER:' key ', ')? VIEW '}'
 
 FILTER ::= (LOGICCOMPARISON | MCOMPARISON | SCOMPARISON | NEGATION)
 
@@ -48,11 +48,11 @@ string ::= [a-zA-Z0-9,_-]+
 number ::= [1-9]*[0-9]+ ('.' [0-9]+ )?
 ```
 
-An [alternate representation](Deliverable1_EBNF.xhtml) of the EBNF is also available.
+An [alternate representation](Deliverable1_EBNF.xhtml) of the EBNF is also available (Download and open in a browser to see)
 
 ### OPTIONS
 
-```'ORDER': key``` // string is the column name to sort on; the string _must_ be in the ```GET``` array or the query is invalid
+```'ORDER': key``` // string is the column name to sort on; the string _must_ be in the ```COLUMNS``` array or the query is invalid
 
 ```'FORM': 'TABLE'``` // specifies the return format (see examples below)
 
@@ -71,8 +71,10 @@ The queries you will run will be using the following keys:
 * **courses_pass**: ```number```; The number of students that passed the course offering.
 * **courses_fail**: ```number```; The number of students that failed the course offering.
 * **courses_audit**: ```number```; The number of students that audited the course offering.
+* **courses_uuid**: ```string```; The unique id of a course offering.
 
-Note: these keys are different than may be present in the data. Since you are not allowed to modify the data, you will have to come up with a way to translate them.
+
+Note: these keys are different than may be present in the data. Since you are not allowed to modify the data, you will have to come up with a way to translate them.  
 
 #### Query example
 
@@ -342,7 +344,7 @@ export interface IInsightFacade {
      *
      * 200: the query was successfully answered. The result should be sent in JSON according in the response body.
      * 400: the query failed; body should contain {"error": "my text"} providing extra detail.
-     * 424: the query failed because it depends on a resource that has not been PUT. The body should contain {"missing": ["id1", "id2"...]}.
+     * 424: the query failed because it depends on a key from an id that has not been added. The body should contain {"missing": ["id1", "id2"...]}.
      *
      */
     performQuery(query: QueryRequest): Promise<InsightResponse>;
@@ -353,7 +355,7 @@ export interface IInsightFacade {
 
 The best way to test your system is via your own unit test suite. You can write these unit tests by following the examples in ```test/``` and running them with ```yarn test```. This will be the quickest and easiest way to ensure your system is behaving correctly and to make sure regressions are not introduced as you proceed further in the project. We are currently also providing a [UI](http://skaha.cs.ubc.ca:11315/) for our solution for this deliverable so you can see what the expected values should be for the queries you are trying for your query.
 
-To ensure your code conforms with the API our marking suite expects you can run your code against AutoTest. You will not have source-level access this suite. You will be able to request to run it against your implementation every 12h by invoking the ```@CPSC310bot``` Github bot; full details will be available in the [AutoTest](AutoTest.md) documentation.
+To ensure your code conforms with the API our marking suite expects you can run your code against AutoTest. You will not have source-level access this suite. You will be able to request to run it against your implementation every 12h by invoking the ```@CPSC310bot``` Github bot; full details will be available in the [AutoTest](AutoTest.md) documentation. The AutoTest suite will not be available for the first few days after the deliverable is released; use this time to read the deliverable and get started on your own implementation and tests. We will post to Piazza when the suite is available.
 
 
 ## Getting started
@@ -375,6 +377,8 @@ There is no best way to get started, but you can consider each of these in turn.
 * Like the above, using some fake data and a fake query processor, write the code that would return the data correctly and with the correct error codes (this is step 3 above).
 
 Trying to keep all of the requirements in mind at once is going to be overwhelming. Tackling a single task that you can accomplish in an hour is going to be much more effective. Iteratively growing your project from small task to small task is going to be the best way to make forward progress.
+
+You can now use the ```ts-node``` package for this and future deliverables if you wish. To add it, simply run ```npm install ts-node --save``` from the command line. Some people were encountering issues when trying to run or debug single test cases without it, having this should hopefully help clear up those issues. If you were not having issues due to not having this package, you can ignore this, it is not required for the project and is only for your convenience.
 
 ## Contribution statement
 
