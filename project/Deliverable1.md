@@ -44,8 +44,6 @@ COLUMNS ::= 'COLUMNS:[' (key ',')* key ']'
 VIEW ::= 'FORM : TABLE'  
 
 key ::= string '_' string
-string ::= [a-zA-Z0-9,_-]+  
-number ::= [1-9]*[0-9]+ ('.' [0-9]+ )?
 ```
 
 An [alternate representation](Deliverable1_EBNF.xhtml) of the EBNF is also available (Download and open in a browser to see)
