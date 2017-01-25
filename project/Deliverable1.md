@@ -385,7 +385,7 @@ You can now use the ```ts-node``` package for this and future deliverables if yo
 1. Create a file ```src/controller/InsightFacade``` that contains a class called ```InsightFacade``` that implements the interface ```IInsightFacade```.
 1. Make sure the three methods in your ```InsightFacade``` class return a promise and that this promise _always_ settles. If all endpoints do not always settle, the AutoTest suite will timeout. Your D0 endpoints should have provided some insight into how to do this.
 1. We will run your unit test suite and send you all of the output for any of your tests that fail. This is a great way to figure out why code that works on your machine fails on our infrastructure. It is also a good way for you to ensure your promises always settle.
-
+1. Your test suite should _not_ need to use ```JSZip```. Your test code can use ```fs``` to read the zip from disk and send the base64 string representation to ```InsightFacade``` which will _then_ use ```JSZip```. Also, your product (non-test) code should not read or write the zip file to disk, it should only read and write your data structure.
 
 ## Contribution statement
 
