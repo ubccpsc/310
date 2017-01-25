@@ -366,17 +366,26 @@ This deliverable might seem intimidating, but keep in mind that this project has
 
 There is no best way to get started, but you can consider each of these in turn. Some possible options that could be pursued in any order (or skipped entirely):
 
-* Start by looking at the data file we have provided (the zip file in your ```d1public``` repository) and understanding what kind of data you will be analyzing and manipulating. This will help you think about the kind of data structure you want to create (this is the precursor to step 1 above).
+* Start by looking at the data file we have provided and understanding what kind of data you will be analyzing and manipulating. This will help you think about the kind of data structure you want to create (this is the precursor to step 1 above).
 
-* Look at the sample queries in the deliverable description and the public suite. From these queries, figure out how you would want the data arranged so you can answer these queries (this is the precursor to step 2 above).
+* Look at the sample queries in the deliverable description. From these queries, figure out how you would want the data arranged so you can answer these queries (this is the precursor to step 2 above).
 
-* Ignoring the provided data, create some fake data (maybe for one section). Write the portion of the system that queries this data (this is step 2 above).
+* Ignoring the provided data, create some fake data (maybe for one section of one course). Write the portion of the system that queries this data (this is step 2 above).
 
 * Like the above, using some fake data and a fake query processor, write the code that would return the data correctly and with the correct error codes (this is step 3 above).
 
-Trying to keep all of the requirements in mind at once is going to be overwhelming. Tackling a single task that you can accomplish in an hour is going to be much more effective. Iteratively growing your project from small task to small task is going to be the best way to make forward progress.
+Trying to keep all of the requirements in mind at once is going to be overwhelming. Tackling a single task that you can accomplish in an hour is going to be much more effective than worrying about the whole deliverable at once. Iteratively growing your project from small task to small task is going to be the best way to make forward progress.
 
+<!--
 You can now use the ```ts-node``` package for this and future deliverables if you wish. To add it, simply run ```npm install ts-node --save``` from the command line. Some people were encountering issues when trying to run or debug single test cases without it, having this should hopefully help clear up those issues. If you were not having issues due to not having this package, you can ignore this, it is not required for the project and is only for your convenience.
+-->
+
+### Getting AutoTest to work
+
+1. Create a file ```src/controller/InsightFacade``` that contains a class called ```InsightFacade``` that implements the interface ```IInsightFacade```.
+1. Make sure the three methods in your ```InsightFacade``` class return a promise and that this promise _always_ settles. If all endpoints do not always settle, the AutoTest suite will timeout. Your D0 endpoints should have provided some insight into how to do this.
+1. We will run your unit test suite and send you all of the output for any of your tests that fail. This is a great way to figure out why code that works on your machine fails on our infrastructure. It is also a good way for you to ensure your promises always settle.
+
 
 ## Contribution statement
 
