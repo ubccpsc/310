@@ -40,7 +40,7 @@ AutoTest is invoked using a bot on GitHub. If you make a ```@CPSC310bot``` comme
 
 * If your code does not cleanly compile (e.g., ```yarn build```), AutoTest will say that the 'tests failed to execute'.
 
-* If a test times out (we use a 30s timeout per-test) it will be 'skipped'. Your pass rate will be calculated as: ```pass / (pass + skip + fail)```. 
+* If a test times out it will be 'skipped'. Your pass rate will be calculated as: ```pass / (pass + skip + fail)```. 
 
 We will monitor test suite executions to ensure that our tests are correct; if we encounter a problem we will post to the class forum.
 
