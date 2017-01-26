@@ -342,7 +342,7 @@ export interface IInsightFacade {
      *
      * 200: the query was successfully answered. The result should be sent in JSON according in the response body.
      * 400: the query failed; body should contain {"error": "my text"} providing extra detail.
-     * 424: the query failed because it depends on a key from an id that has not been added. The body should contain {"missing": ["id1", "id2"...]}.
+     * 424: the query failed because it depends on an id that has not been added. The body should contain {"missing": ["id1", "id2"...]}.
      *
      */
     performQuery(query: QueryRequest): Promise<InsightResponse>;
