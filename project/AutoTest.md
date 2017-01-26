@@ -4,7 +4,7 @@ AutoTest is a mechanism for validating your project deliverables. It uses _exact
 
 While we will evaluate your code with a private suite, you should also create a personal suite to validate your code yourself.
 
-### Personal Suite
+### Personal suite
 
 The personal suite exists for three main purposes: 
 
@@ -14,7 +14,7 @@ The personal suite exists for three main purposes:
 
 * To enable you to test your deliverable repeatedly without incurring the rate limiting mechanism of the private test suite.
 
-### Private Suite
+### Private suite
 
 The private suite exists for one purpose:
 
@@ -22,7 +22,7 @@ The private suite exists for one purpose:
 
 The private suite will contain dozens of tests that will test both regular and exceptional behaviours. The private suite has two levels; in the first level we will execute your code with the dataset we gave you. In the second level we will use a new dataset to ensure you have not hard-coded shortcuts into your solution to pass the suite with the provided data set. You will get much more feedback about the first level tests than the second level tests.
 
-### Testing Your Own Code
+### Testing your own code
 
 The private suites is an *integration* suite; that is they test your code only from the public InsightFacade and REST endpoints provided by your app. While you can create integration tests with your personal suite, you can also create unit tests. Unit tests will be much faster and easier for you to diagnose incorrect behaviours in your code. 
 
@@ -44,7 +44,20 @@ AutoTest is invoked using a bot on GitHub. If you make a ```@CPSC310bot``` comme
 
 We will monitor test suite executions to ensure that our tests are correct; if we encounter a problem we will post to the class forum.
 
-### Submitting Your Deliverable
+### AutoTest tasks
+
+1. AutoTest first tries to build your code. If this fails, it will notify you via your GitHub commit.
+1. If the code compiles, it then runs your own unit test suite. For any test that fails, AutoTest will return the standard output from your tests. This is extremely helpful to diagnose problems that work on your own development machine but not the AutoTest server. Using your own tests is the best way to diagnose your own code, so this remains the best way to validate the quality of your solution.
+1. While running your tests, we also collect coverage information about how your tests cover your solution. A coverage summary is included in your output as well.
+1. Finally, AutoTest runs the private test suite against your code. Only limited information about test failures is returned to you; these will not be sufficient for diagnosing your problems (for this you should rely on your own diverse set of tests). Some tests may be witheld and only run for calculating your final grade. For this reason, it is important to consider fixing the AutoTest failures that are shown as a necessary, but not sufficient, step for ensuring a high mark.
+
+AutoTest may fail for the following reasons:
+
+* Exceeding 5 minutes of total execution time. This should not happen, but if it does it is probably because you either have an infinite loop somewhere or are not settling your promises.
+* Producing more than 5 MB of output to the standard output. It is easy to generate 100s of MB of output; please think carefully about the logging statements your code is making.
+* Depending on invalid dependencies. If your code uses libraries it shouldn't, it will fail. We do not run ```yarn install``` for your code, instead we copy the approved set of libraries to your target project.
+
+### Submitting your deliverable
 
 Your final deliverable will always be the state of the master branch of your repository at the deadline, regardless of when your final submission to the AutoTest suite took place.
 
