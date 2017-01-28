@@ -257,6 +257,9 @@ The stronger the coverage criteria, the more stringently we can say the code was
 <!--
 On misusing coverage:
 http://docplayer.net/102363-How-to-misuse-code-coverage.html
+
+great atlee talk:
+https://livestream.com/itmsstudio/events/6919492/videos/147823325?t=1485444595837
 -->
 
 ---
