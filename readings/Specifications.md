@@ -114,6 +114,10 @@ A short example of a user story is given below:
   * Unit tests to check for error handling for org, team name, and members.
   * Integration test will ensure compatibility with the GitHub API.
   * Script-based tests will be provided for the command line aspects of the feature.
+* Engineering notes: 
+  * Must integrate with existing ```GitHubManager```
+  * Any constants that would need to be changed must be stored in ```config.js```.
+  * API will be used by user interface in future, keep this in mind when designing API.
 * Estimate: 1.5 units.
 
 User stories are not an excuse for writing unclear or incomplete descriptions of tasks; for example, the following are clearly not acceptable user stories:
