@@ -98,7 +98,7 @@ This list is a week-by-week guide only. Readings will likely be updated even aft
 | Jan 2       | [Course Intro](readings/Introduction.md), [Languages](readings/Languages.md) |
 | Jan 9       | [Async](readings/Async.md), [Testing](readings/Testing.md), Teamwork                    |
 | Jan 16      | [Assertions](https://github.com/ubccpsc/310/blob/2017jan/readings/Testing.md#assertions), [Project](project/README.md), Automation, [APIs](readings/API.md) & [REST](readings/REST.md)            |
-| Jan 23      | [User Stories](readings/Specifications.md#User-stories), [Process, Agile](readings/Process.md)                |
+| Jan 23      | [User Stories](readings/Specifications.md#user-stories), [Process, Agile](readings/Process.md)                |
 | Jan 30      | [Specifications](readings/Specifications.md)                              |
 | Feb 6       | Decomposition, Technical Abstractions       |
 | Feb 13      | Cloud, Information Security                 |
