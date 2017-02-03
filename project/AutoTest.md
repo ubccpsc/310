@@ -55,7 +55,7 @@ AutoTest may fail for the following reasons:
 
 * Exceeding 5 minutes of total execution time. This should not happen, but if it does it is probably because you either have an infinite loop somewhere or are not settling your promises.
 * Producing more than 5 MB of output to the standard output. It is easy to generate 100s of MB of output; please think carefully about the logging statements your code is making.
-* Depending on invalid dependencies. If your code uses libraries it shouldn't, it will fail. We do not run ```yarn install``` for your code, instead we copy the approved set of libraries to your target project.
+* Depending on invalid dependencies. If your code uses libraries it shouldn't, it will fail. We do not run ```yarn install``` for your code, instead we copy the approved set of libraries to your target project. The approved list of dependencies can always be found in the [bootstrap repo](https://github.com/CS310-2017Jan/bootstrap/blob/master/package.json).
 * Importing modules is case sensitive in linux. (e.g., ```import jszip = require('JSZip');``` will work on Windows and probably OS X but for it to work on Linux you need ```import jszip = require('jszip');```).
 
 ### Submitting your deliverable
