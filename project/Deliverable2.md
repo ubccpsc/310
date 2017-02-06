@@ -77,7 +77,7 @@ The [testing](Deliverable1.md#testing) requirements and grading provisions for t
 
 ## Contribution statement
  
-In your repository, each teammate should commit a file called ```/D2-contrib_<GitHubId>.md```. This file should contain a short description of your concrete contributions to your D3 code. All that is required is a few sentences followed by links to some of your key Github commits (full links so we can click on them would be appreciated) for Deliverable 2. If you do not have any (or very few) commits, you may use additional space to explain your concrete contributions. This should be committed before you meet with your TAs in the lab as you will refer to this file in your meeting with them.
+In your repository, each teammate should commit a file called ```/D2-contrib_<GitHubId>.md```. This file should contain a short description of your concrete contributions to your D2 code. All that is required is a few sentences followed by links to some of your key Github commits (full links so we can click on them would be appreciated) for Deliverable 2. If you do not have any (or very few) commits, you may use additional space to explain your concrete contributions. This should be committed before you meet with your TAs in the lab as you will refer to this file in your meeting with them.
  
 It would also be helpful if the first two lines of the file contained your final test pass rate on Monday @ noon and your code coverage rate (computed as described in the Deliverable 1 document) on Monday @ noon.
  
