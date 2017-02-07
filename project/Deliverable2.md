@@ -26,7 +26,7 @@ The [query language](Deliverable1.md#query-engine) for this deliverable is uncha
 
 ### Valid keys
 
-In addition to the valid keys from [Deliverable 1](Deliverable1.md#valid-keys), this deliverable adds a variety of new keys.
+In addition to the valid keys from [Deliverable 1](Deliverable1.md#valid-keys), this deliverable adds a variety of new keys. A valid query will not contain keys from more than one dataset (i.e. only courses_xx keys or only rooms_xx keys, never a combination).
 
 * **rooms_fullname**: ```string```; Full building name (e.g., "Hugh Dempster Pavilion").
 * **rooms_shortname**: ```string```; Short building name (e.g., "DMP").
