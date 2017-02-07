@@ -34,7 +34,7 @@ In addition to the valid keys from [Deliverable 1](Deliverable1.md#valid-keys), 
 * **rooms_name**: ```string```; The room id; should be ```rooms_shortname```+"_"+```rooms_number```.
 * **rooms_address**: ```string```; The building address. (e.g., "6245 Agronomy Road V6T 1Z4").
 * **rooms_lat**: ```number```; The latitude of the building. Instructions for getting this field are below.
-* **rooms_lon**: ```number```; The latitude of the building. Instructions for getting this field are below.
+* **rooms_lon**: ```number```; The longitude of the building. Instructions for getting this field are below.
 * **rooms_seats**: ```number```; The number of seats in the room.
 * **rooms_type**: ```string```; The room type (e.g., "Small Group").
 * **rooms_furniture**: ```string```; The room type (e.g., "Classroom-Movable Tables & Chairs").
