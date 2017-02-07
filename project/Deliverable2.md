@@ -49,7 +49,7 @@ Note: these keys are different than may be present in the data. Since you are no
 Geocoding an address to a latitude/longitude pair is usually performed using online web services. To avoid problems with our spamming different geolocation providers we will be providing a web service for you to use for this purpose. To form a query, send a GET request (using the node ```http``` module) to:
 
 ```
-http://skaha.cs.ubc.ca:8022/api/v1/team<YOUR-TEAM-NUMBER>/<ADDRESS>
+http://skaha.cs.ubc.ca:11316/api/v1/team<YOUR-TEAM-NUMBER>/<ADDRESS>
 ```
 
 The response will match the following interface (either you will get ```lat && lon``` or ```error```, but never both):
