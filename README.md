@@ -185,7 +185,7 @@ In addition to AutoTest, each team member will be independently asked a small nu
 
 * February 27: Sprint 2 ([Deliverable 2](project/Deliverable2.md)) 
 
-* Mar 3: Midterm (sample midterms are not available)
+* February 27: Midterm (sample midterms are not available)
 
 <!-- 2 weeks -->
 
