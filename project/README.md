@@ -90,7 +90,7 @@ It is possible to submit an AutoTest deliverable (D1, D2, & D3) 'late' for parti
 * 2 deliverables late: 40% (e.g., D1 by D3, D2 by D4).
 * 3 deliverables late: 60% (e.g., D1 by D4).
 
-Late deliverables can only increase the test passing rate, the retrospective multipliers and test coverage rate from the original deliverable will still be used. The # of deliverables late depends on the timestamp of the commit you ran you deliverable against (the # of deliverables late increments after each deliverable deadline). To apply for the late policy, please fill out the [late deliverable request](FORM IS NOT READY YET) form by the Deliverable 4 deadline. **This form is not yet ready, but will be online by the midterm**
+Late deliverables can only increase the test passing rate, the retrospective multipliers and test coverage rate from the original deliverable will still be used. The # of deliverables late depends on the timestamp of the commit you ran you deliverable against (the # of deliverables late increments after each deliverable deadline). To apply for the late policy, please fill out the late deliverable request form by the Deliverable 4 deadline. All late scores will be applied after D4 has been marked.
 
 
 ## Labs
