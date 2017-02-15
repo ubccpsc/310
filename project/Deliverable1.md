@@ -8,7 +8,7 @@ You are responsible for the software design and implementation. You cannot use a
 
 ## Dataset
 
-This data has been obtained from [UBC PAIR](http://pair.ubc.ca/) and has not been modified in any way. The data is provided as a zip file: inside of the zip you will find a file for each of the courses offered at UBC. Each of those file contains JSON object containing the information about each offering of the course and you will need to parse it in an adequate data structure of your choice. 
+This data has been obtained from [UBC PAIR](http://pair.ubc.ca/) and has not been modified in any way. The data is provided as a zip file: inside of the zip you will find a file for each of the courses offered at UBC. Each of those file contains JSON object containing the information about each offering of the course and you will need to parse it in an adequate data structure of your choice. Valid datasets will be valid zip files and will contain **at least** one valid course section; if either of these is not true the dataset can be considered invalid.
 
 You are **not** allowed to store the data in a database, but you are encouraged to process the data into a format of your choosing that you can persist (cache) to disk for quicker or more convenient access. Make sure you do not commit this cached file to version control or AutoTest will figure it out and tests will fail in ways you do not expect.
 
@@ -301,7 +301,8 @@ export interface IInsightFacade {
      * 204: the operation was successful and the id was new (not added in this
      * session or was previously cached).
      * 400: the operation failed. The body should contain {"error": "my text"}
-     * to explain what went wrong.
+     * to explain what went wrong. This should also be used if the provided dataset
+     * is invalid.
      *
      */
     addDataset(id: string, content: string): Promise<InsightResponse>;
