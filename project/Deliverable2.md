@@ -69,7 +69,148 @@ Since we are hosting this service it _could_ be killed by DOS attacks, please tr
 
 ## Query examples
 
-*TBA*
+Query A:
+
+```
+{
+                "WHERE": {
+                    "IS": {
+                        "rooms_name": "DMP_*"
+                    }
+                },
+                "OPTIONS": {
+                    "COLUMNS": [
+                        "rooms_name"
+                    ],
+                    "ORDER": "rooms_name",
+                    "FORM": "TABLE"
+                }
+            }
+```
+
+Response A:
+
+```
+{
+	"render": "TABLE",
+	"result": [{
+		"rooms_name": "DMP_101"
+	}, {
+		"rooms_name": "DMP_110"
+	}, {
+		"rooms_name": "DMP_201"
+	}, {
+		"rooms_name": "DMP_301"
+	}, {
+		"rooms_name": "DMP_310"
+	}]
+}
+```
+
+Query B:
+
+```
+{
+                "WHERE": {
+                    "IS": {
+                        "rooms_address": "*Agrono*"
+                    }
+                },
+                "OPTIONS": {
+                    "COLUMNS": [
+                        "rooms_address", "rooms_name"
+                    ],
+                    "FORM": "TABLE"
+                }
+            }
+```
+
+Response B:
+
+```
+{
+	"render": "TABLE",
+	"result": [{
+		"rooms_address": "6363 Agronomy Road",
+		"rooms_name": "ORCH_4074"
+	}, {
+		"rooms_address": "6363 Agronomy Road",
+		"rooms_name": "ORCH_4068"
+	}, {
+		"rooms_address": "6363 Agronomy Road",
+		"rooms_name": "ORCH_4058"
+	}, {
+		"rooms_address": "6363 Agronomy Road",
+		"rooms_name": "ORCH_4018"
+	}, {
+		"rooms_address": "6363 Agronomy Road",
+		"rooms_name": "ORCH_4004"
+	}, {
+		"rooms_address": "6363 Agronomy Road",
+		"rooms_name": "ORCH_3074"
+	}, {
+		"rooms_address": "6363 Agronomy Road",
+		"rooms_name": "ORCH_3068"
+	}, {
+		"rooms_address": "6363 Agronomy Road",
+		"rooms_name": "ORCH_3058"
+	}, {
+		"rooms_address": "6363 Agronomy Road",
+		"rooms_name": "ORCH_3018"
+	}, {
+		"rooms_address": "6363 Agronomy Road",
+		"rooms_name": "ORCH_3004"
+	}, {
+		"rooms_address": "6363 Agronomy Road",
+		"rooms_name": "ORCH_1001"
+	}, {
+		"rooms_address": "6363 Agronomy Road",
+		"rooms_name": "ORCH_4072"
+	}, {
+		"rooms_address": "6363 Agronomy Road",
+		"rooms_name": "ORCH_4062"
+	}, {
+		"rooms_address": "6363 Agronomy Road",
+		"rooms_name": "ORCH_4052"
+	}, {
+		"rooms_address": "6363 Agronomy Road",
+		"rooms_name": "ORCH_4016"
+	}, {
+		"rooms_address": "6363 Agronomy Road",
+		"rooms_name": "ORCH_4002"
+	}, {
+		"rooms_address": "6363 Agronomy Road",
+		"rooms_name": "ORCH_3072"
+	}, {
+		"rooms_address": "6363 Agronomy Road",
+		"rooms_name": "ORCH_3062"
+	}, {
+		"rooms_address": "6363 Agronomy Road",
+		"rooms_name": "ORCH_3052"
+	}, {
+		"rooms_address": "6363 Agronomy Road",
+		"rooms_name": "ORCH_3016"
+	}, {
+		"rooms_address": "6363 Agronomy Road",
+		"rooms_name": "ORCH_3002"
+	}, {
+		"rooms_address": "6245 Agronomy Road V6T 1Z4",
+		"rooms_name": "DMP_310"
+	}, {
+		"rooms_address": "6245 Agronomy Road V6T 1Z4",
+		"rooms_name": "DMP_201"
+	}, {
+		"rooms_address": "6245 Agronomy Road V6T 1Z4",
+		"rooms_name": "DMP_101"
+	}, {
+		"rooms_address": "6245 Agronomy Road V6T 1Z4",
+		"rooms_name": "DMP_301"
+	}, {
+		"rooms_address": "6245 Agronomy Road V6T 1Z4",
+		"rooms_name": "DMP_110"
+	}]
+}
+```
 
 ## Testing
 
