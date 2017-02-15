@@ -1,6 +1,6 @@
 # Deliverable 2: insightUBC Room Expansion
 
-[Deliverable 1](Deliverable1.md) built a query engine to answer queries about UBC course sections. This deliverable will extend the input data to include data about the physical spaces where classes are held on campus. This deliverable will be due at noon on February 27.
+[Deliverable 1](Deliverable1.md) built a query engine to answer queries about UBC course sections. This deliverable will extend the input data to include data about the physical spaces where classes are held on campus. This deliverable will be due at 8 AM on February 27.
 
 ### NOTE: the test suite will be released on Feb 13.
 
