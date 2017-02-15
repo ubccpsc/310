@@ -108,7 +108,8 @@ This list is a week-by-week guide only. Readings will likely be updated even aft
 | Mar 13      | Design                                      |
 | Mar 20      | Design                                      |
 | Mar 27      | Refactoring,  Code Smells                   |
-| Apr 3       | TBD & Wrap-up				
+| Apr 3       | TBD & Wrap-up				|
+| Apr 30 | Final Exam @ 0830 (location TBD) |
 
 #### Labs:
 
