@@ -97,12 +97,12 @@ This list is a week-by-week guide only. Readings will likely be updated even aft
 | :--         |:--                                          |
 | Jan 2       | [Course Intro](readings/Introduction.md), [Languages](readings/Languages.md) |
 | Jan 9       | [Async](readings/Async.md), [Testing](readings/Testing.md), Teamwork                    |
-| Jan 16      | [Assertions](https://github.com/ubccpsc/310/blob/2017jan/readings/Testing.md#assertions), [Project](project/README.md), Automation, [APIs](readings/API.md) & [REST](readings/REST.md)            |
-| Jan 23      | [User Stories](readings/Specifications.md#user-stories), [Process, Agile](readings/Process.md)                |
-| Jan 30      | [Specifications](readings/Specifications.md)                              |
-| Feb 6       | Decomposition, Technical Abstractions       |
-| Feb 13      | Cloud, Information Security                 |
-| Feb 20      | Reading Week                                |
+| Jan 16      | [Assertions](https://github.com/ubccpsc/310/blob/2017jan/readings/Testing.md#assertions), [Project](project/README.md), Automation, [APIs](readings/API.md) & [REST](readings/REST.md) |
+| Jan 23      | [User Stories](readings/Specifications.md#user-stories), [Process, Agile](readings/Process.md) |
+| Jan 30      | [Specifications](readings/Specifications.md) |
+| Feb 6       | [Abstractions](readings/Abstraction.md),  [Technical Representations](readings/Representations.md) |
+| Feb 13      | [Information Security](readings/Security.md) |
+| Feb 20      | Reading Week: No Class or Office Hours      |
 | Feb 27      | Midterm (Mar 3),  Guest Lectures            |
 | Mar 6       | Design                                      |
 | Mar 13      | Design                                      |
@@ -153,7 +153,7 @@ In addition to the 24 hours of labs per week, there are also ~12 hours of TA off
 |Friday @ 0800-0900		|Theodore Lau		| ICCSX151 |
 |Friday @ 1000-1100		|Junze Wu			| X150 - Table 2 |
 |Friday @ 1200-1300		|MoHan Zhang		| X150 - Table 1 |
-|Friday @ 1700-1800		|Ryan Koon + Theodore Lau		| X150 - Table 3 |
+|Friday @ 1700-1800		|Ryan Koon + Theodore Lau | X150 - Table 3 |
 
 
 ## Project
@@ -202,11 +202,10 @@ In addition to AutoTest, each team member will be independently asked a small nu
 To pass the course and receive credit you must achieve a passing grade on *both* the project and the final exam. Sample midterm and final exams will not be available.
 
 | Component		| Proportion 	| 
-| :--			| :-- 			|
+| :--			   	| :-- 			|
 | Project 		| 60 %			|
 | Midterm Exam	| 10 %			|
-| Final Exam	| 30 %			|
-
+| Final Exam		| 30 %			|
 
 ## Policies
 
