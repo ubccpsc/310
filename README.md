@@ -97,18 +97,18 @@ This list is a week-by-week guide only. Readings will likely be updated even aft
 | :--         |:--                                          |
 | Jan 2       | [Course Intro](readings/Introduction.md), [Languages](readings/Languages.md) |
 | Jan 9       | [Async](readings/Async.md), [Testing](readings/Testing.md), Teamwork                    |
-| Jan 16      | [Assertions](https://github.com/ubccpsc/310/blob/2017jan/readings/Testing.md#assertions), [Project](project/README.md), Automation, [APIs](readings/API.md) & [REST](readings/REST.md) |
+| Jan 16      | [Assertions](readings/Testing.md#assertions), [Project](project/README.md), Automation, [APIs](readings/API.md) & [REST](readings/REST.md) |
 | Jan 23      | [User Stories](readings/Specifications.md#user-stories), [Process, Agile](readings/Process.md) |
 | Jan 30      | [Specifications](readings/Specifications.md) |
-| Feb 6       | [Abstractions](readings/Abstraction.md),  [Technical Representations](readings/Representations.md) |
+| Feb 6       | [Abstraction](readings/Abstraction.md),  [Technical Representations](readings/Representations.md) |
 | Feb 13      | [Information Security](readings/Security.md) |
-| Feb 20      | Reading Week: No Class or Office Hours      |
-| Feb 27      | Midterm (Mar 3),  Guest Lectures            |
-| Mar 6       | Design                                      |
-| Mar 13      | Design                                      |
-| Mar 20      | Design                                      |
-| Mar 27      | Refactoring,  Code Smells                   |
-| Apr 3       | TBD & Wrap-up				
+| Feb 20      | Reading Week: No Class or Office Hours |
+| Mar 6       | Design |
+| Mar 13      | Design |
+| Mar 20      | Design |
+| Mar 27      | Refactoring,  Code Smells |
+| Apr 3       | TBD & Wrap-up |
+| Apr 28 | Final Exam @ 0830 (location TBD) |
 
 #### Labs:
 
@@ -185,7 +185,7 @@ In addition to AutoTest, each team member will be independently asked a small nu
 
 * February 27: Sprint 2 ([Deliverable 2](project/Deliverable2.md)) 
 
-* Mar 3: Midterm (sample midterms are not available)
+* February 27: Midterm (sample midterms are not available)
 
 <!-- 2 weeks -->
 
