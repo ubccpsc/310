@@ -63,7 +63,7 @@ REST services are often viewed as highly scalable. The main reason for this is t
 
 As a concrete example, if a client is trying to undertake a complex multi-step operation, it is the client's responsibility to keep track of where they are, not the server's responsibility. 
 
-Servers are responsible for sending back detailed information about the resources they are returning so that clients have the ability to make further requests of the server with the correct URIs. For example, while could might expect the GitHub ```POST /user/:repo``` endpoint to simply return true if a repository was successfully created, it instead returns a wide variety of information that can be used by the user to construct any subsequent requests:
+Servers are responsible for sending back detailed information about the resources they are returning so that clients have the ability to make further requests of the server with the correct URIs. For example, while could might expect the GitHub ```POST /user/:repo``` endpoint to simply return ```{success: true}``` if a repository was successfully created, it instead returns a wide variety of information that can be used by the user to construct any subsequent requests:
 
 ```json
 Status: 201 Created
@@ -159,6 +159,8 @@ Location: https://api.github.com/repos/octocat/Hello-World
   }
 }
 ```
+
+Another example of this is in terms of pagination. Instead of expecting there to be a REST endpoint called ```GET /:query/next``` which would require the server to keep track of the next result for every client, in REST-based systems a more appropriate endpoint would be ```GET /:query/:rowNum``` where the client would instead track which row they wanted to see next.
 
 ## Design goals
 
