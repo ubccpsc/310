@@ -10,7 +10,7 @@ Additional data can be sent to a REST endpoint in the form of HTTP headers or in
 
 ## Verbs
 
-REST describes how HTTP verbs should be used when communicating with REST services. REST services respond with payloads (typically JSON or XML) and an integer-based response code.
+REST describes how HTTP verbs should be used when communicating with REST services. REST services respond with payloads (typically JSON or XML) and an integer-based response code. Each REST request uses only one verb and receives only one response.
 
 * ```GET``` Used to read a resource. Get requests should never modify data on a server, meaning that calling them repeatedly should have no visible effects on the server (that is, the request is idempotent). GET requests can have a body but this is not idiomatic; requested resources are defined by the URI alone. Common response codes are 200 (ok) and 404 (not found).
 
