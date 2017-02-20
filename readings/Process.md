@@ -109,6 +109,12 @@ Scrum employs three broad ceremonies:
 * **Sprint review**: After each sprint, a review meeting is held for the team to demonstrate their features to the product owner or other stakeholders. This is possible because the output of each sprint is supposed to be a potentially-shippable product. These meetings are light-weight and are usually time limited to under two hours. The team also takes this opportunity to evaluate how much progress has been made on the sprint backlog.
 * **Retrospective**: Every product and team is unique, so it is important that the team take time to reflect on how the sprint worked out. Usually this comes in the form of identifying activities the team should start doing, stop doing, or continue doing. This retrospective is a good opportunity to make sure the process is providing value for the team and to find opportunities to improve and refine the activities the team is performing.
 
+<!--
+TODO (from phoenix project):
+* Kanbans
+* Lean (Plan, do, check, act)
+-->
+
 ### References
 
 * [Why](http://spectrum.ieee.org/computing/software/why-software-fails) software fails article.
