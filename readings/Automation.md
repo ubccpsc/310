@@ -1,6 +1,10 @@
 # Automation
 
-Our expectations for modern software systems demand delivering a level of velocity that was not possible in the past. Gone are the days where delivering once every 3-5 years was considered acceptable. Being able to deliver changes on a weekly, daily, or minute-by-minute basis allows software teams to more quickly deliver new products to market or provide more timely bug fixes.
+Our expectations for modern software systems demand delivering a level of velocity that was not possible in the past. Gone are the days where delivering once every 3-5 years was considered acceptable. Being able to deliver changes on a weekly, daily, or minute-by-minute basis allows software teams to more quickly deliver new products to market or provide more timely bug fixes. 
+
+The figure below shows a coarse-grained view of the broad steps required to get a code change deployed in front of a user. While  human intervention is required to make every code change, it should be possible to automatically transition from the change in front of a user. The less time this sequence of actions takes, the quicker the developer can get feedback to refine or roll back their change. Also, the quicker and easier this process is, the more likely developers are to take advantage of it (e.g., if running tests is hard, developers will try not to run them or if deploying is hard developers will avoid deploying fixes that could benefit users unless they are significant 'enough').
+
+<img src="./figures/automation_feedback.png" width="512px" alt="API overview">
 
 Software systems are increasingly large, distributed, and heterogeneous. Successfully building, testing, and deploying them requires coordinating a huge stack of tools, environments, and systems. This requires a high degree of craftsmanship and has historically involved many manual, laborious, time consuming, and error prone steps to translate source code into a shippable executable. The goal of automation is to transform this unsustainable way of building software into a process that is:
 
