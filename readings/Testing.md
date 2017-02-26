@@ -140,7 +140,7 @@ One thing to note about the syntax of the assertions above is that they are extr
 ```javascript
 describe('Check math constants', function() {
 	it('Math.PI should be close enough to the correct value', function() {
-		expect(3.1415).to.be.closeTo(3.14, 0.025);
+		expect(Math.PI).to.be.closeTo(3.14, 0.025);
 	});
 });
 ```
@@ -162,8 +162,8 @@ Ultimately each test should compare an expected value against the actual value p
 ```javascript
 describe('Check math constants', function() {
     it('Math.PI should be close enough to the correct value', function() {
-    	 const actual = 3.1415;
-    	 const expected = Math.PI;
+    	 const expected = 3.1415;
+    	 const actual = Math.PI;
         expect(actual).to.be.closeTo(expected, 0.025);
     });
 });
