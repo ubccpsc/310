@@ -162,9 +162,9 @@ Ultimately each test should compare an expected value against the actual value p
 ```javascript
 describe('Check math constants', function() {
     it('Math.PI should be close enough to the correct value', function() {
-    	 const expected = 3.1415;
-    	 const actual = Math.PI;
-        expect(expected).to.be.closeTo(actual, 0.025);
+    	 const actual = 3.1415;
+    	 const expected = Math.PI;
+        expect(actual).to.be.closeTo(expected, 0.025);
     });
 });
 ```
