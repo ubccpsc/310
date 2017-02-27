@@ -34,7 +34,7 @@ fs.readFile('/cpsc310.csv', function(err, data) {
 
 It is only by convention that ```err``` is passed first; this depends on the developer doing the right thing and on clients checking ```err``` to see if it contains a value and acting appropriately if it has.
 
-This problem becomes harder to manage one callbacks depend on the output of previous callback functions; this is extremely common (e.g., read a directory list (async) and then read a specific file (async)). This pattern arrises from our natural desire to want the apparent execution to proceed from top-to-bottom in the source code file. This style of error handling is much like you would see in C code where return values were checked for error statuses (instead of the error being in a function param). One significant problem with callback-based error handling is that exceptions cannot be effectively caught. That is, since the callback is not being executed in the context of its originating function there is no 'parent' method for the catch to exist in. More details and tips about this can be found [here](https://ruben.verborgh.org/blog/2012/12/31/asynchronous-error-handling-in-javascript/). Nested callbacks are often referred to as [callback hell](http://callbackhell.com/).
+This problem becomes harder to manage once callbacks depend on the output of previous callback functions; this is extremely common (e.g., read a directory list (async) and then read a specific file (async)). This pattern arrises from our natural desire to want the apparent execution to proceed from top-to-bottom in the source code file. This style of error handling is much like you would see in C code where return values were checked for error statuses (instead of the error being in a function param). One significant problem with callback-based error handling is that exceptions cannot be effectively caught. That is, since the callback is not being executed in the context of its originating function there is no 'parent' method for the catch to exist in. More details and tips about this can be found [here](https://ruben.verborgh.org/blog/2012/12/31/asynchronous-error-handling-in-javascript/). Nested callbacks are often referred to as [callback hell](http://callbackhell.com/).
 
 ```javascript
 fs.readdir(source, function (err, files) {
@@ -86,7 +86,7 @@ fs.readdir(source).then(function(files) {
 });
 ```
 
-Promises can only have three states, _pending_ before it is done its task, _fulfilled_ if the task has completed successfully, and _rejected_ if the task has completed erroneously. Promises can only transition to _fulfilled_ or _rejected_ once and cannot change between _fulfilled_ and _rejected_; this process is called _settling_. [HTML5Rocks](http://www.html5rocks.com/en/tutorials/es6/promises/) has an extremely through walkthrough of promises where you can see how many of its features are used in practice.
+Promises can only have three states, _pending_ before it is done its task, _fulfilled_ if the task has completed successfully, and _rejected_ if the task has completed erroneously. Promises can only transition to _fulfilled_ or _rejected_ once and cannot change between _fulfilled_ and _rejected_; this process is called _settling_. [HTML5Rocks](http://www.html5rocks.com/en/tutorials/es6/promises/) has an extremely thorough walkthrough of promises where you can see how many of its features are used in practice.
 
 <img src="./figures/promise-states.png" width="512px" alt="promise states">
 
