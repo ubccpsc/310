@@ -103,7 +103,7 @@ It is possible to submit a team-based AutoTest deliverable (D1, D2, & D3) 'late'
 * 2 deliverables late: 50% (e.g., D1 by D3, D2 by D4).
 * 3 deliverables late: 60% (e.g., D1 by D4).
 
-Late deliverables can only increase the test passing rate, the retrospective multipliers and test coverage rate from the original deliverable will still be used. The # of deliverables late depends on the timestamp of the commit you ran you deliverable against (the # of deliverables late increments after each deliverable deadline). An online form will be added later for you to request a late submission.
+Late deliverables can only increase the test passing rate, the retrospective multipliers and test coverage rate from the original deliverable will still be used. The # of deliverables late depends on the timestamp of the commit you ran you deliverable against (the # of deliverables late increments after each deliverable deadline). Use [this form](https://goo.gl/forms/WK6T45hchKgHBFN42) to submit your late request. Please talk to your team before you do this, we will only consider one late request per-team per-deliverable at most.
 
 <!---
 To apply for the late policy, please fill out the [late deliverable request](https://goo.gl/forms/9P4DBfXBBhuPHTqM2) form by the Deliverable 4 deadline.
