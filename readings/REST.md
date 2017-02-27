@@ -37,7 +37,7 @@ In contrast, JSON documents are easier to read and write, are less verbose, and 
 
 ```json
 {
-	code: 200
+	"code": 200
 }
 ```
 
