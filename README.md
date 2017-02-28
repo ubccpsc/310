@@ -104,7 +104,7 @@ This list is a week-by-week guide only. Readings will likely be updated even aft
 | Feb 13      | [Information Security](readings/Security.md) |
 | Feb 20      | Reading Week: No Class or Office Hours |
 | Feb 27      | Midterm |
-| Mar 1       | Intellectual Property |
+| Mar 1       | Intellectual Property [Slides-2up](http://www.cs.ubc.ca/~murphy/cpsc310-2016w2/CPSC310_IP_2016W2.pdf) |
 | Mar 3       | Industry Lecture |
 | Mar 6       | Design |
 | Mar 13      | Design |
