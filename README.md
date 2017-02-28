@@ -103,6 +103,9 @@ This list is a week-by-week guide only. Readings will likely be updated even aft
 | Feb 6       | [Abstraction](readings/Abstraction.md),  [Technical Representations](readings/Representations.md) |
 | Feb 13      | [Information Security](readings/Security.md) |
 | Feb 20      | Reading Week: No Class or Office Hours |
+| Feb 27      | Midterm |
+| Mar 1       | Intellectual Property |
+| Mar 3       | Industry Lecture |
 | Mar 6       | Design |
 | Mar 13      | Design |
 | Mar 20      | Design |
