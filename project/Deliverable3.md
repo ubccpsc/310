@@ -62,10 +62,11 @@ The primary objective of this deliverable is to extend the [query language](Deli
   * ```DOWN```: Sort results descending.
 
 ```
-QUERY ::='{'BODY ', ' OPTIONS '}'
+QUERY ::='{'BODY ', ' OPTIONS  (', ' TRANSFORMATIONS)? '}'
 
 BODY ::= 'WHERE:{'  FILTER '}' | '{}'
-OPTIONS ::= 'OPTIONS:{' COLUMNS ', ' (GROUP ', ' APPLY ', ')? (SORT ', ')? VIEW '}'
+OPTIONS ::= 'OPTIONS:{' COLUMNS ', ' (SORT ', ')? VIEW '}'
+TRANSFORMATIONS ::= (GROUP ', ' APPLY)
 
 FILTER ::= (LOGICCOMPARISON | MCOMPARISON | SCOMPARISON | NEGATION)
 
