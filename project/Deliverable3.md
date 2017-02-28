@@ -31,7 +31,7 @@ You will adapt your existing ```InsightFacade``` to also be accessed using REST 
      * ```204```: Same as for 204 in ```InsightFacade::removeDataset(..)```.
      * ```404```: Same as for 404 in ```InsightFacade::removeDataset(..)```.
 
-The ```:id``` portion of the ```PUT``` and ```DELETE``` endpoints represent a variable name that is extracted from the endpoint URL. For the URL ```http://localhost:4321/dataset/courses```, ```courses``` is the ```id```. You can see in ```RouteHandler``` how the ```id``` variable is extracted and used.
+The ```:id``` portion of the ```PUT``` and ```DELETE``` endpoints represent a variable name that is extracted from the endpoint URL. For the URL ```http://localhost:4321/dataset/courses```, ```courses``` is the ```id```.
 
 * **```POST /query```** sends the query to the application. The query will be in JSON format in the post body. 
  * NOTE: the server may be shutdown between the ```PUT``` and the ```POST```. This endpoint should always check for a persisted data structure on disk before returning a missing dataset error.
