@@ -46,7 +46,7 @@ The valid keys from Deliverable 1 and Deliverable 2 are unchanged.
 
 ## Query engine
 
-The primary objective of this deliverable is to extend the [query language](Deliverable1.md#query-engine) to enable more comprehensive queries about the dataset we have previously imported. ```GET```, ```WHERE```, and ```AS``` are unchanged from Deliverable 1 (although ```GET``` has some new restrictions below). At a high level, the new functionality adds:
+The primary objective of this deliverable is to extend the [query language](Deliverable1.md#query-engine) to enable more comprehensive queries about the dataset we have previously imported. ```COLUMNS```, ```WHERE```, and ```VIEW``` are unchanged from Deliverable 2 (although ```COLUMNS``` has some new restrictions below). At a high level, the new functionality adds:
 
 * ```GROUP```: Group the list of results into sets by some matching criteria.
 
