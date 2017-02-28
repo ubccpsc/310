@@ -98,7 +98,7 @@ Here is some further clarification about the EBNF that might be helpful for vali
 
 * ```GROUP``` and ```APPLY``` always appear together, and ```GROUP``` must contain at least one term (having each record in its own group does not make a lot of sense).
 
-* If a ```GROUP``` is present, all ```GET``` terms must correspond to either ```GROUP``` terms or to terms defined in the ```APPLY``` block. ```GET``` terms with underscores must occur in ```GROUP``` while ```GET``` terms without underscores must be defined in ```APPLY```.
+* If a ```GROUP``` is present, all ```COLUMNS``` terms must correspond to either ```GROUP``` terms or to terms defined in the ```APPLY``` block. ```COLUMNS``` terms with underscores must occur in ```GROUP``` while ```COLUMNS``` terms without underscores must be defined in ```APPLY```.
 
 * ```APPLY``` enables the above listed computations on a group. The result of an ```APPLY``` should be a record containing the ```GROUP``` terms, and the terms defined by the ```APPLY```. 
 
