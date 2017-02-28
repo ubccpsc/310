@@ -17,7 +17,7 @@ The datasets from this deliverable are unchanged from Deliverable 1 and 2.
 
 You will adapt your existing ```InsightFacade``` to also be accessed using REST endpoints. Both ```InsightFacade``` and the REST endpoints must continue to work independently. You will note that the REST descriptions below correspond closely to the values you are already surfacing from ```InsightFacade```.
 
-* **```COLUMNS /```** returns the query interface for the UI; this is only provided for your convenience and will not be tested. This will be a part of your D4, but you might as well get the wiring in for this now.
+* **```GET /```** returns the query interface for the UI; this is only provided for your convenience and will not be tested. This will be a part of your D4, but you might as well get the wiring in for this now.
 
 * **```PUT /dataset/:id```** allows to submit a zip file that will be parsed and used for future queries. The zip file content will be sent in base64 in the ```PUT``` body. 
 * Response Codes and message formats:
