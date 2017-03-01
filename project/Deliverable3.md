@@ -128,9 +128,15 @@ Query A:
 ```
 {
     "WHERE": {
-        "IS": {
-            "rooms_furniture": "*Tables*"
-        }
+        "AND": [{
+            "IS": {
+                "rooms_furniture": "*Tables*"
+            }
+        }, {
+            "GT": {
+                "rooms_seats": 300
+            }
+        }]
     },
     "OPTIONS": {
         "COLUMNS": [
@@ -168,111 +174,6 @@ Response A:
     }, {
         "rooms_shortname": "LSC",
         "maxSeats": 350
-    }, {
-        "rooms_shortname": "SRC",
-        "maxSeats": 299
-    }, {
-        "rooms_shortname": "ANGU",
-        "maxSeats": 260
-    }, {
-        "rooms_shortname": "PHRM",
-        "maxSeats": 236
-    }, {
-        "rooms_shortname": "LSK",
-        "maxSeats": 205
-    }, {
-        "rooms_shortname": "CHBE",
-        "maxSeats": 200
-    }, {
-        "rooms_shortname": "SWNG",
-        "maxSeats": 190
-    }, {
-        "rooms_shortname": "DMP",
-        "maxSeats": 160
-    }, {
-        "rooms_shortname": "FRDM",
-        "maxSeats": 160
-    }, {
-        "rooms_shortname": "IBLC",
-        "maxSeats": 154
-    }, {
-        "rooms_shortname": "MCLD",
-        "maxSeats": 136
-    }, {
-        "rooms_shortname": "WOOD",
-        "maxSeats": 120
-    }, {
-        "rooms_shortname": "BUCH",
-        "maxSeats": 108
-    }, {
-        "rooms_shortname": "CEME",
-        "maxSeats": 100
-    }, {
-        "rooms_shortname": "GEOG",
-        "maxSeats": 100
-    }, {
-        "rooms_shortname": "IONA",
-        "maxSeats": 100
-    }, {
-        "rooms_shortname": "ALRD",
-        "maxSeats": 94
-    }, {
-        "rooms_shortname": "LASR",
-        "maxSeats": 80
-    }, {
-        "rooms_shortname": "ESB",
-        "maxSeats": 80
-    }, {
-        "rooms_shortname": "BIOL",
-        "maxSeats": 76
-    }, {
-        "rooms_shortname": "MCML",
-        "maxSeats": 72
-    }, {
-        "rooms_shortname": "ORCH",
-        "maxSeats": 72
-    }, {
-        "rooms_shortname": "BRKX",
-        "maxSeats": 70
-    }, {
-        "rooms_shortname": "SPPH",
-        "maxSeats": 66
-    }, {
-        "rooms_shortname": "FSC",
-        "maxSeats": 65
-    }, {
-        "rooms_shortname": "FORW",
-        "maxSeats": 63
-    }, {
-        "rooms_shortname": "MATH",
-        "maxSeats": 60
-    }, {
-        "rooms_shortname": "SCRF",
-        "maxSeats": 60
-    }, {
-        "rooms_shortname": "UCLL",
-        "maxSeats": 55
-    }, {
-        "rooms_shortname": "EOSM",
-        "maxSeats": 50
-    }, {
-        "rooms_shortname": "PCOH",
-        "maxSeats": 40
-    }, {
-        "rooms_shortname": "ANSO",
-        "maxSeats": 37
-    }, {
-        "rooms_shortname": "HENN",
-        "maxSeats": 36
-    }, {
-        "rooms_shortname": "FNH",
-        "maxSeats": 28
-    }, {
-        "rooms_shortname": "AUDX",
-        "maxSeats": 21
-    }, {
-        "rooms_shortname": "SOWK",
-        "maxSeats": 16
     }]
 }
 ```
@@ -284,13 +185,13 @@ Query B:
     "WHERE": {},
     "OPTIONS": {
         "COLUMNS": [
-            "courses_dept"
+            "rooms_furniture"
         ],
-        "ORDER": "courses_dept",
+        "ORDER": "rooms_furniture",
         "FORM": "TABLE"
     },
     "TRANSFORMATIONS": {
-        "GROUP": ["courses_dept"],
+        "GROUP": ["rooms_furniture"],
         "APPLY": []
     }
 }
@@ -302,383 +203,25 @@ Response B:
 {
     "render": "TABLE",
     "result": [{
-        "courses_dept": "aanb"
+        "rooms_furniture": "Classroom-Fixed Tables/Fixed Chairs"
     }, {
-        "courses_dept": "adhe"
+        "rooms_furniture": "Classroom-Fixed Tables/Movable Chairs"
     }, {
-        "courses_dept": "anat"
+        "rooms_furniture": "Classroom-Fixed Tables/Moveable Chairs"
     }, {
-        "courses_dept": "anth"
+        "rooms_furniture": "Classroom-Fixed Tablets"
     }, {
-        "courses_dept": "apbi"
+        "rooms_furniture": "Classroom-Hybrid Furniture"
     }, {
-        "courses_dept": "appp"
+        "rooms_furniture": "Classroom-Learn Lab"
     }, {
-        "courses_dept": "apsc"
+        "rooms_furniture": "Classroom-Movable Tables & Chairs"
     }, {
-        "courses_dept": "arbc"
+        "rooms_furniture": "Classroom-Movable Tablets"
     }, {
-        "courses_dept": "arch"
+        "rooms_furniture": "Classroom-Moveable Tables & Chairs"
     }, {
-        "courses_dept": "arcl"
-    }, {
-        "courses_dept": "arst"
-    }, {
-        "courses_dept": "arth"
-    }, {
-        "courses_dept": "asia"
-    }, {
-        "courses_dept": "asic"
-    }, {
-        "courses_dept": "astr"
-    }, {
-        "courses_dept": "astu"
-    }, {
-        "courses_dept": "atsc"
-    }, {
-        "courses_dept": "audi"
-    }, {
-        "courses_dept": "ba"
-    }, {
-        "courses_dept": "baac"
-    }, {
-        "courses_dept": "babs"
-    }, {
-        "courses_dept": "baen"
-    }, {
-        "courses_dept": "bafi"
-    }, {
-        "courses_dept": "bahr"
-    }, {
-        "courses_dept": "bait"
-    }, {
-        "courses_dept": "bala"
-    }, {
-        "courses_dept": "bama"
-    }, {
-        "courses_dept": "bams"
-    }, {
-        "courses_dept": "bapa"
-    }, {
-        "courses_dept": "basc"
-    }, {
-        "courses_dept": "basm"
-    }, {
-        "courses_dept": "baul"
-    }, {
-        "courses_dept": "bioc"
-    }, {
-        "courses_dept": "biof"
-    }, {
-        "courses_dept": "biol"
-    }, {
-        "courses_dept": "bmeg"
-    }, {
-        "courses_dept": "bota"
-    }, {
-        "courses_dept": "busi"
-    }, {
-        "courses_dept": "caps"
-    }, {
-        "courses_dept": "ccst"
-    }, {
-        "courses_dept": "ceen"
-    }, {
-        "courses_dept": "cell"
-    }, {
-        "courses_dept": "cens"
-    }, {
-        "courses_dept": "chbe"
-    }, {
-        "courses_dept": "chem"
-    }, {
-        "courses_dept": "chil"
-    }, {
-        "courses_dept": "chin"
-    }, {
-        "courses_dept": "cics"
-    }, {
-        "courses_dept": "civl"
-    }, {
-        "courses_dept": "clch"
-    }, {
-        "courses_dept": "clst"
-    }, {
-        "courses_dept": "cnps"
-    }, {
-        "courses_dept": "cnrs"
-    }, {
-        "courses_dept": "cnto"
-    }, {
-        "courses_dept": "coec"
-    }, {
-        "courses_dept": "cogs"
-    }, {
-        "courses_dept": "cohr"
-    }, {
-        "courses_dept": "comm"
-    }, {
-        "courses_dept": "cons"
-    }, {
-        "courses_dept": "cpen"
-    }, {
-        "courses_dept": "cpsc"
-    }, {
-        "courses_dept": "crwr"
-    }, {
-        "courses_dept": "dani"
-    }, {
-        "courses_dept": "dent"
-    }, {
-        "courses_dept": "dhyg"
-    }, {
-        "courses_dept": "eced"
-    }, {
-        "courses_dept": "econ"
-    }, {
-        "courses_dept": "edcp"
-    }, {
-        "courses_dept": "edst"
-    }, {
-        "courses_dept": "educ"
-    }, {
-        "courses_dept": "eece"
-    }, {
-        "courses_dept": "elec"
-    }, {
-        "courses_dept": "ends"
-    }, {
-        "courses_dept": "engl"
-    }, {
-        "courses_dept": "enph"
-    }, {
-        "courses_dept": "envr"
-    }, {
-        "courses_dept": "eosc"
-    }, {
-        "courses_dept": "epse"
-    }, {
-        "courses_dept": "etec"
-    }, {
-        "courses_dept": "fhis"
-    }, {
-        "courses_dept": "fipr"
-    }, {
-        "courses_dept": "fish"
-    }, {
-        "courses_dept": "fist"
-    }, {
-        "courses_dept": "fmst"
-    }, {
-        "courses_dept": "fnel"
-    }, {
-        "courses_dept": "fnh"
-    }, {
-        "courses_dept": "fnis"
-    }, {
-        "courses_dept": "food"
-    }, {
-        "courses_dept": "fopr"
-    }, {
-        "courses_dept": "fre"
-    }, {
-        "courses_dept": "fren"
-    }, {
-        "courses_dept": "frst"
-    }, {
-        "courses_dept": "gbpr"
-    }, {
-        "courses_dept": "geob"
-    }, {
-        "courses_dept": "geog"
-    }, {
-        "courses_dept": "germ"
-    }, {
-        "courses_dept": "gpp"
-    }, {
-        "courses_dept": "grek"
-    }, {
-        "courses_dept": "grsj"
-    }, {
-        "courses_dept": "gsat"
-    }, {
-        "courses_dept": "hebr"
-    }, {
-        "courses_dept": "hgse"
-    }, {
-        "courses_dept": "hinu"
-    }, {
-        "courses_dept": "hist"
-    }, {
-        "courses_dept": "hunu"
-    }, {
-        "courses_dept": "iar"
-    }, {
-        "courses_dept": "igen"
-    }, {
-        "courses_dept": "info"
-    }, {
-        "courses_dept": "isci"
-    }, {
-        "courses_dept": "ital"
-    }, {
-        "courses_dept": "itst"
-    }, {
-        "courses_dept": "iwme"
-    }, {
-        "courses_dept": "japn"
-    }, {
-        "courses_dept": "jrnl"
-    }, {
-        "courses_dept": "kin"
-    }, {
-        "courses_dept": "korn"
-    }, {
-        "courses_dept": "lais"
-    }, {
-        "courses_dept": "larc"
-    }, {
-        "courses_dept": "laso"
-    }, {
-        "courses_dept": "last"
-    }, {
-        "courses_dept": "latn"
-    }, {
-        "courses_dept": "law"
-    }, {
-        "courses_dept": "lfs"
-    }, {
-        "courses_dept": "libe"
-    }, {
-        "courses_dept": "libr"
-    }, {
-        "courses_dept": "ling"
-    }, {
-        "courses_dept": "lled"
-    }, {
-        "courses_dept": "math"
-    }, {
-        "courses_dept": "mdvl"
-    }, {
-        "courses_dept": "mech"
-    }, {
-        "courses_dept": "medg"
-    }, {
-        "courses_dept": "medi"
-    }, {
-        "courses_dept": "micb"
-    }, {
-        "courses_dept": "midw"
-    }, {
-        "courses_dept": "mine"
-    }, {
-        "courses_dept": "mrne"
-    }, {
-        "courses_dept": "mtrl"
-    }, {
-        "courses_dept": "musc"
-    }, {
-        "courses_dept": "name"
-    }, {
-        "courses_dept": "nest"
-    }, {
-        "courses_dept": "nrsc"
-    }, {
-        "courses_dept": "nurs"
-    }, {
-        "courses_dept": "obst"
-    }, {
-        "courses_dept": "onco"
-    }, {
-        "courses_dept": "path"
-    }, {
-        "courses_dept": "pcth"
-    }, {
-        "courses_dept": "pers"
-    }, {
-        "courses_dept": "phar"
-    }, {
-        "courses_dept": "phil"
-    }, {
-        "courses_dept": "phrm"
-    }, {
-        "courses_dept": "phth"
-    }, {
-        "courses_dept": "phys"
-    }, {
-        "courses_dept": "plan"
-    }, {
-        "courses_dept": "poli"
-    }, {
-        "courses_dept": "pols"
-    }, {
-        "courses_dept": "port"
-    }, {
-        "courses_dept": "psyc"
-    }, {
-        "courses_dept": "punj"
-    }, {
-        "courses_dept": "relg"
-    }, {
-        "courses_dept": "rgla"
-    }, {
-        "courses_dept": "rhsc"
-    }, {
-        "courses_dept": "rmes"
-    }, {
-        "courses_dept": "rmst"
-    }, {
-        "courses_dept": "rsot"
-    }, {
-        "courses_dept": "russ"
-    }, {
-        "courses_dept": "sans"
-    }, {
-        "courses_dept": "scan"
-    }, {
-        "courses_dept": "scie"
-    }, {
-        "courses_dept": "soci"
-    }, {
-        "courses_dept": "soil"
-    }, {
-        "courses_dept": "sowk"
-    }, {
-        "courses_dept": "span"
-    }, {
-        "courses_dept": "spha"
-    }, {
-        "courses_dept": "spph"
-    }, {
-        "courses_dept": "stat"
-    }, {
-        "courses_dept": "sts"
-    }, {
-        "courses_dept": "surg"
-    }, {
-        "courses_dept": "swed"
-    }, {
-        "courses_dept": "test"
-    }, {
-        "courses_dept": "thtr"
-    }, {
-        "courses_dept": "udes"
-    }, {
-        "courses_dept": "ufor"
-    }, {
-        "courses_dept": "urst"
-    }, {
-        "courses_dept": "ursy"
-    }, {
-        "courses_dept": "vant"
-    }, {
-        "courses_dept": "visa"
-    }, {
-        "courses_dept": "wood"
-    }, {
-        "courses_dept": "wrds"
-    }, {
-        "courses_dept": "zool"
+        "rooms_furniture": "Classroom-Moveable Tablets"
     }]
 }
 ```
