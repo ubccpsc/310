@@ -123,7 +123,108 @@ Here is some further clarification about the EBNF that might be helpful for vali
 
 ## Query examples
 
-TBA once the reference UI has been updated (mid-week). The test suite will be released late in the week.
+Query A:
+
+```
+{
+    "WHERE": {
+        "AND": [{
+            "IS": {
+                "rooms_furniture": "*Tables*"
+            }
+        }, {
+            "GT": {
+                "rooms_seats": 300
+            }
+        }]
+    },
+    "OPTIONS": {
+        "COLUMNS": [
+            "rooms_shortname",
+            "maxSeats"
+        ],
+        "ORDER": {
+            "dir": "DOWN",
+            "keys": ["maxSeats"]
+        },
+        "FORM": "TABLE"
+    },
+    "TRANSFORMATIONS": {
+        "GROUP": ["rooms_shortname"],
+        "APPLY": [{
+            "maxSeats": {
+                "MAX": "rooms_seats"
+            }
+        }]
+    }
+}
+```
+
+Response A:
+
+```
+{
+    "render": "TABLE",
+    "result": [{
+        "rooms_shortname": "OSBO",
+        "maxSeats": 442
+    }, {
+        "rooms_shortname": "HEBB",
+        "maxSeats": 375
+    }, {
+        "rooms_shortname": "LSC",
+        "maxSeats": 350
+    }]
+}
+```
+
+Query B:
+
+```
+{
+    "WHERE": {},
+    "OPTIONS": {
+        "COLUMNS": [
+            "rooms_furniture"
+        ],
+        "ORDER": "rooms_furniture",
+        "FORM": "TABLE"
+    },
+    "TRANSFORMATIONS": {
+        "GROUP": ["rooms_furniture"],
+        "APPLY": []
+    }
+}
+```
+
+Response B:
+
+```
+{
+    "render": "TABLE",
+    "result": [{
+        "rooms_furniture": "Classroom-Fixed Tables/Fixed Chairs"
+    }, {
+        "rooms_furniture": "Classroom-Fixed Tables/Movable Chairs"
+    }, {
+        "rooms_furniture": "Classroom-Fixed Tables/Moveable Chairs"
+    }, {
+        "rooms_furniture": "Classroom-Fixed Tablets"
+    }, {
+        "rooms_furniture": "Classroom-Hybrid Furniture"
+    }, {
+        "rooms_furniture": "Classroom-Learn Lab"
+    }, {
+        "rooms_furniture": "Classroom-Movable Tables & Chairs"
+    }, {
+        "rooms_furniture": "Classroom-Movable Tablets"
+    }, {
+        "rooms_furniture": "Classroom-Moveable Tables & Chairs"
+    }, {
+        "rooms_furniture": "Classroom-Moveable Tablets"
+    }]
+}
+```
 
 ## Testing
 
