@@ -64,24 +64,24 @@ The primary objective of this deliverable is to extend the [query language](Deli
 ```
 QUERY ::='{'BODY ', ' OPTIONS  (', ' TRANSFORMATIONS)? '}'
 
-BODY ::= 'WHERE:{'  FILTER '}' | '{}'
-OPTIONS ::= 'OPTIONS:{' COLUMNS ', ' (SORT ', ')? VIEW '}'
-TRANSFORMATIONS ::= 'TRANSFORMATIONS: 'G ROUP ', ' APPLY
+BODY ::= 'WHERE: {' (FILTER)? '}'
+OPTIONS ::= 'OPTIONS: {' COLUMNS ', ' (SORT ', ')? VIEW '}'
+TRANSFORMATIONS ::= 'TRANSFORMATIONS: {' GROUP ', ' APPLY '}'
 
 FILTER ::= (LOGICCOMPARISON | MCOMPARISON | SCOMPARISON | NEGATION)
 
-LOGICCOMPARISON ::= LOGIC ':[{' FILTER ('}, {' FILTER )* '}]'  
-MCOMPARISON ::= MCOMPARATOR ':{' key ':' number '}'  
-SCOMPARISON ::= 'IS:{' key ':' [*]? string [*]? '}'  
-NEGATION ::= 'NOT :{' FILTER '}'
+LOGICCOMPARISON ::= LOGIC ': [{' FILTER ('}, {' FILTER )* '}]'  
+MCOMPARISON ::= MCOMPARATOR ': {' key ':' number '}'  
+SCOMPARISON ::= 'IS: {' key ': ' [*]? string [*]? '}'  
+NEGATION ::= 'NOT: {' FILTER '}'
 
 LOGIC ::= 'AND' | 'OR' 
 MCOMPARATOR ::= 'LT' | 'GT' | 'EQ' 
 
 COLUMNS ::= 'COLUMNS:[' (string ',')* string ']' 
-SORT ::= 'ORDER: ' ('{ dir:'  DIRECTION ', keys  : [ ' string (',' string)* ']}' | key) 
+SORT ::= 'ORDER: ' ('{ dir:'  DIRECTION ', keys: [ ' string (',' string)* ']}' | key) 
 DIRECTION ::= 'UP' | 'DOWN'  
-VIEW ::= 'FORM : TABLE'  
+VIEW ::= 'FORM: TABLE'  
 
 GROUP ::= 'GROUP: [' key+ ']'                                                          
 APPLY ::= 'APPLY: [' (APPLYKEY (', ' APPLYKEY )* )? ']'  
