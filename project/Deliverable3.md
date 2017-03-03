@@ -83,7 +83,7 @@ SORT ::= 'ORDER: ' ('{ dir:'  DIRECTION ', keys: [ ' string (',' string)* ']}' |
 DIRECTION ::= 'UP' | 'DOWN'  
 VIEW ::= 'FORM: TABLE'  
 
-GROUP ::= 'GROUP: [' key+ ']'                                                          
+GROUP ::= 'GROUP: [' (key ',')* key ']'                                                          
 APPLY ::= 'APPLY: [' (APPLYKEY (', ' APPLYKEY )* )? ']'  
 APPLYKEY ::= '{' string ': {' APPLYTOKEN ':' key '}}'
 APPLYTOKEN ::= 'MAX' | 'MIN' | 'AVG' | 'COUNT' | 'SUM'                           
