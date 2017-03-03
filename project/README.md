@@ -97,7 +97,7 @@ We will be running [Measure of software similarity (MOSS)](https://theory.stanfo
 
 ## Late policy
 
-It is possible to submit a team-based AutoTest deliverable (D1, D2, & D3) 'late' for partial marks. D0, D4, and D5 cannot be submitted late. Appeals for late marks must be made by the Deliverable 4 deadline; a form for submitting late deliverables will be TBD. Late deliverables will be subject to the following penalty:
+It is possible to submit a team-based AutoTest deliverable (D1, D2, & D3) 'late' for partial marks. D0, D4, and D5 cannot be submitted late. Appeals for late marks must be made by the Deliverable 4 deadline. Late deliverables will be subject to the following penalty:
 
 * 1 deliverable late: 40% (e.g., D1 by D2, D2 by D3, or D3 by D4).
 * 2 deliverables late: 50% (e.g., D1 by D3, D2 by D4).
