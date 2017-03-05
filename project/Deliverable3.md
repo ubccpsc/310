@@ -91,6 +91,8 @@ APPLYTOKEN ::= 'MAX' | 'MIN' | 'AVG' | 'COUNT' | 'SUM'
 
 Here is some further clarification about the EBNF that might be helpful for validating and answering queries:
 
+* **NEW** ```APPLY``` keys are not allowed to contain the `_` character.
+
 * ```number``` and ```string``` are valid JavaScript ```number```/```string``` values. Note, some ```string```s require escaping if you are using them as keys in JSON. 
 
 * An empty (```{}```) ```WHERE``` clause signals that all rows should be returned.
