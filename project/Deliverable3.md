@@ -19,7 +19,7 @@ You will adapt your existing ```InsightFacade``` to also be accessed using REST 
 
 * **```GET /```** returns the query interface for the UI; this is only provided for your convenience and will not be tested. This will be a part of your D4, but you might as well get the wiring in for this now.
 
-* **```PUT /dataset/:id```** allows to submit a zip file that will be parsed and used for future queries. The zip file content will be sent in base64 in the ```PUT``` body. 
+* **```PUT /dataset/:id```** allows to submit a zip file that will be parsed and used for future queries. The zip file content will be sent 'raw' as a buffer, you will need to convert it to base64 server side. 
 * Response Codes and message formats:
      * ```204```: Same as for 204 in ```InsightFacade::addDataset(..)```.
      * ```201```: Same as for 201 in ```InsightFacade::addDataset(..)```.
