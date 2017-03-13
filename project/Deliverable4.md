@@ -1,3 +1,5 @@
+(Note: This page is under editing, and will be until this note is removed - details may change)
+
 # Deliverable 4: insightUBC UI
 
 [Deliverable 1](Deliverable1.md) built a query engine to answer queries about UBC course sections. [Deliverable 2](Deliverable2.md) extended the query engine to aggregate answers about actual courses. [Deliverable 3](Deliverable3.md) extended the query engine to support details about course spaces on campus. Ultimately you have built a robust backend for quickly and flexibly querying a diverse dataset. This is a great foundation, but is not especially useable.
