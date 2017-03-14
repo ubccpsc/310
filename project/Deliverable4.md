@@ -29,7 +29,7 @@ It should also be possible to explore various courses to see courses with the hi
 * Room size
 * Room type
 * Furniture type
-* Location (e.g., distance from a given building)
+* Location (distance from a given building)
 
 3) **Room scheduling (40%):** provide a usable interface for scheduling specific courses into specific rooms. This is a hard problem, so your approach should use some heuristic to find a good schedule, rather than trying to find the 'best' one.
 
