@@ -106,11 +106,11 @@ This list is a week-by-week guide only. Readings will likely be updated even aft
 | Feb 27      | Midterm |
 | Mar 1       | Intellectual Property [Slides-2up](http://www.cs.ubc.ca/~murphy/cpsc310-2016w2/CPSC310_IP_2016W2.pdf) |
 | Mar 3       | Industry Lecture - David Green, Tasktop Technologies |
-| Mar 6       | OO Design Principles (slides on piazza) |
-| Mar 13      | Design |
-| Mar 20      | Design |
-| Mar 27      | Refactoring,  Code Smells |
-| Apr 3       | TBD & Wrap-up |
+| Mar 6       | OO Design Principles ([slides on piazza](https://piazza.com/class/iw1iu9xgfam11a?cid=1804)) |
+| Mar 13      | Principles continued and Design Patterns ([slides on piazza](https://piazza.com/class/iw1iu9xgfam11a?cid=2089)) |
+| Mar 20      | Design Patterns continued |
+| Mar 27      | Refactoring when and how-to |
+| Apr 3       | Refactoring continued & Wrap-up |
 | Apr 28 | Final Exam @ 0830 (location TBD) |
 
 #### Labs:
