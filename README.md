@@ -45,7 +45,7 @@ While CPSC 310 will be a challenging course, we hope it will integrate many of t
 
 * [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/) (January 4 - Feb 23) 
 * [Gail Murphy](https://blogs.ubc.ca/gailcmurphy/) (February 27 - March 3)
-* [Elisa Baniassad](https://www.cs.ubc.ca/people/elisa-baniassad) (March 6 - April 5) (Office Hours Weds 12-1pm)
+* [Elisa Baniassad](https://www.cs.ubc.ca/people/elisa-baniassad) (March 6 - April 5) (Office Hours Weds 12-1pm, Rm 329)
 
 #### TAs:
 
