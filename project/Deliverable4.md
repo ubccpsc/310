@@ -79,9 +79,9 @@ For each of the main points below (numbered), your score will be a percentage of
  * Previous task within X meters of building X.
  
 3. Scheduling (40%)
- * Show you interface for selecting the subset of rooms to be used for the schedule.
+ * Show your interface for selecting the subset of rooms to be used for the schedule.
  * Allow rooms to be filtered by building name AND/OR distance from building X.
- * Show you interface for selecting the subset of courses to be used for the schedule.
+ * Show your interface for selecting the subset of courses to be used for the schedule.
  * Allow courses to be filtered by department AND/OR course number. 
  * Show your interface for displaying a timetable.
  * Show that your scheduling algorithm correctly determines the right number of sections to schedule for the courses selected.
