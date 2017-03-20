@@ -35,7 +35,7 @@ It should also be possible to explore various courses to see courses with the hi
 
 For example, given all CPSC courses and all rooms in DMP and PHARM where each course needs to be either in a 1h block MWF or a 90min block T/Th, what is the best schedule that can be made? Note: courses should start being scheduled at 8am and should be over before 5pm. If multiple sections of a course are being offered, they cannot be held concurrently (e.g., if there are two sections of 310 they cannot occur in different rooms but at the same time). 
 
-The 'quality' of a schedule is determined by the fraction of classes that need to be scheduled outside 8am to 5pm. The 'size' of course should be determined by the number of pass + fail students in its largest section. The number of sections that need to be scheduled should be the number of sections in the last available year (2014) divided by three and rounded up to the nearest integer (aka if the number was 0 it should be 1, if it was 2.1 it should be 3).
+The 'quality' of a schedule is determined by the fraction of classes that need to be scheduled outside 8am to 5pm. The 'size' of course should be determined by the number of pass + fail students in its largest section. The number of sections that need to be scheduled should be the number of sections in 2014 divided by three and rounded up to the nearest integer (aka if the number was 0 it should be 1, if it was 2.1 it should be 3).
 
 Answering this kind of query will likely require multiple queries to your REST backend. Along with the potential schedule for each used room in your schedule result, you should also display the 'quality' measure and a list of the courses, their # of sections, and expected sizes.
 
