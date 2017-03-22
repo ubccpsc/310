@@ -4,7 +4,7 @@
 
 [Deliverable 1](Deliverable1.md) built a query engine to answer queries about UBC course sections. [Deliverable 2](Deliverable2.md) extended the query engine to aggregate answers about actual courses. [Deliverable 3](Deliverable3.md) extended the query engine to support details about course spaces on campus. Ultimately you have built a robust backend for quickly and flexibly querying a diverse dataset. This is a great foundation, but is not especially useable.
 
-This deliverable will take advantage of this backend and using it for building an interface that can be used to perform meaningful tasks. You can use *any* frameworks you want (React, Angular, OnsenUI, jQuery), but are not required to use any frameworks if you want to work in pure JavaScript/TypeScript. You can also incorporate any online APIs you wish to use.
+This deliverable will take advantage of this backend and using it for building an interface that can be used to perform meaningful tasks. You can use *any* frameworks you want (e.g. React, Angular, OnsenUI, jQuery), but are not required to use any frameworks if you want to work in pure JavaScript/TypeScript. You can also incorporate any online APIs you wish to use.
 
 Your code should reside in ```src/rest/public``` and ```src/rest/views```. The code can be written in any language you want, as long as the UI renders in the browser and is backed by your REST backend. You cannot hard-code any of the data from your backend in your code, it should all be dynamically retrieved using queries to the ```POST``` endpoint (or any other endpoints you may add to your REST server). 
 
