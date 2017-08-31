@@ -129,6 +129,7 @@ User stories are not an excuse for writing unclear or incomplete descriptions of
 ### References
 
 * A [reflection](https://blog.codinghorror.com/development-is-inherently-wicked/) on software being a wicked problem.
+* Interesting [critique](https://www.aaron-gray.com/a-criticism-of-scrum/) of scrum.
 
 ---
 [![](figures/CCSA.png "Creative Commons: Attribution-ShareAlike")](https://creativecommons.org/licenses/by-sa/3.0/) [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
