@@ -90,7 +90,7 @@ Software engineers often talk about abstraction in terms of _information hiding_
 
 Information hiding is a specific, common, and important form of abstraction that intentionally seeks to identify 'that which varies' from 'that which stays the same'. This is important, because all abstractions in code come with a cost: trying to understand a system with unnecessary abstractions can add complexity and difficulty, while balancing this complexity against trying to evolve a system lacking necessary abstractions is a challenging task.
 
-Encapsulation is related to information hiding and is practiced most concretely in object-oriented programming languages like Java, C#/C++, or TypeScript.  Encapsulation is concerned with delineating the contractual interface with its interface. The most common language feature for supporting encapsulation is the interface whereby the interface describes the public contract and the concrete class describes the implementation (along with its supporting private methods and fields).
+Encapsulation is related to information hiding and is practiced most concretely in object-oriented programming languages like Java, C#/C++, or TypeScript.  Encapsulation is concerned with delineating the contractual interface with its implementation. The most common language feature for supporting encapsulation is the interface whereby the interface describes the public contract and the concrete class describes the implementation (along with its supporting private methods and fields).
 
 ### Constant change
 
