@@ -124,6 +124,8 @@ When working with promises it is _strongly_ encouraged that you end every ```the
 
 * Sencha also has a nice [promise intro](https://www.sencha.com/blog/asynchronous-javascript-promises/).
 
+* Callback, Promise, async/await [concrete example](https://medium.com/@gab_montes/is-async-await-a-step-back-to-javascript-95e31263dd31#.8jtvqy8fb).
+
 
 ---
 [![](figures/CCSA.png "Creative Commons: Attribution-ShareAlike")](https://creativecommons.org/licenses/by-sa/3.0/) [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)

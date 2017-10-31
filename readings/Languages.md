@@ -82,5 +82,7 @@ In these examples we can see that there are far more commonalities between these
 
 * Languages are all related. [This article](https://eev.ee/blog/2016/12/01/lets-stop-copying-c/) reenforces how some ideas propagate (without justification) through programming languages.
 
+* TypeScript vs JavaScript from an [angular developer](https://toddmotto.com/typescript-the-missing-introduction).
+
 ---
 [![](figures/CCSA.png "Creative Commons: Attribution-ShareAlike")](https://creativecommons.org/licenses/by-sa/3.0/) [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
