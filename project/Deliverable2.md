@@ -1,3 +1,8 @@
+# Deliverble 2: TBD
+
+<!--
+NOTE: this will not be the same
+
 # Deliverable 2: insightUBC Room Expansion
 
 [Deliverable 1](Deliverable1.md) built a query engine to answer queries about UBC course sections. This deliverable will extend the input data to include data about the physical spaces where classes are held on campus. This deliverable will be due at 8 AM on February 27.
@@ -221,5 +226,5 @@ The [testing](Deliverable1.md#testing) requirements and grading provisions for t
 In your repository, each teammate should commit a file called ```/D2-contrib_<GitHubId>.md```. This file should contain a short description of your concrete contributions to your D2 code. All that is required is a few sentences followed by links to some of your key Github commits (full links so we can click on them would be appreciated) for Deliverable 2. If you do not have any (or very few) commits, you may use additional space to explain your concrete contributions. This should be committed before you meet with your TAs in the lab as you will refer to this file in your meeting with them. Also include few retrospective sentences about what went well this deliverable, what went poorly, and how you will approach the next deliverable differently.
  
 It would also be helpful if the first two lines of the file contained your final test pass rate on the deadline and your code coverage rate (computed as described in the Deliverable 1 document). Remember, attendance in the lab the week of due date is mandatory so the TAs can do your retrospective evaluation; failure to attend will result in a retrospective score of 0.
- 
- 
+
+-->
