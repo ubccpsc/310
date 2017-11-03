@@ -1,3 +1,7 @@
+# Deliverable 3: TBD
+<!--
+NOTE: this will not be the same
+
 # Deliverable 3: insightUBC Query Aggregation
 
 
@@ -119,9 +123,6 @@ Here is some further clarification about the EBNF that might be helpful for vali
   1. Divide by 10 (```var avg = avg / 10```);
   1. Trim the decimals (```var res = Number(avg.toFixed(2))```).
 
-<!--
-* An [alternate representation](Deliverable2_EBNF.xhtml) of the EBNF is also available.
--->
 
 ## Query examples
 
@@ -238,4 +239,4 @@ In your repository, each teammate should commit a file called ```/D3-contrib_Git
  
 It would also be helpful if the first two lines of the file contained your final test pass rate on the deadline and your code coverage rate (computed as described in the Deliverable 1 document). Remember, attendance in the lab the week of due date is mandatory so the TAs can do your retrospective evaluation; failure to attend will result in a retrospective score of 0.
  
- 
+ -->
