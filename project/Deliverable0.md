@@ -1,3 +1,8 @@
+# Deliverable 0: TBD
+
+<!--
+NOTE: this will not be the same
+
 # Deliverable 0: Async Development
 
 ### We need to create your repo for this deliverable, these will be setup on Monday morning. You **MUST** register your GitHub username with the [ClassPortal](http://skaha.cs.ubc.ca:11310) for this to work. You cannot change your GitHub id during the term.
@@ -83,7 +88,7 @@ Some URLS that you can use are:
 * http://skaha.cs.ubc.ca:11313/jdw3.json
 
 Remember that our test suite will also use additional files so be sure to generate your own test data files as well.
-
+-->
 <!--
 TODO for next term:
 * drop multiply, doesn't really add anything over add itself
