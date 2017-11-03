@@ -1,4 +1,8 @@
-(Note: This page is under editing, and will be until this note is removed - details may change)
+# Deliverable 4: TBD
+
+<!--
+NOTE: this will not be the same
+
 
 # Deliverable 4: insightUBC UI
 
@@ -93,3 +97,4 @@ For each of the main points below (numbered), your score will be a percentage of
  * Convince the TA that your task is *interesting* and makes meaningful use of the data provided by your REST API.
  
  
+--> 
