@@ -1,3 +1,8 @@
+TBD
+
+<!--
+NOTE: this will not be the same
+
 # Deliverable 1: insightUBC Query Engine
 
 UBC has a wide variety of courses. This deliverable will focus on importing data about these courses into your project and enabling flexible querying over these data with a flexible domain-specific query language.
@@ -377,10 +382,6 @@ There is no best way to get started, but you can consider each of these in turn.
 
 Trying to keep all of the requirements in mind at once is going to be overwhelming. Tackling a single task that you can accomplish in an hour is going to be much more effective than worrying about the whole deliverable at once. Iteratively growing your project from small task to small task is going to be the best way to make forward progress.
 
-<!--
-You can now use the ```ts-node``` package for this and future deliverables if you wish. To add it, simply run ```npm install ts-node --save``` from the command line. Some people were encountering issues when trying to run or debug single test cases without it, having this should hopefully help clear up those issues. If you were not having issues due to not having this package, you can ignore this, it is not required for the project and is only for your convenience.
--->
-
 ### Getting AutoTest to work
 
 1. Create a file ```src/controller/InsightFacade``` that contains a class called ```InsightFacade``` that implements the interface ```IInsightFacade```.
@@ -402,5 +403,6 @@ In your repository, each teammate must commit a file called ```/D1-contrib_<GitH
 
 The AutoTest suite will comprise 80% of your mark. The remaining 20% will be derived from your overall test coverage score. We will generate this score by running ```npm run cover```. Your grade will correspond to the fraction of lines your tests cover (e.g., 90% coverage will give you 18/20). Recognizing that hitting 100% will take more trouble than it is worth, we will give you a maximum 5% bonus for your coverage score, although you cannot get over 100% on this component. For example, if your coverage rate is 97% you will get 100%. If it is 76% you will get 81%. The retrospective multiplier (oral exam component) will apply to the AutoTest and Coverage values combined; failure to submit a contribution statement will result in a multiplier of 0.
 
+-->
 
 
