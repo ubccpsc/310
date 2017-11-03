@@ -1,13 +1,13 @@
 <img src="readings/figures/310logo.png" width="256px" alt="CPSC 310 Software Engineering">
 
 # UBC CPSC 310 - Software Engineering
-January 4, 2017 -> April 5, 2017 (```2016T2```). These are the official resources for both sections.
+January 2, 2018 -> April 5, 2018 (```2017T2```).
 
 ## This is a development-heavy four-credit course. Plan your timetable accordingly. If you are not familiar with TypeScript, please start looking at it now.
 
 ## About the labs
 
-This is a pair-programming course: If you want to work with someone specific for your project, be sure that both of you register for the _SAME_ lab section. We do not have the ability to move people around between labs; please either monitor the SSC for space in your preferred lab sections, move to another lab with space, or find a partner in the lab you are registered in. Teams **must** be firm by the time of your lab the week of Jan 16. If you do not have a partner, it is your responsibility to notify the TA in lab that week so you can be paired up. If you do not have a partner at the end of your lab that week, you will not be able to complete the project (50% of your final grade). Finding a partner is **your** responsibility and is key to your having a great term, please take the time to do this right.
+This is a pair-programming course: If you want to work with someone specific for your project, be sure that both of you register for the _SAME_ lab section. We do not have the ability to move people around between labs; please either monitor the SSC for space in your preferred lab sections, move to another lab with space, or find a partner in the lab you are registered in. Teams **must** be firm by the time of your lab the week of Jan 15. If you do not have a partner, it is your responsibility to notify the TA in lab that week so you can be paired up. If you do not have a partner at the end of your lab that week, you will not be able to complete the project (50% of your final grade). Finding a partner is **your** responsibility and is key to your having a great term, please take the time to do this right.
 
 ## Waitlist: [See Here](#waitlist)
 
@@ -41,14 +41,14 @@ While CPSC 310 will be a challenging course, we hope it will integrate many of t
 
 ## Contact
 
-#### Instructors:
+#### Instructor:
 
-* [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/) (January 4 - Feb 23) 
-* [Gail Murphy](https://blogs.ubc.ca/gailcmurphy/) (February 27 - March 3)
-* [Elisa Baniassad](https://www.cs.ubc.ca/people/elisa-baniassad) (March 6 - April 5) (Office Hours Weds 12-1pm, Rm 329)
+* [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
 
 #### TAs:
 
+* TBD
+<!--
 * Giovanni Viviani (GTA)
 * Nick Bradley (GTA)
 * Rodrigo Araujo (GTA)
@@ -66,30 +66,33 @@ While CPSC 310 will be a challenging course, we hope it will integrate many of t
 * Daniel Choi
 * Joanne Chen
 * MoHan Zhang
-
+-->
 ### Piazza
 
-<!--
 Piazza will be used but has not been configured.
--->
 
-[Piazza](https://piazza.com/ubc.ca/winterterm22016/cpsc310) has been configured for this term. Please be mindful of the UBC Academic Misconduct Policy with respect to posting project solutions on Piazza. It is _extremely_ helpful if your Piazza name corresponds to your name in the SSC in the advent we need to help you with a problem with your project, repositories, or grades.
+<!--
+[Piazza](https://piazza.com/ubc.ca/winterterm22016/cpsc310) has been configured for this term. Please be mindful of the UBC Academic Misconduct Policy with respect to posting project solutions on Piazza. It is _extremely_ helpful if your Piazza name corresponds to your name in the SSC in the advent we need to help you with a problem with your project, repositories, or grades. Private posts will not be allowed in Piazza, if you have something you want to talk about privately please visit your lab, office hours, or see the instructor during the Thursday sessions.
+-->
 
 ### Getting help
 
-For *project / language help*, there will be 24 hours of labs and 12 hours of TA office hours per week. TA office hours later in the week are likely to be _much_ busier than those earlier in the week; to accommodate this we have scheduled 8 of the 12 hours on Thursday and Friday, but seeking help on Monday / Tuesday / Wednesday and in lab are less likely to be busy. For *course content help*, we will also schedule Prof office hours, but these are TBD. Piazza will also be available for both course content and project assistance.
+For *project / language help*, there will be 14 hours of labs and 12 hours of TA office hours per week. TA office hours later in the week are likely to be _much_ busier than those earlier in the week; to accommodate this we have scheduled 8 of the 12 hours on Thursday and Friday, but seeking help on Monday / Tuesday / Wednesday and in lab are less likely to be busy. For *course content help*, we will also schedule Prof office hours during every Thursday class session. Piazza will only be available for project assistance, but will not generally be available on the weekend so please plan accordingly.
+
+For project help in Office Hours and Piazza we will be using a decaying help function. Details TBD.
 
 ## Schedule
 
 #### Lectures: 
 
-* 201: MWF 0900-0950: [PHARM 1201](https://www.google.ca/maps/place/UBC+Faculty+of+Pharmaceutical+Sciences/@49.2615914,-123.2486782,17z/data=!4m21!1m15!4m14!1m6!1m2!1s0x548672cbc595e6a1:0xab34e40e58012409!2sICICS+Computer+Science,+2366+Main+Mall,+Vancouver,+BC+V6T+1Z4!2m2!1d-123.2488201!2d49.2611817!1m6!1m2!1s0x548672c8e6d17b6b:0x2f4024c0ac3282d9!2sUBC+Faculty+of+Pharmaceutical+Sciences,+Pharmaceutical+Sciences+Building,+Wesbrook+Mall,+Vancouver,+BC+V6T+1Z3!2m2!1d-123.243277!2d49.262386!3m4!1s0x0000000000000000:0x2f4024c0ac3282d9!8m2!3d49.2623861!4d-123.2432771).
-* 202: MWF 1400-1450: [SWNG 121](https://www.google.ca/maps/place/West+Mall+Swing+Space/@49.2627197,-123.2548329,18.12z/data=!4m5!3m4!1s0x548672ca7f5f71c1:0x5594f7f497661f04!8m2!3d49.2627865!4d-123.2543814).
 
+* 201: TTh 1230-1450: [FSC 1201](https://www.google.ca/maps/place/Forest+Sciences+Centre,+2424+Main+Mall,+Vancouver,+BC+V6T+1Z4/@49.260633,-123.2499753,17z/data=!3m1!4b1!4m5!3m4!1s0x548672cbe76768a3:0xdb7dfe033dcfb215!8m2!3d49.2605024!4d-123.2476207).
 
-<!---
-Thursdays 1700-2000, 
---->
+#### Schedule:
+
+TBD: 
+
+<!-- 
 
 This list is a week-by-week guide only. Readings will likely be updated even after class has completed. Schedule extremely subject to change
 
@@ -113,10 +116,13 @@ This list is a week-by-week guide only. Readings will likely be updated even aft
 | Apr 3       | Refactoring continued & Wrap-up |
 | Apr 28 | Final Exam @ 0830 (location TBD) |
 
+--> 
 #### Labs:
 
 **There will not be any labs during the first week of class.**
 
+TBD
+<!-- 
 | Lab 	| Time				| Room			|
 | :-- 	|:-- 				| :-- 			| 
 | L2G	| Mon 1000-1200	| ICICS 008	|
@@ -131,6 +137,7 @@ This list is a week-by-week guide only. Readings will likely be updated even aft
 | L2F	| Thu 1700-1900	| ICICS 008	|
 | L2M	| Fri 1100-1300	| ICICS 008	|
 | L2D	| Fri 1500-1700	| ICICS 008	|
+-->
 
 Both team members will be required to attend each lab. 
 
@@ -138,6 +145,8 @@ Both team members will be required to attend each lab.
 
 **There will not be any office hours during the first week of class. Also, these hours are all subject to change, always check back here!**
 
+TBD
+<!--
 In addition to the 24 hours of labs per week, there are also ~12 hours of TA office hours per week. These have been clustered later in the week, but some are available on each day, to better meet anticipated demands.
 
 
@@ -157,7 +166,7 @@ In addition to the 24 hours of labs per week, there are also ~12 hours of TA off
 |Friday @ 1000-1100		|Junze Wu			| X150 - Table 2 |
 |Friday @ 1200-1300		|MoHan Zhang		| X150 - Table 1 |
 |Friday @ 1700-1800		|Ryan Koon + Theodore Lau | X150 - Table 3 |
-
+-->
 
 ## Project
 
@@ -177,28 +186,17 @@ In addition to AutoTest, each team member will be independently asked a small nu
 
 ## Project Sprint Schedule
 
+TBD 
 
+<!--
 * January 16: Sprint 0 ([Deliverable 0](project/Deliverable0.md))
-
-<!-- 3 weeks -->
-
 * February 6: Sprint 1 ([Deliverable 1](project/Deliverable1.md))
-
-<!-- 3 weeks -->
-
 * February 27: Sprint 2 ([Deliverable 2](project/Deliverable2.md)) 
-
 * February 27: Midterm (sample midterms are not available)
-
-<!-- 2 weeks -->
-
 * March 13: Sprint 3 ([Deliverable 3](project/Deliverable3.md))
-
-<!-- 2 weeks -->
-
 * March 27: Sprint 4 ([Deliverable 4](project/Deliverable4.md))
-
 * March 27: Sprint 5 ([Deliverable 5](project/Deliverable5.md))
+-->
 
 ## Grading
 
