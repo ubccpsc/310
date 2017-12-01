@@ -125,8 +125,7 @@ This list is a week-by-week guide only. Readings will likely be updated even aft
 | L2F | Thu 17:00-19:00	|  
 | L2D | Fri 15:00-17:00	| 
 
-
-You will not have to specify your team until Jan 22. Both team members will be required to attend each lab. 
+You will not have to specify your team until the week of Jan 16. Both team members will be required to attend each lab. 
 
 #### TA Office Hours
 
@@ -158,6 +157,10 @@ In addition to AutoTest, each team member will be independently asked a small nu
 Each deliverable has a deadline; we have also added a one week grace period for and final submissions if needed. Full TA support will be given to any group prior to the deadline; during the grace period, priority will be given to struggling teams or groups working on the next deliverable. 
 
 During the grace week, TAs will only help groups with AutoTest scores below 80%. In the three days prior to the final submission date, only groups with less than 50% AutoTest scores will be helped. We encourage all groups to submit by the deadline, the final submission date is really only for those groups who need a little more time for polish.
+
+Also, be aware that waiting until the last minute will greatly degrade AutoTest latency; while you can expect to receive results in < 5 minutes for the majority of the term, in the last day this has been much slower historically:
+
+<img src="readings/figures/autotest_latency.png" width="320px" alt="AutoTest Latency">
 
 <!-- course start Jan 2 -->
 
