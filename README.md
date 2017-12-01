@@ -90,7 +90,7 @@ For *project / language help*, there will be 12 hours of labs and 12 hours of TA
 Thursdays 1700-2000, 
 --->
 
-This list is a week-by-week guide only. Readings will likely be updated even after class has completed. Schedule extremely subject to change
+This list is a week-by-week guide only. Readings and videos will be updated throughout the term, but will remain fixed in the week before the midterm and final.
 
 | Week        | Topic & Readings | Videos |
 | :--         |:--                                          | :-- |
@@ -99,8 +99,8 @@ This list is a week-by-week guide only. Readings will likely be updated even aft
 | Jan 16      | <ul><li>[Specifications](readings/Specifications.md)</li><li>[User Stories](readings/SpecificationsUserStories.md)</li></ul> | <ul><li>[TBD](tbd)</li><ul> |
 | Jan 23      | [Testing](readings/Testing.md)  | <ul><li>[TBD](tbd)</li><ul> |
 | Jan 30      | [Testability & Assertions](readings/TestabilityAssertions.md)   | <ul><li>[TBD](tbd)</li><ul> |
-| Feb 6       | High Level Design:<ul><li>[High Level Design](readings/HighLevelDesign.md)</li><li>[Technical Representations](readings/Representations.md)</li></ul> | <!-- OO Design Principles ([slides on piazza](https://piazza.com/class/iw1iu9xgfam11a?cid=1804)) --> <!-- Principles continued and Design Patterns ([slides on piazza](https://piazza.com/class/iw1iu9xgfam11a?cid=2089))-->
-| Feb 13      | Reading Week: No Class or Office Hours | <ul><li>[None](https://www.youtube.com/watch?v=WpE_xMRiCLE)</li><ul> |
+| Feb 6       | High Level Design:<ul><li>[High Level Design](readings/HighLevelDesign.md)</li><li>[Technical Representations](readings/Representations.md)</li></ul> | <ul><li>[TBD](tbd)</li><ul> |<!-- OO Design Principles ([slides on piazza](https://piazza.com/class/iw1iu9xgfam11a?cid=1804)) --> <!-- Principles continued and Design Patterns ([slides on piazza](https://piazza.com/class/iw1iu9xgfam11a?cid=2089))-->
+| Feb 13      | Reading Week<ul><li>No Lectures</li><li>No Labs</li><li>No Office Hours</li></ul> |  &nbsp; |
 | Feb 20      | High Level Design:<ul><li>[APIs](readings/API.md)</li><li>SOLID & Design Principles</li></ul> | <ul><li>[TBD](tbd)</li><ul> |
 | Feb 27      | Midterm in Class | None |
 | Mar 6       | Low Level Design | <ul><li>[TBD](tbd)</li><ul> |
@@ -158,9 +158,11 @@ Each deliverable has a deadline; we have also added a one week grace period for 
 
 During the grace week, TAs will only help groups with AutoTest scores below 80%. In the three days prior to the final submission date, only groups with less than 50% AutoTest scores will be helped. We encourage all groups to submit by the deadline, the final submission date is really only for those groups who need a little more time for polish.
 
-Also, be aware that waiting until the last minute will greatly degrade AutoTest latency; while you can expect to receive results in < 5 minutes for the majority of the term, in the last day this has been much slower historically:
+Also, be aware that waiting until the last minute will greatly degrade AutoTest latency; while you can expect to receive results in < 5 minutes for the majority of the term, this has historically been much slower on the last day:
 
 <img src="readings/figures/autotest_latency.png" width="320px" alt="AutoTest Latency">
+
+Note: Even when AutoTest is heavily loaded your requests are queued and processed in turn; the timestamps we use for the deadline comes from the GitHub push event, not when AutoTest is able to process the request or when the commit was made locally.
 
 <!-- course start Jan 2 -->
 
