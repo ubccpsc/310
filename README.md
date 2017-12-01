@@ -134,9 +134,8 @@ You will not have to specify your team until Jan 22. Both team members will be r
 
 In addition to the 12 hours of labs per week, there are also ~12 hours of TA office hours per week. These have been clustered later in the week, but some are available on each day, to better meet anticipated demands.
 
-To simplify scheduling, all lectures, office hours, and labs will be kept up to date on the following calendar:
-
-<iframe src="https://calendar.google.com/calendar/embed?src=nd7ha4c6bmar00p19mddks4508%40group.calendar.google.com&ctz=America%2FVancouver" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+To simplify scheduling, all lectures, office hours, and labs will be kept up to date on the following: 
+### [Lecture/Lab/Office Hour Calendar](https://calendar.google.com/calendar/embed?src=nd7ha4c6bmar00p19mddks4508%40group.calendar.google.com&ctz=America%2FVancouver)
 
 ## Project
 
