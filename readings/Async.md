@@ -112,6 +112,10 @@ Analogous to ```Promise.all``` is ```Promise.race```. This allows for starting m
 
 When working with promises it is _strongly_ encouraged that you end every ```then``` sequence with a ```catch``` even if you do not do any meaningful error handling (like we do above). This is because promises settle asynchronously and will fail silently if rejections are not caught; they will not escape to a global error handler. Another common mistake when working with promises is that ```then``` is not applied to the right object. In the above example if you called then inside the ```for``` loop you would not be notified when all promises are done but one-by-one as they execute. Adding verbose debug messages can really help here so you can keep track of the order your functions and callbacks are executing.
 
+<!-- 
+TODO async/await
+-->
+
 ### References
 
 * Discussion of some [challenges](https://www.quora.com/What-is-the-difference-between-deadlock-and-livelock-deadlock-infinite-recursion-and-starvation/answer/Akash-Kava) with concurrent programming.

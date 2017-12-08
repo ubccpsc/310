@@ -1,6 +1,12 @@
-# High Level Design
+# High level design
 
-<!-- Intro TBD -->
+Software design is a key translational step in the software development process. During design, requirements are transformed into a format that can be implemented directly. More concretely, the input to the design process is a list of requirements and the output is a set of classes, methods, and fields that must be implemented. 
+
+The design process is highly iterative, but can often be thought of as two broad activities:
+
+* **High Level Design:** During high level design the key architecture, abstractions, and relationships required to build the system are identified. This often involves evaluating different ways the system might need to evolve in the future and evaluating the relative merits of alternative architectural decisions. The decisions made in high level design guides the low level design process. Many design principles and properties can also be captured at a high level and broadly influence both high level and low level design.
+
+* **Low Level Design:** While high level design can be thought of as identifying key subsystems, abstractions, and relationships, the low level design process defines the concrete public interfaces, classes, and methods that will be needed to build the system. Design patterns are often applied during the low level design process to ensure the design will be amenable to future evolution.
 
 ### Abstraction
 
@@ -82,11 +88,11 @@ In top-down composition a description is broken up into pieces starting at the t
 
 An alternative (also common) approach is working bottom-up. In this way decisions can be made about leaf nodes that can be composed into the final overall system. This approach is great when you have concrete details about the team implementing the system (e.g., because you can have them make the most relevant decisions for their team right away). A downside of bottom-up approaches is they often lack the global overview which can lead to inconsistencies and extraneous focusing on details early in the design stage.
 
-<!-- TODO: add decomposing user stories here 
+<!-- LOWTODO: add decomposing user stories here 
 #### Example: Decomposing user stories
 -->
 
-<!-- TODO: decomposition levels -->
+<!-- MEDTODO: decomposition levels -->
 
 ### Information hiding 
 
@@ -94,21 +100,16 @@ Software engineers often talk about abstraction in terms of _information hiding_
 
 Information hiding is a specific, common, and important form of abstraction that intentionally seeks to identify 'that which varies' from 'that which stays the same'. This is important, because all abstractions in code come with a cost: trying to understand a system with unnecessary abstractions can add complexity and difficulty, while balancing this complexity against trying to evolve a system lacking necessary abstractions is a challenging task.
 
-Encapsulation is related to information hiding and is practiced most concretely in object-oriented programming languages like Java, C#/C++, or TypeScript.  Encapsulation is concerned with delineating the contractual interface with its implementation. The most common language feature for supporting encapsulation is the interface whereby the interface describes the public contract and the concrete class describes the implementation (along with its supporting private methods and fields).
+
+### Encapsulation
+
+Encapsulation is related to information hiding and is practiced most concretely in object-oriented programming languages like Java, C#/C++, TypeScript, etc..  Encapsulation is concerned with delineating the contractual interface with its implementation. The most common language feature for supporting encapsulation is the interface whereby the interface describes the public contract an object will provide and the concrete class describes the implementation of the interface (along with any supporting private methods and fields).
 
 ### Constant change
 
 As Jeff Dean noted in his [WSDM 2009 Keynote](http://static.googleusercontent.com/media/research.google.com/en//people/jeff/WSDM09-keynote.pdf) it is important to recognize the parameters that lead to the abstractions you choose will change over time, and often by many orders of magnitude. The right design for one system will probably be different at 10X load or 100X load. While it can be tempting to try to design for the 'end game' there are high real costs associated with premature optimization. In his talk, Jeff advocates designing for 10x load with the expectation that a rewrite would be required at 100x load. While one could view this process as wasteful, an alternative viewpoint is that in the time between 10x and 100x you will learn things about your system you would not have known in advance (and would thus not solved your 100x problem from the start anyways).
 
 Thinking about change is also related to encapsulation in that thinking concretely about what parts of the system are likely to change in the short and medium terms are more likely to lead to useful and valuable abstraction layers than taking an 'anything can change' view to design.
-
-<!--
-
-### Coupling
-
-### Cohesion
-
--->
 
 ### References
 

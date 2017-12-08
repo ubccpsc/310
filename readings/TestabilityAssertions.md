@@ -89,7 +89,7 @@ describe('Check math constants', function() {
 });
 ```
 
-### Other Resources
+### Resources
 
 * Concrete example showing how to increase [isolation](http://anzorb.com/unit-tests-102-isolating-your-code-with-mocks-and-stubs/) with mocks and stubs.
 

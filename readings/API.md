@@ -20,7 +20,7 @@ API Platforms are now an extremely popular way of building business value. These
 
 API design is of critical importance for companies building API platforms as a set of APIs that is opaque and difficult to understand will not achieve wide adoption. This is especially important for organizations who intend their API to be their primary product.
 
-## Design principles
+## API design principles
 
 At a high-level the principles behind good API design mirror that of good design in general. The first two questions to consider when designing the API are:
 

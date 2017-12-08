@@ -1,4 +1,4 @@
-# Introduction to Software Engineering
+# Introduction to software engineering
 
 Software engineering is a broad and relatively young field. Here we will briefly touch on what software is, why it needs to be engineered, and what role the field of software engineering plays in the overall lifecycle of modern software systems.
 

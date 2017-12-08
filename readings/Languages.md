@@ -1,4 +1,4 @@
-# Programming Languages
+# Programming languages
 
 Programming languages define the vocabulary used to encode our ideas about what a computer should do in a format that a computer can understand. Programming languages represent the second half of the programming problem; that is, they define a format that the computer can understand:
 

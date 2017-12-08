@@ -101,9 +101,9 @@ This list is a week-by-week guide only. Readings and videos will be updated thro
 | Jan 30      | [Testability & Assertions](readings/TestabilityAssertions.md)   | <ul><li>[TBD](tbd)</li><ul> |
 | Feb 6       | High Level Design:<ul><li>[High Level Design](readings/HighLevelDesign.md)</li><li>[Technical Representations](readings/Representations.md)</li></ul> | <ul><li>[TBD](tbd)</li><ul> |<!-- OO Design Principles ([slides on piazza](https://piazza.com/class/iw1iu9xgfam11a?cid=1804)) --> <!-- Principles continued and Design Patterns ([slides on piazza](https://piazza.com/class/iw1iu9xgfam11a?cid=2089))-->
 | Feb 13      | Reading Week<ul><li>No Lectures</li><li>No Labs</li><li>No Office Hours</li></ul> |  &nbsp; |
-| Feb 20      | High Level Design:<ul><li>[APIs](readings/API.md)</li><li>SOLID & Design Principles</li></ul> | <ul><li>[TBD](tbd)</li><ul> |
+| Feb 20      | High Level Design:<ul><li>[Design Principles](readings/DesignPrinciples.md)</li><li>[APIs](readings/API.md)</li></ul> | <ul><li>[TBD](tbd)</li><ul> |
 | Feb 27      | Midterm in Class | None |
-| Mar 6       | Low Level Design | <ul><li>[TBD](tbd)</li><ul> |
+| Mar 6       | Low Level Design: <ul><li>Design Patterns</li></ul> | <ul><li>[TBD](tbd)</li><ul> |
 | Mar 13      | [Information Security](readings/Security.md) | <ul><li>[TBD](tbd)</li><ul> |
 | Mar 20      | <ul><li>[REST](readings/REST.md)</li><li>Intellectual Property [Slides](http://www.cs.ubc.ca/~murphy/cpsc310-2016w2/CPSC310_IP_2016W2.pdf)</li></ul>  | <ul><li>[TBD](tbd)</li><ul> |
 | Mar 27      | <ul><li>[Automation](readings/Automation.md)</li><li>Refactoring & Smells</li></ul> | <ul><li>[TBD](tbd)</li><ul> |
