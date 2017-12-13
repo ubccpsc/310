@@ -1,4 +1,6 @@
-# Deliverable 5: TBD
+# Deliverable 5: 
+
+# There will not be a d5 this term.
 
 <!--
 NOTE: this will not be the same

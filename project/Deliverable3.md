@@ -1,4 +1,7 @@
-# Deliverable 3: TBD
+# Project Sprint 3 (d3)
+
+# TBD
+
 <!--
 NOTE: this will not be the same
 

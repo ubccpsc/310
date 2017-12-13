@@ -38,8 +38,11 @@ Our primary goal with this course is to help you learn how to design and build n
 
 The course project embodies an experiential learning environment: we have constrained several aspects to mimic the kinds of reasonable constraints you would likely encounter on a real team. As with real systems, requirements will seem clear at a high level, but will probably lack some important details. Your choices of languages and frameworks have also been fixed. It is expected you will _not_ be familiar with these; being able to quickly learn and adapt to different toolsets is a fundamental skill in modern development. Finally, our use of [AutoTest](project/AutoTest.md) can be considered a form of acceptance testing, which is an industry norm used to validate that software performs as expected.
 
-While CPSC 310 will be a challenging course, we hope it will integrate many of the ideas and concepts from your prior courses and help you to learn how to apply them in modern software systems.
+While CPSC 310 will be a challenging course, we hope it will integrate many of the ideas and concepts from your prior courses and help you to learn how to apply them to engineering modern software systems.
 
+## Video & Supplementary Material
+
+Videos and practice problems for all course materials will be available through the [edX Software Engineering](https://www.edx.org/course/software-engineering-introduction-ubcx-softeng1x) course. You do ***NOT*** need to pay for this, all course materials are available in the free (non-verified)  version of the course.
 
 ## Contact
 
@@ -78,7 +81,7 @@ For *project / language help*, there will be 12 hours of labs and 12 hours of TA
 
 #### Lectures: 
 
-* 201: Date/Time TBD
+* 201: Tuesday/Thursday 1230-1400
 
 <!--
 * 201: MWF 0900-0950: [PHARM 1201](https://www.google.ca/maps/place/UBC+Faculty+of+Pharmaceutical+Sciences/@49.2615914,-123.2486782,17z/data=!4m21!1m15!4m14!1m6!1m2!1s0x548672cbc595e6a1:0xab34e40e58012409!2sICICS+Computer+Science,+2366+Main+Mall,+Vancouver,+BC+V6T+1Z4!2m2!1d-123.2488201!2d49.2611817!1m6!1m2!1s0x548672c8e6d17b6b:0x2f4024c0ac3282d9!2sUBC+Faculty+of+Pharmaceutical+Sciences,+Pharmaceutical+Sciences+Building,+Wesbrook+Mall,+Vancouver,+BC+V6T+1Z3!2m2!1d-123.243277!2d49.262386!3m4!1s0x0000000000000000:0x2f4024c0ac3282d9!8m2!3d49.2623861!4d-123.2432771).
@@ -168,43 +171,39 @@ Note: Even when AutoTest is heavily loaded your requests are queued and processe
 
 <!-- 2 weeks -->
 
-* January 8 (Jan 15 final sub): Sprint 0 ([Deliverable 0](project/Deliverable0.md)) This will be an individual deliverable and will be graded before the Add/Drop date. You should aim to exceed 70% on this deliverable if you want to succeed at the project.
+* January 8 (Jan 15 final sub): ([Deliverable 0](project/Deliverable0.md)) This will be an individual deliverable and will be graded before the Add/Drop date. You should aim to exceed 70% on this deliverable if you want to succeed at the project.
 
 <!-- 3 weeks -->
 
-* January 29 (Feb 5 final sub): Sprint 1 ([Deliverable 1](project/Deliverable1.md)) The first project deliverable will be extremely challenging; it is important that you start working on this early.
+* January 29 (Feb 5 final sub): [Sprint 1](project/Deliverable1.md) The first project deliverable will be extremely challenging; it is important that you start working on this early.
 
-<!-- 3 weeks -->
+<!-- 4 weeks -->
 
-* February 19 (Feb 26 final sub): Sprint 2 ([Deliverable 2](project/Deliverable2.md)) NOTE: The time between this deliverable and the midterm is tight.
+* February 26 (Mar 5 final sub): [Sprint 2](project/Deliverable2.md) An extra week has been added to this deliverable to help teams who fell behind in the first sprint recover.
 
 * February 27: Midterm (sample midterms are available through the CSSS)
 
-<!-- 2 weeks -->
+<!-- 3 weeks -->
 
-* March 5 (Mar 12 final sub): Sprint 3 ([Deliverable 3](project/Deliverable3.md))
+* March 19 (Mar 26 final sub): [Sprint 3](project/Deliverable3.md)
 
-<!-- 2 weeks -->
+* Mar 26: [Project Quality Check](project/Deliverable4.md). There is nothing to hand in for this deliverable.
 
-* March 19 (Mar 26 final sub): Sprint 4 ([Deliverable 4](project/Deliverable4.md))
-
-* March 19 (Mar 26 final sub): Sprint 5 ([Deliverable 5](project/Deliverable5.md))
 
 ## Grading
 
 To pass the course and receive credit you must achieve a passing grade on *both* the project and the final exam. Sample midterm and final exams will not be available.
 
-| Component		| Proportion 	| 
-| :--			   	| :-- 			|
-| D0 				| 10 %			|
-| Project: D1		| 10 %			|
-| Project: D2		| 10 %			|
-| Project: D3		| 10 %			|
-| Project: D4		| 10 %			|
-| Project: D5		| 5 %			|
-| Participation	| 5 %			|
-| Midterm Exam	| 10 %			|
-| Final Exam		| 30 %			|
+| Component						| Proportion | 
+| :--			   					| :-- 	|
+| Deliverable 0 (d0)			| 10 %	|
+| Project Sprint 1 (d1)			| 10 %	|
+| Project Sprint 2 (d2)			| 10 %	|
+| Project Sprint 3 (d3)			| 10 %	|
+| Project Quality Check	 (d4)	| 10 %	|
+| Participation					| 5 %	|
+| Midterm Exam					| 10 %	|
+| Final Exam						| 35 %	|
 
 ## Participation
 

@@ -1,4 +1,6 @@
-# Deliverble 2: TBD
+# Project Sprint 2 (d2)
+
+# TBD
 
 <!--
 NOTE: this will not be the same
