@@ -1,97 +1,93 @@
 # Deliverable 0: TBD
 
 <!--
-NOTE: this will not be the same
+## Getting the starter code
+To be provisioned a repo for this deliverable, you have to log in to [GitHub Enterprise](https://github.ubc.ca) with your CWL. It takes about a day for us to provision the repository after which you will get an email with a link to the repo. Please login as soon as possible so that you have your repo for the second lecture.
 
-# Deliverable 0: Async Development
+## Grading
+This will be an individual deliverable (the only one in the project). It is worth 10% of your final grade. We will run [MOSS](https://theory.stanford.edu/~aiken/moss/) on all submissions so please make sure your work is your own. Your work is automatically graded everytime you _push_ to GitHub with the command `git push`. Your grade will be the maximum grade you received from all submissions (commits in git terminology) made before the hard deadline (TBD). While we compute your grade on every submission, you will only be able to request to see your grade once every 12h hours. You can request your grade by mentioning `@autobot` in a commit comment. Refer to [AutoTest.md](AutoTest.md) for additional details. 
 
-### We need to create your repo for this deliverable, these will be setup on Monday morning. You **MUST** register your GitHub username with the [ClassPortal](http://skaha.cs.ubc.ca:11310) for this to work. You cannot change your GitHub id during the term.
+You cannot use any library package that is not already specified in package.json. Your implementation must be in TypeScript and must compile without error.
 
-Asynchronous development requires different programming idioms than synchronous development. This deliverable requires a set of asynchronous tasks be completed to calculate an end number. 
+## Requirements
+For this deliverable, you will read the [Deliverable 1](Deliverable1.md) specification, extract detailed requirements, and then turn the requirements you identified into a set of tests. Specifically, you will be writing unit tests for the three methods of the `InsightFacade` class in `./src/controller/InsightFacade.ts`. DO NOT modify any files under the `src/` directory -- you are only writing unit tests under the `test/` directory. 
 
-While you _could_ do this synchronously, later deliverables will not be possible synchronously so it is not to your benefit to try to work around this. Also, while you could complete this deliverable with nested callbacks, promises, or async/await, we require you to use promises.
+Your grade on this deliverable is simply the number of lines of code of our reference solution that your tests cover relative to our test suite (which covers 75% of the reference solution). Thus, your grade = your coverage / our coverage * 100%. If _any_ of your tests pass when given invalid/unexpected results, this indicates that your tests are ineffective (i.e. they always pass regardless of behaviour of the code under test, which is the default behaviour) and you will receive a grade of 0. The starter code contains an invalid "implementation" of the D1 spec so all of your tests should **fail** when you run them locally.
 
-This will be an individual deliverable (the only one in the project). It is worth 10% of your final grade. You will not have to hand anything in; we will pull from your D0 repository at 0800 on January 16, 2016. Before we can provision your D0 repository, you will have to alias your Github userid with your course account, please do so at [http://skaha.cs.ubc.ca:11310](http://skaha.cs.ubc.ca:11310). We will create project January 9 @ 0900. You do not need to specify your teammate until during your lab on the week of January 16th. You must not leave the lab that week without a partner. We will run [MOSS](https://theory.stanford.edu/~aiken/moss/) on all submissions so please make sure your work is your own.
+You should be strategic when writing your tests so that you maximize coverage with as few tests as possible. Since the methods in InsightFacade handle complicated logic, you will need to cleverly construct a set of inputs that causes all of the logic in the method to be executed. These tests will form the basis of your personal test suite for the remainder of the project. 
 
-You are responsible for the software design and implementation that supports the API listed in ```src/Math.ts```. You cannot use any library package that is not already specified in ```package.json```. Your implementation must be in TypeScript and must compile without error. While we will not be directly examining your source code, you will undoubtably end up showing it to the TAs as you explain your solution in the deliverable retrospective.
+Because you have no way of checking how much of the reference solution your are covering on your local computer, you will need to rely on [AutoTest](AutoTest.md) to determine your progress. This service is rate limited so you will want to **start early**.
 
-The main API you will use for this deliverable is [```request-promise-native```](https://github.com/request/request-promise-native). This package will automatically be installed when you run ```yarn configure```. 
+## Writing tests
+We will be using the [Mocha Test Environment](https://mochajs.org/) with [Chai Expectations](http://chaijs.com/api/bdd/) for testing. Below are the two tests given in the starter code. They are functionally equivalent but use different language features. You should pick the style you are comfortable with and use it consistently when writing your tests.
 
-## Dataset
+While the tests may seem intimidating (largely due the asynchronous nature of the methods we are testing), you will mostly be able to copy and paste tests, only having to make small changes. Also, you can read through the resources in the next section and come to the tutorial during the second lecture.
 
-The primary API for this deliverable are:
+```JS
+    it("Should add the courses dataset", function () {
+        const id: string = "courses";
+        const path: string = datasets[id];
 
-* ```Math::add(urls: string[]): Promise<number>```
-* ```Math::multiply(urls: string[]): Promise<number>```
-
-The parameter takes a list of URLs, each of these URLs corresponds to a JSON file that looks optimally like (http://skaha.cs.ubc.ca:11313/4968.json):
-
-```
-[ 1, 2, 5, 4 ]
-```
-
-The math operations should only be on the numbers in arrays within the JSON file, e.g. for (http://skaha.cs.ubc.ca:11313/7b77.json):
-
-```
-{ "id": "foo", "bar": false, "baz": 6, "values": [1, 2, 3] }
-```
-
-Only 1, 2, 3 should be used. You only need to consider direct arrays (first example) or property value arrays (second example), but do not need to consider nested arrays: (e.g., (http://skaha.cs.ubc.ca:11313/822d.json) ```{"val": {"foo": [1, 2, 3]}}```). Also, only numbers should be considered (e.g., for ```[1, "2", 3]``` the ```2``` is a string and should not be considered).
-
-```
-add(['http://skaha.cs.ubc.ca:11313/822d.json']) -> reject('Error: No number was provided')
-
-add(['http://skaha.cs.ubc.ca:11313/822d.json', 'http://skaha.cs.ubc.ca:11313/4968.json']) -> fulfill(12)
-
-add([]) -> reject('Error: No number was provided')
-
-add(['invalidURL']) -> reject('Error: URL could not be retrieved')
-
-add(['invalidURL', 'http://skaha.cs.ubc.ca:11313/4968.json']) -> reject('Error: URL could not be retrieved')
-
-multiply(['http://skaha.cs.ubc.ca:11313/822d.json']) -> reject('Error: No number was provided')
-
-multiply(['http://skaha.cs.ubc.ca:11313/822d.json', 'http://skaha.cs.ubc.ca:11313/4968.json']) -> fulfill(40)
-
-multiply(['URLwithInvalidJSON']) -> reject('Error: Could not parse JSON')
+        // Start reading the file that contains our data...
+        return TestUtil.readFileAsync(path).then(function (content: Buffer) {
+            // once the file has been read, we can add it to our InsightFacade... 
+            return insightFacade.addDataset(id, content.toString('base64')).then(function (response: InsightResponse) {
+                // once the dataset has been added, we can check the return value of the addDataset is as expected.
+                Log.test("Response from addDataset was " + JSON.stringify(response));
+                expect(response.code).to.equal(204);  // Note the status code
+            });
+        }).catch(function (err: any) {
+            TestUtil.reportError(err);
+            expect.fail();
+        });
+    });
 ```
 
+```JS
+    it("Should add the courses dataset again", async () => {
+        const id: string = "courses";
+        const path: string = datasets[id];
 
-## Testing
+        try {
+            // Wait here until the file that contains our data has been read...
+            const content: Buffer = await TestUtil.readFileAsync(path);
+            // Then, wait here until we get the response from addDataset...
+            const response: InsightResponse = await insightFacade.addDataset(id, content.toString('base64'));
+            // Finally, we can check that the result is as expected.
+            Log.test(`Response from addDataset was ${JSON.stringify(response)}`);
+            expect(response.code).to.equal(201);  // Note the status code
+        }
+        catch (err) {
+            TestUtil.reportError(err);
+            expect.fail();
+        }
+    });
+```
 
-The best way to test your system is via your own unit test suite. You can write these unit tests by following the examples in ```test/``` and running them with ```yarn test```. This will be the quickest and easiest way to ensure your system is behaving correctly and to make sure regressions are not introduced as you proceed further in the project.
+## Resources
+  - [Git Tutorial](../resources/git.md)
+  - [TypeScript/JavaScript Tutorial](../resources/typescript.md)
+  - [Asynchronous Development Tutorial](../resources/async.md)
+  - [Promises Tutorial](../resources/promises.md)
 
-AutoTest can also be invoked every 12h by making a ```@CPSC310bot``` comment in a GitHub commit message; full details will be available in the [AutoTest](AutoTest.md) documentation.
-
-The AutoTest suite will comprise 80% of your mark. The remaining 20% will be derived from your line coverage score generated by your local tests for the files in ```src/```. You can check your score (as we will) by running ```yarn cover```. Your grade will correspond to the fraction of lines your tests cover (e.g., 90% coverage will give you 18/20). Recognizing that hitting 100% will take more trouble than it is worth, we will give you a maximum 5% bonus for your coverage score, although you cannot get over 100% on this component. For example, if your coverage rate is 97% you will get 100%. If it is 76% you will get 81%. 
-
-## Getting started
-
-This deliverable is fairly straightforward but will involve a new language for most of you, along with a new tooling environment. Please do not delay getting started: the sooner you start, the more times you can invoke AutoTest on your solution.
-
-It is important that you start by getting the code to compile and the existing tests to run. From there you can start to build out your solution. Getting hung up on language tutorials, articles, and Youtube videos is not the way to go with this deliverable.
-
-Some URLS that you can use are: 
-* http://skaha.cs.ubc.ca:11313/0.json
-* http://skaha.cs.ubc.ca:11313/1.json
-* http://skaha.cs.ubc.ca:11313/2.json
-* http://skaha.cs.ubc.ca:11313/4543.json
-* http://skaha.cs.ubc.ca:11313/4544.json
-* http://skaha.cs.ubc.ca:11313/4666.json
-* http://skaha.cs.ubc.ca:11313/4670.json
-* http://skaha.cs.ubc.ca:11313/4968.json
-* http://skaha.cs.ubc.ca:11313/4969.json
-* http://skaha.cs.ubc.ca:11313/7b77.json
-* http://skaha.cs.ubc.ca:11313/822d.json
-* http://skaha.cs.ubc.ca:11313/944a.json
-* http://skaha.cs.ubc.ca:11313/b43f.json
-* http://skaha.cs.ubc.ca:11313/jdw3.json
-
-Remember that our test suite will also use additional files so be sure to generate your own test data files as well.
 -->
-<!--
-TODO for next term:
-* drop multiply, doesn't really add anything over add itself
-* add private tests
-* differentiate _consuming_ promises (e.g., rp) with creating promises (e.g., fulfill).
+
+
+<!-- D1 coverage for reference solution (can be deleted)
+  50 passing (8s)
+
+-----------------------|----------|----------|----------|----------|----------------|
+File                   |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Lines |
+-----------------------|----------|----------|----------|----------|----------------|
+All files              |    70.66 |    71.57 |       68 |    70.66 |                |
+ src                   |    83.33 |      100 |       80 |    83.33 |                |
+  Util.ts              |    83.33 |      100 |       80 |    83.33 |             30 |
+ src/controller        |    82.62 |    73.74 |    87.67 |    82.62 |                |
+  DatasetController.ts |    65.52 |    50.72 |    75.76 |    65.52 |... 298,299,307 |
+  InsightFacade.ts     |    98.08 |      100 |      100 |    98.08 |             89 |
+  QueryController.ts   |       91 |    85.37 |    96.77 |       91 |... 288,327,348 |
+ src/rest              |    11.11 |        0 |        0 |    11.11 |                |
+  RouteHandler.ts      |    10.87 |        0 |        0 |    10.87 |... 83,84,85,87 |
+  Server.ts            |    11.43 |        0 |        0 |    11.43 |... 93,96,97,98 |
+-----------------------|----------|----------|----------|----------|----------------|
 -->
