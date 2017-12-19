@@ -92,21 +92,59 @@ async function addOneV3(): Promise<number> {
 Finally, we can mimic `Promise.all` by calling an async function before `await`ing it:
 
 ```TS
+async function readNumberFileAsync(path: string): Promise<number[]> {...}
+
 async function doSumAsync(filesWithNumbers: string[]): Promise<number> {
   let sum: number = 0;
   const numbers: number[] = [];
-
-  for (let file in filesWithNumbers) {
-    const promiseNumbersInFile: Promise<number[]> = readNumberFileAsync(file);
-    numbers.push.apply(numbers, await promiseNumbersFile);
+  const promises: Promise<number[]>[] = [];
+  
+  // create an array pf promises
+  for (let file of filesWithNumbers) {
+    promises.push(readNumberFileAsync(file));
   }
 
-  for (let num in numbers) {
-    sum += num;
+  // wait for each promise to resolve
+  for (let file of promises) {
+    numbers.push.apply(numbers, await promiseNumbersInFile);
+  }
+
+  // use the resolved values
+  for (let numArr of numbers) {
+    for (let num of numArr) {
+      sum += num;
+    }
+  }
+  
+  return sum;
+} 
+```
+
+Alternatively, we can use a combination of `await` and `Promise.all` which is likely what you'll want to use in your project (if you choose to use the async/await syntax):
+```TS
+async function readNumberFileAsync(path: string): Promise<number[]> {...}
+
+async function doSumAsync(filesWithNumbers: string[]): Promise<number> {
+  let sum: number = 0;
+  let numbers: number[] = [];
+  const promises: Promise<number[]>[] = [];
+  
+  // create an array pf promises
+  for (let file of filesWithNumbers) {
+    promises.push(readNumberFileAsync(file));
+  }
+
+  numbers = await Promise.all(promises);
+
+  // use the resolved values
+  for (let numArr of numbers) {
+    for (let num of numArr) {
+      sum += num;
+    }
   }
 
   return sum;
-} 
+}
 ```
 
 Note: to Promise-ify a function, you will still need to explicitly use the Promise object as described before.
