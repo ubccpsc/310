@@ -20,19 +20,18 @@ If you are registered in the class, please do not form a team with students on t
 
 ## Deliverables
 
-Sprint 0 is an individual activity to help you get acquainted with TypeScript and AutoTest. Sprints 1-5 will be part of your project.
+Deliverable 0 is an individual activity to help you get acquainted with TypeScript and AutoTest. Sprints 1-3 will be part of your project. Deliverable 4 does not require anything to be handed in.
 
-1. Sprint 0 - [Deliverable 0](Deliverable0.md) 
+1. Deliverable 0 - [Deliverable 0](Deliverable0.md) 
 
-1. Sprint 1 - [Deliverable 1](Deliverable1.md) 
+1. Sprint 1 (d1) - [Deliverable 1](Deliverable1.md) 
 
-1. Sprint 2 - [Deliverable 2](Deliverable2.md) 
+1. Sprint 2 (d2) - [Deliverable 2](Deliverable2.md) 
 
-1. Sprint 3 - [Deliverable 3](Deliverable3.md) 
+1. Sprint 3 (d3) - [Deliverable 3](Deliverable3.md) 
 
-1. Sprint 4 - [Deliverable 4](Deliverable4.md) 
+1. Project Quality Check (d4) - [Quality Check](Deliverable4.md) 
 
-1. Sprint 5 - [Deliverable 5](Deliverable5.md) 
 
 ## Language and environment
 
@@ -43,18 +42,11 @@ All development will take place on GitHub. You will need a GitHub account (but f
 
 ## Allowable packages
 
-The packages and external libraries (aka all of the code you did not write yourself) you can use for the project are limited. The packages below, and the packages they require, are all you are permitted to use. It is notable that a database is **NOT** permitted to be used; the data in this course is sufficiently simple for in-memory manipulation using the features built into the programming language. Essentially if you are typing ```npm install``` it is probably not permitted.
-
-* [typescript](https://www.npmjs.com/package/typescript)
-* [restify](https://www.npmjs.com/package/restify)
-* [jszip](https://www.npmjs.com/package/jszip)
-* [parse5](https://www.npmjs.com/package/parse5)
-* [mocha](https://www.npmjs.com/package/mocha)
-* [chai](https://www.npmjs.com/package/chai)
+The packages and external libraries (aka all of the code you did not write yourself) you can use for the project are limited and have all been included for you in your `package.json`. You cannot install any additional packages. It is notable that a database is **NOT** permitted to be used; the data in this course is sufficiently simple for in-memory manipulation using the features built into the programming language. Essentially if you are typing ```npm install``` or ```yarn install``` you will likely encounter problems.
 
 ## Repositories
 
-All development will take place in GitHub repositories that we will create for you in a private organization for the course. You will be automatically added to your repo after you have specified your groups in your lab section in the first week. Repositories will only be created for teams where both students are registered in the course; this list will finalize after the first week of labs, so if you are on a waitlist you might need to wait until then to specify your team and have a repository created.
+All development will take place in GitHub repositories that we will create for you in a private organization for the course. You will be automatically added to your repo after you have specified your groups in your lab section in the first week. Repositories will only be created for teams where both students are registered in the course; this list will finalize after the add/drop deadline.
 
 <!--
 That said, instructions will be given in your labs during the first week so you can start working effectively on the first deliverable before the repositories are ready.
@@ -80,30 +72,35 @@ The deliverable retrospective will assign individual marks to each teammate to m
 
 These oral questions will take place in labs the week the deliverable was due; if you do not attend this lab, you will receive 0% for the deliverable. Also, submitting your contribution file by the deliverable due date is required; without this you will also receive 0%. Being an effective teammate involves both technical contribution _and_ teamwork; if one team member 'shuts out' the other from contributing to the project, this can also have a detrimental influence on both multipliers. Teammates should be courteous to one another by keeping open lines of communication, and by pulling their weight while ensuring that others have the opportunity to pull theirs too.
 
+TBD: End-of-sprint reports.
+
+<!--
 Deliverables 1-4 will also require you to add a deliverable contribution file to your repository for each teammember. If you do not do this, your retrospective multiplier will be 0. It is also extremely important to ensure you are committing code to your repository, if you do not commit anything, the TA will not know that you actually did any work.
+-->
 
+<!--
 Each deliverable will be worth 10% of your final grade. Only Deliverable 0 is completed individually, all other deliverables must be completed in teams.
-
+-->
 <!--- Course participation will be worth 10% of your final grade. Finally, your final project will be executed against the private test suite from all deliverables we run AutoTest against (to check for regressions from prior deliverables). --->
-
+<!--
 * Deliverable 0: 10%
 * Deliverable 1: 10%
 * Deliverable 2: 10%
 * Deliverable 3: 10%
 * Deliverable 4: 10%
 * Deliverable 5: 10%
+-->
 
 We will be running [Measure of software similarity (MOSS)](https://theory.stanford.edu/~aiken/moss/) on all deliverable submissions. Any projects that contain code derived from other projects that we have not provided will receive 0% on that deliverable.
 
 ## Late policy
 
-It is possible to submit a team-based AutoTest deliverable (D1, D2, & D3) 'late' for partial marks. D0, D4, and D5 cannot be submitted late. Appeals for late marks must be made by the Deliverable 4 deadline. Late deliverables will be subject to the following penalty:
+It is possible to submit D1 and D2 late for partial marks; other deliverables cannot be submitted late. Appeals for late marks must be made by the Deliverable 3 final deadline. Late deliverables will be subject to the following penalty:
 
-* 1 deliverable late: 40% (e.g., D1 by D2, D2 by D3, or D3 by D4).
-* 2 deliverables late: 50% (e.g., D1 by D3, D2 by D4).
-* 3 deliverables late: 60% (e.g., D1 by D4).
+* 1 deliverable late: 50% (D1 by D2, D2 by D3).
+* 2 deliverables late: 60% (e.g., D1 by D3).
 
-Late deliverables can only increase the test passing rate. The retrospective multipliers and test coverage rate from the original deliverable will still be used. The # of deliverables late depends on the timestamp of the commit you ran you deliverable against (the # of deliverables late increments after each deliverable deadline). Use [this form](https://goo.gl/forms/WK6T45hchKgHBFN42) to submit your late request. Please talk to your team before you do this, we will only consider one late request per-team per-deliverable at most.
+Late deliverables can only increase the test passing rate. The retrospective multipliers and test coverage rate from the original deliverable will still be used. The # of deliverables late depends on the timestamp of the commit you ran you deliverable against (the # of deliverables late increments after each deliverable deadline). Use [this form](LINKTBD) to submit your late request. Please talk to your team before you do this, we will only consider one late request per-team per-deliverable at most.
 
 <!---
 To apply for the late policy, please fill out the [late deliverable request](https://goo.gl/forms/9P4DBfXBBhuPHTqM2) form by the Deliverable 4 deadline.

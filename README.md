@@ -159,7 +159,7 @@ In addition to AutoTest, each team member will be independently asked a small nu
 
 Each deliverable has a deadline; we have also added a one week grace period for and final submissions if needed. Full TA support will be given to any group prior to the deadline; during the grace period, priority will be given to struggling teams or groups working on the next deliverable. 
 
-During the grace week, TAs will only help groups with AutoTest scores below 80%. In the three days prior to the final submission date, only groups with less than 50% AutoTest scores will be helped. We encourage all groups to submit by the deadline, the final submission date is really only for those groups who need a little more time for polish.
+During the grace week, TAs will only help groups with AutoTest scores below 80%. In the three days prior to the final submission date, only groups with less than 50% AutoTest scores will be helped. We encourage all groups to submit by the deadline, the final submission date is really only for those groups who need a little more time for polish. Regardless of your grade, your TAs will always help you during *your own* lab section; this restriction applies only to Piazza, Office Hours, and labs other than your own.
 
 Also, be aware that waiting until the last minute will greatly degrade AutoTest latency; while you can expect to receive results in < 5 minutes for the majority of the term, this has historically been much slower on the last day:
 
@@ -192,7 +192,7 @@ Note: Even when AutoTest is heavily loaded your requests are queued and processe
 
 ## Grading
 
-To pass the course and receive credit you must achieve a passing grade on *both* the project and the final exam. Sample midterm and final exams will not be available.
+To pass the course and receive credit you must achieve a passing grade on *both* the project and the final exam. Sample exams are available through the CSSS.
 
 | Component						| Proportion | 
 | :--			   					| :-- 	|
@@ -207,7 +207,25 @@ To pass the course and receive credit you must achieve a passing grade on *both*
 
 ## Participation
 
-TBD
+Participation marks are given for submitting timely status reports for the lecture component of the class. With the exception of Week 0, these reports **MUST** be submitted before class and will require watching the videos for that week. These reports are intended to be short; we will use them to tailor the activities during the week based on your comments. Each of the 10 reports is worth 0.5% (totalling 5% of your final grade if you submit all 10). We will not tally this grade until the end of the term so it is your responsibility to make sure you have done these by their deadlines (the forms will be deactivated afterwards) and to keep track of your own participation grade.
+
+The three deliverable reports (Week 5, 8, and 11) are not part of your participation report but are instead required for your deliverable submissions (see the grade rubric in the deliverable description for more detail of those).
+
+| Week								| Due	| Link | 
+| :--			   					| :-- 	| :-- |
+| Week 0 (Entrance Survey)		| Jan 5 @ 1000 | TBD |
+| Week 1							| Jan 8 @ 1000 | TBD |
+| Week 2							| Jan 15 @ 1000 | TBD |
+| Week 3							| Jan 22 @ 1000 | TBD |
+| Week 4							| Jan 29 @ 1000 | TBD |
+| Week 5 (d1)						| Feb 5 @ 1000 | TBD |
+| Week 6							| Feb 19 @ 1000 | TBD |
+| Week 7 (Midterm)				| N/A | N/A |
+| Week 8 (d2)						| Mar 5 @ 1000 | TBD |
+| Week 9							| Mar 12 @ 1000 | TBD |
+| Week 10							| Mar 19 @ 1000 | TBD |
+| Week 11 (d3)					| Mar 26 @ 1000 | TBD |
+| Week 12 (Exit Survey)			| Apr 2 @ 1000 | TBD |
 
 ## Policies
 
@@ -223,11 +241,11 @@ If you are on the waitlist you should still attend and sign into a lab section s
 --->
 ### Late Submissions
 
-The project late policy is described [here](project/README.md#late-policy). Only Deliverables 1, 2, and 3 can be submitted late. Deliverable 0, 4 and 5 cannot be late.
+The project late policy is described [here](project/README.md#late-policy). Only d1 and d2 can be submitted late.
 
 ### Accommodation
 
-Lab attendance is mandatory. If you must miss a lab, please notify your TA directly; your overall project mark will reflect your participation.
+Lab attendance is mandatory so you have time to meet with your partner. If you must miss a lab, please notify your TA directly
 If you are sick and unable to write the midterm, please contact Reid as soon as possible -- provide medical documentation.
 Students who miss the midterm or final exam due to illness should consult the Faculty of Science Policy on missed exams. Students who do not have sufficient standing during the term may not qualify for academic concession if they miss the final.
 Students who require dispensation based on their unique circumstances should refer to the [UBC policy on Academic Concessions](http://www.calendar.ubc.ca/vancouver/?tree=3,48,0,0).
