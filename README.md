@@ -115,6 +115,25 @@ This list is a week-by-week guide only. Readings and videos will be updated thro
 
 <!-- Industry Lecture - David Green, Tasktop Technologies -->
 
+<!-- 
+WEEK 1
+
+
+<ul>
+<b>Introduction</b><li><a href="https://www.youtube.com/watch?v=Uamo4Ej0tWk">Why-Test</a></li><li><a href="https://www.youtube.com/watch?v=WKrvx7qCUDI">Terminology</a></li><li><a href="https://www.youtube.com/watch?v=ll1k3Pks3ZA">Properties-of-Tests</a></li><li><a href="https://www.youtube.com/watch?v=_Th3f9vks_w">Kinds-of-Tests</a></li><li><a href="https://www.youtube.com/watch?v=x2DWjxDiOQo">Unit-and-System-Properties</a></li>
+<li><a href="https://www.youtube.com/watch?v=v0q1MKhSQVM">Red-Green-Refactor</a></li>
+</ul>		
+<ul>
+<b>White Box</b><li><a href="https://www.youtube.com/watch?v=iujQEm9oono">Introduction-to-Coverage</a></li><li><a href="https://www.youtube.com/watch?v=SC7R-QixRaU">Line-and-Statement-Coverage</a></li><li><a href="https://www.youtube.com/watch?v=YBiHn5vgKnM">Branch-and-Path-Coverage</a></li><li><a href="https://www.youtube.com/watch?v=2EBi66DYF5w">Coverage-Wrap-Up</a></li>
+</ul>	<ul>
+<b>Black Box</b><li><a href="https://www.youtube.com/watch?v=ttAAsNSPiXw">Equivalence-Class-Partitioning</a></li><li><a href="https://www.youtube.com/watch?v=5PtxXnwyU3Y">Input-Partitioning</a></li><li><a href="https://www.youtube.com/watch?v=0yvHDKI-DSA">Output-Partitioning</a></li><li><a href="https://www.youtube.com/watch?v=IRQU_fHKUa0">Boundary-Value-Analysis</a></li>	</ul>
+WEEEK 2		<ul>
+<b>Assertions</b><li><a href="https://www.youtube.com/watch?v=DCAFxgUXM4I">Assertions</a></li><li><a href="https://www.youtube.com/watch?v=Y0GEftJ5MB0">Assertions-Example</a></li></ul>
+	<ul>
+<b>Testability</b><li><a href="https://www.youtube.com/watch?v=jwL1vkl-CoY">Introduction</a></li><li><a href="https://www.youtube.com/watch?v=y0zrTdDuYv0">Controllability</a></li><li><a href="https://www.youtube.com/watch?v=CJhJibMCTUM">Observability</a></li><li><a href="https://www.youtube.com/watch?v=Z93-c4ngxGw">Isolateability</a></li><li><a href="https://www.youtube.com/watch?v=NMuhE-XnFe8">Isolateability-Screencast</a></li><li><a href="https://www.youtube.com/watch?v=Q83W5zH8LUY">Automatability</a></li><li><a href="https://www.youtube.com/watch?v=d2WjviF50HA">Wrap-Up</a></li>
+</ul>
+-->
+
 #### Labs:
 
 **There will not be any labs during the first week of class.**
