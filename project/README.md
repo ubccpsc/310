@@ -54,25 +54,50 @@ That said, instructions will be given in your labs during the first week so you 
 
 ## Assessment
 
-Each deliverable will evaluated in three ways:
+The first three sprints are evaluated differently than sprint 4.
+
+### Sprint 1, 2, and 3
+
+Four components are assessed for these sprints:
 
 * [AutoTest](AutoTest.md) validation (functional completeness).
 * Private test coverage.
 * Oral questions in lab (deliverable retrospective).
+* Retrospective questionnaire (online survey)
 
-The weighting of these criteria will vary from deliverable to deliverable. The best way to maximize your AutoTest grade is to:
+The general formula for grading is:
 
-1. Write your own local tests tests that comprehensively test your code against the project requirements. These tests can be run as often as you want and are the best way to debug your code.
+`grade = (((AutoTest * .8) + (Coverage * .2) ) * (Oral Questions * Questionnaire))`
 
-1. Invoke AutoTest frequently to ensure you have not introduced regressions into your code. Remember: you can only submit to the private suite once every 12 hours!
+The best way to maximize your AutoTest and Coverage grades is to:
+
+1. Write your own local tests tests that comprehensively test your code against the project requirements. These tests can be run as often as you want and are the best way to debug your code. In our experience, teams that invest in creating a comprehensive test suite with effective assertions completes the project much more quickly.
+
+1. Invoke AutoTest frequently to ensure you have not introduced regressions into your code. Remember: you can only submit to the private suite once every 12 hours and AutoTest will respond more slowly as the deadline approaches.
 
 You do not need to submit your code on the deliverable deadline; we will automatically pull your code from the master branch at the due date and run the tests against it. The state of your main branch at the moment the deliverable is due is your responsibility.
 
-The deliverable retrospective will assign individual marks to each teammate to make sure both teammates contributed fairly to the deliverable outcome. Each teammate should have a clear understanding of how the system works at a high level (the major components, data structures, design decisions, and algorithms). The answers to the oral questions will be used as a scaling factor on your AutoTest score (e.g., if you get 80% from AutoTest and 50% from the oral questions because it was clear you did not contribute effectively to the deliverable, your deliverable grade would be 40%). 
+The deliverable retrospective (oral questions) will assign individual marks to each teammate to make sure both teammates contributed fairly to the deliverable outcome. The range for this component is `[0..1]`. Each teammate should have a clear understanding of how the system works at a high level (the major components, data structures, design decisions, and algorithms). The answers to the oral questions will be used as a scaling factor on your AutoTest score (e.g., if you get 80% from AutoTest and 0.5 from the oral questions because it was clear you did not contribute effectively to the deliverable, your deliverable grade would be 40%).
 
-These oral questions will take place in labs the week the deliverable was due; if you do not attend this lab, you will receive 0% for the deliverable. Also, submitting your contribution file by the deliverable due date is required; without this you will also receive 0%. Being an effective teammate involves both technical contribution _and_ teamwork; if one team member 'shuts out' the other from contributing to the project, this can also have a detrimental influence on both multipliers. Teammates should be courteous to one another by keeping open lines of communication, and by pulling their weight while ensuring that others have the opportunity to pull theirs too.
+These oral questions will take place in labs the week the deliverable was due; if you do not attend this lab, you will receive 0 for the deliverable. Being an effective teammate involves both technical contribution _and_ teamwork; if one team member 'shuts out' the other from contributing to the project, this can also have a detrimental influence on both multipliers. Teammates should be courteous to one another by keeping open lines of communication, and by pulling their weight while ensuring that others have the opportunity to pull theirs too.
 
-TBD: End-of-sprint reports.
+Finally, a questionnaire is due for each deliverable for the teams to self-report their progress. The expectiation is that everyone who spends 15 minutes to complete this questionnaire will receive a 1, while those who fail to submit their questionnaire or do not provide meaningful feedback will be given a 0.
+
+The oral questions and the questionnaire effectively scale your project mark. Any student who makes a fair effort in the project and submits the required form should receive a scale of 1 (and in our experience 95%+ of students do receive full marks on these components).
+
+### Sprint 4
+
+The grading for this sprint comprises of two components:
+
+1. A regression test suite.
+
+1. A private test suite.
+
+The formula for this grade is:
+
+`grade = (Regression Suite * .5) + (Private Suite * .5)`
+
+More details about these components can be found in the Sprint 4 description.
 
 <!--
 Deliverables 1-4 will also require you to add a deliverable contribution file to your repository for each teammember. If you do not do this, your retrospective multiplier will be 0. It is also extremely important to ensure you are committing code to your repository, if you do not commit anything, the TA will not know that you actually did any work.
