@@ -266,20 +266,20 @@ Participation marks are given for submitting timely status reports for the lectu
 
 The three deliverable reports (Week 5, 8, and 11) are not part of your participation report but are instead required for your deliverable submissions (see the grade rubric in the deliverable description for more detail of those).
 
-| Week								| Due	| Link | 
-| :--			   					| :-- 	| :-- |
-| Week 0 (Entrance Survey)		| Jan 5 @ 1000 | TBD |
-| Week 1							| Jan 8 @ 1000 | TBD |
-| Week 2							| Jan 15 @ 1000 | TBD |
-| Week 3							| Jan 22 @ 1000 | TBD |
-| Week 4							| Jan 29 @ 1000 | TBD |
-| Week 5 (d1)						| Feb 5 @ 1000 | TBD |
-| Week 6							| Feb 19 @ 1000 | TBD |
-| Week 7 (Midterm)				| N/A | N/A |
-| Week 8 (d2)						| Mar 5 @ 1000 | TBD |
-| Week 9							| Mar 12 @ 1000 | TBD |
-| Week 10							| Mar 19 @ 1000 | TBD |
-| Week 11 (d3)					| Mar 26 @ 1000 | TBD |
+| Week					| Due	| Link | 
+| :--			   		| :-- 	| :-- |
+| Week 0 (Entrance Survey)		| Jan 19 @ 1000 | [Form](https://ubc.ca1.qualtrics.com/jfe/form/SV_71KghhL7i1DcYMB) |
+| Week 1				| Jan 8 @ 1000 | TBD |
+| Week 2				| Jan 15 @ 1000 | TBD |
+| Week 3				| Jan 22 @ 1000 | TBD |
+| Week 4				| Jan 29 @ 1000 | TBD |
+| Week 5 (d1)				| Feb 5 @ 1000 | TBD |
+| Week 6				| Feb 19 @ 1000 | TBD |
+| Week 7 (Midterm)			| N/A | N/A |
+| Week 8 (d2)				| Mar 5 @ 1000 | TBD |
+| Week 9				| Mar 12 @ 1000 | TBD |
+| Week 10				| Mar 19 @ 1000 | TBD |
+| Week 11 (d3)				| Mar 26 @ 1000 | TBD |
 | Week 12 (Exit Survey)			| Apr 2 @ 1000 | TBD |
 
 ## Policies
