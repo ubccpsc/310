@@ -110,8 +110,8 @@ This list is a week-by-week guide only. Readings and videos will be updated thro
 | Jan 23      | <ul><li>[Specifications](readings/Specifications.md)</li><li>[User Stories](readings/SpecificationsUserStories.md)</li><li>[Async](readings/Async.md)</li></ul> | <ul><li>[TBD](tbd)</li><ul> |  Async programming |
 | Jan 30      | [Testability & Assertions](readings/TestabilityAssertions.md)   | <ul><li>[TBD](tbd)</li><ul> |  Applying testability |
 | Feb 6       | High Level Design:<ul><li>[High Level Design](readings/HighLevelDesign.md)</li><li>[Technical Representations](readings/Representations.md)</li></ul> | <ul><li>[TBD](tbd)</li><ul> | Sprint 2 introduction | <!-- OO Design Principles ([slides on piazza](https://piazza.com/class/iw1iu9xgfam11a?cid=1804)) --> <!-- Principles continued and Design Patterns ([slides on piazza](https://piazza.com/class/iw1iu9xgfam11a?cid=2089))-->
-| Feb 13      | Reading Week<ul><li>No Lectures</li><li>No Labs</li><li>No Office Hours</li></ul> |  Reading Week |  Reading Week |
-| Feb 20      | High Level Design:<ul><li>[Design Principles](readings/DesignPrinciples.md)</li><li>[APIs](readings/API.md)</li></ul> | <ul><li>[TBD](tbd)</li><ul> |  Applying SOLID |
+| Feb 13      | High Level Design:<ul><li>[Design Principles](readings/DesignPrinciples.md)</li><li>[APIs](readings/API.md)</li></ul> | <ul><li>[TBD](tbd)</li><ul> |  Applying SOLID |
+| Feb 20      | Reading Week<ul><li>No Lectures</li><li>No Labs</li><li>No Office Hours</li></ul> |  Reading Week |  Reading Week |
 | Feb 27      | Midterm in Class | None |  API design |
 | Mar 6       | Low Level Design: <ul><li>Design Patterns</li></ul> | <ul><li>[TBD](tbd)</li><ul> |  Sprint 3 introduction |
 | Mar 13      | [Information Security](readings/Security.md) | <ul><li>[TBD](tbd)</li><ul> | Applying design patterns |
