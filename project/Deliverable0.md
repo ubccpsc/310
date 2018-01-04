@@ -1,77 +1,55 @@
-# Deliverable 0: TBD
+# Deliverable 0: TDD Individual Deliverable
 
-<!--
+### Final Submission: January 15 @ 1800
+
+Test-driven development (TDD) is a modern way of ensuring software is proven to meet requirements. As the name suggests, tests for every requirement  in the specification are written _before_ the specification is implemented in code. This makes it much easier to ensure the quality of the final project.
+
+In terms of the course project, adopting TDD will ensure you understand all the requirements of the specification before getting buried in the details of your implementation. This is important because implementing code that doesn't meet the requirements _will_ increase the amount of work you need to do for the project.
+
 ## Getting the starter code
-To be provisioned a repo for this deliverable, you have to log in to [GitHub Enterprise](https://github.ubc.ca) with your CWL. It takes about a day for us to provision the repository after which you will get an email with a link to the repo. Please login as soon as possible so that you have your repo for the second lecture.
 
-## Grading
-This will be an individual deliverable (the only one in the project). It is worth 10% of your final grade. We will run [MOSS](https://theory.stanford.edu/~aiken/moss/) on all submissions so please make sure your work is your own. Your work is automatically graded everytime you _push_ to GitHub with the command `git push`. Your grade will be the maximum grade you received from all submissions (commits in git terminology) made before the hard deadline (TBD). While we compute your grade on every submission, you will only be able to request to see your grade once every 12h hours. You can request your grade by mentioning `@autobot` in a commit comment. Refer to [AutoTest.md](AutoTest.md) for additional details. 
+You need to log in to [GitHub Enterprise](https://github.ugrad.cs.ubc.ca) with your CWL **ASAP** so that we can provision your repo before lecture on Jan 4. Also for Jan 4, ensure that you have prepared your computer according the [setup guide](../resources/guide.md) (also found in the README of your provisioned repo).
 
-You cannot use any library package that is not already specified in package.json. Your implementation must be in TypeScript and must compile without error.
+Once your repo has been created, you'll receive an email with a link to clone your repo. For this course, you will be using Git to manage your code. A description of how to use Git is given in our brief [Git Tutorial](../resources/git.md).
 
 ## Requirements
-For this deliverable, you will read the [Deliverable 1](Deliverable1.md) specification, extract detailed requirements, and then turn the requirements you identified into a set of tests. Specifically, you will be writing unit tests for the three methods of the `InsightFacade` class in `./src/controller/InsightFacade.ts`. DO NOT modify any files under the `src/` directory -- you are only writing unit tests under the `test/` directory. 
 
-Your grade on this deliverable is simply the number of lines of code of our reference solution that your tests cover relative to our test suite (which covers 75% of the reference solution). Thus, your grade = your coverage / our coverage * 100%. If _any_ of your tests pass when given invalid/unexpected results, this indicates that your tests are ineffective (i.e. they always pass regardless of behaviour of the code under test, which is the default behaviour) and you will receive a grade of 0. The starter code contains an invalid "implementation" of the D1 spec so all of your tests should **fail** when you run them locally.
+For this deliverable, you will read the [Deliverable 1](Deliverable1.md) specification, extract detailed requirements, and then turn the requirements you identified into a set of tests. Specifically, you will be writing unit tests for the three methods of the `InsightFacade` class in `./src/controller/InsightFacade.ts`. You should not modify any files under the `src/` directory.
 
-You should be strategic when writing your tests so that you maximize coverage with as few tests as possible. Since the methods in InsightFacade handle complicated logic, you will need to cleverly construct a set of inputs that causes all of the logic in the method to be executed. These tests will form the basis of your personal test suite for the remainder of the project. 
+Your grade will be computed using the following formula which is explained below:
+> 0.8 * (coverage percentage)^2 + 0.2 * percentage of valid tests
 
-Because you have no way of checking how much of the reference solution your are covering on your local computer, you will need to rely on [AutoTest](AutoTest.md) to determine your progress. This service is rate limited so you will want to **start early**.
+As you can see, your grade for this deliverable is largely based on how much of the reference solution your tests cover. Because it can be relatively easy to cover up to 80% of the reference implementation but difficult to cover all 100%, the percentage of covered lines will be squared when computing your grade. To ensure that you write effective tests (tests that have proper asserts that are actually checked), some of your grade will based on the percentage of tests that pass and fail as expected. Specifically, your tests should fail when you run them locally against the invalid implementation of InsightFacade provided in the starter code but pass when run against a valid implementation on [AutoTest](AutoTest.md). Note that in this project, _tests pass by default_ if you don't include or check assertions in your tests. Therefore, you must make sure you have explicitly defined asserts for every code path in every test and that the asserts check the correct conditions. These tests will form the basis of your personal test suite for the remainder of the project.
 
-## Writing tests
-We will be using the [Mocha Test Environment](https://mochajs.org/) with [Chai Expectations](http://chaijs.com/api/bdd/) for testing. Below are the two tests given in the starter code. They are functionally equivalent but use different language features. You should pick the style you are comfortable with and use it consistently when writing your tests.
+Because you have no way of checking how much of the reference solution your are covering on your local computer, you will need to rely on AutoTest to determine your progress. This service is rate limited so you will want to **start early**.
 
-While the tests may seem intimidating (largely due the asynchronous nature of the methods we are testing), you will mostly be able to copy and paste tests, only having to make small changes. Also, you can read through the resources in the next section and come to the tutorial during the second lecture.
+## Developing your deliverable
 
-```JS
-    it("Should add the courses dataset", function () {
-        const id: string = "courses";
-        const path: string = datasets[id];
+We will be using the [Mocha Test Environment](https://mochajs.org/) with [Chai Expectations](http://chaijs.com/api/bdd/) for testing. You should add additional tests to `test/InsightFacade.spec.ts` and execute them with `yarn test`. Since `InsightFacade` is not correctly implemented in the starter code, any tests you add should **_FAIL_**.
 
-        // Start reading the file that contains our data...
-        return TestUtil.readFileAsync(path).then(function (content: Buffer) {
-            // once the file has been read, we can add it to our InsightFacade... 
-            return insightFacade.addDataset(id, content.toString('base64')).then(function (response: InsightResponse) {
-                // once the dataset has been added, we can check the return value of the addDataset is as expected.
-                Log.test("Response from addDataset was " + JSON.stringify(response));
-                expect(response.code).to.equal(204);  // Note the status code
-            });
-        }).catch(function (err: any) {
-            TestUtil.reportError(err);
-            expect.fail();
-        });
-    });
-```
+To fully test the `addDataset` method, you'll need to generate additional zip files with differing content.
+We recommend you place all of your test zip files in `test/data` and follow the test structure already in place in `InsightFacade.spec.ts`.
+Specifically, you can add your additional zip files to the `datasets` object and then test `addDataset` against each of your zip files by duplicating the "Should add the courses dataset" test.
 
-```JS
-    it("Should add the courses dataset again", async () => {
-        const id: string = "courses";
-        const path: string = datasets[id];
+When writing tests for the `performQuery` method, you will find that the tests have a common structure: define a query to test and the corresponding results and check that `performQuery` returns the correct results for the given query.
+To simplify this process (and to ensure that `InsightFacade.spec.ts` file doesn't become cluttered) we have included the ability to define test queries and results in separate files.
+These files are used to automatically generate tests that check whether the query returns the correct results.
+Thus, in addition to writing tests in `InsightFacade.spec.ts` using `it()`, you can also write tests for `performQuery` by creating new json files in `test/queries`.
+See the two examples `q1.json` and `q2.json` already included to get a sense of the JSON structure (which is explicitly defined in `query.schema.json`).
+As you add more valid JSON files to `files/queries` you'll see that the number of tests that are run increases which is a sign that things are working as expected.
 
-        try {
-            // Wait here until the file that contains our data has been read...
-            const content: Buffer = await TestUtil.readFileAsync(path);
-            // Then, wait here until we get the response from addDataset...
-            const response: InsightResponse = await insightFacade.addDataset(id, content.toString('base64'));
-            // Finally, we can check that the result is as expected.
-            Log.test(`Response from addDataset was ${JSON.stringify(response)}`);
-            expect(response.code).to.equal(201);  // Note the status code
-        }
-        catch (err) {
-            TestUtil.reportError(err);
-            expect.fail();
-        }
-    });
-```
+## Getting your grade
+
+This will be an individual deliverable (the only one in the project). It is worth 10% of your final grade. We will run [MOSS](https://theory.stanford.edu/~aiken/moss/) on all submissions so please make sure your work is your own. Your project is automatically graded every time you _push_ to GitHub with the command `git push`. Your grade will be the maximum grade you received from all submissions (commits in git terminology) made before the hard deadline (Jan 15). While we compute your grade on every submission, you will only be able to request to see your grade once every 12h hours. You can request your grade by mentioning `@autobot` in a commit comment. Refer to [AutoTest.md](AutoTest.md) for additional details.
+
+You cannot use any library package that is not explicitly specified in package.json. Your implementation must be in TypeScript and must compile without error.
 
 ## Resources
-  - [Git Tutorial](../resources/git.md)
-  - [TypeScript/JavaScript Tutorial](../resources/typescript.md)
-  - [Asynchronous Development Tutorial](../resources/async.md)
-  - [Promises Tutorial](../resources/promises.md)
 
--->
-
+- [Git Tutorial](../resources/git.md)
+- [TypeScript/JavaScript Tutorial](../resources/typescript.md)
+- [Asynchronous Development Tutorial](../resources/async.md)
+- [Promises Tutorial](../resources/promises.md)
 
 <!-- D1 coverage for reference solution (can be deleted)
   50 passing (8s)

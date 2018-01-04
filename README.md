@@ -88,7 +88,7 @@ For *project / language help*, there will be 12 hours of labs and 12 hours of TA
 
 #### Lectures: 
 
-* 201: Tuesday/Thursday 1230-1400 in DMP 310 (**NOTE: THIS MAY CHANGE!**)
+* 201: Tuesday/Thursday 1230-1400 in FSC 1005 (**NOTE: NOT Dempster!**)
 
 <!--
 * 201: MWF 0900-0950: [PHARM 1201](https://www.google.ca/maps/place/UBC+Faculty+of+Pharmaceutical+Sciences/@49.2615914,-123.2486782,17z/data=!4m21!1m15!4m14!1m6!1m2!1s0x548672cbc595e6a1:0xab34e40e58012409!2sICICS+Computer+Science,+2366+Main+Mall,+Vancouver,+BC+V6T+1Z4!2m2!1d-123.2488201!2d49.2611817!1m6!1m2!1s0x548672c8e6d17b6b:0x2f4024c0ac3282d9!2sUBC+Faculty+of+Pharmaceutical+Sciences,+Pharmaceutical+Sciences+Building,+Wesbrook+Mall,+Vancouver,+BC+V6T+1Z3!2m2!1d-123.243277!2d49.262386!3m4!1s0x0000000000000000:0x2f4024c0ac3282d9!8m2!3d49.2623861!4d-123.2432771).

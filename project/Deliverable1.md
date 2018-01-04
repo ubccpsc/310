@@ -1,28 +1,32 @@
-# Project Sprint 1 (d1) 
-
-# TBD
-
-<!--
-NOTE: this will not be the same
-
-# Deliverable 1: insightUBC Query Engine
+# Project Sprint 1 (d1)
 
 UBC has a wide variety of courses. This deliverable will focus on importing data about these courses into your project and enabling flexible querying over these data with a flexible domain-specific query language.
 
-This deliverable will be completed in pairs. It is worth 10% of your final grade. You will not have to hand anything in; we will pull from your project repo at 0800 AM on February 6, 2017. If you have not specified your team yet, please do so using the ClassPortal at [http://skaha.cs.ubc.ca:11310](http://skaha.cs.ubc.ca:11310). We will create project repos every morning between 0800-0900; all work must take place in this repo (for all four deliverables). You **must** specify your team by 0800 AM on Monday 16. We will run [MOSS](https://theory.stanford.edu/~aiken/moss/) on all submissions so please make sure your work is your own.
+This deliverable will be completed in pairs. It is worth 10% of your final grade. You will not have to hand anything in; we will pull from your project repo at 0800 AM on February 6, 2018. If you have not specified your team yet, please do so using the ClassPortal at [https://portal.cs.ubc.ca/](https://portal.cs.ubc.ca/). We will create project repos every morning between 0800-0900; all work must take place in this repo (for all four deliverables). You **must** specify your team by 0800 AM on Monday 16. We will run [MOSS](https://theory.stanford.edu/~aiken/moss/) on all submissions so please make sure your work is your own.
 
 You are responsible for the software design and implementation. You cannot use any library package that is not already specified in ```package.json```. Your implementation must be in TypeScript. While we will not be directly examining your source code, you will undoubtably end up showing it to the TAs as you explain your design in the post-submission debrief that will take place in lab February 6-10).
 
 ## Dataset
 
-This data has been obtained from [UBC PAIR](http://pair.ubc.ca/) and has not been modified in any way. The data is provided as a zip file: inside of the zip you will find a file for each of the courses offered at UBC. Each of those file contains JSON object containing the information about each offering of the course and you will need to parse it in an adequate data structure of your choice. Valid datasets will be valid zip files and will contain **at least** one valid course section; if either of these is not true the dataset can be considered invalid.
+This data has been obtained from UBC PAIR and has not been modified in any way. The data is provided as a zip file: inside of the zip you will find a file for each of the courses offered at UBC. Each of those file contains JSON object containing the information about each offering of the course.
 
-You are **not** allowed to store the data in a database, but you are encouraged to process the data into a format of your choosing that you can persist (cache) to disk for quicker or more convenient access. Make sure you do not commit this cached file to version control or AutoTest will figure it out and tests will fail in ways you do not expect.
+The dataset zip file can be found here: [courses.zip](project/courses.zip)
 
-You are **not** allowed to modify the data in any way other than to convert it to the data structure. Your implementation will be tested with the original copy of the dataset, so any modification will most likely lead to tests failing.
+**Checking the validity of the dataset**
 
-The dataset zip file can be found here: [https://github.com/ubccpsc/310/blob/2017jan/project/courses.zip](https://github.com/ubccpsc/310/blob/2017jan/project/courses.zip)
+A **valid** dataset: 
+- Has to be a valid zip file; this zip will contain many files under a folder called `courses/`. 
+- Valid courses will only be `.json` files.
+- Each JSON file represents a course and can contain zero or more course sections. 
+- A valid dataset has to contain **at least one valid course section** that meets the requirements above.
 
+**Reading and Parsing the Dataset**
+
+You will need to parse valid input files into internal objects or other data structures.  You are not allowed to store the data in a database.  You must also persist (cache) the model to disk for quicker access.  Do not commit this cached file to version control, or AutoTest will fail in unpredictable ways.
+
+You are not allowed to modify the data in any way other than to convert it to the data structure. Your implementation will be tested with the original copy of the dataset, so any modification will most likely lead to tests failing.
+
+There is a provided package called JSZip that you should use to process/unzip the data you are passed in your addDataset method (described below).
 
 ## Query Engine
 
@@ -35,7 +39,7 @@ The goal of the deliverable is to build the backend to reply to query about the 
 QUERY ::='{'BODY ', ' OPTIONS '}'
 
 BODY ::= 'WHERE:{'  FILTER '}'
-OPTIONS ::= 'OPTIONS:{' COLUMNS ', ' ('ORDER:' key ', ')? VIEW '}'
+OPTIONS ::= 'OPTIONS:{' COLUMNS ', ' ('ORDER:' key )?'}'
 
 FILTER ::= (LOGICCOMPARISON | MCOMPARISON | SCOMPARISON | NEGATION)
 
@@ -48,25 +52,32 @@ LOGIC ::= 'AND' | 'OR'
 MCOMPARATOR ::= 'LT' | 'GT' | 'EQ' 
 
 COLUMNS ::= 'COLUMNS:[' (key ',')* key ']' 
-VIEW ::= 'FORM : TABLE'  
 
 key ::= string '_' string
 ```
 
-An [alternate representation](Deliverable1_EBNF.xhtml) of the EBNF is also available (Download and open in a browser to see)
+**Syntactic Checking (Parsing)**
 
-### OPTIONS
+Your query engine must test the validity of input queries against the grammar.  It must then store the query in a structure (related objects, objects in an AST, or other data structure of your choice) such that you can perform the query as indicated by the semantics below.  The hierarchy of that structure should likely match that of the incoming JSON.
 
-```'ORDER': key``` // string is the column name to sort on; the string _must_ be in the ```COLUMNS``` array or the query is invalid
+Error responses for failed parsing are provided below in the specification for the `performQuery` method
 
-```'FORM': 'TABLE'``` // specifies the return format (see examples below)
+**Semantic Checking**
 
-###Valid keys
+Semantic checks are typically performed on the existing (validated) AST. Type checking is an example of a semantic check.  In this project you must perform the following semantic check:
+
+`'ORDER': key` where key (a string) is the column name to sort on; the key must be in the COLUMNS array or the query is invalid
+
+### Valid keys
 
 In order to maintain readability of the queries, you are not allowed to use the key contained in data. Rather, you will have to build a vocabulary that will translate the keys in the query to the keys that you will use to query the data.
-Valid keys are composed by two parts, separated by an underscore. For this deliverable, the first part will always be ```courses```; this will correspond to the ```id``` provided to the ```PUT``` endpoint. The second part is the key itself is.
 
-The queries you will run will be using the following keys:
+Valid keys are composed by two parts, separated by an underscore: `<id>_<key>`
+
+- `<id>` is provided by the user and will be received through the `addDataset()` method, [check the API spec to better understand how it should work](https://github.ugrad.cs.ubc.ca/CPSC310-2017W-T2/staff/blob/master/deliverables/Deliverable1.md#api).
+- `<key>` is the key that represents a given piece of information. For this deliverable you will parse the following keys: `dept`, `id`, `instructor`, `title`, `pass`, `fail`, `audit`, `uuid`, and `avg`.
+
+For instance, if the `id` sent by the user is `courses`, then the queries you will run will be using the following keys:
 
 * **courses_dept**: ```string```; The department that offered the course.
 * **courses_id**: ```string```; The course number (will be treated as a string (e.g., 499b)).
@@ -78,8 +89,7 @@ The queries you will run will be using the following keys:
 * **courses_audit**: ```number```; The number of students that audited the course offering.
 * **courses_uuid**: ```string```; The unique id of a course offering.
 
-
-Note: these keys are different than may be present in the data. Since you are not allowed to modify the data, you will have to come up with a way to translate them.  
+Note: these keys are different than the ones present in the raw data. Since you are not allowed to modify the data, you will have to come up with a way to translate them.
 
 #### Query example
 
@@ -98,8 +108,7 @@ Two simple queries are shown below (these correspond to ```InsightResponse.body`
          "courses_dept",
          "courses_avg"
       ],
-      "ORDER":"courses_avg",
-      "FORM":"TABLE"
+      "ORDER":"courses_avg"
    }
 }
 ```
@@ -107,8 +116,7 @@ Two simple queries are shown below (these correspond to ```InsightResponse.body`
 The result for this would look like:
 
 ```
-{ render: 'TABLE',
-  result:
+{ result:
    [ { courses_dept: 'epse', courses_avg: 97.09 },
      { courses_dept: 'math', courses_avg: 97.09 },
      { courses_dept: 'math', courses_avg: 97.09 },
@@ -191,8 +199,7 @@ The result for this would look like:
          "courses_id",
          "courses_avg"
       ],
-      "ORDER":"courses_avg",
-      "FORM":"TABLE"
+      "ORDER":"courses_avg"
    }
 }
 ```
@@ -200,8 +207,7 @@ The result for this would look like:
 The result of this query would be:
 
 ```
-{ render: 'TABLE',
-  result:
+{ result:
    [ { courses_dept: 'adhe', courses_id: '329', courses_avg: 90.02 },
      { courses_dept: 'adhe', courses_id: '412', courses_avg: 90.16 },
      { courses_dept: 'adhe', courses_id: '330', courses_avg: 90.17 },
@@ -262,9 +268,21 @@ The result of this query would be:
 
 ## API
 
+**Overview**:
+
+The API is comprised of three interfaces. You **must not** change the interface specifications.
+
+- `InsightResponse` is the interface for the objects your methods will fulfill with.
+- `IInsightFacade` is the front end (wrapper) for the query engine. In practice, it defines the endpoints for the deliverable. It provides several methods:
+- `addDataset(id: string, content: string): Promise<InsightResponse>` adds a dataset to the internal model, providing the id of the dataset, and the string of the content of the dataset.
+- `removeDataset(id: string): Promise<InsightResponse>` removes a dataset from the internal model, given the id.
+- `performQuery(query: any): Promise<InsightResponse>` performs a query on the dataset.  It first should parse and validate the input query, then perform semantic checks on the query, and finally evaluate the query if it is valid. 
+
+To implement the API you will likely have to create your own additional methods and classes.
+
 The high-level API you must support is shown below; these are methods we will provide you in your bootstrap project in ```src/controller/``` (there is also code in ```src/rest/``` but you do not need to worry about this yet).
 
-```
+```Typescript
 /*
  * This is the primary high-level API for the project. In this folder there should be:
  * A class called InsightFacade, this should be in a file called InsightFacade.ts.
@@ -361,7 +379,7 @@ export interface IInsightFacade {
 
 The best way to test your system is via your own unit test suite. You can write these unit tests by following the examples in ```test/``` and running them with ```yarn test```. This will be the quickest and easiest way to ensure your system is behaving correctly and to make sure regressions are not introduced as you proceed further in the project. We are currently also providing a [UI](http://skaha.cs.ubc.ca:11315/) for our solution for this deliverable so you can see what the expected values should be for the queries you are trying for your query.
 
-To ensure your code conforms with the API our marking suite expects you can run your code against AutoTest. You will not have source-level access this suite. You will be able to request to run it against your implementation every 12h by invoking the ```@CPSC310bot``` Github bot; full details will be available in the [AutoTest](AutoTest.md) documentation. The AutoTest suite will not be available for the first few days after the deliverable is released; use this time to read the deliverable and get started on your own implementation and tests. We will post to Piazza when the suite is available.
+To ensure your code conforms with the API our marking suite expects you can run your code against AutoTest. You will **not** have source-level access this suite. You will be able to request to run it against your implementation every 12h by invoking the ```@CPSC310bot``` Github bot; full details will be available in the [AutoTest](AutoTest.md) documentation. The AutoTest suite will not be available for the first few days after the deliverable is released; use this time to read the deliverable and get started on your own implementation and tests. We will post to Piazza when the suite is available.
 
 
 ## Getting started
@@ -370,7 +388,7 @@ This deliverable might seem intimidating, but keep in mind that this project has
 
 1. It consumes input data (the zip file).
 1. It transforms the data (according to the query).
-1. It returns a result (for all endpoints).
+1. It returns a result.
 
 There is no best way to get started, but you can consider each of these in turn. Some possible options that could be pursued in any order (or skipped entirely):
 
@@ -387,24 +405,14 @@ Trying to keep all of the requirements in mind at once is going to be overwhelmi
 ### Getting AutoTest to work
 
 1. Create a file ```src/controller/InsightFacade``` that contains a class called ```InsightFacade``` that implements the interface ```IInsightFacade```.
-1. Make sure the three methods in your ```InsightFacade``` class return a promise and that this promise _always_ settles. If all endpoints do not always settle, the AutoTest suite will timeout. Your D0 endpoints should have provided some insight into how to do this.
+1. Make sure the three methods in your ```InsightFacade``` class return a promise and that this promise _always_ settles. If all three methods do not always settle, the AutoTest suite will timeout. Your D0 methods should have provided some insight into how to do this.
 1. We will run your unit test suite and send you all of the output for any of your tests that fail. This is a great way to figure out why code that works on your machine fails on our infrastructure. It is also a good way for you to ensure your promises always settle.
 1. Your test suite should _not_ need to use ```JSZip```. Your test code can use ```fs``` to read the zip from disk and send the base64 string representation to ```InsightFacade``` which will _then_ use ```JSZip```. Also, your product (non-test) code should not read or write the zip file to disk, it should only read and write your data structure.
 
 ## Contribution statement
 
-In your repository, each teammate must commit a file called ```/D1-contrib_<GitHubId>.md```. This file is mandatory, not submitting it will result in a **0%** on the deliverable. The file should contain:
-
-* A header with the final test pass rate and coverage rate at the deadline (Monday @ 0800).
-* A short description of your concrete contributions to this deliverable's code. 
-* A series of clickable links to some of your key GitHub commits for this deliverable. 
-* If you do not have any (or very few) commits, you should explain your concrete contributions. This should be committed before you meet with your TAs in the lab as you will refer to this file in your meeting with them.
-* A few retrospective sentences about what went well this deliverable, what went poorly, and how you will approach the next deliverable differently.
+[Please refer to the README file for more information on contribution](https://github.com/ubccpsc/310/tree/2018jan#participation)
 
 ## Assessment
 
-The AutoTest suite will comprise 80% of your mark. The remaining 20% will be derived from your overall test coverage score. We will generate this score by running ```npm run cover```. Your grade will correspond to the fraction of lines your tests cover (e.g., 90% coverage will give you 18/20). Recognizing that hitting 100% will take more trouble than it is worth, we will give you a maximum 5% bonus for your coverage score, although you cannot get over 100% on this component. For example, if your coverage rate is 97% you will get 100%. If it is 76% you will get 81%. The retrospective multiplier (oral exam component) will apply to the AutoTest and Coverage values combined; failure to submit a contribution statement will result in a multiplier of 0.
-
--->
-
-
+[Please refer to the README file for more information on grading](project/README.md)
