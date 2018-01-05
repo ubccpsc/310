@@ -105,7 +105,7 @@ This list is a week-by-week guide only. Readings and videos will be updated thro
 | Week        | Tuesday Topic & Readings | Tuesday Videos | Thursday |
 | :--         |:--                                          | :-- | :-- |
 | Jan 2       | No Class Jan 2 | None | <ul><li>[Course Intro](readings/Introduction.md)</li><li>[Project](project/README.md)</li><li>[Teamwork](readings/Teamwork.md)</li><li>[Languages](readings/Languages.md)</li><li>Quick D0 introduction</li></ul> |
-| Jan 9       | [Testing](readings/Testing.md)| <ul><li>[TBD](tbd)</li><ul> | Effective testing in practice <!-- Test dev, TDD, assertions --> |
+| Jan 9       | [Testing](readings/Testing.md)| <ul><b>Introduction</b><li><a href="https://www.youtube.com/watch?v=Uamo4Ej0tWk">Why-Test</a></li><li><a href="https://www.youtube.com/watch?v=WKrvx7qCUDI">Terminology</a></li><li><a href="https://www.youtube.com/watch?v=ll1k3Pks3ZA">Properties-of-Tests</a></li><li><a href="https://www.youtube.com/watch?v=_Th3f9vks_w">Kinds-of-Tests</a></li><li><a href="https://www.youtube.com/watch?v=x2DWjxDiOQo">Unit-and-System-Properties</a></li><li><a href="https://www.youtube.com/watch?v=v0q1MKhSQVM">Red-Green-Refactor</a></li></ul>	<ul><b>White Box</b><li><a href="https://www.youtube.com/watch?v=iujQEm9oono">Introduction-to-Coverage</a></li><li><a href="https://www.youtube.com/watch?v=SC7R-QixRaU">Line-and-Statement-Coverage</a></li><li><a href="https://www.youtube.com/watch?v=YBiHn5vgKnM">Branch-and-Path-Coverage</a></li><li><a href="https://www.youtube.com/watch?v=2EBi66DYF5w">Coverage-Wrap-Up</a></li></ul><ul><b>Black Box</b><li><a href="https://www.youtube.com/watch?v=ttAAsNSPiXw">Equivalence-Class-Partitioning</a></li><li><a href="https://www.youtube.com/watch?v=5PtxXnwyU3Y">Input-Partitioning</a></li><li><a href="https://www.youtube.com/watch?v=0yvHDKI-DSA">Output-Partitioning</a></li><li><a href="https://www.youtube.com/watch?v=IRQU_fHKUa0">Boundary-Value-Analysis</a></li></ul> | Effective testing in practice <!-- Test dev, TDD, assertions --> |
 | Jan 16      | [Process & Agile](readings/Process.md)  | <ul><li>[TBD](tbd)</li></ul> | Sprint 1 introduction |
 | Jan 23      | <ul><li>[Specifications](readings/Specifications.md)</li><li>[User Stories](readings/SpecificationsUserStories.md)</li><li>[Async](readings/Async.md)</li></ul> | <ul><li>[TBD](tbd)</li><ul> |  Async programming |
 | Jan 30      | [Testability & Assertions](readings/TestabilityAssertions.md)   | <ul><li>[TBD](tbd)</li><ul> |  Applying testability |
@@ -177,14 +177,14 @@ WEEEK 2
 
 **There will not be any labs during the first week of class.**
 
-| Lab | Time				| 
-| :-- |:-- 				| 
-| L2A | Tue 13:30-15:30	| 
-| L2C | Wed 10:00-12:00	| 
-| L2E | Wed 16:00-18:00	| 
-| L2B | Thu 10:30-12:30	| 
-| L2F | Thu 17:00-19:00	|  
-| L2D | Fri 15:00-17:00	| 
+| Lab | Time				 | 
+| :-- |:-- 				 | 
+| L2A | Tue 13:30-15:30	 | 
+| L2C | Wed 10:00-12:00	 | 
+| L2E | Wed 16:00-18:00	 | 
+| L2B | Thu 10:30-12:30	 | 
+| L2F | Thu 17:00-19:00	 |  
+| L2D | Fri 15:00-17:00	 | 
 
 You will not have to specify your team until the week of Jan 16. Both team members will be required to attend each lab. During the week each deliverable is due, lab attendance will be verified by the TAs during the Oral Question process; absence will result in a grade of 0 for the deliverable.
 
@@ -273,14 +273,14 @@ The three deliverable reports (Week 5, 8, and 11) are not part of your participa
 | Week 2				| Jan 15 @ 1000 | TBD |
 | Week 3				| Jan 22 @ 1000 | TBD |
 | Week 4				| Jan 29 @ 1000 | TBD |
-| Week 5 (d1)				| Feb 5 @ 1000 | TBD |
+| Week 5 (d1)			| Feb 5 @ 1000 | TBD |
 | Week 6				| Feb 19 @ 1000 | TBD |
-| Week 7 (Midterm)			| N/A | N/A |
-| Week 8 (d2)				| Mar 5 @ 1000 | TBD |
+| Week 7 (Midterm)	| N/A | N/A |
+| Week 8 (d2)			| Mar 5 @ 1000 | TBD |
 | Week 9				| Mar 12 @ 1000 | TBD |
 | Week 10				| Mar 19 @ 1000 | TBD |
-| Week 11 (d3)				| Mar 26 @ 1000 | TBD |
-| Week 12 (Exit Survey)			| Apr 2 @ 1000 | TBD |
+| Week 11 (d3)		| Mar 26 @ 1000 | TBD |
+| Week 12 (Exit Survey)		| Apr 2 @ 1000 | TBD |
 
 ## Policies
 
