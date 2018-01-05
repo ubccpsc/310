@@ -186,7 +186,7 @@ WEEEK 2
 | L2F | Thu 17:00-19:00	|  
 | L2D | Fri 15:00-17:00	| 
 
-You will not have to specify your team until the week of Jan 16. Both team members will be required to attend each lab. 
+You will not have to specify your team until the week of Jan 16. Both team members will be required to attend each lab. During the week each deliverable is due, lab attendance will be verified by the TAs during the Oral Question process; absence will result in a grade of 0 for the deliverable.
 
 #### TA Office Hours
 
