@@ -2,9 +2,11 @@
 
 ### Final Submission: January 15 @ 1800
 
-Test-driven development (TDD) is a modern way of ensuring software is proven to meet requirements. As the name suggests, tests for every requirement  in the specification are written _before_ the specification is implemented in code. This makes it much easier to ensure the quality of the final project.
+Test-driven development (TDD) is one [modern technique](../readings/Process.md#tdd) for building software. As the name suggests, engineers write tests for every requirement in the specification _before_ they create the implementation. This makes it much easier to final product has at least a base level of testing.
 
 In terms of the course project, adopting TDD will ensure you understand all the requirements of the specification before getting buried in the details of your implementation. This is important because implementing code that doesn't meet the requirements _will_ increase the amount of work you need to do for the project.
+
+In this deliverable you will be reading a specification and writing a set of tests against that spec. To evaluate the completeness of your test suite for the spec we will execute your suite against our own system to measure how well your tests [cover](../readings/Testing.md#coverage) our implementation.
 
 ## Getting the starter code
 
