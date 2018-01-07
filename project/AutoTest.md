@@ -34,7 +34,7 @@ Learning how to write effective test cases takes time and practice. It is best t
 
 You will be able to submit your assignment for validation against the private test suite only once every 12 hours. The private suite will return limited information about the failures it encounters. Since this suite is rate limited, it is highly recommended you extend your project test suite to make your code as robust as possible before testing it against the private suite. There is no downside for submitting your deliverable to the private suite though, so you should make sure you do it at least once.
 
-AutoTest is invoked using a bot on GitHub. If you make a ```@CPSC310bot``` comment on a commit in GitHub the bot will be invoked. Test results will be reported back to the same comment when the test is complete. Some notes to keep in mind:
+AutoTest is invoked using a bot on GitHub. If you make a ```@autobot``` comment on a commit in GitHub the bot will be invoked. Test results will be reported back to the same comment when the test is complete. Some notes to keep in mind:
 
 * For the bot to be invoked, the commit must be on a branch in a configured repository. These will be configured as soon as all repos are set for the course.
 
