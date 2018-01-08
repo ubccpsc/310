@@ -40,7 +40,9 @@ AutoTest is invoked using a bot on GitHub. If you make a ```@autobot``` comment 
 
 * If your code does not cleanly compile (e.g., ```yarn build```), AutoTest will say that the 'tests failed to execute'.
 
-* If a test times out it will be 'skipped'. Your pass rate will be calculated as: ```pass / (pass + skip + fail)```. 
+* If a test times out it will be 'skipped'. Your pass rate will be calculated as: ```pass / (pass + skip + fail)```. To be safe about not hitting this timeout, try and ensure no individual test takes more than 5 seconds to run locally in your personal test suite.
+
+* Autobot will run your code on all commits, regardless of if you call it. This means that you may get messages/emails about build failures even if you don't call the bot. Sometimes when the processing queue is long, you may get emails about old commits, this is fine and won't affect your most recent commits.
 
 We will monitor test suite executions to ensure that our tests are correct; if we encounter a problem we will post to the class forum.
 
