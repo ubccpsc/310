@@ -177,8 +177,7 @@ WEEEK 2
 
 <!-- **There will not be any labs during the first week of class.** -->
 
-If you are on the waitlist, please attend any lab that works for you until you are able to get in the course. Lab sections must be finalized by the add/drop date.
-
+If you are on the waitlist, please attend any lab that works for you until you are able to get in the course. Lab sections must be finalized by the add/drop date. If you have course conflicts in your schedule that prevent you taking labs with available seats, please talk to the CS advisors; unfortunately the course staff is not able to control who is in the lab or lecture.
 
 | Lab | Time				 | 
 | :-- |:-- 				 | 
