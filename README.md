@@ -175,7 +175,10 @@ WEEEK 2
 
 #### Labs:
 
-**There will not be any labs during the first week of class.**
+<!-- **There will not be any labs during the first week of class.** -->
+
+If you are on the waitlist, please attend any lab that works for you until you are able to get in the course. Lab sections must be finalized by the add/drop date.
+
 
 | Lab | Time				 | 
 | :-- |:-- 				 | 
