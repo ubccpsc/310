@@ -411,7 +411,7 @@ Trying to keep all of the requirements in mind at once is going to be overwhelmi
 
 ## Contribution statement
 
-[Please refer to the README file for more information on contribution](https://github.com/ubccpsc/310/tree/2018jan#participation)
+A survey will be required to detail your contribution to your group's project. This will involve a [mandatory survey](https://github.com/ubccpsc/310/tree/2018jan/README.md#participation). Failure to submit the survey by the final deadline will result in a grade of 0 for the deliverable (for the individual who did not submit it, not the whole group).
 
 ## Assessment
 
