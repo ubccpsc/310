@@ -409,10 +409,6 @@ Trying to keep all of the requirements in mind at once is going to be overwhelmi
 1. We will run your unit test suite and send you all of the output for any of your tests that fail. This is a great way to figure out why code that works on your machine fails on our infrastructure. It is also a good way for you to ensure your promises always settle.
 1. Your test suite should _not_ need to use ```JSZip```. Your test code can use ```fs``` to read the zip from disk and send the base64 string representation to ```InsightFacade``` which will _then_ use ```JSZip```. Also, your product (non-test) code should not read or write the zip file to disk, it should only read and write your data structure.
 
-## Contribution statement
-
-[Please refer to the README file for more information on contribution](https://github.com/ubccpsc/310/tree/2018jan#participation)
-
 ## Assessment
 
 [Please refer to the README file for more information on grading](project/README.md)
