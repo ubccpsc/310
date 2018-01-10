@@ -368,7 +368,7 @@ export interface IInsightFacade {
      *
      * 200: the query was successfully answered. The result should be sent in JSON according in the response body.
      * 400: the query failed; body should contain {"error": "my text"} providing extra detail.
-     * 424: the query failed because it depends on an id that has not been added. The body should contain {"missing": ["id1", "id2"...]}.      * Note: 424 errors take precidence over 400 errors, if both occur in the same query.
+     * 424: the query failed because it depends on an id that has not been added. The body should contain {"error": "my text"}.      * Note: 424 errors take precidence over 400 errors, if both occur in the same query.
      *
      */
     performQuery(query: QueryRequest): Promise<InsightResponse>;
@@ -379,7 +379,7 @@ export interface IInsightFacade {
 
 The best way to test your system is via your own unit test suite. You can write these unit tests by following the examples in ```test/``` and running them with ```yarn test```. This will be the quickest and easiest way to ensure your system is behaving correctly and to make sure regressions are not introduced as you proceed further in the project. We are currently also providing a [UI](http://skaha.cs.ubc.ca:11315/) for our solution for this deliverable so you can see what the expected values should be for the queries you are trying for your query.
 
-To ensure your code conforms with the API our marking suite expects you can run your code against AutoTest. You will **not** have source-level access this suite. You will be able to request to run it against your implementation every 12h by invoking the ```@CPSC310bot``` Github bot; full details will be available in the [AutoTest](AutoTest.md) documentation. The AutoTest suite will not be available for the first few days after the deliverable is released; use this time to read the deliverable and get started on your own implementation and tests. We will post to Piazza when the suite is available.
+To ensure your code conforms with the API our marking suite expects you can run your code against AutoTest. You will **not** have source-level access this suite. You will be able to request to run it against your implementation every 12h by invoking the ```@autobot``` Github bot; full details will be available in the [AutoTest](AutoTest.md) documentation. The AutoTest suite will not be available for the first few days after the deliverable is released; use this time to read the deliverable and get started on your own implementation and tests. We will post to Piazza when the suite is available.
 
 
 ## Getting started
