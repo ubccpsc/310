@@ -271,8 +271,8 @@ The three deliverable reports (Week 5, 8, and 11) are not part of your participa
 | Week					| Due	| Link | 
 | :--			   		| :-- 	| :-- |
 | Week 0 (Entrance Survey)		| Jan 19 @ 1000 | [Form](https://ubc.ca1.qualtrics.com/jfe/form/SV_71KghhL7i1DcYMB) |
-| Week 1				| Jan 8 @ 1000 | [Form](https://ubc.ca1.qualtrics.com/jfe/form/SV_bIYvQ7jiSSa6O6V) |
-| Week 2				| Jan 15 @ 1000 | TBD |
+| Week 1				| Jan 8 @ 1000 | Expired |
+| Week 2				| Jan 15 @ 1000 | [Form](https://ubc.ca1.qualtrics.com/jfe/form/SV_6PR7Me3A5CudIsR) |
 | Week 3				| Jan 22 @ 1000 | TBD |
 | Week 4				| Jan 29 @ 1000 | TBD |
 | Week 5 (d1)			| Feb 5 @ 1000 | TBD |
