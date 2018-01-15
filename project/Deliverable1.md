@@ -274,7 +274,7 @@ The API is comprised of three interfaces. You **must not** change the interface 
 
 - `InsightResponse` is the interface for the objects your methods will fulfill with.
 - `IInsightFacade` is the front end (wrapper) for the query engine. In practice, it defines the endpoints for the deliverable. It provides several methods:
-- `addDataset(id: string, content: string): Promise<InsightResponse>` adds a dataset to the internal model, providing the id of the dataset, and the string of the content of the dataset.
+- `addDataset(id: string, content: string, type: InsightDatasetType): Promise<InsightResponse>` adds a dataset to the internal model, providing the id of the dataset, the string of the content of the dataset, and the type of the dataset, in this deliverable the type of the dataset will be **courses**.
 - `removeDataset(id: string): Promise<InsightResponse>` removes a dataset from the internal model, given the id.
 - `performQuery(query: any): Promise<InsightResponse>` performs a query on the dataset.  It first should parse and validate the input query, then perform semantic checks on the query, and finally evaluate the query if it is valid. 
 
@@ -330,7 +330,7 @@ export interface IInsightFacade {
      * is invalid.
      *
      */
-    addDataset(id: string, content: string): Promise<InsightResponse>;
+    addDataset(id: string, content: string, type: InsightDatasetType): Promise<InsightResponse>;
 
     /**
      * Remove a dataset from UBCInsight.
