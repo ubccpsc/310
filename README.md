@@ -179,14 +179,14 @@ WEEEK 2
 
 If you are on the waitlist, please attend any lab that works for you until you are able to get in the course. Lab sections must be finalized by the add/drop date. If you have course conflicts in your schedule that prevent you taking labs with available seats, please talk to the CS advisors; unfortunately the course staff is not able to control who is in the lab or lecture.
 
-| Lab | Time				 | 
-| :-- |:-- 				 | 
-| L2A | Tue 13:30-15:30	 | 
-| L2C | Wed 10:00-12:00	 | 
-| L2E | Wed 16:00-18:00	 | 
-| L2B | Thu 10:30-12:30	 | 
-| L2F | Thu 17:00-19:00	 |  
-| L2D | Fri 15:00-17:00	 | 
+| Lab | Time 		 | TAs 			| 
+| :-- |:-- 		 | :--			|
+| L2A | Tue 13:30-15:30	 | Annie, Arash, Lucas	|
+| L2C | Wed 10:00-12:00	 | Arash, Lucas, Raghav	|
+| L2E | Wed 16:00-18:00	 | Colin, Ena, Raghav	|
+| L2B | Thu 10:30-12:30	 | Annie, Colin, Ena	|
+| L2F | Thu 17:00-19:00	 | Annie, Colin, Ena 	|
+| L2D | Fri 15:00-17:00	 | Arash, Lucas, Raghav |
 
 You will not have to specify your team until the week of Jan 16. Both team members will be required to attend each lab. During the week each deliverable is due, lab attendance will be verified by the TAs during the Oral Question process; absence will result in a grade of 0 for the deliverable.
 
