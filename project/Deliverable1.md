@@ -398,7 +398,7 @@ export interface IInsightFacade {
      * Return codes:
      * 200: The list of added datasets was sucessfully returned.
      */
-    public listDatasets(): Promise<InsightResponse>;
+    listDatasets(): Promise<InsightResponse>;
 }
 
 ```
