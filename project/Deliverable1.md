@@ -277,7 +277,7 @@ The API is comprised of three interfaces. You **must not** change the interface 
 - `addDataset(id: string, content: string, kind: InsightDatasetKind): Promise<InsightResponse>` adds a dataset to the internal model, providing the id of the dataset, the string of the content of the dataset, and the kind of the dataset. For this deliverable the dataset kind will be _courses_.
 - `removeDataset(id: string): Promise<InsightResponse>` removes a dataset from the internal model, given the id.
 - `performQuery(query: any): Promise<InsightResponse>` performs a query on the dataset.  It first should parse and validate the input query, then perform semantic checks on the query, and finally evaluate the query if it is valid.
-- `listDatasets(): InsightDataset[]` returns InsightResponse containing the list of added datasets. This list contains the id, kind, and number of rows of each added dataset.
+- `listDatasets(): Promise<InsightResponse>` returns InsightResponse containing the list of added datasets. This list contains the id, kind, and number of rows of each added dataset.
 
 To implement the API you will likely have to create your own additional methods and classes.
 
