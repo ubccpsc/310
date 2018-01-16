@@ -274,28 +274,45 @@ The API is comprised of three interfaces. You **must not** change the interface 
 
 - `InsightResponse` is the interface for the objects your methods will fulfill with.
 - `IInsightFacade` is the front end (wrapper) for the query engine. In practice, it defines the endpoints for the deliverable. It provides several methods:
-- `addDataset(id: string, content: string): Promise<InsightResponse>` adds a dataset to the internal model, providing the id of the dataset, and the string of the content of the dataset.
+- `addDataset(id: string, content: string, kind: InsightDatasetKind): Promise<InsightResponse>` adds a dataset to the internal model, providing the id of the dataset, the string of the content of the dataset, and the kind of the dataset. For this deliverable the dataset kind will be _courses_.
 - `removeDataset(id: string): Promise<InsightResponse>` removes a dataset from the internal model, given the id.
-- `performQuery(query: any): Promise<InsightResponse>` performs a query on the dataset.  It first should parse and validate the input query, then perform semantic checks on the query, and finally evaluate the query if it is valid. 
+- `performQuery(query: any): Promise<InsightResponse>` performs a query on the dataset.  It first should parse and validate the input query, then perform semantic checks on the query, and finally evaluate the query if it is valid.
+- `listDatasets(): InsightDataset[]` returns InsightResponse containing the list of added datasets. This list contains the id, kind, and number of rows of each added dataset.
 
 To implement the API you will likely have to create your own additional methods and classes.
 
 The high-level API you must support is shown below; these are methods we will provide you in your bootstrap project in ```src/controller/``` (there is also code in ```src/rest/``` but you do not need to worry about this yet).
 
-```Typescript
+```typescript
 /*
  * This is the primary high-level API for the project. In this folder there should be:
  * A class called InsightFacade, this should be in a file called InsightFacade.ts.
  * You should not change this interface at all or the test suite will not work.
  */
+import {IQueryRequest} from "./QueryController";
 
 export interface InsightResponse {
     code: number;
-    body: {}; // the actual response
+    body: InsightResponseSuccessBody | InsightResponseErrorBody; // The actual response
 }
 
-export interface QueryRequest {
-    // you can define your own structure that complies with the EBNF here
+export interface InsightResponseSuccessBody {
+    result: any[] | string;
+}
+
+export interface InsightResponseErrorBody {
+    error: string;
+}
+
+export enum InsightDatasetKind {
+    Courses = "courses",
+    Rooms = "rooms"
+}
+
+export interface InsightDataset {
+    id: string;
+    kind: InsightDatasetKind;
+    numRows: number;
 }
 
 export interface IInsightFacade {
@@ -304,8 +321,8 @@ export interface IInsightFacade {
      * Add a dataset to UBCInsight.
      *
      * @param id  The id of the dataset being added.
-     * @param content  The base64 content of the dataset. This content should be in the
-     * form of a serialized zip file.
+     * @param content  The base64 content of the dataset. This content should be in the form of a serialized zip file.
+     * @param kind  The kind of the dataset
      *
      * The promise should return an InsightResponse for both fulfill and reject.
      *
@@ -321,16 +338,13 @@ export interface IInsightFacade {
      *
      * Response codes:
      *
-     * 201: the operation was successful and the id already existed (was added in
-     * this session or was previously cached).
-     * 204: the operation was successful and the id was new (not added in this
-     * session or was previously cached).
+     * 204: the operation was successful
      * 400: the operation failed. The body should contain {"error": "my text"}
      * to explain what went wrong. This should also be used if the provided dataset
-     * is invalid.
+     * is invalid or if it was added more than once with the same id.
      *
      */
-    addDataset(id: string, content: string): Promise<InsightResponse>;
+    addDataset(id: string, content: string, kind: InsightDatasetKind): Promise<InsightResponse>;
 
     /**
      * Remove a dataset from UBCInsight.
@@ -368,11 +382,18 @@ export interface IInsightFacade {
      *
      * 200: the query was successfully answered. The result should be sent in JSON according in the response body.
      * 400: the query failed; body should contain {"error": "my text"} providing extra detail.
-     * 424: the query failed because it depends on an id that has not been added. The body should contain {"error": "my text"}.      * Note: 424 errors take precidence over 400 errors, if both occur in the same query.
-     *
      */
-    performQuery(query: QueryRequest): Promise<InsightResponse>;
+    performQuery(query: IQueryRequest): Promise<InsightResponse>;
+
+    /**
+     * List a list of datasets and their types.
+     *
+     * @return Promise <InsightResponse>
+     * The promise should return an InsightResponse containing the list of added datasets.
+     */
+    public listDatasets(): Promise<InsightResponse>;
 }
+
 ```
 
 ## Testing
