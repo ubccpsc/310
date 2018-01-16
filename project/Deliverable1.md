@@ -322,6 +322,8 @@ export interface IInsightFacade {
      * @param content  The base64 content of the dataset. This content should be in the form of a serialized zip file.
      * @param kind  The kind of the dataset
      *
+     * @return Promise <InsightResponse>
+     *
      * The promise should return an InsightResponse for both fulfill and reject.
      *
      * Fulfill should be for 2XX codes and reject for everything else.
@@ -348,6 +350,8 @@ export interface IInsightFacade {
      * Remove a dataset from UBCInsight.
      *
      * @param id  The id of the dataset to remove.
+     *
+     * @return Promise <InsightResponse>
      *
      * The promise should return an InsightResponse for both fulfill and reject.
      *
