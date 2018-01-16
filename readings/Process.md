@@ -119,8 +119,9 @@ TODO (from phoenix project):
 
 * [Why](http://spectrum.ieee.org/computing/software/why-software-fails) software fails article.
 
+<!-- link dead
 * [Jim Cordy's](http://research.cs.queensu.ca/home/cordy/cisc327/327%20Lecture%202%20Fall%202016.pdf) slides on software processes.
-
+-->
 
 ---
 [![](figures/CCSA.png "Creative Commons: Attribution-ShareAlike")](https://creativecommons.org/licenses/by-sa/3.0/) [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
