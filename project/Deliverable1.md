@@ -289,8 +289,6 @@ The high-level API you must support is shown below; these are methods we will pr
  * A class called InsightFacade, this should be in a file called InsightFacade.ts.
  * You should not change this interface at all or the test suite will not work.
  */
-import {IQueryRequest} from "./QueryController";
-
 export interface InsightResponse {
     code: number;
     body: InsightResponseSuccessBody | InsightResponseErrorBody; // The actual response
@@ -383,7 +381,7 @@ export interface IInsightFacade {
      * 200: the query was successfully answered. The result should be sent in JSON according in the response body.
      * 400: the query failed; body should contain {"error": "my text"} providing extra detail.
      */
-    performQuery(query: IQueryRequest): Promise<InsightResponse>;
+    performQuery(query: any): Promise<InsightResponse>;
 
     /**
      * List a list of datasets and their types.
