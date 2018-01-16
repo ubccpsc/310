@@ -45,7 +45,7 @@ FILTER ::= (LOGICCOMPARISON | MCOMPARISON | SCOMPARISON | NEGATION)
 
 LOGICCOMPARISON ::= LOGIC ':[{' FILTER ('}, {' FILTER )* '}]'  
 MCOMPARISON ::= MCOMPARATOR ':{' key ':' number '}'  
-SCOMPARISON ::= 'IS:{' key ':' [*]? string [*]? '}'  
+SCOMPARISON ::= 'IS:{' key ':' [*]? inputstring [*]? '}'  // inputstring may have option * characters as wildcards
 NEGATION ::= 'NOT :{' FILTER '}'
 
 LOGIC ::= 'AND' | 'OR' 
@@ -54,6 +54,7 @@ MCOMPARATOR ::= 'LT' | 'GT' | 'EQ'
 COLUMNS ::= 'COLUMNS:[' (key ',')* key ']' 
 
 key ::= string '_' string
+inputstring ::= [^*]+ //one or more of any character except asterisk.
 ```
 
 **Syntactic Checking (Parsing)**
