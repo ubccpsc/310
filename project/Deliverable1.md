@@ -331,7 +331,7 @@ export interface IInsightFacade {
      * is invalid.
      *
      */
-    addDataset(id: string, content: string, type: InsightDatasetType): Promise<InsightResponse>;
+    addDataset(id: string, content: string, kind: InsightDatasetKind): Promise<InsightResponse>;
 
     /**
      * Remove a dataset from UBCInsight.
@@ -369,7 +369,6 @@ export interface IInsightFacade {
      *
      * 200: the query was successfully answered. The result should be sent in JSON according in the response body.
      * 400: the query failed; body should contain {"error": "my text"} providing extra detail.
-     * 424: the query failed because it depends on an id that has not been added. The body should contain {"error": "my text"}.      * Note: 424 errors take precidence over 400 errors, if both occur in the same query.
      *
      */
     performQuery(query: QueryRequest): Promise<InsightResponse>;
