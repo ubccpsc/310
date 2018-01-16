@@ -277,7 +277,7 @@ The API is comprised of three interfaces. You **must not** change the interface 
 - `addDataset(id: string, content: string, kind: InsightDatasetKind): Promise<InsightResponse>` adds a dataset to the internal model, providing the id of the dataset, the string of the content of the dataset, and the kind of the dataset. For this deliverable the dataset kind will be _courses_.
 - `removeDataset(id: string): Promise<InsightResponse>` removes a dataset from the internal model, given the id.
 - `performQuery(query: any): Promise<InsightResponse>` performs a query on the dataset.  It first should parse and validate the input query, then perform semantic checks on the query, and finally evaluate the query if it is valid.
-- `listDatasets(): InsightDataset[]` returns InsightResponse containing the list of added datasets. This list contains the id, kind, and number of rows of each added dataset.
+- `listDatasets(): Promise<InsightResponse>` returns InsightResponse containing the list of added datasets. This list contains the id, kind, and number of rows of each added dataset.
 
 To implement the API you will likely have to create your own additional methods and classes.
 
@@ -322,6 +322,8 @@ export interface IInsightFacade {
      * @param content  The base64 content of the dataset. This content should be in the form of a serialized zip file.
      * @param kind  The kind of the dataset
      *
+     * @return Promise <InsightResponse>
+     *
      * The promise should return an InsightResponse for both fulfill and reject.
      *
      * Fulfill should be for 2XX codes and reject for everything else.
@@ -348,6 +350,8 @@ export interface IInsightFacade {
      * Remove a dataset from UBCInsight.
      *
      * @param id  The id of the dataset to remove.
+     *
+     * @return Promise <InsightResponse>
      *
      * The promise should return an InsightResponse for both fulfill and reject.
      *
@@ -387,7 +391,11 @@ export interface IInsightFacade {
      * List a list of datasets and their types.
      *
      * @return Promise <InsightResponse>
-     * The promise should return an InsightResponse containing the list of added datasets.
+     * The promise should return an InsightResponse and will only fulfill.
+     * The body of this InsightResponse will contain an InsightDataset[]
+     *
+     * Return codes:
+     * 200: The list of added datasets was sucessfully returned.
      */
     public listDatasets(): Promise<InsightResponse>;
 }
