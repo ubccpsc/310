@@ -388,7 +388,7 @@ export interface IInsightFacade {
      *
      * @return Promise <InsightResponse>
      * The promise should return an InsightResponse and will only fulfill.
-     * The body of this InsightResponse will hold InsightDataset[]
+     * The body of this InsightResponse will contain an InsightDataset[]
      *
      * Return codes:
      * 200: The list of added datasets was sucessfully returned.
