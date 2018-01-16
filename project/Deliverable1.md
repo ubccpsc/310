@@ -24,8 +24,6 @@ A **valid** dataset:
 
 You will need to parse valid input files into internal objects or other data structures.  You are not allowed to store the data in a database.  You must also persist (cache) the model to disk for quicker access.  Do not commit this cached file to version control, or AutoTest will fail in unpredictable ways.
 
-You are not allowed to modify the data in any way other than to convert it to the data structure. Your implementation will be tested with the original copy of the dataset, so any modification will most likely lead to tests failing.
-
 There is a provided package called JSZip that you should use to process/unzip the data you are passed in your addDataset method (described below).
 
 ## Query Engine
