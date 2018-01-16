@@ -307,6 +307,8 @@ export interface IInsightFacade {
      * @param id  The id of the dataset being added.
      * @param content  The base64 content of the dataset. This content should be in the
      * form of a serialized zip file.
+     * @param kind  The kind of the dataset
+     *
      *
      * The promise should return an InsightResponse for both fulfill and reject.
      *
