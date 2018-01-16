@@ -283,20 +283,36 @@ To implement the API you will likely have to create your own additional methods 
 
 The high-level API you must support is shown below; these are methods we will provide you in your bootstrap project in ```src/controller/``` (there is also code in ```src/rest/``` but you do not need to worry about this yet).
 
-```Typescript
+```typescript
 /*
  * This is the primary high-level API for the project. In this folder there should be:
  * A class called InsightFacade, this should be in a file called InsightFacade.ts.
  * You should not change this interface at all or the test suite will not work.
  */
+import {IQueryRequest} from "./QueryController";
 
 export interface InsightResponse {
     code: number;
-    body: {}; // the actual response
+    body: InsightResponseSuccessBody | InsightResponseErrorBody; // The actual response
 }
 
-export interface QueryRequest {
-    // you can define your own structure that complies with the EBNF here
+export interface InsightResponseSuccessBody {
+    result: any[] | string;
+}
+
+export interface InsightResponseErrorBody {
+    error: string;
+}
+
+export enum InsightDatasetKind {
+    Courses = "courses",
+    Rooms = "rooms"
+}
+
+export interface InsightDataset {
+    id: string;
+    kind: InsightDatasetKind;
+    numRows: number;
 }
 
 export interface IInsightFacade {
@@ -305,10 +321,8 @@ export interface IInsightFacade {
      * Add a dataset to UBCInsight.
      *
      * @param id  The id of the dataset being added.
-     * @param content  The base64 content of the dataset. This content should be in the
-     * form of a serialized zip file.
+     * @param content  The base64 content of the dataset. This content should be in the form of a serialized zip file.
      * @param kind  The kind of the dataset
-     *
      *
      * The promise should return an InsightResponse for both fulfill and reject.
      *
@@ -324,13 +338,10 @@ export interface IInsightFacade {
      *
      * Response codes:
      *
-     * 201: the operation was successful and the id already existed (was added in
-     * this session or was previously cached).
-     * 204: the operation was successful and the id was new (not added in this
-     * session or was previously cached).
+     * 204: the operation was successful
      * 400: the operation failed. The body should contain {"error": "my text"}
      * to explain what went wrong. This should also be used if the provided dataset
-     * is invalid.
+     * is invalid or if it was added more than once with the same id.
      *
      */
     addDataset(id: string, content: string, kind: InsightDatasetKind): Promise<InsightResponse>;
@@ -371,10 +382,9 @@ export interface IInsightFacade {
      *
      * 200: the query was successfully answered. The result should be sent in JSON according in the response body.
      * 400: the query failed; body should contain {"error": "my text"} providing extra detail.
-     *
      */
-    performQuery(query: QueryRequest): Promise<InsightResponse>;
-    
+    performQuery(query: IQueryRequest): Promise<InsightResponse>;
+
     /**
      * List a list of datasets and their types.
      *
@@ -383,6 +393,7 @@ export interface IInsightFacade {
      */
     listDatasets(): InsightDataset[];
 }
+
 ```
 
 ## Testing
