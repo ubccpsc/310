@@ -52,7 +52,7 @@ MCOMPARATOR ::= 'LT' | 'GT' | 'EQ'
 COLUMNS ::= 'COLUMNS:[' (key ',')* key ']' 
 
 key ::= string '_' string
-inputstring ::= [^*]+ //one or more of any character except asterisk.
+inputstring ::= [^*]* // zero or more of any character except asterisk.
 ```
 
 **Syntactic Checking (Parsing)**
