@@ -106,7 +106,7 @@ async function doSumAsync(filesWithNumbers: string[]): Promise<number> {
 
   // wait for each promise to resolve
   for (let file of promises) {
-    numbers.push.apply(numbers, await promiseNumbersInFile);
+    numbers.push.apply(numbers, await file);
   }
 
   // use the resolved values
