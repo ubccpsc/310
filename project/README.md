@@ -77,6 +77,12 @@ The best way to maximize your AutoTest and Coverage grades is to:
 
 You do not need to submit your code on the deliverable deadline; we will automatically pull your code from the master branch at the due date and run the tests against it. The state of your main branch at the moment the deliverable is due is your responsibility.
 
+#### NOTE: On gaming coverage
+
+Achieving 100% test coverage is often hard in practice. To account for this, we will increase your coverage score by 5% in our marking calculations (to a max of 100). The intent of the coverage component is for you to use white box testing to cover your own code; if you cannot invoke a block of code with your own unit and integration tests, we are unlikely to be able to either with our strictly integration-based test suite. Learning what code is important and can catch faults and what code is completely extraneous is an important skill, if you cannot devise a test case or input that can trigger a block, there is a real chance it is just technical debt adding needless complexity to your code. If we find projects that are artificially gaming the coverage metric by adding code solely designed to increase the total number of lines (to decrease the proportion of uncovered code), we will regrade the coverage score to 0 during the deliverable retrospective.
+
+#### Retrospectives & Questionnaire 
+
 The deliverable retrospective (oral questions) will assign individual marks to each teammate to make sure both teammates contributed fairly to the deliverable outcome. The range for this component is `[0..1]`. Each teammate should have a clear understanding of how the system works at a high level (the major components, data structures, design decisions, and algorithms). The answers to the oral questions will be used as a scaling factor on your AutoTest score (e.g., if you get 80% from AutoTest and 0.5 from the oral questions because it was clear you did not contribute effectively to the deliverable, your deliverable grade would be 40%).
 
 These oral questions will take place in labs the week the deliverable was due; if you do not attend this lab, you will receive 0 for the deliverable. Being an effective teammate involves both technical contribution _and_ teamwork; if one team member 'shuts out' the other from contributing to the project, this can also have a detrimental influence on both multipliers. Teammates should be courteous to one another by keeping open lines of communication, and by pulling their weight while ensuring that others have the opportunity to pull theirs too.
