@@ -8,12 +8,13 @@ Security comprises a huge space including physical security (e.g., key loggers),
 
 The DREAD model provides one way to think about security risks:
 
-> ```
+```
 risk =
-damage(1..10) + 
-reproducibility(1..10) +
-#users(1..10) +
-discoverability(1..10)
+damage (1..10) + 
+reproducibility (1..10) +
+expoloitability (1..10) +
+# users (1..10) +
+discoverability (1..10)
 ```
 
 Four high-level requirements pervade most software security discussions: 
