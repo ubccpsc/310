@@ -441,4 +441,4 @@ A survey will be required to detail your contribution to your group's project. T
 
 ## Assessment
 
-[Please refer to the README file for more information on grading](README.md)
+[Please refer to the README file for more information on grading](README.md#assessment)
