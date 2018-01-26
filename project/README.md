@@ -75,7 +75,7 @@ The best way to maximize your AutoTest and Coverage grades is to:
 
 1. Invoke AutoTest frequently to ensure you have not introduced regressions into your code. Remember: you can only submit to the private suite once every 12 hours and AutoTest will respond more slowly as the deadline approaches.
 
-You do not need to submit your code on the deliverable deadline; we will automatically pull your code from the master branch at the due date and run the tests against it. The state of your main branch at the moment the deliverable is due is your responsibility.
+You do not need to submit your code on the deliverable deadline; we will automatically run our tests against every push you make to your repository while the deliverable; your score will be the score of the highest push during this time (up until the end of the grace period).
 
 #### NOTE: On gaming coverage
 
