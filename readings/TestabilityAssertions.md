@@ -6,7 +6,7 @@ It is often necessary to restructure software that has not been written in a tes
 
 #### Controllability
 
-Tests dynamically execute the system. If the CUT cannot be programmatically controlled, an automated test cannot be written for it. There is often a controllability tradeoff between what code it is *possible* to write a test for and what code it is *efficient* to write a test for. For example, if you build a large system that embeds all of its logic tightly with its interface it can be impractical to validate how the system works without writing UI-tests, which are error prone and expensive. 
+Tests dynamically execute the system. If the system/code under test (SUT/CUT) cannot be programmatically controlled, an automated test cannot be written for it. There is often a controllability tradeoff between what code it is *possible* to write a test for and what code it is *efficient* to write a test for. For example, if you build a large system that embeds all of its logic tightly with its interface it can be impractical to validate how the system works without writing UI-tests, which are error prone and expensive. 
 
 #### Observability
 
