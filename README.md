@@ -274,13 +274,13 @@ The three deliverable reports (Week 5, 8, and 11) are not part of your participa
 | Week 2				| Jan 15 @ 1000 | Expired |
 | Week 3				| Jan 22 @ 1000 | Expired |
 | Week 4				| Jan 29 @ 1000 | Expired  |
-| Week 5 (d1)			| Feb 5 @ 1000 | [Form](https://ubc.ca1.qualtrics.com/jfe/form/SV_3elCWwbAR7a3UMZ) |
+| Week 5 (d1) **MANDATORY**	| Feb 6 @ 1000 | [Form](https://ubc.ca1.qualtrics.com/jfe/form/SV_3elCWwbAR7a3UMZ) |
 | Week 6				| Feb 19 @ 1000 | TBD |
 | Week 7 (Midterm)	| N/A | N/A |
-| Week 8 (d2)			| Mar 5 @ 1000 | TBD |
+| Week 8 (d2) **MANDATORY** | Mar 6 @ 1000 | TBD |
 | Week 9				| Mar 12 @ 1000 | TBD |
 | Week 10				| Mar 19 @ 1000 | TBD |
-| Week 11 (d3)		| Mar 26 @ 1000 | TBD |
+| Week 11 (d3) **MANDATORY** | Mar 27 @ 1000 | TBD |
 | Week 12 (Exit Survey)		| Apr 2 @ 1000 | TBD |
 
 ## Policies
