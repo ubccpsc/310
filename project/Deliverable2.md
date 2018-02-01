@@ -21,7 +21,10 @@ The dataset file can be found here [rooms.zip](https://github.com/ubccpsc/310/ra
 * All buildings linked from the index should be considered valid buildings.
     * A valid building will always be in HTML format.
     * Buildings not linked in the index should not be processed.
-* All valid datasets will have the same folder structure as seen in the provided zip file above
+
+Additionally, the following assumptions do not require validation:
+* There is a single ```index.htm``` file per dataset
+* Regardless of paths, there is a single file per building code, i.e. there will never be two files with the same name but in different paths
 
 
 
