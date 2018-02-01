@@ -21,6 +21,7 @@ The dataset file can be found here [rooms.zip](https://github.com/ubccpsc/310/ra
 * All buildings linked from the index should be considered valid buildings.
     * A valid building will always be in HTML format.
     * Buildings not linked in the index should not be processed.
+* All valid datasets will have the same folder structure as seen in the provided zip file above
 
 
 
@@ -54,7 +55,7 @@ interface GeoResponse {
 
 Since we are hosting this service it _could_ be killed by DOS attacks, please try not to overload the service. You should only need to query this when you are processing the initial dataset, not when you are answering queries.
 
-Also, we have removed ```request-promise-native``` from your allowed packages list. Therefore, you must use the ```http``` package. If you try to update your project with other third party packages AutoTest will fail in unpredictable ways.
+To handle the requests, you must use the ```http``` package. If you try to update your project with other third party packages AutoTest will fail in unpredictable ways.
 
 
 ## Query Engine
