@@ -227,21 +227,21 @@ Note: Even when AutoTest is heavily loaded your requests are queued and processe
 
 <!-- 2 weeks -->
 
-* January 15: ([Deliverable 0](project/Deliverable0.md)) This will be an individual deliverable and will be graded before the Add/Drop date. You should aim to exceed 70% on this deliverable if you want to succeed at the project.
+* January 15 @ 1800: ([Deliverable 0](project/Deliverable0.md)) This will be an individual deliverable and will be graded before the Add/Drop date. You should aim to exceed 70% on this deliverable if you want to succeed at the project.
 
 <!-- 3 weeks -->
 
-* January 29 (Feb 5 final sub): [Sprint 1](project/Deliverable1.md) The first project deliverable will be extremely challenging; it is important that you start working on this early.
+* January 29 (Feb 5 @ 1800 final sub): [Sprint 1](project/Deliverable1.md) The first project deliverable will be extremely challenging; it is important that you start working on this early.
 
 <!-- 4 weeks -->
 
-* February 26 (Mar 5 final sub): [Sprint 2](project/Deliverable2.md) An extra week has been added to this deliverable to help teams who fell behind in the first sprint recover.
+* February 26 (Mar 5 @ 1800 final sub): [Sprint 2](project/Deliverable2.md) An extra week has been added to this deliverable to help teams who fell behind in the first sprint recover.
 
 * February 27: Midterm (sample midterms are available through the CSSS)
 
 <!-- 3 weeks -->
 
-* March 19 (Mar 26 final sub): [Sprint 3](project/Deliverable3.md)
+* March 19 (Mar 26 @ 1800 final sub): [Sprint 3](project/Deliverable3.md)
 
 * Mar 26: [Project Quality Check](project/Deliverable4.md). There is nothing to hand in for this deliverable.
 
@@ -250,16 +250,16 @@ Note: Even when AutoTest is heavily loaded your requests are queued and processe
 
 To pass the course and receive credit you must achieve a passing grade on *both* the project and the final exam. Sample exams are available through the CSSS.
 
-| Component						| Proportion | 
-| :--			   					| :-- 	|
+| Component				| Proportion | 
+| :--			  		| :-- 	|
 | Deliverable 0 (d0)			| 10 %	|
 | Project Sprint 1 (d1)			| 10 %	|
 | Project Sprint 2 (d2)			| 10 %	|
 | Project Sprint 3 (d3)			| 10 %	|
-| Project Quality Check	 (d4)	| 10 %	|
-| Participation					| 5 %	|
-| Midterm Exam					| 10 %	|
-| Final Exam						| 35 %	|
+| Project Quality Check	 (d4)		| 10 %	|
+| Participation				| 5 %	|
+| Midterm Exam				| 10 %	|
+| Final Exam				| 35 %	|
 
 ## Participation
 
@@ -274,14 +274,14 @@ The three deliverable reports (Week 5, 8, and 11) are not part of your participa
 | Week 2				| Jan 15 @ 1000 | Expired |
 | Week 3				| Jan 22 @ 1000 | Expired |
 | Week 4				| Jan 29 @ 1000 | Expired  |
-| Week 5 (d1) **MANDATORY**	| Feb 6 @ 1000 | [Form](https://ubc.ca1.qualtrics.com/jfe/form/SV_3elCWwbAR7a3UMZ) |
+| Week 5 (d1 survey) **MANDATORY**	| Feb 6 @ 1000 | [Form](https://ubc.ca1.qualtrics.com/jfe/form/SV_3elCWwbAR7a3UMZ) |
 | Week 6				| Feb 19 @ 1000 | TBD |
-| Week 7 (Midterm)	| N/A | N/A |
-| Week 8 (d2) **MANDATORY** | Mar 6 @ 1000 | TBD |
+| Week 7 (Midterm)			| N/A | N/A |
+| Week 8 (d2 survey) **MANDATORY** 	| Mar 6 @ 1000 | TBD |
 | Week 9				| Mar 12 @ 1000 | TBD |
 | Week 10				| Mar 19 @ 1000 | TBD |
-| Week 11 (d3) **MANDATORY** | Mar 27 @ 1000 | TBD |
-| Week 12 (Exit Survey)		| Apr 2 @ 1000 | TBD |
+| Week 11 (d3 survey) **MANDATORY** 	| Mar 27 @ 1000 | TBD |
+| Week 12 (Exit Survey)			| Apr 2 @ 1000 | TBD |
 
 ## Policies
 
