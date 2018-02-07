@@ -76,7 +76,7 @@ Videos and practice problems for all course materials will be available through 
 Piazza will be used but has not been configured.
 -->
 
-[Piazza](piazza.com/ubc.ca/winterterm22017/cpsc310/home) has been configured for this term. Please see the instructor in person in class if you want to discuss course materials; only TAs will monitor Piazza. Please be mindful of the UBC Academic Misconduct Policy with respect to posting project solutions on Piazza. It is _extremely_ helpful if your Piazza name corresponds to your name in the SSC in the advent we need to help you with a problem with your project, repositories, or grades. 
+[Piazza](https://piazza.com/ubc.ca/winterterm22017/cpsc310/home) has been configured for this term. Please see the instructor in person in class if you want to discuss course materials; only TAs will monitor Piazza. Please be mindful of the UBC Academic Misconduct Policy with respect to posting project solutions on Piazza. It is _extremely_ helpful if your Piazza name corresponds to your name in the SSC in the advent we need to help you with a problem with your project, repositories, or grades. 
 
 When posting to Piazza please be sure to include your team number so the TAs can find your group's code in order to help you more effectively. Also, when asking TAs about failing tests in particular, the TAs will often want to see your own test for similar cases (usually this will take several tests) so you can demonstrate to them why you think your code is correct.
 
