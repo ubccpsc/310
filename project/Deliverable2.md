@@ -25,6 +25,7 @@ The dataset file can be found here [rooms.zip](https://github.com/ubccpsc/310/ra
 Additionally, the following assumptions do not require validation:
 * There is a single ```index.htm``` file per dataset
 * Regardless of paths, there is a single file per building code, i.e. there will never be two files with the same name but in different paths
+* All HTML elements and attributes associated with target data will be present in the same forms as in the provided zip file. 
 
 
 
