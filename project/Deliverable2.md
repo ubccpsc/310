@@ -11,7 +11,7 @@ This deliverable will expand the query engine  to enable result computation (e.g
 
 ## Dataset
 
-This data has been obtained from the UBC [Building and classrooms](http://students.ubc.ca/campus/discover/buildings-and-classrooms) listing. The data is provided as a zip file: inside of the zip you will find ```index.htm``` which specifies each building on campus. The links in the `index.htm` link to files also in the zip containing details about each building and room in HTML format. 
+This data has been obtained from the UBC [Building and classrooms](http://students.ubc.ca/campus/discover/buildings-and-classrooms) listing. The data is provided as a zip file: inside of the zip you will find ```index.htm``` which specifies each building on campus. The links in the `index.htm` link to files also in the zip containing details about each building and its rooms in HTML format. 
 
 The dataset file can be found here [rooms.zip](https://github.com/ubccpsc/310/raw/2018jan/project/rooms.zip).
 
@@ -81,7 +81,7 @@ At a high level, the new functionality adds:
     * You can sort using an object that directly specifies the sorting order (see query example)
         * ```"dir": "UP"```: Sort results ascending.
         * ```"dir": "DOWN"```: Sort results descending.
-        * ```"keys": "courses_avg"```: sorts by a single key
+        * ```"keys": ["courses_avg"]```: sorts by a single key
         * ```"keys": ["courses_year", "courses_avg"]```: sorts by multiple keys
             * In this example the course average should be used to resolve ties for courses in the same year
 
@@ -107,7 +107,7 @@ LOGIC ::= 'AND' | 'OR'
 MCOMPARATOR ::= 'LT' | 'GT' | 'EQ' 
 
 COLUMNS ::= 'COLUMNS:[' (key ',')* key ']' 
-SORT ::= 'ORDER: ' ('{ dir:'  DIRECTION ', keys: [ ' key (',' key)* ']}' | key) 
+SORT ::= 'ORDER: ' ('{ dir:'  DIRECTION ', keys: [ ' key (',' key)* ']}') | key 
 DIRECTION ::= 'UP' | 'DOWN'  
 
 GROUP ::= 'GROUP: [' (key ',')* key ']'                                                          
@@ -133,11 +133,11 @@ In addition to the semantic checking from Deliverable 1, you must perform the fo
 
 * If a ```GROUP``` is present, all ```COLUMNS``` terms must correspond to either ```GROUP``` terms or to terms defined in the ```APPLY``` block. 
 
-* `'SORT': key` - the key must be in the ```COLUMNS``` array or in the ```APPLY```. Otherwise, the query is invalid. The same check applies for sorting with multiple keys. 
+* ```'SORT'``` - Any keys provided must be in the ```COLUMNS```. Otherwise, the query is invalid. 
 
 * ```MAX/MIN/AVG``` should only be requested for numeric keys.
 
-* ```WHERE``` is completely independent of ```GROUP```/```APPLY```; your D1 solution for the ```WHERE``` clause doesn't necessarily need to change.
+* ```WHERE``` is completely independent of ```GROUP```/```APPLY```
 
 **Other JS/Typescript considerations**
 
@@ -173,7 +173,7 @@ If the ```id``` sent by the user is ```rooms```, then the queries you will run w
 
 We are also adding one field to the ```courses``` dataset: 
 
-* **courses_year**: ```number```; This key represents the year the course was offered. If the ``` "Section":"overall" ``` property is set, the year should be 1900.
+* **courses_year**: ```number```; This key represents the year the course was offered. If the ``` "Section" ``` property is set to ```"overall"```, the year for that section should be set to 1900.
 
 
 **Aggregation (step by step)**
