@@ -118,7 +118,7 @@ This list is a week-by-week guide only. Readings and videos will be updated thro
 | Mar 20      | <ul><li>[REST](readings/REST.md)</li><li>Intellectual Property [Slides](http://www.cs.ubc.ca/~murphy/cpsc310-2016w2/CPSC310_IP_2016W2.pdf)</li></ul>  | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/2042a4ecd013433ab5a1c552560617f4/38538ed0bd784c84a61786fa7671321d/">REST</a></li><li>IP TBD</li></ul> |  Designing REST APIs |
 | Mar 27      | Reading TBD | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/a58ebf5981e4464c93bccdbc69269898/c35573ebbc55428a9ca1ea4b723c7517/">Construction intro</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/a58ebf5981e4464c93bccdbc69269898/3875d339292e438aac0b991cf947a7a6/">Non-structural properties</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/a58ebf5981e4464c93bccdbc69269898/ee6367de9a534328bd673e35504c7249">Static analyses</a></li></ul> | TBD |
 | Apr 3       | <ul><li>[Automation](readings/Automation.md)</li><li>Refactoring & Smells</li></ul> | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/a58ebf5981e4464c93bccdbc69269898/a481ea3202e544b587454f5165c4e039/">Automation</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/a58ebf5981e4464c93bccdbc69269898/9261731c1c11441ca017720dd5e14c77/">Code Smells</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/a58ebf5981e4464c93bccdbc69269898/e2a756b14f1941ff88df6f8669febf73/">Refactoring</a></li></ul> | Refactoring to patterns |
-| TBD | Final Exam @ TBD (location TBD) | <ul><li>[None](https://www.youtube.com/watch?v=q1OtiefZKHU)</li><ul> |  Thursday TBD |
+| April 24 | Final Exam @ 1200 (location TBD) | <ul><li>[None](https://www.youtube.com/watch?v=q1OtiefZKHU)</li><ul> |  N/A |
 
 <!-- Industry Lecture - David Green, Tasktop Technologies -->
 
@@ -276,12 +276,13 @@ The three deliverable reports (Week 5, 8, and 11) are not part of your participa
 | Week 4				| Jan 29 @ 1000 | Expired  |
 | Week 5 (d1 survey) **MANDATORY**	| Feb 6 @ 1000 | Expired |
 | Week 6				| Feb 12 @ 1000 | [Form](https://ubc.ca1.qualtrics.com/jfe/form/SV_exG4J7poAfZh0dn) |
-| Week 7 (Midterm)			| N/A | N/A |
-| Week 8 (d2 survey) **MANDATORY** 	| Mar 6 @ 1000 | TBD |
-| Week 9				| Mar 12 @ 1000 | TBD |
-| Week 10				| Mar 19 @ 1000 | TBD |
-| Week 11 (d3 survey) **MANDATORY** 	| Mar 27 @ 1000 | TBD |
-| Week 12 (Exit Survey)			| Apr 2 @ 1000 | TBD |
+| Week 7 (Reading week) **NO SURVEY**   | N/A | N/A |
+| Week 8   			        | Feb 26 @ 1000 | TBD |
+| Week 9 (d2 survey) **MANDATORY** 	| Mar 6 @ 1000 | TBD |
+| Week 10				| Mar 12 @ 1000 | TBD |
+| Week 11				| Mar 19 @ 1000 | TBD |
+| Week 12 (d3 survey) **MANDATORY** 	| Mar 27 @ 1000 | TBD |
+| Week 13 (Exit Survey)			| Apr 2 @ 1000 | TBD |
 
 ## Policies
 
