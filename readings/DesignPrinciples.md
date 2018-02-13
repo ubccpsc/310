@@ -94,7 +94,7 @@ The Liskov substitution principle says:
 
 > Any object can be interchanged with any other object that has the same parent type. 
  
-For a complete coverage of this design principle. Since this has been covered in prior courses, we will not discuss it further here, but you are encouraged to watch [this video](XXX) for a more complete description.
+For a complete coverage of this design principle. Since this has been covered in prior courses, we will not discuss it further here, but you are encouraged to watch [this video](https://www.youtube.com/watch?v=j6jbTMpZkWQ) for a more complete description.
 
 ### Interface segregation
 
