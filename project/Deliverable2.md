@@ -107,8 +107,10 @@ LOGIC ::= 'AND' | 'OR'
 MCOMPARATOR ::= 'LT' | 'GT' | 'EQ' 
 
 COLUMNS ::= 'COLUMNS:[' (key ',')* key ']' 
-SORT ::= 'ORDER: ' ('{ dir:'  DIRECTION ', keys: [ ' key (',' key)* ']}' | key) 
+SORT ::= 'ORDER: ' ('{ dir:'  DIRECTION ', keys: [ ' ORDERKEY (',' ORDERKEY)* ']}') | ORDERKEY 
 DIRECTION ::= 'UP' | 'DOWN'  
+ORDERKEY ::= key | APPLYKEY
+
 
 GROUP ::= 'GROUP: [' (key ',')* key ']'                                                          
 APPLY ::= 'APPLY: [' (APPLYKEY (', ' APPLYKEY )* )? ']'  
@@ -148,6 +150,8 @@ In addition to the semantic checking from Deliverable 1, you must perform the fo
     2. Add the numbers being averaged (e.g., generate ```total```).
     3. Calculate the average (```var avg = total / numRows```).
     4. Trim the average to the second decimal digit (```var res = Number(avg.toFixed(2))```)
+
+* ```SUM``` should return a number rounded to two decimal places.
 
 * ```COUNT``` should return whole numbers.
 
