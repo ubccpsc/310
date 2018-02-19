@@ -3,8 +3,9 @@
 # UBC CPSC 310 - Software Engineering
 January 4, 2018 -> April 5, 2018 (```2017T2```). These are the official resources for both sections.
 
+<!-- 
 ## Please login to [here](https://github.ugrad.cs.ubc.ca/) using your CS Ugrad Id/Password by 1400 on January 4; this is required so we can provision your d0 repository.
-
+-->
 <!--
 ## This is a development-heavy four-credit course. Plan your timetable accordingly. If you are not familiar with TypeScript, please start looking at it now.
 -->
