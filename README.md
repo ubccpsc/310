@@ -10,13 +10,15 @@ January 4, 2018 -> April 5, 2018 (```2017T2```). These are the official resource
 ## This is a development-heavy four-credit course. Plan your timetable accordingly. If you are not familiar with TypeScript, please start looking at it now.
 -->
 
+<!--
 ## About the labs
 
 This is a pair-programming course: If you want to work with someone specific for your [project](project/README.md), be sure that both of you register for the _SAME_ lab section. We do not have the ability to move people around between labs; please either monitor the SSC for space in your preferred lab sections, move to another lab with space, or find a partner in the lab you are registered in. Teams **must** be firm by the time of your lab the week of Jan 16. If you do not have a partner, it is your responsibility to notify the TA in lab that week so you can be paired up. If you do not have a partner at the end of your lab that week, you will not be able to complete the project (40% of your final grade). Finding a partner is **your** responsibility and is key to your having a great term, please take the time to do this right.
 
 ## Waitlist: [See Here](#waitlist)
+-->
 
-### Course details still in flux; expect updates in this page.
+### Note: Expect frequent updates to this page as the course progresses.
 
 ## Overview
 
