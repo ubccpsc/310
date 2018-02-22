@@ -107,7 +107,7 @@ NEGATION ::= 'NOT :{' FILTER '}'
 LOGIC ::= 'AND' | 'OR' 
 MCOMPARATOR ::= 'LT' | 'GT' | 'EQ' 
 
-COLUMNS ::= 'COLUMNS:[' (key ',')* key ']' 
+COLUMNS ::= 'COLUMNS:[' ((key|applystring) ',')* (key|applystring) ']' 
 SORT ::= 'ORDER: ' ('{ dir:'  DIRECTION ', keys: [ ' ORDERKEY (',' ORDERKEY)* ']}') | ORDERKEY 
 DIRECTION ::= 'UP' | 'DOWN'  
 ORDERKEY ::= key | applystring
