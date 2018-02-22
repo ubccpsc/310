@@ -149,7 +149,7 @@ In addition to the semantic checking from Deliverable 1, you must perform the fo
 * ```AVG``` should return a number rounded to two decimal places. Supporting ```AVG``` requires some extra challenges compared to the other operators. Since JavaScript numbers are represented by floating point numbers, performing this arithmetic can return different values depending on the order the operations take place. To account for this, you must use the ```Decimal``` package (already included in your package.json) taking the following protections.
     1. Convert you values to decimals (e.g., ```new Decimal(number)```).
     2. Add the numbers being averaged (e.g., generate ```total```).
-    3. Calculate the average (```var avg = total / numRows```).
+    3. Calculate the average (```var avg = total.toNumber() / numRows```).
     4. Trim the average to the second decimal digit (```var res = Number(avg.toFixed(2))```)
 
 * ```SUM``` should return a number rounded to two decimal places.
