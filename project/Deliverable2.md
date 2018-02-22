@@ -110,15 +110,16 @@ MCOMPARATOR ::= 'LT' | 'GT' | 'EQ'
 COLUMNS ::= 'COLUMNS:[' (key ',')* key ']' 
 SORT ::= 'ORDER: ' ('{ dir:'  DIRECTION ', keys: [ ' ORDERKEY (',' ORDERKEY)* ']}') | ORDERKEY 
 DIRECTION ::= 'UP' | 'DOWN'  
-ORDERKEY ::= key | APPLYKEY
+ORDERKEY ::= key | applystring
 
 GROUP ::= 'GROUP: [' (key ',')* key ']'                                                          
 APPLY ::= 'APPLY: [' (APPLYKEY (', ' APPLYKEY )* )? ']'  
-APPLYKEY ::= '{' key ': {' APPLYTOKEN ':' key '}}'
+APPLYKEY ::= '{' applystring ': {' APPLYTOKEN ':' key '}}'
 APPLYTOKEN ::= 'MAX' | 'MIN' | 'AVG' | 'COUNT' | 'SUM'                           
 
 key ::= string '_' string
 inputstring ::= [^*]* // zero or more of any character except asterisk.
+applystring ::= [^_]+ // one or more of any character except underscore.
 ```
 
 **Syntactic Checking (Parsing)**
