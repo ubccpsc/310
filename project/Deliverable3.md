@@ -1,245 +1,154 @@
-# Project Sprint 3 (d3)
+# Project Sprint 3 (D3) - Web Server + Frontend UI
 
-# TBD
+[Deliverable 1](Deliverable1.md) built a query engine to answer queries about UBC course sections.
+[Deliverable 2](Deliverable2.md) extended the query engine to aggregate answers about actual courses and support details about course spaces on campus. Ultimately, you have built a robust backend for quickly and flexibly querying a diverse dataset. This is a great foundation, but is not particularly usable: how could your implementation actually be used in the real world? After all, software is of little value if it is never deployed and used, no matter how well it is designed and implemented.
 
-<!--
-NOTE: this will not be the same
+In this deliverable you will complement your backend with a Web server and a frontend UI such that your software can be deployed and used as a Web application. Just as is common practice in Web development, you will be given a boilerplate UI implementation (consider us the "designers"). Most of the functionality has been removed from the sources and it will be your job to hook it all up with your Web server implementation. 
 
-# Deliverable 3: insightUBC Query Aggregation
+This deliverable will extend your solutions for D1 and D2 so you must continue to work with the same partner using the same repository. D3 is worth 10% of your final grade. You will not have to hand anything in; we will automatically analyze your repo on every push between when the deliverable is released and the due date [specified here](../README.md#project-sprint-schedule).
+
+**Important notes:**
+
+* Autobot will create a pull request in your repos during the first week of this sprint. It will contain some changes to your project (boilerplate frontend and server implementations) to transform your software into a Web app. It is a very good idea to carefully look at this pull request and what Autobot wants to merge into your projects. However, please do not merge the pull request before the final D2 deadline as it may break your coverage scores.
+* This spec should be considered a high level outline for this deliverable because it would be very easy to get lost in the details. While the pull request from Autobot will make things more clear, it is also more important than ever to attend the in-class deliverable tutorial on March 8 in which we will go through the deliverable step by step.
+* There may be more pull requests from Autobot during this deliverable because we may need to change things on the go. Please keep an open eye on Piazza and merge all pull requests sooner rather than later to avoid conflicts.
 
 
-In [Deliverable 1](Deliverable1.md) and [Deliverable 2](Deliverable2.md) you built a query engine to answer queries about course offerings and rooms at UBC. Unfortunately, the data sources for these queries had one real shortcoming: they contained data on a section-by-section basis or a room-by-room basis rather than a course-by-course or building-by-building basis. The query language was also deficient in this regard, as you could not construct queries that would let you aggregate and compute values on the results of queries.
+## Web Server
 
-In this deliverable, you will extend the Deliverable 1 and Deliverable 2 query engines to enable result computation (e.g., to figure out the average for a _course_ rather than the average for each _section_ or figure out the number of seats for a _building_ rather than for a single _room_). You will also demonstrate that your source code is designed in a testable way.
+### Bootstrap code
 
-The second part of this deliverable will involve adapting your project to provision REST endpoints so that your project can be used by remote clients. This will be crucial for Deliverable 4 and will demonstrate how traditional programs can be adapted into web-based services.
+Once you merge the pull request from Autobot, you'll have three new files in your project associated with the implementation of a Web server:
 
-The deadline for this deliverable is March 13 @ 0800.
+* **```/src/App.ts```** contains the source code for starting the application and initializing the server. This will be given to you for free.
+* **```/src/rest/Server.ts```** contains the logic for your server.
+* **```/test/Server.spec.ts```** contains the tests for your server.
 
-## Dataset
+Both the ```Server.ts``` and ```Server.spec.ts``` files will contain some sample code to point you in the right direction. We will use [```restify```](http://restify.com/) as a REST server library. Please refer to its documentation first whenever questions arise.
 
-The datasets from this deliverable are unchanged from Deliverable 1 and 2.
-
-## REST endpoints
+### REST Endpoints
 
 You will adapt your existing ```InsightFacade``` to also be accessed using REST endpoints. Both ```InsightFacade``` and the REST endpoints must continue to work independently. You will note that the REST descriptions below correspond closely to the values you are already surfacing from ```InsightFacade```.
 
-* **```GET /```** returns the query interface for the UI; this is only provided for your convenience and will not be tested. This will be a part of your D4, but you might as well get the wiring in for this now.
+* **```GET /```** returns the frontend UI; this will already be implemented for you.
 
-* **```PUT /dataset/:id```** allows to submit a zip file that will be parsed and used for future queries. The zip file content will be sent 'raw' as a buffer, you will need to convert it to base64 server side. 
-* Response Codes and message formats:
-     * ```204```: Same as for 204 in ```InsightFacade::addDataset(..)```.
-     * ```201```: Same as for 201 in ```InsightFacade::addDataset(..)```.
-     * ```400```: Same as for 400 in ```InsightFacade::addDataset(..)```.
+* **```PUT /dataset/:id/:kind```** allows to submit a zip file that will be parsed and used for future queries. The zip file content will be sent 'raw' as a buffer, you will need to convert it to base64 server side.
+  * Response Codes and message formats:
+      * ```204```: Same as for 204 in ```InsightFacade::addDataset(..)```.
+      * ```400```: Same as for 400 in ```InsightFacade::addDataset(..)```.
 
-* **```DELETE /dataset/:id```** deletes the existing dataset stored. 
- * This will delete both disk and memory caches for the dataset for the ```id``` meaning that subsequent queries for that ```id``` should fail unless a new ```PUT``` happens first.
- * Response Codes and message formats:
-     * ```204```: Same as for 204 in ```InsightFacade::removeDataset(..)```.
-     * ```404```: Same as for 404 in ```InsightFacade::removeDataset(..)```.
-
-The ```:id``` portion of the ```PUT``` and ```DELETE``` endpoints represent a variable name that is extracted from the endpoint URL. For the URL ```http://localhost:4321/dataset/courses```, ```courses``` is the ```id```.
+* **```DELETE /dataset/:id```** deletes the existing dataset stored. This will delete both disk and memory caches for the dataset for the ```id``` meaning that subsequent queries for that ```id``` should fail unless a new ```PUT``` happens first.
+    * Response Codes and message formats:
+      * ```204```: Same as for 204 in ```InsightFacade::removeDataset(..)```.
+      * ```404```: Same as for 404 in ```InsightFacade::removeDataset(..)```.
 
 * **```POST /query```** sends the query to the application. The query will be in JSON format in the post body. 
  * NOTE: the server may be shutdown between the ```PUT``` and the ```POST```. This endpoint should always check for a persisted data structure on disk before returning a missing dataset error.
  * Response Codes and message formats:
      * ```200```: Same as for 200 in ```InsightFacade::performQuery(..)```.
-     * ```424```: Same as for 424 in ```InsightFacade::performQuery(..)```.
      * ```400```: Same as for 400 in ```InsightFacade::performQuery(..)```.
-    
-## Valid keys
 
-The valid keys from Deliverable 1 and Deliverable 2 are unchanged.
+* **```GET /datasets```** returns a list of datasets that were added.
 
-## Query engine
+Other **```GET/*```** endpoints will serve static resources. This will already be implemented in the bootstrap as well.
 
-The primary objective of this deliverable is to extend the [query language](Deliverable1.md#query-engine) to enable more comprehensive queries about the dataset we have previously imported. ```COLUMNS```, ```WHERE```, and ```VIEW``` are unchanged from Deliverable 2 (although ```COLUMNS``` has some new restrictions below). At a high level, the new functionality adds:
+The ```:id``` and ```:kind``` portions above represent variable names that are extracted from the endpoint URL. For the PUT example URL ```http://localhost:4321/dataset/mycourses/courses```, ```mycourses``` would be the ```id``` and ```courses``` would be the ```kind```.
 
-* ```GROUP```: Group the list of results into sets by some matching criteria.
+### Testing
 
-* ```APPLY```: Perform calculations across a set of results.
-  * ```MAX```: Find the maximum value of a field. For numeric fields only.
-  * ```MIN```: Find the minimum value of a field. For numeric fields only.
-  * ```AVG```: Find the average value of a field. For numeric fields only.
-  * ```SUM```: Find the sum of a field. For numeric fields only.
-  * ```COUNT```: Count the number of unique occurrences of a field. For both numeric _and_ string fields.
-  
-* ```SORT```: Order results on one or more columns.
-  * ```UP```: Sort results ascending.
-  * ```DOWN```: Sort results descending.
+The same libraries and frameworks as before (```Mocha```, ```Chai```) will be used for testing. This time, however, your tests will have to send requests to your backend and check the received responses for validity. The bootstrap code in ```/test/Server.spec.ts``` will point you in the right direction.
 
-```
-QUERY ::='{'BODY ', ' OPTIONS  (', ' TRANSFORMATIONS)? '}'
+### Starting and accessing the app
 
-BODY ::= 'WHERE: {' (FILTER)? '}'
-OPTIONS ::= 'OPTIONS: {' COLUMNS ', ' (SORT ', ')? VIEW '}'
-TRANSFORMATIONS ::= 'TRANSFORMATIONS: {' GROUP ', ' APPLY '}'
+A new yarn command ```yarn start``` will be available in your project through a change to ```package.json```. It will essentially run ```App.js``` as a ```node``` application. Once you started the server, you'll be able to access the app in the browser at ```http://localhost:4321```. **Please note** that your datasets must be available for the UI to work.
 
-FILTER ::= (LOGICCOMPARISON | MCOMPARISON | SCOMPARISON | NEGATION)
+## Frontend UI
 
-LOGICCOMPARISON ::= LOGIC ': [{' FILTER ('}, {' FILTER )* '}]'  
-MCOMPARISON ::= MCOMPARATOR ': {' key ':' number '}'  
-SCOMPARISON ::= 'IS: {' key ': ' [*]? string [*]? '}'  
-NEGATION ::= 'NOT: {' FILTER '}'
+### Bootstrap code
 
-LOGIC ::= 'AND' | 'OR' 
-MCOMPARATOR ::= 'LT' | 'GT' | 'EQ' 
+Once you merge the pull request from Autobot, you'll have a new directory ```/frontend``` in your repo that contains the boilerplate frontend implementation. The subdirectory ```public``` contains the static sources that will be hosted by your Web app:
+* ```index.html``` contains the HTML code for the UI. This file is hosted by the ```GET /``` endpoint of your REST server.
+* ```bundle.css``` contains the styles for the UI.
+* ```bundle.js``` contains the existing logic for the UI.
+* ```query-builder.js``` will contain the logic for building queries from the UI.
+* ```query-sender.js``` will contain the logic for sending queries from the UI to your Web server.
+* ```query-index.js``` will contain the logic for the chain of building a query and sending it to the UI once the form in the UI is submitted.
 
-COLUMNS ::= 'COLUMNS:[' (string ',')* string ']' 
-SORT ::= 'ORDER: ' ('{ dir:'  DIRECTION ', keys: [ ' string (',' string)* ']}' | key) 
-DIRECTION ::= 'UP' | 'DOWN'  
-VIEW ::= 'FORM: TABLE'  
+**Please note** that you should only touch the ```query-*.js``` files for your frontend implementation. Each of the three files is described in *Implementation* section below. The other parts are given to you and should not be changed.
 
-GROUP ::= 'GROUP: [' (key ',')* key ']'                                                          
-APPLY ::= 'APPLY: [' (APPLYKEY (', ' APPLYKEY )* )? ']'  
-APPLYKEY ::= '{' string ': {' APPLYTOKEN ':' key '}}'
-APPLYTOKEN ::= 'MAX' | 'MIN' | 'AVG' | 'COUNT' | 'SUM'                           
-```
+### Implementation
 
-Here is some further clarification about the EBNF that might be helpful for validating and answering queries:
+The frontend part of this deliverable differs from your previous development in several ways. The two most significant are:
 
-* **NEW** ```APPLY``` keys are not allowed to contain the `_` character.
+1. **Plain JavaScript.** While it is theoretically possible to develop in TypeScript on the frontend as well, it is not common practice and we will stick to plain JavaScript here. Please apply to this rule and don't try to make TypeScript work somehow within the ```/frontend``` directory. The advantage is that you won't have to build/compile your project when you work on the frontend.
 
-* ```number``` and ```string``` are valid JavaScript ```number```/```string``` values. Note, some ```string```s require escaping if you are using them as keys in JSON. 
+2. **Browser.** You will dive into the world of browsers with your frontend implementation. Your frontend code will be run client-side in the browser and will communicate with your Web server via REST/Ajax calls. This means also that you will have the global [```window```](https://developer.mozilla.org/en-US/docs/Web/API/Window), [```document```](https://developer.mozilla.org/en-US/docs/Web/API/Document) and [```XMLHttpRequest ```](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) objects from the browser available anywhere in your code.
 
-* An empty (```{}```) ```WHERE``` clause signals that all rows should be returned.
+The source code of the UI merged into your repository will expose a global object ```ThreeTen``` on the browser's ```window``` object that contains three methods:
 
-* ```GROUP: [term1, term2, ...]``` signifies that a group should be created for every unique set of all N-terms (e.g., ```[courses_dept, courses_id]``` would have a group for every unique pair of department/id records in the dataset. Every member of a ```GROUP``` always matches all terms in the ```GROUP``` array.
+* **```ThreeTen.buildQuery```** builds queries from the current state of the UI. Information from the UI must be extracted using the browser-native global ```document``` object. The returned queries must be of the same format as the ones given to your ```InsightFacade.performQuery``` method.
+* **```ThreeTen.sendQuery```** sends an Ajax/REST request to the ```POST /query``` endpoint of your Web server, taking a query as produced by ```ThreeTen.buildQuery``` as argument. You **must use** the browser-native ```XMLHttpRequest``` object and its ```send``` and ```onload``` methods to send requests because otherwise the Autobot tests will fail.
+* **```ThreeTen.renderResult```** renders a given result from the ```POST /query``` endpoint in the UI.
 
-* ```GROUP``` and ```APPLY``` always appear together, and ```GROUP``` must contain at least one term (having each record in its own group does not make a lot of sense).
+The last of the above methods (```ThreeTen.renderResult```) will be already available for you. It will be your job to implement the other methods in the respective files ```/frontend/public/query-builder.js``` and ```/frontend/public/query-sender.js```.
 
-* If a ```GROUP``` is present, all ```COLUMNS``` terms must correspond to either ```GROUP``` terms or to terms defined in the ```APPLY``` block. ```COLUMNS``` terms with underscores must occur in ```GROUP``` while ```COLUMNS``` terms without underscores must be defined in ```APPLY```.
+Once these methods are implemented, you will have to attach them to the submit button in the UI and call them in the right chain in ```/frontend/public/query-index.js```. The sequence is as follows:
 
-* ```APPLY``` enables the above listed computations on a group. The result of an ```APPLY``` should be a record containing the ```GROUP``` terms, and the terms defined by the ```APPLY```. 
+1. Click on submit button in the UI
+2. Query is extracted from UI using global ```document``` object (```ThreeTen.buildQuery```)
+3. Query is sent to the ```POST /query``` endpoint using global ```XMLHttpRequest``` object (```ThreeTen.sendQuery```)
+4. Result is rendered in the UI by calling ```ThreeTen.renderResult``` with the response from the endpoint as argument
 
-* ```MAX/MIN/AVG``` should only be requested of numeric keys, while ```COUNT``` counts the number of unique rows in the group (according to the specified key). The ```string``` in ```APPLY``` should be unique (no two ```APPLY``` targets should have the same name). ```AVG``` should return a number rounded to two decimal places, ```COUNT``` should return whole numbers, and ```MIN/MAX``` should return the same number that is in the originating dataset. 
+More specific directions will be provided as comments in the bootstrap files.
 
-* ```SORT``` matches on multiple fields; these are read from first to last (e.g., ```ORDER: {dir: 'up', keys: ['courses_dept', 'courses_id`]}``` will first sort on ```courses_dept``` and only use ```courses_id``` to break ties (e.g., to order courses that are all from within the same department)). ```SORT``` terms can also be terms defined in the ```APPLY``` block. Ordering should be according to the ```<``` operator in TypeScript/JavaScript, not by ```localeCompare``` or the default ```sort()``` implementation. Note: This ```ORDER``` format is different than in D1 and D2(which just accepted a single string); your implementation should support both D1 and D2 syntax for the ```SORT``` element.
+There are a few **important notes** on ```ThreeTen.buildQuery```. Please consider these carefully because otherwise Autobot tests may fail.
+* The UI will only be able to build a subset of all possible queries. Several complex structures (e.g. nesting) are not possible and this is intended.
+* If no conditions are specified, the query will have no conditions
+* If the order section contains only one selected field and the ```Descending``` checkbox is not checked, the D1 order syntax must be generated, otherwise D2 order syntax.
+* The order of the keys in the order section is ignored and will not be tested by Autobot.
 
-* ```WHERE``` is completely independent of ```GROUP```/```APPLY```; your solution should not need to change.
+**Important note:** usage of any library not native to the browser is strictly prohibited in the frontend part of this deliverable. Please stick to the global objects ```ThreeTen```, ```document``` and ```XMLHttpRequest``` which are the only ones required. Autobot will fail if you violate this requirement.
 
-* Supporting ```AVG``` requires some extra challenges compared to the other operators. Since JavaScript numbers are represented by floating point numbers, performing this arithmetic can return different values depending on the order the operations take place. To account for this please take the following protections (this is not great, but works for the data in this deliverable). 
-  1. Multiply all values (```x = x  * 10;```) being averaged by 10.
-  1. Trim the resulting value (```x = Number(x.toFixed(0))```).
-  1. Add the numbers being averaged (e.g., generate ```total```).
-  1. Calculate the average (```var avg = total / numRows```).
-  1. Divide by 10 (```var avg = avg / 10```);
-  1. Trim the decimals (```var res = Number(avg.toFixed(2))```).
+**Just to make sure:** for the frontend implementation, please only touch the files ```query-builder.js```, ```query-sender.js``` and ```query-index.js``` in your ```/frontend/public``` directory. The other parts are already implemented, hooked up and ready to go in the bootstrap sources.
 
+### Testing
 
-## Query examples
+We will use the test runner [```Karma```](https://karma-runner.github.io/2.0/index.html) for frontend testing. ```package.json``` will change respectively to accomodate the required dependencies. Karma works in a way that it will run your tests in a browser environment. There will be a new command ```yarn test:frontend``` in your project that will run the frontend test suites with Karma.
 
-Query A:
+The configuration for ```Karma``` is in ```/karma.conf.js```. Please do not change this file because it may make Autobot fail running the tests. However, you can create your own configuration file (e.g. ```karma.my.conf.js```) and run Karma explicitly with your file: ```./node_modules/karma/bin/karma start karma.my.conf.js```. Karma is a powerful tool and can be run with different browsers, from the terminal or IDE and you can even hook up the WebStorm debugger with Chrome using the [JetBrains IDE Support](https://chrome.google.com/webstore/detail/jetbrains-ide-support/hmhgeddbohgjknpmjagkdomcpobmllji) add-on. But you can also debug your frontend code simply using the developer tools of your browser.
 
-```
-{
-    "WHERE": {
-        "AND": [{
-            "IS": {
-                "rooms_furniture": "*Tables*"
-            }
-        }, {
-            "GT": {
-                "rooms_seats": 300
-            }
-        }]
-    },
-    "OPTIONS": {
-        "COLUMNS": [
-            "rooms_shortname",
-            "maxSeats"
-        ],
-        "ORDER": {
-            "dir": "DOWN",
-            "keys": ["maxSeats"]
-        },
-        "FORM": "TABLE"
-    },
-    "TRANSFORMATIONS": {
-        "GROUP": ["rooms_shortname"],
-        "APPLY": [{
-            "maxSeats": {
-                "MAX": "rooms_seats"
-            }
-        }]
-    }
-}
-```
+There will be two test suites for D3:
+* **```query-builder.spec.js```** contains the test suite for ```ThreeTen.buildQuery```. 
+* **```query-sender.spec.js```** contains the test suite for ```ThreeTen.sendQuery```.
 
-Response A:
+Rather than editing these test suites directly, you will work with so-called HTML and JSON *fixtures* in the ```/frontend/test/fixtures``` directory. For testing your two methods ```buildQuery``` and ```sendQuery``` you should maintain a set of HTML files in ```fixtures/html``` and a set of named query objects in ```queries.json```. ```fixtures/html``` should contain one HTML file named ```[queryName].html``` for each query with the HTML code of the currently active form in the UI as content. To create these HTML fixtures, the UI contains a ```Copy HTML``` button that will copy the current HTML of the active form element in the UI to your clipboard which you can then simply paste into your HTML files. ```queries.json``` should contain a ```queryName => query``` mapping with the queries that you expect for the HTML code in ```[queryName].html```. The idea is this: "if the HTML in the UI looks like ```[queryName].html```, then I expect the query with key ```[queryName]``` in queries.json to be returned by ```ThreeTen.buildQuery```". This way you can create your test scenarios by interacting with the UI and then create your HTML fixtures. We included an example in the bootstrap code to get a better understanding. The ```query-sender.spec.js``` test suite will then take every query fixture you specified in ```queries.json``` and check if your ```ThreeTen.sendQuery``` method sends an Ajax request properly.
 
-```
-{
-    "render": "TABLE",
-    "result": [{
-        "rooms_shortname": "OSBO",
-        "maxSeats": 442
-    }, {
-        "rooms_shortname": "HEBB",
-        "maxSeats": 375
-    }, {
-        "rooms_shortname": "LSC",
-        "maxSeats": 350
-    }]
-}
-```
+While you must not edit the actual test suites ```query-builder.spec.js``` or ```query-sender.spec.js``` directly, we highly encourage you to look at the code. We implemented a few utility methods for testing on a global window object ```TTT```, as well as two new ```chai``` assertions ```equalQuery``` and ```sendAjaxRequest```. Understanding how the test suites work will help you understand the test framework better and will generally help you with the frontend part of this deliverable.
 
-Query B:
+**Just to make sure:** for frontend testing in this deliverable, it is sufficient to add your HTML fixtures in ```/frontend/test/fixtures/html``` and your expected queries in ```/frontend/test/fixtures/queries.json```. No other files need to be changed.
 
-```
-{
-    "WHERE": {},
-    "OPTIONS": {
-        "COLUMNS": [
-            "rooms_furniture"
-        ],
-        "ORDER": "rooms_furniture",
-        "FORM": "TABLE"
-    },
-    "TRANSFORMATIONS": {
-        "GROUP": ["rooms_furniture"],
-        "APPLY": []
-    }
-}
-```
+## Getting started
 
-Response B:
+Our aim with this deliverable is to give you an impression on Web/frontend development without confronting you with extensive details and fiddling of implementing a user interface. That being said, hooking together the architecture and implementing the required parts will still be time consuming. This specification may seem rather unstructured to you. This is intended since things are often unstructured in the world of Web development and creating something structured out of an unstructured specification certainly makes a good developer. Most likely, you will spend the most time understanding how the pieces of the puzzle fit together in this deliverable.
 
-```
-{
-    "render": "TABLE",
-    "result": [{
-        "rooms_furniture": "Classroom-Fixed Tables/Fixed Chairs"
-    }, {
-        "rooms_furniture": "Classroom-Fixed Tables/Movable Chairs"
-    }, {
-        "rooms_furniture": "Classroom-Fixed Tables/Moveable Chairs"
-    }, {
-        "rooms_furniture": "Classroom-Fixed Tablets"
-    }, {
-        "rooms_furniture": "Classroom-Hybrid Furniture"
-    }, {
-        "rooms_furniture": "Classroom-Learn Lab"
-    }, {
-        "rooms_furniture": "Classroom-Movable Tables & Chairs"
-    }, {
-        "rooms_furniture": "Classroom-Movable Tablets"
-    }, {
-        "rooms_furniture": "Classroom-Moveable Tables & Chairs"
-    }, {
-        "rooms_furniture": "Classroom-Moveable Tablets"
-    }]
-}
-```
+There is no best way to get started, but a few hints may help you:
 
-## Testing
+* Create the big picture of your project in your mind. Use pencil and paper and draw some diagrams. Where is what component and how do they interact with each other? What's on the client and what's on the server?
 
-The [testing](Deliverable2.md#testing) requirements and grading provisions for this deliverable are unchanged from Deliverable 2.
+* The two parts in this deliverable (server, frontend) should be implemented and tested independent from each other. They are only hooked together with Ajax requests going from the frontend to the server but all parts are designed to be implemented and tested independently.
+
+* The hosted reference UI will be updated with the implementation you will merge into your repos. Play around with the UI and inspect what queries are sent with what state of the UI by clicking around and sending queries.
+
+* Make use of the querues you used for testing in the previous deliverables. You'll want to keep a clear thread throughout your whole project. (Note though that not all queries can be produced with the UI.)
+
+* Carefully look at the bootstrap code and simply run the Web app with only the bootstrap sources. If this spec looks intimidating to you, the actual bootstrap sources might enlighten you how everything fits together.
+
+Good luck and we sincerely hope you'll also have some fun implementing this deliverable!
 
 ## Contribution statement
- 
-In your repository, each teammate should commit a file called ```/D3-contrib_GitHubId.md```. This file should contain a short description of your concrete contributions to your D2 code. All that is required is a few sentences followed by links to some of your key GitHub commits (full links so we can click on them would be appreciated) for Deliverable 2. If you do not have any (or very few) commits, you may use additional space to explain your concrete contributions. This should be committed before you meet with your TAs in the lab as you will refer to this file in your meeting with them.
- 
-It would also be helpful if the first two lines of the file contained your final test pass rate on the deadline and your code coverage rate (computed as described in the Deliverable 1 document). Remember, attendance in the lab the week of due date is mandatory so the TAs can do your retrospective evaluation; failure to attend will result in a retrospective score of 0.
- 
- -->
+
+A survey will be required to detail your contribution to your group's project. This will involve a [mandatory survey](https://github.com/ubccpsc/310/tree/2018jan/README.md#participation). Failure to submit the survey by the final deadline will result in a grade of 0 for the deliverable (for the individual who did not submit it, not the whole group).
+
+## Assessment
+
+[Please refer to the README file for more information on grading](README.md)
