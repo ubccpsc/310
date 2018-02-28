@@ -84,30 +84,30 @@ The frontend part of this deliverable differs from your previous development in 
 
 2. **Browser.** You will dive into the world of browsers with your frontend implementation. Your frontend code will be run client-side in the browser and will communicate with your Web server via REST/Ajax calls. This means also that you will have the global [```window```](https://developer.mozilla.org/en-US/docs/Web/API/Window), [```document```](https://developer.mozilla.org/en-US/docs/Web/API/Document) and [```XMLHttpRequest ```](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) objects from the browser available anywhere in your code.
 
-The source code of the UI merged into your repository will expose a global object ```ThreeTen``` on the browser's ```window``` object that contains three methods:
+The source code of the UI merged into your repository will expose a global object ```CampusExplorer``` on the browser's ```window``` object that contains three methods:
 
-* **```ThreeTen.buildQuery```** builds queries from the current state of the UI. Information from the UI must be extracted using the browser-native global ```document``` object. The returned queries must be of the same format as the ones given to your ```InsightFacade.performQuery``` method.
-* **```ThreeTen.sendQuery```** sends an Ajax/REST request to the ```POST /query``` endpoint of your Web server, taking a query as produced by ```ThreeTen.buildQuery``` as argument. You **must use** the browser-native ```XMLHttpRequest``` object and its ```send``` and ```onload``` methods to send requests because otherwise the Autobot tests will fail.
-* **```ThreeTen.renderResult```** renders a given result from the ```POST /query``` endpoint in the UI.
+* **```CampusExplorer.buildQuery```** builds queries from the current state of the UI. Information from the UI must be extracted using the browser-native global ```document``` object. The returned queries must be of the same format as the ones given to your ```InsightFacade.performQuery``` method.
+* **```CampusExplorer.sendQuery```** sends an Ajax/REST request to the ```POST /query``` endpoint of your Web server, taking a query as produced by ```CampusExplorer.buildQuery``` as argument. You **must use** the browser-native ```XMLHttpRequest``` object and its ```send``` and ```onload``` methods to send requests because otherwise the Autobot tests will fail.
+* **```CampusExplorer.renderResult```** renders a given result from the ```POST /query``` endpoint in the UI.
 
-The last of the above methods (```ThreeTen.renderResult```) will be already available for you. It will be your job to implement the other methods in the respective files ```/frontend/public/query-builder.js``` and ```/frontend/public/query-sender.js```.
+The last of the above methods (```CampusExplorer.renderResult```) will be already available for you. It will be your job to implement the other methods in the respective files ```/frontend/public/query-builder.js``` and ```/frontend/public/query-sender.js```.
 
 Once these methods are implemented, you will have to attach them to the submit button in the UI and call them in the right chain in ```/frontend/public/query-index.js```. The sequence is as follows:
 
 1. Click on submit button in the UI
-2. Query is extracted from UI using global ```document``` object (```ThreeTen.buildQuery```)
-3. Query is sent to the ```POST /query``` endpoint using global ```XMLHttpRequest``` object (```ThreeTen.sendQuery```)
-4. Result is rendered in the UI by calling ```ThreeTen.renderResult``` with the response from the endpoint as argument
+2. Query is extracted from UI using global ```document``` object (```CampusExplorer.buildQuery```)
+3. Query is sent to the ```POST /query``` endpoint using global ```XMLHttpRequest``` object (```CampusExplorer.sendQuery```)
+4. Result is rendered in the UI by calling ```CampusExplorer.renderResult``` with the response from the endpoint as argument
 
 More specific directions will be provided as comments in the bootstrap files.
 
-There are a few **important notes** on ```ThreeTen.buildQuery```. Please consider these carefully because otherwise Autobot tests may fail.
+There are a few **important notes** on ```CampusExplorer.buildQuery```. Please consider these carefully because otherwise Autobot tests may fail.
 * The UI will only be able to build a subset of all possible queries. Several complex structures (e.g. nesting) are not possible and this is intended.
 * If no conditions are specified, the query will have no conditions
 * If the order section contains only one selected field and the ```Descending``` checkbox is not checked, the D1 order syntax must be generated, otherwise D2 order syntax.
 * The order of the keys in the order section is ignored and will not be tested by Autobot.
 
-**Important note:** usage of any library not native to the browser is strictly prohibited in the frontend part of this deliverable. Please stick to the global objects ```ThreeTen```, ```document``` and ```XMLHttpRequest``` which are the only ones required. Autobot will fail if you violate this requirement.
+**Important note:** usage of any library not native to the browser is strictly prohibited in the frontend part of this deliverable. Please stick to the global objects ```CampusExplorer```, ```document``` and ```XMLHttpRequest``` which are the only ones required. Autobot will fail if you violate this requirement.
 
 **Just to make sure:** for the frontend implementation, please only touch the files ```query-builder.js```, ```query-sender.js``` and ```query-index.js``` in your ```/frontend/public``` directory. The other parts are already implemented, hooked up and ready to go in the bootstrap sources.
 
@@ -118,10 +118,10 @@ We will use the test runner [```Karma```](https://karma-runner.github.io/2.0/ind
 The configuration for ```Karma``` is in ```/karma.conf.js```. Please do not change this file because it may make Autobot fail running the tests. However, you can create your own configuration file (e.g. ```karma.my.conf.js```) and run Karma explicitly with your file: ```./node_modules/karma/bin/karma start karma.my.conf.js```. Karma is a powerful tool and can be run with different browsers, from the terminal or IDE and you can even hook up the WebStorm debugger with Chrome using the [JetBrains IDE Support](https://chrome.google.com/webstore/detail/jetbrains-ide-support/hmhgeddbohgjknpmjagkdomcpobmllji) add-on. But you can also debug your frontend code simply using the developer tools of your browser.
 
 There will be two test suites for D3:
-* **```query-builder.spec.js```** contains the test suite for ```ThreeTen.buildQuery```. 
-* **```query-sender.spec.js```** contains the test suite for ```ThreeTen.sendQuery```.
+* **```query-builder.spec.js```** contains the test suite for ```CampusExplorer.buildQuery```. 
+* **```query-sender.spec.js```** contains the test suite for ```CampusExplorer.sendQuery```.
 
-Rather than editing these test suites directly, you will work with so-called HTML and JSON *fixtures* in the ```/frontend/test/fixtures``` directory. For testing your two methods ```buildQuery``` and ```sendQuery``` you should maintain a set of HTML files in ```fixtures/html``` and a set of named query objects in ```queries.json```. ```fixtures/html``` should contain one HTML file named ```[queryName].html``` for each query with the HTML code of the currently active form in the UI as content. To create these HTML fixtures, the UI contains a ```Copy HTML``` button that will copy the current HTML of the active form element in the UI to your clipboard which you can then simply paste into your HTML files. ```queries.json``` should contain a ```queryName => query``` mapping with the queries that you expect for the HTML code in ```[queryName].html```. The idea is this: "if the HTML in the UI looks like ```[queryName].html```, then I expect the query with key ```[queryName]``` in queries.json to be returned by ```ThreeTen.buildQuery```". This way you can create your test scenarios by interacting with the UI and then create your HTML fixtures. We included an example in the bootstrap code to get a better understanding. The ```query-sender.spec.js``` test suite will then take every query fixture you specified in ```queries.json``` and check if your ```ThreeTen.sendQuery``` method sends an Ajax request properly.
+Rather than editing these test suites directly, you will work with so-called HTML and JSON *fixtures* in the ```/frontend/test/fixtures``` directory. For testing your two methods ```buildQuery``` and ```sendQuery``` you should maintain a set of HTML files in ```fixtures/html``` and a set of named query objects in ```queries.json```. ```fixtures/html``` should contain one HTML file named ```[queryName].html``` for each query with the HTML code of the currently active form in the UI as content. To create these HTML fixtures, the UI contains a ```Copy HTML``` button that will copy the current HTML of the active form element in the UI to your clipboard which you can then simply paste into your HTML files. ```queries.json``` should contain a ```queryName => query``` mapping with the queries that you expect for the HTML code in ```[queryName].html```. The idea is this: "if the HTML in the UI looks like ```[queryName].html```, then I expect the query with key ```[queryName]``` in queries.json to be returned by ```CampusExplorer.buildQuery```". This way you can create your test scenarios by interacting with the UI and then create your HTML fixtures. We included an example in the bootstrap code to get a better understanding. The ```query-sender.spec.js``` test suite will then take every query fixture you specified in ```queries.json``` and check if your ```CampusExplorer.sendQuery``` method sends an Ajax request properly.
 
 While you must not edit the actual test suites ```query-builder.spec.js``` or ```query-sender.spec.js``` directly, we highly encourage you to look at the code. We implemented a few utility methods for testing on a global window object ```TTT```, as well as two new ```chai``` assertions ```equalQuery``` and ```sendAjaxRequest```. Understanding how the test suites work will help you understand the test framework better and will generally help you with the frontend part of this deliverable.
 
