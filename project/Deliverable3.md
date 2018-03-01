@@ -103,8 +103,7 @@ More specific directions will be provided as comments in the bootstrap files.
 
 There are a few **important notes** on ```CampusExplorer.buildQuery```. Please consider these carefully because otherwise Autobot tests may fail.
 * The UI will only be able to build a subset of all possible queries. Several complex structures (e.g. nesting) are not possible and this is intended.
-* If no conditions are specified, the query will have no conditions
-* If the order section contains only one selected field and the ```Descending``` checkbox is not checked, the D1 order syntax must be generated, otherwise D2 order syntax.
+* If no conditions are specified, the query will have no conditions.
 * The order of the keys in the order section is ignored and will not be tested by Autobot.
 
 **Important note:** usage of any library not native to the browser is strictly prohibited in the frontend part of this deliverable. Please stick to the global objects ```CampusExplorer```, ```document``` and ```XMLHttpRequest``` which are the only ones required. Autobot will fail if you violate this requirement.
