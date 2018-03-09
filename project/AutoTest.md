@@ -42,7 +42,9 @@ AutoTest is invoked using a bot on GitHub. If you make a ```@autobot``` comment 
 
 * If a test times out it will be 'skipped'. Your pass rate will be calculated as: ```pass / (pass + skip + fail)```. To be safe about not hitting this timeout, try and ensure no individual test takes more than 5 seconds to run locally in your personal test suite.
 
-* Autobot will run your code on all commits, regardless of if you call it. This means that you may get messages/emails about build failures even if you don't call the bot. Sometimes when the processing queue is long, you may get emails about old commits, this is fine and won't affect your most recent commits.
+* Autobot will run your code on all pushes, regardless of if you call it. This means that you may get messages/emails about build failures even if you don't call the bot. Sometimes when the processing queue is long, you may get emails about old pushes, this is fine and won't affect your most recent work.
+
+* Autobot can only be called on the *last* commit in a push (e.g., if you make 5 commits and push only the most recent can be tested). As a note, every time you edit a file in the GitHub web interface it counts as a single pushed commit so making small changes there can be an easy way to create a new commit to invoke Autobot on.
 
 We will monitor test suite executions to ensure that our tests are correct; if we encounter a problem we will post to the class forum.
 
