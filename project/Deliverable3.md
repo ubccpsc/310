@@ -106,6 +106,7 @@ There are a few **important notes** on ```CampusExplorer.buildQuery```. Please c
 * If no conditions are specified, the query will have no conditions.
 * If only one condition is specified, no logic connector (and/or) should be used but only the single condition.
 * The order of the keys in the order section is ignored and will not be tested by Autobot.
+* Please always use D2 syntax in the order section. If the `Descending` checkbox is not checked the default `Ascending` should be used.
 
 **Important note:** usage of any library not native to the browser is strictly prohibited in the frontend part of this deliverable. Please stick to the global objects ```CampusExplorer```, ```document``` and ```XMLHttpRequest``` which are the only ones required. Autobot will fail if you violate this requirement.
 
