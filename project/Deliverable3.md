@@ -96,7 +96,7 @@ Once these methods are implemented, you will have to attach them to the submit b
 
 1. Click on submit button in the UI
 2. Query is extracted from UI using global ```document``` object (```CampusExplorer.buildQuery```)
-3. Query is sent to the ```POST /query``` endpoint using global ```XMLHttpRequest``` object (```CampusExplorer.sendQuery```)
+3. Query is sent to the ```POST /query``` endpoint using global ```XMLHttpRequest``` class (```CampusExplorer.sendQuery```)
 4. Result is rendered in the UI by calling ```CampusExplorer.renderResult``` with the response from the endpoint as argument
 
 More specific directions will be provided as comments in the bootstrap files.
@@ -108,7 +108,7 @@ There are a few **important notes** on ```CampusExplorer.buildQuery```. Please c
 * The order of the keys in the order section is ignored and will not be tested by Autobot.
 * Please always use D2 syntax in the order section. If the `Descending` checkbox is not checked the default `Ascending` should be used.
 
-**Important note:** usage of any library not native to the browser is strictly prohibited in the frontend part of this deliverable. Please stick to the global objects ```CampusExplorer```, ```document``` and ```XMLHttpRequest``` which are the only ones required. Autobot will fail if you violate this requirement.
+**Important note:** usage of any library not native to the browser is strictly prohibited in the frontend part of this deliverable. Please stick to the global ```CampusExplorer``` and ```document``` objects, and the ```XMLHttpRequest``` class, which are the only ones required. Autobot will fail if you violate this requirement.
 
 **Just to make sure:** for the frontend implementation, please only touch the files ```query-builder.js```, ```query-sender.js``` and ```query-index.js``` in your ```/frontend/public``` directory. The other parts are already implemented, hooked up and ready to go in the bootstrap sources.
 
