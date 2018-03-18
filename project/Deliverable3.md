@@ -43,12 +43,14 @@ You will adapt your existing ```InsightFacade``` to also be accessed using REST 
       * ```404```: Same as for 404 in ```InsightFacade::removeDataset(..)```.
 
 * **```POST /query```** sends the query to the application. The query will be in JSON format in the post body. 
- * NOTE: the server may be shutdown between the ```PUT``` and the ```POST```. This endpoint should always check for a persisted data structure on disk before returning a missing dataset error.
- * Response Codes and message formats:
-     * ```200```: Same as for 200 in ```InsightFacade::performQuery(..)```.
-     * ```400```: Same as for 400 in ```InsightFacade::performQuery(..)```.
+    * NOTE: the server may be shutdown between the ```PUT``` and the ```POST```. This endpoint should always check for a persisted data structure on disk before returning a missing dataset error.
+    * Response Codes and message formats:
+        * ```200```: Same as for 200 in ```InsightFacade::performQuery(..)```.
+        * ```400```: Same as for 400 in ```InsightFacade::performQuery(..)```.
 
 * **```GET /datasets```** returns a list of datasets that were added.
+    * Response Codes and message formats:
+        * ```200```: Same as for 200 in ```InsightFacade::listDatasets(..)```.
 
 Other **```GET/*```** endpoints will serve static resources. This will already be implemented in the bootstrap as well.
 
