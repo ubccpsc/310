@@ -1,19 +1,369 @@
-# UBC CPSC 310: Introduction to Software Engineering
+<img src="readings/figures/310logo.png" width="256px" alt="CPSC 310 Software Engineering">
 
-## Current Term
+# UBC CPSC 310 - Software Engineering
+September 4, 2018 -> December 4, 2018 (```2018T1```). These are the official resources for both sections.
 
-* [2018 January](https://github.com/ubccpsc/310/blob/2018jan/README.md)
+<!-- 
+## Please login to [here](https://github.ugrad.cs.ubc.ca/) using your CS Ugrad Id/Password by 1400 on January 4; this is required so we can provision your d0 repository.
+-->
 
-### Past Terms
+## This is a development-heavy four-credit course. Plan your timetable accordingly. If you are not familiar with TypeScript, please start looking at it now.
 
-* [2017 September](https://www.ugrad.cs.ubc.ca/~cs310/2017W1/index.html)
-* [2017 January](https://github.com/ubccpsc/310/tree/2017jan)
-* [2016 September](https://github.com/ubccpsc/310/tree/2016sept)
-* [2016 January](https://sites.google.com/site/cpsc3102015w1/)
-* [2015 May](https://sites.google.com/site/ubccs3102015s1/)
-* [2015 January](https://sites.google.com/site/ubccs3102014w2/)
-* [2014 September](http://www.ugrad.cs.ubc.ca/~cs310/2014W1/])
-* [2014 May](http://www.ugrad.cs.ubc.ca/~cs310/2014S1/)
-* [2014 January](http://www.ugrad.cs.ubc.ca/~cs310/2013W2/)
 
+
+## About the labs
+
+This is a pair-programming course: If you want to work with someone specific for your [project](project/README.md), be sure that both of you register for the _SAME_ lab section. We do not have the ability to move people around between labs; please either monitor the SSC for space in your preferred lab sections, move to another lab with space, or find a partner in the lab you are registered in. Teams **must** be firm by the time of your lab the week of Jan 16. If you do not have a partner, it is your responsibility to notify the TA in lab that week so you can be paired up. If you do not have a partner at the end of your lab that week, you will not be able to complete the project (40% of your final grade). Finding a partner is **your** responsibility and is key to your having a great term, please take the time to do this right.
+
+## Waitlist: [See Here](#waitlist)
+
+
+### Note: Expect frequent updates to this page as the course progresses.
+
+## Overview
+
+The world runs on software and CPSC 310 is all about taking the skills and knowledge you learned in [CPSC 210](https://sites.google.com/site/ubccpsc210/) (Software Construction) and extending your abilities to design and build non-trivial software systems. The course will involve a significant challenging [project](project/README.md) that we will start working on in the first lecture and will continue to evolve until the last week of class; do not underestimate the engineering effort this project will require.
+
+The lecture time slot will be highly interactive and will involve working with your project partner (and sometimes teaming up with other groups as well). Only the first and last lecture slots of the course will be 'traditional' lectures. Tuesday lectures will be activity-driven to reenforce the materials from each week's readings and videos. Thursdays lectures will focus on tying the lecture material to the course project. One important implication of this is that all course material will be fully covered in the videos, readings, and project. You can base your Tuesday attendance on your own assessment of your mastery of the material for that week. For Thursdays, your can decide if you need to come based on how the project is progressing. Your attendance in lecture has no bearing on your participation grade, as long as you submit your weekly reflection (which is submitted online).
+
+Each module will have reading materials and videos posted online; no slides will be posted. In-class material will be designed to support the readings, not replace them, and will not be available electronically. We have chosen to take a reading-based approach for this course instead of a slide-based approach to enable more class time to be available for hands-on activities while still providing a comprehensive reference of the background materials for the course. 
+
+Some of the topics we will cover in 310 this term include:
+
+
+* Software specifications
+* Agile development
+* High and low-level design (this is the primary course focus)
+* Automated testing
+* Refactoring
+* Information Security
+* REST
+* Async development
+
+## Course Goals
+
+Our primary goal in this course is to help you learn how to design and build non-trivial modern software systems. This requires [deliberate practice](http://expertenough.com/1423/deliberate-practice) and experience. Being able to effectively build real systems depends upon flexibility in domain, abstraction, tools, languages, frameworks, and environments. To this end, the project has been tightly integrated with the course materials and will involve a significant development effort.
+
+The course [project](project/README.md) embodies an experiential learning environment: we have constrained several aspects to mimic the kinds of reasonable constraints you would likely encounter on a real team. As with real systems, requirements will seem clear at a high level, but will provide broad latitude for how you implement them. Your choices of languages and frameworks have also been fixed. It is expected you will _not_ be familiar with these; being able to quickly learn and adapt to different toolsets is a fundamental skill in modern development. Finally, our use of [AutoTest](project/AutoTest.md) can be considered a form of acceptance testing, which is an industry norm used to validate that software performs as expected.
+
+CPSC 310 will be a challenging course that we have designed to integrate many of the ideas and concepts from your prior courses in order to help you to learn how to apply them to engineering modern software systems.
+
+## Video & Supplementary Material
+
+Videos and practice problems for all course materials will be available through the [edX Software Engineering](https://www.edx.org/course/software-engineering-introduction-ubcx-softeng1x) course. You do ***NOT*** need to pay for this, all course materials are available in the free (non-verified) version of the course; these materials will be released on January 8.
+
+## Contact
+
+#### Instructor:
+
+TBD
+
+<!--
+* [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
+-->
+
+#### TAs:
+
+TBD
+
+<!-- 
+* Nick Bradley (GTA)
+* Arthur de Sousa Marques (GTA)
+* Rodrigo Araujo (GTA)
+* Xinhong (Sam) Liu (GTA)
+* Felix Grund (GTA)
+* Lucas Zamprogno
+* Raghav Thakur
+* Ena Krdzalic
+* Arash Haj Shirmohammadi
+* Chi Wei Chen
+* Ruoyu Wang
+-->
+
+### Piazza
+
+
+Piazza will be used but has not been configured.
+
+<!--
+[Piazza](https://piazza.com/ubc.ca/winterterm22017/cpsc310/home) has been configured for this term. Please see the instructor in person in class if you want to discuss course materials; only TAs will monitor Piazza. Please be mindful of the UBC Academic Misconduct Policy with respect to posting project solutions on Piazza. It is _extremely_ helpful if your Piazza name corresponds to your name in the SSC in the advent we need to help you with a problem with your project, repositories, or grades. 
+
+When posting to Piazza please be sure to include your team number so the TAs can find your group's code in order to help you more effectively. Also, when asking TAs about failing tests in particular, the TAs will often want to see your own test for similar cases (usually this will take several tests) so you can demonstrate to them why you think your code is correct.
+-->
+
+### Getting help
+
+For *[project](project/README.md) / language help*, there will be at least 12 hours of labs and 12 hours of TA office hours per week. TA office hours closer to the deadline are likely to be _much_ busier than others (which may not be attended at all); to accommodate this we have scheduled most of the office hours prior to deadlines, but seeking help at other times and in your lab will likely be less busy.
+
+## Schedule
+
+#### Lectures: 
+
+TBD 
+
+<!--
+* 201: Tuesday/Thursday 1230-1400 in FSC 1005
+-->
+
+
+<!--
+
+This list is a week-by-week guide only. Readings and videos will be updated throughout the term, but will remain fixed in the week before the midterm and final. NOTE: only the free edX account is required to view the videos.
+
+| Week        | Tuesday Topic & Readings | Tuesday Videos | Thursday |
+| :--         |:--                                          | :-- | :-- |
+| Jan 2       | No Class Jan 2 | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/1f93ea5daa8a4d04b19d201289c2bc9f/7e34619af6954a7c8f56e878077ea4a0/">Introduction</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/1f93ea5daa8a4d04b19d201289c2bc9f/cc534ea6412f4d4a85b2af6621860899/">Language intro</a></li></ul> | <ul><li>[Course intro](readings/Introduction.md)</li><li>[Project](project/README.md)</li><li>[Teamwork](readings/Teamwork.md)</li><li>[Languages](readings/Languages.md)</li><li>Quick D0 introduction</li></ul> |
+| Jan 9       | [Testing](readings/Testing.md)| <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/5692eb185917488e9f97c9f346fe932d/b9af727e3e98464d9bb587caa91111ed/">Testing intro</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/5692eb185917488e9f97c9f346fe932d/69512086e46d4ca59ee6e9d438237983/">Properties & process</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/5692eb185917488e9f97c9f346fe932d/7697250165fa41039fb5f0c764cbe186/">White box testing</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/5692eb185917488e9f97c9f346fe932d/ff578d1b33004ac68708a25877142c5f/">Black box testing</a></li></ul> | <a href="tutorials/tutorial_testing.pdf">Effective testing in practice</a> |
+| Jan 16      | [Process & Agile](readings/Process.md)  | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/9d0ea98055a5494b9c8c8cde4e6143dc/9d64e64e024e443c9ae6341d89cf7fdd">Why process?</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/9d0ea98055a5494b9c8c8cde4e6143dc/d0dc6b913ccc4fb5b2bf90fbe243cec1">Traditional processes</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/9d0ea98055a5494b9c8c8cde4e6143dc/71445e4320754e0091b3e63d96fe1cee">XP & TDD</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/9d0ea98055a5494b9c8c8cde4e6143dc/25bad20af8bf48b6885e5de371cf4332">Scrum</a></li></ul> | <ul><li>[Sprint 1 intro (source)](tutorials/tutorial_sprint1.html)</li><li>[Sprint 1 intro (online)](https://slides.com/rodrigoaraujo-1/deliverable-1-tutorial#/)</li></ul> |
+| Jan 23      | <ul><li>[Specifications](readings/Specifications.md)</li><li>[User Stories](readings/SpecificationsUserStories.md)</li><li>[Async](readings/Async.md)</li></ul> | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/b7375232b119453ba87336338b8eb8a0/7c0cb3ceb5724ed695bcfc084f4e55c9/">Specifications intro</a></li><li><a href="https://courses.edx.org/courses/course-v1%3AUBCx%2BSoftEng1x%2B1T2018/courseware/b7375232b119453ba87336338b8eb8a0/c3fe54d712084bd487aed1f8fa9bb6a5/">Requirements process</a></li><li><a href="https://courses.edx.org/courses/course-v1%3AUBCx%2BSoftEng1x%2B1T2018/courseware/b7375232b119453ba87336338b8eb8a0/f106a49468104666a381642c918fe8a2/">Validating requirements</a></li><li><a href="https://courses.edx.org/courses/course-v1%3AUBCx%2BSoftEng1x%2B1T2018/courseware/b7375232b119453ba87336338b8eb8a0/a8f7d83d3851495d8e676efb4984136b/">User stories</a></li><li><a href="https://courses.edx.org/courses/course-v1%3AUBCx%2BSoftEng1x%2B1T2018/courseware/b7375232b119453ba87336338b8eb8a0/fd9dd47e63d242869cd5527fb864250d/">INVEST</a></li><li><a href="https://courses.edx.org/courses/course-v1%3AUBCx%2BSoftEng1x%2B1T2018/courseware/b7375232b119453ba87336338b8eb8a0/96125db572f541d5888a5034838e75d2/">Decomposing user stories</a></li><ul> |  <ul><li>[Async programming (source)](tutorials/tutorial_async.html)</li><li>[Async programming (online)](https://slides.com/rodrigoaraujo-1/deck-14#/) |
+| Jan 30      | [Testability & Assertions](readings/TestabilityAssertions.md)   | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/5692eb185917488e9f97c9f346fe932d/c2e857979abc4e7f851b94f4f8ea7418/">Testability</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/5692eb185917488e9f97c9f346fe932d/caefa789a2b64118843193253200cf82/">Assertions</a></li></ul> |  [Applying testability](tutorials/tutorial_testability.pdf) |
+| Feb 6       | High Level Design:<ul><li>[High Level Design](readings/HighLevelDesign.md)</li><li>[Technical Representations](readings/Representations.md)</li></ul> | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/2042a4ecd013433ab5a1c552560617f4/0fdc571c75c24064beb316389a9d60d6">Abstraction</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/2042a4ecd013433ab5a1c552560617f4/aa7bc2e78d52498fa9d3809c0526b390">Technical representations</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/2042a4ecd013433ab5a1c552560617f4/d8857d39fd5c418faa941c14a5849864">APIs</a></li></ul> | [Sprint 2 introduction](http://slides.com/arthurmarques/deliverable-2-tutorial/#/) | 
+| Feb 13      | High Level Design:<ul><li>[Design Principles](readings/DesignPrinciples.md)</li><li>[APIs](readings/API.md)</li></ul> | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/2042a4ecd013433ab5a1c552560617f4/460646f806214225899bf98f0103daa9">Coupling and cohesion</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/2042a4ecd013433ab5a1c552560617f4/bb9d14bb399c4fc2a317fca91cf207eb">Design principles</a></li></ul> |  [API design](http://slides.com/arthurmarques/apis#/) |
+| Feb 20      | Reading Week<ul><li>No Lectures</li><li>No Labs</li><li>No Office Hours</li></ul> |  Reading Week |  Reading Week |
+| Feb 27      | Midterm in Class | None |  API design (no slides) |
+| Mar 6       | Low Level Design: <ul><li>Design Patterns (no readings)</li></ul> | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/7d0289438e6a4d6491f2b0adbc48763a/d7af00b3475e4a35bb7293a40b260d09/">Low-level design intro</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/7d0289438e6a4d6491f2b0adbc48763a/2a9757edc9e34e899f30431aec2c6ec9">Singleton</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/7d0289438e6a4d6491f2b0adbc48763a/f6058ad4a5884fef9a84ff45141a3d89">Strategy</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/7d0289438e6a4d6491f2b0adbc48763a/b00d6eb8bfc44d70b31652b61546988e">State</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/7d0289438e6a4d6491f2b0adbc48763a/44caf94943b842c1940333fcb4b729f0">Facade</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/7d0289438e6a4d6491f2b0adbc48763a/06685e421836432da3aab37836504d22">Decorator</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/7d0289438e6a4d6491f2b0adbc48763a/ba2a508c074840bca101d4d010d5c8c2">MVC</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/7d0289438e6a4d6491f2b0adbc48763a/e1d27347c30048199763cb4ffcd34a46">MVP</a></li></ul> |  Sprint 3 introduction<ul><li><a href="http://slides.com/ataraxie/rest-api-in-practice-what-why-and-how-2#/">D3</a></li><li><a href="http://slides.com/ataraxie/rest-api-in-practice-what-why-and-how-12#/">UI & DOM</a></li><li><a href="http://slides.com/ataraxie/rest-api-in-practice-what-why-and-how#/">Servers & REST</a></li></ul> |
+| Mar 13      | [Information Security](readings/Security.md) | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEngPrjx+1T2018/courseware/34abcc7857984b84adaaedfd9d4ff4ea/ef7543a958574dc9acb09451645d320b/">Information Security</a></li><ul> | <a href="http://slides.com/ataraxie/design-patterns">Applying design patterns</a> |
+| Mar 20      | Dr. Baniassad:<ul><li>[REST](readings/REST.md)</li><li>IP (no readings)</li><li>Ethics (no readings)</li></ul> | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/2042a4ecd013433ab5a1c552560617f4/38538ed0bd784c84a61786fa7671321d/">REST</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEngPrjx+1T2018/courseware/8d4c463695e44e548c9083f7b8fb30c9/1e054043a06b4a0996e537733c4c98b0/">IP</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEngPrjx+1T2018/courseware/780bb09cf4734dcaa884ead98b3a6c46/aae8e4febd204640acedbf47109be867/">Ethics</a></li></ul> | [REST security](tutorials/tutorial_security.pdf) |
+| Mar 27      | Dr. Baniassad: Construction (no reading) | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/a58ebf5981e4464c93bccdbc69269898/a481ea3202e544b587454f5165c4e039/">Automation</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/a58ebf5981e4464c93bccdbc69269898/9261731c1c11441ca017720dd5e14c77/">Code Smells</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/a58ebf5981e4464c93bccdbc69269898/e2a756b14f1941ff88df6f8669febf73/">Refactoring</a></li></ul> | [Automated UI testing](tutorials/tutorial_ui-testing.pdf) |
+| Apr 3       | <ul><li>[Automation](readings/Automation.md)</li><li><a href="https://docs.google.com/presentation/d/1chdA7LyKmnw0MkARlOh0jLTsuo78QpxOq4CD_N2YDAM/edit?usp=sharing">Refactoring & Smells</a></li></ul> | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/a58ebf5981e4464c93bccdbc69269898/c35573ebbc55428a9ca1ea4b723c7517/">Construction intro</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/a58ebf5981e4464c93bccdbc69269898/3875d339292e438aac0b991cf947a7a6/">Non-structural properties</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/a58ebf5981e4464c93bccdbc69269898/ee6367de9a534328bd673e35504c7249">Static analyses</a></li></ul> | Wrap-Up |
+| April 24 | Final Exam @ 1200 (ESB 1013) | <ul><li>[None](https://www.youtube.com/watch?v=q1OtiefZKHU)</li><ul> |  N/A |
+
+-->
+
+
+
+<!-- 
+WEEK 1
+
+<ul>
+<b>Introduction</b>
+<li><a href="https://www.youtube.com/watch?v=Uamo4Ej0tWk">Why-Test</a></li>
+<li><a href="https://www.youtube.com/watch?v=WKrvx7qCUDI">Terminology</a></li>
+<li><a href="https://www.youtube.com/watch?v=ll1k3Pks3ZA">Properties-of-Tests</a></li>
+<li><a href="https://www.youtube.com/watch?v=_Th3f9vks_w">Kinds-of-Tests</a></li>
+<li><a href="https://www.youtube.com/watch?v=x2DWjxDiOQo">Unit-and-System-Properties</a></li>
+<li><a href="https://www.youtube.com/watch?v=v0q1MKhSQVM">Red-Green-Refactor</a></li>
+</ul>	
+	
+<ul>
+<b>White Box</b>
+<li><a href="https://www.youtube.com/watch?v=iujQEm9oono">Introduction-to-Coverage</a></li>
+<li><a href="https://www.youtube.com/watch?v=SC7R-QixRaU">Line-and-Statement-Coverage</a></li>
+<li><a href="https://www.youtube.com/watch?v=YBiHn5vgKnM">Branch-and-Path-Coverage</a></li>
+<li><a href="https://www.youtube.com/watch?v=2EBi66DYF5w">Coverage-Wrap-Up</a></li>
+</ul>
+	
+
+<ul>
+<b>Black Box</b>
+<li><a href="https://www.youtube.com/watch?v=ttAAsNSPiXw">Equivalence-Class-Partitioning</a></li>
+<li><a href="https://www.youtube.com/watch?v=5PtxXnwyU3Y">Input-Partitioning</a></li>
+<li><a href="https://www.youtube.com/watch?v=0yvHDKI-DSA">Output-Partitioning</a></li>
+<li><a href="https://www.youtube.com/watch?v=IRQU_fHKUa0">Boundary-Value-Analysis</a></li>	
+</ul>
+
+WEEEK 2	
+	
+<ul>
+<b>Assertions</b>
+<li><a href="https://www.youtube.com/watch?v=DCAFxgUXM4I">Assertions</a></li>
+<li><a href="https://www.youtube.com/watch?v=Y0GEftJ5MB0">Assertions-Example</a></li>
+</ul>
+	
+<ul>
+<b>Testability</b>
+<li><a href="https://www.youtube.com/watch?v=jwL1vkl-CoY">Introduction</a></li>
+<li><a href="https://www.youtube.com/watch?v=y0zrTdDuYv0">Controllability</a></li>
+<li><a href="https://www.youtube.com/watch?v=CJhJibMCTUM">Observability</a></li>
+<li><a href="https://www.youtube.com/watch?v=Z93-c4ngxGw">Isolateability</a></li>
+<li><a href="https://www.youtube.com/watch?v=NMuhE-XnFe8">Isolateability-Screencast</a></li>
+<li><a href="https://www.youtube.com/watch?v=Q83W5zH8LUY">Automatability</a></li>
+<li><a href="https://www.youtube.com/watch?v=d2WjviF50HA">Wrap-Up</a></li>
+</ul>
+-->
+
+#### Labs:
+
+<!-- **There will not be any labs during the first week of class.** -->
+
+If you are on the waitlist, please attend any lab that works for you until you are able to get in the course. Lab sections must be finalized by the add/drop date. If you have course conflicts in your schedule that prevent you taking labs with available seats, please talk to the CS advisors; unfortunately the course staff is not able to control who is in the lab or lecture.
+
+TBD
+
+<!--
+| Lab | Time 		 | TAs 			| 
+| :-- |:-- 		 | :--			|
+| L2A | Tue 13:30-15:30	 | Annie, Arash, Lucas	|
+| L2C | Wed 10:00-12:00	 | Arash, Lucas, Raghav	|
+| L2E | Wed 16:00-18:00	 | Colin, Ena, Raghav	|
+| L2B | Thu 10:30-12:30	 | Annie, Colin, Ena	|
+| L2F | Thu 17:00-19:00	 | Annie, Colin, Ena 	|
+| L2D | Fri 15:00-17:00	 | Arash, Lucas, Raghav |
+-->
+
+You will not have to specify your team until the week of Sept 14. Both team members will be required to attend each lab. During the week each deliverable is due, lab attendance will be verified by the TAs during the Oral Question process; absence will result in a grade of 0 for the deliverable.
+
+#### TA Office Hours
+
+**There will not be any office hours during the first week of class. Also, these hours are all subject to change, always check back here!**
+
+In addition to the 12 hours of labs per week, there are also ~12 hours of TA office hours per week. These have been clustered later in the week, but some are available on each day, to better meet anticipated demands.
+
+<!-- 
+To simplify scheduling, all lectures, office hours, and labs will be kept up to date on the following: 
+### [Lecture/Lab/Office Hour Calendar](https://calendar.google.com/calendar/embed?src=nd7ha4c6bmar00p19mddks4508%40group.calendar.google.com&ctz=America%2FVancouver)
+-->
+
+## Project
+
+The [project](project/README.md) is an integral part of this course. **The project will be difficult and time consuming**. Projects will be completed in pairs (everyone *must* have a partner, and you must work with the same parter for the duration of the term). Your partner needs to be in the same lab section as you. The project will proceed in 5 2-3 week sprints; the requirements for each sprint is detailed in a deliverable document. You should expect the project to take ~6 hours / week / person (13 weeks * 2 people * 6 hours = 156 hours). It is extremely important you not leave project deliverables until the last moment. It is impossible to stress strongly enough how important this is; 36h over three weeks is no problem, but over a weekend is *impossible*. These time estimates are based on effective effort, if you are multitasking or just randomly trying to cobble something together without a plan or tests, the project may take much longer.
+
+The project will rely heavily on self-learning. The course content is necessarily broad to provide coverage that will be applicable to *most* software development projects. It is important to remember that the project is a *single* software project that will utilize only a subset of the in-class material; the lectures will not serve as a tutorial for the project, it is expected that you will have to use your own creativity to reason about the project requirements, design a solution, and build and validate it yourself.
+
+The intent of this project is to give you the opportunity to concretely apply the course concepts on a real system, but with fewer constraints than were possible in CPSC 210. At the same time, the system does have _some_ constraints to simulate a real system specified by real clients. A strong test emphasis reenforces the importance (and difficulty) of building high-quality software in practice.
+
+Engineers use automated test suites to validate that their software is working as expected. We will evaluate your project deliverables similarly using [AutoTest](project/AutoTest.md). In addition to AutoTest, each team member will be independently asked a small number of questions in the lab to assess their understanding of the solution. While it is reasonable for team members to be more knowledgable about different parts of the system, it is expected that you will understand your entire solution at a high level and be able to provide specific in-depth insight to some meaningful components of your solution.
+
+See the [full project description](project/README.md) for complete details about the project, the lab, project grading, and finding partners.
+
+
+## Project Sprint Schedule
+
+Each deliverable has a deadline; we have also added a one week grace period for and final submissions if needed. Full TA support will be given to any group prior to the deadline; during the grace period, priority will be given to struggling teams or groups working on the next deliverable. (D0 is exempt from this schedule and has only one final deadline)
+
+During the grace week, TAs will only help groups with AutoTest scores below 80%. In the three days prior to the final submission date, only groups with less than 50% AutoTest scores will be helped. We encourage all groups to submit by the deadline, the final submission date is really only for those groups who need a little more time for polish. Regardless of your grade, your TAs will always help you during *your own* lab section; this restriction applies only to Piazza, Office Hours, and labs other than your own.
+
+Also, be aware that waiting until the last minute will greatly degrade AutoTest latency; while you can expect to receive results in < 5 minutes for the majority of the term, this has historically been much slower on the last day:
+
+<img src="readings/figures/autotest_latency.png" width="320px" alt="AutoTest Latency">
+
+Note: Even when AutoTest is heavily loaded your requests are queued and processed in turn; the timestamps we use for the deadline comes from the GitHub push event, not when AutoTest is able to process the request or when the commit was made locally.
+
+
+
+Project schedule TBD.
+
+<!--
+* January 15 @ 1800: ([Deliverable 0](project/Deliverable0.md)) This will be an individual deliverable and will be graded before the Add/Drop date. You should aim to exceed 70% on this deliverable if you want to succeed at the project.
+
+* January 29 (Feb 5 @ 1800 final sub): [Sprint 1](project/Deliverable1.md) The first project deliverable will be extremely challenging; it is important that you start working on this early.
+
+* February 26 (Mar 5 @ 1800 final sub): [Sprint 2](project/Deliverable2.md) An extra week has been added to this deliverable to help teams who fell behind in the first sprint recover.
+
+* February 27: Midterm (sample midterms are available through the CSSS)
+
+* March 19 (Mar 26 @ 1800 final sub): [Sprint 3](project/Deliverable3.md)
+
+* Mar 26: [Project Quality Check](project/Deliverable4.md). There is nothing to hand in for this deliverable.
+
+-->
+
+## Grading
+
+To pass the course and receive credit you must achieve a passing grade on *both* the overall project grade and the overall exam grade. Sample exams are available through the CSSS.
+
+The project grade component is weighted as follows:
+
+| Project Component		| Proportion 	| 
+| :--			 			| :-- 			|
+| Deliverable 0 (d0)			| 20 %	|
+| Project Sprint 1 (d1)			| 20 %	|
+| Project Sprint 2 (d2)			| 20 %	|
+| Project Sprint 3 (d3)			| 15 %	|
+| Project Quality Check	 (d4)	| 15 %	|
+| Participation					| 10 %	|
+
+The exam component is weighted as follows:
+
+| Exam Component			| Proportion 	| 
+| :--			 			| :-- 			|
+| Midterm Exam			| 30 %	|
+| Final Exam				| 70 %	|
+
+The final grade for the course will be computed as follows:
+
+`final grade = project grade * exam grade`
+
+The easiest way to think about this is that the project grade acts as a multiplier on your exam grade. Given the way the project is configured with AutoTest, in past terms we have found the project median to exceed 95%.
+
+## Participation
+
+Participation marks are given for submitting timely status reports for the lecture component of the class. With the exception of Week 0, these reports **MUST** be submitted before class and will require watching the videos for that week. These reports are intended to be short; we will use them to tailor the activities during the week based on your comments. Each of the 10 reports is worth 0.5% (totalling 5% of your final grade if you submit all 10). We will not tally this grade until the end of the term so it is your responsibility to make sure you have done these by their deadlines (the forms will be deactivated afterwards) and to keep track of your own participation grade.
+
+The three deliverable reports (Week 5, 8, and 11) are not part of your participation report but are instead required for your deliverable submissions (see the grade rubric in the deliverable description for more detail of those).
+
+Schedule TBD
+
+<!--
+
+| Week					| Due	| Link | 
+| :--			   		| :-- 	| :-- |
+| Week 0 (Entrance Survey)		| Jan 19 @ 1000 | Expired |
+| Week 1				| Jan 8 @ 1000 | Expired |
+| Week 2				| Jan 15 @ 1000 | Expired |
+| Week 3				| Jan 22 @ 1000 | Expired |
+| Week 4				| Jan 29 @ 1000 | Expired  |
+| Week 5 (d1 survey) **MANDATORY**	| Feb 6 @ 1000 | Expired |
+| Week 6				| Feb 12 @ 1000 | Expired |
+| Week 7 (Reading week) **NO SURVEY**   | N/A | N/A |
+| Week 8   			        | Feb 26 @ 1000 | Expired |
+| Week 9 (d2 survey) **MANDATORY** 	| Mar 6 @ 1000 | Expired |
+| Week 10				| Mar 12 @ 1000 | Expired |
+| Week 11				| Mar 19 @ 1000 | Expired |
+| Week 12 (d3 survey) **MANDATORY** 	| Mar 27 @ 1000 | Expired |
+| Week 13 (Exit Survey)			| Apr 2 @ 1000 | Expired |
+
+-->
+
+## Policies
+
+<a name="waitlist"></a>
+### Waitlist
+
+Students will be moved off the waitlist and into the course incrementally until the add/drop deadline. After this date, the course composition will be fixed. If you are on the waitlist, you are strongly recommended to work on D0 as the deadline for that deliverable is fixed and the d0 score will not be waived. If you are unable to exceed 70% on D0, be aware that you are likely to find the project component extremely challenging.
+
+<!---
+There is extremely high demand for this course this term. If you are on the waitlist and wish to join the class, please come to the front after **EVERY** class to sign in. Those students who have signed into every class by September 16 will be forwarded to the advisors who will insert students into available spots by the add/drop deadline. This does not guarantee you will be admitted, but without signing in every class you will not be eligible. Students on the waitlist should not form groups with students who are already enrolled in case your whole group does not make it into the course this term. Unfortunately, the instructor is not able to override class seat assignments or the waitlist itself.
+
+If you are on the waitlist you should still attend and sign into a lab section so you understand what is happening in the course, and so you do not miss out on the lab attendance marks.
+--->
+### Late Submissions
+
+The project late policy is described [here](project/README.md#late-policy). Only d1 and d2 can be submitted late.
+
+### Accommodation
+
+Lab attendance is mandatory so you have time to meet with your partner. If you must miss a lab, please notify your TA directly
+If you are sick and unable to write the midterm, please contact Reid as soon as possible -- provide medical documentation.
+Students who miss the midterm or final exam due to illness should consult the Faculty of Science Policy on missed exams. Students who do not have sufficient standing during the term may not qualify for academic concession if they miss the final.
+Students who require dispensation based on their unique circumstances should refer to the [UBC policy on Academic Concessions](http://www.calendar.ubc.ca/vancouver/?tree=3,48,0,0).
+Phones, tablets, calculators, translators, and all other electronic devices are prohibited on desks during exams. They must be turned off and placed in your bag or on the ground. Students who need exam accommodation must make an official request to the [Access and Diversity Office](https://students.ubc.ca/about-student-services/access-diversity).
+
+### Academic Conduct
+
+Each student is responsible for understanding and abiding by the University and Departmental policies on academic conduct. Specifically:
+
+* [UBC policy on Academic Misconduct](http://www.calendar.ubc.ca/vancouver/index.cfm?tree=3,54,111,959)
+* [Computer Science Department Lab policies and responsibilities](https://www.cs.ubc.ca/our-department/administration/policies/collaboration)
+
+### Respectful Environment
+
+Everyone involved with CPSC 310 is responsible for understanding and abiding by UBC's [Respectful Environment Statement](http://www.hr.ubc.ca/respectful-environment/).
+
+The Statement of Principle of UBC's Respectful Environment Statement is "The best possible environment for working, learning and living is one in which respect, civility, diversity, opportunity and inclusion are valued. Everyone at the University of British Columbia is expected to conduct themselves in a manner that upholds these principles in all communications and interactions with fellow UBC community members and the public in all University-related settings."
+
+### License
+
+The readings for this course are licensed using [CC-by-SA](https://creativecommons.org/licenses/by-sa/3.0/). However, it is important to note that the deliverable descriptions, code implementing the deliverables, exams, and exam solutions are considered private materials. We go to considerable lengths to make the project an interesting and useful learning experience for this course. This is a great deal of work, and while future students may be tempted by your solutions, posting them does not do them any real favours. Please be considerate with these private materials and not pass them along to others, make your repos public, or post them to other sites online.
+
+
+<!--- 
+
+### Archived bits 
+
+#### First Lecture Links
+
+* [Sample Repository](https://github.com/rtholmes/cpsc310starter) for in class use.
+* ~~[Entrance Survey](https://goo.gl/forms/0G3o369xPqRSmThI3) Please let us know what you want out of CPSC 310!~~
+--->
 
