@@ -264,8 +264,8 @@ To pass the course and receive credit you must achieve a passing grade on *both*
 
 The project grade component is weighted as follows:
 
-| Project Component		| Proportion 	| 
-| :--			 			| :-- 			|
+| Project Component				| Proportion 	| 
+| :--			 				| :-- 			|
 | Deliverable 0 (d0)			| 20 %	|
 | Project Sprint 1 (d1)			| 20 %	|
 | Project Sprint 2 (d2)			| 20 %	|
@@ -277,10 +277,10 @@ The exam component is weighted as follows:
 
 | Exam Component			| Proportion 	| 
 | :--			 			| :-- 			|
-| Midterm Exam			| 30 %	|
+| Midterm Exam				| 30 %	|
 | Final Exam				| 70 %	|
 
-The final grade for the course will be computed as follows:
+The final grade for the course will be computed as follows ***LIKELY TO CHANGE BEFORE THE FIRST CLASS***:
 
 `final grade = project grade * exam grade`
 
@@ -296,22 +296,22 @@ Schedule TBD
 
 <!--
 
-| Week					| Due	| Link | 
-| :--			   		| :-- 	| :-- |
-| Week 0 (Entrance Survey)		| Jan 19 @ 1000 | Expired |
-| Week 1				| Jan 8 @ 1000 | Expired |
-| Week 2				| Jan 15 @ 1000 | Expired |
-| Week 3				| Jan 22 @ 1000 | Expired |
-| Week 4				| Jan 29 @ 1000 | Expired  |
-| Week 5 (d1 survey) **MANDATORY**	| Feb 6 @ 1000 | Expired |
-| Week 6				| Feb 12 @ 1000 | Expired |
+| Week									| Due	| Link | 
+| :--			   						| :-- 	| :-- |
+| Week 0 (Entrance Survey)				| Jan 19 @ 1000 | Expired |
+| Week 1								| Jan 8 @ 1000 | Expired |
+| Week 2								| Jan 15 @ 1000 | Expired |
+| Week 3								| Jan 22 @ 1000 | Expired |
+| Week 4								| Jan 29 @ 1000 | Expired  |
+| Week 5 (d1 survey) **MANDATORY**		| Feb 6 @ 1000 | Expired |
+| Week 6								| Feb 12 @ 1000 | Expired |
 | Week 7 (Reading week) **NO SURVEY**   | N/A | N/A |
-| Week 8   			        | Feb 26 @ 1000 | Expired |
-| Week 9 (d2 survey) **MANDATORY** 	| Mar 6 @ 1000 | Expired |
-| Week 10				| Mar 12 @ 1000 | Expired |
-| Week 11				| Mar 19 @ 1000 | Expired |
+| Week 8   			        			| Feb 26 @ 1000 | Expired |
+| Week 9 (d2 survey) **MANDATORY** 		| Mar 6 @ 1000 | Expired |
+| Week 10								| Mar 12 @ 1000 | Expired |
+| Week 11								| Mar 19 @ 1000 | Expired |
 | Week 12 (d3 survey) **MANDATORY** 	| Mar 27 @ 1000 | Expired |
-| Week 13 (Exit Survey)			| Apr 2 @ 1000 | Expired |
+| Week 13 (Exit Survey)					| Apr 2 @ 1000 | Expired |
 
 -->
 
