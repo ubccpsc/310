@@ -48,20 +48,22 @@ The course [project](project/README.md) embodies an experiential learning enviro
 
 CPSC 310 will be a challenging course that we have designed to integrate many of the ideas and concepts from your prior courses in order to help you to learn how to apply them to engineering modern software systems.
 
-## Video & Supplementary Material
+## Video Links
 
+Video links to YouTube will be added to the course schedule as the term progresses.
+
+<!--
 Videos and practice problems for all course materials will be available through the [edX Software Engineering](https://www.edx.org/course/software-engineering-introduction-ubcx-softeng1x) course. You do ***NOT*** need to pay for this, all course materials are available in the free (non-verified) version of the course; these materials will be released on January 8.
+-->
 
 ## Contact
 
-#### Instructor:
+#### Instructors:
 
-TBD
-
-<!--
-* [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
--->
-
+* Section 101: [Anthony Estey](https://www.cs.ubc.ca/people/anthony-estey)
+  * T/Th @ 1230-1400 in DMP 310
+* Section 102: [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
+  * T/Th @ 0930-1100 in SWNG 221
 #### TAs:
 
 TBD
@@ -264,8 +266,8 @@ To pass the course and receive credit you must achieve a passing grade on *both*
 
 The project grade component is weighted as follows:
 
-| Project Component				| Proportion 	| 
-| :--			 				| :-- 			|
+| Project Component				| Proportion | 
+| :--			 				    | :-- |
 | Deliverable 0 (d0)			| 20 %	|
 | Project Sprint 1 (d1)			| 20 %	|
 | Project Sprint 2 (d2)			| 20 %	|
@@ -277,12 +279,12 @@ The exam component is weighted as follows:
 
 | Exam Component			| Proportion 	| 
 | :--			 			| :-- 			|
-| Midterm Exam				| 30 %	|
+| Midterm Exam			| 30 %	|
 | Final Exam				| 70 %	|
 
 The final grade for the course will be computed as follows ***LIKELY TO CHANGE BEFORE THE FIRST CLASS***:
 
-`final grade = project grade * exam grade`
+`final grade = (project grade * .5) + (exam grade * .5)`
 
 The easiest way to think about this is that the project grade acts as a multiplier on your exam grade. Given the way the project is configured with AutoTest, in past terms we have found the project median to exceed 95%.
 
