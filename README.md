@@ -61,7 +61,7 @@ Videos and practice problems for all course materials will be available through 
 #### Instructors:
 
 * Section 101: [Anthony Estey](https://www.cs.ubc.ca/people/anthony-estey)
-  * T/Th @ 1230-1400 in DMP 310
+  * T/Th @ 1230-1400 in SWNG 122
 * Section 102: [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
   * T/Th @ 0930-1100 in SWNG 221
 #### TAs:
@@ -322,7 +322,7 @@ Schedule TBD
 <a name="waitlist"></a>
 ### Waitlist
 
-Students will be moved off the waitlist and into the course incrementally until the add/drop deadline. After this date, the course composition will be fixed. If you are on the waitlist, you are strongly recommended to work on D0 as the deadline for that deliverable is fixed and the d0 score will not be waived. If you are unable to exceed 70% on D0, be aware that you are likely to find the project component extremely challenging.
+To maximize certainty around getting access to 310 this term, we will over-enroll the course by moving as many people as we can from the waitlist into the lecture after the first day of class. At this point, the class composition will be frozen for the rest of the term. There will likely be some natural movement of people leaving the course before the add/drop date, but this will just drop our total size back towards capacity rather than the over-enrolled state we will be in after the first lecture.
 
 <!---
 There is extremely high demand for this course this term. If you are on the waitlist and wish to join the class, please come to the front after **EVERY** class to sign in. Those students who have signed into every class by September 16 will be forwarded to the advisors who will insert students into available spots by the add/drop deadline. This does not guarantee you will be admitted, but without signing in every class you will not be eligible. Students on the waitlist should not form groups with students who are already enrolled in case your whole group does not make it into the course this term. Unfortunately, the instructor is not able to override class seat assignments or the waitlist itself.
