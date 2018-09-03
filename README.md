@@ -3,17 +3,13 @@
 # UBC CPSC 310 - Software Engineering
 September 4, 2018 -> December 4, 2018 (```2018T1```). These are the official resources for both sections.
 
-<!-- 
-## Please login to [here](https://github.ugrad.cs.ubc.ca/) using your CS Ugrad Id/Password by 1400 on January 4; this is required so we can provision your d0 repository.
--->
+## Please login to [here](https://github.ugrad.cs.ubc.ca/) using your CS Ugrad Id/Password by 1400 on the Friday of the first week of class; this is required so we can provision your d0 repository for you to use in lab during the second week of class.
 
 ## This is a development-heavy four-credit course. Plan your timetable accordingly. If you are not familiar with TypeScript, please start looking at it now.
 
-
-
 ## About the labs
 
-This is a pair-programming course: If you want to work with someone specific for your [project](project/README.md), be sure that both of you register for the _SAME_ lab section. We do not have the ability to move people around between labs; please either monitor the SSC for space in your preferred lab sections, move to another lab with space, or find a partner in the lab you are registered in. Teams **must** be firm by the time of your lab the week of Jan 16. If you do not have a partner, it is your responsibility to notify the TA in lab that week so you can be paired up. If you do not have a partner at the end of your lab that week, you will not be able to complete the project (40% of your final grade). Finding a partner is **your** responsibility and is key to your having a great term, please take the time to do this right.
+This is a pair-programming course: If you want to work with someone specific for your [project](project/README.md), be sure that both of you register for the _SAME_ lab section. We do not have the ability to move people around between labs; please either monitor the SSC for space in your preferred lab sections, move to another lab with space, or find a partner in the lab you are registered in. Teams **must** be firm by the time of your lab the week of the add/drop deadline. If you do not have a partner, it is your responsibility to notify the TA in lab that week so you can be paired up. If you do not have a partner at the end of your lab that week, you will not be able to complete the project (40% of your final grade). Finding a partner is **your** responsibility and is key to your having a great term, please take the time to do this right.
 
 ## Waitlist: [See Here](#waitlist)
 
@@ -30,13 +26,12 @@ Each module will have reading materials and videos posted online; no slides will
 
 Some of the topics we will cover in 310 this term include:
 
-
 * Software specifications
 * Agile development
 * High and low-level design (this is the primary course focus)
 * Automated testing
 * Refactoring
-* Information Security
+* Information security
 * REST
 * Async development
 
@@ -66,32 +61,29 @@ Videos and practice problems for all course materials will be available through 
   * T/Th @ 0930-1100 in SWNG 221
 #### TAs:
 
-TBD
-
-<!-- 
-* Nick Bradley (GTA)
-* Arthur de Sousa Marques (GTA)
-* Rodrigo Araujo (GTA)
-* Xinhong (Sam) Liu (GTA)
+* Nicholas Bradley (GTA)
 * Felix Grund (GTA)
+* Xinhong (Sam) Liu (GTA)
+* Christopher Satterfield (GTA)
+* Shuanglin Cao
+* Yi Cheng Ding
+* Harman Gakhal
+* Braxton Hall
+* Cindy Hsu
+* Yehee Kim
+* Catherine Leung
+* Ada Yu Ying Li
+* Brian Neumann
+* Tassilo von Gerlach
+* Zhenpeng Wu
+* Haochen Yu
 * Lucas Zamprogno
-* Raghav Thakur
-* Ena Krdzalic
-* Arash Haj Shirmohammadi
-* Chi Wei Chen
-* Ruoyu Wang
--->
 
 ### Piazza
 
+[Piazza](https://piazza.com/ubc.ca/winterterm12018/cpsc310/home) has been configured for this term. Please see the instructor in person in class if you want to discuss course materials; only TAs will monitor Piazza. Please be mindful of the UBC Academic Misconduct Policy with respect to posting project solutions on Piazza. It is _extremely_ helpful if your Piazza name corresponds to your name in the SSC in the advent we need to help you with a problem with your project, repositories, or grades. 
 
-Piazza will be used but has not been configured.
-
-<!--
-[Piazza](https://piazza.com/ubc.ca/winterterm22017/cpsc310/home) has been configured for this term. Please see the instructor in person in class if you want to discuss course materials; only TAs will monitor Piazza. Please be mindful of the UBC Academic Misconduct Policy with respect to posting project solutions on Piazza. It is _extremely_ helpful if your Piazza name corresponds to your name in the SSC in the advent we need to help you with a problem with your project, repositories, or grades. 
-
-When posting to Piazza please be sure to include your team number so the TAs can find your group's code in order to help you more effectively. Also, when asking TAs about failing tests in particular, the TAs will often want to see your own test for similar cases (usually this will take several tests) so you can demonstrate to them why you think your code is correct.
--->
+When posting to Piazza please be sure to include a link to your team's GitHub repository so the TAs can find your group's code in order to help you more effectively. Also, when asking TAs about failing tests in particular, the TAs will often want to see your own test for similar cases (usually this will take several tests) so you can demonstrate to them why you think your code is correct.
 
 ### Getting help
 
