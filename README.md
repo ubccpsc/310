@@ -384,7 +384,7 @@ Labs
 
 <!-- **There will not be any labs during the first week of class.** -->
 
-If you are on the waitlist, please attend any lab that works for you until you are able to get in the course. Lab sections must be finalized by the add/drop date. If you have course conflicts in your schedule that prevent you taking labs with available seats, please talk to the CS advisors; unfortunately the course staff is not able to control who is in the lab or lecture.
+If you are on the waitlist, please attend any lab that works for you until you are able to get in the course. Lab sections must be finalized by the add/drop date. If you have course conflicts in your schedule that prevent you taking labs with available seats, please talk to the [CS advisors](https://www.cs.ubc.ca/students/undergrad/resources/academic-advising); unfortunately the course staff is not able to control who is in the lab or lecture.
 
 TBD
 
@@ -516,7 +516,7 @@ Schedule TBD
 <a name="waitlist"></a>
 ### Waitlist
 
-To maximize certainty around getting access to 310 this term, we will over-enroll the course by moving as many people as we can from the waitlist into the lecture after the first day of class. At this point, the class composition will be frozen for the rest of the term. There will likely be some natural movement of people leaving the course before the add/drop date, but this will just drop our total size back towards capacity rather than the over-enrolled state we will be in after the first lecture.
+To maximize certainty around getting access to 310 this term, the [CS advisors](https://www.cs.ubc.ca/students/undergrad/resources/academic-advising) will over-enroll the course by moving as many people as they can from the waitlist into the lecture after the first day of class; only the advisors have the ability to make changes to the class list. At this point, the class composition will be frozen for the rest of the term. There will likely be some natural movement of people leaving the course before the add/drop date, but this will just drop our total size back towards capacity rather than the over-enrolled state we will be in after the first lecture.
 
 <!---
 There is extremely high demand for this course this term. If you are on the waitlist and wish to join the class, please come to the front after **EVERY** class to sign in. Those students who have signed into every class by September 16 will be forwarded to the advisors who will insert students into available spots by the add/drop deadline. This does not guarantee you will be admitted, but without signing in every class you will not be eligible. Students on the waitlist should not form groups with students who are already enrolled in case your whole group does not make it into the course this term. Unfortunately, the instructor is not able to override class seat assignments or the waitlist itself.
