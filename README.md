@@ -441,20 +441,18 @@ Note: Even when AutoTest is heavily loaded your requests are queued and processe
 
 Project schedule TBD.
 
-<!--
-* January 15 @ 1800: ([Deliverable 0](project/Deliverable0.md)) This will be an individual deliverable and will be graded before the Add/Drop date. You should aim to exceed 70% on this deliverable if you want to succeed at the project.
+* September 17 @ 1800: ([Deliverable 0](project/Deliverable0.md)) This will be an individual deliverable and will be graded before the Add/Drop date. You should aim to exceed 70% on this deliverable if you want to succeed at the project.
 
-* January 29 (Feb 5 @ 1800 final sub): [Sprint 1](project/Deliverable1.md) The first project deliverable will be extremely challenging; it is important that you start working on this early.
+* October 8 (Oct 15 @ 1800 final sub): [Sprint 1](project/Deliverable1.md) The first project deliverable will be extremely challenging; it is important that you start working on this early.
 
-* February 26 (Mar 5 @ 1800 final sub): [Sprint 2](project/Deliverable2.md) An extra week has been added to this deliverable to help teams who fell behind in the first sprint recover.
+* October 23: Midterm (sample midterms are available through the CSSS)
 
-* February 27: Midterm (sample midterms are available through the CSSS)
+* October 29 (Nov 5 @ 1800 final sub): [Sprint 2](project/Deliverable2.md) An extra week has been added to this deliverable to help teams who fell behind in the first sprint recover.
 
-* March 19 (Mar 26 @ 1800 final sub): [Sprint 3](project/Deliverable3.md)
+* November 29 (Nov 26 @ 1800 final sub): [Sprint 3](project/Deliverable3.md)
 
-* Mar 26: [Project Quality Check](project/Deliverable4.md). There is nothing to hand in for this deliverable.
+* November 26: [Project Quality Check](project/Deliverable4.md). There is nothing to submit for this deliverable.
 
--->
 
 ## Grading
 
