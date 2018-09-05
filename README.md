@@ -44,14 +44,6 @@ The course [project](project/README.md) embodies an experiential learning enviro
 
 CPSC 310 will be a challenging course that we have designed to integrate many of the ideas and concepts from your prior courses in order to help you to learn how to apply them to engineering modern software systems.
 
-## Video Links
-
-Video links to YouTube will be added to the course schedule as the term progresses.
-
-<!--
-Videos and practice problems for all course materials will be available through the [edX Software Engineering](https://www.edx.org/course/software-engineering-introduction-ubcx-softeng1x) course. You do ***NOT*** need to pay for this, all course materials are available in the free (non-verified) version of the course; these materials will be released on January 8.
--->
-
 ## Contact
 
 #### Instructors:
@@ -89,7 +81,7 @@ When posting to Piazza please be sure to include a link to your team's GitHub re
 
 ### Getting help
 
-For *[project](project/README.md) / language help*, there will be at least 12 hours of labs and 12 hours of TA office hours per week. TA office hours closer to the deadline are likely to be _much_ busier than others (which may not be attended at all); to accommodate this we have scheduled most of the office hours prior to deadlines, but seeking help at other times and in your lab will likely be less busy.
+For *[project](project/README.md) / language help*, there will be at least 24 hours of labs and 24 hours of TA office hours per week. TA office hours closer to the deadline are likely to be _much_ busier than others (which may not be attended at all); to accommodate this we have scheduled most of the office hours prior to deadlines, but seeking help at other times and in your lab will likely be less busy.
 
 ## Schedule
 
@@ -119,9 +111,8 @@ Overview
 --------
 
 W0: [Course Introduction](http://www.youtube.com/watch?v=3tXzYUVQlrM)  
+W0: [Capstone Project Overview](http://www.youtube.com/watch?v=NQCyiD-Fh9Q)   
 <!-- [Running Example Introduction](http://www.youtube.com/watch?v=S4GEa6JMo4I) -->
-W0: [Capstone Project Overview](http://www.youtube.com/watch?v=NQCyiD-Fh9Q)  
-
 Process
 -------
 
@@ -389,18 +380,25 @@ If you are on the waitlist, please attend any lab that works for you until you a
 
 TBD
 
-<!--
-| Lab | Time 		 | TAs 			| 
-| :-- |:-- 		 | :--			|
-| L2A | Tue 13:30-15:30	 | Annie, Arash, Lucas	|
-| L2C | Wed 10:00-12:00	 | Arash, Lucas, Raghav	|
-| L2E | Wed 16:00-18:00	 | Colin, Ena, Raghav	|
-| L2B | Thu 10:30-12:30	 | Annie, Colin, Ena	|
-| L2F | Thu 17:00-19:00	 | Annie, Colin, Ena 	|
-| L2D | Fri 15:00-17:00	 | Arash, Lucas, Raghav |
--->
 
-You will not have to specify your team until the week of Sept 14. Both team members will be required to attend each lab. During the week each deliverable is due, lab attendance will be verified by the TAs during the Oral Question process; absence will result in a grade of 0 for the deliverable.
+| Lab | Time 		 | TAs 		| 
+| :-- |:-- 		 | :--			|
+| L1M | Tue 1530-1730	 | TBD |
+| L1E | Tue 1700-1900	 | TBD	|
+| L1H | Wed 0900-1100	 | TBD|
+| L1B | Wed 1100-1300	 | TBD	|
+| L1D | Wed 1300-1500	 | TBD	|
+| L1C | Wed 1500-1700	 | TBD	|
+| L1G | Thu 1030-1230	 | TBD|
+| L1F | Thu 1400-1600	 | TBD	|
+| L1J | Thu 1700-1900	 | TBD|
+| L1K | Fri 0900-1100	 | TBD|
+| L1L | Fri 1100-1300	 | TBD|
+| L1A | Fri 1400-1600	 | TBD	|
+
+
+
+You will not have to specify your team until the week of Sept 15. Both team members will be required to attend each lab. During the week each deliverable is due, lab attendance will be verified by the TAs during the Oral Question process; absence will result in a grade of 0 for the deliverable.
 
 #### TA Office Hours
 
