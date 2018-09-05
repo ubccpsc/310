@@ -119,7 +119,7 @@ Overview
 --------
 
 W0: [Course Introduction](http://www.youtube.com/watch?v=3tXzYUVQlrM)  
-[Running Example Introduction](http://www.youtube.com/watch?v=S4GEa6JMo4I)  
+<!-- [Running Example Introduction](http://www.youtube.com/watch?v=S4GEa6JMo4I) -->
 W0: [Capstone Project Overview](http://www.youtube.com/watch?v=NQCyiD-Fh9Q)  
 
 Process
