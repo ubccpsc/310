@@ -87,13 +87,13 @@ For *[project](project/README.md) / language help*, there will be at least 24 ho
 
 This is a high-level overview of what the course will be about. Expect this list to change, although we will commit to freezing the schedule and videos for each upcoming week by the end of the previous Thursday so you will be able to watch the correct videos and complete the survey for that week.
 
-| Week					| Topic 				| Survey |
+| Week					| Topic & Readings 				| Survey |
 |---					|---					|--- |
-| Week 0: Sept 3		| Introduction, Languages             | [TBD](NOTSETYET) |
-| Week 1: Sept 10	| Testing				                  | [TBD](NOTSETYET) |
-| Week 2: Sept 17	|	Process & Agile	                  | [TBD](NOTSETYET) |
-| Week 3: Sept 24	| Specifications & User Stories       | [TBD](NOTSETYET) |
-| Week 4: Oct 1		| Testability & Assertions            | [TBD](NOTSETYET) |
+| Week 0: Sept 3		| [Introduction](readings/Introduction.md), [Teamwork](readings/Teamwork.md), & [Languages](readings/Languages.md)             | [TBD](NOTSETYET) |
+| Week 1: Sept 10	| [Testing](readings/Testing.md)				                  | [TBD](NOTSETYET) |
+| Week 2: Sept 17	| [Process & Agile](readings/Process.md)	                  | [TBD](NOTSETYET) |
+| Week 3: Sept 24	| [Specifications](readings/Specifications.md) & [User Stories](readings/SpecificationsUserStories.md)       | [TBD](NOTSETYET) |
+| Week 4: Oct 1		| [Testability & Assertions](readings/TestabilityAssertions.md)            | [TBD](NOTSETYET) |
 | Week 5: Oct 8		| High-level design	                  | [TBD](NOTSETYET) | <!-- & technical representations -->
 | Week 6: Oct 15		| High-level design	                  | [TBD](NOTSETYET) | 
 | Week 7: Oct 22		| Midterm				                  | [TBD](NOTSETYET) |
@@ -107,7 +107,7 @@ It is expected that you will watch the videos for a week prior to coming to clas
 
 NOTE: The videos below are ordered conceptually, although course constraints cause us to do many topics out of order (so you can use them in the project, etc.), so make sure you check the full list to make sure you have covered all the videos for a given week.
 
-Overview
+Course Videos
 --------
 
 W0: [Course Introduction](http://www.youtube.com/watch?v=3tXzYUVQlrM)  
