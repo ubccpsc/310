@@ -107,10 +107,9 @@ This is a high-level overview of what the course will be about. Expect this list
 | Week 7: Oct 22		| Midterm				                  | [TBD](NOTSETYET) |
 | Week 8: Oct 29		| Low-level design 	                  | [TBD](NOTSETYET) |
 | Week 9: Nov 5		| Low-level design	                  | [TBD](NOTSETYET) |
-| Week 10: Nov 12	| InfoSec				                  | [TBD](NOTSETYET) |
-| Week 11: Nov 19	| IP & Ethics			                  | [TBD](NOTSETYET) |
-| Week 12: Nov 26	| Construction & REST                 | [TBD](NOTSETYET) |
-| Week 13: Dec 3		| Automation & Refactoring            | [TBD](NOTSETYET) |
+| Week 10: Nov 12	| InfoSec, IP, & Ethics				                  | [TBD](NOTSETYET) |
+| Week 11: Nov 19	| Construction & REST		                  | [TBD](NOTSETYET) |
+| Week 12: Nov 26	| Automation & Refactoring                 | [TBD](NOTSETYET) |
 
 It is expected that you will watch the videos for a week prior to coming to class. This will greatly increase your understanding of what will be happening in lecture and make it much easier for you to participate in any hands-on activities we will be doing. The videos below will be annotated with week indicators (W0, W1, etc.) once we know when each should be watched to prepare for lecture that week.
 
@@ -443,15 +442,15 @@ Project schedule TBD.
 
 * September 17 @ 1800: ([Deliverable 0](project/Deliverable0.md)) This will be an individual deliverable and will be graded before the Add/Drop date. You should aim to exceed 70% on this deliverable if you want to succeed at the project.
 
-* October 8 (Oct 15 @ 1800 final sub): [Sprint 1](project/Deliverable1.md) The first project deliverable will be extremely challenging; it is important that you start working on this early.
+* October 1 (Oct 8 @ 1800 final sub): [Sprint 1](project/Deliverable1.md) The first project deliverable will be extremely challenging; it is important that you start working on this early.
 
 * October 23: Midterm (sample midterms are available through the CSSS)
 
-* October 29 (Nov 5 @ 1800 final sub): [Sprint 2](project/Deliverable2.md) An extra week has been added to this deliverable to help teams who fell behind in the first sprint recover.
+* October 22 (Oct 29 @ 1800 final sub): [Sprint 2](project/Deliverable2.md) An extra week has been added to this deliverable to help teams who fell behind in the first sprint recover.
 
-* November 29 (Nov 26 @ 1800 final sub): [Sprint 3](project/Deliverable3.md)
+* November 12 (Nov 19 @ 1800 final sub): [Sprint 3](project/Deliverable3.md)
 
-* November 26: [Project Quality Check](project/Deliverable4.md). There is nothing to submit for this deliverable.
+* November 19: [Project Quality Check](project/Deliverable4.md). There is nothing to submit for this deliverable.
 
 
 ## Grading
@@ -488,9 +487,11 @@ Participation marks are given for submitting timely status reports for the lectu
 
 The three deliverable reports (Week 5, 8, and 11) are not part of your participation report but are instead required for your deliverable submissions (see the grade rubric in the deliverable description for more detail of those).
 
+<!--
+
 Schedule TBD
 
-<!--
+
 
 | Week									| Due	| Link | 
 | :--			   						| :-- 	| :-- |
