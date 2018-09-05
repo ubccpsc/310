@@ -93,7 +93,7 @@ For *[project](project/README.md) / language help*, there will be at least 12 ho
 
 ## Schedule
 
-This is a high-level overview of what the course will be about. Expect this list to change, although we will commit to freezing the next week by the end of the previous Thursday so you will be able to watch the correct videos and complete the survey for the next week.
+This is a high-level overview of what the course will be about. Expect this list to change, although we will commit to freezing the schedule and videos for each upcoming week by the end of the previous Thursday so you will be able to watch the correct videos and complete the survey for that week.
 
 | Week					| Topic 				| Survey |
 |---					|---					|--- |
@@ -108,194 +108,196 @@ This is a high-level overview of what the course will be about. Expect this list
 | Week 8: Oct 29		| Low-level design 	                  | [TBD](NOTSETYET) |
 | Week 9: Nov 5		| Low-level design	                  | [TBD](NOTSETYET) |
 | Week 10: Nov 12	| InfoSec, IP, & Ethics				                  | [TBD](NOTSETYET) |
-| Week 11: Nov 19	| Construction & REST		                  | [TBD](NOTSETYET) |
-| Week 12: Nov 26	| Automation & Refactoring                 | [TBD](NOTSETYET) |
+| Week 11: Nov 19	| REST & TBD		                  | [TBD](NOTSETYET) |
+| Week 12: Nov 26	| Construction, Automation, & Refactoring                 | [TBD](NOTSETYET) |
 
 It is expected that you will watch the videos for a week prior to coming to class. This will greatly increase your understanding of what will be happening in lecture and make it much easier for you to participate in any hands-on activities we will be doing. The videos below will be annotated with week indicators (W0, W1, etc.) once we know when each should be watched to prepare for lecture that week.
+
+NOTE: The videos below are ordered conceptually, although course constraints cause us to do many topics out of order (so you can use them in the project, etc.), so make sure you check the full list to make sure you have covered all the videos for a given week.
 
 Overview
 --------
 
-[Course Introduction](http://www.youtube.com/watch?v=3tXzYUVQlrM)  
+W0: [Course Introduction](http://www.youtube.com/watch?v=3tXzYUVQlrM)  
 [Running Example Introduction](http://www.youtube.com/watch?v=S4GEa6JMo4I)  
-[Capstone Project Overview](http://www.youtube.com/watch?v=NQCyiD-Fh9Q)  
+W0: [Capstone Project Overview](http://www.youtube.com/watch?v=NQCyiD-Fh9Q)  
 
 Process
 -------
 
-[Why Process?](http://www.youtube.com/watch?v=dtK561i_wX4)  
-[Waterfall](http://www.youtube.com/watch?v=1pQ9-BNTvgs)  
-[Spiral](http://www.youtube.com/watch?v=Zq6EXTSzf84)  
-[Extreme Programming](http://www.youtube.com/watch?v=axcRa3YoCQ0)  
-[Test Driven Development](http://www.youtube.com/watch?v=Ux9QMfEK9Eg)  
-[Scrum](http://www.youtube.com/watch?v=mjphDWlRQ2c)  
+W2: [Why Process?](http://www.youtube.com/watch?v=dtK561i_wX4)  
+W2: [Waterfall](http://www.youtube.com/watch?v=1pQ9-BNTvgs)  
+W2: [Spiral](http://www.youtube.com/watch?v=Zq6EXTSzf84)  
+W2: [Extreme Programming](http://www.youtube.com/watch?v=axcRa3YoCQ0)  
+W2: [Test Driven Development](http://www.youtube.com/watch?v=Ux9QMfEK9Eg)  
+W2: [Scrum](http://www.youtube.com/watch?v=mjphDWlRQ2c)  
 
 Specification
 -------------
 
-[Introduction to Specifications](http://www.youtube.com/watch?v=1rqWeAQ8onI)  
-[Requirements Process](http://www.youtube.com/watch?v=7r9vXTSSTVc)  
-[Requirements Properties](http://www.youtube.com/watch?v=9z9T0dxMLJU)  
-[Requirements Elicitation](http://www.youtube.com/watch?v=PGuPVkNeqJQ)  
-[Additional Requirements](http://www.youtube.com/watch?v=mUQOuglR6ss)  
-[Validating Requirements](http://www.youtube.com/watch?v=H4V_lwuznVY)  
+W3: [Introduction to Specifications](http://www.youtube.com/watch?v=1rqWeAQ8onI)  
+W3: [Requirements Process](http://www.youtube.com/watch?v=7r9vXTSSTVc)  
+W3: [Requirements Properties](http://www.youtube.com/watch?v=9z9T0dxMLJU)  
+W3: [Requirements Elicitation](http://www.youtube.com/watch?v=PGuPVkNeqJQ)  
+W3: [Additional Requirements](http://www.youtube.com/watch?v=mUQOuglR6ss)  
+W3: [Validating Requirements](http://www.youtube.com/watch?v=H4V_lwuznVY)  
 
 ### User stories
 
-[User Stories](http://www.youtube.com/watch?v=Y7E56dD7Jxw)  
-[INVEST Guidelines](http://www.youtube.com/watch?v=fqknLz6rdGE)  
-[User Story and INVEST Example](http://www.youtube.com/watch?v=3b63NxSCxPw)  
-[Decomposing User Stories: Part 1](http://www.youtube.com/watch?v=qDpfRXGwbG0)  
-[Decomposing User Stories: Part 2](http://www.youtube.com/watch?v=mKAPOzwK_wM)  
-[Decomposing User Stories: Part 3](http://www.youtube.com/watch?v=1E-9qzKi1Fc)  
-[Decomposing User Stories: Part 4](http://www.youtube.com/watch?v=d8zp_-RZNOo)  
-[Decomposing User Stories: Part 5](http://www.youtube.com/watch?v=1ZPPmmXE_wM)  
+W3: [User Stories](http://www.youtube.com/watch?v=Y7E56dD7Jxw)  
+W3: [INVEST Guidelines](http://www.youtube.com/watch?v=fqknLz6rdGE)  
+W3: [User Story and INVEST Example](http://www.youtube.com/watch?v=3b63NxSCxPw)  
+W3: [Decomposing User Stories: Part 1](http://www.youtube.com/watch?v=qDpfRXGwbG0)  
+W3: [Decomposing User Stories: Part 2](http://www.youtube.com/watch?v=mKAPOzwK_wM)  
+W3: [Decomposing User Stories: Part 3](http://www.youtube.com/watch?v=1E-9qzKi1Fc)  
+W3: [Decomposing User Stories: Part 4](http://www.youtube.com/watch?v=d8zp_-RZNOo)  
+W3: [Decomposing User Stories: Part 5](http://www.youtube.com/watch?v=1ZPPmmXE_wM)  
 
 Testing
 -------
 
-[Why Test?](http://www.youtube.com/watch?v=Uamo4Ej0tWk)  
-[Terminology](http://www.youtube.com/watch?v=WKrvx7qCUDI)  
-[Properties of Tests](http://www.youtube.com/watch?v=ll1k3Pks3ZA)  
-[Kinds of Tests](http://www.youtube.com/watch?v=_Th3f9vks_w)  
-[Unit and System Properties](http://www.youtube.com/watch?v=x2DWjxDiOQo)  
-[Red Green Refactor](http://www.youtube.com/watch?v=v0q1MKhSQVM)  
-
-### White Box Testing
-
-[Introduction to Coverage](http://www.youtube.com/watch?v=iujQEm9oono)  
-[Line and Statement Coverage](http://www.youtube.com/watch?v=SC7R-QixRaU)  
-[Branch and Path Coverage](http://www.youtube.com/watch?v=YBiHn5vgKnM)  
-[Coverage Wrap-Up](http://www.youtube.com/watch?v=2EBi66DYF5w)  
+W1: [Why Test?](http://www.youtube.com/watch?v=Uamo4Ej0tWk)  
+W1: [Terminology](http://www.youtube.com/watch?v=WKrvx7qCUDI)  
+W1: [Properties of Tests](http://www.youtube.com/watch?v=ll1k3Pks3ZA)  
+W1: [Kinds of Tests](http://www.youtube.com/watch?v=_Th3f9vks_w)  
+W1: [Unit and System Properties](http://www.youtube.com/watch?v=x2DWjxDiOQo)  
+W1: [Red Green Refactor](http://www.youtube.com/watch?v=v0q1MKhSQVM)  
 
 ### Black Box Testing
 
-[Equivalence Class Partitioning](http://www.youtube.com/watch?v=ttAAsNSPiXw)  
-[Input Partitioning](http://www.youtube.com/watch?v=5PtxXnwyU3Y)  
-[Output Partitioning](http://www.youtube.com/watch?v=0yvHDKI-DSA)  
-[Boundary Value Analysis](http://www.youtube.com/watch?v=IRQU_fHKUa0)  
-[Assertions](http://www.youtube.com/watch?v=DCAFxgUXM4I)  
-[Assertions Example](http://www.youtube.com/watch?v=Y0GEftJ5MB0)  
+W1: [Equivalence Class Partitioning](http://www.youtube.com/watch?v=ttAAsNSPiXw)  
+W1: [Input Partitioning](http://www.youtube.com/watch?v=5PtxXnwyU3Y)  
+W1: [Output Partitioning](http://www.youtube.com/watch?v=0yvHDKI-DSA)  
+W1: [Boundary Value Analysis](http://www.youtube.com/watch?v=IRQU_fHKUa0)  
+W1: [Assertions](http://www.youtube.com/watch?v=DCAFxgUXM4I)  
+W1: [Assertions Example](http://www.youtube.com/watch?v=Y0GEftJ5MB0)  
+
+### White Box Testing
+
+W4: [Introduction to Coverage](http://www.youtube.com/watch?v=iujQEm9oono)  
+W4: [Line and Statement Coverage](http://www.youtube.com/watch?v=SC7R-QixRaU)  
+W4: [Branch and Path Coverage](http://www.youtube.com/watch?v=YBiHn5vgKnM)  
+W4: [Coverage Wrap-Up](http://www.youtube.com/watch?v=2EBi66DYF5w)  
 
 ### Testability
 
-[Introduction to Testability](http://www.youtube.com/watch?v=jwL1vkl-CoY)  
-[Controllability](http://www.youtube.com/watch?v=y0zrTdDuYv0)  
-[Observability](http://www.youtube.com/watch?v=CJhJibMCTUM)  
-[Isolateability: Part 1](http://www.youtube.com/watch?v=Z93-c4ngxGw)  
-[Isolateability: Part 2](http://www.youtube.com/watch?v=NMuhE-XnFe8)  
-[Automatability](http://www.youtube.com/watch?v=Q83W5zH8LUY)  
-[Testability Wrap-Up](http://www.youtube.com/watch?v=d2WjviF50HA)  
+W4: [Introduction to Testability](http://www.youtube.com/watch?v=jwL1vkl-CoY)  
+W4: [Controllability](http://www.youtube.com/watch?v=y0zrTdDuYv0)  
+W4: [Observability](http://www.youtube.com/watch?v=CJhJibMCTUM)  
+W4: [Isolateability: Part 1](http://www.youtube.com/watch?v=Z93-c4ngxGw)  
+W4: [Isolateability: Part 2](http://www.youtube.com/watch?v=NMuhE-XnFe8)  
+W4: [Automatability](http://www.youtube.com/watch?v=Q83W5zH8LUY)  
+W4: [Testability Wrap-Up](http://www.youtube.com/watch?v=d2WjviF50HA)  
 
 High-Level Design
 -----------------
 
-[Introduction to Abstraction](http://www.youtube.com/watch?v=HW_b8S2rD4o)  
-[Structured Programming](http://www.youtube.com/watch?v=lfzQcwWAh18)  
-[Decomposition](http://www.youtube.com/watch?v=R3qWYSa2OyU)  
-[Encapsulation](http://www.youtube.com/watch?v=aPTqsdbyhcQ)  
-[Information Hiding](http://www.youtube.com/watch?v=f6H2w874TKc)  
-[Constant Change](http://www.youtube.com/watch?v=a-vT-01x4TI)  
+W5: [Introduction to Abstraction](http://www.youtube.com/watch?v=HW_b8S2rD4o)  
+W5: [Structured Programming](http://www.youtube.com/watch?v=lfzQcwWAh18)  
+W5: [Decomposition](http://www.youtube.com/watch?v=R3qWYSa2OyU)  
+W5: [Encapsulation](http://www.youtube.com/watch?v=aPTqsdbyhcQ)  
+W5: [Information Hiding](http://www.youtube.com/watch?v=f6H2w874TKc)  
+W5: [Constant Change](http://www.youtube.com/watch?v=a-vT-01x4TI)  
 
 ### Design representations
 
-[Technical Representations](http://www.youtube.com/watch?v=6LoW1iu05z4)  
-[Diagrams](http://www.youtube.com/watch?v=Y4oyXMt1cAw)  
-[Views](http://www.youtube.com/watch?v=2v3IBQr5Yvw)  
-[Static Vs. Dynamic](http://www.youtube.com/watch?v=0jes604qWfE)  
-[Deployment Diagrams](http://www.youtube.com/watch?v=MX7XzEUVc4Y)  
-[State Machine Diagrams](http://www.youtube.com/watch?v=XaacVyfZ3ds)  
+W5: [Technical Representations](http://www.youtube.com/watch?v=6LoW1iu05z4)  
+W5: [Diagrams](http://www.youtube.com/watch?v=Y4oyXMt1cAw)  
+W5: [Views](http://www.youtube.com/watch?v=2v3IBQr5Yvw)  
+W5: [Static Vs. Dynamic](http://www.youtube.com/watch?v=0jes604qWfE)  
+W5: [Deployment Diagrams](http://www.youtube.com/watch?v=MX7XzEUVc4Y)  
+W5: [State Machine Diagrams](http://www.youtube.com/watch?v=XaacVyfZ3ds)  
 
 ### API Design
 
-[Introduction to APIs](http://www.youtube.com/watch?v=HxevR6dZfH8)  
-[High Level API Design](http://www.youtube.com/watch?v=c7yYrjt6Db4)  
-[Low Level API Design](http://www.youtube.com/watch?v=OqXw62LWEos)  
-[API Design Process](http://www.youtube.com/watch?v=mdiP6xO51w0)  
-[API Usability](http://www.youtube.com/watch?v=2rSTWAZxTns)  
-[API Platforms and Summary](http://www.youtube.com/watch?v=1nQyHE1uMXE)  
+W5: [Introduction to APIs](http://www.youtube.com/watch?v=HxevR6dZfH8)  
+W5: [High Level API Design](http://www.youtube.com/watch?v=c7yYrjt6Db4)  
+W5: [Low Level API Design](http://www.youtube.com/watch?v=OqXw62LWEos)  
+W5: [API Design Process](http://www.youtube.com/watch?v=mdiP6xO51w0)  
+W5: [API Usability](http://www.youtube.com/watch?v=2rSTWAZxTns)  
+W5: [API Platforms and Summary](http://www.youtube.com/watch?v=1nQyHE1uMXE)  
 
 ### Coupling & Cohesion
 
-[Coupling: Part 1](http://www.youtube.com/watch?v=I9rEvxiWF9I)  
-[Coupling: Part 2](http://www.youtube.com/watch?v=QZAacpnjVVg)  
-[Cohesion: Part 1](http://www.youtube.com/watch?v=oMJNS6mvhQU)  
-[Cohesion: Part 2](http://www.youtube.com/watch?v=gkCIOUbu81o)  
+W6: [Coupling: Part 1](http://www.youtube.com/watch?v=I9rEvxiWF9I)  
+W6: [Coupling: Part 2](http://www.youtube.com/watch?v=QZAacpnjVVg)  
+W6: [Cohesion: Part 1](http://www.youtube.com/watch?v=oMJNS6mvhQU)  
+W6: [Cohesion: Part 2](http://www.youtube.com/watch?v=gkCIOUbu81o)  
 
 ### Design principles
 
-[Design Guidance and Symptoms](http://www.youtube.com/watch?v=_Eb5bAgpgQg)  
-[Single Responsibility Principle](http://www.youtube.com/watch?v=QQ26-dkzEdM)  
-[Open/Closed Principle](http://www.youtube.com/watch?v=815hXPR_kHo)  
-[Liskov Substitution Principle](http://www.youtube.com/watch?v=8UG6P1a8rKg)  
-[Interface Segregation Principle](http://www.youtube.com/watch?v=x_9QJ83oj2k)  
-[Dependency Inversion Principle](http://www.youtube.com/watch?v=BJr2yG-Hn7g)  
+W6: [Design Guidance and Symptoms](http://www.youtube.com/watch?v=_Eb5bAgpgQg)  
+W6: [Single Responsibility Principle](http://www.youtube.com/watch?v=QQ26-dkzEdM)  
+W6: [Open/Closed Principle](http://www.youtube.com/watch?v=815hXPR_kHo)  
+W6: [Liskov Substitution Principle](http://www.youtube.com/watch?v=8UG6P1a8rKg)  
+W6: [Interface Segregation Principle](http://www.youtube.com/watch?v=x_9QJ83oj2k)  
+W6: [Dependency Inversion Principle](http://www.youtube.com/watch?v=BJr2yG-Hn7g)  
 
 Low-Level Design
 ----------------
 
-[Introduction to Low Level Design](http://www.youtube.com/watch?v=wJ-xnK9O-nU)  
-[Design Patterns Overview](http://www.youtube.com/watch?v=BHFk5yt_DEs)  
-[Singleton](http://www.youtube.com/watch?v=V_WbZClazDw)  
-[Strategy](http://www.youtube.com/watch?v=1MJ_Lj8mebU)  
-[State](http://www.youtube.com/watch?v=uB4OQ4Am3Rw)  
-[State and Strategy](http://www.youtube.com/watch?v=Ccpg656MUxE)  
-[Facade](http://www.youtube.com/watch?v=MdMaHrKQBsU)  
-[Decorator](http://www.youtube.com/watch?v=la2Jzb8jmqo)  
-[MVC](http://www.youtube.com/watch?v=regs2s8HMi4)  
-[MVP](http://www.youtube.com/watch?v=3ULFKSXeLM8)  
-[MVC and MVP](http://www.youtube.com/watch?v=O-__G6CKICk)  
+W8: [Introduction to Low Level Design](http://www.youtube.com/watch?v=wJ-xnK9O-nU)  
+W8: [Design Patterns Overview](http://www.youtube.com/watch?v=BHFk5yt_DEs)  
+W8: [Singleton](http://www.youtube.com/watch?v=V_WbZClazDw)  
+W8: [Strategy](http://www.youtube.com/watch?v=1MJ_Lj8mebU)  
+W8: [State](http://www.youtube.com/watch?v=uB4OQ4Am3Rw)  
+W8: [State and Strategy](http://www.youtube.com/watch?v=Ccpg656MUxE)  
+W9: [Facade](http://www.youtube.com/watch?v=MdMaHrKQBsU)  
+W9: [Decorator](http://www.youtube.com/watch?v=la2Jzb8jmqo)  
+W9: [MVC](http://www.youtube.com/watch?v=regs2s8HMi4)  
+W9: [MVP](http://www.youtube.com/watch?v=3ULFKSXeLM8)  
+W9: [MVC and MVP](http://www.youtube.com/watch?v=O-__G6CKICk)  
 
 Construction
 ------------
 
-[Introduction to Construction](http://www.youtube.com/watch?v=z-Q2CIfshcw)  
-[Non-Structural Properties: Readability](http://www.youtube.com/watch?v=TZ7mfKJa7Sw)  
-[Static Analysis and Linters](http://www.youtube.com/watch?v=QKK9XAdleFg)  
-[Automation](http://www.youtube.com/watch?v=HMtyshK3LNU)  
-[Code Smells](http://www.youtube.com/watch?v=oqqaDaQ3m24)  
-[Refactoring](http://www.youtube.com/watch?v=bHKyMxvZFXY)  
+W12: [Introduction to Construction](http://www.youtube.com/watch?v=z-Q2CIfshcw)  
+W12: [Non-Structural Properties: Readability](http://www.youtube.com/watch?v=TZ7mfKJa7Sw)  
+W12: [Static Analysis and Linters](http://www.youtube.com/watch?v=QKK9XAdleFg)  
+W12: [Automation](http://www.youtube.com/watch?v=HMtyshK3LNU)  
+W12: [Code Smells](http://www.youtube.com/watch?v=oqqaDaQ3m24)  
+W12: [Refactoring](http://www.youtube.com/watch?v=bHKyMxvZFXY)  
 
 ### REST
 
-[REST Development: Part 1](http://www.youtube.com/watch?v=Y8AYxFgwmJk)  
-[REST Development: Part 2](http://www.youtube.com/watch?v=Aoms-MrqW3g)  
-[REST Development: Part 3](http://www.youtube.com/watch?v=JiojH8HfUps)  
+W11: [REST Development: Part 1](http://www.youtube.com/watch?v=Y8AYxFgwmJk)  
+W11: [REST Development: Part 2](http://www.youtube.com/watch?v=Aoms-MrqW3g)  
+W11: [REST Development: Part 3](http://www.youtube.com/watch?v=JiojH8HfUps)  
 
 ### Languages & Concurrency
 
-[Programming Language Introduction](http://www.youtube.com/watch?v=U-ihh6bsDz4)  
-[Introduction to Concurrency and Asynchronous Development: Part 1](http://www.youtube.com/watch?v=T__CJfXswbA)  
-[Introduction to Concurrency and Asynchronous Development: Part 2](http://www.youtube.com/watch?v=ZyiLFip7nqk)  
-[Introduction to Concurrency and Asynchronous Development: Part 3](http://www.youtube.com/watch?v=xwSUBY2tIm4)  
+W0: [Programming Language Introduction](http://www.youtube.com/watch?v=U-ihh6bsDz4)  
+W0: [Introduction to Concurrency and Asynchronous Development: Part 1](http://www.youtube.com/watch?v=T__CJfXswbA)  
+W0: [Introduction to Concurrency and Asynchronous Development: Part 2](http://www.youtube.com/watch?v=ZyiLFip7nqk)  
+W0: [Introduction to Concurrency and Asynchronous Development: Part 3](http://www.youtube.com/watch?v=xwSUBY2tIm4)  
 
 ### Information Security
 
-[Information Security Introduction](http://www.youtube.com/watch?v=PprrpG7S3gc)  
-[Information Security: Understanding](http://www.youtube.com/watch?v=PmpkftNf5IA)  
-[Information Security: Analysis](http://www.youtube.com/watch?v=r0Hb_cqd5Dw)  
-[Information Security: Mitigation Part 1](http://www.youtube.com/watch?v=TbqJfiFUM2g)  
-[Information Security: Mitigation Part 2](http://www.youtube.com/watch?v=mZ3_8wjqxFI)  
-[Information Security: Validation](http://www.youtube.com/watch?v=97pHO22Frpc)  
-[Information Security Summary](http://www.youtube.com/watch?v=E2ybKiecj2I)  
+W10: [Information Security Introduction](http://www.youtube.com/watch?v=PprrpG7S3gc)  
+W10: [Information Security: Understanding](http://www.youtube.com/watch?v=PmpkftNf5IA)  
+W10: [Information Security: Analysis](http://www.youtube.com/watch?v=r0Hb_cqd5Dw)  
+W10: [Information Security: Mitigation Part 1](http://www.youtube.com/watch?v=TbqJfiFUM2g)  
+W10: [Information Security: Mitigation Part 2](http://www.youtube.com/watch?v=mZ3_8wjqxFI)  
+W10: [Information Security: Validation](http://www.youtube.com/watch?v=97pHO22Frpc)  
+W10: [Information Security Summary](http://www.youtube.com/watch?v=E2ybKiecj2I)  
 
 Ethics
 ------
 
-[Ethics Introduction](http://www.youtube.com/watch?v=ZuQm5GJfADY)  
-[Ethics: Privacy](http://www.youtube.com/watch?v=2QblEuD_M-c)  
-[Ethics Summary](http://www.youtube.com/watch?v=hgYVHXpwmpk)  
+W10: [Ethics Introduction](http://www.youtube.com/watch?v=ZuQm5GJfADY)  
+W10: [Ethics: Privacy](http://www.youtube.com/watch?v=2QblEuD_M-c)  
+W10: [Ethics Summary](http://www.youtube.com/watch?v=hgYVHXpwmpk)  
 
 Intellectual Property
 ------
 
-[Intellectual Property Introduction](http://www.youtube.com/watch?v=DtEqlRIJpuU)  
-[Intellectual Property: Trade Secrets](http://www.youtube.com/watch?v=1W-DN4hJcWw)  
-[Intellectual Property: Trademarks](http://www.youtube.com/watch?v=Rawb58IY4pw)  
-[Intellectual Property: Copyright](http://www.youtube.com/watch?v=4lTI_Uk0zUs)  
-[Intellectual Property: Patents](http://www.youtube.com/watch?v=hBclvEPWXjo)  
-[Intellectual Property: Licenses](http://www.youtube.com/watch?v=3uW9_AGtRVg)  
-[Intellectual Property Summary](http://www.youtube.com/watch?v=7bcDEDn9CeM)
+W10: [Intellectual Property Introduction](http://www.youtube.com/watch?v=DtEqlRIJpuU)  
+W10: [Intellectual Property: Trade Secrets](http://www.youtube.com/watch?v=1W-DN4hJcWw)  
+W10: [Intellectual Property: Trademarks](http://www.youtube.com/watch?v=Rawb58IY4pw)  
+W10: [Intellectual Property: Copyright](http://www.youtube.com/watch?v=4lTI_Uk0zUs)  
+W10: [Intellectual Property: Patents](http://www.youtube.com/watch?v=hBclvEPWXjo)  
+W10: [Intellectual Property: Licenses](http://www.youtube.com/watch?v=3uW9_AGtRVg)  
+W10: [Intellectual Property Summary](http://www.youtube.com/watch?v=7bcDEDn9CeM)
 
 <!--
 * 201: Tuesday/Thursday 1230-1400 in FSC 1005
