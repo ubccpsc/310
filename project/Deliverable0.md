@@ -10,7 +10,7 @@ In this deliverable you will be reading a specification and writing a set of tes
 
 ## Getting the starter code
 
-You need to log in to [GitHub Enterprise](https://github.ugrad.cs.ubc.ca) with your CWL **ASAP** so that we can provision your repo after lecture on Sept 6. Also for Sept 7, ensure that you have prepared your computer according the [setup guide](../resources/setup.md) (also found in the README of your provisioned repo).
+You need to log in to [GitHub Enterprise](https://github.ugrad.cs.ubc.ca) with your ugrad account **ASAP** so that we can provision your repo after lecture on Sept 6. Also for Sept 7, ensure that you have prepared your computer according the [setup guide](../resources/setup.md) (also found in the README of your provisioned repo).
 
 Once your repo has been created, you'll receive an email with a link to clone your repo. For this course, you will be using Git to manage your code. A description of how to use Git is given in our brief [Git Tutorial](../resources/git.md).
 
