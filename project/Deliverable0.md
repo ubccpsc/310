@@ -16,7 +16,7 @@ Once your repo has been created, you'll receive an email with a link to clone yo
 
 ## Requirements
 
-For this deliverable, you will read the [Deliverable 1](Deliverable1.md) specification, extract detailed requirements, and then turn the requirements you identified into a set of tests. Specifically, you will be writing unit tests for the three methods of the `InsightFacade` class in `./src/controller/InsightFacade.ts`. You should not modify any files under the `src/` directory.
+For this deliverable, you will read the [Deliverable 1](Deliverable1.md) specification, extract detailed requirements, and then turn the requirements you identified into a set of tests. Specifically, you will be writing unit tests for the four methods of the `InsightFacade` class in `./src/controller/InsightFacade.ts`. You should not modify any files under the `src/` directory.
 
 Your grade will be computed using the following formula which is explained below:
 > 0.8 * (coverage percentage)^2 + 0.2 * percentage of valid tests
