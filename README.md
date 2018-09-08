@@ -89,8 +89,8 @@ This is a high-level overview of what the course will be about. Expect this list
 
 | Week					| Topic & Readings 				| Survey |
 |---					|---					|--- |
-| Week 0: Sept 3		| [Introduction](readings/Introduction.md), [Teamwork](readings/Teamwork.md), & [Languages](readings/Languages.md)             | [TBD](NOTSETYET) |
-| Week 1: Sept 10	| [Testing](readings/Testing.md)				                  | [TBD](NOTSETYET) |
+| Week 0: Sept 3		| [Introduction](readings/Introduction.md), [Teamwork](readings/Teamwork.md), & [Languages](readings/Languages.md)             | [Week 0 Survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_0fepj2KWF5LuNud) |
+| Week 1: Sept 10	| [Testing](readings/Testing.md)				                  | [Week 1 Survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_b3Myb2qMJaBSRtX) |
 | Week 2: Sept 17	| [Process & Agile](readings/Process.md)	                  | [TBD](NOTSETYET) |
 | Week 3: Sept 24	| [Specifications](readings/Specifications.md) & [User Stories](readings/SpecificationsUserStories.md)       | [TBD](NOTSETYET) |
 | Week 4: Oct 1		| [Testability & Assertions](readings/TestabilityAssertions.md)            | [TBD](NOTSETYET) |
