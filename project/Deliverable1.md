@@ -271,12 +271,11 @@ The result of this query would be:
 
 The API is comprised of three interfaces. You **must not** change the interface specifications.
 
-- `InsightResponse` is the interface for the objects your methods will fulfill with.
 - `IInsightFacade` is the front end (wrapper) for the query engine. In practice, it defines the endpoints for the deliverable. It provides several methods:
-- `addDataset(id: string, content: string, kind: InsightDatasetKind): Promise<InsightResponse>` adds a dataset to the internal model, providing the id of the dataset, the string of the content of the dataset, and the kind of the dataset. For this deliverable the dataset kind will be _courses_.
-- `removeDataset(id: string): Promise<InsightResponse>` removes a dataset from the internal model, given the id.
-- `performQuery(query: any): Promise<InsightResponse>` performs a query on the dataset.  It first should parse and validate the input query, then perform semantic checks on the query, and finally evaluate the query if it is valid.
-- `listDatasets(): Promise<InsightResponse>` returns InsightResponse containing the list of added datasets. This list contains the id, kind, and number of rows of each added dataset.
+- `addDataset(id: string, content: string, kind: InsightDatasetKind): Promise<string[]>` adds a dataset to the internal model, providing the id of the dataset, the string of the content of the dataset, and the kind of the dataset. For this deliverable the dataset kind will be _courses_.
+- `removeDataset(id: string): Promise<string>` removes a dataset from the internal model, given the id.
+- `performQuery(query: any): Promise<any[]>` performs a query on the dataset.  It first should parse and validate the input query, then perform semantic checks on the query, and finally evaluate the query if it is valid.
+- `listDatasets(): Promise<InsightDataset[]>` returns an array of currently added datasets. Each element of the array should describe a dataset following the InsightDataset interface which contains the dataset id, kind, and number of rows.
 
 To implement the API you will likely have to create your own additional methods and classes.
 
@@ -383,7 +382,7 @@ export interface IInsightFacade {
 
 ## Testing
 
-The best way to test your system is via your own unit test suite. You can write these unit tests by following the examples in ```test/``` and running them with ```yarn test```. This will be the quickest and easiest way to ensure your system is behaving correctly and to make sure regressions are not introduced as you proceed further in the project. We are currently also providing a [UI](http://skaha.cs.ubc.ca:11315/) for our solution for this deliverable so you can see what the expected values should be for the queries you are trying for your query.
+The best way to test your system is via your own unit test suite. You can write these unit tests by following the examples in ```test/``` and running them with ```yarn test```. This will be the quickest and easiest way to ensure your system is behaving correctly and to make sure regressions are not introduced as you proceed further in the project. We are currently also providing a [UI](https://cs310.ugrad.cs.ubc.ca/ui) for our solution for this deliverable so you can see what the expected values should be for the queries you are trying for your query.
 
 To ensure your code conforms with the API our marking suite expects you can run your code against AutoTest. You will **not** have source-level access this suite. You will be able to request to run it against your implementation every 12h by invoking the ```@autobot``` Github bot; full details will be available in the [AutoTest](AutoTest.md) documentation. The AutoTest suite will not be available for the first few days after the deliverable is released; use this time to read the deliverable and get started on your own implementation and tests. We will post to Piazza when the suite is available.
 
