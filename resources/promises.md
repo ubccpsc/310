@@ -35,7 +35,7 @@ Now, [here’s how that looks](https://repl.it/@lucasz/Synchronous-Promise) with
 
 So far all we’ve done is make synchronous code more complicated. Now let’s use the fact that the promise waits to resolve before calling `then()` or `catch()` to [Promise-ify a callback](https://repl.it/@lucasz/Promise-ify).
 
-Also note that `then()` and `catch()` return promises themselves, which means you can chain them together. [Here](https://repl.it/@lucasz/Chaining-with-error) you can see the second promise rejects, which gets caught by the catch at the bottom.
+Also note that `then()` and `catch()` return promises themselves, which means you can chain them together. [Here](https://repl.it/@lucasz/Reject-from-in-a-then) you can see the second promise rejects, which gets caught by the catch at the bottom.
 
 Alright, now for where things get really useful. Often there will be multiple async operations you want to do, but coordinating them is difficult. The `Promise` class has a static method `all()`, which takes an array of promises as input, and returns a promise. Once all the promises in the array have fulfilled, `Promise.all()` fulfills, and the value is an array of each of the values the promises fulfilled with. If any of the promises in the array rejects, `Promise.all()` will reject with that value. Again, this should be clearer with an [example](https://repl.it/@lucasz/Actual-Promiseall).
 
