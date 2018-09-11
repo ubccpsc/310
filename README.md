@@ -73,6 +73,37 @@ CPSC 310 will be a challenging course that we have designed to integrate many of
 * Haochen Yu
 * Lucas Zamprogno
 
+*TA Office Hours*:
+
+| Date/Time		| Location 	| TA 	   	|
+|---				|---		 	|--- 		|
+| Mon 0900-1000 	| DMP			| TBD	|
+| Mon 1000-1100 	| DMP			| TBD	|
+| Mon 1100-1200 	| DMP			| TBD	|
+| Mon 1200-1300 	| DMP			| TBD	|
+| Mon 1300-1400 	| DMP			| TBD	|
+| Mon 1300-1400 	| DMP			| TBD	|
+| Mon 1400-1500 	| DMP			| TBD	|
+| Mon 1400-1500 	| DMP			| TBD	|
+| Mon 1500-1600 	| DMP			| TBD	|
+| Mon 1500-1600 	| DMP			| TBD	|
+| Mon 1600-1700 	| DMP			| TBD	|
+| Mon 1600-1700 	| DMP			| TBD	|
+| Tues TBD		| TBD			| TBD	|
+| Tues TBD		| TBD			| TBD	|
+| Wed 1400-1500	| DMP			| TBD	|
+| Wed 1500-1600	| DMP			| TBD	|
+| Wed 1600-1700	| DMP			| TBD	|
+| Thurs 1100-1200	| DMP			| TBD	|
+| Thurs 1200-1300	| DMP			| TBD	|
+| Thurs 1500-1600	| DMP			| TBD	|
+| Thurs 1600-1700	| DMP			| TBD	|
+| Fri 1400-1500	| DMP			| TBD	|
+| Fri 1500-1600	| DMP			| TBD	|
+| Fri 1500-1600	| DMP			| TBD	|
+| Fri 1600-1700	| DMP			| TBD	|
+| Fri 1600-1700	| DMP			| TBD	|
+
 ### Piazza
 
 [Piazza](https://piazza.com/ubc.ca/winterterm12018/cpsc310/home) has been configured for this term. Please see the instructor in person in class if you want to discuss course materials; only TAs will monitor Piazza. Please be mindful of the UBC Academic Misconduct Policy with respect to posting project solutions on Piazza. It is _extremely_ helpful if your Piazza name corresponds to your name in the SSC in the advent we need to help you with a problem with your project, repositories, or grades. 
@@ -383,17 +414,18 @@ TBD
 
 | Lab | Time 		 | TAs 		| 
 | :-- |:-- 		 | :--			|
-| L1M | Tue 1530-1730	 | TBD |
+| L1N | Tue 0900-1100	 | TBD	|
+| L1M | Tue 1530-1730	 | TBD	|
 | L1E | Tue 1700-1900	 | TBD	|
-| L1H | Wed 0900-1100	 | TBD|
+| L1H | Wed 0900-1100	 | TBD	|
 | L1B | Wed 1100-1300	 | TBD	|
 | L1D | Wed 1300-1500	 | TBD	|
 | L1C | Wed 1500-1700	 | TBD	|
-| L1G | Thu 1030-1230	 | TBD|
+| L1G | Thu 1030-1230	 | TBD	|
 | L1F | Thu 1400-1600	 | TBD	|
-| L1J | Thu 1700-1900	 | TBD|
-| L1K | Fri 0900-1100	 | TBD|
-| L1L | Fri 1100-1300	 | TBD|
+| L1J | Thu 1700-1900	 | TBD	|
+| L1K | Fri 0900-1100	 | TBD	|
+| L1L | Fri 1100-1300	 | TBD	|
 | L1A | Fri 1400-1600	 | TBD	|
 
 
