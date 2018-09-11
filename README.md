@@ -475,11 +475,11 @@ The exam component is weighted as follows:
 | Midterm Exam			| 30 %	|
 | Final Exam				| 70 %	|
 
-The final grade for the course will be computed as follows ***LIKELY TO CHANGE BEFORE THE FIRST CLASS***:
+The final grade for the course will be computed as follows:
 
 `final grade = (project grade * .5) + (exam grade * .5)`
 
-The easiest way to think about this is that the project grade acts as a multiplier on your exam grade. Given the way the project is configured with AutoTest, in past terms we have found the project median to exceed 95%.
+The easiest way to think about this is that the project grade acts as a multiplier on your exam grade. Given the way the project is configured with AutoTest, in past terms we have found the project median to exceed 95%. Any content from the course videos, readings, lectures, and project is examinable.
 
 ## Participation
 
