@@ -2,7 +2,7 @@
 
 UBC has a wide variety of courses. This deliverable will focus on importing data about these courses into your project and enabling flexible querying over these data with a flexible domain-specific query language.
 
-This deliverable will be completed in pairs. It is worth 10% of your final grade. You will not have to hand anything in; we will automatically analyze your repo on every push between when the deliverable is released and the due date [specified here](../README.md#project-sprint-schedule). If you have not specified your team yet, please do so using Classy at [https://cs310.ugrad.cs.ubc.ca/](https://cs310.ugrad.cs.ubc.ca/). We will create project repos every morning between 0800-0900; all work must take place in this repo (including all future deliverables). You **must** specify your team by 0800 AM on Monday Sept 17. We will run [MOSS](https://theory.stanford.edu/~aiken/moss/) on all submissions so please make sure your work is your own.
+This deliverable will be completed in pairs. It is worth 10% of your final grade. You will not have to hand anything in; we will automatically analyze your repo on every push between when the deliverable is released and the due date [specified here](../README.md#project-sprint-schedule). A team creation tool will be available after the add/drop deadline. Once available, if you have not specified your team yet, please do so through Classy at [https://cs310.ugrad.cs.ubc.ca/](https://cs310.ugrad.cs.ubc.ca/). We will create project repos every morning between 0800-0900; all work must take place in this repo (including all future deliverables). We will run [MOSS](https://theory.stanford.edu/~aiken/moss/) on all submissions so please make sure your work is your own.
 
 You are responsible for the software design and implementation. You cannot use any library package that is not already specified in ```package.json```. Your implementation must be in TypeScript. While we will not be directly examining your source code, you will undoubtably end up showing it to the TAs as you explain your design in the mandatory post-submission debrief that will take place in lab the week of the final deliverable deadline).
 
@@ -270,8 +270,8 @@ The result of this query would be:
 The API is comprised of three interfaces. You **must not** change the interface specifications.
 
 - `IInsightFacade` is the front end (wrapper) for the query engine. In practice, it defines the endpoints for the deliverable. It provides several methods:
-- `addDataset(id: string, content: string, kind: InsightDatasetKind): Promise<string[]>` adds a dataset to the internal model, providing the id of the dataset, the string of the content of the dataset, and the kind of the dataset. For this deliverable the dataset kind will be _courses_.
-- `removeDataset(id: string): Promise<string>` removes a dataset from the internal model, given the id.
+- `addDataset(id: string, content: string, kind: InsightDatasetKind): Promise<string[]>` adds a dataset to the internal model, providing the id of the dataset, the string of the content of the dataset, and the kind of the dataset. For this deliverable the dataset kind will be _courses_. Empty string is not a valid id.
+- `removeDataset(id: string): Promise<string>` removes a dataset from the internal model, given the id. Empty string is not a valid id.
 - `performQuery(query: any): Promise<any[]>` performs a query on the dataset.  It first should parse and validate the input query, then perform semantic checks on the query, and finally evaluate the query if it is valid.
 - `listDatasets(): Promise<InsightDataset[]>` returns an array of currently added datasets. Each element of the array should describe a dataset following the InsightDataset interface which contains the dataset id, kind, and number of rows.
 
@@ -326,6 +326,8 @@ export interface IInsightFacade {
      * containing the ids of all currently added datasets upon a successful add.
      * The promise should reject with an InsightError describing the error.
      *
+     * If id is the same as the id of an already added dataset, the dataset should be rejected and not saved.
+     * 
      * After receiving the dataset, it should be processed into a data structure of
      * your design. The processed data structure should be persisted to disk; your
      * system should be able to load this persisted value into memory for answering
@@ -347,7 +349,7 @@ export interface IInsightFacade {
      * Attempting to remove a dataset that hasn't been added yet counts as an error.
      *
      * The promise should fulfill the id of the dataset that was removed.
-     * The promise should reject with a NotFoundError (if it was not yet added)
+     * The promise should reject with a NotFoundError (if a valid id was not yet added)
      * or an InsightError (any other source of failure) describing the error.
      *
      * This will delete both disk and memory caches for the dataset for the id meaning
@@ -362,7 +364,7 @@ export interface IInsightFacade {
      *
      * @return Promise <any[]>
      *
-     * The promise should fulfill with an array of results for both fulfill and reject.
+     * The promise should fulfill with an array of results.
      * The promise should reject with an InsightError describing the error.
      */
     performQuery(query: any): Promise<any[]>;
