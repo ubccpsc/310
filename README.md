@@ -23,7 +23,7 @@ The world runs on software and CPSC 310 is all about taking the skills and knowl
 
 The lecture time slot will be highly interactive and will involve working with your project partner (and sometimes teaming up with other groups as well). Only the first and last lecture slots of the course will be 'traditional' lectures. Tuesday lectures will be activity-driven to reenforce the materials from each week's readings and videos. Thursdays lectures will focus on tying the lecture material to the course project. One important implication of this is that all course material will be fully covered in the videos, readings, and project. You can base your Tuesday attendance on your own assessment of your mastery of the material for that week. For Thursdays, your can decide if you need to come based on how the project is progressing. Your attendance in lecture has no bearing on your participation grade, as long as you submit your weekly reflection (which is submitted online).
 
-Each module will have reading materials and videos posted online; no slides will be posted. In-class material will be designed to support the readings, not replace them, and will not be available electronically. We have chosen to take a reading-based approach for this course instead of a slide-based approach to enable more class time to be available for hands-on activities while still providing a comprehensive reference of the background materials for the course. 
+Each module will have reading materials and videos posted online; no slides will be posted. In-class material will be designed to support the readings, not replace them, and will not be available electronically. We have chosen to take a reading-based approach for this course instead of a slide-based approach to enable more class time to be available for hands-on activities while still providing a comprehensive reference of the background materials for the course.
 
 Some of the topics we will cover in 310 this term include:
 
@@ -77,36 +77,38 @@ CPSC 310 will be a challenging course that we have designed to integrate many of
 
 | Date/Time		| Location 	| TA 	   	|
 |---				|---		 	|--- 		|
-| Mon 0900-1000 	| DMP			| TBD	|
-| Mon 1000-1100 	| DMP			| TBD	|
-| Mon 1100-1200 	| DMP			| TBD	|
-| Mon 1200-1300 	| DMP			| TBD	|
-| Mon 1300-1400 	| DMP			| TBD	|
-| Mon 1300-1400 	| DMP			| TBD	|
-| Mon 1400-1500 	| DMP			| TBD	|
-| Mon 1400-1500 	| DMP			| TBD	|
-| Mon 1500-1600 	| DMP			| TBD	|
-| Mon 1500-1600 	| DMP			| TBD	|
-| Mon 1600-1700 	| DMP			| TBD	|
-| Mon 1600-1700 	| DMP			| TBD	|
-| Tues TBD		| TBD			| TBD	|
-| Tues TBD		| TBD			| TBD	|
-| Wed 1400-1500	| DMP			| TBD	|
-| Wed 1500-1600	| DMP			| TBD	|
-| Wed 1600-1700	| DMP			| TBD	|
-| Thurs 1100-1200	| DMP			| TBD	|
-| Thurs 1200-1300	| DMP			| TBD	|
-| Thurs 1500-1600	| DMP			| TBD	|
-| Thurs 1600-1700	| DMP			| TBD	|
-| Fri 1400-1500	| DMP			| TBD	|
-| Fri 1500-1600	| DMP			| TBD	|
-| Fri 1500-1600	| DMP			| TBD	|
-| Fri 1600-1700	| DMP			| TBD	|
-| Fri 1600-1700	| DMP			| TBD	|
+| Mon 0900-1000 	| DMP	Table 4		| Alice	|
+| Mon 1000-1100 	| DMP	Table 4		| Cindy	|
+| Mon 1100-1200 	| DMP	Table 4		| Alice	|
+| Mon 1200-1300 	| DMP	Table 4		| Cindy	|
+| Mon 1400-1500 	| DMP	Table 6		| Brian	|
+| Mon 1400-1500 	| DMP	Table 6		| Tassi	|
+| Mon 1500-1600 	| DMP	Table 4		| Brian	|
+| Mon 1500-1600 	| DMP	Table 4		| Ada	|
+| Mon 1600-1700 	| DMP	Table 4		| Brian	|
+| Mon 1600-1700 	| DMP	Table 4		| Ada	|
+| Tues 1300-1400		| TBD	Table 3		| Harman	|
+| Tues 1400-1500		| TBD	Table 3		| Tassi	|
+| Wed 1400-1500	| DMP	Table 6		| Henry	|
+| Wed 1500-1600	| DMP	Table 6		| Henry	|
+| Wed 1600-1700	| DMP	Table 6		| Zhenpeng	|
+| Thurs 1100-1200	| DMP	Table 5		| TBD	|
+| Thurs 1200-1300	| DMP	Table 5		| TBD	|
+| Thurs 1500-1600	| DMP	Table 5		| Cindy	|
+| Thurs 1500-1600	| DMP	Table 5		| Braxton	|
+| Thurs 1600-1700	| DMP	Table 5		| Cindy	|
+| Thurs 1600-1700	| DMP	Table 5		| Braxton |
+| Fri 1400-1500	| DMP	Table 5		| Zhenpeng	|
+| Fri 1400-1500	| DMP	Table 5		| Susan	|
+| Fri 1500-1600	| DMP	Table 5		| Zhenpeng	|
+| Fri 1500-1600	| DMP	Table 5		| Lucas	|
+| Fri 1500-1600	| DMP	Table 5		| Alice	|
+| Fri 1600-1700	| DMP	Table 5		| Lucas	|
+| Fri 1600-1700	| DMP	Table 5		| Alice	|
 
 ### Piazza
 
-[Piazza](https://piazza.com/ubc.ca/winterterm12018/cpsc310/home) has been configured for this term. Please see the instructor in person in class if you want to discuss course materials; only TAs will monitor Piazza. Please be mindful of the UBC Academic Misconduct Policy with respect to posting project solutions on Piazza. It is _extremely_ helpful if your Piazza name corresponds to your name in the SSC in the advent we need to help you with a problem with your project, repositories, or grades. 
+[Piazza](https://piazza.com/ubc.ca/winterterm12018/cpsc310/home) has been configured for this term. Please see the instructor in person in class if you want to discuss course materials; only TAs will monitor Piazza. Please be mindful of the UBC Academic Misconduct Policy with respect to posting project solutions on Piazza. It is _extremely_ helpful if your Piazza name corresponds to your name in the SSC in the advent we need to help you with a problem with your project, repositories, or grades.
 
 When posting to Piazza please be sure to include a link to your team's GitHub repository so the TAs can find your group's code in order to help you more effectively. Also, when asking TAs about failing tests in particular, the TAs will often want to see your own test for similar cases (usually this will take several tests) so you can demonstrate to them why you think your code is correct.
 
@@ -126,7 +128,7 @@ This is a high-level overview of what the course will be about. Expect this list
 | Week 3: Sept 24	| [Specifications](readings/Specifications.md) & [User Stories](readings/SpecificationsUserStories.md)       | [TBD](NOTSETYET) |
 | Week 4: Oct 1		| [Testability & Assertions](readings/TestabilityAssertions.md)            | [TBD](NOTSETYET) |
 | Week 5: Oct 8		| High-level design	                  | [TBD](NOTSETYET) | <!-- & technical representations -->
-| Week 6: Oct 15		| High-level design	                  | [TBD](NOTSETYET) | 
+| Week 6: Oct 15		| High-level design	                  | [TBD](NOTSETYET) |
 | Week 7: Oct 22		| Midterm				                  | [TBD](NOTSETYET) |
 | Week 8: Oct 29		| Low-level design 	                  | [TBD](NOTSETYET) |
 | Week 9: Nov 5		| Low-level design	                  | [TBD](NOTSETYET) |
@@ -337,7 +339,7 @@ This list is a week-by-week guide only. Readings and videos will be updated thro
 | Jan 16      | [Process & Agile](readings/Process.md)  | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/9d0ea98055a5494b9c8c8cde4e6143dc/9d64e64e024e443c9ae6341d89cf7fdd">Why process?</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/9d0ea98055a5494b9c8c8cde4e6143dc/d0dc6b913ccc4fb5b2bf90fbe243cec1">Traditional processes</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/9d0ea98055a5494b9c8c8cde4e6143dc/71445e4320754e0091b3e63d96fe1cee">XP & TDD</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/9d0ea98055a5494b9c8c8cde4e6143dc/25bad20af8bf48b6885e5de371cf4332">Scrum</a></li></ul> | <ul><li>[Sprint 1 intro (source)](tutorials/tutorial_sprint1.html)</li><li>[Sprint 1 intro (online)](https://slides.com/rodrigoaraujo-1/deliverable-1-tutorial#/)</li></ul> |
 | Jan 23      | <ul><li>[Specifications](readings/Specifications.md)</li><li>[User Stories](readings/SpecificationsUserStories.md)</li><li>[Async](readings/Async.md)</li></ul> | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/b7375232b119453ba87336338b8eb8a0/7c0cb3ceb5724ed695bcfc084f4e55c9/">Specifications intro</a></li><li><a href="https://courses.edx.org/courses/course-v1%3AUBCx%2BSoftEng1x%2B1T2018/courseware/b7375232b119453ba87336338b8eb8a0/c3fe54d712084bd487aed1f8fa9bb6a5/">Requirements process</a></li><li><a href="https://courses.edx.org/courses/course-v1%3AUBCx%2BSoftEng1x%2B1T2018/courseware/b7375232b119453ba87336338b8eb8a0/f106a49468104666a381642c918fe8a2/">Validating requirements</a></li><li><a href="https://courses.edx.org/courses/course-v1%3AUBCx%2BSoftEng1x%2B1T2018/courseware/b7375232b119453ba87336338b8eb8a0/a8f7d83d3851495d8e676efb4984136b/">User stories</a></li><li><a href="https://courses.edx.org/courses/course-v1%3AUBCx%2BSoftEng1x%2B1T2018/courseware/b7375232b119453ba87336338b8eb8a0/fd9dd47e63d242869cd5527fb864250d/">INVEST</a></li><li><a href="https://courses.edx.org/courses/course-v1%3AUBCx%2BSoftEng1x%2B1T2018/courseware/b7375232b119453ba87336338b8eb8a0/96125db572f541d5888a5034838e75d2/">Decomposing user stories</a></li><ul> |  <ul><li>[Async programming (source)](tutorials/tutorial_async.html)</li><li>[Async programming (online)](https://slides.com/rodrigoaraujo-1/deck-14#/) |
 | Jan 30      | [Testability & Assertions](readings/TestabilityAssertions.md)   | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/5692eb185917488e9f97c9f346fe932d/c2e857979abc4e7f851b94f4f8ea7418/">Testability</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/5692eb185917488e9f97c9f346fe932d/caefa789a2b64118843193253200cf82/">Assertions</a></li></ul> |  [Applying testability](tutorials/tutorial_testability.pdf) |
-| Feb 6       | High Level Design:<ul><li>[High Level Design](readings/HighLevelDesign.md)</li><li>[Technical Representations](readings/Representations.md)</li></ul> | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/2042a4ecd013433ab5a1c552560617f4/0fdc571c75c24064beb316389a9d60d6">Abstraction</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/2042a4ecd013433ab5a1c552560617f4/aa7bc2e78d52498fa9d3809c0526b390">Technical representations</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/2042a4ecd013433ab5a1c552560617f4/d8857d39fd5c418faa941c14a5849864">APIs</a></li></ul> | [Sprint 2 introduction](http://slides.com/arthurmarques/deliverable-2-tutorial/#/) | 
+| Feb 6       | High Level Design:<ul><li>[High Level Design](readings/HighLevelDesign.md)</li><li>[Technical Representations](readings/Representations.md)</li></ul> | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/2042a4ecd013433ab5a1c552560617f4/0fdc571c75c24064beb316389a9d60d6">Abstraction</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/2042a4ecd013433ab5a1c552560617f4/aa7bc2e78d52498fa9d3809c0526b390">Technical representations</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/2042a4ecd013433ab5a1c552560617f4/d8857d39fd5c418faa941c14a5849864">APIs</a></li></ul> | [Sprint 2 introduction](http://slides.com/arthurmarques/deliverable-2-tutorial/#/) |
 | Feb 13      | High Level Design:<ul><li>[Design Principles](readings/DesignPrinciples.md)</li><li>[APIs](readings/API.md)</li></ul> | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/2042a4ecd013433ab5a1c552560617f4/460646f806214225899bf98f0103daa9">Coupling and cohesion</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/2042a4ecd013433ab5a1c552560617f4/bb9d14bb399c4fc2a317fca91cf207eb">Design principles</a></li></ul> |  [API design](http://slides.com/arthurmarques/apis#/) |
 | Feb 20      | Reading Week<ul><li>No Lectures</li><li>No Labs</li><li>No Office Hours</li></ul> |  Reading Week |  Reading Week |
 | Feb 27      | Midterm in Class | None |  API design (no slides) |
@@ -352,7 +354,7 @@ This list is a week-by-week guide only. Readings and videos will be updated thro
 
 
 
-<!-- 
+<!--
 WEEK 1
 
 <ul>
@@ -363,8 +365,8 @@ WEEK 1
 <li><a href="https://www.youtube.com/watch?v=_Th3f9vks_w">Kinds-of-Tests</a></li>
 <li><a href="https://www.youtube.com/watch?v=x2DWjxDiOQo">Unit-and-System-Properties</a></li>
 <li><a href="https://www.youtube.com/watch?v=v0q1MKhSQVM">Red-Green-Refactor</a></li>
-</ul>	
-	
+</ul>
+
 <ul>
 <b>White Box</b>
 <li><a href="https://www.youtube.com/watch?v=iujQEm9oono">Introduction-to-Coverage</a></li>
@@ -372,24 +374,24 @@ WEEK 1
 <li><a href="https://www.youtube.com/watch?v=YBiHn5vgKnM">Branch-and-Path-Coverage</a></li>
 <li><a href="https://www.youtube.com/watch?v=2EBi66DYF5w">Coverage-Wrap-Up</a></li>
 </ul>
-	
+
 
 <ul>
 <b>Black Box</b>
 <li><a href="https://www.youtube.com/watch?v=ttAAsNSPiXw">Equivalence-Class-Partitioning</a></li>
 <li><a href="https://www.youtube.com/watch?v=5PtxXnwyU3Y">Input-Partitioning</a></li>
 <li><a href="https://www.youtube.com/watch?v=0yvHDKI-DSA">Output-Partitioning</a></li>
-<li><a href="https://www.youtube.com/watch?v=IRQU_fHKUa0">Boundary-Value-Analysis</a></li>	
+<li><a href="https://www.youtube.com/watch?v=IRQU_fHKUa0">Boundary-Value-Analysis</a></li>
 </ul>
 
-WEEEK 2	
-	
+WEEEK 2
+
 <ul>
 <b>Assertions</b>
 <li><a href="https://www.youtube.com/watch?v=DCAFxgUXM4I">Assertions</a></li>
 <li><a href="https://www.youtube.com/watch?v=Y0GEftJ5MB0">Assertions-Example</a></li>
 </ul>
-	
+
 <ul>
 <b>Testability</b>
 <li><a href="https://www.youtube.com/watch?v=jwL1vkl-CoY">Introduction</a></li>
@@ -412,7 +414,7 @@ If you are on the waitlist, please attend any lab that works for you until you a
 TBD
 
 
-| Lab | Time 		 | TAs 		| 
+| Lab | Time 		 | TAs 		|
 | :-- |:-- 		 | :--			|
 | L1N | Tue 0900-1100	 | TBD	|
 | L1M | Tue 1530-1730	 | TBD	|
@@ -438,8 +440,8 @@ You will not have to specify your team until the week of Sept 15. Both team memb
 
 In addition to the 12 hours of labs per week, there are also ~12 hours of TA office hours per week. These have been clustered later in the week, but some are available on each day, to better meet anticipated demands.
 
-<!-- 
-To simplify scheduling, all lectures, office hours, and labs will be kept up to date on the following: 
+<!--
+To simplify scheduling, all lectures, office hours, and labs will be kept up to date on the following:
 ### [Lecture/Lab/Office Hour Calendar](https://calendar.google.com/calendar/embed?src=nd7ha4c6bmar00p19mddks4508%40group.calendar.google.com&ctz=America%2FVancouver)
 -->
 
@@ -491,7 +493,7 @@ To pass the course and receive credit you must achieve a passing grade on *both*
 
 The project grade component is weighted as follows:
 
-| Project Component				| Proportion | 
+| Project Component				| Proportion |
 | :--			 				    | :-- |
 | Deliverable 0 (d0)			| 20 %	|
 | Project Sprint 1 (d1)			| 20 %	|
@@ -502,7 +504,7 @@ The project grade component is weighted as follows:
 
 The exam component is weighted as follows:
 
-| Exam Component			| Proportion 	| 
+| Exam Component			| Proportion 	|
 | :--			 			| :-- 			|
 | Midterm Exam			| 30 %	|
 | Final Exam				| 70 %	|
@@ -525,7 +527,7 @@ Schedule TBD
 
 
 
-| Week									| Due	| Link | 
+| Week									| Due	| Link |
 | :--			   						| :-- 	| :-- |
 | Week 0 (Entrance Survey)				| Jan 19 @ 1000 | Expired |
 | Week 1								| Jan 8 @ 1000 | Expired |
@@ -586,13 +588,12 @@ The Statement of Principle of UBC's Respectful Environment Statement is "The bes
 The readings for this course are licensed using [CC-by-SA](https://creativecommons.org/licenses/by-sa/3.0/). However, it is important to note that the deliverable descriptions, code implementing the deliverables, exams, and exam solutions are considered private materials. We go to considerable lengths to make the project an interesting and useful learning experience for this course. This is a great deal of work, and while future students may be tempted by your solutions, posting them does not do them any real favours. Please be considerate with these private materials and not pass them along to others, make your repos public, or post them to other sites online.
 
 
-<!--- 
+<!---
 
-### Archived bits 
+### Archived bits
 
 #### First Lecture Links
 
 * [Sample Repository](https://github.com/rtholmes/cpsc310starter) for in class use.
 * ~~[Entrance Survey](https://goo.gl/forms/0G3o369xPqRSmThI3) Please let us know what you want out of CPSC 310!~~
 --->
-
