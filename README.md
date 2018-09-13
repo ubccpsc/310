@@ -77,34 +77,34 @@ CPSC 310 will be a challenging course that we have designed to integrate many of
 
 | Date/Time		| Location 	| TA 	   	|
 |---				|---		 	|--- 		|
-| Mon 0900-1000 	| DMP	Table 4		| Alice	|
-| Mon 1000-1100 	| DMP	Table 4		| Cindy	|
-| Mon 1100-1200 	| DMP	Table 4		| Alice	|
-| Mon 1200-1300 	| DMP	Table 4		| Cindy	|
-| Mon 1400-1500 	| DMP	Table 6		| Brian	|
-| Mon 1400-1500 	| DMP	Table 6		| Tassi	|
-| Mon 1500-1600 	| DMP	Table 4		| Brian	|
-| Mon 1500-1600 	| DMP	Table 4		| Ada	|
-| Mon 1600-1700 	| DMP	Table 4		| Brian	|
-| Mon 1600-1700 	| DMP	Table 4		| Ada	|
+| Mon 0900-1000 	| DLC	Table 4		| Alice	|
+| Mon 1000-1100 	| DLC	Table 4		| Cindy	|
+| Mon 1100-1200 	| DLC	Table 4		| Alice	|
+| Mon 1200-1300 	| DLC	Table 4		| Cindy	|
+| Mon 1400-1500 	| DLC	Table 6		| Brian	|
+| Mon 1400-1500 	| DLC	Table 6		| Tassi	|
+| Mon 1500-1600 	| DLC	Table 4		| Brian	|
+| Mon 1500-1600 	| DLC	Table 4		| Ada	|
+| Mon 1600-1700 	| DLC	Table 4		| Brian	|
+| Mon 1600-1700 	| DLC	Table 4		| Ada	|
 | Tues 1300-1400		| TBD	Table 3		| Harman	|
 | Tues 1400-1500		| TBD	Table 3		| Tassi	|
-| Wed 1400-1500	| DMP	Table 6		| Henry	|
-| Wed 1500-1600	| DMP	Table 6		| Henry	|
-| Wed 1600-1700	| DMP	Table 6		| Zhenpeng	|
-| Thurs 1100-1200	| DMP	Table 5		| TBD	|
-| Thurs 1200-1300	| DMP	Table 5		| TBD	|
-| Thurs 1500-1600	| DMP	Table 5		| Cindy	|
-| Thurs 1500-1600	| DMP	Table 5		| Braxton	|
-| Thurs 1600-1700	| DMP	Table 5		| Cindy	|
-| Thurs 1600-1700	| DMP	Table 5		| Braxton |
-| Fri 1400-1500	| DMP	Table 5		| Zhenpeng	|
-| Fri 1400-1500	| DMP	Table 5		| Susan	|
-| Fri 1500-1600	| DMP	Table 5		| Zhenpeng	|
-| Fri 1500-1600	| DMP	Table 5		| Lucas	|
-| Fri 1500-1600	| DMP	Table 5		| Alice	|
-| Fri 1600-1700	| DMP	Table 5		| Lucas	|
-| Fri 1600-1700	| DMP	Table 5		| Alice	|
+| Wed 1400-1500	| DLC	Table 6		| Henry	|
+| Wed 1500-1600	| DLC	Table 6		| Henry	|
+| Wed 1600-1700	| DLC	Table 6		| Zhenpeng	|
+| Thurs 1100-1200	| DLC	Table 5		| TBD	|
+| Thurs 1200-1300	| DLC	Table 5		| TBD	|
+| Thurs 1500-1600	| DLC	Table 5		| Cindy	|
+| Thurs 1500-1600	| DLC	Table 5		| Braxton	|
+| Thurs 1600-1700	| DLC	Table 5		| Cindy	|
+| Thurs 1600-1700	| DLC	Table 5		| Braxton |
+| Fri 1400-1500	| DLC	Table 5		| Zhenpeng	|
+| Fri 1400-1500	| DLC	Table 5		| Susan	|
+| Fri 1500-1600	| DLC	Table 5		| Zhenpeng	|
+| Fri 1500-1600	| DLC	Table 5		| Lucas	|
+| Fri 1500-1600	| DLC	Table 5		| Alice	|
+| Fri 1600-1700	| DLC	Table 5		| Lucas	|
+| Fri 1600-1700	| DLC	Table 5		| Alice	|
 
 ### Piazza
 
