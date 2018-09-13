@@ -122,9 +122,9 @@ This is a high-level overview of what the course will be about. Expect this list
 
 | Week					| Topic & Readings 				| Survey |
 |---					|---					|--- |
-| Week 0: Sept 3		| [Introduction](readings/Introduction.md), [Teamwork](readings/Teamwork.md), & [Languages](readings/Languages.md)             | [Week 0 Survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_0fepj2KWF5LuNud) |
-| Week 1: Sept 10	| [Testing](readings/Testing.md)				                  | [Week 1 Survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_b3Myb2qMJaBSRtX) |
-| Week 2: Sept 17	| [Process & Agile](readings/Process.md)	                  | [TBD](NOTSETYET) |
+| Week 0: Sept 3		| [Introduction](readings/Introduction.md), [Teamwork](readings/Teamwork.md), & [Languages](readings/Languages.md)             | Week 0 Survey - Expired |
+| Week 1: Sept 10	| [Testing](readings/Testing.md)				                  | Week 1 Survey |
+| Week 2: Sept 17	| [Process & Agile](readings/Process.md)	                  | [Week 2 Survey (Sept 17 @ 0800)](https://ubc.ca1.qualtrics.com/jfe/form/SV_9sn5qvNujS2rsJn) |
 | Week 3: Sept 24	| [Specifications](readings/Specifications.md) & [User Stories](readings/SpecificationsUserStories.md)       | [TBD](NOTSETYET) |
 | Week 4: Oct 1		| [Testability & Assertions](readings/TestabilityAssertions.md)            | [TBD](NOTSETYET) |
 | Week 5: Oct 8		| High-level design	                  | [TBD](NOTSETYET) | <!-- & technical representations -->
@@ -517,11 +517,12 @@ The easiest way to think about this is that the project grade acts as a multipli
 
 ## Participation
 
-Participation marks are given for submitting timely status reports for the lecture component of the class. With the exception of Week 0, these reports **MUST** be submitted before class and will require watching the videos for that week. These reports are intended to be short; we will use them to tailor the activities during the week based on your comments. Each of the 10 reports is worth 0.5% (totalling 5% of your final grade if you submit all 10). We will not tally this grade until the end of the term so it is your responsibility to make sure you have done these by their deadlines (the forms will be deactivated afterwards) and to keep track of your own participation grade.
+Participation marks are given for submitting timely status reports for the lecture component of the class. With the exception of Week 0, these reports **MUST** be submitted before class and will require watching the videos for that week. These reports are intended to be short; we will use them to tailor the activities during the week based on your comments. Each of the 10 reports is worth 0.5% (totalling 5% of your final grade if you submit all 10). We will not tally this grade until the end of the term so it is your responsibility to make sure you have done these by their deadlines (the forms will be deactivated afterwards) and to keep track of your own participation grade. These surveys will be due at 0800 on Mondays; no extensions can be given.
 
-The three deliverable reports (Week 5, 8, and 11) are not part of your participation report but are instead required for your deliverable submissions (see the grade rubric in the deliverable description for more detail of those).
+The three deliverable reports (Week 5, 8, and 11) are not part of your participation report but are instead required for your deliverable submissions (see the grade rubric in the deliverable description for more detail of those). These surveys will be due at 1900 on Mondays; no extensions can be given (this is later to allow you to comment on your finished deliverable as it will be after the 1800 deadline).
 
 <!--
+
 
 Schedule TBD
 
