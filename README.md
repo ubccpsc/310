@@ -123,18 +123,18 @@ This is a high-level overview of what the course will be about. Expect this list
 | Week					| Topic & Readings 				| Survey |
 |---					|---					|--- |
 | Week 0: Sept 3		| [Introduction](readings/Introduction.md), [Teamwork](readings/Teamwork.md), & [Languages](readings/Languages.md)             | Week 0 Survey - Expired |
-| Week 1: Sept 10	| [Testing](readings/Testing.md)				                  | Week 1 Survey |
+| Week 1: Sept 10	| [Testing](readings/Testing.md)				                  | Week 1 Survey - Expired |
 | Week 2: Sept 17	| [Process & Agile](readings/Process.md)	                  | [Week 2 Survey (Sept 17 @ 0800)](https://ubc.ca1.qualtrics.com/jfe/form/SV_9sn5qvNujS2rsJn) |
-| Week 3: Sept 24	| [Specifications](readings/Specifications.md) & [User Stories](readings/SpecificationsUserStories.md)       | [TBD](NOTSETYET) |
-| Week 4: Oct 1		| [Testability & Assertions](readings/TestabilityAssertions.md)            | [TBD](NOTSETYET) |
-| Week 5: Oct 8		| High-level design	                  | [TBD](NOTSETYET) | <!-- & technical representations -->
-| Week 6: Oct 15		| High-level design	                  | [TBD](NOTSETYET) |
-| Week 7: Oct 22		| Midterm				                  | [TBD](NOTSETYET) |
-| Week 8: Oct 29		| Low-level design 	                  | [TBD](NOTSETYET) |
-| Week 9: Nov 5		| Low-level design	                  | [TBD](NOTSETYET) |
-| Week 10: Nov 12	| InfoSec, IP, & Ethics				                  | [TBD](NOTSETYET) |
-| Week 11: Nov 19	| REST & TBD		                  | [TBD](NOTSETYET) |
-| Week 12: Nov 26	| Construction, Automation, & Refactoring                 | [TBD](NOTSETYET) |
+| Week 3: Sept 24	| [Specifications](readings/Specifications.md) & [User Stories](readings/SpecificationsUserStories.md)       | [TBD - Sept 24 @ 0800](NOTSETYET) |
+| Week 4: Oct 1		| [Testability & Assertions](readings/TestabilityAssertions.md)            | [TBD - Oct 1 @ 0800](NOTSETYET) |
+| Week 5: Oct 8		| High-level design	                  | [TBD - Oct 8 @ 1900 (Mandatory!)](NOTSETYET) | <!-- & technical representations -->
+| Week 6: Oct 15		| High-level design	                  | [TBD - Oct 15 @ 0800](NOTSETYET) |
+| Week 7: Oct 22		| Midterm				                  | [TBD - Oct 22 @ 0800](NOTSETYET) |
+| Week 8: Oct 29		| Low-level design 	                  | [TBD - Oct 29 @ 1900 (Mandatory!)](NOTSETYET) |
+| Week 9: Nov 5		| Low-level design	                  | [TBD - Nov 5 @ 0800](NOTSETYET) |
+| Week 10: Nov 12	| InfoSec, IP, & Ethics				                  | [TBD - Nov 12 @ 0800](NOTSETYET) |
+| Week 11: Nov 19	| REST & TBD		                  | [TBD - Nov 19 @ 1900 (Mandatory!)](NOTSETYET) |
+| Week 12: Nov 26	| Construction, Automation, & Refactoring                 | [TBD - Nov 26 @ 0800](NOTSETYET) |
 
 It is expected that you will watch the videos for a week prior to coming to class. This will greatly increase your understanding of what will be happening in lecture and make it much easier for you to participate in any hands-on activities we will be doing. The videos below will be annotated with week indicators (W0, W1, etc.) once we know when each should be watched to prepare for lecture that week.
 
