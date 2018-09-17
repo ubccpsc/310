@@ -272,7 +272,7 @@ The API is comprised of three interfaces. You **must not** change the interface 
 - `IInsightFacade` is the front end (wrapper) for the query engine. In practice, it defines the endpoints for the deliverable. It provides several methods:
 - `addDataset(id: string, content: string, kind: InsightDatasetKind): Promise<string[]>` adds a dataset to the internal model, providing the id of the dataset, the string of the content of the dataset, and the kind of the dataset. For this deliverable the dataset kind will be _courses_. Empty string is not a valid id.
 - `removeDataset(id: string): Promise<string>` removes a dataset from the internal model, given the id. Empty string is not a valid id.
-- `performQuery(query: any): Promise<any[]>` performs a query on the dataset.  It first should parse and validate the input query, then perform semantic checks on the query, and finally evaluate the query if it is valid.
+- `performQuery(query: any): Promise<any[]>` performs a query on the dataset. It first should parse and validate the input query, then perform semantic checks on the query and evaluate the query if it is valid. **Update:** a result should have a max size of 5,000. If this limit is exceeded the result should be an instance of `InsightError`.
 - `listDatasets(): Promise<InsightDataset[]>` returns an array of currently added datasets. Each element of the array should describe a dataset following the InsightDataset interface which contains the dataset id, kind, and number of rows.
 
 To implement the API you will likely have to create your own additional methods and classes.
