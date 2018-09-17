@@ -6,6 +6,10 @@ This deliverable will be completed in pairs. It is worth 10% of your final grade
 
 You are responsible for the software design and implementation. You cannot use any library package that is not already specified in ```package.json```. Your implementation must be in TypeScript. While we will not be directly examining your source code, you will undoubtably end up showing it to the TAs as you explain your design in the mandatory post-submission debrief that will take place in lab the week of the final deliverable deadline).
 
+## "Change Log"
+
+To see when this file was last updated, look at the date of the commit in the pale blue box above the file. To see what was changed, you can view the commit history and associated diffs using the history button just above the top right of the file.
+
 ## Dataset
 
 This data has been obtained from UBC PAIR and has not been modified in any way. The data is provided as a zip file: inside of the zip you will find a file for each of the courses offered at UBC. Each of those file contains JSON object containing the information about each offering of the course.
@@ -63,9 +67,13 @@ Error responses for failed parsing are provided below in the specification for t
 
 **Semantic Checking**
 
-Semantic checks are typically performed on the existing (validated) AST. Type checking is an example of a semantic check.  In this project you must perform the following semantic check:
+Semantic checks are typically performed on the existing (validated) AST. Type checking is an example of a semantic check.  In this project you must perform the following semantic checks:
 
 `'ORDER': key` where key (a string) is the column name to sort on; the key must be in the COLUMNS array or the query is invalid
+
+`MCOMPARISON` must take keys that test numbers and `SCOMPARISON` must take keys that test strings, or the query is invalid (see next section for list).
+
+Queries can only reference one dataset, or the query is invalid. Datasets are referenced by the id of the keys in the query (see next section). A query on a dataset that has not been added is invalid.
 
 ### Valid keys
 
@@ -87,6 +95,7 @@ For instance, if the `id` sent by the user is `courses`, then the queries you wi
 * **courses_fail**: ```number```; The number of students that failed the course offering.
 * **courses_audit**: ```number```; The number of students that audited the course offering.
 * **courses_uuid**: ```string```; The unique id of a course offering.
+* **courses_year**: ```number```; The year the course offering ran.
 
 Note: these keys are different than the ones present in the raw data. Since you are not allowed to modify the data, you will have to come up with a way to translate them.
 
@@ -267,9 +276,12 @@ The result of this query would be:
 
 **Overview**:
 
-The API is comprised of three interfaces. You **must not** change the interface specifications.
+The API is summarized below. You **must not** change any provided specifications.
 
 - `IInsightFacade` is the front end (wrapper) for the query engine. In practice, it defines the endpoints for the deliverable. It provides several methods:
+- `InsightDatasetKind` is an enum specifying the two possible dataset types.
+- `InsightDataset` is an interface for a simple object storing metadata about an added dataset.
+- `InsightError` and `NotFoundError` are Error subtypes potentially returned by the API.
 - `addDataset(id: string, content: string, kind: InsightDatasetKind): Promise<string[]>` adds a dataset to the internal model, providing the id of the dataset, the string of the content of the dataset, and the kind of the dataset. For this deliverable the dataset kind will be _courses_. Empty string is not a valid id.
 - `removeDataset(id: string): Promise<string>` removes a dataset from the internal model, given the id. Empty string is not a valid id.
 - `performQuery(query: any): Promise<any[]>` performs a query on the dataset.  It first should parse and validate the input query, then perform semantic checks on the query, and finally evaluate the query if it is valid.
@@ -277,7 +289,7 @@ The API is comprised of three interfaces. You **must not** change the interface 
 
 To implement the API you will likely have to create your own additional methods and classes.
 
-The high-level API you must support is shown below; these are methods we will provide you in your bootstrap project in ```src/controller/``` (there is also code in ```src/rest/``` but you do not need to worry about this yet).
+The high-level API you must support is shown below; these are methods we will provide you in your bootstrap project in ```src/controller/```.
 
 ```typescript
 /*
@@ -360,7 +372,10 @@ export interface IInsightFacade {
     /**
      * Perform a query on UBCInsight.
      *
-     * @param query  The query to be performed. This is the same as the body of the POST message.
+     * @param query  The query to be performed.
+     * 
+     * If a query is incorrectly formatted, references a dataset not added (in memory or on disk), 
+     * or references multiple datasets, it should be rejected.
      *
      * @return Promise <any[]>
      *
@@ -370,7 +385,7 @@ export interface IInsightFacade {
     performQuery(query: any): Promise<any[]>;
 
     /**
-     * List a list of datasets and their types.
+     * List all currently added datasets, their types, and number of rows.
      *
      * @return Promise <InsightDataset[]>
      * The promise should fulfill an array of currently added InsightDatasets, and will only fulfill.
@@ -382,7 +397,7 @@ export interface IInsightFacade {
 
 ## Testing
 
-The best way to test your system is via your own unit test suite. You can write these unit tests by following the examples in ```test/``` and running them with ```yarn test```. This will be the quickest and easiest way to ensure your system is behaving correctly and to make sure regressions are not introduced as you proceed further in the project. We are currently also providing a [UI](https://cs310.ugrad.cs.ubc.ca/ui) for our solution for this deliverable so you can see what the expected values should be for the queries you are trying for your query.
+The best way to test your system is via your own unit test suite. You can write these unit tests by following the examples in ```test/``` and running them with ```yarn test```. This will be the quickest and easiest way to ensure your system is behaving correctly and to make sure regressions are not introduced as you proceed further in the project. We are currently also providing a [UI](https://cs310.ugrad.cs.ubc.ca/ui) for our solution for this deliverable so you can see what the expected values should be for the queries you are trying for your query. **Please note** that the UI may not respond correctly to all error cases, its purpose is for convenient creation of expected results. When in doubt always follow the spec as written here.
 
 To ensure your code conforms with the API our marking suite expects you can run your code against AutoTest. You will **not** have source-level access this suite. You will be able to request to run it against your implementation every 12h by invoking the ```@autobot``` Github bot; full details will be available in the [AutoTest](AutoTest.md) documentation. The AutoTest suite will not be available for the first few days after the deliverable is released; use this time to read the deliverable and get started on your own implementation and tests. We will post to Piazza when the suite is available.
 
