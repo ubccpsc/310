@@ -9,6 +9,7 @@ You are responsible for the software design and implementation. You cannot use a
 ## "Change Log"
 
 To see when this file was last updated, look at the date of the commit in the pale blue box above the file. To see what was changed, you can view the commit history and associated diffs using the history button just above the top right of the file.
+We have updated this file since d0 with some minor changes/clarifications so please check!
 
 ## Dataset
 
