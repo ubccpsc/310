@@ -14,7 +14,7 @@ To see when this file was last updated, look at the date of the commit in the pa
 
 This data has been obtained from UBC PAIR and has not been modified in any way. The data is provided as a zip file: inside of the zip you will find a file for each of the courses offered at UBC. Each of those file contains JSON object containing the information about each offering of the course.
 
-The dataset zip file can be found here: [courses.zip](courses.zip)
+The dataset zip file can be found in the `./test/data` directory of your repo.
 
 **Checking the validity of the dataset**
 
