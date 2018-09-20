@@ -470,10 +470,6 @@ Also, be aware that waiting until the last minute will greatly degrade AutoTest 
 
 Note: Even when AutoTest is heavily loaded your requests are queued and processed in turn; the timestamps we use for the deadline comes from the GitHub push event, not when AutoTest is able to process the request or when the commit was made locally.
 
-
-
-Project schedule TBD.
-
 * September 17 @ 1800: ([Deliverable 0](project/Deliverable0.md)) This will be an individual deliverable and will be graded before the Add/Drop date. You should aim to exceed 70% on this deliverable if you want to succeed at the project.
 
 * October 1 (Oct 8 @ 1800 final sub): [Sprint 1](project/Deliverable1.md) The first project deliverable will be extremely challenging; it is important that you start working on this early.
@@ -485,7 +481,6 @@ Project schedule TBD.
 * November 12 (Nov 19 @ 1800 final sub): [Sprint 3](project/Deliverable3.md)
 
 * November 19: [Project Quality Check](project/Deliverable4.md). There is nothing to submit for this deliverable.
-
 
 ## Grading
 
