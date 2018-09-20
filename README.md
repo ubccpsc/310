@@ -125,7 +125,7 @@ This is a high-level overview of what the course will be about. Expect this list
 | Week 0: Sept 3		| [Introduction](readings/Introduction.md), [Teamwork](readings/Teamwork.md), & [Languages](readings/Languages.md)             | Week 0 Survey - Expired |
 | Week 1: Sept 10	| [Testing](readings/Testing.md)				                  | Week 1 Survey - Expired |
 | Week 2: Sept 17	| [Process & Agile](readings/Process.md)	                  | Week 2 Survey - Expired |
-| Week 3: Sept 24	| [Specifications](readings/Specifications.md) & [User Stories](readings/SpecificationsUserStories.md)       | [TBD - Sept 24 @ 0800](https://ubc.ca1.qualtrics.com/jfe/form/SV_1M3h4g4mDiK3k8J) |
+| Week 3: Sept 24	| [Specifications](readings/Specifications.md) & [User Stories](readings/SpecificationsUserStories.md)       | [Week 3 Survey - Sept 24 @ 0800](https://ubc.ca1.qualtrics.com/jfe/form/SV_1M3h4g4mDiK3k8J) |
 | Week 4: Oct 1		| [Testability & Assertions](readings/TestabilityAssertions.md)            | [TBD - Oct 1 @ 0800](NOTSETYET) |
 | Week 5: Oct 8		| High-level design	                  | [TBD - Oct 8 @ 1900 (Mandatory!)](NOTSETYET) | <!-- & technical representations -->
 | Week 6: Oct 15		| High-level design	                  | [TBD - Oct 15 @ 0800](NOTSETYET) |
