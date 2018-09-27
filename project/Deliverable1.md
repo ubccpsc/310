@@ -27,7 +27,7 @@ A **valid** dataset:
 
 **Reading and Parsing the Dataset**
 
-You will need to parse valid input files into internal objects or other data structures.  You are not allowed to store the data in a database.  You must also persist (cache) the model to disk for quicker access. These cache files should be saved to the `./data` directory. Make sure not to commit these cached files to version control, as this may cause unpredicted test failures.
+You will need to parse valid input files into internal objects or other data structures.  You are not allowed to store the data in a database.  You must also write a copy of the model to disk, and should be able to load these files to be queried if necessary. These files should be saved to the `./data` directory. Make sure not to commit these files to version control, as this may cause unpredicted test failures.
 
 There is a provided package called JSZip that you should use to process/unzip the data you are passed in your addDataset method (described below).
 
