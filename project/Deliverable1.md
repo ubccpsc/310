@@ -15,7 +15,7 @@ We have updated this file since d0 with some minor changes/clarifications so ple
 
 This data has been obtained from UBC PAIR and has not been modified in any way. The data is provided as a zip file: inside of the zip you will find a file for each of the courses offered at UBC. Each of those file contains JSON object containing the information about each offering of the course.
 
-The dataset zip file can be found in the `./test/data` directory of your repo.
+The dataset zip file can be found in the `<PROJECT_DIR>/test/data` directory of your repo.
 
 **Checking the validity of the dataset**
 
@@ -27,7 +27,7 @@ A **valid** dataset:
 
 **Reading and Parsing the Dataset**
 
-You will need to parse valid input files into internal objects or other data structures.  You are not allowed to store the data in a database.  You must also write a copy of the model to disk, and should be able to load these files to be queried if necessary. These files should be saved to the `./data` directory. Make sure not to commit these files to version control, as this may cause unpredicted test failures.
+You will need to parse valid input files into internal objects or other data structures.  You are not allowed to store the data in a database.  You must also write a copy of the model to disk, and should be able to load these files to be queried if necessary. These files should be saved to the `<PROJECT_DIR>/data` directory. Make sure not to commit these files to version control, as this may cause unpredicted test failures.
 
 There is a provided package called JSZip that you should use to process/unzip the data you are passed in your addDataset method (described below).
 
