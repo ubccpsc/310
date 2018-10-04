@@ -92,8 +92,6 @@ CPSC 310 will be a challenging course that we have designed to integrate many of
 | Wed 1400-1500	| DLC	Table 6		| Henry	|
 | Wed 1500-1600	| DLC	Table 6		| Henry	|
 | Wed 1600-1700	| DLC	Table 6		| Zhenpeng	|
-| Thurs 1100-1200	| DLC	Table 5		| TBD	|
-| Thurs 1200-1300	| DLC	Table 5		| TBD	|
 | Thurs 1500-1600	| DLC	Table 5		| Cindy	|
 | Thurs 1500-1600	| DLC	Table 5		| Braxton	|
 | Thurs 1600-1700	| DLC	Table 5		| Cindy	|
@@ -129,7 +127,7 @@ This is a high-level overview of what the course will be about. Expect this list
 | Week 4: Oct 1		| [Testability & Assertions](readings/TestabilityAssertions.md)            | Week 4 Survey - Expired |
 | Week 5: Oct 8		| High Level design: <ul><li>[High-level design](readings/HighLevelDesign.md) </li><li>[Technical Representations](readings/Representations.md)</li></ul>	                  | [Week 5 D1 Survey - Oct 8 @ 1900 (Mandatory!)](https://ubc.ca1.qualtrics.com/jfe/form/SV_1B4sA7WnJAf3pKl) | <!-- & technical representations -->
 | Week 6: Oct 15		| High-level design: <ul><li>[Design principles](readings/DesignPrinciples.md)</li><li>[APIs](readings/API.md)</li></ul>	                  | TBD - Oct 15 @ 0800 |
-| Week 7: Oct 22		| Midterm				                  | TBD - Oct 22 @ 0800 |
+| Week 7: Oct 22		| Midterm (Tuesday in class) & TBD (Thurs)				                  | TBD - Oct 22 @ 0800 |
 | Week 8: Oct 29		| Low-level design 	                  | TBD - Oct 29 @ 1900 (Mandatory!) |
 | Week 9: Nov 5		| Low-level design	                  | TBD - Nov 5 @ 0800 |
 | Week 10: Nov 12	| InfoSec, IP, & Ethics				                  | TBD - Nov 12 @ 0800 |
@@ -411,24 +409,21 @@ Labs
 
 If you are on the waitlist, please attend any lab that works for you until you are able to get in the course. Lab sections must be finalized by the add/drop date. If you have course conflicts in your schedule that prevent you taking labs with available seats, please talk to the [CS advisors](https://www.cs.ubc.ca/students/undergrad/resources/academic-advising); unfortunately the course staff is not able to control who is in the lab or lecture.
 
-TBD
-
-
-| Lab | Time 		 | TAs 		|
-| :-- |:-- 		 | :--			|
-| L1N | Tue 0900-1100	 | TBD	|
-| L1M | Tue 1530-1730	 | TBD	|
-| L1E | Tue 1700-1900	 | TBD	|
-| L1H | Wed 0900-1100	 | TBD	|
-| L1B | Wed 1100-1300	 | TBD	|
-| L1D | Wed 1300-1500	 | TBD	|
-| L1C | Wed 1500-1700	 | TBD	|
-| L1G | Thu 1030-1230	 | TBD	|
-| L1F | Thu 1400-1600	 | TBD	|
-| L1J | Thu 1700-1900	 | TBD	|
-| L1K | Fri 0900-1100	 | TBD	|
-| L1L | Fri 1100-1300	 | TBD	|
-| L1A | Fri 1400-1600	 | TBD	|
+| Lab | Time 		 |
+| :-- |:-- 		 |
+| L1N | Tue 0900-1100	 | 
+| L1M | Tue 1530-1730	 | 
+| L1E | Tue 1700-1900	 | 
+| L1H | Wed 0900-1100	 | 
+| L1B | Wed 1100-1300	 | 
+| L1D | Wed 1300-1500	 | 
+| L1C | Wed 1500-1700	 | 
+| L1G | Thu 1030-1230	 | 
+| L1F | Thu 1400-1600	 | 
+| L1J | Thu 1700-1900	 | 
+| L1K | Fri 0900-1100	 | 
+| L1L | Fri 1100-1300	 | 
+| L1A | Fri 1400-1600	 | 
 
 
 
@@ -515,32 +510,6 @@ The easiest way to think about this is that the project grade acts as a multipli
 Participation marks are given for submitting timely status reports for the lecture component of the class. With the exception of Week 0, these reports **MUST** be submitted before class and will require watching the videos for that week. These reports are intended to be short; we will use them to tailor the activities during the week based on your comments. Each of the 10 reports is worth 0.5% (totalling 5% of your final grade if you submit all 10). We will not tally this grade until the end of the term so it is your responsibility to make sure you have done these by their deadlines (the forms will be deactivated afterwards) and to keep track of your own participation grade. These surveys will be due at 0800 on Mondays; no extensions can be given.
 
 The three deliverable reports (Week 5, 8, and 11) are not part of your participation report but are instead required for your deliverable submissions (see the grade rubric in the deliverable description for more detail of those). These surveys will be due at 1900 on Mondays; no extensions can be given (this is later to allow you to comment on your finished deliverable as it will be after the 1800 deadline).
-
-<!--
-
-
-Schedule TBD
-
-
-
-| Week									| Due	| Link |
-| :--			   						| :-- 	| :-- |
-| Week 0 (Entrance Survey)				| Jan 19 @ 1000 | Expired |
-| Week 1								| Jan 8 @ 1000 | Expired |
-| Week 2								| Jan 15 @ 1000 | Expired |
-| Week 3								| Jan 22 @ 1000 | Expired |
-| Week 4								| Jan 29 @ 1000 | Expired  |
-| Week 5 (d1 survey) **MANDATORY**		| Feb 6 @ 1000 | Expired |
-| Week 6								| Feb 12 @ 1000 | Expired |
-| Week 7 (Reading week) **NO SURVEY**   | N/A | N/A |
-| Week 8   			        			| Feb 26 @ 1000 | Expired |
-| Week 9 (d2 survey) **MANDATORY** 		| Mar 6 @ 1000 | Expired |
-| Week 10								| Mar 12 @ 1000 | Expired |
-| Week 11								| Mar 19 @ 1000 | Expired |
-| Week 12 (d3 survey) **MANDATORY** 	| Mar 27 @ 1000 | Expired |
-| Week 13 (Exit Survey)					| Apr 2 @ 1000 | Expired |
-
--->
 
 ## Policies
 
