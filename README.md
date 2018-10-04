@@ -127,14 +127,14 @@ This is a high-level overview of what the course will be about. Expect this list
 | Week 2: Sept 17	| [Process & Agile](readings/Process.md)	                  | Week 2 Survey - Expired |
 | Week 3: Sept 24	| [Specifications](readings/Specifications.md) & [User Stories](readings/SpecificationsUserStories.md)       | Week 3 Survey - Expired |
 | Week 4: Oct 1		| [Testability & Assertions](readings/TestabilityAssertions.md)            | Week 4 Survey - Expired |
-| Week 5: Oct 8		| High-level design	                  | [TBD - Oct 8 @ 1900 (Mandatory!)](https://ubc.ca1.qualtrics.com/jfe/form/SV_1B4sA7WnJAf3pKl) | <!-- & technical representations -->
-| Week 6: Oct 15		| High-level design	                  | [TBD - Oct 15 @ 0800](NOTSETYET) |
-| Week 7: Oct 22		| Midterm				                  | [TBD - Oct 22 @ 0800](NOTSETYET) |
-| Week 8: Oct 29		| Low-level design 	                  | [TBD - Oct 29 @ 1900 (Mandatory!)](NOTSETYET) |
-| Week 9: Nov 5		| Low-level design	                  | [TBD - Nov 5 @ 0800](NOTSETYET) |
-| Week 10: Nov 12	| InfoSec, IP, & Ethics				                  | [TBD - Nov 12 @ 0800](NOTSETYET) |
-| Week 11: Nov 19	| REST & TBD		                  | [TBD - Nov 19 @ 1900 (Mandatory!)](NOTSETYET) |
-| Week 12: Nov 26	| Construction, Automation, & Refactoring                 | [TBD - Nov 26 @ 0800](NOTSETYET) |
+| Week 5: Oct 8		| High-level design	                  | [Week 5 D1 Survey - Oct 8 @ 1900 (Mandatory!)](https://ubc.ca1.qualtrics.com/jfe/form/SV_1B4sA7WnJAf3pKl) | <!-- & technical representations -->
+| Week 6: Oct 15		| High-level design	                  | TBD - Oct 15 @ 0800 |
+| Week 7: Oct 22		| Midterm				                  | TBD - Oct 22 @ 0800 |
+| Week 8: Oct 29		| Low-level design 	                  | TBD - Oct 29 @ 1900 (Mandatory!) |
+| Week 9: Nov 5		| Low-level design	                  | TBD - Nov 5 @ 0800 |
+| Week 10: Nov 12	| InfoSec, IP, & Ethics				                  | TBD - Nov 12 @ 0800 |
+| Week 11: Nov 19	| REST & TBD		                  | TBD - Nov 19 @ 1900 (Mandatory!) |
+| Week 12: Nov 26	| Construction, Automation, & Refactoring                 | TBD - Nov 26 @ 0800 |
 
 It is expected that you will watch the videos for a week prior to coming to class. This will greatly increase your understanding of what will be happening in lecture and make it much easier for you to participate in any hands-on activities we will be doing. The videos below will be annotated with week indicators (W0, W1, etc.) once we know when each should be watched to prepare for lecture that week.
 
