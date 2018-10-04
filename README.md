@@ -127,8 +127,8 @@ This is a high-level overview of what the course will be about. Expect this list
 | Week 2: Sept 17	| [Process & Agile](readings/Process.md)	                  | Week 2 Survey - Expired |
 | Week 3: Sept 24	| [Specifications](readings/Specifications.md) & [User Stories](readings/SpecificationsUserStories.md)       | Week 3 Survey - Expired |
 | Week 4: Oct 1		| [Testability & Assertions](readings/TestabilityAssertions.md)            | Week 4 Survey - Expired |
-| Week 5: Oct 8		| High-level design	                  | [Week 5 D1 Survey - Oct 8 @ 1900 (Mandatory!)](https://ubc.ca1.qualtrics.com/jfe/form/SV_1B4sA7WnJAf3pKl) | <!-- & technical representations -->
-| Week 6: Oct 15		| High-level design	                  | TBD - Oct 15 @ 0800 |
+| Week 5: Oct 8		| High Level design: <ul><li>[High-level design](readings/HighLevelDesign.md) </li><li>[Technical Representations](readings/Representations.md)</li></ul>	                  | [Week 5 D1 Survey - Oct 8 @ 1900 (Mandatory!)](https://ubc.ca1.qualtrics.com/jfe/form/SV_1B4sA7WnJAf3pKl) | <!-- & technical representations -->
+| Week 6: Oct 15		| High-level design: <ul><li>[Design principles](readings/DesignPrinciples.md)</li><li>[APIs](readings/API.md)</li></ul>	                  | TBD - Oct 15 @ 0800 |
 | Week 7: Oct 22		| Midterm				                  | TBD - Oct 22 @ 0800 |
 | Week 8: Oct 29		| Low-level design 	                  | TBD - Oct 29 @ 1900 (Mandatory!) |
 | Week 9: Nov 5		| Low-level design	                  | TBD - Nov 5 @ 0800 |
