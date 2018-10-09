@@ -18,9 +18,12 @@ Class diagrams are the most common form of technical abstraction for software sy
 
 Classes and interfaces are represented by simple rectangles that detail their names, fields, and methods. Method and field visibility can be clarified by prepending names with + (public), # (protected), and - (private). Three primary classes of edges exist in class diagrams. Large hollow arrows represent inheritance relationships. Dotted lines with simple arrowheads represent dependencies (typically through method calls and field references). Solid lines with filled diamonds represent composition relationships; these relationships indicate that the class on the diamond-end creates and is primarily responsible for the lifecycle of one ore more variables of the linked type.
 
+<!-- 
 For example, the class diagram below could be used to generate the text that follows.
 
 <img src="./figures/uml-class.png" width="512px" alt="class diagram">
+
+-->
 
 ```typescript
 interface IInsightFacade {
@@ -78,11 +81,14 @@ Simple deployment diagrams might only concentrate on mapping modules (or classes
 
 Class diagrams often hide key details that are crucial to understand before key aspects of a system can be developed. Sequence diagrams focus on how code elements communicate with each other capturing the order of execution of particular methods and the data being passed between them. These are typically used by developers but are often also used to capture complex interactions which may also involve dev/ops, security, or usability stakeholders as well. Sequence diagrams specifically aim to model protocols and dataflow through the system. Given the complexity of these diagrams they are usually only generated for a limited subset of important, constrained, tasks.
 
+<!--
+
 For example:
 
 > Develop a Client that needs to respond to a getTeams(..) request, passing the request to TeamController who services the request with a Promise that calls an external Server. Assume this is the first request after the client was started.
 
 <img src="./figures/uml-sequence.png" width="512px" alt="sequence diagram">
+-->
 
 ### State machine diagrams
 
