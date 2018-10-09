@@ -62,12 +62,13 @@ class QueryControllerSpec {
 }
 ```
 
-Translating from class diagrams to/from code is fairly straightforward. A more common use case is to need to translate from a textual description to a potential class diagram. For example the class diagram and high-level descriptions below are different representations of the same task,
+Translating from class diagrams to/from code is fairly straightforward. A more common use case is to need to translate from a textual description to a potential class diagram. For example the class diagram and high-level descriptions below are different representations of the same task.
 
+<!--
 > Design a system for drawing UML class and sequence diagrams. Class diagrams should support inheritance, composition, aggregation, and dependency relationships. Sequence diagrams only support sync & async calls and responses. 
 
 <img src="./figures/uml-class-editor.png" width="512px" alt="class diagram">
-
+-->
 
 ### Deployment diagrams
 
