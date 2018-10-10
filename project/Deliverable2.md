@@ -136,7 +136,7 @@ In addition to the semantic checking from Deliverable 1, you must perform the fo
 
 * ```SORT``` - Any keys provided must be in the ```COLUMNS```.
 
-* ```MAX/MIN/AVG``` should only be requested for numeric keys. ```COUNT``` can be requested for all keys.
+* ```MAX/MIN/AVG/SUM``` should only be requested for numeric keys. ```COUNT``` can be requested for all keys.
 
 If any of these qualifications are not met, the query is invalid.
 
