@@ -133,6 +133,7 @@ This is a high-level overview of what the course will be about. Expect this list
 | Week 10: Nov 12	| InfoSec, IP, & Ethics				                  | TBD - Nov 12 @ 0800 |
 | Week 11: Nov 19	| REST & TBD		                  | TBD - Nov 19 @ 1900 (Mandatory!) |
 | Week 12: Nov 26	| Construction, Automation, & Refactoring                 | TBD - Nov 26 @ 0800 |
+| Wed Dec 19 | Final exam @ 1530. Location TBD  | &nbsp; |
 
 It is expected that you will watch the videos for a week prior to coming to class. This will greatly increase your understanding of what will be happening in lecture and make it much easier for you to participate in any hands-on activities we will be doing. The videos below will be annotated with week indicators (W0, W1, etc.) once we know when each should be watched to prepare for lecture that week.
 
