@@ -472,11 +472,11 @@ Note: Even when AutoTest is heavily loaded your requests are queued and processe
 
 * October 23: Midterm (sample midterms are available through the CSSS)
 
-* October 22 (Oct 29 @ 1800 final sub): [Sprint 2](project/Deliverable2.md) An extra week has been added to this deliverable to help teams who fell behind in the first sprint recover.
+* October 22 (Oct 29 @ 1800 final sub): [Sprint 2](project/Deliverable2.md) 
 
 * November 12 (Nov 19 @ 1800 final sub): [Sprint 3](project/Deliverable3.md)
 
-* November 19: [Project Quality Check](project/Deliverable4.md). There is nothing to submit for this deliverable.
+* November 19: [Project Quality Check](project/Deliverable4.md). There is nothing to submit for this deliverable. It will be computed on the version of your code as it exists at the Sprint 3 deadline (*not* the commit associated with the Sprint 3 maximum). 
 
 ## Grading
 
