@@ -8,7 +8,7 @@
 Also, the built query language was fairly simple, as you could not construct queries that would let you aggregate and compute values on the results of queries. In other words, the query engine returned data on a section-by-section basis.
 This deliverable will expand the query engine to enable result computation (e.g., to figure out the average for a _course_ or figure out the number of seats for a _building_).
 
-As with D1, functional correctness comprises 80% of your grade and coverage comprises 20%. Unlike D1, 25% of the functional correctness score will be derived from private tests; you will not see any output for these private tests until after the final D2 deadline has passed.
+As with D1, functional correctness comprises 80% of your grade and coverage comprises 20%. Unlike D1, 25% of the functional correctness score will be derived from private tests; you will not see any output for these private tests until after the final D2 deadline has passed. Your private test score will be applied to the commit that has the highest public test score.
 
 
 ## Dataset
