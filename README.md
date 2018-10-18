@@ -120,7 +120,7 @@ This is a high-level overview of what the course will be about. Expect this list
 
 | Week					| Topic & Readings 				| Survey |
 |---					|---					|--- |
-| Week 0: Sept 3		| [Introduction](readings/Introduction.md), [Teamwork](readings/Teamwork.md), & [Languages](readings/Languages.md)             | Week 0 Survey - Expired |
+| Week 0: Sept 3		| [Introduction](readings/Introduction.md), [Teamwork](readings/Teamwork.md), [Languages](readings/Languages.md), & [Async](readings/Async.md)             | Week 0 Survey - Expired |
 | Week 1: Sept 10	| [Testing](readings/Testing.md)				                  | Week 1 Survey - Expired |
 | Week 2: Sept 17	| [Process & Agile](readings/Process.md)	                  | Week 2 Survey - Expired |
 | Week 3: Sept 24	| [Specifications](readings/Specifications.md) & [User Stories](readings/SpecificationsUserStories.md)       | Week 3 Survey - Expired |
