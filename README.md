@@ -112,6 +112,8 @@ When posting to Piazza please be sure to include a link to your team's GitHub re
 
 ### Getting help
 
+By far the most effective mechanism for *content and exam help* is to actually attend and participate in lectures. While the videos are available, the literature strongly shows that skipping class has a strong negative impact on grades, one that watching videos alone cannot compensate for [[Edwards & Clinton 2018](https://link.springer.com/article/10.1007/s10734-018-0275-9)].
+
 For *[project](project/README.md) / language help*, there will be at least 24 hours of labs and 24 hours of TA office hours per week. TA office hours closer to the deadline are likely to be _much_ busier than others (which may not be attended at all); to accommodate this we have scheduled most of the office hours prior to deadlines, but seeking help at other times and in your lab will likely be less busy.
 
 ## Schedule
