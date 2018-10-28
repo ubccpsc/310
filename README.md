@@ -182,23 +182,23 @@ In addition to AutoTest, each team member will be independently asked a small nu
 
 <!-- 3 weeks -->
 
-* February 6: Sprint 1 ([Deliverable 1](project/Deliverable1.md))
+* February 6: Sprint 1
 
 <!-- 3 weeks -->
 
-* February 27: Sprint 2 ([Deliverable 2](project/Deliverable2.md)) 
+* February 27: Sprint 2
 
 * February 27: Midterm (sample midterms are not available)
 
 <!-- 2 weeks -->
 
-* March 13: Sprint 3 ([Deliverable 3](project/Deliverable3.md))
+* March 13: Sprint 3
 
 <!-- 2 weeks -->
 
-* March 27: Sprint 4 ([Deliverable 4](project/Deliverable4.md))
+* March 27: Sprint 4
 
-* March 27: Sprint 5 ([Deliverable 5](project/Deliverable5.md))
+* March 27: Sprint 5
 
 ## Grading
 
