@@ -146,7 +146,7 @@ If any of these qualifications are not met, the query is invalid.
 
 * ```AVG``` should return a number rounded to two decimal places. Supporting ```AVG``` requires some extra challenges compared to the other operators. Since JavaScript numbers are represented by floating point numbers, performing this arithmetic can return different values depending on the order the operations take place. To account for this, you must use the ```Decimal``` package (already included in your package.json), and follow these steps:
     1. Convert your values to decimals (e.g., ```new Decimal(number)```).
-    2. Add the numbers being averaged using Demical's ```.add()``` method (e.g., generate ```total```).
+    2. Add the numbers being averaged using Decimal's ```.add()``` method (e.g., generate ```total```).
     3. Calculate the average (```var avg = total.toNumber() / numRows```).
     4. Round the average to the second decimal digit (```var res = Number(avg.toFixed(2))```)
 

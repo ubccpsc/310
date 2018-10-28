@@ -26,7 +26,7 @@ Two program elements are considered independent if they can function without the
 
 * **Avoid control flow coupling**: It can often be convenient to pass objects that control the flow of computation within another element, while this is ok if the element being passed is some type of data structure, it can be more problematic if the control flow is being influenced by simple control flow flags (e.g., some kind of `boolean` flag that takes one program path over another).
 
-The flow chart below can be helpful for reasoning about the coupling between program elements. One thing to note is that not all coupling is euqally detrimental: coupling elements by simple data types is less problematic than coupling them through global variables (common coupling) or internal field access (content coupling).
+The flow chart below can be helpful for reasoning about the coupling between program elements. One thing to note is that not all coupling is equally detrimental: coupling elements by simple data types is less problematic than coupling them through global variables (common coupling) or internal field access (content coupling).
 
 <img src="./figures/coupling_flow.png" width="512px" alt="Coupling flowchart">
 
@@ -53,9 +53,9 @@ The flow chart below can be used to reason about the kind of cohesion within a d
 
 ## SOLID
 
-Design principles provide guidelines to help us reason about specific properties within our designs. It might be tempting to treat design guidlines as rules, but that is not their intent: designs will often contravene well-established guidelines; in fact, many guidlies themselves are often in tension with one another forcing engineers to think about their systems to determine which principles are more important to their system. 
+Design principles provide guidelines to help us reason about specific properties within our designs. It might be tempting to treat design guidelines as rules, but that is not their intent: designs will often contravene well-established guidelines; in fact, many guidelines themselves are often in tension with one another forcing engineers to think about their systems to determine which principles are more important to their system. 
 
-There are many catalogs of design principles. While some of these are broadly applicable, others will be unique to specific domains. One of the most commonly-used catalogs are the SOLID design principles.
+There are many catalogues of design principles. While some of these are broadly applicable, others will be unique to specific domains. One of the most commonly-used catalogs are the SOLID design principles.
 
 ### Single responsibility
 
@@ -65,11 +65,11 @@ As systems grow it becomes harder to understand them, fix defects within them, a
 
 One reason this becomes problematic as systems grow is that it often seems easier to add code to an existing module than to create a new module from scratch. This means that code gets added in places where it might not fit well and this mismatch can make the module harder to evolve.
 
-Many design patters have been explicitly crafted to encourage designs that adhere to the single responsibilty principle. For example:
+Many design patterns have been explicitly crafted to encourage designs that adhere to the single responsibilty principle. For example:
 
 * Strategy pattern: In this pattern, modules encapsulate algorithms; this means we create modules that _only_ implement a specific algorithm.
 
-* Command pattern: This pattern separates the notion of an action that can be performed from its implemention. This results in small modules that only provide the features needed for a specific action.
+* Command pattern: This pattern separates the notion of an action that can be performed from its implementation. This results in small modules that only provide the features needed for a specific action.
 
 * State oattern: Systems often depend differently according to their internal state. Rather than having large modules that need to reason globally about all states, this pattern encapsulates the behaviours for a single state in a single module resulting in smaller, more targetted code.
 
@@ -79,11 +79,11 @@ The open/closed principle states that modules should be:
 
 > Open to extension but closed to modification.
 
-This principle encourages software engineers to design their code that is more amenable to future change. Specifcally, the open/closed principle encourages engineers to think explicitly about what parts of their systems should enable future feature additions and which parts of the system should not. This distinction is important, because extension points typically add abstraction to a system which makes them harder to understand. We might want to explicity inhibit some kinds of extensions as well due to negative performance or security implications. By explicitly planning for future extension, new features can be added in a way that does not cause existing code to be modified.
+This principle encourages software engineers to design their code that is more amenable to future change. Specifically, the open/closed principle encourages engineers to think explicitly about what parts of their systems should enable future feature additions and which parts of the system should not. This distinction is important, because extension points typically add abstraction to a system which makes them harder to understand. We might want to explicitly inhibit some kinds of extensions as well due to negative performance or security implications. By explicitly planning for future extension, new features can be added in a way that does not cause existing code to be modified.
 
-This design principle is explicitly supported by most design patterns as these predominanly describe explicit extension points (e.g., by adding new strategies, states, commands, decorators, observers, etc.) that can be extended while existing code remains oblivious to the new features.
+This design principle is explicitly supported by most design patterns as these predominantly describe explicit extension points (e.g., by adding new strategies, states, commands, decorators, observers, etc.) that can be extended while existing code remains oblivious to the new features.
 
-One of the biggest challenges with this principle is knowing _when_ to enable extension; this usually takes explicit discussions with system stakeholders to reason about the explicit costs and benifits of such an extension mechanism.
+One of the biggest challenges with this principle is knowing _when_ to enable extension; this usually takes explicit discussions with system stakeholders to reason about the explicit costs and benefits of such an extension mechanism.
 
 One common code smell for violating the open/closed principle are `instanceof` or `typeof` checks within the code. These checks mean that if a system is extended with a new feature, client code will probably need to be updated as well so that the type checks also check for the new features. This is one of the primary reasons to be wary of this kind of runtime type checking. <!-- private super fields -->
 
@@ -98,7 +98,7 @@ For a complete coverage of this design principle. Since this has been covered in
 
 ### Interface segregation
 
-The interfaces seggregation principle says:
+The interfaces segregation principle says:
 
 > Clients should not be forced to depend on interfaces they do not use.
 
@@ -108,7 +108,7 @@ This principle exists because as we evolve our systems we often do so by adding 
 
 The dependency inversion principle says:
 
-> Classes should depend on abstractions, not implementsions.
+> Classes should depend on abstractions, not implementations.
 
 This principle helps engineers to design implementations that are as decoupled from one another as possible. This usually happens by injecting an interface between the two concrete classes and having the classes take dependencies on the interface instead. While this might seem like a small difference, it means that if you wanted to reuse one of the classes you would also only have to reuse the interface rather than the concrete class and all of its concrete dependencies.
 

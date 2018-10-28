@@ -213,7 +213,7 @@ TODO: This should be added next year
 
 * Why you should learn [a new language](http://blog.cleancoder.com/uncle-bob/2016/09/01/TheLurn.html) every year.
 
-* Languages are all related. [This article](https://eev.ee/blog/2016/12/01/lets-stop-copying-c/) reenforces how some ideas propagate (without justification) through programming languages.
+* Languages are all related. [This article](https://eev.ee/blog/2016/12/01/lets-stop-copying-c/) reinforces how some ideas propagate (without justification) through programming languages.
 
 * TypeScript vs JavaScript from an [angular developer](https://toddmotto.com/typescript-the-missing-introduction).
 

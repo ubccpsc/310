@@ -4,7 +4,7 @@ UBC has a wide variety of courses. This deliverable will focus on importing data
 
 This deliverable will be completed in pairs. It is worth 10% of your final grade. You will not have to hand anything in; we will automatically analyze your repo on every push between when the deliverable is released and the due date [specified here](../README.md#project-sprint-schedule). A team creation tool will be available after the add/drop deadline. Once available, if you have not specified your team yet, please do so through Classy at [https://cs310.ugrad.cs.ubc.ca/](https://cs310.ugrad.cs.ubc.ca/). We will create project repos every morning between 0800-0900; all work must take place in this repo (including all future deliverables). We will run [MOSS](https://theory.stanford.edu/~aiken/moss/) on all submissions so please make sure your work is your own.
 
-You are responsible for the software design and implementation. You cannot use any library package that is not already specified in ```package.json```. Your implementation must be in TypeScript. While we will not be directly examining your source code, you will undoubtably end up showing it to the TAs as you explain your design in the mandatory post-submission debrief that will take place in lab the week of the final deliverable deadline).
+You are responsible for the software design and implementation. You cannot use any library package that is not already specified in ```package.json```. Your implementation must be in TypeScript. While we will not be directly examining your source code, you will undoubtedly end up showing it to the TAs as you explain your design in the mandatory post-submission debrief that will take place in lab the week of the final deliverable deadline).
 
 ## "Change Log"
 

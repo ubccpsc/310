@@ -12,7 +12,7 @@ API design is an iterative process and good design requires collecting a variety
 
 <img src="./figures/API_usability.png" width="512px" alt="API usability">
 
-One aspect of APIs that is often overlooked is their _usability_. The user of an API is the developer who has to learn to use the API to use it within their own system. By providing effective affordances (such as meaningful names, parameter types, and data formats) and thinking about how the APIs will be used in practice, API designers can ease adoption of their APIs and help prevent consumers from using their APIs incorrectly. Useable API design requires combining strong development practice with techniques from user interface design (such as prototyping and user studies) and effective documentation.
+One aspect of APIs that is often overlooked is their _usability_. The user of an API is the developer who has to learn to use the API to use it within their own system. By providing effective affordances (such as meaningful names, parameter types, and data formats) and thinking about how the APIs will be used in practice, API designers can ease adoption of their APIs and help prevent consumers from using their APIs incorrectly. Usable API design requires combining strong development practice with techniques from user interface design (such as prototyping and user studies) and effective documentation.
 
 ## API platforms
 
