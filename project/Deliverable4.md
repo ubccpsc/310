@@ -22,6 +22,8 @@ This deliverable should not require any work on your behalf, but it is crucial t
 
 If you received a retrospective multiplier other than 1 for D1 or D2, that same multiplier will be applied to the portion of D4 associated with the tests for your non-1 multiplier deliverable.
 
+This deliverable is worth 7.5% of your final grade (15% of your project grade).
+
 ### About the private tests
 
 The goal of the private tests is to evaluate the robustness of your approach and to make sure your solution is actually 'high quality' rather than just a series of hacks to pass the tests. These tests will be private and you will not see the test descriptions or know why your implementation passed or failed them. That said: our goal is for teams to do well on these; we will monitor _all_ private tests and only include test cases where at least 70% of teams pass the test case (this is a lower threshold, I would predict the median score for the whole private test suite will exceed 90%).
