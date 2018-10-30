@@ -106,7 +106,7 @@ CPSC 310 will be a challenging course that we have designed to integrate many of
 
 ### Piazza
 
-[Piazza](https://piazza.com/ubc.ca/winterterm12018/cpsc310/home) has been configured for this term. Please see the instructor in person in class if you want to discuss course materials; only TAs will monitor Piazza. Please be mindful of the UBC [Academic Misconduct Policy](#Academic-Misconduct) with respect to posting project solutions on Piazza. It is _extremely_ helpful if your Piazza name corresponds to your name in the SSC in the advent we need to help you with a problem with your project, repositories, or grades.
+[Piazza](https://piazza.com/ubc.ca/winterterm12018/cpsc310/home) has been configured for this term. Please see the instructor in person in class if you want to discuss course materials; only TAs will monitor Piazza. Please be mindful of our [Derivative Code](#Derivative-Code) policy with respect to sharing or using other student's code. It is _extremely_ helpful if your Piazza name corresponds to your name in the SSC in the advent we need to help you with a problem with your project, repositories, or grades.
 
 When posting to Piazza please be sure to include a link to your team's GitHub repository so the TAs can find your group's code in order to help you more effectively. Also, when asking TAs about failing tests in particular, the TAs will often want to see your own test for similar cases (usually this will take several tests) so you can demonstrate to them why you think your code is correct.
 
@@ -538,21 +538,25 @@ Students who miss the midterm or final exam due to illness should consult the Fa
 Students who require dispensation based on their unique circumstances should refer to the [UBC policy on Academic Concessions](http://www.calendar.ubc.ca/vancouver/?tree=3,48,0,0).
 Phones, tablets, calculators, translators, and all other electronic devices are prohibited on desks during exams. They must be turned off and placed in your bag or on the ground. Students who need exam accommodation must make an official request to the [Access and Diversity Office](https://students.ubc.ca/about-student-services/access-diversity).
 
-### Academic Misconduct
+### Derivative Code
 
-Each student is responsible for understanding and abiding by the University and Departmental policies on academic misconduct. ***Both*** teammates are responsible for all commits made to their repositories and for any sharing of their code with other groups. We carefully examine all commits using automated analyses to verify that the code in your repository is your own and is not the same as other projects this term or in past terms. The course staff carefully analyzes every case of copying and only assess penalties when we are certain that the code is in violation of UBC's academic conduct policy.
+Each student is responsible ensuring the code in all of their repositories is their own and is not derived from other students in the class, from past student solutions, or other code resources online. This policy is bidirectional: whether you copied some other code, or your code was copied, the penalties are the same.
 
-The penalty for using (and/or providing) code to another group is to receive a 0 on the deliverable associated with the violation. Since the project is cumulative, you will also have to reimplement your system to ensure that no future violations take place. ***Both*** partners are responsible for their team's code and both will be assessed the penalty: how you collaborate with your partner is your responsibility, we recommend you work closely together so you are aware of the provenance of all of your team's code. If you receive a 0, you do not need to contact us, you are free to just remedy the problem (aka reimplement your solution) and move forward with subsequent deliverables. 
+***All*** teammates are responsible for all commits made to their repositories and for any sharing of their code with other groups. We carefully examine all commits using automated analyses and the course staff carefully manually examine every case of derivative code and only assess penalties when we are certain that the code derives from, or has been derived within, another repository.
 
-If you do wish to appeal our findings and believe your code is your own and was not provided to any other group, you can contact the course instructors and we can launch a formal appeal process. This process is much more formal and may be managed through the dean's office as they have official processes for adjudicating academic misconduct.
+The penalty for using (and/or providing) code to another group is to receive a 0 on the deliverable associated with the violation. Since the project is cumulative, you will also have to reimplement your system to ensure that no future violations take place. ***All*** partners are responsible for their team's code and every team member will be assessed the penalty: how you collaborate as a team is your responsibility, we recommend you work closely together so you are aware of the provenance of all of your team's code. If you receive a 0, you do not need to contact us, you are free to just remedy the problem (aka reimplement your solution) and move forward with subsequent deliverables. 
 
-Avoiding misconduct is straightforward:
+If you do wish to appeal our findings and believe your code is your own and was not provided to any other group, you can contact the course instructors and we can launch the appeal process. This process is much more formal and may be managed through the dean's office as they have official processes for adjudicating academic misconduct, which is the most common UBC-level policy pertaining to using (or providing) derivative code.
+
+It is straightforward to avoid violating this policy:
 
 * Always make sure your work is your own.
 * Never look at or copy at another team's solution, either from this term or past terms. 
 * Do not share your code with other teams or post your solution online (see the [License](#License) below).
 
-The official policies for these can be found at the following links:
+### Academic Misconduct
+
+The official policies for Academic Misconduct can be found at the following links:
 
 * [UBC policy on Academic Misconduct](http://www.calendar.ubc.ca/vancouver/index.cfm?tree=3,54,111,959)
 * [Computer Science Department Lab policies and responsibilities](https://www.cs.ubc.ca/our-department/administration/policies/collaboration)
