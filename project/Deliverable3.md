@@ -73,6 +73,8 @@ The ```:id``` and ```:kind``` portions above represent variable names that are e
 
 The same libraries and frameworks as before (```Mocha```, ```Chai```) will be used for testing. This time, however, your tests will have to send requests to your backend and check the received responses for validity. The bootstrap code in ```/test/Server.spec.ts``` will point you in the right direction.
 
+**Note**: The response formats for the 2XX and 4XX cases may look slightly different. You should use the debugger to inspect the responses to determine where to find the values you want to test.
+
 ### Starting and accessing the app
 
 A new yarn command ```yarn start``` will be available in your project through a change to ```package.json```. It will essentially run ```App.js``` as a ```node``` application. Once you started the server, you'll be able to access the app in the browser at ```http://localhost:4321```. **Please note** that your datasets must be available for the UI to work.
