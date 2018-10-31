@@ -12,7 +12,7 @@ As with D1 and D2, functional correctness comprises 80% of your grade and covera
 **Important notes:**
 
 * Autobot will create a pull request in your repos during the first week of this sprint. It will contain some changes to your project (boilerplate frontend and server implementations) to transform your software into a Web app. It is a very good idea to carefully look at this pull request and what Autobot wants to merge into your projects. However, please do not merge the pull request before the final D2 deadline as it may break your coverage scores.
-* This spec should be considered a high level outline for this deliverable because it would be very easy to get lost in the details. While the pull request from Autobot will make things more clear, it is also more important than ever to attend the in-class deliverable tutorial on March 8 in which we will go through the deliverable step by step.
+* This spec should be considered a high level outline for this deliverable because it would be very easy to get lost in the details. While the pull request from Autobot will make things more clear, it is also more important than ever to attend the in-class deliverable tutorial where we will go through the deliverable step by step.
 * There may be more pull requests from Autobot during this deliverable because we may need to change things on the go. Please keep an open eye on Piazza and merge all pull requests sooner rather than later to avoid conflicts.
 
 
