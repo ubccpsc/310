@@ -132,7 +132,7 @@ This is a high-level overview of what the course will be about. Expect this list
 | Week 7: Oct 22		| Midterm (Tuesday in class) & High-level design (Thurs)				                  | No survey this week |
 | Week 8: Oct 29		| Low-level design 	                  | D2 Survey - Oct 29 @ 1900 (Mandatory!) - Expired |
 | Week 9: Nov 5		| Low-level design	                  | [Week 9 Survey - Nov 5 @ 0800](https://ubc.ca1.qualtrics.com/jfe/form/SV_7WWZpwMFWPaWisR) |
-| Week 10: Nov 12	| [InfoSec](reading/Security.md), IP, & Ethics				                  | TBD - Nov 12 @ 0800 |
+| Week 10: Nov 12	| [InfoSec](readings/Security.md), IP, & Ethics				                  | TBD - Nov 12 @ 0800 |
 | Week 11: Nov 19	| [REST](readings/REST.md)		                  | TBD - Nov 19 @ 1900 (Mandatory!) |
 | Week 12: Nov 26	| Construction, Automation, & Refactoring                 | TBD - Nov 26 @ 0800 |
 | Wed Dec 19 | Final exam @ 1530. Location TBD  | &nbsp; |
