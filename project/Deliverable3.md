@@ -34,7 +34,7 @@ You will adapt your existing ```InsightFacade``` to also be accessed using REST 
 
 * **```GET /```** returns the frontend UI; this will already be implemented for you.
 
-* **```PUT /dataset/:id/:kind```** allows to submit a zip file that will be parsed and used for future queries. The zip file content will be sent 'raw' as a buffer, you will need to convert it to base64 server side.
+* **```PUT /dataset/:id/:kind```** allows to submit a zip file that will be parsed and used for future queries. The zip file content will be sent 'raw' as a buffer, you will need to convert it to base64 server side. For your tests, the field name should be `body` (like it is in the example test in Server.spec.ts).
   * Response Codes:
     * ```200```: When ```InsightFacade.addDataset()``` resolves.
     * ```400```: When ```InsightFacade.addDataset()``` rejects.
