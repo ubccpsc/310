@@ -45,7 +45,8 @@ You will adapt your existing ```InsightFacade``` to also be accessed using REST 
 * **```DELETE /dataset/:id```** deletes the existing dataset stored. This will delete both disk and memory caches for the dataset for the ```id``` meaning that subsequent queries for that ```id``` should fail unless a new ```PUT``` happens first.
   * Response Codes:
     * ```200```: When ```InsightFacade.removeDataset()``` resolves.
-    * ```404```: When ```InsightFacade.removeDataset()``` rejects.
+    * ```400```: When ```InsightFacade.removeDataset()``` rejects with InsightError.
+    * ```404```: When ```InsightFacade.removeDataset()``` rejects with NotFoundError.
   * Response Body:
     * ```{result: str}```: Where ```arr``` is the string returned by a resolved ```removeDataset```.
     * ```{error: err}```: Where ```err``` is a string error message from a rejected ```removeDataset```. The specific string is not tested.
