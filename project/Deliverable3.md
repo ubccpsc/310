@@ -5,14 +5,14 @@
 
 In this deliverable you will complement your backend with a Web server and a frontend UI such that your software can be deployed and used as a Web application. Just as is common practice in Web development, you will be given a boilerplate UI implementation (consider us the "designers"). Most of the functionality has been removed from the sources and it will be your job to hook it all up with your Web server implementation. 
 
-This deliverable will extend your solutions for D1 and D2 so you must continue to work with the same partner using the same repository. D3 is worth 10% of your final grade. You will not have to hand anything in; we will automatically analyze your repo on every push between when the deliverable is released and the due date [specified here](../README.md#project-sprint-schedule).
+This deliverable will extend your solutions for D1 and D2 so you must continue to work with the same partner using the same repository. D3 is worth 7.5% of your final grade (15% of your total project grade). You will not have to hand anything in; we will automatically analyze your repo on every push between when the deliverable is released and the due date [specified here](../README.md#project-sprint-schedule).
 
 As with D1 and D2, functional correctness comprises 80% of your grade and coverage comprises 20%. Like D2, D3 will contain a number of private tests; these have been increased to 50% of the functional correctness score; you will not see any output for these private tests until after the final D3 deadline has passed (aka during the deliverable, AutoTest will be returning grades assuming 100% on the private suite). Your private test score will be applied to the commit that has the highest public test score; this will be done within 48h of the deliverable deadline.
 
 **Important notes:**
 
 * Autobot will create a pull request in your repos during the first week of this sprint. It will contain some changes to your project (boilerplate frontend and server implementations) to transform your software into a Web app. It is a very good idea to carefully look at this pull request and what Autobot wants to merge into your projects. However, please do not merge the pull request before the final D2 deadline as it may break your coverage scores.
-* This spec should be considered a high level outline for this deliverable because it would be very easy to get lost in the details. While the pull request from Autobot will make things more clear, it is also more important than ever to attend the in-class deliverable tutorial on March 8 in which we will go through the deliverable step by step.
+* This spec should be considered a high level outline for this deliverable because it would be very easy to get lost in the details. While the pull request from Autobot will make things more clear, it is also more important than ever to attend the in-class deliverable tutorial where we will go through the deliverable step by step.
 * There may be more pull requests from Autobot during this deliverable because we may need to change things on the go. Please keep an open eye on Piazza and merge all pull requests sooner rather than later to avoid conflicts.
 
 
@@ -34,7 +34,7 @@ You will adapt your existing ```InsightFacade``` to also be accessed using REST 
 
 * **```GET /```** returns the frontend UI; this will already be implemented for you.
 
-* **```PUT /dataset/:id/:kind```** allows to submit a zip file that will be parsed and used for future queries. The zip file content will be sent 'raw' as a buffer, you will need to convert it to base64 server side.
+* **```PUT /dataset/:id/:kind```** allows to submit a zip file that will be parsed and used for future queries. The zip file content will be sent 'raw' as a buffer, you will need to convert it to base64 server side. For your tests, the field name should be `body` (like it is in the example test in Server.spec.ts).
   * Response Codes:
     * ```200```: When ```InsightFacade.addDataset()``` resolves.
     * ```400```: When ```InsightFacade.addDataset()``` rejects.
@@ -45,7 +45,8 @@ You will adapt your existing ```InsightFacade``` to also be accessed using REST 
 * **```DELETE /dataset/:id```** deletes the existing dataset stored. This will delete both disk and memory caches for the dataset for the ```id``` meaning that subsequent queries for that ```id``` should fail unless a new ```PUT``` happens first.
   * Response Codes:
     * ```200```: When ```InsightFacade.removeDataset()``` resolves.
-    * ```404```: When ```InsightFacade.removeDataset()``` rejects.
+    * ```400```: When ```InsightFacade.removeDataset()``` rejects with InsightError.
+    * ```404```: When ```InsightFacade.removeDataset()``` rejects with NotFoundError.
   * Response Body:
     * ```{result: str}```: Where ```arr``` is the string returned by a resolved ```removeDataset```.
     * ```{error: err}```: Where ```err``` is a string error message from a rejected ```removeDataset```. The specific string is not tested.
@@ -72,6 +73,8 @@ The ```:id``` and ```:kind``` portions above represent variable names that are e
 ### Testing
 
 The same libraries and frameworks as before (```Mocha```, ```Chai```) will be used for testing. This time, however, your tests will have to send requests to your backend and check the received responses for validity. The bootstrap code in ```/test/Server.spec.ts``` will point you in the right direction.
+
+**Note**: The response formats for the 2XX and 4XX cases may look slightly different. You should use the debugger to inspect the responses to determine where to find the values you want to test.
 
 ### Starting and accessing the app
 
