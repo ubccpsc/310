@@ -111,6 +111,14 @@ As Jeff Dean noted in his [WSDM 2009 Keynote](http://static.googleusercontent.co
 
 Thinking about change is also related to encapsulation in that thinking concretely about what parts of the system are likely to change in the short and medium terms are more likely to lead to useful and valuable abstraction layers than taking an 'anything can change' view to design.
 
+## Major topics
+
+Additional high level design topics have been decomposed into their own readings; please see the following for more detail:
+
+* [Design principles](readings/DesignPrinciples.md)
+* [APIs](readings/API.md)
+* [Technical representations](readings/Representations.md)
+
 ### References
 
 * Original [information hiding](http://www.cs.umd.edu/class/spring2003/cmsc838p/Design/criteria.pdf) paper.
