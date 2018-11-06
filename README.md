@@ -130,11 +130,11 @@ This is a high-level overview of what the course will be about. Expect this list
 | Week 5: Oct 8		| High Level design: <ul><li>[High-level design](readings/HighLevelDesign.md) </li><li>[Technical Representations](readings/Representations.md)</li><li>[APIs](readings/API.md)</li></ul>	                  | Week 5 D1 Survey - Oct 8 @ 1900 (Mandatory!) - Expired| <!-- & technical representations -->
 | Week 6: Oct 15		| High-level design: <ul><li>[Design principles](readings/DesignPrinciples.md)</li></ul>	                  | Week 6 - Oct 15 @ 0800 - Expired |
 | Week 7: Oct 22		| Midterm (Tuesday in class) & High-level design (Thurs)				                  | No survey this week |
-| Week 8: Oct 29		| Low-level design 	                  | D2 Survey - Oct 29 @ 1900 (Mandatory!) - Expired |
-| Week 9: Nov 5		| Low-level design	                  | [Week 9 Survey - Nov 5 @ 0800](https://ubc.ca1.qualtrics.com/jfe/form/SV_7WWZpwMFWPaWisR) |
+| Week 8: Oct 29		| [Low-level design](readings/Patterns.md) 	                  | D2 Survey - Oct 29 @ 1900 (Mandatory!) - Expired |
+| Week 9: Nov 5		| <ul><li>[Low-level design](readings/Patterns.md)</li><li>[MV*](readings/MVStar.md)</li></ul>	                  | [Week 9 Survey - Nov 5 @ 0800](https://ubc.ca1.qualtrics.com/jfe/form/SV_7WWZpwMFWPaWisR) |
 | Week 10: Nov 12	| [InfoSec](readings/Security.md), IP, & Ethics				                  | TBD - Nov 12 @ 0800 |
 | Week 11: Nov 19	| [REST](readings/REST.md)		                  | TBD - Nov 19 @ 1900 (Mandatory!) |
-| Week 12: Nov 26	| Construction, Automation, & Refactoring                 | TBD - Nov 26 @ 0800 |
+| Week 12: Nov 26	| Construction, [Automation](readings/Automation.md), & [Refactoring](readings/Refactoring.md)                 | TBD - Nov 26 @ 0800 |
 | Wed Dec 19 | Final exam @ 1530. Location TBD  | &nbsp; |
 
 It is expected that you will watch the videos for a week prior to coming to class. This will greatly increase your understanding of what will be happening in lecture and make it much easier for you to participate in any hands-on activities we will be doing. The videos below will be annotated with week indicators (W0, W1, etc.) once we know when each should be watched to prepare for lecture that week.
