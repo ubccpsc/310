@@ -16,29 +16,40 @@ This is notable because it emphasizes that the important part of the pattern is 
 
 TBD
 
-### State
+### Observer: Simplifying state update notifications.
+
+TBD 
+
+### Facade: Making common tasks easy.
 
 TBD
 
-### Strategy
+### Strategy: Encapsulating algorithms.
 
 TBD
 
-### Singleton
+### State: Dynamically changing behaviour based on internal state.
 
 TBD
 
-### Facade
+### Decorator: Dynamically adding responsibilities to objects.
 
 TBD
 
-### Decorator
+
+### Visitor: Localizing data structure traversal.
 
 TBD
 
 ### References
 
-* TBD
+There are a vast set of resources about design patterns, the following are only a rough starting point:
+
+* [Design Patterns: Elements of Object-Oriented Software](https://www.amazon.ca/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612) (Gang of Four Book).
+* [Head First Design Patterns](https://www.amazon.ca/Head-First-Design-Patterns-Brain-Friendly/dp/0596007124/ref=sr_1_1?ie=UTF8&qid=1541463656&sr=8-1&keywords=head-first+design+patterns) 
+* Source Making [Design Pattern Reference](https://sourcemaking.com/design_patterns) 
+* Gang of Four [Pattern Catalog](http://www.blackwasp.co.uk/gofpatterns.aspx)
+ 
 
 ---
 [![](figures/CCSA.png "Creative Commons: Attribution-ShareAlike")](https://creativecommons.org/licenses/by-sa/3.0/) [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
