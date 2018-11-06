@@ -124,7 +124,7 @@ There are a few **important notes** on ```CampusExplorer.buildQuery```. Please c
 * If no conditions are specified, the query will have no conditions.
 * If only one condition is specified, no logic connector (and/or) should be used but only the single condition.
 * The order of the keys in the order section is ignored and will not be tested by Autobot.
-* Please always use D2 syntax in the order section (i.e. a single key ascending sort should still use D2 syntax, not D1). If the `Descending` checkbox is not checked the default `Ascending` should be used.
+* If the sort is ascending with a single key, D1 or D2 sort can be used.
 
 **Important note:** usage of any library not native to the browser is strictly prohibited in the frontend part of this deliverable. Please stick to the global ```CampusExplorer``` and ```document``` objects, and the ```XMLHttpRequest``` class, which are the only ones required. Autobot will fail if you violate this requirement.
 
