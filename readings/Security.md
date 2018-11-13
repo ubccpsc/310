@@ -72,7 +72,7 @@ Several security principles have been developed to help mitigate some of these v
 * ***Non-repudiation***: System users must be held accountable. Non-repudiation means auditing system behaviour to track how the system is being used. Auditing is an essential tool for tracking the extent to which unauthorized parties have accessed the system and what they have done. It is also useful for ensuring that authorized parties know their usage of the system is being traced. One downside of this approach is that audit logs themselves can contain sensitive information (or point to it) and must themselves be carefully secured.
 
 
-### Mediation strategies
+### Mitigation strategies
 
 After a system has been modelled and its threats understood, we can start to design mitigation strategies. Rather than step through an abstract list of strategies, here we will discuss more concretely the kinds of steps Google undertakes. These are covered in a great [white paper](https://cloud.google.com/security/security-design/) if you want additional detail.
 
