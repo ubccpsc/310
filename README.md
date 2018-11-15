@@ -528,7 +528,7 @@ If you are on the waitlist you should still attend and sign into a lab section s
 --->
 ### Late Submissions
 
-The project late policy is described [here](project/README.md#late-policy). Only d1 and d2 can be submitted late.
+The project late policy is described [here](project/README.md#late-policy).
 
 ### Accommodation
 
