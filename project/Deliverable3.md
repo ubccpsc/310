@@ -48,7 +48,7 @@ You will adapt your existing ```InsightFacade``` to also be accessed using REST 
     * ```400```: When ```InsightFacade.removeDataset()``` rejects with InsightError.
     * ```404```: When ```InsightFacade.removeDataset()``` rejects with NotFoundError.
   * Response Body:
-    * ```{result: str}```: Where ```arr``` is the string returned by a resolved ```removeDataset```.
+    * ```{result: str}```: Where ```str``` is the string returned by a resolved ```removeDataset```.
     * ```{error: err}```: Where ```err``` is a string error message from a rejected ```removeDataset```. The specific string is not tested.
 
 * **```POST /query```** sends the query to the application. The query will be in JSON format in the post body. 
