@@ -133,8 +133,8 @@ This is a high-level overview of what the course will be about. Expect this list
 | Week 8: Oct 29		| [Low-level design](readings/LowLevelDesign.md) 	                  | D2 Survey - Oct 29 @ 1900 (Mandatory!) - Expired |
 | Week 9: Nov 5		| <ul><li>[Low-level design](readings/LowLevelDesign.md)</li><li>[MV*](readings/MVStar.md)</li></ul>	                  | Week 9 Survey - Nov 5 @ 0800 |
 | Week 10: Nov 12	| [InfoSec](readings/Security.md), IP, & Ethics				                  | Week 10 Survey - Nov 12 @ 0800 - Expired |
-| Week 11: Nov 19	| [REST](readings/REST.md)		                  | [Week 11 D3 Survey - Nov 19 @ 1900 (Mandatory!)](https://ubc.ca1.qualtrics.com/jfe/form/SV_bmcPHPGUIHHHMkB) |
-| Week 12: Nov 26	| Construction, [Automation](readings/Automation.md), & [Refactoring](readings/Refactoring.md)                 | TBD - Nov 26 @ 0800 |
+| Week 11: Nov 19	| [REST](readings/REST.md)		                  | Week 11 D3 Survey - Nov 19 @ 1900 (Mandatory!) - Expired |
+| Week 12: Nov 26	| Construction, [Automation](readings/Automation.md), & [Refactoring](readings/Refactoring.md)                 | [Week 12 Survey - Nov 26 @ 0800](https://ubc.ca1.qualtrics.com/jfe/form/SV_1Lyk3MsFRTV1OHr) |
 | Wed Dec 19 | Final exam @ 1530. Location TBD  | &nbsp; |
 
 It is expected that you will watch the videos for a week prior to coming to class. This will greatly increase your understanding of what will be happening in lecture and make it much easier for you to participate in any hands-on activities we will be doing. The videos below will be annotated with week indicators (W0, W1, etc.) once we know when each should be watched to prepare for lecture that week.
