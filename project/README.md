@@ -131,7 +131,7 @@ It is possible to submit D0, D1 and D2 late for partial marks; other deliverable
 * 1 deliverable late: 50% (D0 by D1, D1 by D2, D2 by D3).
 * 2 deliverables late: 60% (e.g., D0 by D2, D1 by D3).
 
-Late deliverables can only increase the test passing rate (coverage rate for D0). The retrospective multipliers and test coverage rate from the original deliverable will still be used. The # of deliverables late depends on the timestamp of the commit you ran you deliverable against (the # of deliverables late increments after each deliverable deadline). Use [this form](https://goo.gl/forms/6Uw0VWRz1UQBBLZ52) to submit your late request. Please talk to your team before you do this, we will only consider at most one late request per-team per-deliverable.
+Late deliverables can only increase the test passing rate (coverage rate for D0). The retrospective multipliers and test coverage rate from the original deliverable will still be used. The # of deliverables late depends on the timestamp of the commit you ran you deliverable against (the # of deliverables late increments after each deliverable deadline). Use [this form](https://goo.gl/forms/6Uw0VWRz1UQBBLZ52) to submit your late request. Please talk to your team before you do this, we will only consider at most one late request per-team per-deliverable. This form will close on December 14 @ 0800.
 
 <!---
 To apply for the late policy, please fill out the [late deliverable request](https://goo.gl/forms/9P4DBfXBBhuPHTqM2) form by the Deliverable 4 deadline.
