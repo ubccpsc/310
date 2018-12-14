@@ -20,7 +20,7 @@ Any code that does not compile will count towards the total number of tests (and
 
 This deliverable should not require any work on your behalf, but it is crucial that you keep on top of your repos and make sure you do not have any major regressions before the due date. This date will be absolutely firm.
 
-If you received a retrospective multiplier other than 1 for D1 or D2, that same multiplier will be applied to the portion of D4 associated with the tests for your non-1 multiplier deliverable.
+If you received a retrospective multiplier other than 1 for D1 or D2 (or were flagged for MOSS violations), that same multiplier will be applied to the D1 or D2 portion of D4 associated with the tests for your non-1 multiplier deliverable. You will still receive the full multiplier though for the actual D4 private suite.
 
 This deliverable is worth 7.5% of your final grade (15% of your project grade).
 
