@@ -115,9 +115,9 @@ Thinking about change is also related to encapsulation in that thinking concrete
 
 Additional high level design topics have been decomposed into their own readings; please see the following for more detail:
 
-* [Design principles](readings/DesignPrinciples.md)
-* [APIs](readings/API.md)
-* [Technical representations](readings/Representations.md)
+* [Design principles](DesignPrinciples.md)
+* [APIs](API.md)
+* [Technical representations](Representations.md)
 
 ### References
 
