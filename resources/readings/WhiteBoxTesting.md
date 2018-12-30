@@ -22,6 +22,8 @@ There are many flavours of coverage that are used in practice, here we describe 
 
 * **Modified Condition (MCC)**: MCC coverage checks all program entry and exit points along with every combination of decisions within a program. 
 
+<!-- * **Path**: TODO: this is more natural to talk about in class so add this here -->
+
 For example, given the test and code snippet below:
 
 ```typescript
