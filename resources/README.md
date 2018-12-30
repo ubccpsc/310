@@ -30,14 +30,14 @@ The materials roughly break down into the 13 weeks of the standard academic seme
 
 * Readings:
 	* [Testing](readings/Testing.md)
+	<!-- TODO: * [Black box testing](readings/BlackBoxTesting.md) -->
 * Videos:
-	* [Why Test?](http://www.youtube.com/watch?v=Uamo4Ej0tWk)  
-	* [Terminology](http://www.youtube.com/watch?v=WKrvx7qCUDI)  
-	* [Properties of Tests](http://www.youtube.com/watch?v=ll1k3Pks3ZA)  
-	* [Kinds of Tests](http://www.youtube.com/watch?v=_Th3f9vks_w)  
-	* [Unit and System Properties](http://www.youtube.com/watch?v=x2DWjxDiOQo)  
-	* [Red Green Refactor](http://www.youtube.com/watch?v=v0q1MKhSQVM)  
-
+	* [Why Test?](http://www.youtube.com/watch?v=Uamo4Ej0tWk)
+	* [Terminology](http://www.youtube.com/watch?v=WKrvx7qCUDI)
+	* [Properties of Tests](http://www.youtube.com/watch?v=ll1k3Pks3ZA)
+	* [Kinds of Tests](http://www.youtube.com/watch?v=_Th3f9vks_w)
+	* [Unit and System Properties](http://www.youtube.com/watch?v=x2DWjxDiOQo)
+	* [Red Green Refactor](http://www.youtube.com/watch?v=v0q1MKhSQVM)
 	* Black box testing:
 		* [Equivalence Class Partitioning](http://www.youtube.com/watch?v=ttAAsNSPiXw)  
 		* [Input Partitioning](http://www.youtube.com/watch?v=5PtxXnwyU3Y)  
@@ -58,11 +58,11 @@ The materials roughly break down into the 13 weeks of the standard academic seme
 	* [Test Driven Development](http://www.youtube.com/watch?v=Ux9QMfEK9Eg)  
 	* [Scrum](http://www.youtube.com/watch?v=mjphDWlRQ2c)  
 
-## 3: Specifications & User Stories
+## 3: Specifications & User stories
 
 * Readings:
 	* [Specifications](readings/Specifications.md)
-	* [User Stories](readings/SpecificationsUserStories.md)       
+	* [User stories](readings/SpecificationsUserStories.md)       
 * Videos:
 	* [Introduction to Specifications](http://www.youtube.com/watch?v=1rqWeAQ8onI)  
 		* [Requirements Process](http://www.youtube.com/watch?v=7r9vXTSSTVc)  
@@ -83,12 +83,8 @@ The materials roughly break down into the 13 weeks of the standard academic seme
 
 * Readings:
 	* [Testability & Assertions](readings/TestabilityAssertions.md)
+	* [White box testing](readings/WhiteBoxTesting.md)
 * Videos:
-	* White box testing:
-		* [Introduction to Coverage](http://www.youtube.com/watch?v=iujQEm9oono)  
-		* [Line and Statement Coverage](http://www.youtube.com/watch?v=SC7R-QixRaU)  
-		* [Branch and Path Coverage](http://www.youtube.com/watch?v=YBiHn5vgKnM)  
-		* [Coverage Wrap-Up](http://www.youtube.com/watch?v=2EBi66DYF5w)  
 	* Testability:
 		* [Introduction to Testability](http://www.youtube.com/watch?v=jwL1vkl-CoY)  
 		* [Controllability](http://www.youtube.com/watch?v=y0zrTdDuYv0)  
@@ -97,6 +93,11 @@ The materials roughly break down into the 13 weeks of the standard academic seme
 		* [Isolateability: Part 2](http://www.youtube.com/watch?v=NMuhE-XnFe8)  
 		* [Automatability](http://www.youtube.com/watch?v=Q83W5zH8LUY)  
 		* [Testability Wrap-Up](http://www.youtube.com/watch?v=d2WjviF50HA)  
+	* White box testing:
+		* [Introduction to Coverage](http://www.youtube.com/watch?v=iujQEm9oono)  
+		* [Line and Statement Coverage](http://www.youtube.com/watch?v=SC7R-QixRaU)  
+		* [Branch and Path Coverage](http://www.youtube.com/watch?v=YBiHn5vgKnM)  
+		* [Coverage Wrap-Up](http://www.youtube.com/watch?v=2EBi66DYF5w)  
 
 ## 5: High level design 1
 
