@@ -1,7 +1,7 @@
 # UBC CPSC 310: Introduction to Software Engineering
 
 ## Current Term
-* 2019 January URL TBD
+* [2019 January](https://www.ugrad.cs.ubc.ca/~cs310/2018w2/index.html)
 
 ### Past Terms
 * [2018 September](https://github.com/ubccpsc/310/blob/2018sept/README.md)
