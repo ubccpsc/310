@@ -88,16 +88,16 @@ Note: Even when AutoTest is heavily loaded your requests are queued and processe
 
 To pass the course and receive credit you must achieve a passing grade on *both* the overall project grade and the overall exam grade. Sample exams are available through the CSSS.
 
-The project grade component is weighted as follows:
+The project grade component is weighted as follows (these weightings may change):
 
 | Project Component				| Proportion |
 | :--			 				    | :-- |
 | Deliverable 0 (d0)			| 20 %	|
 | Project Sprint 1 (d1)			| 20 %	|
 | Project Sprint 2 (d2)			| 20 %	|
-| Project Sprint 3 (d3)			| 15 %	|
-| Project Quality Check	 (d4)	| 15 %	|
-| Participation					| 10 %	|
+| Project Sprint 3 (d3)			| 20 %	|
+| Project Quality Check	 (d4)	| 20 %	|
+| Participation					| multiplier |
 
 The exam component is weighted as follows:
 
@@ -112,11 +112,12 @@ The final grade for the course will be computed as follows:
 
 The easiest way to think about this is that the project grade acts as a multiplier on your exam grade. Given the way the project is configured with AutoTest, in past terms we have found the project median to exceed 95%. Any content from the course videos, readings, lectures, and project is examinable.
 
+The weekly deliverable reports are *mandatory*.  These are required for your deliverable submissions (see the grade rubric in the deliverable description for more detail of those). These surveys will be due at 11pm on Mondays; no extensions can be given (this is later to allow you to comment on your finished deliverable as it will be after the deadline).
+
 ## Participation
 
-Participation marks are given for submitting timely status reports for the lecture component of the class. With the exception of Week 0, these reports **MUST** be submitted before class and will require watching the videos for that week. These reports are intended to be short; we will use them to tailor the activities during the week based on your comments. Each of the 10 reports is worth 0.5% (totalling 5% of your final grade if you submit all 10). We will not tally this grade until the end of the term so it is your responsibility to make sure you have done these by their deadlines (the forms will be deactivated afterwards) and to keep track of your own participation grade. These surveys will be due at 0800 on Mondays; no extensions can be given.
+Participation marks are given for submitting study topic forms. These can be submitted any time before the end of the semester. There are 8 of them, and they are each worth 1 point up to 5 points. These forms also act as midterm and final study problems. These are the only practice problems you will be given. Feel free to source other stuff from CSSS if it is there.
 
-The three deliverable reports (Week 5, 8, and 11) are not part of your participation report but are instead required for your deliverable submissions (see the grade rubric in the deliverable description for more detail of those). These surveys will be due at 1900 on Mondays; no extensions can be given (this is later to allow you to comment on your finished deliverable as it will be after the 1800 deadline).
 
 ## Policies
 
