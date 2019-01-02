@@ -96,8 +96,9 @@ The project grade component is weighted as follows (these weightings may change)
 | Project Sprint 1 (d1)			| 20 %	|
 | Project Sprint 2 (d2)			| 20 %	|
 | Project Sprint 3 (d3)			| 20 %	|
-| Project Quality Check	 (d4)	| 20 %	|
-| Participation					| multiplier |
+| Project Quality Check	 (d4)	| 15 %	|
+| Progress Reports					| each is a 0/1 multiplier over entire deliverable |
+| Study Topic Form Submissions					| 5% |
 
 The exam component is weighted as follows:
 
