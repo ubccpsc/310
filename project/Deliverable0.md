@@ -1,6 +1,5 @@
 # Deliverable 0: TDD Individual Deliverable
 
-### Final Submission: September 17 @ 1800
 
 Test-driven development (TDD) is one [modern technique](../readings/Process.md#tdd) for building software. As the name suggests, engineers write tests for every requirement in the specification _before_ they create the implementation. This makes it much easier to final product has at least a base level of testing.
 
