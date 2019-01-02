@@ -8,7 +8,7 @@ You are responsible for the software design and implementation. You cannot use a
 
 ## "Change Log"
 
-To see when this file was last updated, look at the date of the commit in the pale blue box above the file. To see what was changed, you can view the commit history and associated diffs using the history button just above the top right of the file.
+This file may be changed slightly over the course of the term. To see when this file was last updated, look at the date of the commit in the pale blue box above the file. To see what was changed, you can view the commit history and associated diffs using the history button just above the top right of the file.
 We have updated this file since d0 with some minor changes/clarifications so please check!
 
 ## Dataset
@@ -47,8 +47,8 @@ OPTIONS ::= 'OPTIONS:{' COLUMNS ', ' ('ORDER:' key )?'}'
 FILTER ::= (LOGICCOMPARISON | MCOMPARISON | SCOMPARISON | NEGATION)
 
 LOGICCOMPARISON ::= LOGIC ':[{' FILTER ('}, {' FILTER )* '}]'  
-MCOMPARISON ::= MCOMPARATOR ':{' key ':' number '}'  
-SCOMPARISON ::= 'IS:{' key ':' [*]? inputstring [*]? '}'  // Asterisks should act as wildcards. Optional.
+MCOMPARISON ::= MCOMPARATOR ':{' mkey ':' number '}'  
+SCOMPARISON ::= 'IS:{' skey ':' [*]? inputstring [*]? '}'  // Asterisks should act as wildcards. Optional.
 NEGATION ::= 'NOT :{' FILTER '}'
 
 LOGIC ::= 'AND' | 'OR' 
@@ -56,7 +56,12 @@ MCOMPARATOR ::= 'LT' | 'GT' | 'EQ'
 
 COLUMNS ::= 'COLUMNS:[' (key ',')* key ']' 
 
-key ::= string '_' string
+key ::= mkey | skey
+mkey ::= idstring '_' mfield
+skey ::= idstring '_' sfield
+mfield ::= 'avg' | 'pass' | 'fail' | 'audit' | 'year'
+sfield ::=  'dept' | 'id' | 'instructor' | 'title' | 'uuid'
+idstring ::= [^_]+ // One or more of any character, except asterisk.
 inputstring ::= [^*]* // Zero or more of any character, except asterisk.
 ```
 
@@ -68,13 +73,11 @@ Error responses for failed parsing are provided below in the specification for t
 
 **Semantic Checking**
 
-Semantic checks are typically performed on the existing (validated) AST. Type checking is an example of a semantic check.  In this project you must perform the following semantic checks:
+Semantic checks are typically performed on the existing (validated) AST. In this project you must perform the following semantic checks:
 
-`'ORDER': key` where key (a string) is the column name to sort on; the key must be in the COLUMNS array or the query is invalid
+* `'ORDER': key` where key (a string) is the column name to sort on; the key must be in the COLUMNS array or the query is invalid
 
-`MCOMPARISON` must take keys that test numbers and `SCOMPARISON` must take keys that test strings, or the query is invalid (see next section for list).
-
-Queries can only reference one dataset, or the query is invalid. Datasets are referenced by the id of the keys in the query (see next section). A query on a dataset that has not been added is invalid.
+* Queries can only reference one dataset, or the query is invalid. Datasets are referenced by the id of the keys in the query (see next section). A query on a dataset that has not been added is invalid.
 
 ### Valid keys
 
@@ -324,6 +327,13 @@ export class NotFoundError extends Error {
     }
 }
 
+export class ResultTooLargeError extends Error {
+    constructor(...args: any[]) {
+        super(...args);
+        Error.captureStackTrace(this, ResultTooLargeError);
+    }
+}
+
 export interface IInsightFacade {
     /**
      * Add a dataset to UBCInsight.
@@ -376,7 +386,8 @@ export interface IInsightFacade {
      * @param query  The query to be performed.
      * 
      * If a query is incorrectly formatted, references a dataset not added (in memory or on disk), 
-     * or references multiple datasets, it should be rejected.
+     * or references multiple datasets, it should be rejected with an InsightError.
+	 * If a query would return more than 5000 results, it should be rejected with a ResultTooLargeError.
      *
      * @return Promise <any[]>
      *
@@ -395,6 +406,18 @@ export interface IInsightFacade {
 }
 
 ```
+
+A note on using the InsightDataset interface: This should be used as if it were a type, _not_ by creating a new class that implements it.
+```
+ // Yes
+const myDataset: InsightDataset = {id: "foo", kind: InsightDatasetKind.Courses, numRows: 1}
+```
+```
+// No
+class datasetClass implements InsightDataset { ... }
+const myDataset: datasetClass = {id: "foo", kind: InsightDatasetKind.Courses, numRows: 1}
+```
+If you make a class out of it, extra data will be included in those objects (constructors etc.) which will cause them to be different, and cause tests to fail.
 
 ## Testing
 
