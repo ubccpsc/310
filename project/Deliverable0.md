@@ -1,7 +1,7 @@
 # Deliverable 0: TDD Individual Deliverable
 
 
-Test-driven development (TDD) is one [modern technique](../readings/Process.md#tdd) for building software. As the name suggests, engineers write tests for every requirement in the specification _before_ they create the implementation. This makes it much easier to final product has at least a base level of testing.
+Test-driven development (TDD) is one [modern technique](../readings/Process.md#tdd) for building software. As the name suggests, engineers write tests for every requirement in the specification _before_ they create the implementation. This makes it much easier to ensure the final product has at least a base level of testing.
 
 In terms of the course project, adopting TDD will ensure you understand all the requirements of the specification before getting buried in the details of your implementation. This is important because implementing code that doesn't meet the requirements _will_ increase the amount of work you need to do for the project.
 
@@ -9,9 +9,7 @@ In this deliverable you will be reading a specification and writing a set of tes
 
 ## Getting the starter code
 
-You need to log in to [GitHub Enterprise](https://github.ugrad.cs.ubc.ca) with your ugrad account **ASAP** so that we can provision your repo after lecture on Sept 6. Also for Sept 7, ensure that you have prepared your computer according the [setup guide](../resources/setup.md) (also found in the README of your provisioned repo).
-
-Once your repo has been created, you'll receive an email with a link to clone your repo. For this course, you will be using Git to manage your code. A description of how to use Git is given in our brief [Git Tutorial](../resources/git.md).
+You need to log in to [GitHub Enterprise](https://github.ugrad.cs.ubc.ca) with your ugrad account to view and clone your repo (you should have also been emailed a link). For this course, you will be using Git to manage your code. A description of how to use Git is given in our brief [Git Tutorial](../resources/git.md). Before starting, ensure that you have prepared your computer according the [setup guide](../resources/setup.md) (also found in the README of your provisioned repo).
 
 ## Requirements
 
@@ -41,7 +39,7 @@ As you add more valid JSON files to `files/queries` you'll see that the number o
 
 ## Getting your grade
 
-This will be an individual deliverable (the only one in the project). It is worth 10% of your final grade. We will run [MOSS](https://theory.stanford.edu/~aiken/moss/) on all submissions so please make sure your work is your own. Your project is automatically graded every time you _push_ to GitHub with the command `git push`. Your grade will be the maximum grade you received from all submissions (commits in git terminology) made before the hard deadline (Sept 17). While we compute your grade on every submission, you will only be able to request to see your grade once every 12h hours. You can request your grade by mentioning `@autobot` in a commit comment. Refer to [AutoTest.md](AutoTest.md) for additional details.
+This will be an individual deliverable (the only one in the project). It is worth 10% of your final grade. We will run [MOSS](https://theory.stanford.edu/~aiken/moss/) on all submissions so please make sure your work is your own. Your project is automatically graded every time you _push_ to GitHub with the command `git push`. Your grade will be the maximum grade you received from all submissions (commits in git terminology) made before the hard deadline. While we compute your grade on every submission, you will only be able to request to see your grade once every 12h hours. You can request your grade by mentioning `@autobot` in a commit comment. Refer to [AutoTest.md](AutoTest.md) for additional details.
 
 You cannot use any library package that is not explicitly specified in package.json. Your implementation must be in TypeScript and must compile without error.
 
