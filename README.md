@@ -1,7 +1,6 @@
 <img src="readings/figures/310logo.png" width="256px" alt="CPSC 310 Software Engineering">
 
 # UBC CPSC 310 - Software Engineering
-September 4, 2018 -> December 4, 2018 (```2018T1```). These are the official resources for both sections.
 
 #### Waitlist: [See Here](#waitlist)
 
