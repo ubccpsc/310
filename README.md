@@ -1,4 +1,4 @@
-<img src="readings/figures/310logo.png" width="256px" alt="CPSC 310 Software Engineering">
+<img src="https://www.ugrad.cs.ubc.ca/~cs310/2018w2/logo.png" width="256px" alt="CPSC 310 Software Engineering">
 
 # UBC CPSC 310 - Software Engineering
 
