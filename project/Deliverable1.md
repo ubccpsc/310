@@ -31,6 +31,8 @@ You will need to parse valid input files into internal objects or other data str
 
 There is a provided package called JSZip that you should use to process/unzip the data you are passed in your addDataset method (described below).
 
+Important note: Avoid storing your datasets as static or global variables, keep them as members of a class. The reason for this is that we try to wipe added datasets in between tests. This won't work if your data is stored statically, and one test behaving incorrectly may cause future tests to fail as well.
+
 ## Query Engine
 
 The goal of the deliverable is to build the backend to reply to query about the dataset. The query will be based on the EBNF described below.
