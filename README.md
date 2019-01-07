@@ -111,7 +111,7 @@ The final grade for the course will be computed as follows:
 
 `final grade = (project grade * .5) + (exam grade * .5)`
 
-<!--- The easiest way to think about this is that the project grade acts as a multiplier on your exam grade. Given the way the project is configured with AutoTest, in past terms we have found the project median to exceed 95%. Any content from the course videos, readings, lectures, and project is examinable.
+<!--- The easiest way to think about this is that the project grade acts as a multiplier on your exam grade. Given the way the project is configured with AutoTest, in past terms we have found the project median to exceed 95%. Any content from the course videos, readings, lectures, and project is examinable. -->
 
 The weekly deliverable reports are *mandatory*.  These are required for your deliverable submissions (see the grade rubric in the deliverable description for more detail of those). These surveys will be due at 11pm on Mondays; no extensions can be given (this is later to allow you to comment on your finished deliverable as it will be after the deadline).
 
