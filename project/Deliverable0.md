@@ -34,8 +34,10 @@ When writing tests for the `performQuery` method, you will find that the tests h
 To simplify this process (and to ensure that `InsightFacade.spec.ts` file doesn't become cluttered) we have included the ability to define test queries and results in separate files.
 These files are used to automatically generate tests that check whether the query returns the correct results.
 Thus, in addition to writing tests in `InsightFacade.spec.ts` using `it()`, you can also write tests for `performQuery` by creating new json files in `test/queries`.
-See the two examples `q1.json` and `q2.json` already included to get a sense of the JSON structure (which is explicitly defined in `query.schema.json`).
+See the provided example queries already included to get a sense of the JSON structure.
 As you add more valid JSON files to `files/queries` you'll see that the number of tests that are run increases which is a sign that things are working as expected.
+
+You can also feel free to make tests that don't use these provided stuctures when making your tests, for example if you think of a scenario that you don't feel is easy to test using our starter code.
 
 ## Getting your grade
 
