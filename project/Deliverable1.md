@@ -63,7 +63,7 @@ mkey ::= idstring '_' mfield
 skey ::= idstring '_' sfield
 mfield ::= 'avg' | 'pass' | 'fail' | 'audit' | 'year'
 sfield ::=  'dept' | 'id' | 'instructor' | 'title' | 'uuid'
-idstring ::= [^_]+ // One or more of any character, except asterisk.
+idstring ::= [^_]+ // One or more of any character, except underscore.
 inputstring ::= [^*]* // Zero or more of any character, except asterisk.
 ```
 
