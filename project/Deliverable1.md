@@ -44,7 +44,7 @@ The goal of the deliverable is to build the backend to reply to query about the 
 QUERY ::='{'BODY ', ' OPTIONS '}'
 
 BODY ::= 'WHERE:{' FILTER? '}' // Note: a BODY with no FILTER (i.e. WHERE:{}) matches all entries.
-OPTIONS ::= 'OPTIONS:{' COLUMNS ', ' ('ORDER:' key )?'}'
+OPTIONS ::= 'OPTIONS:{' COLUMNS (', ORDER:' key )?'}'
 
 FILTER ::= (LOGICCOMPARISON | MCOMPARISON | SCOMPARISON | NEGATION)
 
