@@ -24,6 +24,7 @@ A **valid** dataset:
 - Valid courses will always be in JSON format.
 - Each JSON file represents a course and can contain zero or more course sections. 
 - A valid dataset has to contain **at least one valid course section** that meets the requirements above.
+- Any invalid files can be skipped over.
 
 **Reading and Parsing the Dataset**
 
