@@ -1,10 +1,10 @@
 # Design principles
 
-Design principles are high level guidelines that can help ensure our designs are robust in the face of defect fixes and feature additions. There are a great many design principles, here we only address a small subset of those. One thing to keep in mind is that these principles are not absolute: sometimes you will violate them, but if you do, you should be careful to do so in a considered manner.
+Design principles are high level guidelines that can help ensure our designs are robust in the face of defect fixes and feature additions. There are a great many design principles, here we only address a small subset of these. One thing to keep in mind is that these principles are not absolute: sometimes you will violate them, but if you do it should be careful to do so in a considered manner.N
 
 ## Designing for evolution
 
-Designing systems in a flexible manner is crucial, given that all successful systems evolve over time. Making intentional decisions about the coupling within our system and cohesion between program elements can help guide us towards ensuring that our designs are amenable to future evolution and defect fixing.
+Designing systems in a flexible manner is crucial, given that all successful systems evolve over time. Making intentional decisions about the coupling within our system cohesion between program elements can help guide us towards ensuring that our designs are amenable to future evolution and defect fixing.
 
 ### Coupling
 
@@ -18,13 +18,13 @@ Coupling is a property that indicates the strength of connections between differ
 
 * It is harder to understand a source code element that is coupled to other elements because individual elements cannot be considered (and understood) in isolation.
 
-Two program elements are considered independent if they can function without the presence of the other. It is important to remember that any non-trivial system _requires_ that there be some coupling between elements. The goal is not to eliminate it but to make the coupling be as loose as possible. There are three primary ways to decrease the coupling between program elements:
+Two program elements are considered independent if they can function without the presence of the other. It is important to remember that any non-trivial system _requires_ that there be some coupling between elements, the goal is not to eliminate it but to make the coupling be as loose as possible. There are three primary ways to decrease the coupling between program elements:
 
-* **Minimize the number of interfaces between elements**: The more interfaces two program elements need to share, the more tightly they are coupled to each other. 
+* **Minimize number of interfaces between elements**: The more interfaces two program elements need to share, the more tightly they are coupled to each other. 
 
-* **Minimize the complexity of interfaces**: Since some coupling is often needed, reducing the complexity of this coupling to its core elements can make the interaction between the program elements clearer and easier to reason about and evolve.
+* **Minimize complexity of interfaces**: Since some coupling is often needed, reducing the complexity of this coupling to its core elements can make the interaction between the program elements clearer and easier to reason about and evolve.
 
-* **Avoid control flow coupling**: It can often be convenient to pass objects that control the flow of computation within another element. While this is ok if the element being passed is some type of data structure, it can be more problematic if the control flow is being influenced by simple control flow flags (e.g., some kind of `boolean` flag that takes one program path over another).
+* **Avoid control flow coupling**: It can often be convenient to pass objects that control the flow of computation within another element, while this is ok if the element being passed is some type of data structure, it can be more problematic if the control flow is being influenced by simple control flow flags (e.g., some kind of `boolean` flag that takes one program path over another).
 
 The flow chart below can be helpful for reasoning about the coupling between program elements. One thing to note is that not all coupling is equally detrimental: coupling elements by simple data types is less problematic than coupling them through global variables (common coupling) or internal field access (content coupling).
 
@@ -98,7 +98,7 @@ For a complete coverage of this design principle. Since this has been covered in
 
 ### Interface segregation
 
-The interface segregation principle says:
+The interfaces segregation principle says:
 
 > Clients should not be forced to depend on interfaces they do not use.
 

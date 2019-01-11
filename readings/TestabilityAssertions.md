@@ -69,11 +69,11 @@ TODO: show all the assertions for a simple function
 TODO: how to write good assertions links
 -->
 
-It is often best to have each behaviour tested as independently as possible. This eases debugging because a change that breaks a behaviour will be easy to isolate as it will only have broken one test and not a handful. It also eases program evolution because changing a behaviour will not require modifications to lots of different tests. 
+It is often best to have each behaviour tested as independently as possible. This eases debugging because a change that breaks a behaviour will be easy to isolate as it will only have broken one tests and not a handful. It also eases program evolution because changing a behaviour will not require modifications to lots of different tests. 
 
-When creating our tests we can break down the behaviours we are testing in three ways:
+When creating our tests we can break down the behaviours we are testing three ways:
 
-* Normal conditions: The normal conditions represent the way we expect the code to be used.
+* Normal conditions: The normal conditions represent the way we expect to be used.
 * Unexpected conditions: The unexpected conditions arise when the code is used in unexpected ways.
 * Boundary conditions: All programs consume input; by testing boundary values we can ensure our program will successfully operate with the breadth of inputs the program might encounter. 
 
