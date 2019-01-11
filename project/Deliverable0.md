@@ -39,6 +39,8 @@ As you add more valid JSON files to `files/queries` you'll see that the number o
 
 You can also feel free to make tests that don't use these provided stuctures when making your tests, for example if you think of a scenario that you don't feel is easy to test using our starter code.
 
+There is a [reference UI](https://cs310.ugrad.cs.ubc.ca/ui/index.html) to help with generating query test results.
+
 ## Getting your grade
 
 This will be an individual deliverable (the only one in the project). It is worth 10% of your final grade. We will run [MOSS](https://theory.stanford.edu/~aiken/moss/) on all submissions so please make sure your work is your own. Your project is automatically graded every time you _push_ to GitHub with the command `git push`. Your grade will be the maximum grade you received from all submissions (commits in git terminology) made before the hard deadline. While we compute your grade on every submission, you will only be able to request to see your grade once every 12h hours. You can request your grade by mentioning `@autobot` in a commit comment. Refer to [AutoTest.md](AutoTest.md) for additional details.
