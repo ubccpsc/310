@@ -60,8 +60,8 @@ The first three sprints are evaluated differently than sprint 4.
 
 Four components are assessed for these sprints:
 
-* [AutoTest](AutoTest.md) validation (functional completeness).
-* Private test coverage.
+* [AutoTest](AutoTest.md) validation (functional completeness). You will get feedback on a subset of the tests prior to the deadline whenever you call the bot. Another subset will be private until after the deadline.
+* Your own test coverage of your system.
 * Oral questions in lab (deliverable retrospective).
 * Retrospective questionnaire (online survey)
 
