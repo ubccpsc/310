@@ -102,7 +102,7 @@ For instance, if the `id` sent by the user is `courses`, then the queries you wi
 * **courses_fail**: ```number```; The number of students that failed the course offering.
 * **courses_audit**: ```number```; The number of students that audited the course offering.
 * **courses_uuid**: ```string```; The unique id of a course offering.
-* **courses_year**: ```number```; The year the course offering ran.
+* **courses_year**: ```number```; The year the course offering ran. If the "Section" property in the source data is set to "overall", the year for that section should be set to 1900.
 
 Note: these keys are different than the ones present in the raw data. Since you are not allowed to modify the data, you will have to come up with a way to translate them.
 
