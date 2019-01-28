@@ -67,6 +67,12 @@ sfield ::=  'dept' | 'id' | 'instructor' | 'title' | 'uuid'
 idstring ::= [^_]+ // One or more of any character, except underscore.
 inputstring ::= [^*]* // Zero or more of any character, except asterisk.
 ```
+* `WHERE` defines which sections should be included in the results.
+
+* `COLUMNS` defines which keys should be included in each result.
+
+* `ORDER` defines what order the results should be in.
+
 
 **Syntactic Checking (Parsing)**
 
@@ -78,7 +84,7 @@ Error responses for failed parsing are provided below in the specification for t
 
 Semantic checks are typically performed on the existing (validated) AST. In this project you must perform the following semantic checks:
 
-* `'ORDER': key` where key (a string) is the column name to sort on; the key must be in the COLUMNS array or the query is invalid
+* `'ORDER': key` where key (a string) is the column name to sort on; the key must be in the COLUMNS array or the query is invalid.
 
 * Queries can only reference one dataset, or the query is invalid. Datasets are referenced by the id of the keys in the query (see next section). A query on a dataset that has not been added is invalid.
 
@@ -412,7 +418,7 @@ export interface IInsightFacade {
 
 A note on using the InsightDataset interface: This should be used as if it were a type, _not_ by creating a new class that implements it.
 ```
- // Yes
+// Yes
 const myDataset: InsightDataset = {id: "foo", kind: InsightDatasetKind.Courses, numRows: 1}
 ```
 ```
