@@ -103,8 +103,8 @@ TRANSFORMATIONS ::= 'TRANSFORMATIONS: {' GROUP ', ' APPLY '}'
 FILTER ::= (LOGICCOMPARISON | MCOMPARISON | SCOMPARISON | NEGATION)
 
 LOGICCOMPARISON ::= LOGIC ':[{' FILTER ('}, {' FILTER )* '}]'  
-MCOMPARISON ::= MCOMPARATOR ':{' key ':' number '}'  
-SCOMPARISON ::= 'IS:{' key ':' [*]? inputstring [*]? '}'  // inputstring may have option * characters as wildcards
+MCOMPARISON ::= MCOMPARATOR ':{' mkey ':' number '}'  
+SCOMPARISON ::= 'IS:{' skey ':' [*]? inputstring [*]? '}'  // inputstring may have option * characters as wildcards
 NEGATION ::= 'NOT :{' FILTER '}'
 
 LOGIC ::= 'AND' | 'OR'
