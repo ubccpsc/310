@@ -23,7 +23,7 @@ The dataset file can be found here: [rooms.zip](https://github.com/ubccpsc/310/r
 * Missing (i.e.eEmpty string) values are okay.
 * If a building contains no rooms at all, skip over it.
 
-Additionally, the following assumptions do not require validation:
+Additionally, in valid zips the following will always be true:
 * The root folder will be called ```rooms```
 * There is a single ```index.htm``` file per dataset in the root of the zip
 * Regardless of paths, there is a single file per building code, i.e. there will never be two files with the same name but in different paths
