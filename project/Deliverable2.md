@@ -126,7 +126,7 @@ skey ::= idstring '_' sfield
 mfield ::= 'avg' | 'pass' | 'fail' | 'audit' | 'year' | 'lat' | 'lon' | 'seats' 
 sfield ::=  'dept' | 'id' | 'instructor' | 'title' | 'uuid' | 
   'fullname' | 'shortname' | 'number' | 'name' | 'address' | 'type' | 'furniture' | 'href'  
-idstring ::= [^_]+ // One or more of any character, except asterisk.
+idstring ::= [^_]+ // One or more of any character, except underscore.
 inputstring ::= [^*]* // zero or more of any character except asterisk.
 applykey ::= [^_]+ // one or more of any character except underscore.
 ```
