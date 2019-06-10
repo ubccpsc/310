@@ -1,19 +1,15 @@
 # UBC CPSC 310: Introduction to Software Engineering
 
-## Current Term
-* [2019 January](https://www.ugrad.cs.ubc.ca/~cs310/2018w2/index.html)
+## This is the official course page for CPSC 310 - 2019 Winter Term 1 (all sections)
 
-### Past Terms
-* [2018 September](https://github.com/ubccpsc/310/blob/2018sept/README.md)
-* [2018 January](https://github.com/ubccpsc/310/blob/2018jan/README.md)
-* [2017 September](https://www.ugrad.cs.ubc.ca/~cs310/2017W1/index.html)
-* [2017 January](https://github.com/ubccpsc/310/tree/2017jan)
-* [2016 September](https://github.com/ubccpsc/310/tree/2016sept)
-* [2016 January](https://sites.google.com/site/cpsc3102015w1/)
-* [2015 May](https://sites.google.com/site/ubccs3102015s1/)
-* [2015 January](https://sites.google.com/site/ubccs3102014w2/)
-* [2014 September](http://www.ugrad.cs.ubc.ca/~cs310/2014W1/])
-* [2014 May](http://www.ugrad.cs.ubc.ca/~cs310/2014S1/)
-* [2014 January](http://www.ugrad.cs.ubc.ca/~cs310/2013W2/)
+#### Note: Expect frequent updates to this page as the course progresses.
 
+<!--
+#### Please login to [here](https://github.ugrad.cs.ubc.ca/) using your CS Ugrad Id/Password by 1400 on the Friday of the first week of class; this is required so we can provision your d0 repository for you to use in lab during the second week of class.
+-->
 
+#### This is a development-heavy four-credit course. Plan your timetable accordingly. If you are not familiar with TypeScript, please start looking at it now.
+
+## About the labs
+
+This is a pair-programming course: If you want to work with someone specific for your project, be sure that both of you register for the _SAME_ lab section. We do not have the ability to move people around between labs; please either monitor the SSC for space in your preferred lab sections, move to another lab with space, or find a partner in the lab you are registered in. Teams **must** be firm by the time of your lab the week of the add/drop deadline. If you do not have a partner, it is your responsibility to notify the TA in lab that week so you can be paired up. If you do not have a partner at the end of your lab that week, you will not be able to complete the project (40% of your final grade). Finding a partner is **your** responsibility and is key to your having a great term, please take the time to do this right.
