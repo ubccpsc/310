@@ -17,3 +17,19 @@ This is a pair-programming course: If you want to work with someone specific for
 ## Course request forms, waitlists, etc.
 
 Unforutnately, we cannot sign course registration forms and have no knowledge or control over the class composition or waitlists. If you have any questions about registration, please contact the [CS advisors](https://www.cs.ubc.ca/students/undergrad/resources/academic-advising).
+
+## Course learning objectives
+
+1. **Evaluate software engineering processes** used to build modern industrial-calibre systems by justifying their benefits and tradeoffs.
+
+1. **Elicit, deconstruct, and refine** functional requirements and quality attributes such that they are described succinctly, completely, and precisely.
+
+1. **Devise and justify high- and low-level designs** to support a given set of requirements and in support of future evolutionary needs. 
+
+1. **Iteratively derive implementations** of a design of reasonable complexity incorporating emergent design implications, and applying code-level restructuring for the sake of facilitating changes.
+
+1. **Carry out the implementation** of a design incorporating ethical and security implications of code-level choices and software process and methodological approaches.
+
+1. **Independently acquire and apply** modern and unfamiliar technology and language stacks.
+
+1. **Validate** systems using both black-box and white-box approaches to reason about, and improve the quality of a software system.
