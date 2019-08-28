@@ -1,6 +1,6 @@
 # UBC CPSC 310: Introduction to Software Engineering
 
-## CPSC 310 - 2019 Winter Term 1 (both sections)
+### 2019 Winter Term 1 (both sections)
 
 <!--
 #### Note: Expect frequent updates to this page as the course progresses.
@@ -451,12 +451,6 @@ Each deliverable has a deadline; we have also added a one week grace period for 
 
 During the grace week, TAs will only help groups with AutoTest scores below 80%. In the three days prior to the final submission date, only groups with less than 50% AutoTest scores will be helped. We encourage all groups to submit by the deadline, the final submission date is really only for those groups who need a little more time for polish. Regardless of your grade, your TAs will always help you during *your own* lab section; this restriction applies only to Piazza, Office Hours, and labs other than your own.
 
-Also, be aware that waiting until the last minute will greatly degrade AutoTest latency; while you can expect to receive results in < 5 minutes for the majority of the term, this has historically been much slower on the last day:
-
-<img src="readings/figures/autotest_latency.png" width="320px" alt="AutoTest Latency">
-
-Note: Even when AutoTest is heavily loaded your requests are queued and processed in turn; the timestamps we use for the deadline comes from the GitHub push event, not when AutoTest is able to process the request or when the commit was made locally.
-
 * September 23 @ 1800: ([Deliverable 0](project/Deliverable0.md)) This will be an individual deliverable and will be graded before the Add/Drop date. You should aim to exceed 70% on this deliverable if you want to succeed at the project.
 
 * October 7 (Oct 14 @ 1800 final sub): [Sprint 1](project/Deliverable1.md) The first project deliverable will be extremely challenging; it is important that you start working on this early.
@@ -468,6 +462,12 @@ Note: Even when AutoTest is heavily loaded your requests are queued and processe
 * November 18 (Nov 25 @ 1800 final sub): [Sprint 3](project/Deliverable3.md)
 
 * November 25: [Project Quality Check](project/Deliverable4.md). There is nothing to submit for this deliverable. It will be computed on the version of your code as it exists at the Sprint 3 deadline (*not* the commit associated with the Sprint 3 maximum). 
+
+Please be aware that waiting until the last minute will greatly degrade AutoTest latency; while you can expect to receive results in < 5 minutes for the majority of the term, this has historically been much slower on the last day:
+
+<img src="https://raw.githubusercontent.com/ubccpsc/310/master/resources/readings/figures/autotest_latency.png" width="320px" alt="AutoTest Latency">
+
+Note: Even when AutoTest is heavily loaded your requests are queued and processed in turn; the timestamps we use for the deadline comes from the GitHub push event, not when AutoTest is able to process the request or when the commit was made locally.
 
 ## Grading
 
