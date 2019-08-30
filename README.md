@@ -14,21 +14,21 @@
 #### This is a development-heavy four-credit course. Plan your timetable accordingly. If you are not familiar with TypeScript, please start looking at it now.
 -->
 
-## Key details for the start of term
+## Start-of-Term Info
 
-### Course request forms, waitlists, etc.
+### Course request forms, waitlists, etc.:
 
 Unforutnately, we cannot sign course registration forms and have no knowledge or control over the class composition or waitlists. If you have any questions about registration, please contact the [CS advisors](https://www.cs.ubc.ca/students/undergrad/resources/academic-advising). The waitlists will be frozen on **Friday, September 4** and no additional students will be added to the course.
 
 For admin-related questions, please contact: `cpsc310-admin@cs.ubc.ca` to ensure a timely and accurate response. This is the same procedure as for first and second year CS classes.
 
-### About the labs
+### About the labs:
 
 **No labs during the first week of class:** labs start the second week (e.g., Sept 10-13).
 
 This is a pair-programming course: If you want to work with someone specific for your project, be sure that both of you register for the _SAME_ lab section. We do not have the ability to move people around between labs; please either monitor the SSC for space in your preferred lab sections, move to another lab with space, or find a partner in the lab you are registered in. Teams **must** be firm by the time of your lab the week of the add/drop deadline. If you do not have a partner, it is your responsibility to notify the TA in lab that week so you can be paired up. If you do not have a partner at the end of your lab that week, you will not be able to complete the project (40% of your final grade). Finding a partner is **your** responsibility and is key to your having a great term, please take the time to do this right.
 
-### Cheating
+### Cheating:
 
 **IMPORTANT: DO NOT CHEAT ON THE PROJECT.** Don't copy code from others or the web. Don't share code. This is all outlined in the rules listed [here](#academic-misconduct). Both you and your partner will lose all the points for any shared or copied code. Make sure every line of code you commit is either provided by us, or written by you (or your partner). Cases will be referred to the dean and students have been expelled for copying in past terms.
 
@@ -321,91 +321,11 @@ W10: [Intellectual Property: Patents](http://www.youtube.com/watch?v=hBclvEPWXjo
 W10: [Intellectual Property: Licenses](http://www.youtube.com/watch?v=3uW9_AGtRVg)  
 W10: [Intellectual Property Summary](http://www.youtube.com/watch?v=7bcDEDn9CeM)
 
-<!--
-* 201: Tuesday/Thursday 1230-1400 in FSC 1005
--->
-
-
-<!--
-
-This list is a week-by-week guide only. Readings and videos will be updated throughout the term, but will remain fixed in the week before the midterm and final. NOTE: only the free edX account is required to view the videos.
-
-| Week        | Tuesday Topic & Readings | Tuesday Videos | Thursday |
-| :--         |:--                                          | :-- | :-- |
-| Jan 2       | No Class Jan 2 | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/1f93ea5daa8a4d04b19d201289c2bc9f/7e34619af6954a7c8f56e878077ea4a0/">Introduction</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/1f93ea5daa8a4d04b19d201289c2bc9f/cc534ea6412f4d4a85b2af6621860899/">Language intro</a></li></ul> | <ul><li>[Course intro](readings/Introduction.md)</li><li>[Project](project/README.md)</li><li>[Teamwork](readings/Teamwork.md)</li><li>[Languages](readings/Languages.md)</li><li>Quick D0 introduction</li></ul> |
-| Jan 9       | [Testing](readings/Testing.md)| <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/5692eb185917488e9f97c9f346fe932d/b9af727e3e98464d9bb587caa91111ed/">Testing intro</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/5692eb185917488e9f97c9f346fe932d/69512086e46d4ca59ee6e9d438237983/">Properties & process</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/5692eb185917488e9f97c9f346fe932d/7697250165fa41039fb5f0c764cbe186/">White box testing</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/5692eb185917488e9f97c9f346fe932d/ff578d1b33004ac68708a25877142c5f/">Black box testing</a></li></ul> | <a href="tutorials/tutorial_testing.pdf">Effective testing in practice</a> |
-| Jan 16      | [Process & Agile](readings/Process.md)  | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/9d0ea98055a5494b9c8c8cde4e6143dc/9d64e64e024e443c9ae6341d89cf7fdd">Why process?</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/9d0ea98055a5494b9c8c8cde4e6143dc/d0dc6b913ccc4fb5b2bf90fbe243cec1">Traditional processes</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/9d0ea98055a5494b9c8c8cde4e6143dc/71445e4320754e0091b3e63d96fe1cee">XP & TDD</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/9d0ea98055a5494b9c8c8cde4e6143dc/25bad20af8bf48b6885e5de371cf4332">Scrum</a></li></ul> | <ul><li>[Sprint 1 intro (source)](tutorials/tutorial_sprint1.html)</li><li>[Sprint 1 intro (online)](https://slides.com/rodrigoaraujo-1/deliverable-1-tutorial#/)</li></ul> |
-| Jan 23      | <ul><li>[Specifications](readings/Specifications.md)</li><li>[User Stories](readings/SpecificationsUserStories.md)</li><li>[Async](readings/Async.md)</li></ul> | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/b7375232b119453ba87336338b8eb8a0/7c0cb3ceb5724ed695bcfc084f4e55c9/">Specifications intro</a></li><li><a href="https://courses.edx.org/courses/course-v1%3AUBCx%2BSoftEng1x%2B1T2018/courseware/b7375232b119453ba87336338b8eb8a0/c3fe54d712084bd487aed1f8fa9bb6a5/">Requirements process</a></li><li><a href="https://courses.edx.org/courses/course-v1%3AUBCx%2BSoftEng1x%2B1T2018/courseware/b7375232b119453ba87336338b8eb8a0/f106a49468104666a381642c918fe8a2/">Validating requirements</a></li><li><a href="https://courses.edx.org/courses/course-v1%3AUBCx%2BSoftEng1x%2B1T2018/courseware/b7375232b119453ba87336338b8eb8a0/a8f7d83d3851495d8e676efb4984136b/">User stories</a></li><li><a href="https://courses.edx.org/courses/course-v1%3AUBCx%2BSoftEng1x%2B1T2018/courseware/b7375232b119453ba87336338b8eb8a0/fd9dd47e63d242869cd5527fb864250d/">INVEST</a></li><li><a href="https://courses.edx.org/courses/course-v1%3AUBCx%2BSoftEng1x%2B1T2018/courseware/b7375232b119453ba87336338b8eb8a0/96125db572f541d5888a5034838e75d2/">Decomposing user stories</a></li><ul> |  <ul><li>[Async programming (source)](tutorials/tutorial_async.html)</li><li>[Async programming (online)](https://slides.com/rodrigoaraujo-1/deck-14#/) |
-| Jan 30      | [Testability & Assertions](readings/TestabilityAssertions.md)   | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/5692eb185917488e9f97c9f346fe932d/c2e857979abc4e7f851b94f4f8ea7418/">Testability</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/5692eb185917488e9f97c9f346fe932d/caefa789a2b64118843193253200cf82/">Assertions</a></li></ul> |  [Applying testability](tutorials/tutorial_testability.pdf) |
-| Feb 6       | High Level Design:<ul><li>[High Level Design](readings/HighLevelDesign.md)</li><li>[Technical Representations](readings/Representations.md)</li></ul> | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/2042a4ecd013433ab5a1c552560617f4/0fdc571c75c24064beb316389a9d60d6">Abstraction</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/2042a4ecd013433ab5a1c552560617f4/aa7bc2e78d52498fa9d3809c0526b390">Technical representations</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/2042a4ecd013433ab5a1c552560617f4/d8857d39fd5c418faa941c14a5849864">APIs</a></li></ul> | [Sprint 2 introduction](http://slides.com/arthurmarques/deliverable-2-tutorial/#/) |
-| Feb 13      | High Level Design:<ul><li>[Design Principles](readings/DesignPrinciples.md)</li><li>[APIs](readings/API.md)</li></ul> | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/2042a4ecd013433ab5a1c552560617f4/460646f806214225899bf98f0103daa9">Coupling and cohesion</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/2042a4ecd013433ab5a1c552560617f4/bb9d14bb399c4fc2a317fca91cf207eb">Design principles</a></li></ul> |  [API design](http://slides.com/arthurmarques/apis#/) |
-| Feb 20      | Reading Week<ul><li>No Lectures</li><li>No Labs</li><li>No Office Hours</li></ul> |  Reading Week |  Reading Week |
-| Feb 27      | Midterm in Class | None |  API design (no slides) |
-| Mar 6       | Low Level Design: <ul><li>Design Patterns (no readings)</li></ul> | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/7d0289438e6a4d6491f2b0adbc48763a/d7af00b3475e4a35bb7293a40b260d09/">Low-level design intro</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/7d0289438e6a4d6491f2b0adbc48763a/2a9757edc9e34e899f30431aec2c6ec9">Singleton</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/7d0289438e6a4d6491f2b0adbc48763a/f6058ad4a5884fef9a84ff45141a3d89">Strategy</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/7d0289438e6a4d6491f2b0adbc48763a/b00d6eb8bfc44d70b31652b61546988e">State</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/7d0289438e6a4d6491f2b0adbc48763a/44caf94943b842c1940333fcb4b729f0">Facade</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/7d0289438e6a4d6491f2b0adbc48763a/06685e421836432da3aab37836504d22">Decorator</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/7d0289438e6a4d6491f2b0adbc48763a/ba2a508c074840bca101d4d010d5c8c2">MVC</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/7d0289438e6a4d6491f2b0adbc48763a/e1d27347c30048199763cb4ffcd34a46">MVP</a></li></ul> |  Sprint 3 introduction<ul><li><a href="http://slides.com/ataraxie/rest-api-in-practice-what-why-and-how-2#/">D3</a></li><li><a href="http://slides.com/ataraxie/rest-api-in-practice-what-why-and-how-12#/">UI & DOM</a></li><li><a href="http://slides.com/ataraxie/rest-api-in-practice-what-why-and-how#/">Servers & REST</a></li></ul> |
-| Mar 13      | [Information Security](readings/Security.md) | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEngPrjx+1T2018/courseware/34abcc7857984b84adaaedfd9d4ff4ea/ef7543a958574dc9acb09451645d320b/">Information Security</a></li><ul> | <a href="http://slides.com/ataraxie/design-patterns">Applying design patterns</a> |
-| Mar 20      | Dr. Baniassad:<ul><li>[REST](readings/REST.md)</li><li>IP (no readings)</li><li>Ethics (no readings)</li></ul> | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/2042a4ecd013433ab5a1c552560617f4/38538ed0bd784c84a61786fa7671321d/">REST</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEngPrjx+1T2018/courseware/8d4c463695e44e548c9083f7b8fb30c9/1e054043a06b4a0996e537733c4c98b0/">IP</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEngPrjx+1T2018/courseware/780bb09cf4734dcaa884ead98b3a6c46/aae8e4febd204640acedbf47109be867/">Ethics</a></li></ul> | [REST security](tutorials/tutorial_security.pdf) |
-| Mar 27      | Dr. Baniassad: Construction (no reading) | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/a58ebf5981e4464c93bccdbc69269898/a481ea3202e544b587454f5165c4e039/">Automation</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/a58ebf5981e4464c93bccdbc69269898/9261731c1c11441ca017720dd5e14c77/">Code Smells</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/a58ebf5981e4464c93bccdbc69269898/e2a756b14f1941ff88df6f8669febf73/">Refactoring</a></li></ul> | [Automated UI testing](tutorials/tutorial_ui-testing.pdf) |
-| Apr 3       | <ul><li>[Automation](readings/Automation.md)</li><li><a href="https://docs.google.com/presentation/d/1chdA7LyKmnw0MkARlOh0jLTsuo78QpxOq4CD_N2YDAM/edit?usp=sharing">Refactoring & Smells</a></li></ul> | <ul><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/a58ebf5981e4464c93bccdbc69269898/c35573ebbc55428a9ca1ea4b723c7517/">Construction intro</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/a58ebf5981e4464c93bccdbc69269898/3875d339292e438aac0b991cf947a7a6/">Non-structural properties</a></li><li><a href="https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/courseware/a58ebf5981e4464c93bccdbc69269898/ee6367de9a534328bd673e35504c7249">Static analyses</a></li></ul> | Wrap-Up |
-| April 24 | Final Exam @ 1200 (ESB 1013) | <ul><li>[None](https://www.youtube.com/watch?v=q1OtiefZKHU)</li><ul> |  N/A |
-
--->
-
-
-
-<!--
-WEEK 1
-
-<ul>
-<b>Introduction</b>
-<li><a href="https://www.youtube.com/watch?v=Uamo4Ej0tWk">Why-Test</a></li>
-<li><a href="https://www.youtube.com/watch?v=WKrvx7qCUDI">Terminology</a></li>
-<li><a href="https://www.youtube.com/watch?v=ll1k3Pks3ZA">Properties-of-Tests</a></li>
-<li><a href="https://www.youtube.com/watch?v=_Th3f9vks_w">Kinds-of-Tests</a></li>
-<li><a href="https://www.youtube.com/watch?v=x2DWjxDiOQo">Unit-and-System-Properties</a></li>
-<li><a href="https://www.youtube.com/watch?v=v0q1MKhSQVM">Red-Green-Refactor</a></li>
-</ul>
-
-<ul>
-<b>White Box</b>
-<li><a href="https://www.youtube.com/watch?v=iujQEm9oono">Introduction-to-Coverage</a></li>
-<li><a href="https://www.youtube.com/watch?v=SC7R-QixRaU">Line-and-Statement-Coverage</a></li>
-<li><a href="https://www.youtube.com/watch?v=YBiHn5vgKnM">Branch-and-Path-Coverage</a></li>
-<li><a href="https://www.youtube.com/watch?v=2EBi66DYF5w">Coverage-Wrap-Up</a></li>
-</ul>
-
-
-<ul>
-<b>Black Box</b>
-<li><a href="https://www.youtube.com/watch?v=ttAAsNSPiXw">Equivalence-Class-Partitioning</a></li>
-<li><a href="https://www.youtube.com/watch?v=5PtxXnwyU3Y">Input-Partitioning</a></li>
-<li><a href="https://www.youtube.com/watch?v=0yvHDKI-DSA">Output-Partitioning</a></li>
-<li><a href="https://www.youtube.com/watch?v=IRQU_fHKUa0">Boundary-Value-Analysis</a></li>
-</ul>
-
-WEEK 2
-
-<ul>
-<b>Assertions</b>
-<li><a href="https://www.youtube.com/watch?v=DCAFxgUXM4I">Assertions</a></li>
-<li><a href="https://www.youtube.com/watch?v=Y0GEftJ5MB0">Assertions-Example</a></li>
-</ul>
-
-<ul>
-<b>Testability</b>
-<li><a href="https://www.youtube.com/watch?v=jwL1vkl-CoY">Introduction</a></li>
-<li><a href="https://www.youtube.com/watch?v=y0zrTdDuYv0">Controllability</a></li>
-<li><a href="https://www.youtube.com/watch?v=CJhJibMCTUM">Observability</a></li>
-<li><a href="https://www.youtube.com/watch?v=Z93-c4ngxGw">Isolateability</a></li>
-<li><a href="https://www.youtube.com/watch?v=NMuhE-XnFe8">Isolateability-Screencast</a></li>
-<li><a href="https://www.youtube.com/watch?v=Q83W5zH8LUY">Automatability</a></li>
-<li><a href="https://www.youtube.com/watch?v=d2WjviF50HA">Wrap-Up</a></li>
-</ul>
--->
 
 Labs
 -----
 
-<!-- **There will not be any labs during the first week of class.** -->
+**There will not be any labs during the first week of class.**
 
 If you are on the waitlist, please attend any lab that works for you until you are able to get in the course. Lab sections must be finalized by the add/drop date. If you have course conflicts in your schedule that prevent you taking labs with available seats, please talk to the [CS advisors](https://www.cs.ubc.ca/students/undergrad/resources/academic-advising); unfortunately the course staff is not able to control who is in the lab or lecture.
 
@@ -483,7 +403,7 @@ To pass the course and receive credit you must achieve a passing grade on *both*
 The project grade component is weighted as follows:
 
 | Project Component				| Proportion |
-| :--			 				    | :-- |
+| :--			 				   	| :-- |
 | Deliverable 0 (d0)			| 20 %	|
 | Project Sprint 1 (d1)			| 20 %	|
 | Project Sprint 2 (d2)			| 20 %	|
@@ -517,11 +437,6 @@ The three deliverable reports are not part of your participation report but are 
 
 To maximize certainty around getting access to 310 this term, the [CS advisors](https://www.cs.ubc.ca/students/undergrad/resources/academic-advising) will over-enroll the course by moving as many people as they can from the waitlist into the lecture after the first day of class; only the advisors have the ability to make changes to the class list. At this point, the class composition will be frozen for the rest of the term (**nobody will be moved from the waitlist into the course after the first week of class**). There will likely be some natural movement of people leaving the course before the add/drop date, but this will just drop our total size back towards capacity rather than the over-enrolled state we will be in after the first lecture.
 
-<!---
-There is extremely high demand for this course this term. If you are on the waitlist and wish to join the class, please come to the front after **EVERY** class to sign in. Those students who have signed into every class by September 16 will be forwarded to the advisors who will insert students into available spots by the add/drop deadline. This does not guarantee you will be admitted, but without signing in every class you will not be eligible. Students on the waitlist should not form groups with students who are already enrolled in case your whole group does not make it into the course this term. Unfortunately, the instructor is not able to override class seat assignments or the waitlist itself.
-
-If you are on the waitlist you should still attend and sign into a lab section so you understand what is happening in the course, and so you do not miss out on the lab attendance marks.
---->
 ### Late Submissions
 
 The project late policy is described [here](project/README.md#late-policy).
