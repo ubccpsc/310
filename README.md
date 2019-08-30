@@ -14,37 +14,25 @@
 #### This is a development-heavy four-credit course. Plan your timetable accordingly. If you are not familiar with TypeScript, please start looking at it now.
 -->
 
-## Course request forms, waitlists, etc.
+## Key details for the start of term
+
+### Course request forms, waitlists, etc.
 
 Unforutnately, we cannot sign course registration forms and have no knowledge or control over the class composition or waitlists. If you have any questions about registration, please contact the [CS advisors](https://www.cs.ubc.ca/students/undergrad/resources/academic-advising). The waitlists will be frozen on **Friday, September 4** and no additional students will be added to the course.
 
-## Cheating
+For admin-related questions, please contact: `cpsc310-admin@cs.ubc.ca` to ensure a timely and accurate response. This is the same procedure as for first and second year CS classes.
 
-**IMPORTANT: DO NOT CHEAT ON THE PROJECT.** Don't copy code from others or the web. Don't share code. This is all outlined in the rules listed [here](#academic-misconduct). Both you and your partner will lose all the points for any shared or copied code. Make sure every line of code you commit is either provided by us, or written by you (or your partner). Cases will be referred to the dean and students have been expelled for copying in past terms.
+### About the labs
 
-## About the labs
+**No labs during the first week of class:** labs start the second week (e.g., Sept 10-13).
 
 This is a pair-programming course: If you want to work with someone specific for your project, be sure that both of you register for the _SAME_ lab section. We do not have the ability to move people around between labs; please either monitor the SSC for space in your preferred lab sections, move to another lab with space, or find a partner in the lab you are registered in. Teams **must** be firm by the time of your lab the week of the add/drop deadline. If you do not have a partner, it is your responsibility to notify the TA in lab that week so you can be paired up. If you do not have a partner at the end of your lab that week, you will not be able to complete the project (40% of your final grade). Finding a partner is **your** responsibility and is key to your having a great term, please take the time to do this right.
 
+### Cheating
 
-## Course learning objectives
+**IMPORTANT: DO NOT CHEAT ON THE PROJECT.** Don't copy code from others or the web. Don't share code. This is all outlined in the rules listed [here](#academic-misconduct). Both you and your partner will lose all the points for any shared or copied code. Make sure every line of code you commit is either provided by us, or written by you (or your partner). Cases will be referred to the dean and students have been expelled for copying in past terms.
 
-1. **Evaluate software engineering processes** used to build modern industrial-calibre systems by justifying their benefits and tradeoffs.
-
-1. **Elicit, deconstruct, and refine** functional requirements and quality attributes such that they are described succinctly, completely, and precisely.
-
-1. **Devise and justify high- and low-level designs** to support a given set of requirements and in support of future evolutionary needs. 
-
-1. **Iteratively derive implementations** of a design of reasonable complexity incorporating emergent design implications, and applying code-level restructuring for the sake of facilitating changes.
-
-1. **Carry out the implementation** of a design incorporating ethical and security implications of code-level choices and software process and methodological approaches.
-
-1. **Independently acquire and apply** modern and unfamiliar technology and language stacks.
-
-1. **Validate** systems using both black-box and white-box approaches to reason about, and improve the quality of a software system.
-
-
-## Overview
+## CPSC 310 Overview
 
 The world runs on software and CPSC 310 is all about taking the skills and knowledge you learned in [CPSC 210](https://sites.google.com/site/ubccpsc210/) (Software Construction) and extending your abilities to design and build non-trivial software systems. The course will involve a significant challenging [project](project/README.md) that we will start working on in the first lecture and will continue to evolve until the last week of class; do not underestimate the engineering effort this project will require.
 
@@ -69,16 +57,35 @@ Our primary goal in this course is to help you learn how to design and build non
 
 The course [project](project/README.md) embodies an experiential learning environment: we have constrained several aspects to mimic the kinds of reasonable constraints you would likely encounter on a real team. As with real systems, requirements will seem clear at a high level, but will provide broad latitude for how you implement them. Your choices of languages and frameworks have also been fixed. It is expected you will _not_ be familiar with these; being able to quickly learn and adapt to different toolsets is a fundamental skill in modern development. Finally, our use of [AutoTest](project/AutoTest.md) can be considered a form of acceptance testing, which is an industry norm used to validate that software performs as expected.
 
-CPSC 310 will be a challenging course that we have designed to integrate many of the ideas and concepts from your prior courses in order to help you to learn how to apply them to engineering modern software systems.
+CPSC 310 will be a challenging course that we have designed to integrate many of the ideas and concepts from your prior courses in order to help you to learn how to apply them to engineering modern software systems. The official course learning outcomes (CLOs) for CPSC 310 are:
+
+1. **Evaluate software engineering processes** used to build modern industrial-calibre systems by justifying their benefits and tradeoffs.
+
+1. **Elicit, deconstruct, and refine** functional requirements and quality attributes such that they are described succinctly, completely, and precisely.
+
+1. **Devise and justify high- and low-level designs** to support a given set of requirements and in support of future evolutionary needs. 
+
+1. **Iteratively derive implementations** of a design of reasonable complexity incorporating emergent design implications, and applying code-level restructuring for the sake of facilitating changes.
+
+1. **Carry out the implementation** of a design incorporating ethical and security implications of code-level choices and software process and methodological approaches.
+
+1. **Independently acquire and apply** modern and unfamiliar technology and language stacks.
+
+1. **Validate** systems using both black-box and white-box approaches to reason about, and improve the quality of a software system.
+
 
 ## Contact
 
-#### Instructors:
+#### Instructor:
 
 * Section 101: [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
   * T/Th @ 1230-1400 in MATH 100
 * Section 102: [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
   * T/Th @ 1700-1830 in SWNG 221
+
+#### Administrivia:
+
+For admin-related questions, please contact: `cpsc310-admin@cs.ubc.ca`. This will help us get you the right answer to adminstrative questions as quickly as possible. This procedure is the same as for CPSC 110, 210, etc.
 
 #### TAs:
 
@@ -129,7 +136,7 @@ This is a high-level overview of what the course will be about. Expect this list
 
 It is expected that you will watch the videos for a week prior to coming to class. This will greatly increase your understanding of what will be happening in lecture and make it much easier for you to participate in any hands-on activities we will be doing. The videos below will be annotated with week indicators (W0, W1, etc.) once we know when each should be watched to prepare for lecture that week.
 
-NOTE: The videos below are ordered conceptually, although course constraints cause us to do many topics out of order (so you can use them in the project, etc.), so make sure you check the full list to make sure you have covered all the videos for a given week.
+NOTE: The videos below are ordered conceptually, although course constraints cause us to do many topics out of order (so you can use them in the project, etc.), so make sure you check the full list to make sure you have covered all the videos for a given week. A more conceptually-coherent view of these resources is [also available](https://github.com/ubccpsc/310/blob/master/resources/README.md).
 
 Course Videos
 --------
@@ -527,7 +534,7 @@ Students who miss the midterm or final exam due to illness should consult the Fa
 Students who require dispensation based on their unique circumstances should refer to the [UBC policy on Academic Concessions](http://www.calendar.ubc.ca/vancouver/?tree=3,48,0,0).
 Phones, tablets, calculators, translators, and all other electronic devices are prohibited on desks during exams. They must be turned off and placed in your bag or on the ground. Students who need exam accommodation must make an official request to the [Access and Diversity Office](https://students.ubc.ca/about-student-services/access-diversity).
 
-### Derivative Code
+### Derivative (Copied) Code
 
 Each student is responsible ensuring the code in all of their repositories is their own and is not derived from other students in the class, from past student solutions, or other code resources online. This policy is bidirectional: whether you copied some other code, or your code was copied, the penalties are the same.
 
