@@ -101,6 +101,9 @@ For admin-related questions, please contact: `cpsc310-admin@cs.ubc.ca`. This wil
 * Harman Gakhal
 * Kenny Kwan
 * Ivan Zhang
+* Arash Haj
+* Chi Duong
+* Harman Gakhal
 * Noa Heyl
 * Oscar Tu
 * Yilan Yan
