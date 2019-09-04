@@ -103,7 +103,7 @@ For admin-related questions, please contact: `cpsc310-admin@cs.ubc.ca`. This wil
 
 ### Piazza
 
-[Piazza](piazza.com/ubc.ca/winterterm12019/cpsc310/home) has been configured for this term. Please see the instructor in person in class if you want to discuss course materials; only TAs will monitor Piazza. Please be mindful of our [Derivative Code](#Derivative-Code) policy with respect to sharing or using other student's code. It is _extremely_ helpful if your Piazza name corresponds to your name in the SSC in the advent we need to help you with a problem with your project, repositories, or grades.
+[Piazza](https://piazza.com/ubc.ca/winterterm12019/cpsc310/home) has been configured for this term. Please see the instructor in person in class if you want to discuss course materials; only TAs will monitor Piazza. Please be mindful of our [Derivative Code](#Derivative-Code) policy with respect to sharing or using other student's code. It is _extremely_ helpful if your Piazza name corresponds to your name in the SSC in the advent we need to help you with a problem with your project, repositories, or grades.
 
 When posting to Piazza please be sure to include a link to your team's GitHub repository so the TAs can find your group's code in order to help you more effectively. Also, when asking TAs about failing tests in particular, the TAs will often want to see your own test for similar cases (usually this will take several tests) so you can demonstrate to them why you think your code is correct.
 
