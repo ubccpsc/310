@@ -124,15 +124,15 @@ This is a high-level overview of what the course will be about. Expect this list
 | Week 2: Sept 16	| [Process & Agile](https://github.com/ubccpsc/310/blob/master/resources/readings/Process.md) | Week 2 Survey - TBD |
 | Week 3: Sept 23	| [Specifications](https://github.com/ubccpsc/310/blob/master/resources/readings/Specifications.md) & [User Stories](https://github.com/ubccpsc/310/blob/master/resources/readings/SpecificationsUserStories.md) | Week 3 Survey - TBD |
 | Week 4: Sept 30	| [Testability & Assertions](https://github.com/ubccpsc/310/blob/master/resources/readings/TestabilityAssertions.md) | Week 4 Survey - TBD |
-| Week 5: Oct 7		| High Level design: <ul><li>[High-level design](https://github.com/ubccpsc/310/blob/master/resources/readings/HighLevelDesign.md) </li><li>[Technical Representations](https://github.com/ubccpsc/310/blob/master/resources/readings/Representations.md)</li><li>[APIs](https://github.com/ubccpsc/310/blob/master/resources/readings/API.md)</li></ul> | D1 Survey - Oct 14 @ 1900 (Mandatory!) - TBD | 
-| Week 6: Oct 14		| High-level design: <ul><li>[Design principles](https://github.com/ubccpsc/310/blob/master/resources/readings/DesignPrinciples.md)</li></ul> | Week 6 - Oct 15 @ 0800 - TBD |
+| Week 5: Oct 7		| High Level design: <ul><li>[High-level design](https://github.com/ubccpsc/310/blob/master/resources/readings/HighLevelDesign.md) </li><li>[Technical Representations](https://github.com/ubccpsc/310/blob/master/resources/readings/Representations.md)</li><li>[APIs](https://github.com/ubccpsc/310/blob/master/resources/readings/API.md)</li></ul> | D1 Survey - Oct 7 @ 1900 (Mandatory!) - TBD | 
+| Week 6: Oct 14		| High-level design: <ul><li>[Design principles](https://github.com/ubccpsc/310/blob/master/resources/readings/DesignPrinciples.md)</li></ul> | Week 6 - TBD |
 | Week 7: Oct 21		| Midterm (Tuesday in class) & High-level design (Thurs) | No survey this week |
-| Week 8: Oct 28		| [Low-level design](https://github.com/ubccpsc/310/blob/master/resources/readings/LowLevelDesign.md) | Week 8 Survey - Oct 28 @ 0800 |
-| Week 9: Nov 4		| <ul><li>[Low-level design](https://github.com/ubccpsc/310/blob/master/resources/readings/LowLevelDesign.md)</li><li>[MV*](https://github.com/ubccpsc/310/blob/master/resources/readings/MVStar.md)</li></ul> | D2 Survey - Nov 5 @ 1900 (Mandatory!) - TBD  |
-| Week 10: Nov 11	| [InfoSec](https://github.com/ubccpsc/310/blob/master/resources/readings/Security.md), IP, & Ethics | Week 10 Survey - Nov 11 @ 0800 - TBD |
-| Week 11: Nov 18	| [REST](https://github.com/ubccpsc/310/blob/master/resources/readings/REST.md) | Week 11 Survey - Nov 18 @ 0800 TBD |
-| Week 12: Nov 25	| Construction, [Automation](https://github.com/ubccpsc/310/blob/master/resources/readings/Automation.md), & [Refactoring](https://github.com/ubccpsc/310/blob/master/resources/readings/Refactoring.md) | D3 Survey - Nov 25 @ 1900 (Mandatory!) - TBD |
-| TBD | Final exam @ TBD  | &nbsp; |
+| Week 8: Oct 28		| [Low-level design](https://github.com/ubccpsc/310/blob/master/resources/readings/LowLevelDesign.md) | D2 Survey - Oct 28 @ 1900 (Mandatory!) - TBD |
+| Week 9: Nov 4		| <ul><li>[Low-level design](https://github.com/ubccpsc/310/blob/master/resources/readings/LowLevelDesign.md)</li><li>[MV*](https://github.com/ubccpsc/310/blob/master/resources/readings/MVStar.md)</li></ul> | Week 9 Survey - TBD  |
+| Week 10: Nov 11	| [InfoSec](https://github.com/ubccpsc/310/blob/master/resources/readings/Security.md), IP, & Ethics | Week 10 Survey - TBD |
+| Week 11: Nov 18	| [REST](https://github.com/ubccpsc/310/blob/master/resources/readings/REST.md) | D3 Survey - Nov 18 @ 1900 (Mandatory!) - TBD |
+| Week 12: Nov 25	| Construction, [Automation](https://github.com/ubccpsc/310/blob/master/resources/readings/Automation.md), & [Refactoring](https://github.com/ubccpsc/310/blob/master/resources/readings/Refactoring.md) | Week 12 Survey - TBD |
+| | Final exam @ TBD  | CSSS has practice exams |
 
 It is expected that you will watch the videos for a week prior to class. This will greatly increase your understanding of what will be happening in lecture and make it much easier for you to participate in any hands-on activities we will be doing. The videos below will be annotated with their week (W0, W1, etc.) once we know when each should be watched to prepare for lecture that week.
 
@@ -378,15 +378,15 @@ Each deliverable has a deadline; we have also added a one week grace period for 
 
 During the grace week, TAs will only help groups with AutoTest scores below 80%. In the three days prior to the final submission date, only groups with less than 50% AutoTest scores will be helped. We encourage all groups to submit by the deadline, the final submission date is really only for those groups who need a little more time for polish. Regardless of your grade, your TAs will always help you during *your own* lab section; this restriction applies only to Piazza, Office Hours, and labs other than your own.
 
-* September 23 @ 1800: ([Deliverable 0](project/Deliverable0.md)) This will be an individual deliverable and will be graded before the Add/Drop date. You should aim to exceed 70% on this deliverable if you want to succeed at the project.
+* September 16 @ 1800: ([Deliverable 0](project/Deliverable0.md)) This will be an individual deliverable and will be graded before the Add/Drop date. You should aim to exceed 70% on this deliverable if you want to succeed at the project.
 
-* October 7 (Oct 14 @ 1800 final sub): [Sprint 1](project/Deliverable1.md) The first project deliverable will be extremely challenging; it is important that you start working on this early.
+* September 30 (Oct 7 @ 1800 final sub): [Sprint 1](project/Deliverable1.md) The first project deliverable will be extremely challenging; it is important that you start working on this early.
 
 * October 22: Midterm (sample midterms are available through the CSSS)
 
-* October 28 (Nov 4 @ 1800 final sub): [Sprint 2](project/Deliverable2.md) 
+* October 21 (Oct 28 @ 1800 final sub): [Sprint 2](project/Deliverable2.md) 
 
-* November 18 (Nov 25 @ 1800 final sub): [Sprint 3](project/Deliverable3.md)
+* November 11 (Nov 18 @ 1800 final sub): [Sprint 3](project/Deliverable3.md)
 
 * November 25: [Project Quality Check](project/Deliverable4.md). There is nothing to submit for this deliverable. It will be computed on the version of your code as it exists at the Sprint 3 deadline (*not* the commit associated with the Sprint 3 maximum). 
 
