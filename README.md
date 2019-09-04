@@ -85,7 +85,7 @@ CPSC 310 will be a challenging course that we have designed to integrate many of
 
 #### Administrivia:
 
-For admin-related questions, please contact: `cpsc310-admin@cs.ubc.ca`. This will help us get you the right answer to administrative questions as quickly as possible. This procedure is the same as for CPSC 110, 210, etc.
+For admin-related questions (questions about late surveys/deliverables, illness, exam accomodations, etc.), please contact: `cpsc310-admin@cs.ubc.ca`. This will help us get you the right answer to administrative questions as quickly as possible. This procedure is the same as for CPSC 110, 210, etc.
 
 #### TAs:
 
@@ -136,14 +136,14 @@ This is a high-level overview of what the course will be about. Expect this list
 
 | Week					| Topic & Readings 	| Survey |
 |---					|---					|--- |
-| Week 0: Sept 2		| [Introduction](https://github.com/ubccpsc/310/blob/master/resources/readings/Introduction.md), [Teamwork](https://github.com/ubccpsc/310/blob/master/resources/readings/Teamwork.md), [Languages](https://github.com/ubccpsc/310/blob/master/resources/readings/Languages.md), & [Async](readings/Async.md) | Week 0 Survey - TBD |
+| Week 0: Sept 2		| [Introduction](https://github.com/ubccpsc/310/blob/master/resources/readings/Introduction.md), [Teamwork](https://github.com/ubccpsc/310/blob/master/resources/readings/Teamwork.md), [Languages](https://github.com/ubccpsc/310/blob/master/resources/readings/Languages.md), & [Async](readings/Async.md) | Week 0 Survey - TBD (Due Sept 9) |
 | Week 1: Sept 9		| [Testing](https://github.com/ubccpsc/310/blob/master/resources/readings/Testing.md) | Week 1 Survey - TBD |
 | Week 2: Sept 16	| [Process & Agile](https://github.com/ubccpsc/310/blob/master/resources/readings/Process.md) | Week 2 Survey - TBD |
 | Week 3: Sept 23	| [Specifications](https://github.com/ubccpsc/310/blob/master/resources/readings/Specifications.md) & [User Stories](https://github.com/ubccpsc/310/blob/master/resources/readings/SpecificationsUserStories.md) | Week 3 Survey - TBD |
 | Week 4: Sept 30	| [Testability & Assertions](https://github.com/ubccpsc/310/blob/master/resources/readings/TestabilityAssertions.md) | Week 4 Survey - TBD |
 | Week 5: Oct 7		| High Level design: <ul><li>[High-level design](https://github.com/ubccpsc/310/blob/master/resources/readings/HighLevelDesign.md) </li><li>[Technical Representations](https://github.com/ubccpsc/310/blob/master/resources/readings/Representations.md)</li><li>[APIs](https://github.com/ubccpsc/310/blob/master/resources/readings/API.md)</li></ul> | D1 Survey - Oct 7 @ 1900 (Mandatory!) - TBD | 
-| Week 6: Oct 14		| High-level design: <ul><li>[Design principles](https://github.com/ubccpsc/310/blob/master/resources/readings/DesignPrinciples.md)</li></ul> | Week 6 - TBD |
-| Week 7: Oct 21		| Midterm (Tuesday in class) & High-level design (Thurs) | No survey this week |
+| Week 6: Oct 14		| High-level design: <ul><li>[Design principles](https://github.com/ubccpsc/310/blob/master/resources/readings/DesignPrinciples.md)</li></ul> | Week 6 Survey - TBD |
+| Week 7: Oct 21		| Midterm (Tuesday in class) & High-level design (Thurs) | Week 7 Survey - TBD |
 | Week 8: Oct 28		| [Low-level design](https://github.com/ubccpsc/310/blob/master/resources/readings/LowLevelDesign.md) | D2 Survey - Oct 28 @ 1900 (Mandatory!) - TBD |
 | Week 9: Nov 4		| <ul><li>[Low-level design](https://github.com/ubccpsc/310/blob/master/resources/readings/LowLevelDesign.md)</li><li>[MV*](https://github.com/ubccpsc/310/blob/master/resources/readings/MVStar.md)</li></ul> | Week 9 Survey - TBD  |
 | Week 10: Nov 11	| [InfoSec](https://github.com/ubccpsc/310/blob/master/resources/readings/Security.md), IP, & Ethics | Week 10 Survey - TBD |
