@@ -36,7 +36,7 @@ This is a pair-programming course: If you want to work with someone specific for
 
 The world runs on software and CPSC 310 is all about taking the skills and knowledge you learned in [CPSC 210](https://sites.google.com/site/ubccpsc210/) (Software Construction) and extending your abilities to design and build non-trivial software systems. The course will involve a significant challenging [project](project/README.md) that we will start working on in the first lecture and will continue to evolve until the last week of class; do not underestimate the engineering effort this project will require.
 
-The lecture time slot will be highly interactive and will involve working with your project partner (and sometimes teaming up with other groups as well). Only the first and last lecture slots of the course will be 'traditional' lectures. Tuesday lectures will be activity-driven to reinforce the materials from each week's readings and videos. Thursdays lectures will focus on tying the lecture material to the course project. One important implication of this is that all course material will be fully covered in the videos, readings, and project. You can base your Tuesday attendance on your own assessment of your mastery of the material for that week. For Thursdays, your can decide if you need to come based on how the project is progressing. Your attendance in lecture has no bearing on your participation grade, as long as you submit your weekly reflection (which is submitted online).
+The lecture time slot will be highly interactive and will involve working with your project partner (and sometimes teaming up with other groups as well). Only the first and last lecture slots of the course will be 'traditional' lectures. Tuesday lectures will be activity-driven to reinforce the materials from each week's readings and videos. Thursdays lectures will focus on tying the lecture material to the course project. One important implication of this is that all course material will be fully covered in the videos, readings, and project. You can base your Tuesday attendance on your own assessment of your mastery of the material for that week. For Thursdays, your can decide if you need to come based on how the project is progressing. Attendance in lecture has no bearing on your participation grade, as long as you submit your weekly reflection (which is submitted online).
 
 Each module will have reading materials and videos posted online; no slides will be posted. In-class material will be designed to support the readings, not replace them, and will not be available electronically. We have chosen to take a reading-based approach for this course instead of a slide-based approach to enable more class time to be available for hands-on activities while still providing a comprehensive reference of the background materials for the course.
 
@@ -85,7 +85,7 @@ CPSC 310 will be a challenging course that we have designed to integrate many of
 
 #### Administrivia:
 
-For admin-related questions, please contact: `cpsc310-admin@cs.ubc.ca`. This will help us get you the right answer to adminstrative questions as quickly as possible. This procedure is the same as for CPSC 110, 210, etc.
+For admin-related questions, please contact: `cpsc310-admin@cs.ubc.ca`. This will help us get you the right answer to administrative questions as quickly as possible. This procedure is the same as for CPSC 110, 210, etc.
 
 #### TAs:
 
@@ -128,13 +128,13 @@ This is a high-level overview of what the course will be about. Expect this list
 | Week 6: Oct 14		| High-level design: <ul><li>[Design principles](https://github.com/ubccpsc/310/blob/master/resources/readings/DesignPrinciples.md)</li></ul> | Week 6 - Oct 15 @ 0800 - TBD |
 | Week 7: Oct 21		| Midterm (Tuesday in class) & High-level design (Thurs) | No survey this week |
 | Week 8: Oct 28		| [Low-level design](https://github.com/ubccpsc/310/blob/master/resources/readings/LowLevelDesign.md) | Week 8 Survey - Oct 28 @ 0800 |
-| Week 9: Nov 4		| <ul><li>[Low-level design](https://github.com/ubccpsc/310/blob/master/resources/readings/LowLevelDesign.md)</li><li>[MV*](readings/MVStar.md)</li></ul> | D2 Survey - Nov 5 @ 1900 (Mandatory!) - TBD  |
+| Week 9: Nov 4		| <ul><li>[Low-level design](https://github.com/ubccpsc/310/blob/master/resources/readings/LowLevelDesign.md)</li><li>[MV*](https://github.com/ubccpsc/310/blob/master/resources/readings/MVStar.md)</li></ul> | D2 Survey - Nov 5 @ 1900 (Mandatory!) - TBD  |
 | Week 10: Nov 11	| [InfoSec](https://github.com/ubccpsc/310/blob/master/resources/readings/Security.md), IP, & Ethics | Week 10 Survey - Nov 11 @ 0800 - TBD |
 | Week 11: Nov 18	| [REST](https://github.com/ubccpsc/310/blob/master/resources/readings/REST.md) | Week 11 Survey - Nov 18 @ 0800 TBD |
 | Week 12: Nov 25	| Construction, [Automation](https://github.com/ubccpsc/310/blob/master/resources/readings/Automation.md), & [Refactoring](https://github.com/ubccpsc/310/blob/master/resources/readings/Refactoring.md) | D3 Survey - Nov 25 @ 1900 (Mandatory!) - TBD |
 | TBD | Final exam @ TBD  | &nbsp; |
 
-It is expected that you will watch the videos for a week prior to coming to class. This will greatly increase your understanding of what will be happening in lecture and make it much easier for you to participate in any hands-on activities we will be doing. The videos below will be annotated with week indicators (W0, W1, etc.) once we know when each should be watched to prepare for lecture that week.
+It is expected that you will watch the videos for a week prior to class. This will greatly increase your understanding of what will be happening in lecture and make it much easier for you to participate in any hands-on activities we will be doing. The videos below will be annotated with their week (W0, W1, etc.) once we know when each should be watched to prepare for lecture that week.
 
 NOTE: The videos below are ordered conceptually, although course constraints cause us to do many topics out of order (so you can use them in the project, etc.), so make sure you check the full list to make sure you have covered all the videos for a given week. A more conceptually-coherent view of these resources is [also available](https://github.com/ubccpsc/310/blob/master/resources/README.md).
 
@@ -435,7 +435,7 @@ The three deliverable reports are not part of your participation report but are 
 <a name="waitlist"></a>
 ### Waitlist
 
-To maximize certainty around getting access to 310 this term, the [CS advisors](https://www.cs.ubc.ca/students/undergrad/resources/academic-advising) will over-enroll the course by moving as many people as they can from the waitlist into the lecture after the first day of class; only the advisors have the ability to make changes to the class list. At this point, the class composition will be frozen for the rest of the term (**nobody will be moved from the waitlist into the course after the first week of class**). There will likely be some natural movement of people leaving the course before the add/drop date, but this will just drop our total size back towards capacity rather than the over-enrolled state we will be in after the first lecture.
+To maximize certainty around getting access to 310 this term, the [CS advisors](https://www.cs.ubc.ca/students/undergrad/resources/academic-advising) will over-enrol the course by moving as many people as they can from the waitlist into the lecture after the first day of class; only the advisors have the ability to make changes to the class list. At this point, the class composition will be frozen for the rest of the term (**nobody will be moved from the waitlist into the course after the first week of class**). There will likely be some natural movement of people leaving the course before the add/drop date, but this will just drop our total size back towards capacity rather than the over-enrolled state we will be in after the first lecture.
 
 ### Late Submissions
 
