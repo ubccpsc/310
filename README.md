@@ -93,7 +93,24 @@ For admin-related questions, please contact: `cpsc310-admin@cs.ubc.ca`. This wil
 * Tim Straubinger (GTA)
 * Syed Ahmad (GTA)
 * Junze Wu (GTA)
-* TBD
+* Ada Li
+* Annie Wang
+* Arash Haj
+* Chi Duong
+* Eishan Lawrence
+* Harman Gakhal
+* Kenny Kwan
+* Ivan Zhang
+* Arash Haj
+* Chi Duong
+* Harman Gakhal
+* Noa Heyl
+* Oscar Tu
+* Yilan Yan
+* Yvonne Li
+* Will Zhang
+* Braxton Hall
+* James Yoo
 
 *TA Office Hours*:
 
