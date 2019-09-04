@@ -18,7 +18,7 @@
 
 ### Course request forms, waitlists, etc.:
 
-Unforutnately, we cannot sign course registration forms and have no knowledge or control over the class composition or waitlists. If you have any questions about registration, please contact the [CS advisors](https://www.cs.ubc.ca/students/undergrad/resources/academic-advising). The waitlists will be frozen on **Friday, September 4** and no additional students will be added to the course.
+Unfortunately, we cannot sign course registration forms and have no knowledge or control over the class composition or waitlists. If you have any questions about registration, please contact the [CS advisors](https://www.cs.ubc.ca/students/undergrad/resources/academic-advising). The waitlists will be frozen on **Friday, September 4** and no additional students will be added to the course.
 
 For admin-related questions, please contact: `cpsc310-admin@cs.ubc.ca` to ensure a timely and accurate response. This is the same procedure as for first and second year CS classes.
 
@@ -119,19 +119,19 @@ This is a high-level overview of what the course will be about. Expect this list
 
 | Week					| Topic & Readings 	| Survey |
 |---					|---					|--- |
-| Week 0: Sept 2		| [Introduction](readings/Introduction.md), [Teamwork](readings/Teamwork.md), [Languages](readings/Languages.md), & [Async](readings/Async.md) | Week 0 Survey - TBD |
-| Week 1: Sept 9		| [Testing](readings/Testing.md) | Week 1 Survey - TBD |
-| Week 2: Sept 16	| [Process & Agile](readings/Process.md) | Week 2 Survey - TBD |
-| Week 3: Sept 23	| [Specifications](readings/Specifications.md) & [User Stories](readings/SpecificationsUserStories.md) | Week 3 Survey - TBD |
-| Week 4: Sept 30	| [Testability & Assertions](readings/TestabilityAssertions.md) | Week 4 Survey - TBD |
-| Week 5: Oct 7		| High Level design: <ul><li>[High-level design](readings/HighLevelDesign.md) </li><li>[Technical Representations](readings/Representations.md)</li><li>[APIs](readings/API.md)</li></ul> | D1 Survey - Oct 14 @ 1900 (Mandatory!) - TBD | 
-| Week 6: Oct 14		| High-level design: <ul><li>[Design principles](readings/DesignPrinciples.md)</li></ul> | Week 6 - Oct 15 @ 0800 - TBD |
+| Week 0: Sept 2		| [Introduction](https://github.com/ubccpsc/310/blob/master/resources/readings/Introduction.md), [Teamwork](https://github.com/ubccpsc/310/blob/master/resources/readings/Teamwork.md), [Languages](https://github.com/ubccpsc/310/blob/master/resources/readings/Languages.md), & [Async](readings/Async.md) | Week 0 Survey - TBD |
+| Week 1: Sept 9		| [Testing](https://github.com/ubccpsc/310/blob/master/resources/readings/Testing.md) | Week 1 Survey - TBD |
+| Week 2: Sept 16	| [Process & Agile](https://github.com/ubccpsc/310/blob/master/resources/readings/Process.md) | Week 2 Survey - TBD |
+| Week 3: Sept 23	| [Specifications](https://github.com/ubccpsc/310/blob/master/resources/readings/Specifications.md) & [User Stories](https://github.com/ubccpsc/310/blob/master/resources/readings/SpecificationsUserStories.md) | Week 3 Survey - TBD |
+| Week 4: Sept 30	| [Testability & Assertions](https://github.com/ubccpsc/310/blob/master/resources/readings/TestabilityAssertions.md) | Week 4 Survey - TBD |
+| Week 5: Oct 7		| High Level design: <ul><li>[High-level design](https://github.com/ubccpsc/310/blob/master/resources/readings/HighLevelDesign.md) </li><li>[Technical Representations](https://github.com/ubccpsc/310/blob/master/resources/readings/Representations.md)</li><li>[APIs](https://github.com/ubccpsc/310/blob/master/resources/readings/API.md)</li></ul> | D1 Survey - Oct 14 @ 1900 (Mandatory!) - TBD | 
+| Week 6: Oct 14		| High-level design: <ul><li>[Design principles](https://github.com/ubccpsc/310/blob/master/resources/readings/DesignPrinciples.md)</li></ul> | Week 6 - Oct 15 @ 0800 - TBD |
 | Week 7: Oct 21		| Midterm (Tuesday in class) & High-level design (Thurs) | No survey this week |
-| Week 8: Oct 28		| [Low-level design](readings/LowLevelDesign.md) | Week 8 Survey - Oct 28 @ 0800 |
-| Week 9: Nov 4		| <ul><li>[Low-level design](readings/LowLevelDesign.md)</li><li>[MV*](readings/MVStar.md)</li></ul> | D2 Survey - Nov 5 @ 1900 (Mandatory!) - TBD  |
-| Week 10: Nov 11	| [InfoSec](readings/Security.md), IP, & Ethics | Week 10 Survey - Nov 11 @ 0800 - TBD |
-| Week 11: Nov 18	| [REST](readings/REST.md) | Week 11 Survey - Nov 18 @ 0800 TBD |
-| Week 12: Nov 25	| Construction, [Automation](readings/Automation.md), & [Refactoring](readings/Refactoring.md) | D3 Survey - Nov 25 @ 1900 (Mandatory!) - TBD |
+| Week 8: Oct 28		| [Low-level design](https://github.com/ubccpsc/310/blob/master/resources/readings/LowLevelDesign.md) | Week 8 Survey - Oct 28 @ 0800 |
+| Week 9: Nov 4		| <ul><li>[Low-level design](https://github.com/ubccpsc/310/blob/master/resources/readings/LowLevelDesign.md)</li><li>[MV*](readings/MVStar.md)</li></ul> | D2 Survey - Nov 5 @ 1900 (Mandatory!) - TBD  |
+| Week 10: Nov 11	| [InfoSec](https://github.com/ubccpsc/310/blob/master/resources/readings/Security.md), IP, & Ethics | Week 10 Survey - Nov 11 @ 0800 - TBD |
+| Week 11: Nov 18	| [REST](https://github.com/ubccpsc/310/blob/master/resources/readings/REST.md) | Week 11 Survey - Nov 18 @ 0800 TBD |
+| Week 12: Nov 25	| Construction, [Automation](https://github.com/ubccpsc/310/blob/master/resources/readings/Automation.md), & [Refactoring](https://github.com/ubccpsc/310/blob/master/resources/readings/Refactoring.md) | D3 Survey - Nov 25 @ 1900 (Mandatory!) - TBD |
 | TBD | Final exam @ TBD  | &nbsp; |
 
 It is expected that you will watch the videos for a week prior to coming to class. This will greatly increase your understanding of what will be happening in lecture and make it much easier for you to participate in any hands-on activities we will be doing. The videos below will be annotated with week indicators (W0, W1, etc.) once we know when each should be watched to prepare for lecture that week.
