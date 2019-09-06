@@ -133,8 +133,8 @@ This is a high-level overview of what the course will be about. Expect this list
 
 | Week					| Topic & Readings 	| Survey |
 |---					|---					|--- |
-| Week 0: Sept 2		| [Introduction](https://github.com/ubccpsc/310/blob/master/resources/readings/Introduction.md), [Teamwork](https://github.com/ubccpsc/310/blob/master/resources/readings/Teamwork.md), [Languages](https://github.com/ubccpsc/310/blob/master/resources/readings/Languages.md), & [Async](https://github.com/ubccpsc/310/blob/master/resources/readings/Async.md) | (Week 0 Survey)[https://ubc.ca1.qualtrics.com/jfe/form/SV_etWXaqdLm4MgWsB] - Due Sept 14 |
-| Week 1: Sept 9		| [Testing](https://github.com/ubccpsc/310/blob/master/resources/readings/Testing.md) | (Week 1 Survey)[https://ubc.ca1.qualtrics.com/jfe/form/SV_b8INsRa4kTkXJeR] - Due Sept 9 @ 0800 |
+| Week 0: Sept 2		| [Introduction](https://github.com/ubccpsc/310/blob/master/resources/readings/Introduction.md), [Teamwork](https://github.com/ubccpsc/310/blob/master/resources/readings/Teamwork.md), [Languages](https://github.com/ubccpsc/310/blob/master/resources/readings/Languages.md), & [Async](https://github.com/ubccpsc/310/blob/master/resources/readings/Async.md) | [Week 0 Survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_etWXaqdLm4MgWsB) - Due Sept 14 @ 0800 |
+| Week 1: Sept 9		| [Testing](https://github.com/ubccpsc/310/blob/master/resources/readings/Testing.md) | [Week 1 Survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_b8INsRa4kTkXJeR) - Due Sept 9 @ 0800 |
 | Week 2: Sept 16	| [Process & Agile](https://github.com/ubccpsc/310/blob/master/resources/readings/Process.md) | Week 2 Survey - TBD |
 | Week 3: Sept 23	| [Specifications](https://github.com/ubccpsc/310/blob/master/resources/readings/Specifications.md) & [User Stories](https://github.com/ubccpsc/310/blob/master/resources/readings/SpecificationsUserStories.md) | Week 3 Survey - TBD |
 | Week 4: Sept 30	| [Testability & Assertions](https://github.com/ubccpsc/310/blob/master/resources/readings/TestabilityAssertions.md) | Week 4 Survey - TBD |
