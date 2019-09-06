@@ -96,21 +96,18 @@ For admin-related questions (questions about late surveys/deliverables, illness,
 * Ada Li
 * Annie Wang
 * Arash Haj
+* Braxton Hall
 * Chi Duong
 * Eishan Lawrence
 * Harman Gakhal
-* Kenny Kwan
 * Ivan Zhang
-* Arash Haj
-* Chi Duong
-* Harman Gakhal
+* James Yoo
+* Kenny Kwan
 * Noa Heyl
 * Oscar Tu
+* Will Zhang
 * Yilan Yan
 * Yvonne Li
-* Will Zhang
-* Braxton Hall
-* James Yoo
 
 *TA Office Hours*:
 
