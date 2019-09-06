@@ -4,7 +4,7 @@ To start using this project, you need to get your computer configured so you can
 
 1. [Install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) (you should be able to execute `git --version` on the command line).
 
-1. [Install Node LTS (8.9.X)](https://nodejs.org/en/download/), which will also install NPM (you should be able to execute `node --version` and `npm --version` the command line).
+1. [Install Node LTS (10.X)](https://nodejs.org/en/download/), which will also install NPM (you should be able to execute `node --version` and `npm --version` the command line).
 
 1. [Install Yarn](https://yarnpkg.com/en/docs/install). You should be able to execute `yarn --version` afterwards.
 
