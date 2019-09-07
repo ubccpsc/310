@@ -112,8 +112,10 @@ For admin-related questions (questions about late surveys/deliverables, illness,
 *TA Office Hours*:
 
 | Date/Time		| Location 	| TA 	   	|
-|---				|---		 	|--- 		|
-| TBD          	| DLC	TBD		| TBD     |
+|---		     |---		|--- 		|
+| Mon 1100 - 1300| ICCS 015	| Yvonne Li 
+| Mon 1400 - 1600| ICCS 015 | Kenny Kwan
+| Tue 1400 - 1600| ICCS 015 | Eishan Lawrence
 
 ### Piazza
 
