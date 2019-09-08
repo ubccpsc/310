@@ -110,7 +110,6 @@ It is extremely important that you remember that your partner is your **best** r
 
 * On [dependence, independence, and interdependence](https://carogiana.wordpress.com/personal-essays/dependence-independence-interdependence-codependence/) from a psychological point of view.
 
-
 * Another [view](https://www.cs.purdue.edu/homes/bxd/307/Teamwork.pdf) on SE teamwork.
 
 <!--
