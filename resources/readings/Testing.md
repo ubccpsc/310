@@ -79,15 +79,15 @@ Testing as an engineering discipline notes
 
 * Steve Easterbrook [testing 2](http://www.cs.toronto.edu/~sme/CSC302/notes/17-Testing2.pdf).
 
-* Laurie Williams [black box testing notes](http://agile.csc.ncsu.edu/SEMaterials/BlackBox.pdf).
+* Laurie Williams [black box testing notes](https://students.cs.byu.edu/~cs340ta/spring2019/readings/BlackBox.pdf).
 
-* Laurie Williams [white box testing notes](http://agile.csc.ncsu.edu/SEMaterials/WhiteBox.pdf).
+* Laurie Williams [white box testing notes](https://students.cs.byu.edu/~cs340ta/spring2019/readings/WhiteBox.pdf).
 
 * Laurie Williams [automated testing notes](http://agile.csc.ncsu.edu/SEMaterials/AgileTesting.pdf) 
 
 * MIT testing [slides](http://measure.cc.gt.atl.ga.us/classes/cs6300/Lectures/class18testing.pdf).
 
-* Jim Cordy's [quality assurance](http://research.cs.queensu.ca/home/cordy/cisc327/index.html) course.
+* Jim Cordy's [quality assurance](http://research.cs.queensu.ca/home/joshuad/web327/Website/) course.
 <!-- look at Laurie's automated testing notes more -->
 
 <!-- look at Jim's automated testing notes more -->
