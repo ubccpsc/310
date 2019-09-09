@@ -30,7 +30,7 @@ This is a pair-programming course: If you want to work with someone specific for
 
 ### Cheating:
 
-**IMPORTANT: DO NOT CHEAT ON THE PROJECT.** Don't copy code from others or the web. Don't share code. This is all outlined in the rules listed [here](#academic-misconduct). Both you and your partner will lose all the points for any shared or copied code. Make sure every line of code you commit is either provided by us, or written by you (or your partner). Cases will be referred to the dean and students have been suspended for copying in past terms.
+**IMPORTANT: DO NOT CHEAT ON THE PROJECT.** Don't copy code from others or the web. Don't share code. Concrete details are [given below](#derivative-copied-code). Both you and your partner will receive 0 points for any shared or copied code (from both the team that copied, **and** the team that was copied from). Make sure every line of code you commit is either provided by us, or written by you (or your partner). Cases will be referred to the dean and students have been suspended for copying in past terms.
 
 ## CPSC 310 Overview
 
