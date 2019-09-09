@@ -18,7 +18,7 @@
 
 ### Course request forms, waitlists, etc.:
 
-Unfortunately, we cannot sign course registration forms and have no knowledge or control over the class composition or waitlists. If you have any questions about registration, please contact the [CS advisors](https://www.cs.ubc.ca/students/undergrad/resources/academic-advising). The waitlists will be frozen on **Friday, September 4** and no additional students will be added to the course.
+Unfortunately, we cannot sign course registration forms and have no knowledge or control over the class composition or waitlists. If you have any questions about registration, please contact the [CS advisors](https://www.cs.ubc.ca/students/undergrad/resources/academic-advising). The waitlists will be frozen on **Friday, September 6** and no additional students will be added to the course.
 
 For admin-related questions, please contact: `cpsc310-admin@cs.ubc.ca` to ensure a timely and accurate response. This is the same procedure as for first and second year CS classes.
 
@@ -96,21 +96,18 @@ For admin-related questions (questions about late surveys/deliverables, illness,
 * Ada Li
 * Annie Wang
 * Arash Haj
+* Braxton Hall
 * Chi Duong
 * Eishan Lawrence
 * Harman Gakhal
-* Kenny Kwan
 * Ivan Zhang
-* Arash Haj
-* Chi Duong
-* Harman Gakhal
+* James Yoo
+* Kenny Kwan
 * Noa Heyl
 * Oscar Tu
+* Will Zhang
 * Yilan Yan
 * Yvonne Li
-* Will Zhang
-* Braxton Hall
-* James Yoo
 
 *TA Office Hours*:
 
@@ -136,8 +133,8 @@ This is a high-level overview of what the course will be about. Expect this list
 
 | Week					| Topic & Readings 	| Survey |
 |---					|---					|--- |
-| Week 0: Sept 2		| [Introduction](https://github.com/ubccpsc/310/blob/master/resources/readings/Introduction.md), [Teamwork](https://github.com/ubccpsc/310/blob/master/resources/readings/Teamwork.md), [Languages](https://github.com/ubccpsc/310/blob/master/resources/readings/Languages.md), & [Async](readings/Async.md) | Week 0 Survey - TBD (Due Sept 9) |
-| Week 1: Sept 9		| [Testing](https://github.com/ubccpsc/310/blob/master/resources/readings/Testing.md) | Week 1 Survey - TBD |
+| Week 0: Sept 2		| [Introduction](https://github.com/ubccpsc/310/blob/master/resources/readings/Introduction.md), [Teamwork](https://github.com/ubccpsc/310/blob/master/resources/readings/Teamwork.md), [Languages](https://github.com/ubccpsc/310/blob/master/resources/readings/Languages.md), & [Async](https://github.com/ubccpsc/310/blob/master/resources/readings/Async.md) | [Week 0 Survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_etWXaqdLm4MgWsB) - Due Sept 14 @ 0800 |
+| Week 1: Sept 9		| [Testing](https://github.com/ubccpsc/310/blob/master/resources/readings/Testing.md) | [Week 1 Survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_b8INsRa4kTkXJeR) - Due Sept 9 @ 0800 |
 | Week 2: Sept 16	| [Process & Agile](https://github.com/ubccpsc/310/blob/master/resources/readings/Process.md) | Week 2 Survey - TBD |
 | Week 3: Sept 23	| [Specifications](https://github.com/ubccpsc/310/blob/master/resources/readings/Specifications.md) & [User Stories](https://github.com/ubccpsc/310/blob/master/resources/readings/SpecificationsUserStories.md) | Week 3 Survey - TBD |
 | Week 4: Sept 30	| [Testability & Assertions](https://github.com/ubccpsc/310/blob/master/resources/readings/TestabilityAssertions.md) | Week 4 Survey - TBD |
