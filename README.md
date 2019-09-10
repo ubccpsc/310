@@ -3,14 +3,6 @@
 ### 2019 Winter Term 1 (both sections)
 
 <!--
-#### Note: Expect frequent updates to this page as the course progresses.
--->
-T
-<!--
-#### Please login to [here](https://github.ugrad.cs.ubc.ca/) using your CS Ugrad Id/Password by 1400 on the Friday of the first week of class; this is required so we can provision your d0 repository for you to use in lab during the second week of class.
--->
-
-<!--
 #### This is a development-heavy four-credit course. Plan your timetable accordingly. If you are not familiar with TypeScript, please start looking at it now.
 -->
 
