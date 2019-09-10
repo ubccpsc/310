@@ -5,7 +5,7 @@
 <!--
 #### Note: Expect frequent updates to this page as the course progresses.
 -->
-
+T
 <!--
 #### Please login to [here](https://github.ugrad.cs.ubc.ca/) using your CS Ugrad Id/Password by 1400 on the Friday of the first week of class; this is required so we can provision your d0 repository for you to use in lab during the second week of class.
 -->
@@ -133,9 +133,9 @@ This is a high-level overview of what the course will be about. Expect this list
 
 | Week					| Topic & Readings 	| Survey |
 |---					|---					|--- |
-| Week 0: Sept 2		| [Introduction](https://github.com/ubccpsc/310/blob/master/resources/readings/Introduction.md), [Teamwork](https://github.com/ubccpsc/310/blob/master/resources/readings/Teamwork.md), [Languages](https://github.com/ubccpsc/310/blob/master/resources/readings/Languages.md), & [Async](https://github.com/ubccpsc/310/blob/master/resources/readings/Async.md) | [Week 0 Survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_etWXaqdLm4MgWsB) - Due Sept 14 @ 0800 |
+| Week 0: Sept 2		| [Introduction](https://github.com/ubccpsc/310/blob/master/resources/readings/Introduction.md) [Languages](https://github.com/ubccpsc/310/blob/master/resources/readings/Languages.md) | [Week 0 Survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_etWXaqdLm4MgWsB) - Due Sept 14 @ 0800 |
 | Week 1: Sept 9		| [Testing](https://github.com/ubccpsc/310/blob/master/resources/readings/Testing.md) | [Week 1 Survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_b8INsRa4kTkXJeR) - Due Sept 9 @ 0800 |
-| Week 2: Sept 16	| [Process & Agile](https://github.com/ubccpsc/310/blob/master/resources/readings/Process.md) | Week 2 Survey - TBD |
+| Week 2: Sept 16	| [Process & Agile](https://github.com/ubccpsc/310/blob/master/resources/readings/Process.md), [Teamwork](https://github.com/ubccpsc/310/blob/master/resources/readings/Teamwork.md), & [Async](https://github.com/ubccpsc/310/blob/master/resources/readings/Async.md) | Week 2 Survey - TBD |
 | Week 3: Sept 23	| [Specifications](https://github.com/ubccpsc/310/blob/master/resources/readings/Specifications.md) & [User Stories](https://github.com/ubccpsc/310/blob/master/resources/readings/SpecificationsUserStories.md) | Week 3 Survey - TBD |
 | Week 4: Sept 30	| [Testability & Assertions](https://github.com/ubccpsc/310/blob/master/resources/readings/TestabilityAssertions.md) | Week 4 Survey - TBD |
 | Week 5: Oct 7		| High Level design: <ul><li>[High-level design](https://github.com/ubccpsc/310/blob/master/resources/readings/HighLevelDesign.md) </li><li>[Technical Representations](https://github.com/ubccpsc/310/blob/master/resources/readings/Representations.md)</li><li>[APIs](https://github.com/ubccpsc/310/blob/master/resources/readings/API.md)</li></ul> | D1 Survey - Oct 7 @ 1900 (Mandatory!) - TBD | 
@@ -303,9 +303,9 @@ W11: [REST Development: Part 3](http://www.youtube.com/watch?v=JiojH8HfUps)
 ### Languages & Concurrency
 
 W0: [Programming Language Introduction](http://www.youtube.com/watch?v=U-ihh6bsDz4)  
-W0: [Introduction to Concurrency and Asynchronous Development: Part 1](http://www.youtube.com/watch?v=T__CJfXswbA)  
-W0: [Introduction to Concurrency and Asynchronous Development: Part 2](http://www.youtube.com/watch?v=ZyiLFip7nqk)  
-W0: [Introduction to Concurrency and Asynchronous Development: Part 3](http://www.youtube.com/watch?v=xwSUBY2tIm4)  
+W2: [Introduction to Concurrency and Asynchronous Development: Part 1](http://www.youtube.com/watch?v=T__CJfXswbA)  
+W2: [Introduction to Concurrency and Asynchronous Development: Part 2](http://www.youtube.com/watch?v=ZyiLFip7nqk)  
+W2: [Introduction to Concurrency and Asynchronous Development: Part 3](http://www.youtube.com/watch?v=xwSUBY2tIm4)  
 
 ### Information Security
 
