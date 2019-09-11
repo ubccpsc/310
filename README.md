@@ -103,9 +103,18 @@ For admin-related questions (questions about late surveys/deliverables, illness,
 
 *TA Office Hours*:
 
-| Date/Time		| Location 	| TA 	   	|
-|---				|---		 	|--- 		|
-| TBD          	| DLC	TBD		| TBD     |
+| Date/Time		  | Location | TA 	   	|
+|---		      |---		 |--- 		|
+| Mon 1100 - 1300 | ICCS 015 | Ada, James
+| Mon 1400 - 1600 | ICCS 015 | Braxton, Kenny
+| Mon 1600 - 1800 | ICCS 015 | Braxton, Yvonne
+| Tue 1100 - 1300 | DLC      | Eishan Lawrence
+| Wed 1100 - 1300 | DLC      | Ada
+| Thu 1300 - 1500 | DLC      | Eishan
+| Fri 1000 - 1200 | ICCS 015 | Arash, Yilan
+| Fri 1200 - 1400 | ICCS 015 | Ada, Harman
+| Fri 1400 - 1600 | ICCS 015 | Yvonne, Chi
+| Fri 1600 - 1800 | ICCS 015 | Harman, Noa
 
 ### Piazza
 
@@ -335,22 +344,22 @@ Labs
 
 If you are on the waitlist, please attend any lab that works for you until you are able to get in the course. Lab sections must be finalized by the add/drop date. If you have course conflicts in your schedule that prevent you taking labs with available seats, please talk to the [CS advisors](https://www.cs.ubc.ca/students/undergrad/resources/academic-advising); unfortunately the course staff is not able to control who is in the lab or lecture.
 
-| Lab | Time 		 |
-| :-- |:-- 		 |
-| L1N | Tue 0900-1100	 | 
-| L1M | Tue 1530-1700	 |
-| L1E | Tue 1700-1900	 | 
-| L1H | Wed 0900-1100	 | 
-| L1B | Wed 1100-1300	 | 
-| L1D | Wed 1300-1500	 | 
-| L1C | Wed 1500-1700	 | 
-| L1G | Thu 1030-1230	 | 
-| L1F | Thu 1400-1600	 | 
-| L1J | Thu 1700-1900	 | 
-| L1K | Fri 0900-1100	 | 
-| L1L | Fri 1100-1300	 | 
-| L1A | Fri 1400-1600	 | 
-| L1P | Fri 1600-1800	 | 
+| Lab | Time 		 | TAs
+| :-- |:-- 		 | :--
+| L1N | Tue 0900-1100	 | Yilan, Will
+| L1M | Tue 1530-1700	 | Harman, James
+| L1E | Tue 1700-1900	 | Annie, Will, Eishan
+| L1H | Wed 0900-1100	 | Kenny, Oscar, Yilan
+| L1B | Wed 1100-1300	 | Annie, James, Noa
+| L1D | Wed 1300-1500	 | Braxton, Arash, Oscar
+| L1C | Wed 1500-1700	 | Braxton, Yvonne, Noa
+| L1G | Thu 1030-1230	 | Ada, Harman, Junze
+| L1F | Thu 1400-1600	 | Arash, Chi, Annie
+| L1J | Thu 1700-1900	 | Will, Chi, Eishan
+| L1K | Fri 0900-1100	 | Kenny, James
+| L1L | Fri 1100-1300	 | Oscar, Annie
+| L1A | Fri 1400-1600	 | Arash, Kenny, Oscar
+| L1P | Fri 1600-1800	 | Will, Yvonne, Chi
 
 You will not have to specify your team until the week of Sept 16. Both team members will be required to attend each lab. During the week each deliverable is due, lab attendance will be verified by the TAs during the Oral Question process; absence will result in a grade of 0 for the deliverable.
 
