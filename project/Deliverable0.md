@@ -1,7 +1,7 @@
 # Deliverable 0: TDD Individual Deliverable
 
 
-Test-driven development (TDD) is one [modern technique](../readings/Process.md#tdd) for building software. As the name suggests, engineers write tests for every requirement in the specification _before_ they create the implementation. This makes it much easier to ensure the final product has at least a base level of testing.
+Test-driven development (TDD) is one [modern technique](https://github.com/ubccpsc/310/blob/master/resources/readings/Process.md#tdd) for building software. As the name suggests, engineers write tests for every requirement in the specification _before_ they create the implementation. This makes it much easier to ensure the final product has at least a base level of testing.
 
 In terms of the course project, adopting TDD will ensure you understand all the requirements of the specification before getting buried in the details of your implementation. This is important because implementing code that doesn't meet the requirements _will_ increase the amount of work you need to do for the project.
 
@@ -66,8 +66,8 @@ And don't worry, we expect much (if not most) of this to be new, and that's fact
 
 **Q. I've logged in to GitHub, but don't have a repo?**
 
-A. Make sure to logged into [github.students.cs.ubc.ca](github.students.cs.ubc.ca) with your csid, not [github.com](github.com) or [github.ubc.ca](github.ubc.ca). Repo provisioning is done in batches. If you still don't have a repo then, please make a Piazza post with your csid. 
-Also take a look at your profile and see if you see the CPSC310-2019W-T1 organization, you may have a 'team' (of one) in that owns the repo.
+A. Make sure to logged into [https://github.students.cs.ubc.ca](https://github.students.cs.ubc.ca) with your csid, not [https://github.com](https://github.com) or [https://github.ubc.ca](https://github.ubc.ca). Repo provisioning is done in batches. If you still don't have a repo then, please make a Piazza post with your csid. 
+Also take a look at your profile and see if you see the `CPSC310-2019W-T1` organization, you may have a 'team' (of one) in that owns the repo.
 
  
 
