@@ -80,7 +80,7 @@ In the meantime for the first week, you should go to a lab even if you are not r
 
 **Q. How should I format my tests?**
 
-You can return the promise created by your function call, and use appropriate expect statements in the `then()` and `catch()` blocks. For example:
+A. You can return the promise created by your function call, and use appropriate expect statements in the `then()` and `catch()` blocks. For example:
 ```typescript
 it("Should do something", () => {
     return insightFacade.methodName(params).then(function (response: type) {
