@@ -494,7 +494,7 @@ A. You are querying the individual sections found within the course files.
 
 \~Datasets\~
 
-**Q. How many sections does courses.zip have (i.e. what would a listDataset's numRows be)?
+**Q. How many sections does courses.zip have (i.e. what would a listDataset's numRows be)?**
 
 A. 64612
 
