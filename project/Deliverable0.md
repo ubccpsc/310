@@ -90,7 +90,20 @@ it("Should do something", () => {
     });
 });
 ```
- 
+or if you need to nest, this is the ideal way to do it
+```typescript
+it("Should do something in two steps", () => {
+    return insightFacade.methodToRunFirst(params).then(function (response: type) {
+        return insightFacade.methodToRunSecond(params);
+    }).then(function (response: type) { // Note: response here comes from methodToRunSecond.
+        expect... /* OR */ expect.fail() // Depending if it was supposed to resolve or reject
+    }).catch(function (response: type) {
+        expect... /* OR */ expect.fail() // Depending if it was supposed to resolve or reject
+        // Though note that this will happen if *either* fail. Uglier nesting could get around this
+    });
+});
+```
+
 **Q. How should I create expected output for performQuery?**
 
 A. You can use your [reference UI](https://cs310.students.cs.ubc.ca/ui/index.html) and copy the result output.
