@@ -383,7 +383,7 @@ export interface IInsightFacade {
      *
      * An id is invalid if it contains an underscore, or is only whitespace characters.
      * 
-     * The promise should fulfill the id of the dataset that was removed.
+     * The promise should fulfill with the id of the dataset that was removed.
      * The promise should reject with a NotFoundError (if a valid id was not yet added)
      * or an InsightError (invalid id or any other source of failure) describing the error.
      *
@@ -494,6 +494,9 @@ A. You are querying the individual sections found within the course files.
 
 \~Datasets\~
 
+**Q. How many sections does courses.zip have (i.e. what would a listDataset's numRows be)?**
+
+A. 64612
 
 **Q. What do the parameters to addDataset mean?**
 

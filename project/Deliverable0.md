@@ -1,11 +1,11 @@
 # Deliverable 0: TDD Individual Deliverable
 
 
-Test-driven development (TDD) is one [modern technique](../readings/Process.md#tdd) for building software. As the name suggests, engineers write tests for every requirement in the specification _before_ they create the implementation. This makes it much easier to ensure the final product has at least a base level of testing.
+Test-driven development (TDD) is one [modern technique](https://github.com/ubccpsc/310/blob/master/resources/readings/Process.md#tdd) for building software. As the name suggests, engineers write tests for every requirement in the specification _before_ they create the implementation. This makes it much easier to ensure the final product has at least a base level of testing.
 
 In terms of the course project, adopting TDD will ensure you understand all the requirements of the specification before getting buried in the details of your implementation. This is important because implementing code that doesn't meet the requirements _will_ increase the amount of work you need to do for the project.
 
-In this deliverable you will be reading a specification and writing a set of tests against that spec. To evaluate the completeness of your test suite for the spec we will execute your suite against our own system to measure how well your tests [cover](../readings/Testing.md#coverage) our implementation.
+In this deliverable you will be reading a specification and writing a set of tests against that spec. To evaluate the completeness of your test suite for the spec we will execute your suite against our own system to measure how well your tests [cover](https://github.com/ubccpsc/310/blob/master/resources/readings/WhiteBoxTesting.md#coverage) our implementation.
 
 ## Getting the starter code
 
@@ -66,8 +66,8 @@ And don't worry, we expect much (if not most) of this to be new, and that's fact
 
 **Q. I've logged in to GitHub, but don't have a repo?**
 
-A. Make sure to logged into [github.students.cs.ubc.ca](github.students.cs.ubc.ca) with your csid, not [github.com](github.com) or [github.ubc.ca](github.ubc.ca). Repo provisioning is done in batches. If you still don't have a repo then, please make a Piazza post with your csid. 
-Also take a look at your profile and see if you see the CPSC310-2019W-T1 organization, you may have a 'team' (of one) in that owns the repo.
+A. Make sure to logged into [https://github.students.cs.ubc.ca](https://github.students.cs.ubc.ca) with your csid, not [https://github.com](https://github.com) or [https://github.ubc.ca](https://github.ubc.ca). Repo provisioning is done in batches. If you still don't have a repo then, please make a Piazza post with your csid. 
+Also take a look at your profile and see if you see the `CPSC310-2019W-T1` organization, you may have a 'team' (of one) in that owns the repo.
 
  
 
@@ -80,30 +80,30 @@ In the meantime for the first week, you should go to a lab even if you are not r
 
 **Q. How should I format my tests?**
 
-A. You can use the async/await syntax like in the bootstrap,
+A. You can return the promise created by your function call, and use appropriate expect statements in the `then()` and `catch()` blocks. For example:
 ```typescript
-it("Should do something", async () => {
-    let response: type;
-    try {
-        response = await insightFacade.methodName(params);
-    } catch (err) {
-        response = err;
-    } finally {
-        expect(response).to.deep.equal(expectedValue);
-    }
-});
-```
-or you can return the promise created by your function call, and use appropriate expect statements in the `then()` and `catch()` blocks. For example:
-```typescript
-it("Should do something", () => {
-    return insightFacade.methodName(params).then(function (response: type) {
+it("Should do something", function () {
+    return insightFacade.methodName(params).then((response: type) => {
         expect... /* OR */ expect.fail() // Depending if it was supposed to resolve or reject
-    }).catch(function (response: type) {
+    }).catch((error: type) => {
         expect... /* OR */ expect.fail() // Depending if it was supposed to resolve or reject
     });
 });
 ```
- 
+or if you need to nest, this is the ideal way to do it
+```typescript
+it("Should do something in two steps", function () {
+    return insightFacade.methodToRunFirst(params).then((response: type) => {
+        return insightFacade.methodToRunSecond(params);
+    }).then((response: type) => { // Note: response here comes from methodToRunSecond.
+        expect... /* OR */ expect.fail() // Depending if it was supposed to resolve or reject
+    }).catch((error: type) => {
+        expect... /* OR */ expect.fail() // Depending if it was supposed to resolve or reject
+        // Though note that this will happen if *either* fail. Uglier nesting could get around this
+    });
+});
+```
+
 **Q. How should I create expected output for performQuery?**
 
 A. You can use your [reference UI](https://cs310.students.cs.ubc.ca/ui/index.html) and copy the result output.
