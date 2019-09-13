@@ -134,7 +134,7 @@ This is a high-level overview of what the course will be about. Expect this list
 
 | Week					| Topic & Readings 	| Survey |
 |---					|---					|--- |
-| Week 0: Sept 2		| [Introduction](https://github.com/ubccpsc/310/blob/master/resources/readings/Introduction.md) [Languages](https://github.com/ubccpsc/310/blob/master/resources/readings/Languages.md) | [Week 0 Survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_etWXaqdLm4MgWsB) - Due Sept 14 @ 0800 |
+| Week 0: Sept 2		| [Introduction](https://github.com/ubccpsc/310/blob/master/resources/readings/Introduction.md) [Languages](https://github.com/ubccpsc/310/blob/master/resources/readings/Languages.md) | Week 0 Survey - Expired |
 | Week 1: Sept 9		| [Testing](https://github.com/ubccpsc/310/blob/master/resources/readings/Testing.md) | Week 1 Survey - Expired |
 | Week 2: Sept 16	| [Process & Agile](https://github.com/ubccpsc/310/blob/master/resources/readings/Process.md), [Teamwork](https://github.com/ubccpsc/310/blob/master/resources/readings/Teamwork.md), & [Async](https://github.com/ubccpsc/310/blob/master/resources/readings/Async.md) | [Week 2 Survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_6XURBUZpWTf5qDj) - Due Sept 16 @ 0800 |
 | Week 3: Sept 23	| [Specifications](https://github.com/ubccpsc/310/blob/master/resources/readings/Specifications.md) & [User Stories](https://github.com/ubccpsc/310/blob/master/resources/readings/SpecificationsUserStories.md) | Week 3 Survey - TBD |
