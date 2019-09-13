@@ -80,30 +80,30 @@ In the meantime for the first week, you should go to a lab even if you are not r
 
 **Q. How should I format my tests?**
 
-A. You can use the async/await syntax like in the bootstrap,
+A. You can return the promise created by your function call, and use appropriate expect statements in the `then()` and `catch()` blocks. For example:
 ```typescript
-it("Should do something", async () => {
-    let response: type;
-    try {
-        response = await insightFacade.methodName(params);
-    } catch (err) {
-        response = err;
-    } finally {
-        expect(response).to.deep.equal(expectedValue);
-    }
-});
-```
-or you can return the promise created by your function call, and use appropriate expect statements in the `then()` and `catch()` blocks. For example:
-```typescript
-it("Should do something", () => {
-    return insightFacade.methodName(params).then(function (response: type) {
+it("Should do something", function () {
+    return insightFacade.methodName(params).then((response: type) => {
         expect... /* OR */ expect.fail() // Depending if it was supposed to resolve or reject
-    }).catch(function (response: type) {
+    }).catch((error: type) => {
         expect... /* OR */ expect.fail() // Depending if it was supposed to resolve or reject
     });
 });
 ```
- 
+or if you need to nest, this is the ideal way to do it
+```typescript
+it("Should do something in two steps", function () {
+    return insightFacade.methodToRunFirst(params).then((response: type) => {
+        return insightFacade.methodToRunSecond(params);
+    }).then((response: type) => { // Note: response here comes from methodToRunSecond.
+        expect... /* OR */ expect.fail() // Depending if it was supposed to resolve or reject
+    }).catch((error: type) => {
+        expect... /* OR */ expect.fail() // Depending if it was supposed to resolve or reject
+        // Though note that this will happen if *either* fail. Uglier nesting could get around this
+    });
+});
+```
+
 **Q. How should I create expected output for performQuery?**
 
 A. You can use your [reference UI](https://cs310.students.cs.ubc.ca/ui/index.html) and copy the result output.
