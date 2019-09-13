@@ -5,7 +5,7 @@ Test-driven development (TDD) is one [modern technique](https://github.com/ubccp
 
 In terms of the course project, adopting TDD will ensure you understand all the requirements of the specification before getting buried in the details of your implementation. This is important because implementing code that doesn't meet the requirements _will_ increase the amount of work you need to do for the project.
 
-In this deliverable you will be reading a specification and writing a set of tests against that spec. To evaluate the completeness of your test suite for the spec we will execute your suite against our own system to measure how well your tests [cover](../readings/Testing.md#coverage) our implementation.
+In this deliverable you will be reading a specification and writing a set of tests against that spec. To evaluate the completeness of your test suite for the spec we will execute your suite against our own system to measure how well your tests [cover](https://github.com/ubccpsc/310/blob/master/resources/readings/WhiteBoxTesting.md#coverage) our implementation.
 
 ## Getting the starter code
 
