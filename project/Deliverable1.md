@@ -95,7 +95,7 @@ The keys that are used in the queries aren't exactly as they appear in the datas
 Valid keys are composed by two parts, separated by an underscore: `<id>_<key>`
 
 - `<id>` is provided by the user and will be received through the `addDataset()` method, [check the API spec to better understand how it should work](https://github.com/ubccpsc/310/blob/2019sept/project/Deliverable1.md#api). For a query to be valid, all keys must have the same `id` (i.e. refer to the same dataset)
-- `<key>` is the key that represents a given piece of information. For this deliverable you will parse the following keys: `dept`, `id`, `instructor`, `title`, `pass`, `fail`, `audit`, `uuid`, and `avg`.
+- `<key>` is the key that represents a given piece of information. For this deliverable you will parse the following keys: `dept`, `id`, `instructor`, `title`, `pass`, `fail`, `audit`, `uuid`, `avg`, and `year`.
 
 For instance, if the `id` sent by the user is `courses`, then the queries you will run will be using the following keys:
 
