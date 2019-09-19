@@ -1,8 +1,12 @@
 # Promises Tutorial
 
+
+
 <!-- Adapted from https://docs.google.com/document/d/e/2PACX-1vTCJJ5hV2L5xBNRP4K6EL7D8Ai-2m4KWzgmRu_Z4DzSI-U-V-IhbrpDhZPrLzPdq6l4n101iCQDOT4J/pub -->
 
 _Note: Some code samples are written in JavaScript._
+
+### NOTE: SOME OF THE EXAMPLE LINKS ARE BEING REVISED AND MAY BE BROKEN BRIEFLY
 
 When a function is asynchronous, or async, it runs outside of the normal control flow of your program. You can think of it being set aside to run as "to do whenever possible". Some async operations may be dependant on resources outside of your system, such as when making requests from an external server. You won’t know when the function will return, but that doesn’t mean you don’t still need the result.
 
