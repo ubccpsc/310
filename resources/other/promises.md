@@ -20,7 +20,7 @@ setTimeout(toDo, 1000);
 console.log("After setTimeout");
 ```
 
-If you run the [interactive version](https://repl.it/@lucasz/Simple-async), you will see that the output on the right doesn’t match the order that the statements were written in on the left because `setTimeout` waits one second before calling `toDo`. You can also see that the program ended before it printed (the green `=> undefined` is the final return value).
+If you run the [interactive version](https://repl.it/@lucasz/Simple-async-example), you will see that the output on the right doesn’t match the order that the statements were written in on the left because `setTimeout` waits one second before calling `toDo`. You can also see that the program ended before it printed (the green `=> undefined` is the final return value).
 
 Callbacks have a few major drawbacks that are inconvenient to manage:
   - Error handling gets very cumbersome as you can’t throw errors, they have to be passed around as parameters and explicitly checked
