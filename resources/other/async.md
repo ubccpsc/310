@@ -53,3 +53,7 @@ As you’ve probably worked out, the value of yessss and noooooo are bound to th
 ```TS
 myPromise.then(successFoo).catch(failureFoo);
 ```
+
+## Resources
+
+* [Avoiding Async Hell](https://medium.com/@pyrolistical/how-to-get-out-of-promise-hell-8c20e0ab0513)
