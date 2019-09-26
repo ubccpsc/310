@@ -42,6 +42,8 @@ Okay, let's look at some code examples. We'll start with promises that don't hav
 
 [A promise with asynchrony, note the execution order](https://repl.it/@lucasz/Actually-async-promises)
 
+[Some side nodes on using resolve() and reject() when making new promises](https://repl.it/@lucasz/resolve-reject-behaviour)
+
 Alright, now for where things get really useful. Often there will be multiple async operations you want to do, but coordinating them is difficult. The `Promise` class has a static method `all()`, which takes an array of promises as input, and returns a promise. Once all the promises in the array have resolved, `Promise.all()` resolves, and the value is an array of each of the values the promises resolved with. If any of the promises in the array rejects, `Promise.all()` will reject with that value. Again, this should be clearer with [an example](https://repl.it/@lucasz/Promiseall).
 
 This should be the bulk of what you need to get started with promises. Really the best way to understand how they work is to work with them yourself, so playing with the links provided is a great way to learn. Also having log statements in your promises is great for visualizing execution flow when you’re getting used to them.
