@@ -1,6 +1,6 @@
 # White box testing
 
-Most common white box testing approaches leverage coverage to help engineers understand which portions of their systems have or have not been tested.
+Most common white box testing approaches leverage coverage to help engineers understand which portions of their systems have or have not been tested. While white box testing approaches are more commonly used than black box approaches, they can suffer from _confirmation bias_ in that by looking at an implementation, you are more likely to make similar assumptions as the author of the code being tested and miss important test cases. This bias can be helpful though if you are striving for high-coverage in a system you wish to be a reliable indicator for a regression suite as it enables you to be more confident that you are testing all behaviours currently handled by an implementation to ensure they continue to behave similairly as the code evolves.
 
 ### Coverage
 
