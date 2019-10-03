@@ -73,5 +73,7 @@ The stronger the coverage criteria, the more stringently we can say the code was
 * Jo Atlee has a long-form talk on [detecting and resolving software errors](
 https://livestream.com/itmsstudio/events/6919492/videos/147823325?t=1485444595837) that provides additional insight into how coverage is just one piece of a comprehensive testing strategy.
 
+* Walmart Labs has a nice post on how to interpret coverage reports to [address coverage shortcomings](https://medium.com/walmartlabs/do-you-have-100-code-coverage-10c09a44832b) with straigthforward code examples.
+
 ---
 [![](figures/CCSA.png "Creative Commons: Attribution-ShareAlike")](https://creativecommons.org/licenses/by-sa/3.0/) [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
