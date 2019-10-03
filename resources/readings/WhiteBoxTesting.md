@@ -42,9 +42,12 @@ And the following test:
 1:	eval(0, false, false);
 ```
 
-The code has 50% statement coverage (lines 1, 2, 4, 6), 50% branch coverage (only the false branches of the decisions on lines 2 and 4) and 25% path coverage. The following suites would provide 100% coverage for each of the different coverage criteria:
+The code has 50% line and statement coverage (lines 1, 2, 4, 6 are covered while lines 3 and 5 are not), 50% branch coverage (only the false branches of the decisions on lines 2 and 4 are covered) and 25% of possible program paths are covered. The following suites would provide 100% coverage for each of the different coverage criteria:
 
 ```typescript
+// 100% line coverage
+eval(0, true, true);
+
 // 100% statement coverage
 eval(0, true, true);
 
