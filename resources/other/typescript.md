@@ -1,4 +1,4 @@
-# TypeScript/JavaScript Tutorial
+# TypeScript/JavaScript Notes
 
 <!-- Adapted from https://docs.google.com/document/d/e/2PACX-1vR0p0y3_R2VIt6CEs5ZTJPFPLCZMTaVCxMcNofnuokKfoIJj9q6s2bHbOZJkXqwP63sLOtriC5r8dsc/pub -->
 
