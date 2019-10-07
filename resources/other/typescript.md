@@ -12,7 +12,11 @@ You can also play around with JavaScript without setting up a whole project at <
 Some things to watch out for:
 
 - **Variables** JavaScript and TypeScript have three ways to declare variables: `var`, `let`, and `const` with different scoping rules. In general, you should use `const` if you are able to initialize the variable when you declare it and you don't need to change it's value. Note that arrays and objects can often be declared using `const` because you change the values (e.g. with `push` and `pop`) but not the underlying container. Otherwise, you should use `let`. Avoid using `var` since it has a larger scope and may not work as you expect.
-- **Equality** Use `===` instead of `==` (and `!==` instead of `!=`). The triple equal is strict and does what you expect.
+
+- **Equality** Use `===` instead of `==` (and `!==` instead of `!=`). The triple equal is strict and does what you expect. Speicifcally, this means that type coersion is not used with triple equal so strings, booleans, and numbers are not compared in ways you do not expect (e.g., you would expect `true === 'true'` to be `false`, and it is; however `true == 'true'` is `true`, which is probably _not_ what you would expect).
+
+- **this** `this` can refrerence different objects than you might expect; this often happens when processing async functions or during callbacks. A complete description can be found [here](https://github.com/microsoft/TypeScript/wiki/%27this%27-in-TypeScript).
+
 - **Loops** JavaScript has three `for`-style loops with subtle differences. The examples are written in TypeScript.
   - `for`
 
