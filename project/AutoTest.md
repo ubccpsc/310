@@ -67,7 +67,7 @@ AutoTest may fail for the following reasons:
 
 ### Submitting your deliverable
 
-Your highest-scoring graded commit (the first of these if there are ties) will be used as your 'submission'.
+You do not need to submit your deliverable beyond just calling `@autobot` successfully in GitHub. Your highest-scoring graded commit (the first of these if there are ties) will be used as your 'submission'.
 
 ---
 [![](../readings/figures/CCSA.png "Creative Commons: Attribution-ShareAlike")](https://creativecommons.org/licenses/by-sa/3.0/) [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
