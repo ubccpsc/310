@@ -31,7 +31,7 @@ A **valid** dataset:
 * A valid dataset has to contain **at least one valid room** that meets the requirements above.
 
 Additionally, in valid zips the following will always be true:
-* There is a single ```index.htm``` file per dataset in the ```room``` directory of the zip.
+* There is a single ```index.htm``` file per dataset in the ```rooms/``` directory of the zip.
 * All HTML elements and attributes associated with target data will be present in the same forms as in the provided zip file.
 For example, a `<div/>` with the id "room-data" surrounding target fields will always be present in a valid dataset if it is present in the original dataset.
 
