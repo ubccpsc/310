@@ -114,7 +114,7 @@ FILTER ::= (LOGICCOMPARISON | MCOMPARISON | SCOMPARISON | NEGATION)
 
 LOGICCOMPARISON ::= LOGIC ':[{' FILTER ('}, {' FILTER )* '}]'  
 MCOMPARISON ::= MCOMPARATOR ':{' mkey ':' number '}'  
-SCOMPARISON ::= 'IS:{' skey ':' [*]? inputstring [*]? '}'  // inputstring may have option * characters as wildcards
+SCOMPARISON ::= 'IS:{' skey ':' [*]? inputstring [*]? '}'  // Asterisks should act as wildcards. Optional.
 NEGATION ::= 'NOT :{' FILTER '}'
 
 LOGIC ::= 'AND' | 'OR'
