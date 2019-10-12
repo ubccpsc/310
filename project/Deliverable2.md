@@ -18,7 +18,7 @@ As with D1, functional correctness comprises 80% of your grade and coverage comp
 
 This data has been obtained from the UBC [Building and classrooms](http://students.ubc.ca/campus/discover/buildings-and-classrooms) listing (although a few years ago). The data is provided as a zip file: inside of the zip you will find ```index.htm``` which specifies each building on campus. The links in the `index.htm` link to files also in the zip containing details about each building and its rooms in HTML format.
 
-The dataset file can be found here: [rooms.zip](https://github.com/ubccpsc/310/raw/2019jan/project/rooms.zip).
+The dataset file can be found here: [rooms.zip](https://github.com/ubccpsc/310/raw/2019jan/project/rooms.zip). This dataset should result in 364 rooms (i.e. a listDataset would show numRows: 364).
 
 ### Checking the validity of the dataset
 
