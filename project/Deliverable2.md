@@ -50,7 +50,6 @@ You should only parse buildings that are linked to from the `index.htm` file. Th
 
 * You cannot assume that any given HTML file only contains one `<table/>` element. However when given a table containing valid building data, you can assume that that table is the only table with pertinent data present in the file.
 * HTML elements may exist in different relative locations between different HTML trees.
-For example, a valid building file will contain a `<table/>` element, but it may be in different locations between `*/BUCH` and `*/BRKX`.
 
 
 ### Finding the geolocation of each building
