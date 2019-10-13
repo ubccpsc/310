@@ -107,7 +107,7 @@ At a high level, the new functionality adds:
 QUERY ::='{'BODY ', ' OPTIONS (', ' TRANSFORMATIONS)? '}'
 
 BODY ::= 'WHERE:{' (FILTER)? '}'
-OPTIONS ::= 'OPTIONS:{' COLUMNS ', ' (SORT)?'}'
+OPTIONS ::= 'OPTIONS:{' COLUMNS (', ' SORT)?'}'
 TRANSFORMATIONS ::= 'TRANSFORMATIONS: {' GROUP ', ' APPLY '}'
 
 FILTER ::= (LOGICCOMPARISON | MCOMPARISON | SCOMPARISON | NEGATION)
