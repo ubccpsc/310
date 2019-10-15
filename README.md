@@ -141,13 +141,13 @@ This is a high-level overview of what the course will be about. Expect this list
 | Week 4: Sept 30	| [Testability & Assertions](https://github.com/ubccpsc/310/blob/master/resources/readings/TestabilityAssertions.md), [White Box Testing](https://github.com/ubccpsc/310/blob/master/resources/readings/WhiteBoxTesting.md) | Week 4 Survey - Expired |
 | Week 5: Oct 7		| High Level design: <ul><li>[High-level design](https://github.com/ubccpsc/310/blob/master/resources/readings/HighLevelDesign.md) </li><li>[Technical Representations](https://github.com/ubccpsc/310/blob/master/resources/readings/Representations.md)</li><li>[APIs](https://github.com/ubccpsc/310/blob/master/resources/readings/API.md)</li></ul> | D1 Survey - Oct 7 @ 1900 (Mandatory!) - Expired | 
 | Week 6: Oct 14		| High-level design: <ul><li>[Design principles](https://github.com/ubccpsc/310/blob/master/resources/readings/DesignPrinciples.md)</li></ul> | Week 6 Survey - Expired|
-| Week 7: Oct 21		| Midterm (Tuesday in class) & High-level design (Thurs) | Week 7 Survey - Due Oct 21 @ 0800 |
+| Week 7: Oct 21		| Midterm (Tuesday in class) & High-level design (Thurs) | No survey this week |
 | Week 8: Oct 28		| [Low-level design](https://github.com/ubccpsc/310/blob/master/resources/readings/LowLevelDesign.md) | D2 Survey - Oct 28 @ 1900 (Mandatory!) - TBD |
 | Week 9: Nov 4		| <ul><li>[Low-level design](https://github.com/ubccpsc/310/blob/master/resources/readings/LowLevelDesign.md)</li><li>[MV*](https://github.com/ubccpsc/310/blob/master/resources/readings/MVStar.md)</li></ul> | Week 9 Survey - TBD  |
 | Week 10: Nov 11	| [InfoSec](https://github.com/ubccpsc/310/blob/master/resources/readings/Security.md), IP, & Ethics | Week 10 Survey - TBD |
 | Week 11: Nov 18	| [REST](https://github.com/ubccpsc/310/blob/master/resources/readings/REST.md) | D3 Survey - Nov 18 @ 1900 (Mandatory!) - TBD |
 | Week 12: Nov 25	| Construction, [Automation](https://github.com/ubccpsc/310/blob/master/resources/readings/Automation.md), & [Refactoring](https://github.com/ubccpsc/310/blob/master/resources/readings/Refactoring.md) | Week 12 Survey - TBD |
-| | Final exam @ TBD  | CSSS has practice exams |
+| Dec 4 @ 1900 | Final exam  | CSSS has practice exams |
 
 It is expected that you will watch the videos for a week prior to class. This will greatly increase your understanding of what will be happening in lecture and make it much easier for you to participate in any hands-on activities we will be doing. The videos below will be annotated with their week (W0, W1, etc.) once we know when each should be watched to prepare for lecture that week.
 
