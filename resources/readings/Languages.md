@@ -146,7 +146,7 @@ age = false; // !ok, false is not an int
 age = '10'; // !ok, '10' is a string, not an int
 ```
 
-In contrast, languages that use dynamic types, _values_ rather than variables have types. For example, in JavaScript:
+In contrast, in languages that use dynamic types, _values_ rather than variables have types. For example, in JavaScript:
 
 ```javascript
 var age; // age does not have a type
