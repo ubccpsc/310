@@ -122,7 +122,7 @@ class MyClass {
 }
 ``` 
 
-Similarly, JavaScript is also not an interpreted language (by are definition above) as the following snippet also works: 
+Similarly, JavaScript is also not an interpreted language (by our definition above) as the following snippet also works: 
 
 ```javascript
 m1();
