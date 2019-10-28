@@ -122,7 +122,7 @@ class MyClass {
 }
 ``` 
 
-Similarly, JavaScript is also not an interpreted language (by are definition above) as the following snippet also works: 
+Similarly, JavaScript is also not an interpreted language (by our definition above) as the following snippet also works: 
 
 ```javascript
 m1();
@@ -146,7 +146,7 @@ age = false; // !ok, false is not an int
 age = '10'; // !ok, '10' is a string, not an int
 ```
 
-In contrast, languages that use dynamic types, _values_ rather than variables have types. For example, in JavaScript:
+In contrast, in languages that use dynamic types, _values_ rather than variables have types. For example, in JavaScript:
 
 ```javascript
 var age; // age does not have a type
