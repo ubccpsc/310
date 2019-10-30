@@ -1,13 +1,11 @@
 # Project Sprint 3 (D3)
 
-## Web Server + Frontend UI
+## Introduction
+There are two major tasks for this deliverable:
+* Implementing a Web Server and a Frontend UI
+* Solving the course timetabling problem
 
-[Deliverable 1](Deliverable1.md) built a query engine to answer queries about UBC course sections.
-[Deliverable 2](Deliverable2.md) extended the query engine to aggregate answers about actual courses and support details about course spaces on campus. Ultimately, you have built a robust backend for quickly and flexibly querying a diverse dataset. This is a great foundation, but is not particularly usable: how could your implementation actually be used in the real world? After all, software is of little value if it is never deployed and used, no matter how well it is designed and implemented.
-
-In this deliverable you will complement your backend with a Web server and a frontend UI such that your software can be deployed and used as a Web application. Just as is common practice in Web development, you will be given a boilerplate UI implementation (consider us the "designers"). Most of the functionality has been removed from the sources and it will be your job to hook it all up with your Web server implementation. 
-
-This deliverable will extend your solutions for D1 and D2 so you must continue to work with the same partner using the same repository. D3 is worth 10% of your final grade (20% of your total project grade). You will not have to hand anything in; we will automatically analyze your repo on every push between when the deliverable is released and the due date [specified here](../README.md#project-sprint-schedule).
+This deliverable will extend your solutions for D1 and D2 so you must continue to work with the same partner using the same repository. D3 is worth 7.5% of your final grade (15% of your total project grade). You will not have to hand anything in; we will automatically analyze your repo on every push between when the deliverable is released and the due date [specified here](../README.md#project-sprint-schedule).
 
 As with D1 and D2, functional correctness comprises 80% of your grade and coverage comprises 20%.
 
@@ -17,6 +15,12 @@ As with D1 and D2, functional correctness comprises 80% of your grade and covera
 * This spec should be considered a high level outline for this deliverable because it would be very easy to get lost in the details. While the pull request from Autobot will make things more clear, it is also more important than ever to attend the in-class deliverable tutorial where we will go through the deliverable step by step.
 * There may be more pull requests from Autobot during this deliverable because we may need to change things on the go. Please keep an open eye on Piazza and merge all pull requests sooner rather than later to avoid conflicts.
 
+## Web Server + Frontend UI
+
+[Deliverable 1](Deliverable1.md) built a query engine to answer queries about UBC course sections.
+[Deliverable 2](Deliverable2.md) extended the query engine to aggregate answers about actual courses and support details about course spaces on campus. Ultimately, you have built a robust backend for quickly and flexibly querying a diverse dataset. This is a great foundation, but is not particularly usable: how could your implementation actually be used in the real world? After all, software is of little value if it is never deployed and used, no matter how well it is designed and implemented.
+
+In this deliverable you will complement your backend with a Web server and a frontend UI such that your software can be deployed and used as a Web application. Just as is common practice in Web development, you will be given a boilerplate UI implementation (consider us the "designers"). Most of the functionality has been removed from the sources and it will be your job to hook it all up with your Web server implementation. 
 
 ## Web Server
 
@@ -425,4 +429,3 @@ Good luck and we sincerely hope you'll also have some fun implementing this deli
 ## Contribution statement
 
 A survey will be required to detail your contribution to your group's project. This will involve a mandatory survey. Failure to submit the survey by the final deadline will result in a grade of 0 for the deliverable (for the individual who did not submit it, not the whole group).
-
