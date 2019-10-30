@@ -125,8 +125,10 @@ There are a few **important notes** on ```CampusExplorer.buildQuery```. Please c
 * The UI will only be able to build a subset of all possible queries. Several complex structures (e.g. nesting) are not possible and this is intended.
 * If no conditions are specified, the query will have no conditions.
 * If only one condition is specified, no logic connector (and/or) should be used but only the single condition.
+* You can select multiple items for columns and order in the UI. This is typically done using Ctrl+Click on Windows and Linux, or Command+Click on Mac.
 * The order of the keys in the order section is ignored and will not be tested by Autobot.
 * If the sort is ascending with a single key, D1 or D2 sort can be used.
+* As there is no location to specify a dataset id, you can assume that the id will be either courses or rooms as appropriate.
 
 **Important note:** usage of any library not native to the browser is strictly prohibited in the frontend part of this deliverable. Please stick to the global ```CampusExplorer``` and ```document``` objects, and the ```XMLHttpRequest``` class, which are the only ones required. Autobot will fail if you violate this requirement.
 
