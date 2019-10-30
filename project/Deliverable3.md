@@ -5,7 +5,7 @@ There are two major tasks for this deliverable:
 * Implementing a Web Server and a Frontend UI
 * Solving the course timetabling problem
 
-This deliverable will extend your solutions for D1 and D2 so you must continue to work with the same partner using the same repository. D3 is worth 7.5% of your final grade (15% of your total project grade). You will not have to hand anything in; we will automatically analyze your repo on every push between when the deliverable is released and the due date [specified here](../README.md#project-sprint-schedule).
+This deliverable will extend your solutions for D1 and D2 so you must continue to work with the same partner using the same repository. You will not have to hand anything in; we will automatically analyze your repo on every push between when the deliverable is released and the due date [specified here](../README.md#project-sprint-schedule).
 
 As with D1 and D2, functional correctness comprises 80% of your grade and coverage comprises 20%.
 
