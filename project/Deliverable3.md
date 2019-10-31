@@ -382,31 +382,34 @@ Performance for each test case will be based on an enrollment score *E* and a di
 
  
 
-*D* is calculated as the **great-circle distance** (in meters) between the two buildings that are furthest apart among the buildings used in the timetable returned by `schedule`, using their
-latitudes and longitudes.
+*D* is calculated as the **great-circle distance** in meters between the two buildings that are furthest apart among the buildings used in the timetable returned by `schedule`, using their
+latitudes and longitudes, divided by 2000 meters.
 
 Note: 
-* If no building is used in the timetable, then _D_ would be `Infinity`
-* If only 1 building is used in the timetable, then _D_ is 0
-* We use the [haversine formula]((https://www.movable-type.co.uk/scripts/latlong.html)) to calculate the great-circle distance
+* If no building or only 1 building is used in the timetable, then _D_ is 0
+
+* We use the [haversine formula](https://www.movable-type.co.uk/scripts/latlong.html) to calculate the great-circle distance
 between buildings using their latitudes and longitudes
  
+* Both *E* and *D* should be a number between 0 and 1
 
 The `schedule` function should aim to **maximize** _E_ and **minimize** _D_ while satisfying all the constraints at the same time.
 
 The pseudocode for grading:
 ```
-for each test case:
+for each test_case:
     table_stu = timetable returned running your version of schedule() on test input
     E1, D1 = evaluate table_stu to compute scores
     table_ref = timetable returned by running reference solution schedule() on test input
     E2, D2 = evaluate table_ref to compute scores
-    performance = 0.7 * min(1, E1/E2) + 0.3 * min(1, D2/D1)
-
-overall grade = average of performances across test cases
+    if (0.7 * E1 + 0.3 * D1 + test_case.DELTA > 0.7 * E2 + 0.3 * D2)
+        pass
+    else
+        fail
 ```
-You can get partial marks when the performance of your solution is worse than that of our solution, and
-you will get full marks if your solution beats our solution or when there is a tie.
+
+Note: `DELTA` is a per-test value. We reserve the right to change the `DELTA` values during the first week the D3 test suite is released,
+so expect some fluctuations in your grade. 
 
 
 
@@ -429,3 +432,16 @@ Good luck and we sincerely hope you'll also have some fun implementing this deli
 ## Contribution statement
 
 A survey will be required to detail your contribution to your group's project. This will involve a mandatory survey. Failure to submit the survey by the final deadline will result in a grade of 0 for the deliverable (for the individual who did not submit it, not the whole group).
+
+## Assessment
+
+Autotest scoring will be based on:
+
+* Functional Correctness of the Web Server + UI.
+* Optimality of the Scheduler.
+
+The general formula for scoring is:
+
+`grade = (WebServerUI * .8) + (Scheduler * .2)`
+
+[Please refer to the README file for more information on grading](README.md)
