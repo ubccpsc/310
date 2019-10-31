@@ -157,3 +157,24 @@ Both team members must sign into [ClassPortal](http://skaha.cs.ubc.ca:8020) to r
 We have created a bootstrap project for you but you will not be able to access it until during the second week of labs, after you have specified your project team. Once the project is configured, Github should send you email inviting you to your team's repository.
 -->
 
+
+# FAQ
+
+A series of FAQ items has been collected here; this is in no way exhaustive, but addresses several of the consistent questions we have received for this project.
+
+### FAQ: Failing Tests
+
+* If you are failing one of AutoTest's tests, it means that your own test suite is insufficient. The tests AutoTest runs are exactly the same as the ones you can write yourself. If a test is failing, it means your suite is not strong enough and should be strengthened. NOTE: this does not mean randomly writing more tests, but contentiously strengthening your test suite by examining the deliverable specification.
+
+* Another testing anti-pattern is to only have integration tests (e.g., tests that directly evaluate `addDataset`, `removeDataset`, `listDatasets` and `performQuery`). A much more robust testing strategy that makes it easier to implement new features and isolate failures is to write unit tests against the individual methods in your implementation.
+
+### FAQ: Coverage Not Right
+
+* AutoTest just runs `yarn cover` to calculate coverage. But it can only calculate what is committed. The most common coverage-based problem occurs when test files are not committed to the repo. This is easy to test: just do a `git clone` in a new folder and run coverage there and see what happens; this usually highlights missing files. 
+
+* One other less common reason for coverage problems arises from filename case issues; linux (where AutoTest executes) has a case-sensitive filesystem; if you are developing on a Windows-based machine (which does not have a case-sensitive file system), tests could refer to files that can be 'found' on your machine but will not be found on a linux-based test instance.
+
+### FAQ: Using Branches:
+
+* Using version control branches is a great way to make it easier to work with your partner, but it is important that you merge your branches with master periodically (preferably with pull requests). Having > 3 branches is an anti-pattern, and stale branches should be deleted.
+
