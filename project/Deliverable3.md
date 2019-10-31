@@ -402,7 +402,7 @@ for each test_case:
     E1, D1 = evaluate table_stu to compute scores
     table_ref = timetable returned by running reference solution schedule() on test input
     E2, D2 = evaluate table_ref to compute scores
-    if (0.7 * E1 + 0.3 * D1 + test_case.DELTA > 0.7 * E2 + 0.3 * D2)
+    if (0.7 * E1 + 0.3 * (1 - D1) + test_case.DELTA > 0.7 * E2 + 0.3 * (1 - D2))
         pass
     else
         fail
