@@ -40,7 +40,7 @@ You will adapt your existing ```InsightFacade``` to also be accessed using REST 
 
 * **```GET /```** returns the frontend UI; this will already be implemented for you.
 
-* **```PUT /dataset/:id/:kind```** allows to submit a zip file that will be parsed and used for future queries. The zip file content will be sent 'raw' as a buffer, you will need to convert it to base64 server side. For your tests, the field name should be `body` (like it is in the example test in Server.spec.ts).
+* **```PUT /dataset/:id/:kind```** allows to submit a zip file that will be parsed and used for future queries. The zip file content will be sent 'raw' as a buffer, you will need to convert it to base64 server side.
   * Response Codes:
     * ```200```: When ```InsightFacade.addDataset()``` resolves.
     * ```400```: When ```InsightFacade.addDataset()``` rejects.
@@ -383,15 +383,18 @@ Performance for each test case will be based on an enrollment score *E* and a di
  
 
 *D* is calculated as the **great-circle distance** in meters between the two buildings that are furthest apart among the buildings used in the timetable returned by `schedule`, using their
-latitudes and longitudes, divided by 2000 meters.
+latitudes and longitudes, divided by 1372 meters.
 
-Note: 
-* If no building or only 1 building is used in the timetable, then _D_ is 0
+Note:
+* If no building is used in the timetable, then _D_ is `Infinity` 
+* If only 1 building is used in the timetable, then _D_ is 0
 
 * We use the [haversine formula](https://www.movable-type.co.uk/scripts/latlong.html) to calculate the great-circle distance
 between buildings using their latitudes and longitudes
  
 * Both *E* and *D* should be a number between 0 and 1
+
+* The distance between ANSO and OSBO is 1372 meters, and it is the maximum possible distance between any 2 buildings in the rooms dataset
 
 The `schedule` function should aim to **maximize** _E_ and **minimize** _D_ while satisfying all the constraints at the same time.
 
