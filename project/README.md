@@ -61,21 +61,21 @@ The first three sprints are evaluated differently than sprint 4.
 Four components are assessed for these sprints:
 
 * [AutoTest](AutoTest.md) validation (functional completeness).
-* Private test coverage.
+* Personal test coverage.
 * Oral questions in lab (deliverable retrospective).
 * Retrospective questionnaire (online survey)
 
 The general formula for grading is:
 
-`grade = (((AutoTest * .8) + (Coverage * .2) ) * (Oral Questions * Questionnaire))`
+`grade = (((AutoTest * .8) + (Personal Coverage * .2) ) * (Oral Questions * Questionnaire))`
 
 The best way to maximize your AutoTest and Coverage grades is to:
 
 1. Write your own local tests tests that comprehensively test your code against the project requirements. These tests can be run as often as you want and are the best way to debug your code. In our experience, teams that invest in creating a comprehensive test suite with effective assertions completes the project much more quickly.
 
-1. Invoke AutoTest frequently to ensure you have not introduced regressions into your code. Remember: you can only submit to the private suite once every 12 hours and AutoTest will respond more slowly as the deadline approaches.
+1. Invoke AutoTest frequently to ensure you have not introduced regressions into your code. Remember: you can only run the AutoTestsuite once every 12 hours and AutoTest will respond more slowly as the deadline approaches.
 
-You do not need to submit your code on the deliverable deadline; we will automatically run our tests against every push you make to your repository while the deliverable; your score will be the score of the highest push during this time (up until the end of the grace period).
+You do not need to submit your code on the deliverable deadline; we will automatically run our tests against every push you make to your repository while the deliverable; your score will be the score of the highest push during this time (up until the end of the grace period). AutoTest only provides output for a subset of the total test suite; some tests are witheld until after the deadline.
 
 #### NOTE: On gaming coverage
 
