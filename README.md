@@ -143,8 +143,8 @@ This is a high-level overview of what the course will be about. Expect this list
 | Week 6: Oct 14		| High-level design: <ul><li>[Design principles](https://github.com/ubccpsc/310/blob/master/resources/readings/DesignPrinciples.md)</li></ul> | Week 6 Survey - Expired|
 | Week 7: Oct 21		| Midterm (Tuesday in class) & High-level design (Thurs) | No survey this week |
 | Week 8: Oct 28		| <ul><li>[Low-level design](https://github.com/ubccpsc/310/blob/master/resources/readings/LowLevelDesign.md)</li><li>[Design patterns](https://github.com/ubccpsc/310/blob/master/resources/readings/DesignPatterns.md)</li></ul> | D2 Survey - Oct 28 @ 1900 (Mandatory!) - Expired |
-| Week 9: Nov 4		| <ul><li>[Low-level design](https://github.com/ubccpsc/310/blob/master/resources/readings/LowLevelDesign.md)</li><li>[MV*](https://github.com/ubccpsc/310/blob/master/resources/readings/MVStar.md)</li></ul> | [Week 9 Survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_cHKAHH7Ih3J6ODr) - Due Nov 4 @ 0800  |
-| Week 10: Nov 11	| [InfoSec](https://github.com/ubccpsc/310/blob/master/resources/readings/Security.md), IP, & Ethics | Week 10 Survey - TBD |
+| Week 9: Nov 4		| <ul><li>[Low-level design](https://github.com/ubccpsc/310/blob/master/resources/readings/LowLevelDesign.md)</li><li>[MV*](https://github.com/ubccpsc/310/blob/master/resources/readings/MVStar.md)</li></ul> | Week 9 Survey - Expired  |
+| Week 10: Nov 11	| [InfoSec](https://github.com/ubccpsc/310/blob/master/resources/readings/Security.md), IP, & Ethics | [Week 10 Survey](https://ubc.ca1.qualtrics.com/jfe/form/SV_39vG39giTuEa0zH) - Due Nov 11 @ 0800 |
 | Week 11: Nov 18	| [REST](https://github.com/ubccpsc/310/blob/master/resources/readings/REST.md) | D3 Survey - Nov 18 @ 1900 (Mandatory!) - TBD |
 | Week 12: Nov 25	| Construction, [Automation](https://github.com/ubccpsc/310/blob/master/resources/readings/Automation.md), & [Refactoring](https://github.com/ubccpsc/310/blob/master/resources/readings/Refactoring.md) | Week 12 Survey - TBD |
 | Dec 4 @ 1900 | Final exam  | CSSS has practice exams |
