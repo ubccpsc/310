@@ -440,11 +440,16 @@ A survey will be required to detail your contribution to your group's project. T
 
 Autotest scoring will be based on:
 
-* Functional Correctness of the Web Server + UI.
-* Optimality of the Scheduler.
+* Functional correctness (80%):
+  * Web Server + UI (80% of functional correctness)
+  * Scheduler (20% of functional correctness)
+* Your test coverage (20%)
 
 The general formula for scoring is:
 
-`grade = (WebServerUI * .8) + (Scheduler * .2)`
+`grade = ((WebServerUI * .8) + (Scheduler * .2)) * .8 + Coverage * .2`
+
+As with prior deliverables, functional correcness will be assessed with a combination of public tests (that you can see a score for) and private tests (that you cannot see a score for).
+
 
 [Please refer to the README file for more information on grading](README.md)
