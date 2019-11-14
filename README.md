@@ -403,7 +403,7 @@ During the grace week, TAs will only help groups with AutoTest scores below 80%.
 
 * November 11 (Nov 18 @ 1800 final sub): [Sprint 3](project/Deliverable3.md)
 
-* November 25: [Project Quality Check](project/Deliverable4.md). There is nothing to submit for this deliverable. It will be computed on the version of your code as it exists at the Sprint 3 deadline (*not* the commit associated with the Sprint 3 maximum). 
+* November 18 @ 1800: [Project Quality Check](project/Deliverable4.md). There is nothing to submit for this deliverable. It will be computed on the version of your code as it exists at the Sprint 3 deadline (*not* the commit associated with the Sprint 3 maximum). 
 
 Please be aware that waiting until the last minute will greatly degrade AutoTest latency; while you can expect to receive results in < 5 minutes for the majority of the term, this has historically been much slower on the last day:
 
