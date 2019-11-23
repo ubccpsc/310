@@ -145,8 +145,8 @@ This is a high-level overview of what the course will be about. Expect this list
 | Week 8: Oct 28		| <ul><li>[Low-level design](https://github.com/ubccpsc/310/blob/master/resources/readings/LowLevelDesign.md)</li><li>[Design patterns](https://github.com/ubccpsc/310/blob/master/resources/readings/DesignPatterns.md)</li></ul> | D2 Survey - Oct 28 @ 1900 (Mandatory!) - Expired |
 | Week 9: Nov 4		| <ul><li>[Low-level design](https://github.com/ubccpsc/310/blob/master/resources/readings/LowLevelDesign.md)</li><li>[MV*](https://github.com/ubccpsc/310/blob/master/resources/readings/MVStar.md)</li></ul> | Week 9 Survey - Expired  |
 | Week 10: Nov 11	| [InfoSec](https://github.com/ubccpsc/310/blob/master/resources/readings/Security.md), IP, & Ethics | Week 10 Survey - Expired |
-| Week 11: Nov 18	| [REST](https://github.com/ubccpsc/310/blob/master/resources/readings/REST.md) | D3 Survey - [Nov 18 @ 1900 (Mandatory!)](https://ubc.ca1.qualtrics.com/jfe/form/SV_8uJKpwkEIN0mcD3) |
-| Week 12: Nov 25	| Construction, [Automation](https://github.com/ubccpsc/310/blob/master/resources/readings/Automation.md), & [Refactoring](https://github.com/ubccpsc/310/blob/master/resources/readings/Refactoring.md) | Week 12 Survey - TBD |
+| Week 11: Nov 18	| [REST](https://github.com/ubccpsc/310/blob/master/resources/readings/REST.md) | D3 Survey - Nov 18 @ 1900 (Mandatory!) - Expired |
+| Week 12: Nov 25	| Construction, [Automation](https://github.com/ubccpsc/310/blob/master/resources/readings/Automation.md), & [Refactoring](https://github.com/ubccpsc/310/blob/master/resources/readings/Refactoring.md) | Week 12 Survey - [Nov 25 @ 0800](https://ubc.ca1.qualtrics.com/jfe/form/SV_6JPLBTrjlnfv1Fb) |
 | Dec 4 @ 1900 | Final exam  | CSSS has practice exams |
 
 It is expected that you will watch the videos for a week prior to class. This will greatly increase your understanding of what will be happening in lecture and make it much easier for you to participate in any hands-on activities we will be doing. The videos below will be annotated with their week (W0, W1, etc.) once we know when each should be watched to prepare for lecture that week.
