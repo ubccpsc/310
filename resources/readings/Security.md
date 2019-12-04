@@ -12,7 +12,7 @@ The DREAD model provides one way to think about security risks:
 risk =
 damage (1..10) + 
 reproducibility (1..10) +
-expoloitability (1..10) +
+exploitability (1..10) +
 # users (1..10) +
 discoverability (1..10)
 ```
