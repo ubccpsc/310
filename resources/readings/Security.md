@@ -36,7 +36,7 @@ There are four high-level steps involved in securing systems:
 
 1. ***Validation***: Finally, testing and security reviews are crucial to check the mitigation steps have been successful.
 
-There are a variety of kinds (personas) of unauthorized user, all of whom may have different motivations for compromising a system.
+There are various kinds, or personas, of unauthorized users, all of whom may have different motivations for compromising a system.
 
 * Accidental attackers.
 * Disgruntled employees.
@@ -67,7 +67,7 @@ Several security principles have been developed to help mitigate some of these v
 
 * ***Separation of duties***: Sensitive or critical actions in a secure system should not be left to a single user. This applies to both authorized (to avoid accidents) and unauthorized parties (to avoid broad exploits). This kind of separation is often apparent in accounting systems whereby actions must be approved by second or third parties to ensure compliance and correctness.
 
-* ***Strong authentication***: Making it hard for unauthorized users to gain access to the system can be enhanced using strong passwords or some kind two-factor (or multi-factor) authentication. In two-factor authentication, users must both know something (like their password) and have something (like a phone, chip-with-pin card, or number-generating fob). This makes it so if only one part of the mechanism was lost (for instance the password written on a post-it note) the system could not be directly breached.
+* ***Strong authentication***: Making it hard for unauthorized users to gain access to the system can be enhanced using strong passwords or some kind of two-factor (or multi-factor) authentication. In two-factor authentication, users must both know something (like their password) and have something (like a phone, chip-with-pin card, or number-generating fob). This makes it so if only one part of the mechanism was lost (for instance the password written on a post-it note) the system could not be directly breached.
 
 * ***Non-repudiation***: System users must be held accountable. Non-repudiation means auditing system behaviour to track how the system is being used. Auditing is an essential tool for tracking the extent to which unauthorized parties have accessed the system and what they have done. It is also useful for ensuring that authorized parties know their usage of the system is being traced. One downside of this approach is that audit logs themselves can contain sensitive information (or point to it) and must themselves be carefully secured.
 
