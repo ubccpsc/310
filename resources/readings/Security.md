@@ -36,7 +36,7 @@ There are four high-level steps involved in securing systems:
 
 1. ***Validation***: Finally, testing and security reviews are crucial to check the mitigation steps have been successful.
 
-There are various kinds, or personas, of unauthorized users, all of whom may have different motivations for compromising a system.
+There are various kinds (personas) of unauthorized users, all of whom may have different motivations for compromising a system.
 
 * Accidental attackers.
 * Disgruntled employees.
