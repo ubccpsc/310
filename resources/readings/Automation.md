@@ -42,7 +42,7 @@ By enforcing each step to be executable on the command line without developer in
 
 ### References
 
-* A humorous discussion of automation can be found in the [Phoenix Project](https://www.amazon.ca/Phoenix-Project-DevOps-Helping-Business-ebook/dp/B00AZRBLHO).
+* A humorous discussion of automation can be found in the [Phoenix Project](https://www.amazon.ca/Phoenix-Project-DevOps-Helping-Business/dp/1942788290/).
 
 * Nice set of [build automation](http://www.slideshare.net/actionjackx/build-automation-101) slides.
 
