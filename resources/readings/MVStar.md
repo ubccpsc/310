@@ -1,6 +1,6 @@
 # MV*
 
-Patterns are rarely use in isolation. MVC is a widely used meta-pattern that employs several other design patterns. Learning how MVC works is important for understanding how many common UI frameworks were designed. MVP and MVVM, two more recent modifications to MVC, are increasingly common in practice as they provide enhanced testability decrease the amount of boilerplate code required in web and mobile application development.
+Patterns are rarely used in isolation. MVC is a widely used meta-pattern that employs several other design patterns. Learning how MVC works is important for understanding how many common UI frameworks were designed. MVP and MVVM, two more recent modifications to MVC, are increasingly common in practice as they provide enhanced testability and decrease the amount of boilerplate code required in web and mobile application development.
 
 ### MVC
 
@@ -28,7 +28,7 @@ At runtime, MVC works as follows (for a user View update).
 
 1. The View notifies the Controller of the change.
 1. The Controller modifies the Model as required.
-1. The Model, which is the subject in the observer pattern notifies all of its observers that it has changed.
+1. The Model, which is the subject in the observer pattern, notifies all of its observers that it has changed.
 1. The View, acting as the observer in the pattern, receives the notify event. Since MVC typically uses a pull-based observer pattern it then queries the Model object to understand the nature of the change and updates itself as required.
 
 Below is a simple MVC example that clarifies that multiple view options are available to the controller (although typically only one of them is bound at a time).
@@ -42,9 +42,9 @@ MVC has two primary drawbacks.
 
 That said, MVC does enable:
 
-1. Collaborative views; many views can render the same model in its own unique way.
+1. Collaborative views; many views can render the same model in their own unique way.
 1. Enhanced maintainability due to the ease with which new views can be added (if existing views have kept their logic in the Controller).
-1. Team splitting by enable designers, UX, and front-end teams concentrate their work in the Views.
+1. Team splitting by enabling designers, UX, and front-end teams to concentrate their work in the Views.
 1. Enhanced testability by trying to isolate application logic within the controller.
 
 ### MVP
@@ -53,7 +53,7 @@ Model View Presenter (MVP) was popularized by Google and was heavily used within
 
 ###### Model
 
-The Model is relatively unchanged between MVP and MVC, except that it often uses an [event bus](https://github.com/google/guava/wiki/EventBusExplained) to communicate with the rest of the system. Using an EventBus allows for more fine-grained observing and makes it easier to debug update notifications at runtime.
+The Model is relatively unchanged between MVP and MVC, except that it often uses an [event bus](https://github.com/google/guava/wiki/EventBusExplained) to communicate with the rest of the system. Using an EventBus allows for more fine-grained observation and makes it easier to debug update notifications at runtime.
 
 ###### View
 
