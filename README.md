@@ -1,7 +1,7 @@
 # UBC CPSC 310: Introduction to Software Engineering
 
 ## Current Term
-* [2020 January](https://sites.google.com/site/cpsc31019w2/)
+* [2020 January (2019W2)](https://sites.google.com/site/cpsc31019w2/)
 
 ### Past Terms
 
