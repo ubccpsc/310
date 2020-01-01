@@ -6,8 +6,8 @@
 * FIRST-LAB-WEEK
 * STAFF-TA-DETAILS
 * LAB-TIMES
-* READINGS
-* SCHEDULE
+* READINGS-SCHEDULE
+* PROJECT-SCHEDULE
 * CONFIRM-GRADING
 
 ### SPECIFIC-TERM
@@ -109,7 +109,7 @@ By far the most effective mechanism for *content and exam help* is to actually a
 
 For *[project](project/README.md) / language help*, there will be at least 24 hours of labs and 24 hours of TA office hours per week. TA office hours closer to the deadline are likely to be _much_ busier than others (which may not be attended at all); to accommodate this we have scheduled most of the office hours prior to deadlines, but seeking help at other times and in your lab will likely be less busy.
 
-## Schedule (READINGS)
+## Schedule (READINGS-SCHEDULE)
 
 This is a high-level overview of what the course will be about. Expect this list to change, although we will commit to freezing the schedule and videos for each upcoming week by the end of the previous Thursday so you will be able to watch the correct videos and complete the survey for that week.
 
@@ -164,7 +164,7 @@ Engineers use automated test suites to validate that their software is working a
 See the [full project description](project/README.md) for complete details about the project, the lab, project grading, and finding partners.
 
 
-## Project Sprint Schedule (SCHEDULE)
+## Project Sprint Schedule (PROJECT-SCHEDULE)
 
 Each deliverable has a deadline; we have also added a one week grace period for and final submissions if needed. Full TA support will be given to any group prior to the deadline; during the grace period, priority will be given to struggling teams or groups working on the next deliverable. (D0 is exempt from this schedule and has only one final deadline)
 
