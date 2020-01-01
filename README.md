@@ -1,6 +1,16 @@
 # UBC CPSC 310: Introduction to Software Engineering
 
-### 2019 Winter Term 1 (both sections)
+## BRANCH TODOS (search for matching location)
+* SPECIFIC-TERM
+* WAITLIST-FREEZE
+* FIRST-LAB-WEEK
+* STAFF-TA-DETAILS
+* LAB-TIMES
+* READINGS
+* SCHEDULE
+* CONFIRM-GRADING
+
+### SPECIFIC-TERM
 
 <!--
 #### This is a development-heavy four-credit course. Plan your timetable accordingly. If you are not familiar with TypeScript, please start looking at it now.
@@ -10,13 +20,13 @@
 
 ### Course request forms, waitlists, etc.:
 
-Unfortunately, we cannot sign course registration forms and have no knowledge or control over the class composition or waitlists. If you have any questions about registration, please contact the [CS advisors](https://www.cs.ubc.ca/students/undergrad/resources/academic-advising). The waitlists will be frozen on **Friday, September 6** and no additional students will be added to the course.
+Unfortunately, we cannot sign course registration forms and have no knowledge or control over the class composition or waitlists. If you have any questions about registration, please contact the [CS advisors](https://www.cs.ubc.ca/students/undergrad/resources/academic-advising). The waitlists will be frozen on **WAITLIST-FREEZE** and no additional students will be added to the course.
 
 For admin-related questions, please contact: `cpsc310-admin@cs.ubc.ca` to ensure a timely and accurate response. This is the same procedure as for first and second year CS classes.
 
 ### About the labs:
 
-**No labs during the first week of class:** labs start the second week (e.g., Sept 10-13).
+**No labs during the first week of class:** labs start the second week (e.g., FIRST-LAB-WEEK).
 
 This is a pair-programming course: If you want to work with someone specific for your project, be sure that both of you register for the _SAME_ lab section. We do not have the ability to move people around between labs; please either monitor the SSC for space in your preferred lab sections, move to another lab with space, or find a partner in the lab you are registered in. Teams **must** be firm by the time of your lab the week of the add/drop deadline. If you do not have a partner, it is your responsibility to notify the TA in lab that week so you can be paired up. If you do not have a partner at the end of your lab that week, you will not be able to complete the project (40% of your final grade). Finding a partner is **your** responsibility and is key to your having a great term, please take the time to do this right.
 
@@ -66,14 +76,12 @@ CPSC 310 will be a challenging course that we have designed to integrate many of
 1. **Validate** systems using both black-box and white-box approaches to reason about, and improve the quality of a software system.
 
 
-## Contact
+## Contact (STAFF-TA-DETAILS, this whole section, incl. Piazza link, instructor link)
 
 #### Instructor:
 
-* Section 101: [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
-  * T/Th @ 1230-1400 in MATH 100
-* Section 102: [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
-  * T/Th @ 1700-1830 in SWNG 221
+* Section NUM: [NAME](./README.md)
+  * DAYS @ TIME in BUILDING
 
 #### Administrivia:
 
@@ -81,40 +89,13 @@ For admin-related questions (questions about late surveys/deliverables, illness,
 
 #### TAs:
 
-* Lucas Zamprogno (GTA)
-* Tim Straubinger (GTA)
-* Syed Ahmad (GTA)
-* Junze Wu (GTA)
-* Ada Li
-* Annie Wang
-* Arash Haj
-* Braxton Hall
-* Chi Duong
-* Eishan Lawrence
-* Harman Gakhal
-* Ivan Zhang
-* James Yoo
-* Kenny Kwan
-* Noa Heyl
-* Oscar Tu
-* Will Zhang
-* Yilan Yan
-* Yvonne Li
+* NAME (GTA/UTA)
 
 *TA Office Hours*:
 
 | Date/Time		  | Location | TA 	   	|
 |---		      |---		 |--- 		|
-| Mon 1100 - 1300 | ICCS 015 | Ada, James
-| Mon 1400 - 1600 | ICCS 015 | Braxton, Kenny
-| Mon 1600 - 1800 | ICCS 015 | Braxton, Yvonne
-| Tue 1400 - 1600 | DLC      | Eishan Lawrence
-| Wed 1100 - 1300 | DLC      | Ada
-| Thu 1300 - 1500 | DLC      | Eishan
-| Fri 1000 - 1200 | ICCS 015 | Arash, Yilan
-| Fri 1200 - 1400 | ICCS 015 | Ada, Harman
-| Fri 1400 - 1600 | ICCS 015 | Yvonne, Chi
-| Fri 1600 - 1800 | ICCS 015 | Harman, Noa
+| DAY TIME- TIME | ROOM | NAME
 
 ### Piazza
 
@@ -128,26 +109,13 @@ By far the most effective mechanism for *content and exam help* is to actually a
 
 For *[project](project/README.md) / language help*, there will be at least 24 hours of labs and 24 hours of TA office hours per week. TA office hours closer to the deadline are likely to be _much_ busier than others (which may not be attended at all); to accommodate this we have scheduled most of the office hours prior to deadlines, but seeking help at other times and in your lab will likely be less busy.
 
-## Schedule
+## Schedule (READINGS)
 
 This is a high-level overview of what the course will be about. Expect this list to change, although we will commit to freezing the schedule and videos for each upcoming week by the end of the previous Thursday so you will be able to watch the correct videos and complete the survey for that week.
 
 | Week					| Topic & Readings 	| Survey |
 |---					|---					|--- |
-| Week 0: Sept 2		| [Introduction](https://github.com/ubccpsc/310/blob/master/resources/readings/Introduction.md) [Languages](https://github.com/ubccpsc/310/blob/master/resources/readings/Languages.md) |  Week 0 Survey- Expired |
-| Week 1: Sept 9		| [Testing](https://github.com/ubccpsc/310/blob/master/resources/readings/Testing.md) | Week 1 Survey - Expired |
-| Week 2: Sept 16	| [Process & Agile](https://github.com/ubccpsc/310/blob/master/resources/readings/Process.md), [Teamwork](https://github.com/ubccpsc/310/blob/master/resources/readings/Teamwork.md), & [Async](https://github.com/ubccpsc/310/blob/master/resources/readings/Async.md) | Week 2 Survey - Expired |
-| Week 3: Sept 23	| [Specifications](https://github.com/ubccpsc/310/blob/master/resources/readings/Specifications.md) & [User Stories](https://github.com/ubccpsc/310/blob/master/resources/readings/SpecificationsUserStories.md) | Week 3 Survey - Expired |
-| Week 4: Sept 30	| [Testability & Assertions](https://github.com/ubccpsc/310/blob/master/resources/readings/TestabilityAssertions.md), [White Box Testing](https://github.com/ubccpsc/310/blob/master/resources/readings/WhiteBoxTesting.md) | Week 4 Survey - Expired |
-| Week 5: Oct 7		| High Level design: <ul><li>[High-level design](https://github.com/ubccpsc/310/blob/master/resources/readings/HighLevelDesign.md) </li><li>[Technical Representations](https://github.com/ubccpsc/310/blob/master/resources/readings/Representations.md)</li><li>[APIs](https://github.com/ubccpsc/310/blob/master/resources/readings/API.md)</li></ul> | D1 Survey - Oct 7 @ 1900 (Mandatory!) - Expired | 
-| Week 6: Oct 14		| High-level design: <ul><li>[Design principles](https://github.com/ubccpsc/310/blob/master/resources/readings/DesignPrinciples.md)</li></ul> | Week 6 Survey - Expired|
-| Week 7: Oct 21		| Midterm (Tuesday in class) & High-level design (Thurs) | No survey this week |
-| Week 8: Oct 28		| <ul><li>[Low-level design](https://github.com/ubccpsc/310/blob/master/resources/readings/LowLevelDesign.md)</li><li>[Design patterns](https://github.com/ubccpsc/310/blob/master/resources/readings/DesignPatterns.md)</li></ul> | D2 Survey - Oct 28 @ 1900 (Mandatory!) - Expired |
-| Week 9: Nov 4		| <ul><li>[Low-level design](https://github.com/ubccpsc/310/blob/master/resources/readings/LowLevelDesign.md)</li><li>[MV*](https://github.com/ubccpsc/310/blob/master/resources/readings/MVStar.md)</li></ul> | Week 9 Survey - Expired  |
-| Week 10: Nov 11	| [InfoSec](https://github.com/ubccpsc/310/blob/master/resources/readings/Security.md), IP, & Ethics | Week 10 Survey - Expired |
-| Week 11: Nov 18	| [REST](https://github.com/ubccpsc/310/blob/master/resources/readings/REST.md) | D3 Survey - Nov 18 @ 1900 (Mandatory!) - Expired |
-| Week 12: Nov 25	| Construction, [Automation](https://github.com/ubccpsc/310/blob/master/resources/readings/Automation.md), & [Refactoring](https://github.com/ubccpsc/310/blob/master/resources/readings/Refactoring.md) | Week 12 Survey - [Nov 25 @ 0800](https://ubc.ca1.qualtrics.com/jfe/form/SV_6JPLBTrjlnfv1Fb) |
-| Dec 4 @ 1900 | Final exam  | CSSS has practice exams |
+| Week 0: DATE		| [TOPIC](./README.md) |  To Be Released |
 
 It is expected that you will watch the videos for a week prior to class. This will greatly increase your understanding of what will be happening in lecture and make it much easier for you to participate in any hands-on activities we will be doing. The videos below will be annotated with their week (W0, W1, etc.) once we know when each should be watched to prepare for lecture that week.
 
@@ -156,188 +124,10 @@ NOTE: The videos below are ordered conceptually, although course constraints cau
 Course Videos
 --------
 
-W0: [Course Introduction](http://www.youtube.com/watch?v=3tXzYUVQlrM)  
-W0: [Capstone Project Overview](http://www.youtube.com/watch?v=NQCyiD-Fh9Q)   
-<!-- [Running Example Introduction](http://www.youtube.com/watch?v=S4GEa6JMo4I) -->
-Process
--------
-
-W2: [Why Process?](http://www.youtube.com/watch?v=dtK561i_wX4)  
-W2: [Waterfall](http://www.youtube.com/watch?v=1pQ9-BNTvgs)  
-W2: [Spiral](http://www.youtube.com/watch?v=Zq6EXTSzf84)  
-W2: [Extreme Programming](http://www.youtube.com/watch?v=axcRa3YoCQ0)  
-W2: [Test Driven Development](http://www.youtube.com/watch?v=Ux9QMfEK9Eg)  
-W2: [Scrum](http://www.youtube.com/watch?v=mjphDWlRQ2c)  
-
-Specification
--------------
-
-W3: [Introduction to Specifications](http://www.youtube.com/watch?v=1rqWeAQ8onI)  
-W3: [Requirements Process](http://www.youtube.com/watch?v=7r9vXTSSTVc)  
-W3: [Requirements Properties](http://www.youtube.com/watch?v=9z9T0dxMLJU)  
-W3: [Requirements Elicitation](http://www.youtube.com/watch?v=PGuPVkNeqJQ)  
-W3: [Additional Requirements](http://www.youtube.com/watch?v=mUQOuglR6ss)  
-W3: [Validating Requirements](http://www.youtube.com/watch?v=H4V_lwuznVY)  
-
-### User stories
-
-W3: [User Stories](http://www.youtube.com/watch?v=Y7E56dD7Jxw)  
-W3: [INVEST Guidelines](http://www.youtube.com/watch?v=fqknLz6rdGE)  
-W3: [User Story and INVEST Example](http://www.youtube.com/watch?v=3b63NxSCxPw)  
-W3: [Decomposing User Stories: Part 1](http://www.youtube.com/watch?v=qDpfRXGwbG0)  
-W3: [Decomposing User Stories: Part 2](http://www.youtube.com/watch?v=mKAPOzwK_wM)  
-W3: [Decomposing User Stories: Part 3](http://www.youtube.com/watch?v=1E-9qzKi1Fc)  
-W3: [Decomposing User Stories: Part 4](http://www.youtube.com/watch?v=d8zp_-RZNOo)  
-W3: [Decomposing User Stories: Part 5](http://www.youtube.com/watch?v=1ZPPmmXE_wM)  
-
-Testing
--------
-
-W1: [Why Test?](http://www.youtube.com/watch?v=Uamo4Ej0tWk)  
-W1: [Terminology](http://www.youtube.com/watch?v=WKrvx7qCUDI)  
-W1: [Properties of Tests](http://www.youtube.com/watch?v=ll1k3Pks3ZA)  
-W1: [Kinds of Tests](http://www.youtube.com/watch?v=_Th3f9vks_w)  
-W1: [Unit and System Properties](http://www.youtube.com/watch?v=x2DWjxDiOQo)  
-W1: [Red Green Refactor](http://www.youtube.com/watch?v=v0q1MKhSQVM)  
-
-### Black Box Testing
-
-W1: [Equivalence Class Partitioning](http://www.youtube.com/watch?v=ttAAsNSPiXw)  
-W1: [Input Partitioning](http://www.youtube.com/watch?v=5PtxXnwyU3Y)  
-W1: [Output Partitioning](http://www.youtube.com/watch?v=0yvHDKI-DSA)  
-W1: [Boundary Value Analysis](http://www.youtube.com/watch?v=IRQU_fHKUa0)  
-W1: [Assertions](http://www.youtube.com/watch?v=DCAFxgUXM4I)  
-W1: [Assertions Example](http://www.youtube.com/watch?v=Y0GEftJ5MB0)  
-
-### White Box Testing
-
-W4: [Introduction to Coverage](http://www.youtube.com/watch?v=iujQEm9oono)  
-W4: [Line and Statement Coverage](http://www.youtube.com/watch?v=SC7R-QixRaU)  
-W4: [Branch and Path Coverage](http://www.youtube.com/watch?v=YBiHn5vgKnM)  
-W4: [Coverage Wrap-Up](http://www.youtube.com/watch?v=2EBi66DYF5w)  
-
-### Testability
-
-W4: [Introduction to Testability](http://www.youtube.com/watch?v=jwL1vkl-CoY)  
-W4: [Controllability](http://www.youtube.com/watch?v=y0zrTdDuYv0)  
-W4: [Observability](http://www.youtube.com/watch?v=CJhJibMCTUM)  
-W4: [Isolateability: Part 1](http://www.youtube.com/watch?v=Z93-c4ngxGw)  
-W4: [Isolateability: Part 2](http://www.youtube.com/watch?v=NMuhE-XnFe8)  
-W4: [Automatability](http://www.youtube.com/watch?v=Q83W5zH8LUY)  
-W4: [Testability Wrap-Up](http://www.youtube.com/watch?v=d2WjviF50HA)  
-
-High-Level Design
------------------
-
-W5: [Introduction to Abstraction](http://www.youtube.com/watch?v=HW_b8S2rD4o)  
-W5: [Structured Programming](http://www.youtube.com/watch?v=lfzQcwWAh18)  
-W5: [Decomposition](http://www.youtube.com/watch?v=R3qWYSa2OyU)  
-W5: [Encapsulation](http://www.youtube.com/watch?v=aPTqsdbyhcQ)  
-W5: [Information Hiding](http://www.youtube.com/watch?v=f6H2w874TKc)  
-W5: [Constant Change](http://www.youtube.com/watch?v=a-vT-01x4TI)  
-
-### Design representations
-
-W5: [Technical Representations](http://www.youtube.com/watch?v=6LoW1iu05z4)  
-W5: [Diagrams](http://www.youtube.com/watch?v=Y4oyXMt1cAw)  
-W5: [Views](http://www.youtube.com/watch?v=2v3IBQr5Yvw)  
-W5: [Static Vs. Dynamic](http://www.youtube.com/watch?v=0jes604qWfE)  
-W5: [Deployment Diagrams](http://www.youtube.com/watch?v=MX7XzEUVc4Y)  
-W5: [State Machine Diagrams](http://www.youtube.com/watch?v=XaacVyfZ3ds)  
-
-### API Design
-
-W5: [Introduction to APIs](http://www.youtube.com/watch?v=HxevR6dZfH8)  
-W5: [High Level API Design](http://www.youtube.com/watch?v=c7yYrjt6Db4)  
-W5: [Low Level API Design](http://www.youtube.com/watch?v=OqXw62LWEos)  
-W5: [API Design Process](http://www.youtube.com/watch?v=mdiP6xO51w0)  
-W5: [API Usability](http://www.youtube.com/watch?v=2rSTWAZxTns)  
-W5: [API Platforms and Summary](http://www.youtube.com/watch?v=1nQyHE1uMXE)  
-
-### Coupling & Cohesion
-
-W6: [Coupling: Part 1](http://www.youtube.com/watch?v=I9rEvxiWF9I)  
-W6: [Coupling: Part 2](http://www.youtube.com/watch?v=QZAacpnjVVg)  
-W6: [Cohesion: Part 1](http://www.youtube.com/watch?v=oMJNS6mvhQU)  
-W6: [Cohesion: Part 2](http://www.youtube.com/watch?v=gkCIOUbu81o)  
-
-### Design principles
-
-W6: [Design Guidance and Symptoms](http://www.youtube.com/watch?v=_Eb5bAgpgQg)  
-W6: [Single Responsibility Principle](http://www.youtube.com/watch?v=QQ26-dkzEdM)  
-W6: [Open/Closed Principle](http://www.youtube.com/watch?v=815hXPR_kHo)  
-W6: [Liskov Substitution Principle](http://www.youtube.com/watch?v=8UG6P1a8rKg)  
-W6: [Interface Segregation Principle](http://www.youtube.com/watch?v=x_9QJ83oj2k)  
-W6: [Dependency Inversion Principle](http://www.youtube.com/watch?v=BJr2yG-Hn7g)  
-
-Low-Level Design
-----------------
-
-W8: [Introduction to Low Level Design](http://www.youtube.com/watch?v=wJ-xnK9O-nU)  
-W8: [Design Patterns Overview](http://www.youtube.com/watch?v=BHFk5yt_DEs)  
-W8: [Singleton](http://www.youtube.com/watch?v=V_WbZClazDw)  
-W8: [Strategy](http://www.youtube.com/watch?v=1MJ_Lj8mebU)  
-W8: [State](http://www.youtube.com/watch?v=uB4OQ4Am3Rw)  
-W8: [State and Strategy](http://www.youtube.com/watch?v=Ccpg656MUxE)  
-W9: [Facade](http://www.youtube.com/watch?v=MdMaHrKQBsU)  
-W9: [Decorator](http://www.youtube.com/watch?v=la2Jzb8jmqo)  
-W9: [MVC](http://www.youtube.com/watch?v=regs2s8HMi4)  
-W9: [MVP](http://www.youtube.com/watch?v=3ULFKSXeLM8)  
-W9: [MVC and MVP](http://www.youtube.com/watch?v=O-__G6CKICk)  
-
-Construction
-------------
-
-W12: [Introduction to Construction](http://www.youtube.com/watch?v=z-Q2CIfshcw)  
-W12: [Non-Structural Properties: Readability](http://www.youtube.com/watch?v=TZ7mfKJa7Sw)  
-W12: [Static Analysis and Linters](http://www.youtube.com/watch?v=QKK9XAdleFg)  
-W12: [Automation](http://www.youtube.com/watch?v=HMtyshK3LNU)  
-W12: [Code Smells](http://www.youtube.com/watch?v=oqqaDaQ3m24)  
-W12: [Refactoring](http://www.youtube.com/watch?v=bHKyMxvZFXY)  
-
-### REST
-
-W11: [REST Development: Part 1](http://www.youtube.com/watch?v=Y8AYxFgwmJk)  
-W11: [REST Development: Part 2](http://www.youtube.com/watch?v=Aoms-MrqW3g)  
-W11: [REST Development: Part 3](http://www.youtube.com/watch?v=JiojH8HfUps)  
-
-### Languages & Concurrency
-
-W0: [Programming Language Introduction](http://www.youtube.com/watch?v=U-ihh6bsDz4)  
-W2: [Introduction to Concurrency and Asynchronous Development: Part 1](http://www.youtube.com/watch?v=T__CJfXswbA)  
-W2: [Introduction to Concurrency and Asynchronous Development: Part 2](http://www.youtube.com/watch?v=ZyiLFip7nqk)  
-W2: [Introduction to Concurrency and Asynchronous Development: Part 3](http://www.youtube.com/watch?v=xwSUBY2tIm4)  
-
-### Information Security
-
-W10: [Information Security Introduction](http://www.youtube.com/watch?v=PprrpG7S3gc)  
-W10: [Information Security: Understanding](http://www.youtube.com/watch?v=PmpkftNf5IA)  
-W10: [Information Security: Analysis](http://www.youtube.com/watch?v=r0Hb_cqd5Dw)  
-W10: [Information Security: Mitigation Part 1](http://www.youtube.com/watch?v=TbqJfiFUM2g)  
-W10: [Information Security: Mitigation Part 2](http://www.youtube.com/watch?v=mZ3_8wjqxFI)  
-W10: [Information Security: Validation](http://www.youtube.com/watch?v=97pHO22Frpc)  
-W10: [Information Security Summary](http://www.youtube.com/watch?v=E2ybKiecj2I)  
-
-Ethics
-------
-
-W10: [Ethics Introduction](http://www.youtube.com/watch?v=ZuQm5GJfADY)  
-W10: [Ethics: Privacy](http://www.youtube.com/watch?v=2QblEuD_M-c)  
-W10: [Ethics Summary](http://www.youtube.com/watch?v=hgYVHXpwmpk)  
-
-Intellectual Property
-------
-
-W10: [Intellectual Property Introduction](http://www.youtube.com/watch?v=DtEqlRIJpuU)  
-W10: [Intellectual Property: Trade Secrets](http://www.youtube.com/watch?v=1W-DN4hJcWw)  
-W10: [Intellectual Property: Trademarks](http://www.youtube.com/watch?v=Rawb58IY4pw)  
-W10: [Intellectual Property: Copyright](http://www.youtube.com/watch?v=4lTI_Uk0zUs)  
-W10: [Intellectual Property: Patents](http://www.youtube.com/watch?v=hBclvEPWXjo)  
-W10: [Intellectual Property: Licenses](http://www.youtube.com/watch?v=3uW9_AGtRVg)  
-W10: [Intellectual Property Summary](http://www.youtube.com/watch?v=7bcDEDn9CeM)
+Will be added over the course
 
 
-Labs
+Labs (LAB-TIMES)
 -----
 
 **There will not be any labs during the first week of class.**
@@ -346,20 +136,7 @@ If you are on the waitlist, please attend any lab that works for you until you a
 
 | Lab | Time 		 | TAs
 | :-- |:-- 		 | :--
-| L1N | Tue 0900-1100	 | Yilan, Will
-| L1M | Tue 1530-1700	 | Harman, James
-| L1E | Tue 1700-1900	 | Annie, Will, Eishan
-| L1H | Wed 0900-1100	 | Kenny, Oscar, Yilan
-| L1B | Wed 1100-1300	 | Annie, James, Noa
-| L1D | Wed 1300-1500	 | Braxton, Arash, Oscar
-| L1C | Wed 1500-1700	 | Braxton, Yvonne, Noa
-| L1G | Thu 1030-1230	 | Ada, Harman, Junze
-| L1F | Thu 1400-1600	 | Arash, Chi, Annie
-| L1J | Thu 1700-1900	 | Will, Chi, Eishan
-| L1K | Fri 0900-1100	 | Kenny, James
-| L1L | Fri 1100-1300	 | Oscar, Annie
-| L1A | Fri 1400-1600	 | Arash, Kenny, Oscar
-| L1P | Fri 1600-1800	 | Will, Yvonne, Chi
+| LXX | DAY TIME-TIME	 | NAME
 
 You will not have to specify your team until the week of Sept 16. Both team members will be required to attend each lab. During the week each deliverable is due, lab attendance will be verified by the TAs during the Oral Question process; absence will result in a grade of 0 for the deliverable.
 
@@ -387,23 +164,23 @@ Engineers use automated test suites to validate that their software is working a
 See the [full project description](project/README.md) for complete details about the project, the lab, project grading, and finding partners.
 
 
-## Project Sprint Schedule
+## Project Sprint Schedule (SCHEDULE)
 
 Each deliverable has a deadline; we have also added a one week grace period for and final submissions if needed. Full TA support will be given to any group prior to the deadline; during the grace period, priority will be given to struggling teams or groups working on the next deliverable. (D0 is exempt from this schedule and has only one final deadline)
 
 During the grace week, TAs will only help groups with AutoTest scores below 80%. In the three days prior to the final submission date, only groups with less than 50% AutoTest scores will be helped. We encourage all groups to submit by the deadline, the final submission date is really only for those groups who need a little more time for polish. Regardless of your grade, your TAs will always help you during *your own* lab section; this restriction applies only to Piazza, Office Hours, and labs other than your own.
 
-* September 16 @ 1800: ([Deliverable 0](project/Deliverable0.md)) This will be an individual deliverable and will be graded before the Add/Drop date. You should aim to exceed 70% on this deliverable if you want to succeed at the project.
+* DATE @ TIME: ([Deliverable 0](project/Deliverable0.md)) This will be an individual deliverable and will be graded before the Add/Drop date. You should aim to exceed 70% on this deliverable if you want to succeed at the project.
 
-* September 30 (Oct 7 @ 1800 final sub): [Sprint 1](project/Deliverable1.md) The first project deliverable will be extremely challenging; it is important that you start working on this early.
+* DATE (DATE2 @ TIME final sub): [Sprint 1](project/Deliverable1.md) The first project deliverable will be extremely challenging; it is important that you start working on this early.
 
-* October 22: Midterm (sample midterms are available through the CSSS)
+* DATE: Midterm (sample midterms are available through the CSSS)
 
-* October 21 (Oct 28 @ 1800 final sub): [Sprint 2](project/Deliverable2.md) 
+* DATE (DATE2 @ TIME final sub): [Sprint 2](project/Deliverable2.md) 
 
-* November 11 (Nov 18 @ 1800 final sub): [Sprint 3](project/Deliverable3.md)
+* DATE (DATE2 @ TIME final sub): [Sprint 3](project/Deliverable3.md)
 
-* November 18 @ 1800: [Project Quality Check](project/Deliverable4.md). There is nothing to submit for this deliverable. It will be computed on the version of your code as it exists at the Sprint 3 deadline (*not* the commit associated with the Sprint 3 maximum). 
+* DATE @ TIME: [Project Quality Check](project/Deliverable4.md). There is nothing to submit for this deliverable. It will be computed on the version of your code as it exists at the Sprint 3 deadline (*not* the commit associated with the Sprint 3 maximum). 
 
 Please be aware that waiting until the last minute will greatly degrade AutoTest latency; while you can expect to receive results in < 5 minutes for the majority of the term, this has historically been much slower on the last day:
 
@@ -411,7 +188,7 @@ Please be aware that waiting until the last minute will greatly degrade AutoTest
 
 Note: Even when AutoTest is heavily loaded your requests are queued and processed in turn; the timestamps we use for the deadline comes from the GitHub push event, not when AutoTest is able to process the request or when the commit was made locally.
 
-## Grading
+## Grading (CONFIRM-GRADING, probably the same)
 
 To pass the course and receive credit you must achieve a passing grade on *both* the overall project grade and the overall exam grade. Sample exams are available through the CSSS.
 
