@@ -27,12 +27,15 @@ Lastly, here are some non-essential commands that are good to know:
   - `git reset` to unstage files previously staged with `git add`
   - `git reset --hard` to unstage added files AND undo all changes since last commit. Warning! This means it will change the actual files currently saved on your computer back to the state they were in the last commit you made. Make sure you want to do this.
 
-For more git resources, here are two interactive tutorials:
+All of the above is assuming you're working on a single branch. Understanding branches gets a bit more complicated, and we'll defer to other resources on the matter
+
+For more git resources, and those that explain branching well, here are some interactive tutorials:
   - https://www.atlassian.com/git/tutorials/what-is-version-control
   - https://try.github.io/levels/1/challenges/1
+  - https://learngitbranching.js.org/
 
 
-Git also has branches which help organize code changes. Atlassian's [tutorial](https://www.atlassian.com/git/tutorials/using-branches) does an execellent job of describing how branches works however, it does not cover handle merge conflicts (i.e. code that has been changed in both the HEAD commit and the merging commit). If git is unable to merge the two branches automatically, it will mark the area where the conflict occurred. It will modify the offending file to look like:
+A quick/concise note on merge conflicts. If git is unable to merge the two branches automatically, it will mark the area where the conflict occurred. It will modify the offending file to look like:
 ```
 <<<<<<< HEAD
 // Code from one branch
@@ -40,4 +43,4 @@ Git also has branches which help organize code changes. Atlassian's [tutorial](h
 // Code from the other branch
 >>>>>>> branch-a
 ```
-Your job is to pick which version of the code you want (or write a new version if you wish), and then delete the other version(s) and the start/end markers. There may be more than one conflict like this per file. WebStorm has a built-in conflict resolution tool, but it is best to avoid merge conflicts by communicating with your partner and pushing/pulling changes often.
+Your job is to pick which version of the code you want (or write a new version if you wish), and then delete the other version(s) and the start/end markers, before finally adding and commiting that file. There may be more than one conflict like this per file. WebStorm and VSCode have built-in conflict resolution tools, but it is best to avoid merge conflicts by communicating with your partner and pushing/pulling changes often.
