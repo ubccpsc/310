@@ -2,7 +2,7 @@
 
 ## Current Term
 
-* [2020 September (2020W1)](https://sites.google.com/site/cpsc31020w1/)
+* [2020 September (2020W1)](https://sites.google.com/view/ubc-cpsc310-20w1-intro-to-se/)
 
 ### Past Terms
 
