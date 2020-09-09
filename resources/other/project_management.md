@@ -2,7 +2,7 @@
 
 _Why do you need a project management tool?_
 
-![Project Management](../images/scott-adam.gif)
+![Project Management](./images/scott-adam.gif)
 
 Project management tools (e.g., GitHub project management) help to effectively track the progress of the project by 
 identifying sequential and dependent tasks which could be a blocking factor for project delivery. It provides a 
@@ -31,11 +31,11 @@ Example: Let’s say we want to implement a feature which sends a text message t
 
 2. On the top you will find a navbar that looks like this:
 
-    ![GitHub nav-bar](../images/github_navbar.png)
+    ![GitHub nav-bar](./images/github_navbar.png)
 
 3. Click on issues tab which will open up an window that looks like this:
 
-    ![Create a GitHub issue](../images/create_issue.png)
+    ![Create a GitHub issue](./images/create_issue.png)
 4. Give a meaningful title to your issue and describe it
 
 _How to write an issue without having an issue?_
@@ -57,13 +57,13 @@ Before you jump into coding think about the problem by asking yourself:
 
 Once you have the answer to the following questions create an issue in GitHub.
 
-![An issue example](../images/issue_example.png)
+![An issue example](./images/issue_example.png)
 
 On your right side, there is a panel where you can label the issue and assign the issue to a teammate or yourself 
 and select a project where the issue belongs. We will talk about the project in the later section for now lets 
 select an assignee and a label for the issue! Once an issue is created you can comment, tag your teammate and discuss it.
 
-![Issue labels](../images/issue_labels.png)
+![Issue labels](./images/issue_labels.png)
 
 The diagram shows the available options present by default for an issue: **bug, documentation, duplicate, enhancement** etc.
 
@@ -82,7 +82,7 @@ Follow the steps outline here to create your first project board:
 
 Here is an example of how you can arrange your project board:
 
-![GitHub project board](../images/project_board.png)
+![GitHub project board](./images/project_board.png)
 
 You can create your own columns and rename them as appropriate. 
 To create this board I did not choose any project template and added the following columns: 
@@ -92,21 +92,21 @@ Usually, the backlog holds a list of tasks that need to be done in the project. 
 backlog to be populated with issues once they are created. I did this by clicking on the 3 dots icon on the top right 
 corner beside the column name and selecting manage automation.
 
-![Manage automation menu](../images/automation_menu.png)
+![Manage automation menu](./images/automation_menu.png)
 
 This is the automation configuration selected for the backlog and checkpoint complete columns:
 
-![Backlog and checkpoint complete configuration for automation](../images/automation_config.png)
+![Backlog and checkpoint complete configuration for automation](./images/automation_config.png)
 
 Every issue you create for this project will be automatically assigned to the **backlog** and you do not have to manually 
 add it to this column if you have set up the above automation. However, if you want to assign any issue manually to 
 any columns you can click “add new card” shown below:
 
-![Add cards to the board menu](../images/add_cards.png)
+![Add cards to the board menu](./images/add_cards.png)
 
 This will open up the following pop up:
 
-![Add cards menu](../images/add_cards_menu.png)
+![Add cards menu](./images/add_cards_menu.png)
 
 You can drag cards from this search filter to a specific column in the board
 
@@ -117,7 +117,7 @@ You can also assign an issue to a specific column in a project when creating an 
 Just select the project the issue belongs to and a drop down of column names will appear. 
 Select the column name from the drop down to move the issue to that column in the project board.
 
-![Add issue to the board](../images/assign_issues_to_board.png)
+![Add issue to the board](./images/assign_issues_to_board.png)
 
 Additional information:
 
