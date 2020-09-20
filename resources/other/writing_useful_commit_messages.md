@@ -44,3 +44,7 @@ You can also encode information about changes that would otherwise be lost. Take
   * "deleting test for addDataset involving Rooms, see #15"
 
 This way, the developer can simply click on the issue to see why the change was performed.
+
+## Other resources
+
+* [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)

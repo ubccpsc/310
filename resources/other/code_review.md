@@ -38,3 +38,7 @@ This is the pass where you’ll attempt to understand the change or feature that
 In this pass, you should make any comments that pertain to the changes as a whole. It’s usually easier to do this step last since you’ve reviewed the code both stylistically and in terms of what exactly it does. This pass is also the most personal, since you’re likely viewing the changes from the lens of your own experiences as a developer. Comments you may see in this pass are:
 * “We might want to extract the logic you’ve added into a supertype, we’re probably going to add more classes that use it later.”
 * “I think this might break SOLID, this class is doing way too much and I think we should refactor it.”
+
+## Other resources
+
+* [Google eng-practices: How to do a code review](https://google.github.io/eng-practices/review/reviewer/) 
