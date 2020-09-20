@@ -34,3 +34,13 @@ You should make use of ample references in your code. Unfortunately, I do not me
 * “adding id validation to addDataset: #3”
 
 The commit will then be linked to the GitHub issue itself, and this comes with a slew of automations. For example, if a pull request containing a commit with the linked commit message above is closed, it will automatically close the linked issue on GitHub.
+
+## *Encode Information*
+
+You can also encode information about changes that would otherwise be lost. Take a look at the following commits:
+ * "deleting test for addDataset involving Rooms"
+
+ This commit message does not communicate _why_ this deletion was performed. It would require a developer to actively search for why it was deleted. You can short-circuit this process by enriching the commit like so:
+  * "deleting test for addDataset involving Rooms, see #15"
+
+This way, the developer can simply click on the issue to see why the change was performed.
