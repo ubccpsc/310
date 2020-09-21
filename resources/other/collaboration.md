@@ -1,5 +1,10 @@
 # Collaboration
 
+# Resouces
+
+1. [Pair Programmin](./pair_programming.md)
+
+
 Hello fellow TAs. This is a starter file. Let's make it all nice before we PR back into [ubccpsc/310](https://github.com/ubccpsc/310)
 
 ## Meeting With Your Partner
