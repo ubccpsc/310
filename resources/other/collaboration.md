@@ -1,6 +1,8 @@
 # Collaboration
 
+
 Working with your partner can be hard when you never get to see them in person. Here are some tips formed by your TAs to keep your team working together well.
+
 
 ## Meeting With Your Partner
 
@@ -17,6 +19,7 @@ It is a really good idea to take time to think honestly about which side you bia
 
 - **Schedule a regular meeting time.** Luckily, both of you always have a two hour session in the week where you are guaranteed to be free according to your academic calendar. Your lab time is a great place to meet.
 - **Start high level.** It's easy for one partner to bring up a problem and then for both of you to get lost in the details of broken code for ages before you realise your time together is up and you both have other classes to get to. In under five minutes each, discuss at a high level what you have accomplished as well as what is blocking you, so you are able to triage your issues before taking any on during your time together.
+- Consider **[Pair Programming](./pair_programming.md)**
 
 ## Repo Hygiene
 
@@ -26,3 +29,4 @@ Here are some additional guides for taking care of your repo. A disorganised rep
 - [Git Branching](./branches.md)
 - [Writing Useful Commit Messages](./writing_useful_commit_messages.md)
 - [How to Review Code](./code_review.md)
+
