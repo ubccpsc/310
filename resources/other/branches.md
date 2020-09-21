@@ -2,7 +2,7 @@
 
 Chances are, this is what your commit history looked like for your C0 repository.
 
-[]()
+![Working on a single branch](./images/branch-master.png)
 
 <sub><sub>This is a list of commits over time. Each dot is a single commit.</sub></sub>
 
@@ -15,7 +15,7 @@ error: failed to push some refs to 'git @github.students.cs.ubc.ca:CPSC310-20XXW
 Oh! That's right; for C1 the `master` branch is protected, meaning you can't push to it directly.
 So naturally you and your partner make a branch named `develop` and just work off of that.
 
-[]()
+![Working on a single development branch](./images/branch-develop.png)
 
 You get two commits in before
 
@@ -49,7 +49,7 @@ Working on your _own_ branch you have the safety to iterate in isolation, and on
 
 #### Create
 
-[]()
+![Creating a branch](./images/branch-create.png)
 
 A branch typically exists tied to one feature or issue. So let's say we are working on the issue
 > \#12 Implement listDatasets
@@ -63,7 +63,7 @@ $ git checkout -b feature/list-datasets # Create a new branch with a descriptive
 
 #### Iterate
 
-[]()
+![Working on a branch](./images/branch-iterate.png)
 
 Make your changes and commit them to your branch as you did to `master` in C0, only now on `feature/list-datasets`.
 Don't forget to make [meaningful commit messages](./writing_useful_commit_messages.md)!
@@ -76,7 +76,7 @@ $ git push --set-upstream origin feature/list-datasets # Only done the first tim
 
 #### Pull Request (Iterate More)
 
-[]()
+![Making a Pull Request](./images/branch-pull-request.png)
 
 Once your feature is complete, go to GitHub, click Pull Requests, and create a new pull request for your partner to [review](./code_review.md).
 
@@ -87,7 +87,7 @@ It is normal for this to require more changes! That doesn't mean your code was b
 
 #### Merge
 
-[]()
+![Merging a branch](./images/branch-merge.png)
 
 After you have an approval from your partner and all your tests pass, merge your pull request.
 
@@ -107,7 +107,7 @@ This requires one extra step for making sure your features play nice with the ot
 
 #### Integrate
 
-[]()
+![Pulling from master](./images/branch-integrate.png)
 
 After the **Iterate** step but before the **Pull Request** step, merge the new commits on `master` into your branch.
 This gives you a chance to test your feature's integration with anything your partner (or you on another branch) has added to `master`.
