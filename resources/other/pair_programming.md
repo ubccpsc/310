@@ -14,7 +14,7 @@ It is really important that and your peers respect boundaries. This is a learnin
 
 OK. Now that we know the basics, the challenge is: **how I do this remotely?**
 
-Thankfully, there are several collaboration tools that you can use to circumvent the challenges of remote pair programming. We will list a phew and leave other resources as links on this page.
+Thankfully, there are several collaboration tools that you can use to circumvent the challenges of remote pair programming. We will list a few and leave other resources as links on this page.
 
 Basically, you need:
 
