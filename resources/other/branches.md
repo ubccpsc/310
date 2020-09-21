@@ -119,10 +119,15 @@ $ git pull origin master
 ```
 Then of course commit and push the merge to `feature/list-datasets`.
 
-### Branch Chaos
+### Notes
 
-Small note: having too many branches is a code smell. Having all your features distributed across too many branches is a perfect recipe for being stuck in a very long period of integration and debugging. Features should build on each other as much as possible,
+Note on branch chaos: having too many branches is a code smell. Having all your features distributed across too many branches is a perfect recipe for being stuck in a very long period of integration and debugging. Features should build on each other as much as possible,
 so try to keep no more than three active branches between you and your partner, and don't forget to delete  your branches after they merge.
+
+Note on remote branches: sometimes you'll want to checkout a branch that isn't in your local reposity, but exists on the remote. For example, when you're in the middle of reviewing your partner's code and want to run the tests on your machine. This command will copy to your local reposity and check out the remote branch `hotfix/remove-dataset`.
+```
+git checkout --track origin hotfix/remove-dataset
+```
 
 
 ## Further Reading
