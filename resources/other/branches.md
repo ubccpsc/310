@@ -30,7 +30,7 @@ function ourProcess(seed: number): void {
 A _merge conflict_! You and your partner, both in active development, have stepped on each other's toes.
 
 Annoying as they are, you really should consider yourself lucky. You've pulled changes that your partner made,
-and can see exactly your changes don't work with your partner's changes.
+and can see exactly how your changes don't work with your partner's changes.
 It would be much worse if the side effects of some function hidden away in your `Util` class changed while you were none-the-wiser. It's unlikely you were reading every commit that your partner made!
 
 This calls for a slightly more sophisticated Git branching model.
@@ -42,7 +42,7 @@ If you didn't already guess, we think you should use more than one branch. Branc
 Everyone relies on the `master` branch, and it always needs to be working. If the shared branch stops working, this impedes the velocity of your collaborators, as they can't test their work nor isolate their issues.
 Under our Git flow model, your partner should always be confident in pulling the latest features from the `master` branch, and you have a place to experiment and break things without affecting others.
 #### _Your_ build won't break.
-Working on a single branch, when you try to push you're forced to pull the latest changes from the origin. After the pull, your code stops working! Suddenly you're pulled away from your original task that you were half-way through just trying to integrate someone else's changes.
+Working on a single branch, when you try to push you're forced to pull the latest changes from the origin. After the pull, your code stops working! Suddenly you're pulled away from your original task that you were half-way through and instead you're just trying to integrate someone else's changes.
 Working on your _own_ branch you have the safety to iterate in isolation, and only pull in your partner's features when you want them.
 
 ### The Life Cycle of a Branch
