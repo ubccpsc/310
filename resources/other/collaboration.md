@@ -1,6 +1,5 @@
 # Collaboration
 
-Hello fellow TAs. This is a starter file. Let's make it all nice before we PR back into [ubccpsc/310](https://github.com/ubccpsc/310)
 
 Working with your partner can be hard when you never get to see them in person. Here are some tips formed by your TAs to keep your team working together well.
 
