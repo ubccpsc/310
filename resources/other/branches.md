@@ -39,11 +39,11 @@ This calls for a slightly more sophisticated Git branching model.
 
 If you didn't already guess, we think you should use more than one branch. Branching has a few key advantages:
 #### You won't break _the_ build.
-Everyone relies on the `master` branch, and it always needs to be working. If the shared branch stops working, this impedes the velocity of your collaborators, as they can't their work nor isolate their problems without confidence in a working `master` branch.
+Everyone relies on the `master` branch, and it always needs to be working. If the shared branch stops working, this impedes the velocity of your collaborators, as they can't test their work nor isolate their issues.
 Under our Git flow model, your partner should always be confident in pulling the latest features from the `master` branch, and you have a place to experiment and break things without affecting others.
 #### _Your_ build won't break.
 Working on a single branch, when you try to push you're forced to pull the latest changes from the origin. After the pull, your code stops working! Suddenly you're pulled away from your original task that you were half-way through just trying to integrate someone else's changes.
-Working on your _own_ branch your have the safety to iterate in isolation, and only pull in your partner's features when you want them.
+Working on your _own_ branch you have the safety to iterate in isolation, and only pull in your partner's features when you want them.
 
 ### The Life Cycle of a Branch
 
@@ -65,7 +65,7 @@ $ git checkout -b feature/list-datasets # Create a new branch with a descriptive
 
 []()
 
-Make your changes and commit them to your branch as you did to `master` in C0, only now instead on `feature/list-datasets`.
+Make your changes and commit them to your branch as you did to `master` in C0, only now on `feature/list-datasets`.
 Don't forget to make [meaningful commit messages](./writing_useful_commit_messages.md)!
 
 ```
@@ -82,8 +82,8 @@ Once your feature is complete, go to GitHub, click Pull Requests, and create a n
 
 > Implement listDatasets #17
 
-The pull request page is a space for you and your partner to discuss the changes that have been made, and suggest further changes required before an approval.
-It is normal for this to require more changes! That doesn't mean your code was bad the first time, it just means it's even better with two sets of eyes on it.
+The pull request page is a space for you and your partner to discuss the changes that have been made and suggest further changes required before an approval.
+It is normal for this to require more changes! That doesn't mean your code was bad the first time. It just means it's even better with two sets of eyes on it.
 
 #### Merge
 
