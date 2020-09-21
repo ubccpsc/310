@@ -1,6 +1,6 @@
 # Collaboration
 
-Hello fellow TAs. This is a starter file. Let's make it all nice before we PR back into [ubccpsc/310](https://github.com/ubccpsc/310)
+Working with your partner can be hard when you never get to see them in person. Here are some tips formed by your TAs to keep your team working together well.
 
 ## Meeting With Your Partner
 
@@ -20,8 +20,9 @@ It is a really good idea to take time to think honestly about which side you bia
 
 ## Repo Hygiene
 
-- How to write a good commit message...
-- Use issues to keep track of what you're working on
-  - You can reference an issue in a commit message so your collaborators can see what you're working on
-  - You can reference issues in your PR so collaborators know immediately how much is changing with the PR
-  - You can use the project kanban to see where issues are at a high level and set deadlines for them
+Here are some additional guides for taking care of your repo. A disorganised repo may slow you down, as well as inhibit your communication and collaboration with your partner.
+
+- [GitHub Project Management](./project_management.md)
+- [Git Branching](./branches.md)
+- [Writing Useful Commit Messages](./writing_useful_commit_messages.md)
+- [How to Review Code](./code_review.md)
