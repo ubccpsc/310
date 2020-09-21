@@ -126,5 +126,5 @@ so try to keep no more than three active branches between you and your partner, 
 
 
 ## Further Reading
-[Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-[A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
+- [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
+- [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
