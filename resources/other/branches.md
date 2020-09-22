@@ -126,7 +126,7 @@ so try to keep no more than three active branches between you and your partner, 
 
 Note on remote branches: sometimes you'll want to checkout a branch that isn't in your local reposity, but exists on the remote. For example, when you're in the middle of reviewing your partner's code and want to run the tests on your machine. This command will copy to your local reposity and check out the remote branch `hotfix/remove-dataset`.
 ```
-git checkout --track origin hotfix/remove-dataset
+$ git checkout --track origin hotfix/remove-dataset
 ```
 
 
