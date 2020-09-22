@@ -8,7 +8,7 @@ Git is a form of version control. The purpose of version control is to help mana
   - When a repo is hosted online somewhere, such as GitHub, that is called that repo’s _remote_.
 
 Now, here are the essential commands for working with git:
-  - `git clone <url>` downloads the repo at the given url into a folder in your current working directory. You can find the URL for a repository by clicking the green "Clone or download" button on the repo’s page. Example: `git clone https://github.com/twbs/bootstrap.git` 
+  - `git clone <url>` downloads the repo at the given url into a folder in your current working directory. You can find the URL for a repository by clicking the green "Clone or download" button on the repo’s page. Example: `git clone https://github.com/ubccpsc/310.git` 
   - `git add <file/argument>` stages your changes for commit. After making changes to files in your project, you can stage them (set them to be included in the next commit) by running git add and specifying the files you would like to stage. You have the option to specify single files manually, or use arguments to specify types of files.  Git won’t automatically pay attention to all files in the repo directory, they will have to have been added at some point in the repo history. Examples:
     - Add a single file: `git add myfile.ts`
     - Add all updated tracked files: `git add -u`
