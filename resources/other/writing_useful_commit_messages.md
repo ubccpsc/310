@@ -16,32 +16,32 @@ In this document, we’ll give a very brief overview of some rules-of-thumb to t
 
 Although it might be tempting to just write “done” or “completed function”, those messages convey little to no information to the reader. Things to consider are:
 * **indicate what you’ve completed**
-  * “extracted helper methods from class A to supertype B”
-  * “refactored InsightFacade.addDataset to use helper methods”
+  * “Extracted helper methods from class A to supertype B”
+  * “Refactored InsightFacade.addDataset to use helper methods”
 
 It will be much easier to find a specific point in the history of your repository when you write very explicit commit messages. Helpful for when your Autobot score suddenly goes down after 10 commits.
 
 ## *Set Major Markers*
 
 It’s easy to see that some commits might be more important than others. For example, in one commit you might be refactoring, and in another you may have completed the implementation of a method. You should definitely take advantage of writing commit messages that communicate this information. Some examples can be found below:
-* “completed MVP for InsightFacade.removeDataset”
-* “finished implementing InsightFacade.listDataset”
-* “completed designing a helper class to save files to disk (DiskSaver.ts)”
+* “Completed MVP for InsightFacade.removeDataset”
+* “Finished implementing InsightFacade.listDataset”
+* “Completed designing a helper class to save files to disk (DiskSaver.ts)”
 
 ## *Make References*
 
 You should make use of ample references in your code. Unfortunately, I do not mean pop culture references or memes. If you and your partner are using GitHub issues to track the work to be done in your project, each issue should be created with a given number, e.g. #1, #13, etc… You can take advantage of this and link each commit you make with the issue number:
-* “adding id validation to addDataset: #3”
+* “Adding id validation to addDataset: #3”
 
 The commit will then be linked to the GitHub issue itself, and this comes with a slew of automations. For example, if a pull request containing a commit with the linked commit message above is closed, it will automatically close the linked issue on GitHub.
 
 ## *Encode Information*
 
 You can also encode information about changes that would otherwise be lost. Take a look at the following commits:
- * "deleting test for addDataset involving Rooms"
+ * "Deleting test for addDataset involving Rooms"
 
  This commit message does not communicate _why_ this deletion was performed. It would require a developer to actively search for why it was deleted. You can short-circuit this process by enriching the commit like so:
-  * "deleting test for addDataset involving Rooms, see #15"
+  * "Deleting test for addDataset involving Rooms, see #15"
 
 This way, the developer can simply click on the issue to see why the change was performed.
 
