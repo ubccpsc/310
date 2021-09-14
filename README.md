@@ -2,10 +2,11 @@
 
 ## Current Term
 
-* [2021 January (2020W2)](https://sites.google.com/view/ubc-cpsc310-20w2-intro-to-se/home/)
+* [2021 September (2021W1)](https://sites.google.com/view/ubc-cpsc310-21w1/)
 
 ### Past Terms
 
+* [2021 January (2020W2)](https://sites.google.com/view/ubc-cpsc310-20w2-intro-to-se/home/)
 * [2020 September (2020W1)](https://sites.google.com/view/ubc-cpsc310-20w1-intro-to-se/)
 * [2020 January](https://sites.google.com/site/cpsc31019w2/)
 * [2019 September](https://github.com/ubccpsc/310/blob/2019sept/README.md)
