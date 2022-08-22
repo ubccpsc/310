@@ -6,7 +6,7 @@
 
 ### Past Terms
 
-* [2022 January (2021W2)](https://sites.google.com/view/ubc-cpsc310-21w2/TBD)
+* [2022 January (2021W2)](https://sites.google.com/view/ubc-cpsc310-21w2-intro-to-se/)
 * [2021 September (2021W1)](https://sites.google.com/view/ubc-cpsc310-21w1/)
 * [2021 January (2020W2)](https://sites.google.com/view/ubc-cpsc310-20w2-intro-to-se/home/)
 * [2020 September (2020W1)](https://sites.google.com/view/ubc-cpsc310-20w1-intro-to-se/)
