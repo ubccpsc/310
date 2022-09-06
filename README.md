@@ -2,7 +2,7 @@
 
 ## Current Term
 
-* [2022 September (2022W1)](https://sites.google.com/view/ubc-cpsc310-22w1/home)
+* [2022 September (2022W1)](https://sites.google.com/view/ubc-cpsc310-22w1/home) **<-- look here for the current term!**
 
 ### Past Terms
 
