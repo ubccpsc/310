@@ -2,17 +2,17 @@
 
 Chances are, this is what your commit history looked like for your C0 repository.
 
-![Working on a single branch](./images/branch-master.png)
+![Working on a single branch](./images/branch-main.png)
 
 <sub><sub>This is a list of commits over time. Each dot is a single commit.</sub></sub>
 
 Now let's try that for C1.
 ```
- ! [remote rejected] master -> master (protected branch hook declined)
+ ! [remote rejected] main -> main (protected branch hook declined)
 error: failed to push some refs to 'git @github.students.cs.ubc.ca:CPSC310-20XXW-T0/project_team000.git'
 ```
 
-Oh! That's right; for C1 the `master` branch is protected, meaning you can't push to it directly.
+Oh! That's right; for C1 the `main` branch is protected, meaning you can't push to it directly.
 So naturally you and your partner make a branch named `develop` and just work off of that.
 
 ![Working on a single development branch](./images/branch-develop.png)
@@ -39,8 +39,8 @@ This calls for a slightly more sophisticated Git branching model.
 
 If you didn't already guess, we think you should use more than one branch. Branching has a few key advantages:
 #### You won't break _the_ build.
-Everyone relies on the `master` branch, and it always needs to be working. If the shared branch stops working, this impedes the velocity of your collaborators, as they can't test their work nor isolate their issues.
-Under our Git flow model, your partner should always be confident in pulling the latest features from the `master` branch, and you have a place to experiment and break things without affecting others.
+Everyone relies on the `main` branch, and it always needs to be working. If the shared branch stops working, this impedes the velocity of your collaborators, as they can't test their work nor isolate their issues.
+Under our Git flow model, your partner should always be confident in pulling the latest features from the `main` branch, and you have a place to experiment and break things without affecting others.
 #### _Your_ build won't break.
 Working on a single branch, when you try to push you're forced to pull the latest changes from the origin. After the pull, your code stops working! Suddenly you're pulled away from your original task that you were half-way through and instead you're just trying to integrate someone else's changes.
 Working on your _own_ branch you have the safety to iterate in isolation, and only pull in your partner's features when you want them.
@@ -56,8 +56,8 @@ A branch typically exists tied to one feature or issue. So let's say we are work
 
 Let's create a new branch named `feature/list-datasets`
 ```
-$ git checkout master
-$ git pull                              # Make sure we're up to date with master
+$ git checkout main
+$ git pull                              # Make sure we're up to date with main
 $ git checkout -b feature/list-datasets # Create a new branch with a descriptive name
 ```
 
@@ -65,7 +65,7 @@ $ git checkout -b feature/list-datasets # Create a new branch with a descriptive
 
 ![Working on a branch](./images/branch-iterate.png)
 
-Make your changes and commit them to your branch as you did to `master` in C0, only now on `feature/list-datasets`.
+Make your changes and commit them to your branch as you did to `main` in C0, only now on `feature/list-datasets`.
 Don't forget to make [meaningful commit messages](./writing_useful_commit_messages.md)!
 
 ```
@@ -102,20 +102,20 @@ $ git branch -d feature/list-datasets
 
 ### Branches in Concert
 
-When you have more than one branch in active development, you would expect `master` to get updated with new features while you are still working on your own branch.
+When you have more than one branch in active development, you would expect `main` to get updated with new features while you are still working on your own branch.
 This requires one extra step for making sure your features play nice with the other ones.
 
 #### Integrate
 
-![Pulling from master](./images/branch-integrate.png)
+![Pulling from main](./images/branch-integrate.png)
 
-After the **Iterate** step but before the **Pull Request** step, merge the new commits on `master` into your branch.
-This gives you a chance to test your feature's integration with anything your partner (or you on another branch) has added to `master`.
-This also allows you to build, lint, and test your code _exactly_ as it will look like on `master`.
+After the **Iterate** step but before the **Pull Request** step, merge the new commits on `main` into your branch.
+This gives you a chance to test your feature's integration with anything your partner (or you on another branch) has added to `main`.
+This also allows you to build, lint, and test your code _exactly_ as it will look like on `main`.
 
 ```
 $ git checkout feature/list-datasets
-$ git pull origin master
+$ git pull origin main
 ```
 Then of course commit and push the merge to `feature/list-datasets`.
 
