@@ -24,11 +24,11 @@ Two common problems manifest with callbacks in practice. First, handling errors 
 
 ```javascript
 fs.readFile('/cpsc310.csv', function(err, data) {
-	if (err) {
-	   // handle
-	   return;
-	}
-  	console.log(data);
+  if (err) {
+    // handle
+    return;
+  }
+  console.log(data);
 });
 ```
 
@@ -38,27 +38,27 @@ This problem becomes harder to manage once callbacks depend on the output of pre
 
 ```javascript
 fs.readdir(source, function (err, files) {
-  	if (err) {
-    	// handle
-  	} else {
-      files.forEach(function (name, index) {
-        fs.stat(files[index], function(err, data) {
-  				if (err) {
-	  				// handle
-  				} else {
-  					if (data.isFile()) {
-    					fs.readFile(files[index], function(err, data) {
-    						if (err) {
-	    						// handle
-	    				  } else {
-	    					  // process data
-	    				  }
-       			  });
-  				  }
-  			  }
-     	  });
-  	  });
-    }
+  if (err) {
+    // handle
+  } else {
+    files.forEach(function (name, index) {
+      fs.stat(files[index], function(err, data) {
+        if (err) {
+          // handle
+        } else {
+          if (data.isFile()) {
+            fs.readFile(files[index], function(err, data) {
+                if (err) {
+                    // handle
+                } else {
+                    // process data
+                }
+            });
+          }
+        }
+      });
+    });
+  }
 });
 ```
 
@@ -74,15 +74,15 @@ Although promises do enable try/catch to work properly, they do not provide any 
 ```typescript
 var file = null;
 fs.readdir(source).then(function(files) {
-	file = files[0];
-  	return fs.stat(file);
+    file = files[0];
+    return fs.stat(file);
 }).then(function(fileStat) {
-  	if (fileStat.isFile())
-  		return fs.readFile(file);
+    if (fileStat.isFile())
+        return fs.readFile(file);
 }).then(function(fileData) {
-	// process data
+    // process data
 }).catch(function(err) {
-	// handle errors
+    // handle errors
 });
 ```
 
@@ -96,15 +96,15 @@ One nice feature of Promises is that they are able to be composed; this is espec
 
 ```typescript
 let processList:GroupRepoDescription[] = [];
-for (var toProcess of completeGroups) {
-	processList.push(<any>gpc.getStats("CS310-2016Fall", toProcess.name)); // getStats is async
+for (const toProcess of completeGroups) {
+    processList.push(gpc.getStats("CS310-2016Fall", toProcess.name)); // getStats is async
 }
 
 Promise.all(processList).then(function (provisionedRepos: GroupRepoResult[]) {
-	Log.info("Creation complete: " + provisionedRepos.length);
-	// can also iterate through the individual results
+    Log.info("Creation complete: " + provisionedRepos.length);
+    // can also iterate through the individual results
 }).catch(function(err) {
-	Log.error("Creation failed: "+err);
+    Log.error("Creation failed: "+err);
 });
 ```
 
