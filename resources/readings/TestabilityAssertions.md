@@ -55,15 +55,32 @@ expect([ 42, 97, 102 ]).to.have.length.above(1); // check array properties
 expect([1, 2, 3]).not.to.include.members([1, 4]); // checks set membership
 ```
 
-One thing to note about the syntax of the assertions above is that they are extremely readable. For example, even without comments, what the following Given-When-Then test doing is straightforward to understand:
+One benefit of the using the specific assertion forms above is that they easy to read and understand. For example, even without comments, the intent of the following Given-When-Then test doing is straightforward to comprehend:
 
 ```javascript
 describe('Check math constants', function() {
-	it('Math.PI should be close enough to the correct value', function() {
-		expect(Math.PI).to.be.closeTo(3.14, 0.025);
-	});
+  it('Math.PI should be close enough to the correct value', function() {
+    expect(Math.PI).to.be.closeTo(3.14, 0.025);
+  });
 });
 ```
+
+Additionally, assertion failures are easier to understand when specific assertion forms are used. For example, the following two assertions perform exactly the same check:
+
+```javascript
+// Equivalent assertions
+expect(arr).to.contain(’c’);
+expect(arr.indexOf(’c’) >= 0).to.equal(true);
+```
+
+But the error message for first assertion failing is more direct and understandable for the second. While this may not seem important for such a contrived example, for real, complex, failures more specific error messages can greatly simplify the process of understanding why an assertion failed.
+
+```javascript
+// Corresponding failures
+AssertionError: expected [ ’a’, ’b’ ] to include ’c’
+AssertionError: expected false to equal true
+```
+
 <!--
 TODO: show all the assertions for a simple function
 TODO: how to write good assertions links
@@ -81,11 +98,11 @@ Ultimately each test should compare an expected value against the actual value p
 
 ```javascript
 describe('Check math constants', function() {
-    it('Math.PI should be close enough to the correct value', function() {
-    	 const expected = 3.1415;
-    	 const actual = Math.PI;
-        expect(actual).to.be.closeTo(expected, 0.025);
-    });
+  it('Math.PI should be close enough to the correct value', function() {
+    const expected = 3.1415;
+    const actual = Math.PI;
+    expect(actual).to.be.closeTo(expected, 0.025);
+  });
 });
 ```
 
