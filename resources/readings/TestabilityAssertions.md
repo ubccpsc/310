@@ -106,6 +106,43 @@ describe('Check math constants', function() {
 });
 ```
 
+<!--
+#### Assertions and async
+
+TODO: talk about handling async in test cases
+
+// not declared as async, need to resturn the promise
+before(() => {
+    syncFunction();
+    return asyncFunction().then(() => asyncFunction()); // both complete before queries
+})
+
+// declared async, can await
+before(async () => {
+    syncFunction();
+    await asyncFunction(); // completes before next line
+    await asyncFunction(); // completes before queries
+})
+
+// can return multiple w/ promise.all
+before(() => {
+    syncFunction();
+    return Promise.all([
+        asyncFunction(), // completes before queries (but maybe after next line)
+        asyncFunction(), // completes before queries (but maybe before prev line)
+    ]);
+})
+
+// can await multiple w/ promise.all
+before(async () => {
+    syncFunction();
+    await Promise.all([
+        asyncFunction(), // completes before queries (but maybe after next line)
+        asyncFunction(), // completes before queries (but maybe before prev line)
+    ]);
+})
+-->
+
 ### Resources
 
 * Concrete example showing how to increase [isolation](http://anzorb.com/unit-tests-102-isolating-your-code-with-mocks-and-stubs/) with mocks and stubs.
