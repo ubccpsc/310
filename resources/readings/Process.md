@@ -99,7 +99,7 @@ Scrum-derived methodologies comprise the most commonly-used agile processes appl
 Scrum-based team members also have several process-specific roles:
 
 * **Product owner**: This person defines product features and helps to prioritize features according to their value to the team. After each iteration the importance of various features can be re-evaluated. Establishing meaningful prioritization is an important role for the product owner to ensure that the team focuses their efforts on the most important tasks; this is particularly important during sprint planning.
-* **Scrum master**: This is a single person that facilitates the scrum process; often these people have attended workshops to learn techniques for keeping teams on track. The scrum master often works to shield the team from external interference and helps resolve problems that may be blocking the product. The Scrum master is *not* the manager of the team.
+* **Scrum Lead**: This is a single person that facilitates the scrum process; often these people have attended workshops to learn techniques for keeping teams on track. The scrum lead (a role formerly known as the scrum master) often works to shield the team from external interference and helps resolve problems that may be blocking the product. The Scrum lead is *not* the manager of the team.
 * **Team**: Scrum-based teams are typically diverse and cross-functional containing designers, managers, engineers, clients, and test specialists. Teams are usually between 5 and 9 people.
 
 Scrum employs three broad ceremonies:
