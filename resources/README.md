@@ -60,11 +60,11 @@ The materials roughly break down into the 13 weeks of the standard academic seme
 	* [Test Driven Development](http://www.youtube.com/watch?v=Ux9QMfEK9Eg)  
 	* [Scrum](http://www.youtube.com/watch?v=mjphDWlRQ2c)  
 
-## 3: Specifications & User stories
+## 3: Specifications & User Stories
 
 * Readings:
 	* [Specifications](readings/Specifications.md)
-	* [User stories](readings/SpecificationsUserStories.md)       
+	* [User Stories](readings/SpecificationsUserStories.md)       
 * Videos:
 	* [Introduction to Specifications](http://www.youtube.com/watch?v=1rqWeAQ8onI)  
 		* [Requirements Process](http://www.youtube.com/watch?v=7r9vXTSSTVc)  
@@ -95,7 +95,7 @@ The materials roughly break down into the 13 weeks of the standard academic seme
 		* [Isolateability: Part 2](http://www.youtube.com/watch?v=NMuhE-XnFe8)  
 		* [Automatability](http://www.youtube.com/watch?v=Q83W5zH8LUY)  
 		* [Testability Wrap-Up](http://www.youtube.com/watch?v=d2WjviF50HA)  
-	* Black box testing:
+	* Black Box Testing:
 		* [Equivalence Class Partitioning](http://www.youtube.com/watch?v=ttAAsNSPiXw)  
 		* [Input Partitioning](http://www.youtube.com/watch?v=5PtxXnwyU3Y)  
 		* [Output Partitioning](http://www.youtube.com/watch?v=0yvHDKI-DSA)  
@@ -103,11 +103,11 @@ The materials roughly break down into the 13 weeks of the standard academic seme
 		* [Assertions](http://www.youtube.com/watch?v=DCAFxgUXM4I)  
 		* [Assertions Example](http://www.youtube.com/watch?v=Y0GEftJ5MB0)
 
-## 5: High level design 1
+## 5: High Level Design 1
 
 * Readings:
-	* [High-level design](readings/HighLevelDesign.md)
-	* [Technical representations](readings/Representations.md)
+	* [High Level Design](readings/HighLevelDesign.md)
+	* [Technical Representations](readings/Representations.md)
 	* [APIs](readings/API.md)
 * Videos:
 	* [Introduction to Abstraction](http://www.youtube.com/watch?v=HW_b8S2rD4o)  
@@ -116,14 +116,14 @@ The materials roughly break down into the 13 weeks of the standard academic seme
 	* [Encapsulation](http://www.youtube.com/watch?v=aPTqsdbyhcQ)  
 	* [Information Hiding](http://www.youtube.com/watch?v=f6H2w874TKc)  
 	* [Constant Change](http://www.youtube.com/watch?v=a-vT-01x4TI)  
-	* Design representations:
+	* Design Representations:
 		* [Technical Representations](http://www.youtube.com/watch?v=6LoW1iu05z4)  
 		* [Diagrams](http://www.youtube.com/watch?v=Y4oyXMt1cAw)  
 		* [Views](http://www.youtube.com/watch?v=2v3IBQr5Yvw)  
 		* [Static Vs. Dynamic](http://www.youtube.com/watch?v=0jes604qWfE)  
 		* [Deployment Diagrams](http://www.youtube.com/watch?v=MX7XzEUVc4Y)  
 		* [State Machine Diagrams](http://www.youtube.com/watch?v=XaacVyfZ3ds)  
-	* API design:
+	* API Design:
 		* [Introduction to APIs](http://www.youtube.com/watch?v=HxevR6dZfH8)  
 		* [High Level API Design](http://www.youtube.com/watch?v=c7yYrjt6Db4)  
 		* [Low Level API Design](http://www.youtube.com/watch?v=OqXw62LWEos)  
@@ -131,17 +131,17 @@ The materials roughly break down into the 13 weeks of the standard academic seme
 		* [API Usability](http://www.youtube.com/watch?v=2rSTWAZxTns)  
 		* [API Platforms and Summary](http://www.youtube.com/watch?v=1nQyHE1uMXE)
 
-## 6: High level design 2
+## 6: High Level Design 2
 
 * Readings:
-	* [Design principles](readings/DesignPrinciples.md)
+	* [Design Principles](readings/DesignPrinciples.md)
 * Videos:
 	* Coupling & Cohesion:
 		* [Coupling: Part 1](http://www.youtube.com/watch?v=I9rEvxiWF9I)  
 		* [Coupling: Part 2](http://www.youtube.com/watch?v=QZAacpnjVVg)  
 		* [Cohesion: Part 1](http://www.youtube.com/watch?v=oMJNS6mvhQU)  
 		* [Cohesion: Part 2](http://www.youtube.com/watch?v=gkCIOUbu81o)  
-	* Design principles: 
+	* Design Principles: 
 		* [Design Guidance and Symptoms](http://www.youtube.com/watch?v=_Eb5bAgpgQg)  
 		* [Single Responsibility Principle](http://www.youtube.com/watch?v=QQ26-dkzEdM)  
 		* [Open/Closed Principle](http://www.youtube.com/watch?v=815hXPR_kHo)  
@@ -153,13 +153,13 @@ The materials roughly break down into the 13 weeks of the standard academic seme
 
 No readings or videos.
 
-## 8: Low level design 1
+## 8: Low Level Design 1
 
 * Readings:
-	* [Low-level design](readings/LowLevelDesign.md) 
-	* [Design patterns](readings/DesignPatterns.md)
+	* [Low Level Design](readings/LowLevelDesign.md) 
+	* [Design Patterns](readings/DesignPatterns.md)
 * Videos:
-	* Design patterns:
+	* Design Patterns:
 		* [Introduction to Low Level Design](http://www.youtube.com/watch?v=wJ-xnK9O-nU)  
 		* [Design Patterns Overview](http://www.youtube.com/watch?v=BHFk5yt_DEs)  
 		* [Singleton](http://www.youtube.com/watch?v=V_WbZClazDw)  
@@ -167,10 +167,10 @@ No readings or videos.
 		* [State](http://www.youtube.com/watch?v=uB4OQ4Am3Rw)  
 		* [State and Strategy](http://www.youtube.com/watch?v=Ccpg656MUxE)  
 
-## 9: Low level design 2
+## 9: Low Level Design 2
 
 * Readings:
-	* [Design patterns](readings/DesignPatterns.md)
+	* [Design Patterns](readings/DesignPatterns.md)
 	* [MV*](readings/MVStar.md)
 * Videos:
 	* [Facade](http://www.youtube.com/watch?v=MdMaHrKQBsU)  
@@ -179,14 +179,14 @@ No readings or videos.
 	* [MVP](http://www.youtube.com/watch?v=3ULFKSXeLM8)  
 	* [MVC and MVP](http://www.youtube.com/watch?v=O-__G6CKICk)
 
-## 10: Information security, IP, & Ethics
+## 10: Information Security, IP, & Ethics
 
 * Readings:
 	* [InfoSec](readings/Security.md)
 	<!-- TODO: Ethics reading -->
 	<!-- TODO: IP reading -->
 * Videos:
-	* Information security:
+	* Information Security:
 		* [Information Security Introduction](http://www.youtube.com/watch?v=PprrpG7S3gc)  
 		* [Information Security: Understanding](http://www.youtube.com/watch?v=PmpkftNf5IA)  
 		* [Information Security: Analysis](http://www.youtube.com/watch?v=r0Hb_cqd5Dw)  
@@ -198,7 +198,7 @@ No readings or videos.
 		* [Ethics Introduction](http://www.youtube.com/watch?v=ZuQm5GJfADY)  
 		* [Ethics: Privacy](http://www.youtube.com/watch?v=2QblEuD_M-c)  
 		* [Ethics Summary](http://www.youtube.com/watch?v=hgYVHXpwmpk)  
-	* Intellectual property:
+	* Intellectual Property:
 		* [Intellectual Property Introduction](http://www.youtube.com/watch?v=DtEqlRIJpuU)  
 		* [Intellectual Property: Trade Secrets](http://www.youtube.com/watch?v=1W-DN4hJcWw)  
 		* [Intellectual Property: Trademarks](http://www.youtube.com/watch?v=Rawb58IY4pw)  
