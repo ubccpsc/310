@@ -30,10 +30,10 @@ The materials roughly break down into the 13 weeks of the standard academic seme
 
 * Readings:
 	* [Testing](readings/Testing.md)
-	<!-- TODO: black box testing -->
-	* [White box testing](readings/WhiteBoxTesting.md)
-	<!-- TODO: mutation testing -->	
-	* [Fuzz testing](readings/AutomatedTestingFuzzing.md)
+	<!-- TODO: Black Box Testing -->
+	* [White Box Testing](readings/WhiteBoxTesting.md)
+	<!-- TODO: Mutation Testing -->	
+	* [Fuzz Testing](readings/AutomatedTestingFuzzing.md)
 	
 * Videos:
 	* [Why Test?](http://www.youtube.com/watch?v=Uamo4Ej0tWk)
