@@ -6,7 +6,7 @@ Testing is a laborious and error-prone process. The idea behind automated testin
 
 Fuzz testing concerns itself with programmatically generating inputs to a system/code under test (SUT/CUT) in a way that uses some elements of randomness. Some fuzzing strategies are black-box. This means that they require no information about the SUT. Most advanced fuzzing strategies, however, are grey-box or glass-box. These strategies use feedback about the execution of the SUT, such as code coverage, to improve their input generation process.
 
-Fuzzing is most often used to test a simple specification of the SUT: that the system does not crash. That is, fuzzing finds segmentation faults or other types of runtime errors. Fuzzing is usually inappropriate for testing more advanced specifications, such as whether or not the SUT computes the right value.
+Fuzzing is often used to test a simple specification of the SUT: that the system does not crash. That is, fuzzing is used to find segmentation faults or other types of runtime errors. Additional specifications are necessary for fuzzing to check more advanced types of correctness properties, such as whether or not the SUT computes the right value.
 
 At the high level, fuzzing (1) generates an input, (2) executes the SUT with the generated input, (3) observes if the SUT has crashed, and (4) if the SUT did not crash, fuzzing goes back to step (1).
 
@@ -28,12 +28,12 @@ For example, to test an XML parser, the developer can write a generator to outpu
 
 A challenge with generator-based fuzzing is that a developer must write code for an effective input generator. If the developer writes a generator that is overly constrained and generates a limited number of inputs, then fuzzing with the generator would have limited reach in the SUT.
 
-More broadly, generator-based fuzzing is an example of an input/test generation technique that relies on knowing the input specifications of the SUT. Other techniques in this space include property-based testing and grammar-based fuzzing.
+More broadly, generator-based fuzzing is an example of an input/test generation technique that relies on knowing the input specifications of the SUT. Other techniques in this space include property-based testing and grammar-based fuzzing. For example, property-based testing is like generator-based fuzzing, but typically with richer assertions in the SUT.
 
 
 #### Mutational fuzzing
 
-Mutational fuzzing is another approach to improve on random fuzzing. With mutational fuzzing a developer defines *mutations*, which are operations that transform one input into another, slightly different input. These mutations can then be applied to a seed input that is a valid input to a SUT to generate more inputs that are both valid and invalid (e.g., valid XML and invalid XML inputs).
+Mutational fuzzing is another approach to improve on random fuzzing. With mutational fuzzing a developer defines *mutations*, which are operations that transform one input into another, slightly different input. For string-like inputs, a set of standard mutations can be applied, such as insert-char, delete-char, and duplicate-char. These mutations can then be applied to a seed input that is a valid input to a SUT to generate more inputs that are both valid and invalid (e.g., valid XML and invalid XML inputs).
 
 For example, given a seed string like ```<bar>f</bar>```, a duplicate-char mutation may produce a string like ```<baar>f</bar>``` (invalid XML). On the other hand, an insert-char mutation may produce a string like ```<bar>ff</bar>``` (valid XML).
 
