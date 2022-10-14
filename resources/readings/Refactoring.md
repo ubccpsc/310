@@ -46,13 +46,13 @@ For example, the code below evolved from being just about printing a value to al
 
 ```typescript
 public printOwing() {
-	printBanner();
-	var owing = 0;
-	for (var t of this.tasks) {
-		owing += t.getValue();
-	} 
-	//print details
-	Log.info(“amount: " + owing);
+    printBanner();
+    let owing = 0;
+    for (const t of this.tasks) {
+        owing += t.getValue();
+    } 
+    // print details
+    Log.info("amount: " + owing);
 }
 ```
 
@@ -60,17 +60,17 @@ After, a private method ```getOwing``` has been extracted and ```printOwing``` h
 
 ```typescript
 public printOwing() {
-	printBanner();
-	//print details
-	Log.info(“amount: " + this.getOwing());
+    printBanner();
+    // print details
+    Log.info("amount: " + this.getOwing());
 }
 
 private getOwing() {
-	var owing = 0;
-	for (var t of this.tasks) {
-		owing += t.getValue();
-	}
-	return owing;
+    let owing = 0;
+    for (const t of this.tasks) {
+        owing += t.getValue();
+    }
+    return owing;
 }
 ```
 
@@ -78,36 +78,35 @@ In another instance, a developer realizes upon adding a new feature (```CoursePr
 
 ```typescript
 class RoomsParser {
-	public parseRooms(zip: JSZip) {
-		// ...
-	}
+    public parseRooms(id: string, zip: JSZip) {
+        // ...
+    }
 }
+
 class CourseProcessor {
-	public processCourses(id: String, zip: JSZip) {
-		// ...
-	}
+    public processCourses(id: string, zip: JSZip) {
+        // ...
+    }
 }
 ```
 
-To simplify the client the developer performs an extract interface refactoring to change the code to:
+To simplify the client the developer performs three refactorings. First they perform an extract interface refactoring. Then they add a return type to `parse`, and finally they perform a rename refactoring on `CourseProcessor`:
 
 ```typescript
 interface IParser {
-	public parse(id: String zip: JSZip) {
-		// ...
-	}
+    parse(id: string zip: JSZip): boolean;
 }
 
 class RoomsParser implements IParser {
-	public parse(id: String, zip: JSZip) {
-		// ...
-	}
+    public parse(id: string, zip: JSZip): boolean {
+        // ...
+    }
 }
 
-class CourseProcessor implements IParser {
-	public parse(id: String, zip: JSZip) {
-		// ...
-	}
+class CourseParser implements IParser {
+    public parse(id: string, zip: JSZip): boolean {
+        // ...
+    }
 }
 ```
 
