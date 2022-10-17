@@ -10,7 +10,7 @@ User stories usually start with one to three sentences that describe the feature
 
 This can be expanded to something more like: "As a ```<stakeholder>``` I want ```<function>``` so that ```<value>```." This format directly conveys who the feature is for, what it is to do, and what the value to the user is.
 
-The next part of the story is a series of notes that describes limitations and and provides any clarifications that might be necessary to further explain and scope the feature.
+The next part of the story is a series of notes that describes limitations and provides any clarifications that might be necessary to further explain and scope the feature.
 
 One crucial aspect of user stories is their _definition of done_. This provides a specific description of how the story can be validated by both the developer and the product owner to ensure it is completed correctly. In addition to helping the developer create a correct feature, it also helps them to avoid working unnecessarily on extra functionality the stakeholder might not need. <!-- TODO: extra content here -->
 
