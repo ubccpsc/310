@@ -1,5 +1,7 @@
 # Testability
 
+When designing software we commonly think to support quality attributes such as usability or security, but an underappreciated quality attribute is _testability_. Testability is a quality attribute that does not affect how the system performs its functional requirements, but instead influences how amenable the system itself is to being tested. 
+
 In order to be successful, a test needs to be able to execute the code you wish to test, in a way that can trigger a defect that will propagate an incorrect result to a program point where it can be checked against the expected behaviour. From this we can derive four high-level properties required for effective test writing and execution. These are controllability, observability, isolateablilty, and automatability.
 
 It is often necessary to restructure software that has not been written in a testable way to make it possible to validate a system effectively; this commonly happens when units within the code take on more than one responsibility or when features become scattered across a codebase. One of the biggest advantages of Test-Driven Development (TDD) is that by writing your tests first you are able to ensure that your system is structured in a testable way.
@@ -19,6 +21,12 @@ Being able to isolate a fault within the code under test is crucial to be able t
 #### Automatability
 
 The above properties all aim to support making it possible to automate the execution of the test suite. Suites that can run without human intervention are much more likely to be executed than those that must be manually performed. They are also more likely to be run after a system has been released in the form of a regression suite to ensure that a system continues to execute as expected. All systems exist within organizations, even if the software does not change, external dependencies, libraries, frameworks, and computing infrastructure will which will require continuous validation of even deployed systems. The economic benefits or automation are also clear: even if it takes 5 hours to configure an automated test case that can be performed in 30 minutes, the suite will break-even (in terms of time) after only 10 test iterations. Automated suites can be run online as changes are made to a system, after every commit, nightly, or weekly, depending on the needs of the system. These suites also provide global visibility of the state of the system; if the suite has been 'green' for a week a team might feel more comfortable about deploying it than for a system whose suite has been failing for the same period of time.
+
+#### Summary
+
+The four properties of testability are not commonly considered on their own. While observability and isolatability are the two properties that matter the most (e.g., can I _detect_ that a fault exists, and if so, _where_ exactly in my code is it), these properties are not enough in practice. If you have an isolateable unit but you cannot control it (which usually means being able to pass in key dependencies (e.g., by dependency inversion) or values (e.g., input/output partitioning)) to trigger the fault, then being isolated does not matter, because you cannot trigger the behaviour you want to observe. 
+
+Consequently, isolateability without controllability is not very useful. Similarly, controllability alone also is not enough because large flexible functions may enable many specific behaviours to be triggered, while still being hard localize failures within due to their size or the scale of the external dependencies such a large function may invoke. Automatability is the least commonly considered testability property because automatability could be considered shorthand for code that is _programmatically controllable_. 
 
 More details about testability can be found in [Bob Binder's](http://robertvbinder.com/wp-content/uploads/rvb-pdf/talks/GTAC-2010-Binder-Testability.pdf) GTAC [talk](https://www.youtube.com/watch?v=1keyEiJHqPw). [Miško Hevery](https://www.youtube.com/watch?v=XcT4yYu_TTs) has a cool walkthrough video of live coding a refactoring to enable a simple system to be more testable. A nice collection of [testability links](http://stackoverflow.com/a/2085988/3133691) have been compiled on StackOverflow.
 
@@ -111,7 +119,7 @@ describe('Check math constants', function() {
 
 TODO: talk about handling async in test cases
 
-// not declared as async, need to resturn the promise
+// not declared as async, need to return the promise
 before(() => {
     syncFunction();
     return asyncFunction().then(() => asyncFunction()); // both complete before queries
