@@ -4,6 +4,10 @@
 
 * [2022 September (2022W1)](https://sites.google.com/view/ubc-cpsc310-22w1/home) **<-- look here for the current term!**
 
+## Future Term
+
+* 2023 January (2022W2) Course site will be linked here mid-December 2022.
+
 ### Past Terms
 
 * [2022 January (2021W2)](https://sites.google.com/view/ubc-cpsc310-21w2-intro-to-se/)
