@@ -9,7 +9,9 @@ When a function is asynchronous, or async, it runs outside of the normal control
 Below is a very simple async program:
 ```JS
 /*
-setTimeout is a very simple async function. It takes two parameters, the first is a callback function, the second is a time in milliseconds. After that much time, it executes the callback
+setTimeout is a very simple async function. It takes two parameters, 
+the first is a callback function, the second is a time in milliseconds. 
+After that much time, it executes the callback
 */
 function toDo() {
   console.log("I'm running now!");
