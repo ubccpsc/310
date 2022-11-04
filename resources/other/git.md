@@ -56,11 +56,17 @@ If you are in a repo that has not had any changes to it (e.g., no file changes a
 
 `git checkout -b <branchName>`
 
-## Moving work to a branch
+## Moving work to a new branch
 
 When you commit work it will be on whatever branch you have checked out in your repo (`main` by default). After making some local commits, but before pushing, you can move these commits to a new branch. This can be helpful especailly if branch protection is enabled on your repository as you will be unable to `git push` to main in this case.
 
 `git checkout -b <branchName>`
+
+When you try to share this new branch for the first time, you will have to tell your git server what you are doing:
+
+`git push --set-upstream origin <branchName>`
+
+Once this branch is on the git server, you can create a pull request using the GitHub web interface.
 
 
 # Additional content
