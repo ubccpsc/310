@@ -1,6 +1,6 @@
 # Using Git
 
-All software teams use version control to keep track of and share their technical artifacts. Git is the most commonly used verions control system in use today. While Git is incredibly flexible, it can be challenging to learn to use. Below is a task-oriented list of things you might want to accomplish and a short description of how to accomplish each task. There are a variety of ways to accomplish many of these actions, this description focuses on the simplest common mechanism. The `highlighted code` represents commands you can type, but elements in `<...>` represents parts of the command you will need to specify.
+All software teams use version control to keep track of and share their technical artifacts. Git is the most commonly used verions control system in use today. While Git is incredibly flexible, it can be challenging to learn to use. Below is a task-oriented list of things you might want to accomplish and a short description of how to accomplish each task. There are a variety of ways to accomplish many of these actions, this description focuses on the simplest common mechanism. The `highlighted text` are commands you can type, but you will need to specify text in `<...>` blocks.
 
 ## Getting a repo
 
@@ -8,7 +8,7 @@ Before you can use a repo you need to get a local copy on your machine from the 
 
 `git clone git@github.students.cs.ubc.ca:<org>/<repo>`
 
-This should always work for public repos, but if you are checking out a private repository you may need to configure your username and password.
+This should work for public repos, but if you are checking out a private repo you may need to configure your username and password.
 
 ## Receiving work
 
@@ -30,11 +30,11 @@ If you are wondering what files are untracked:
 
 After completing work, you need to complete it so the current status of your tracked files can be saved in the repo. To commit the changes you have made to all files at once:
 
-`git commit -a -m <message>`
+`git commit -a -m "<message>"`
 
 If you just want to commit changes to a single file:
 
-`git commit -m <message> <fileName>`
+`git commit -m "<message>" <fileName>`
 
 ## Sharing work
 
@@ -52,7 +52,7 @@ Much work in Git takes place on branches. Branches are the right place for _in p
 
 ## Switching to a branch
 
-If you are in a repo that has not had any changes to it (e.g., no file changes and no commits), you can change cleanly to another branch. If `branchName` exists, you will switch to the branch. If it does not exist, it will be created.
+If you are in a repo that has not had any changes to it (e.g., no file changes and no commits), you can change cleanly to another branch. If `branchName` exists, you will switch to the branch. If it does not exist, it will be created. Git branch names cannot contain spaces.
 
 `git checkout -b <branchName>`
 
@@ -68,6 +68,7 @@ When you try to share this new branch for the first time, you will have to tell 
 
 Once this branch is on the git server, you can create a pull request using the GitHub web interface.
 
+---
 
 # Additional content
 
@@ -79,29 +80,40 @@ To get started with git you first will have to [download it](https://git-scm.com
   - A collection of commits is called a _repository_, or repo for short.
   - When a repo is hosted online somewhere, such as GitHub, that is called that repo’s _remote_.
 
-Now, here are the essential commands for working with git:
+Below are the essential commands for working with git:
 
   - `git clone <url>` downloads the repo at the given url into a folder in your current working directory. You can find the URL for a repository by clicking the green "Clone or download" button on the repo’s page. Example: `git clone https://github.com/ubccpsc/310.git` 
+
   - `git add <file/argument>` stages your changes for commit. After making changes to files in your project, you can stage them (set them to be included in the next commit) by running git add and specifying the files you would like to stage. You have the option to specify single files manually, or use arguments to specify types of files.  Git won’t automatically pay attention to all files in the repo directory, they will have to have been added at some point in the repo history. Examples:
 
     - Add a single file: `git add myfile.ts`
+
     - Add all updated tracked files: `git add -u`
+
   - `git status` displays files that have been staged, modified, etc. as well as information about if your branch is up to date with your remote. You may want to run git status before committing to ensure the files you have added are what you expect (especially if you use `git add -u`).
+
   - `git commit` actually creates the snapshot of your staged changes and lets you give the snapshot a description, called a commit message. A good commit message is a short, descriptive note about the changes made since the last commit (e.g. “Fix divide by zero exception when getting average”). You can give the message in the same command using the `-m` parameter, otherwise a text editor will launch for you to write your message in. Examples:
 
     - Commit with message: `git commit -m "Fix divide by zero exception when getting average"`
+
     - Commit all changes (combines git add -u and git commit into one command): `git commit -a -m "Fix divide by zero exception when getting average"`
+
   - `git push` sends the commit(s) you've made locally to GitHub. To share changes with your partner (and to see your changes on GitHub) you need to execute this command. 
+
   - `git pull` gets the changes from GitHub that you don't already have locally. Run this after your partner has run git push.
 
 Lastly, here are some non-essential commands that are good to know:
 
   - `git log` to view commit history
+
   - `git checkout <commit/branch>` to change your files to their state in a given commit. Be careful about making any changes when not on the most recent commit. When you go back to your most recent commit, changes you made may be lost if you were working on a commit that isn't the head of a branch.
 
   - `git diff` to compare currently added files to last commit
+
   - `git diff <oldCommitId> <newCommitId>` to compare two commits
+
   - `git reset` to unstage files previously staged with `git add`
+
   - `git reset --hard` to unstage added files AND undo all changes since last commit. Warning! This means it will change the actual files currently saved on your computer back to the state they were in the last commit you made. Make sure you want to do this.
 
 A quick/concise note on merge conflicts. If git is unable to merge the two branches automatically, it will mark the area where the conflict occurred. It will modify the offending file to look like:
