@@ -8,13 +8,14 @@ All software teams use version control to keep track of and share their technica
 * Recipies
 
  1. [Getting a repo](#clone)
- 1. [Receiving work](#pull)
+ 1. [Receiving changes](#pull)
  1. [Adding a file](#add)
- 1. [Committing work](#commit)
+ 1. [Committing changes](#commit)
  1. [Sharing work](#push)
  1. [Listing existing branches](#list)
  1. [Switching to a branch](#switch)
  1. [Moving work into a new branch](#move) 
+ 1. [Recovering from a bad git state](#recovery) 
 
 * [Additional content](#additional)
 
@@ -30,9 +31,9 @@ Before you can use a repo you need to get a local copy on your machine from the 
 This should work for public repos, but if you are checking out a private repo you may need to configure your username and password.
 
 <a name="pull"></a>
-## Receiving work
+## Receiving changes
 
-If there have been updates on your repo (e.g., your teammates have made commits), you can update your local copy with any changes they have shared with the remote server.
+If there have been updates on your repo (e.g., your teammates have made changes or you made changes on another device), you can update your local copy with any changes they have shared with the remote server.
 
 `git pull` 
 
@@ -43,25 +44,25 @@ Files you create locally on disk need to be explicitly added to Git so they can 
 
 `git add <fileName>`
 
-If you are wondering what files are untracked:
+Note: once the file is added, it must still be [committed](#commit) and [shared](#push). If you are wondering what files are untracked:
 
-`git status .`
+`git status`
 
 <a name="commit"></a>
-## Committing work
+## Committing changes
 
-After completing work, you need to complete it so the current status of your tracked files can be saved in the repo. To commit the changes you have made to all files at once:
+After completing some changes, you need to track them in yuour local repo it so the current status of your tracked files can be saved. To commit the changes you have made to all files at once:
 
-`git commit -a -m "<message>"`
+`git commit -m "<message>"`
 
 If you just want to commit changes to a single file:
 
 `git commit -m "<message>" <fileName>`
 
 <a name="push"></a>
-## Sharing work
+## Sharing changes
 
-So far your commits just exist on your local machine. To share them with others, you will need to upload them to the server:
+So far your commits just exist on your local machine. To share your changes with others, you will need to upload them to the server:
 
 `git push`
 
@@ -82,7 +83,7 @@ If you are in a repo that has not had any changes to it (e.g., no file changes a
 `git checkout <branchName>`
 
 <a name="move"></a>
-## Moving work into a new branch
+## Copying changes into a new branch
 
 If you plan ahead, you can create a new branch before you start new development work with the command below. But if you forget and you have committed work on whatever branch you have checked out in your repo (`main` by default), you may want to move this new work to a new different dev branch. After making some local commits, but before pushing, you can move these commits to a new branch. This can be helpful especially if branch protection is enabled on your repository as you will be unable to `git push` to main in this case.
 
@@ -93,6 +94,11 @@ When you try to share this new branch for the first time, you will have to tell 
 `git push --set-upstream origin <branchName>`
 
 Once this branch is on the git server, you can create a pull request using the GitHub web interface.
+
+<a name="recovery"></a>
+## Recovering from bad git state
+
+Sometimes git repos get into bad states. When they do, make a copy of the repo on local disk (so you don't lose your work), and clone a fresh copy of the repo from GitHub. While this is unsatisfying, it can sometimes be easier than trying to reverse your way out of an unclear repository state.
 
 ---
 
