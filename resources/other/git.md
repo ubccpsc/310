@@ -7,7 +7,7 @@ All software teams use version control to keep track of and share their technica
 
 Before you can use a repo you need to get a local copy on your machine from the remote server. To do this, you can specify the repo you want checked out.
 
-`git clone git@github.students.cs.ubc.ca:<org>/<repo>`
+`git clone git@github.students.cs.ubc.ca:<org>/<repo>.git`
 
 This should work for public repos, but if you are checking out a private repo you may need to configure your username and password.
 
@@ -45,7 +45,7 @@ So far your commits just exist on your local machine. To share them with others,
 
 Note: if the server version has been updated since you last received work, you will have to perform a `git pull` before the `git push` will work.
 
-## Getting a branch list
+## Listing existing branch names
 
 Much work in Git takes place on branches. Branches are the right place for _in progress_ development work. When using branches, the main branch is reserved for _completed_ work. This allows multiple people to work independently without overwriting each other's work, although waiting too long between merging a development branch with main increases the chances of merge conflicts. To get a list of branches you can switch to, run:
 
@@ -55,11 +55,11 @@ Much work in Git takes place on branches. Branches are the right place for _in p
 
 If you are in a repo that has not had any changes to it (e.g., no file changes and no commits), you can change cleanly to another branch. If `branchName` exists, you will switch to the branch. If it does not exist, it will be created. Git branch names cannot contain spaces.
 
-`git checkout -b <branchName>`
+`git checkout <branchName>`
 
-## Moving work to a new branch
+## Moving work into a new branch
 
-When you commit work it will be on whatever branch you have checked out in your repo (`main` by default). After making some local commits, but before pushing, you can move these commits to a new branch. This can be helpful especially if branch protection is enabled on your repository as you will be unable to `git push` to main in this case.
+If you plan ahead, you can create a new branch before you start new development work with the command below. But if you forget and you have committed work on whatever branch you have checked out in your repo (`main` by default), you may want to move this new work to a new different dev branch. After making some local commits, but before pushing, you can move these commits to a new branch. This can be helpful especially if branch protection is enabled on your repository as you will be unable to `git push` to main in this case.
 
 `git checkout -b <branchName>`
 
@@ -128,7 +128,9 @@ A quick/concise note on merge conflicts. If git is unable to merge the two branc
 ```
 Your job is to pick which version of the code you want (or write a new version if you wish), and then delete the other version(s) and the start/end markers, before finally adding and committing that file. There may be more than one conflict like this per file. WebStorm and VSCode have built-in conflict resolution tools, but it is best to avoid merge conflicts by communicating with your partner and pushing/pulling changes often.
 
-### Resources
+---
+
+### Additional Resources
 
 This is just a lightweight resource that looks at the main ways you will probably interact with git during this course. Many more comprehensive resources and interactive tutorials can be found online.
 
