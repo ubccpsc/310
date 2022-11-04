@@ -1,6 +1,7 @@
-# Using Git
+# Using <img src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" width="100px" style="vertical-align: bottom"/>
 
-All software teams use version control to keep track of and share their technical artifacts. Git is the most commonly used verions control system in use today. While Git is incredibly flexible, it can be challenging to learn to use. Below is a task-oriented list of things you might want to accomplish and a short description of how to accomplish each task. There are a variety of ways to accomplish many of these actions, this description focuses on the simplest common mechanism. The `highlighted text` are commands you can type, but you will need to specify text in `<...>` blocks.
+
+All software teams use version control to keep track of and share their technical artifacts. Git is the most commonly used versions control system in use today. While Git is incredibly flexible, it can be challenging to learn to use. Below is a task-oriented list of things you might want to accomplish and a short description of how to accomplish each task. There are a variety of ways to accomplish many of these actions, this description focuses on the simplest common mechanism. The `highlighted text` are commands you can type, but you will need to specify text in `<...>` blocks.
 
 ## Getting a repo
 
@@ -58,7 +59,7 @@ If you are in a repo that has not had any changes to it (e.g., no file changes a
 
 ## Moving work to a new branch
 
-When you commit work it will be on whatever branch you have checked out in your repo (`main` by default). After making some local commits, but before pushing, you can move these commits to a new branch. This can be helpful especailly if branch protection is enabled on your repository as you will be unable to `git push` to main in this case.
+When you commit work it will be on whatever branch you have checked out in your repo (`main` by default). After making some local commits, but before pushing, you can move these commits to a new branch. This can be helpful especially if branch protection is enabled on your repository as you will be unable to `git push` to main in this case.
 
 `git checkout -b <branchName>`
 
@@ -125,11 +126,11 @@ A quick/concise note on merge conflicts. If git is unable to merge the two branc
 // Code from the other branch
 >>>>>>> branch-a
 ```
-Your job is to pick which version of the code you want (or write a new version if you wish), and then delete the other version(s) and the start/end markers, before finally adding and commiting that file. There may be more than one conflict like this per file. WebStorm and VSCode have built-in conflict resolution tools, but it is best to avoid merge conflicts by communicating with your partner and pushing/pulling changes often.
+Your job is to pick which version of the code you want (or write a new version if you wish), and then delete the other version(s) and the start/end markers, before finally adding and committing that file. There may be more than one conflict like this per file. WebStorm and VSCode have built-in conflict resolution tools, but it is best to avoid merge conflicts by communicating with your partner and pushing/pulling changes often.
 
 ### Resources
 
-For more git resources, and those that explain branching well, here are some interactive tutorials:
+This is just a lightweight resource that looks at the main ways you will probably interact with git during this course. Many more comprehensive resources and interactive tutorials can be found online.
 
   - [https://www.atlassian.com/git/tutorials/what-is-version-control]()
   - [https://try.github.io/levels/1/challenges/1]()
