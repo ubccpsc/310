@@ -1,4 +1,4 @@
-# <img src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" width="100px" style="vertical-align: bottom"/> Cookbook
+# <img src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" width="100px"/>&nbsp;&nbsp;Cookbook
 
 
 All software teams use version control to keep track of and share their technical artifacts. Git is the most commonly used versions control system in use today. While Git is incredibly flexible, it can be challenging to learn to use. Below is a task-oriented list of things you might want to accomplish and a short description of how to accomplish each task. There are a variety of ways to accomplish many of these actions, this description focuses on the simplest common mechanism. The `highlighted text` are commands you can type, but you will need to specify text in `<...>` blocks.
@@ -7,15 +7,15 @@ All software teams use version control to keep track of and share their technica
 
 * Recipies
 
- 1. [Getting a repo](#clone)
- 1. [Receiving changes](#pull)
- 1. [Adding a file](#add)
- 1. [Committing changes](#commit)
- 1. [Sharing work](#push)
- 1. [Listing existing branches](#list)
- 1. [Switching to a branch](#switch)
- 1. [Moving work into a new branch](#move) 
- 1. [Recovering from a bad git state](#recovery) 
+   1. [Getting a repo](#clone)
+   1. [Receiving changes](#pull)
+   1. [Adding a file](#add)
+   1. [Committing changes](#commit)
+   1. [Sharing work](#push)
+   1. [Listing existing branches](#list)
+   1. [Switching to a branch](#switch)
+   1. [Moving work into a new branch](#move) 
+   1. [Recovering from a bad git state](#recovery) 
 
 * [Additional content](#additional)
 
