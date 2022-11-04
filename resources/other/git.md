@@ -1,9 +1,27 @@
-# Using <img src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" width="100px" style="vertical-align: bottom"/>
+# <img src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" width="100px" style="vertical-align: bottom"/> Cookbook
 
 
 All software teams use version control to keep track of and share their technical artifacts. Git is the most commonly used versions control system in use today. While Git is incredibly flexible, it can be challenging to learn to use. Below is a task-oriented list of things you might want to accomplish and a short description of how to accomplish each task. There are a variety of ways to accomplish many of these actions, this description focuses on the simplest common mechanism. The `highlighted text` are commands you can type, but you will need to specify text in `<...>` blocks.
 
-## Getting a repo
+# TOC
+
+* Recipies
+
+ 1. [Getting a repo](#clone)
+ 1. [Receiving work](#pull)
+ 1. [Adding a file](#add)
+ 1. [Committing work](#commit)
+ 1. [Sharing work](#push)
+ 1. [Listing existing branches](#list)
+ 1. [Switching to a branch](#switch)
+ 1. [Moving work into a new branch](#move) 
+
+* [Additional content](#additional)
+
+* [Resources](#resources)
+
+<a name="clone"></a>
+## Getting a repo 
 
 Before you can use a repo you need to get a local copy on your machine from the remote server. To do this, you can specify the repo you want checked out.
 
@@ -11,12 +29,14 @@ Before you can use a repo you need to get a local copy on your machine from the 
 
 This should work for public repos, but if you are checking out a private repo you may need to configure your username and password.
 
+<a name="pull"></a>
 ## Receiving work
 
 If there have been updates on your repo (e.g., your teammates have made commits), you can update your local copy with any changes they have shared with the remote server.
 
 `git pull` 
 
+<a name="add"></a>
 ## Adding a file
 
 Files you create locally on disk need to be explicitly added to Git so they can be tracked. To add a file:
@@ -27,6 +47,7 @@ If you are wondering what files are untracked:
 
 `git status .`
 
+<a name="commit"></a>
 ## Committing work
 
 After completing work, you need to complete it so the current status of your tracked files can be saved in the repo. To commit the changes you have made to all files at once:
@@ -37,6 +58,7 @@ If you just want to commit changes to a single file:
 
 `git commit -m "<message>" <fileName>`
 
+<a name="push"></a>
 ## Sharing work
 
 So far your commits just exist on your local machine. To share them with others, you will need to upload them to the server:
@@ -45,18 +67,21 @@ So far your commits just exist on your local machine. To share them with others,
 
 Note: if the server version has been updated since you last received work, you will have to perform a `git pull` before the `git push` will work.
 
+<a name="list"></a>
 ## Listing existing branch names
 
 Much work in Git takes place on branches. Branches are the right place for _in progress_ development work. When using branches, the main branch is reserved for _completed_ work. This allows multiple people to work independently without overwriting each other's work, although waiting too long between merging a development branch with main increases the chances of merge conflicts. To get a list of branches you can switch to, run:
 
 `git branch -r`
 
+<a name="switch"></a>
 ## Switching to a branch
 
 If you are in a repo that has not had any changes to it (e.g., no file changes and no commits), you can change cleanly to another branch. If `branchName` exists, you will switch to the branch. If it does not exist, it will be created. Git branch names cannot contain spaces.
 
 `git checkout <branchName>`
 
+<a name="move"></a>
 ## Moving work into a new branch
 
 If you plan ahead, you can create a new branch before you start new development work with the command below. But if you forget and you have committed work on whatever branch you have checked out in your repo (`main` by default), you may want to move this new work to a new different dev branch. After making some local commits, but before pushing, you can move these commits to a new branch. This can be helpful especially if branch protection is enabled on your repository as you will be unable to `git push` to main in this case.
@@ -71,6 +96,7 @@ Once this branch is on the git server, you can create a pull request using the G
 
 ---
 
+<a name="additional"></a>
 # Additional content
 
 <!-- Adapted from https://docs.google.com/document/d/e/2PACX-1vRLGZg6A7OvuG-lVngMkQNBkj1V9yOStxGGWtUFUpOXKmTSkBTbU4k_pp8NlXrZlxKnLX1PU3RY58Vm/pub -->
@@ -130,6 +156,7 @@ Your job is to pick which version of the code you want (or write a new version i
 
 ---
 
+<a name="resources"></a>
 ### Additional Resources
 
 This is just a lightweight resource that looks at the main ways you will probably interact with git during this course. Many more comprehensive resources and interactive tutorials can be found online.
