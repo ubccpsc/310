@@ -88,9 +88,9 @@ The second parameter to `calcCB` is a callback: this is a method that is called 
 When a Promise settles, it calls its `then` function (if successful) and its `catch` function if an error is encountered.
 
 ```typescript
-this.math.calcAsync(exp).then(function (result) {
+this.math.calcAsync(exp).then( (result) => {
     console.log("singlePromise - done; result: " + result);
-}).catch(function (err) {
+}).catch( (err) => {
     console.log("singlePromise - ERROR; err: " + err);
 });
 ```
@@ -119,21 +119,48 @@ try {
 #### With callbacks
 
 ```typescript
-TBD
+this.math.calcCB(exp, (err: string, result: string) => {
+    if (err) {
+        console.log("sequentialCallback - ERROR; err: " + err);
+    } else {
+        this.math.calcCB(result + "*10", (err: string, result: string) => {
+            if (err) {
+                console.log("sequentialCallback inner - ERROR; err: " + err);
+            } else {
+                console.log("sequentialCallback inner - done; result: " + result);
+            }
+        });
+        console.log("sequentialCallback - done; result: " + result);
+    }
+});
 ```
 
 <a href="#sequentialPromise"></a>
 #### With promises
 
 ```typescript
-TBD
+this.math.calcAsync(exp).then((result) => {
+    console.log("sequentialPromise - done; result: " + result);
+    return this.math.calcAsync(exp + "*10");
+}).then((result) => {
+    console.log("sequentialPromise inner - done; result: " + result);
+}).catch((err) => {
+    console.log("sequentialPromise - ERROR; err: " + err);
+});
 ```
 
 <a href="#sequentialAsync"></a>
 #### With async/await
 
 ```typescript
-TBD
+try {
+    let result = await this.math.calcAsync(exp);
+    console.log("sequentialAsync - done; result: " + result);
+    result = await this.math.calcAsync(exp + "*10");
+    console.log("sequentialAsync inner - done; result: " + result);
+} catch (err) {
+    console.log("sequentialAsync - ERROR; err: " + err);
+}
 ```
 
 ---
@@ -143,22 +170,89 @@ TBD
 <a href="#parallelCallback"></a>
 #### With callbacks
 
-```typescript
-TBD
-```
+Parallel callbacks are extremely hard to manage, especially when there are an unknown number of them at runtime (the examples below for promises and async/await are handling four jobs). Just don't write them with traditional callbacks, you'll live a happier and more fruitful life for this choice.
 
 <a href="#parallelPromise"></a>
 #### With promises
 
 ```typescript
-TBD
+let jobs = [];
+let total = 1;
+const opts = [11, 20, 30, 40, 51];
+
+// create a list of asynchronous work
+for (const o of opts) {
+    jobs.push(this.math.calcAsync(o + "+" + (o + 1)));
+}
+
+// wait for all asynchronous work to finish
+Promise.all(jobs).then( (jobResults) => {
+    for (const result of jobResults) {
+        // each result is the settled value from the Promise
+        total += Number(result);
+    }
+    console.log("parallelPromises done; total: " + total);
+}).catch( (err) => {
+    // handle error
+    console.log("parallelPromises - ERROR: " + err);
+});
 ```
 
 <a href="#parallelAsync"></a>
 #### With async/await
 
+This looks great, but isn't. Error handling does not work like you think it will.
+
 ```typescript
-TBD
+let jobs = [];
+let total = 1;
+const opts = [11, 20, 30, 40, 51];
+// create a list of asynchronous work
+for (const o of opts) {
+    jobs.push(this.math.calcAsync(o + "+" + (o + 1)));
+}
+
+try {
+    // wait for all asynchronous work to finish with await
+    const jobResults = await Promise.all(jobs);
+    for (const result of jobResults) {
+        // each result is the settled value from the Promise
+        total += Number(result);
+    }
+    console.log("parallelHybridPromises done; total: " + total);
+} catch (err) {
+    // handle error
+    console.log("parallelHybridPromises - ERROR: " + err);
+}
+```
+
+
+<a href="#parallelPromiseAwait"></a>
+#### With hyrbid await and Promise.all
+
+Fortunately, both promises and async/await can be combined to strike a nice balance of understandability and realiability. Here `Promise.all` is used to wait for all work to be done, but rather than using a `.then` or `.catch`, we are using `await` which also enables us to use the standard exception handling mechanisms for errors.
+
+```typescript
+try {
+    let jobs = [];
+    const opts = [11, 20, 30, 40, 51];
+    let total = 1;
+    // create a list of asynchronous work
+
+    for (const o of opts) {
+        // jobs.push(this.math.doStringyMath(o + "+" + (o + 1)));
+        jobs.push(this.math.calcAsync(o + "+XXX" + (o + 1)));
+    }
+    // wait for all asynchronous work to finish
+    for await (const result of jobs) {
+        // each result is the settled value from the Promise
+        total += Number(result);
+    }
+    console.log("parallelAwait done; total: " + total);
+} catch (err) {
+    // handle error
+    console.log("parallelAwait - ERROR: " + err);
+}
 ```
 
 ---
