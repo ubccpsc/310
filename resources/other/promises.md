@@ -1,5 +1,7 @@
 # Promises Tutorial
 
+NOTE: this will soon be replaced with the [Async cookbook](htts://TBD).
+
 <!-- Adapted from https://docs.google.com/document/d/e/2PACX-1vTCJJ5hV2L5xBNRP4K6EL7D8Ai-2m4KWzgmRu_Z4DzSI-U-V-IhbrpDhZPrLzPdq6l4n101iCQDOT4J/pub -->
 
 _Note: Some code samples are written in JavaScript._
@@ -7,7 +9,8 @@ _Note: Some code samples are written in JavaScript._
 When a function is asynchronous, or async, it runs outside of the normal control flow of your program. You can think of it being set aside to run as "to do whenever possible". Some async operations may be dependant on resources outside of your system, such as when making requests from an external server. You won’t know when the function will return, but that doesn’t mean you don’t still need the result.
 
 Below is a very simple async program:
-```JS
+
+```javascript
 /*
 setTimeout is a very simple async function. It takes two parameters, 
 the first is a callback function, the second is a time in milliseconds. 
@@ -55,12 +58,13 @@ Note that if you are rejecting, you do not need to reject with the same type.
 ## Using async/await syntax
 Now that you have an understanding promises, let's see how we can accomplish the same thing using async/await syntax. First, you must define your function with the `async` keyword:
 
-```TS
+```typescript
 async function doSumAsync(filesWithNumbers: string[]): Promise<number> {...}
 ```
 
 Inside of the function you can use the `await` keyword which causes the program to wait until the promise either resolves of rejects:
-```TS
+
+```typescript
 async function addOneV1(): Promise<number> {
   const filesWithNumbers: string[] = ["file1", "file2", "file3"];
   const sumPromise: Promise<number> = doSumAsync(filesWithNumbers);
@@ -77,7 +81,8 @@ async function addOneV2(): Promise<number> {
 ```
 
 In the above example, if the promise rejects, an exception will be thrown. Let's handle that like we did before with a catch. Note under the async/await syntax, exceptions are handled synchronosly, just like normal expections:
-```TS
+
+```typescript
 async function addOneV3(): Promise<number> {
   let sum: number = 0;
 
@@ -94,7 +99,7 @@ async function addOneV3(): Promise<number> {
 
 Finally, we can mimic `Promise.all` by calling an async function before `await`ing it:
 
-```TS
+```typescript
 async function readNumberFileAsync(path: string): Promise<number[]> {...}
 
 async function doSumAsync(filesWithNumbers: string[]): Promise<number> {
@@ -124,7 +129,8 @@ async function doSumAsync(filesWithNumbers: string[]): Promise<number> {
 ```
 
 Alternatively, we can use a combination of `await` and `Promise.all` which is likely what you'll want to use in your project (if you choose to use the async/await syntax):
-```TS
+
+```typescript
 async function readNumberFileAsync(path: string): Promise<number[]> {...}
 
 async function doSumAsync(filesWithNumbers: string[]): Promise<number> {
