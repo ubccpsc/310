@@ -105,6 +105,7 @@ The async/await version of the code _almost_ looks like syncronous code. Only tw
 ```typescript
 try {
     const result = await this.math.calcAsync(exp);
+
     console.log("singleAsync - done; result: " + result);
 } catch (err) {
     console.log("singleAsync - ERROR; err: " + err);
@@ -141,6 +142,7 @@ this.math.calcCB(exp, (err: string, result: string) => {
 ```typescript
 this.math.calcAsync(exp).then((result) => {
     console.log("sequentialPromise - done; result: " + result);
+
     return this.math.calcAsync(exp + "*10");
 }).then((result) => {
     console.log("sequentialPromise inner - done; result: " + result);
@@ -156,7 +158,9 @@ this.math.calcAsync(exp).then((result) => {
 try {
     let result = await this.math.calcAsync(exp);
     console.log("sequentialAsync - done; result: " + result);
+    
     result = await this.math.calcAsync(exp + "*10");
+    
     console.log("sequentialAsync inner - done; result: " + result);
 } catch (err) {
     console.log("sequentialAsync - ERROR; err: " + err);
@@ -191,6 +195,7 @@ Promise.all(jobs).then( (jobResults) => {
         // each result is the settled value from the Promise
         total += Number(result);
     }
+
     console.log("parallelPromises done; total: " + total);
 }).catch( (err) => {
     // handle error
@@ -201,12 +206,13 @@ Promise.all(jobs).then( (jobResults) => {
 <a href="#parallelAsync"></a>
 #### With async/await
 
-This looks great, but isn't. Error handling does not work like you think it will.
+While using the `for await` construct feels appealing as it helps the code look as close to the synchronous version as possible, this mechanism is prone to two shortcomings. First, it is extremely common to make mistakes that can result in the code running sequentially instead of in parallel. Second, the `try..catch` does not reliably catch errors that may arise if any of the async jobs fail. Fortunately, a [hybrid](#parallelPromiseAwait) of thes two approaches can address both of these shortcomings.
 
 ```typescript
 let jobs = [];
 let total = 1;
 const opts = [11, 20, 30, 40, 51];
+
 // create a list of asynchronous work
 for (const o of opts) {
     jobs.push(this.math.calcAsync(o + "+" + (o + 1)));
@@ -219,6 +225,7 @@ try {
         // each result is the settled value from the Promise
         total += Number(result);
     }
+    
     console.log("parallelHybridPromises done; total: " + total);
 } catch (err) {
     // handle error
@@ -237,17 +244,20 @@ try {
     let jobs = [];
     const opts = [11, 20, 30, 40, 51];
     let total = 1;
-    // create a list of asynchronous work
 
+    // create a list of asynchronous work
     for (const o of opts) {
         // jobs.push(this.math.doStringyMath(o + "+" + (o + 1)));
         jobs.push(this.math.calcAsync(o + "+XXX" + (o + 1)));
     }
+    
     // wait for all asynchronous work to finish
-    for await (const result of jobs) {
+    const jobResults = await Promise.all(jobs);
+    for (const result of jobResults) {
         // each result is the settled value from the Promise
         total += Number(result);
     }
+
     console.log("parallelAwait done; total: " + total);
 } catch (err) {
     // handle error
