@@ -27,7 +27,7 @@ Working with asynchronous code can be challenging. This cookbook provides concre
 * [Other async challenges](#other
     * [Wrapping a callback in a promise](#wrapCallback)
 
-<a href="#tips"></a>
+<a name="tips"></a>
 ### Top tips
 
 Async programming can be deceptively tricky. There are four main traps you should be aware of:
@@ -40,7 +40,7 @@ Async programming can be deceptively tricky. There are four main traps you shoul
 
 * Working with many async tasks at once (e.g., `Promise.all` or `for await`) can sometimes obscure whether your code is waiting for one async task to complete before staring the next. This can unexpectedly degrade program performance.
 
-<a href="#setting"></a>
+<a name="setting"></a>
 ### Setting
 
 These examples below all rely on the [MathJS](http://api.mathjs.org) REST library. We have developed two asynchronous methods for calling the MathJS endpoint:
@@ -57,7 +57,7 @@ public calcCB(expression: string,
 
 For all examples below, you can assume you have access to a field called `private math: MathJS` that provides both methods declared above. Additionally, a string expression (e.g., `300+10`) is provided in the `exp` variable.
 
-<a href="#callingAsync"></a>
+<a name="callingAsync"></a>
 ## Calling async methods
 
 Calling asynchronous methods requires more care than synchronous methods because the method does not return as you might normally expect.
@@ -78,12 +78,12 @@ Three predominant mechanisms exist for executing asynchronous work in Typescript
 
 ---
 
-<a href="#single"></a>
+<a name="single"></a>
 ### Single async call
 
 All three mechanisms work well for making a single async call, although callbacks are the most verbose, and async/await are the most visually similar to synchronous code.
 
-<a href="#singleCallback"></a>
+<a name="singleCallback"></a>
 #### With callbacks
 
 Callbacks were the original mechanism in Typescript for completing asynchronous work. 
@@ -100,7 +100,7 @@ this.math.calcCB(exp, (err: string, result: string) => {
 
 The second parameter to `calcCB` is a callback: this is a method that is called by the math `calcCB` when it is done asynchronously computing the calculation. The callback takes two parameters: `err` and `result`. By convention, callback-based code returns an error parameter first that can be checked for errors, and returned results as subsequent parameters.
 
-<a href="#singlePromise"></a>
+<a name="singlePromise"></a>
 #### With promises
 
 If a Promise settles successfully, it calls its `then` function; if an error is encountered, the promise settles by calling its `catch` function.
@@ -115,7 +115,7 @@ this.math.calcAsync(exp).then( (result) => {
 
 While both the `.then` and `.catch` function are optional, the result of the async call cannot be retrieved without including `.then`, and difficult-to-diagnose errors can arise if `.catch` is omitted as the promise will silently fail.
 
-<a href="#singleAsync"></a>
+<a name="singleAsync"></a>
 #### With async/await
 
 The async/await version of the code _almost_ looks like synchronous code. Only two differences exist: first, the `await` keyword specifies that the code following the call depends on the result and computation should be yielded until the async method has completed. Second, while not shown below, methods using the `await` keyword must be declared `async` in their method declaration.
@@ -132,12 +132,12 @@ try {
 
 ---
 
-<a href="#sequential"></a>
+<a name="sequential"></a>
 ### Sequential async calls
 
 It often arises that several async calls need to be used to complete a single task. While the calls themselves are async, organizing them into a synchronous sequence so the output of an earlier call can be used in a subsequent call is often needed.
 
-<a href="#sequentialCallback"></a>
+<a name="sequentialCallback"></a>
 #### With callbacks
 
 As the number of asynchronous callbacks increase, the difficulty in dealing with them grows. The code below provides a glimpse of 'the pyramid of doom' where nested callbacks create deep indentation structures that are error-prone and hard to debug.
@@ -159,7 +159,7 @@ this.math.calcCB(exp, (err: string, result: string) => {
 });
 ```
 
-<a href="#sequentialPromise"></a>
+<a name="sequentialPromise"></a>
 #### With promises
 
 One of the greatest strenghths of promises is to enable async calls to be marshalled into easier-to-understand sequences of actions. While the code below shows only two nested calls to `calcAsync`, these could be interspersed with any number of other async calls as well. Errors are handled with `catch` clauses, and these clauses can occur at any point in the sequence; errors will always be handled by their 'next' `.catch` clause.
@@ -178,7 +178,7 @@ this.math.calcAsync(exp).then((result) => {
 });
 ```
 
-<a href="#sequentialAsync"></a>
+<a name="sequentialAsync"></a>
 #### With async/await
 
 As with the single async call example, async/await provide the cleanest mechanism for writing async calls.
@@ -198,17 +198,17 @@ try {
 
 ---
 
-<a href="#parallel"></a>
+<a name="parallel"></a>
 ### Parallel async calls
 
 Another common use case is when many independent parallel jobs need to be executed. This may arise when reading or writing many different file-based or network-based resources.
 
-<a href="#parallelCallback"></a>
+<a name="parallelCallback"></a>
 #### With callbacks
 
 Parallel callbacks are extremely hard to manage, especially when there are an unknown number of them at runtime (the examples below for promises and async/await are handling four jobs). Just don't write them with traditional callbacks, you'll live a happier and more fruitful life for this choice.
 
-<a href="#parallelPromise"></a>
+<a name="parallelPromise"></a>
 #### With promises
 
 `Promise.all` is used for exactly this case: this Promise takes a  list of async tasks, waits for them to all complete (or fail), and then settles itself.
@@ -241,7 +241,7 @@ Promise.all(jobs).then( (jobResults) => {
 });
 ```
 
-<a href="#parallelAsync"></a>
+<a name="parallelAsync"></a>
 #### With async/await
 
 While using the `for await` construct feels appealing as it helps the code look as close to the synchronous version as possible, this mechanism is prone to two shortcomings. First, it is extremely common to make mistakes that can result in the code running sequentially instead of in parallel. Second, the `try..catch` does not reliably catch errors that may arise if any of the async jobs fail (this is not true for normal `await` calls, only for `for await`).  Fortunately, a [hybrid](#parallelPromiseAwait) of these two approaches can address both of these shortcomings.
@@ -272,7 +272,7 @@ try {
 ```
 
 
-<a href="#parallelPromiseAwait"></a>
+<a name="parallelPromiseAwait"></a>
 #### With hybrid await and Promise.all
 
 Fortunately, both promises and async/await can be combined to strike a nice balance of understandability and reliability. Here `Promise.all` is used to wait for all work to be done, but rather than handling `.all` being done using a `.then` or `.catch`, we are using `await` which also enables us to use the standard exception handling mechanisms for errors.
@@ -305,33 +305,33 @@ try {
 
 ---
 
-<a href="#testAsync"></a>
+<a name="testAsync"></a>
 ## Testing async methods
 
 TBD
 
-<a href="#testCallback"></a>
+<a name="testCallback"></a>
 ### Testing callbacks 
 
 TBD
 
 
-<a href="#testPromise"></a>
+<a name="testPromise"></a>
 ### Testing promises 
 
 TBD
 
-<a href="#testAsync"></a>
+<a name="testAsync"></a>
 ### Testing promises 
 
 TBD
 
-<a href="#other"></a>
+<a name="other"></a>
 ## Other async challenges
 
 TBD
 
-<a href="#wrapCallback"></a>
+<a name="wrapCallback"></a>
 ### Wrapping callback in a promise
 
 TBD
