@@ -313,18 +313,171 @@ TBD
 <a name="testCallback"></a>
 ### Testing callbacks 
 
+TBD 
+
+```typescript
+it("Test single callback success", function (done) {
+    const expression = "155*2";
+    const expected = "310";
+
+    math.calcCB(expression, (err, result) => {
+        console.log("err: " + err + "; result: " + result);
+
+        expect(err).to.be.null;
+        expect(result).to.equal(expected);
+
+        done(); // signal that async function is complete
+    });
+});
+```
+
 TBD
 
+```typescript
+it("Test single callback failure", function (done) {
+    const expression = "INVALID";
+    const expected = "StatusCodeError: 400 - Error: Undefined symbol INVALID";
+
+    math.calcCB(expression, (err, result) => {
+        console.log("err: " + err + "; result: " + result);
+
+        expect(err).to.not.be.null;
+        expect(err).to.equal(expected);
+        expect(result).to.be.null;
+
+        done(); // signal that async function is complete
+    });
+});
+```
 
 <a name="testPromise"></a>
 ### Testing promises 
 
 TBD
 
-<a name="testAsync"></a>
-### Testing promises 
+```typescript
+it("Test single promise success", async function () {
+    const expression = "155*2";
+    const expected = "310";
+
+    // NOTE: this form of checking allows for multiple assertions
+    // on the success of the function. for a simpler form,
+    // see 'single async success' below
+    return math.calcAsync(expression).then((result) => {
+        console.log("result: " + result);
+
+        expect(result).to.not.be.null;
+        expect(result).to.equal(expected);
+    }).catch((err) => {
+        // catch is optional as the unhandled error will fail the test case
+        // but having it explicitly here makes it easier to understand the failure
+        console.log("err: " + err);
+        expect(err).to.be.null;
+    });
+});
+```
 
 TBD
+
+```typescript
+it("Test single promise failure", async function () {
+    const expression = "INVALID";
+    const expected = "StatusCodeError: 400 - \"Error: Undefined symbol INVALID\"";
+
+    // NOTE: this form of checking allows for multiple assertions
+    // on the failure of the function. for a simpler form,
+    // see 'single async success' below
+    return math.calcAsync(expression).then((result) => {
+        console.log("result: " + result);
+        expect(result).to.be.null;
+    }).catch((err) => {
+        // catch is optional as the unhandled error will fail the test case
+        // but having it explicitly here makes it easier to understand the failure
+        console.log("err: " + err);
+        expect(err.toString()).equal(expected); // check value so prior assertion failure won't slip through
+    });
+});
+```
+
+<a name="testAsync"></a>
+### Testing Async 
+
+TBD
+
+```typescript
+it("Test single async success", async function () {
+    const expression = "155*2";
+    const expected = "310";
+
+    const result = math.calcAsync(expression);
+    return expect(result).to.eventually.equal(expected); // return is required!
+});
+```
+
+TBD
+
+```typescript
+it("Test single async failure", async function () {
+    const expression = "INVALID";
+    const expected = "400 - \"Error: Undefined symbol INVALID\"";
+
+    const result = math.calcAsync(expression);
+    return expect(result).to.eventually.be.rejectedWith(expected); // return is required!
+});
+```
+
+<a name="testAsync"></a>
+### Testing Hybrid 
+
+TBD
+
+```typescript
+it("Test parallel hybrid success", async function () {
+    const expression = "12+18";
+    const expected = 310;
+
+    let jobs = [];
+    let total = 1;
+    const opts = [13, 3, 2, 5, 54];
+
+    // create a list of asynchronous work
+    for (const o of opts) {
+        jobs.push(math.calcAsync(o + "+" + expression + "+" + (o + 1)));
+    }
+
+    // wait for all asynchronous work to finish
+    const jobResults = await Promise.all(jobs);
+
+    for (const result of jobResults) {
+        // each result is the settled value from the Promise
+        total += Number(result);
+    }
+
+    expect(total).to.equal(expected);
+});
+```
+
+TBD
+
+```typescript
+it("Test parallel hybrid failure", async function () {
+    const expression = "INVALID";
+    const expected = "400 - \"Error: Undefined symbol INVALID\"";
+
+    let jobs = [];
+    const opts = [13, 3, 2, 5, 54];
+
+    // create a list of asynchronous work
+    for (const o of opts) {
+        jobs.push(math.calcAsync(o + "+" + expression + "+" + (o + 1)));
+    }
+
+    // wait for all asynchronous work to finish
+    const jobResults = Promise.all(jobs);
+
+    return expect(jobResults).to.eventually.be.rejectedWith(expected); // return is required!
+});
+```
 
 <a name="other"></a>
 ## Other async challenges
