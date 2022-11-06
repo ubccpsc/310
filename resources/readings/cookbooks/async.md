@@ -310,10 +310,14 @@ try {
 
 TBD
 
+really really make sure they work! when a test that should pass passes, always intentionally make it fail (e.g., change input for the same output or change output) to make sure a failure can be detected.
+
 <a name="testCallback"></a>
 ### Testing callbacks 
 
-TBD 
+The test framework needs a way to tell when the callback has been completed. In Mocha, this is accomplished with the `done` callback. When the `done` function parameter is included, the test will not be considered complete until the `done()` method has been called or the test times out.
+
+The test below ensures that the `err` callback parameter is not set for a successful test, an that the expected value is also correct.
 
 ```typescript
 it("Test single callback success", function (done) {
@@ -331,7 +335,7 @@ it("Test single callback success", function (done) {
 });
 ```
 
-TBD
+The test below ensures that the `err` callback parameter is set for a failing test, and that it has the right value. It also checks that result is not set.
 
 ```typescript
 it("Test single callback failure", function (done) {
