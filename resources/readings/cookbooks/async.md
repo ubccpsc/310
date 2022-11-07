@@ -1,6 +1,6 @@
 # Async Cookbook
 
-Working with asynchronous code can be challenging. This cookbook provides concrete examples of many different kinds of asynchronous calling mechanisms you may encounter. The cookbook assumes you have previously looked at the [Async Reading](TBD) which provides a higher-level view of async challenges.
+Working with asynchronous code can be challenging. This cookbook provides concrete examples of many different kinds of asynchronous calling mechanisms you may encounter. The cookbook assumes you have previously looked at the [Async Reading](https://github.com/ubccpsc/310/blob/main/resources/readings/Async.md) which provides a higher-level view of async challenges.
 
 ## TOC
 
@@ -162,7 +162,7 @@ this.math.calcCB(exp, (err: string, result: string) => {
 <a name="sequentialPromise"></a>
 #### With promises
 
-One of the greatest strenghths of promises is to enable async calls to be marshalled into easier-to-understand sequences of actions. While the code below shows only two nested calls to `calcAsync`, these could be interspersed with any number of other async calls as well. Errors are handled with `catch` clauses, and these clauses can occur at any point in the sequence; errors will always be handled by their 'next' `.catch` clause.
+One of the greatest strengths of promises is to enable async calls to be marshalled into easier-to-understand sequences of actions. While the code below shows only two nested calls to `calcAsync`, these could be interspersed with any number of other async calls as well. Errors are handled with `catch` clauses, and these clauses can occur at any point in the sequence; errors will always be handled by their 'next' `.catch` clause.
 
 Note in this example, the `return` is crucial for the second `calcAsync` call for the promise chain to maintain its flat structure.
 
@@ -310,7 +310,7 @@ try {
 
 TBD
 
-really really make sure they work! when a test that should pass passes, always intentionally make it fail (e.g., change input for the same output or change output) to make sure a failure can be detected.
+Really really make sure they work! when a test that should pass passes, always intentionally make it fail (e.g., change input for the same output or change output) to make sure a failure can be detected.
 
 <a name="testCallback"></a>
 ### Testing callbacks 
@@ -357,7 +357,9 @@ it("Test single callback failure", function (done) {
 <a name="testPromise"></a>
 ### Testing promises 
 
-TBD
+When testing code with promises or async/await, we do not use the `done` callback, but instead let Mocha know we are testing async code by declaring the test function `async` in the test case declaration, _and_ by returning a promise from within the test case.
+
+In the test below, note that the promise is returned (e.g., `return math.calcAsync`). This form of test is somewhat verbose, but enables multiple assertions to be places on `.then` and `.catch` clauses to ease diagnosing failures. For a more succinct format, see the [async test](#testAsync) below.
 
 ```typescript
 it("Test single promise success", async function () {
@@ -381,7 +383,7 @@ it("Test single promise success", async function () {
 });
 ```
 
-TBD
+Although the code below is expected to fail, it is important to also check that it did not succeed (e.g., `expect(result).to.be.null`). Additionally, if this line _did_ fail, it would itself raise an exception that would be handled by the `.catch`, so this exception must not only check that the exception happened, but also its value was correct (to distinguish the expected failure from a failure caused by the success assertion failing above).
 
 ```typescript
 it("Test single promise failure", async function () {
@@ -406,7 +408,7 @@ it("Test single promise failure", async function () {
 <a name="testAsync"></a>
 ### Testing Async 
 
-TBD
+The succinct format below is identical for both promises and async/await. This super-short format relies on the `chai-as-promised` package. Note, the `return` is crucial to ensure Mocha waits for the promise to be resolved. If you wish to test multiple assertions, you can do so with `return Promise.all([..])`, although this is not shown as the main benefit of this approach is its brevity.
 
 ```typescript
 it("Test single async success", async function () {
@@ -418,7 +420,7 @@ it("Test single async success", async function () {
 });
 ```
 
-TBD
+While the failing path could be tested with `try...catch`, it is also possible to specify directly that the code under test is expected to throw, and to ensure that the error message provided is correct.
 
 ```typescript
 it("Test single async failure", async function () {
@@ -433,7 +435,7 @@ it("Test single async failure", async function () {
 <a name="testAsync"></a>
 ### Testing Hybrid 
 
-TBD
+Testing more complex async code (e.g., sequential calls or calls that use `Promise.all`) often ends up being verbose. In this case instead of telling Mocha to wait until the promise settles, the test case instead `awaits`, just as any other async function might. This allows the test code to look similar to how this code probably executes within the program.
 
 ```typescript
 it("Test parallel hybrid success", async function () {
@@ -461,7 +463,7 @@ it("Test parallel hybrid success", async function () {
 });
 ```
 
-TBD
+Of course, you could still use `chai-as-promised` and return the promise as well, as shown here in the failure case.
 
 ```typescript
 it("Test parallel hybrid failure", async function () {
@@ -486,14 +488,55 @@ it("Test parallel hybrid failure", async function () {
 <a name="other"></a>
 ## Other async challenges
 
-TBD
-
 <a name="wrapCallback"></a>
 ### Wrapping callback in a promise
 
-TBD
+Methods that return promises can be used using either `.then` and `.catch` _or_ `async/await`. But sometimes you will have to work with methods that only use callbacks, but you still want to use the more advanced async mechanisms to handle them. To do this, you will have to wrap the callback-based implementation in a promise.
 
+For example, `setTimeout` only offers a callback-based implementation. If we wanted to use `setTimeout` to add a delay to our code, we would have to restructure our code as follows:
 
+```typescript
+setTimeout( () => {
+  // code to run after the delay here
+  }, 250);
+```
+
+But that's not especially aesthetic. Instead, one might wish to create a promise-based wrapper on `setTimeout` so you could instead say:
+
+```typescript
+await delay(250);
+// code to be run after the delay here
+```
+
+To do this, you could _wrap_ `setTimeout` in a Promise. For example, the code below resolves the promise after `ms` has elapsed:
+
+```typescript
+private delay(ms: number): Promise<void> {
+  return new Promise<void>( (resolve) => setTimeout(resolve, ms));
+}
+```
+
+A more comprehensive version is shown below; here we wrap the `calcCB` which we have been calling and testing with callbacks in this document in a promise, so it can be used as `calcAsync` has been.
+
+```typescript
+public calcCBWrapped(expression: string): Promise<string> {
+    return new Promise<string>((resolve, reject) => {
+        this.calcCB(expression, (err, result) => {
+            if (err !== null) {
+                reject(err);
+            } else {
+                resolve(result);
+            }
+        });
+    });
+}
+```
+
+This allows us to call this previously callback-based function as we might prefer:
+
+```typescript
+const result = await calcCBWrapped("155*2");
+```
 
 <!--# Previous material-->
 
