@@ -1,6 +1,6 @@
 # Async Cookbook
 
-Working with asynchronous code can be challenging. This cookbook provides concrete examples of many different kinds of asynchronous calling mechanisms you may encounter. The cookbook assumes you have previously looked at the [Async Reading](https://github.com/ubccpsc/310/blob/main/resources/readings/Async.md) which provides a higher-level view of async challenges.
+Working with asynchronous code can be challenging. This cookbook provides concrete examples of many different kinds of asynchronous calling mechanisms you may encounter. The cookbook assumes you have previously looked at the [Async Reading](https://github.com/ubccpsc/310/blob/main/resources/readings/Async.md) which provides a higher-level view of async development. All of the code in this document can be found in the [Async Cookbook Repo](https://github.students.cs.ubc.ca/CPSC310/Async_Cookbook) if you are a current CS student at UBC.
 
 ## TOC
 
