@@ -17,6 +17,8 @@ The materials roughly break down into the 13 weeks of the standard academic seme
 	* [Teamwork](readings/Teamwork.md)
 	* [Languages](readings/Languages.md)
 	* [Async](readings/Async.md)
+	* [Async Cookbook](readings/cookbooks/async.md)
+	* [Git Cookbook)(readings/cookbooks/git.md)
 * Videos:
 	* [Course Introduction](http://www.youtube.com/watch?v=3tXzYUVQlrM)
 	* [Capstone Project Overview](http://www.youtube.com/watch?v=NQCyiD-Fh9Q)
