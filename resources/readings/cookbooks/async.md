@@ -438,7 +438,7 @@ it("Test single async failure", async function () {
 });
 ```
 
-<a name="testAsync"></a>
+<a name="testHybrid"></a>
 ### Testing Hybrid 
 
 Testing more complex async code (e.g., sequential calls or calls that use `Promise.all`) often ends up being verbose. In this case instead of telling Mocha to wait until the promise settles, the test case instead `awaits`, just as any other async function might. This allows the test code to look similar to how this code probably executes within the program.
