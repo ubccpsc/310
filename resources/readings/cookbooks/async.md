@@ -207,7 +207,7 @@ Another common use case is when many independent concurrent jobs need to be exec
 <a name="concurrentCallback"></a>
 #### With callbacks
 
-Concurrent callbacks are extremely hard to manage, especially when there are an unknown number of them at runtime (the examples below for promises and async/await are handling four jobs). Just don't write them with traditional callbacks, you'll live a happier and more fruitful life for this choice.
+Concurrent callbacks are extremely hard to manage, especially when there are an unknown number of them at runtime (the examples below for promises and async/await are handling five jobs). If you can avoid it, don't write them with traditional callbacks: you'll live a happier and more fruitful life.
 
 <a name="concurrentPromise"></a>
 #### With promises
