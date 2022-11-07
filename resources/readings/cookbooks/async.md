@@ -15,11 +15,11 @@ Working with asynchronous code can be challenging. This cookbook provides concre
         1. [With callbacks](#sequentialCallback)
         1. [With promises](#sequentialPromise)
         1. [With async/await](#sequentialAsync)
-    * [Parallel async calls](#parallel)
-        1. [With callbacks](#parallelCallback)
-        1. [With promises](#parallelPromise)
-        1. [With async/await](#parallelAsync)
-        1. [With hybrid promises and await](#parallelHybrid)
+    * [Concurrent async calls](#concurrent)
+        1. [With callbacks](#concurrentCallback)
+        1. [With promises](#concurrentPromise)
+        1. [With async/await](#concurrentAsync)
+        1. [With hybrid promises and await](#concurrentHybrid)
 * [Testing async methods](#testAsynchronous)
     1. [With callbacks](#testCallback)
     1. [With promises](#testPromise)
@@ -199,17 +199,17 @@ try {
 
 ---
 
-<a name="parallel"></a>
-### Parallel async calls
+<a name="concurrent"></a>
+### Concurrent async calls
 
-Another common use case is when many independent parallel jobs need to be executed. This may arise when reading or writing many different file-based or network-based resources.
+Another common use case is when many independent concurrent jobs need to be executed. This may arise when reading or writing many different file-based or network-based resources.
 
-<a name="parallelCallback"></a>
+<a name="concurrentCallback"></a>
 #### With callbacks
 
-Parallel callbacks are extremely hard to manage, especially when there are an unknown number of them at runtime (the examples below for promises and async/await are handling four jobs). Just don't write them with traditional callbacks, you'll live a happier and more fruitful life for this choice.
+Concurrent callbacks are extremely hard to manage, especially when there are an unknown number of them at runtime (the examples below for promises and async/await are handling four jobs). Just don't write them with traditional callbacks, you'll live a happier and more fruitful life for this choice.
 
-<a name="parallelPromise"></a>
+<a name="concurrentPromise"></a>
 #### With promises
 
 `Promise.all` is used for exactly this case: this Promise takes a  list of async tasks, waits for them to all complete (or fail), and then settles itself.
@@ -235,17 +235,17 @@ Promise.all(jobs).then( (jobResults) => {
         total += Number(result);
     }
 
-    console.log("parallelPromises done; total: " + total);
+    console.log("concurrentPromises done; total: " + total);
 }).catch( (err) => {
     // handle error
-    console.log("parallelPromises - ERROR: " + err);
+    console.log("concurrentPromises - ERROR: " + err);
 });
 ```
 
-<a name="parallelAsync"></a>
+<a name="concurrentAsync"></a>
 #### With async/await
 
-While using the `for await` construct feels appealing as it helps the code look as close to the synchronous version as possible, this mechanism is prone to two shortcomings. First, it is extremely common to make mistakes that can result in the code running sequentially instead of in parallel. Second, the `try..catch` does not reliably catch errors that may arise if any of the async jobs fail (this is not true for normal `await` calls, only for `for await`).  Fortunately, a [hybrid](#parallelPromiseAwait) of these two approaches can address both of these shortcomings.
+While using the `for await` construct feels appealing as it helps the code look as close to the synchronous version as possible, this mechanism is prone to two shortcomings. First, it is extremely common to make mistakes that can result in the code running sequentially instead of in concurrent. Second, the `try..catch` does not reliably catch errors that may arise if any of the async jobs fail (this is not true for normal `await` calls, only for `for await`).  Fortunately, a [hybrid](#concurrentPromiseAwait) of these two approaches can address both of these shortcomings.
 
 ```typescript
 let jobs = [];
@@ -265,15 +265,15 @@ try {
         total += Number(result);
     }
     
-    console.log("parallelHybridPromises done; total: " + total);
+    console.log("concurrentHybridPromises done; total: " + total);
 } catch (err) {
     // handle error
-    console.log("parallelHybridPromises - ERROR: " + err);
+    console.log("concurrentHybridPromises - ERROR: " + err);
 }
 ```
 
 
-<a name="parallelPromiseAwait"></a>
+<a name="concurrentPromiseAwait"></a>
 #### With hybrid await and Promise.all
 
 Fortunately, both promises and async/await can be combined to strike a nice balance of understandability and reliability. Here `Promise.all` is used to wait for all work to be done, but rather than handling `.all` being done using a `.then` or `.catch`, we are using `await` which also enables us to use the standard exception handling mechanisms for errors.
@@ -297,10 +297,10 @@ try {
         total += Number(result);
     }
 
-    console.log("parallelAwait done; total: " + total);
+    console.log("concurrentAwait done; total: " + total);
 } catch (err) {
     // handle error
-    console.log("parallelAwait - ERROR: " + err);
+    console.log("concurrentAwait - ERROR: " + err);
 }
 ```
 
@@ -444,7 +444,7 @@ it("Test single async failure", async function () {
 Testing more complex async code (e.g., sequential calls or calls that use `Promise.all`) often ends up being verbose. In this case instead of telling Mocha to wait until the promise settles, the test case instead `awaits`, just as any other async function might. This allows the test code to look similar to how this code probably executes within the program.
 
 ```typescript
-it("Test parallel hybrid success", async function () {
+it("Test concurrent hybrid success", async function () {
     const expression = "12+18";
     const expected = 310;
 
@@ -472,7 +472,7 @@ it("Test parallel hybrid success", async function () {
 Of course, you could still use `chai-as-promised` and return the promise as well, as shown here in the failure case.
 
 ```typescript
-it("Test parallel hybrid failure", async function () {
+it("Test concurrent hybrid failure", async function () {
     const expression = "INVALID";
     const expected = "400 - \"Error: Undefined symbol INVALID\"";
 
@@ -611,3 +611,5 @@ myPromise.then(successFoo).catch(failureFoo);
 ## Resources
 
 * [Avoiding Async Hell](https://medium.com/@pyrolistical/how-to-get-out-of-promise-hell-8c20e0ab0513)
+
+* [Parallel vs Concurrent Execution in Node](https://bytearcher.com/articles/parallel-vs-concurrent/)
