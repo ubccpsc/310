@@ -24,6 +24,7 @@ Working with asynchronous code can be challenging. This cookbook provides concre
     1. [With callbacks](#testCallback)
     1. [With promises](#testPromise)
     1. [With async/await](#testAsync)
+    1. [With hybrid promises and await](#testHyrbid) 
 * [Other async challenges](#other)
     * [Wrapping a callback in a promise](#wrapCallback)
 
