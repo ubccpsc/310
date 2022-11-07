@@ -1,6 +1,6 @@
 # Testability
 
-When designing software we commonly think to support quality attributes such as usability or security, but an underappreciated quality attribute is _testability_. Testability is a quality attribute that does not affect how the system performs its functional requirements, but instead influences how amenable the system itself is to being tested. 
+When designing software we commonly think to support quality attributes such as usability or security, but an under-appreciated quality attribute is _testability_. Testability is a quality attribute that does not affect how the system performs its functional requirements, but instead influences how amenable the system itself is to being tested. 
 
 In order to be successful, a test needs to be able to execute the code you wish to test, in a way that can trigger a defect that will propagate an incorrect result to a program point where it can be checked against the expected behaviour. From this we can derive four high-level properties required for effective test writing and execution. These are controllability, observability, isolateablilty, and automatability.
 
@@ -113,6 +113,10 @@ describe('Check math constants', function() {
   });
 });
 ```
+
+#### Assertions and async
+
+Testing asynchronous functions can be challenging as asynchronous code often does not behave as expected at runtime. ***The [Async Cookbook](https://github.com/ubccpsc/310/blob/main/resources/readings/cookbooks/async.md#testAsynchronous) contains many examples of how to test asynchronous code.***
 
 <!--
 #### Assertions and async
