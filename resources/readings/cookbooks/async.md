@@ -308,9 +308,14 @@ try {
 <a name="testAsync"></a>
 ## Testing async methods
 
-TBD
+***THIS _IS_ IMPORTANT***
 
-Really really make sure they work! when a test that should pass passes, always intentionally make it fail (e.g., change input for the same output or change output) to make sure a failure can be detected.
+Testing is crucial to ensuring your asynchronous code is behaving as you might expect. Given how tricky these functions can be, it is important to check both the successful and failing conditions.
+
+Testing can easily give a false sense of security though. While writing tests on asynchronous code, always make sure that succeeding tests _can actually fail_. Also ensure that tests of error conditions also still fail when the code unexpectedly succeeds.
+
+For example, after writing passing successful test case, change the expected value and ensure that the test case actually fails. Similarly, for a passing failure test case, change the expected value and ensure that test case fails if the code does not fail as expected.
+
 
 <a name="testCallback"></a>
 ### Testing callbacks 
@@ -520,7 +525,7 @@ A more comprehensive version is shown below; here we wrap the `calcCB` which we 
 
 ```typescript
 public calcCBWrapped(expression: string): Promise<string> {
-    return new Promise<string>((resolve, reject) => {
+    return new Promise<string>( (resolve, reject) => {
         this.calcCB(expression, (err, result) => {
             if (err !== null) {
                 reject(err);
