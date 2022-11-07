@@ -491,6 +491,8 @@ it("Test concurrent hybrid failure", async function () {
 });
 ```
 
+--- 
+
 <a name="other"></a>
 ## Other async challenges
 
@@ -607,6 +609,8 @@ As you’ve probably worked out, the value of yessss and noooooo are bound to th
 myPromise.then(successFoo).catch(failureFoo);
 ```
 -->
+
+---
 
 ## Resources
 
