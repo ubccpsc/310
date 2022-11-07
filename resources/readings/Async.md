@@ -18,6 +18,8 @@ TODO: EXAMPLE
 
 [Philip Roberts](https://www.youtube.com/watch?v=8aGhZQkoFbQ) has created a great video for understanding the event loop. He also developed a cool [tool](http://latentflip.com/loupe/) for visualizing how the event loop works.
 
+***The [Async Cookbook](https://github.com/ubccpsc/310/blob/main/resources/readings/cookbooks/async.md) contains many code-forward examples demonstrating how to call and test asynchronous methods using callbacks, promises, and async/await.***
+
 ### Callback shortcomings
 
 Two common problems manifest with callbacks in practice. First, handling errors is difficult because callbacks are invoked but they do not _return_ a value. This means any information about the execution of the function making the callback must take place in the parameters. Node-based JavaScript addresses this with the [error-first](http://fredkschott.com/post/2014/03/understanding-error-first-callbacks-in-node-js/) idiom. For example:
@@ -128,7 +130,7 @@ TODO async/await
 
 * A collection of promise use cases can be found [here](http://exploringjs.com/es6/ch_promises.html) and [further examples](https://www.promisejs.org/patterns/). 
 
-* While promises seem really fancy, [how they are implemented](http://www.mattgreer.org/articles/promises-in-wicked-detail/) is relatively straightforward (or even more [straighforward](https://www.promisejs.org/implementing/)).
+* While promises seem really fancy, [how they are implemented](http://www.mattgreer.org/articles/promises-in-wicked-detail/) is relatively straightforward (or even more [straightforward](https://www.promisejs.org/implementing/)).
 
 * Sencha also has a nice [promise intro](https://www.sencha.com/blog/asynchronous-javascript-promises/).
 
