@@ -20,11 +20,11 @@ Working with asynchronous code can be challenging. This cookbook provides concre
         1. [With promises](#parallelPromise)
         1. [With async/await](#parallelAsync)
         1. [With hybrid promises and await](#parallelHybrid)
-* [Testing async methods](#testAsync)
+* [Testing async methods](#testAsynchronous)
     1. [With callbacks](#testCallback)
     1. [With promises](#testPromise)
     1. [With async/await](#testAsync)
-    1. [With hybrid promises and await](#testHyrbid) 
+    1. [With hybrid promises and await](#testHybrid) 
 * [Other async challenges](#other)
     * [Wrapping a callback in a promise](#wrapCallback)
 
@@ -306,7 +306,7 @@ try {
 
 ---
 
-<a name="testAsync"></a>
+<a name="testAsynchronous"></a>
 ## Testing async methods
 
 ***THIS _IS_ IMPORTANT***
