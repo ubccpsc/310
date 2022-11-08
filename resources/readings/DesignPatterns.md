@@ -57,15 +57,15 @@ The Strategy design pattern enables encapsulation of algorithms. This lets clien
 
 The strategy pattern is often used to avoid subclassing the client. In our example below, you could imagine ```Client``` being extended by ```CelsiusStrategy```, ```KelvinStrategy```, and ```FahrenheitStrategy```. While this would work, it would mean that ```Client``` would have to be changed to add a new form of temperature conversion. The pattern also supplants the even simpler approach whereby the code would have a series of conditional statements to choose the right temperature multiplier (which would also require ```Client``` changes to extend):
 
-```
+```typescript
 if (tempScheme === 'C') {
-	...
+  ...
 } else if (tempScheme === 'F') { 
-	...
+  ...
 } else if (tempScheme === 'K') {
-	...
+  ...
 } else {
-	...
+  ...
 }
 ```
 
@@ -104,7 +104,7 @@ The state pattern isolates state decisions which makes reasoning about how or wh
 
 For example, the client could avoid change-prone brittle control flow like the following (this is a subset of what would be required in the example):
 
-```
+```typescript
 if (last == null || last == '') {
   handleClosed();
 } else if (last == 'listen' && isOpen()) {
@@ -172,20 +172,20 @@ While the above approach is conceptually consistent with the initial design, hav
 
 It can be hard to visualize what this means from the class diagram alone. To create a version of a car with Nav and AutoBrake, one only needs to do the following:
 
-```
-	var car = new Nav(new AutoBrake(new BaseCar())));
+```typescript
+  let car = new Nav(new AutoBrake(new BaseCar())));
 ```
 
 Even at runtime this could allow for additional features. For instance:
 
-```
-	// create car with Nav off
-	var car = new AutoBrake(new BaseCar()));
+```typescript
+  // create car with Nav off
+  let car = new AutoBrake(new BaseCar()));
 
-	// ... sometime later:
+  // ... sometime later:
 	
-	// turn on Nav, wrap existing object
-	car = new Nav(car);
+  // turn on Nav, wrap existing object
+  car = new Nav(car);
 ```
 
 <!--
@@ -206,34 +206,34 @@ The introduction of the composite  means any client can treat both managers and 
 
 In the example below, the default implementation of ```Employee::getBudget()``` would just be:
 
-```
-	public getBudget():number {
-		return this.salary;
-	}
+```typescript
+public getBudget():number {
+  return this.salary;
+}
 ```
 
 But the implementation of ```Manager::getBudget()``` would be:
 
-```
-	public getBudget():number {
-		var budget = this.salary;
-		for (let report of this.directReports) {
-			budget += report.getBudget();
-		}
-		return budget;
-	}
+```typescript
+public getBudget():number {
+  let budget = this.salary;
+  for (const report of this.directReports) {
+    budget += report.getBudget();
+  }
+  return budget;
+}
 ```
 
 But to the client whether an employee is a ```Manager``` or ```Developer``` would be totally transparent.
 
-```
-	// employee 1233 has no reports
-	var e1 = getEmployee(1233);
-	Log.info(e1.getBudget());
+```typescript
+// employee 1233 has no reports
+const e1 = getEmployee(1233);
+Log.info(e1.getBudget());
 	
-	// employee 1234 has 4 direct and 35 indirect reports
-	var e2 = getEmployee(1234);
-	Log.info(e2.getBudget());
+// employee 1234 has 4 direct and 35 indirect reports
+const e2 = getEmployee(1234);
+Log.info(e2.getBudget());
 ```
 
 <!--
@@ -250,13 +250,13 @@ The visitor does require one new method be added to every class in the structure
 
 For instance, in the diagram below one could imagine adding ```numReports``` or ```topLangs``` methods to ```Manager``` and ```Developer```, but instead we have created a ```TopLangsVisitor``` and ```NumReportsVisitor``` which both traverse the hierarchy directly. Each ```accept(v: Visitor)``` method immediately calls ```v.visit(this)``` which uses dynamic dispatch to call the right visitor method. The method within the visitor can then interrogate the provided object to retrieve the required information and maintain a running tally of the answer that can be reported after the traversal is complete (the visitor can accumulate state in its own fields). Note, ```Manager::accept(Visitor)```  would be slightly different (e.g., each object will ensure that its correct children (or composite components) are visited appropriately):
 
-```
-	public accept(v: Visitor): void {
-		for (var r of this.directReports) {
-			r.accept(v);
-		}
-		v.visit(this);
-	}
+```typescript
+public accept(visitor: Visitor): void {
+  for (const report of this.directReports) {
+    report.accept(visitor);
+  }
+  visitor.visit(this);
+}
 ```
 
 While adding new visitors is easy, adding new concrete types to the type hierarchy is hard. This is because every visitor needs a ```visit``` method for every type that is being traversed which could result in many visitors being impacted. Also, due to the runtime operation of the visitor being dictated by dynamic dispatch, it is often challenging to understand how the visitor works, if a problem is ever encountered.
