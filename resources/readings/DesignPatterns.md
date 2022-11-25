@@ -116,7 +116,7 @@ if (last == null || last == '') {
 }
 ```
 
-Clearly the Sate and Strategy patterns look structurally identical. And, except for the `setState` method and the fact that every state object has a reference to its context (so it can call `setState`) they are identical. The difference lies more in the _intent_ of the pattern. Strategies are fixed at the start of execution, whereas the States change repeatedly and often during runtime. This distinction further reenforces that the most important aspect of patterns is not their structure and form, but what they _do_ and how they promote encapsulation and evolution within the system. 
+Clearly the State and Strategy patterns look structurally identical. And, except for the `setState` method and the fact that every state object has a reference to its context (so it can call `setState`) they are identical. The difference lies more in the _intent_ of the pattern. Strategies are fixed at the start of execution, whereas the States change repeatedly and often during runtime. This distinction further reenforces that the most important aspect of patterns is not their structure and form, but what they _do_ and how they promote encapsulation and evolution within the system. 
 
 <!--
 TODO: extend with statechart-based example & code from more than one state vs global state.
