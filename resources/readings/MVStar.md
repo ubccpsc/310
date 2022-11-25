@@ -38,7 +38,7 @@ Below is a simple MVC example that clarifies that multiple view options are avai
 MVC has two primary drawbacks.
 
 1. Views tend to get out of control (MVC's derisive nickname is _MassiveViewController_) because it is often easiest to put functionality within the view (instead of in the Controller). This leads to huge views and anemic controllers. Heavy views are also harder to test than heavy controllers because view logic tends to get mixed up with display logic, forcing error-prone UI-based testing approaches to be used instead of more traditional unit tests which would typically be sufficient for the controller alone.
-1. Every component talks to every other component. This is especially apparently with the Model: if it is meaningfully changed all components will need to be updated. This lack of isolation has a negative impact on the maintainability and extensibility of the system. 
+1. Every component talks to every other component. This is especially apparent with the Model: if it is meaningfully changed all components will need to be updated. This lack of isolation has a negative impact on the maintainability and extensibility of the system. 
 
 That said, MVC does enable:
 
