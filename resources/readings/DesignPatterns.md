@@ -17,7 +17,7 @@ In this system, many different model elements would likely be `Observable`: PDF 
 
 <img src="./figures/dp_observer2.png" width="640px" alt="observer-based delete">
 
-It is important to note that there is still _some_ coupling in this design: observable objects must know about the `Observer` interface so they knows how to notify their observers, and all observers must know about the objects they are observing. But one crucial aspect of the coupling is removed: the `Observable` objects do not know anything about the concrete subtypes of `Observer`. This means new observers can be dynamically added to an object at runtime (for instance if a new view was opened in a user interface), or the system could be extended by adding a new subtype of `Observer` without changing any of the model elements that the new observer might want to watch for state changes. 
+It is important to note that there is still _some_ coupling in this design: observable objects must know about the `Observer` interface so they know how to notify their observers, and all observers must know about the objects they are observing. But one crucial aspect of the coupling is removed: the `Observable` objects do not know anything about the concrete subtypes of `Observer`. This means new observers can be dynamically added to an object at runtime (for instance if a new view was opened in a user interface), or the system could be extended by adding a new subtype of `Observer` without changing any of the model elements that the new observer might want to watch for state changes. 
 
 <!-- TODO: push vs pull observation -->
 
