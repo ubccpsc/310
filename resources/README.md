@@ -185,10 +185,9 @@ No readings or videos.
 
 * Readings:
 	* [InfoSec](readings/Security.md)
-	<!-- TODO: Ethics reading -->
+	* [Ethics](readings/Ethics.md)
 	* [Intellectual Property (IP)](readings/IP.md)
-	
-	
+
 * Videos:
 	* Information Security:
 		* [Information Security Introduction](http://www.youtube.com/watch?v=PprrpG7S3gc)  
