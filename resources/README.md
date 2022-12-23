@@ -9,108 +9,99 @@ This is a high-level overview of what the course will be about. Expect this list
 
 The materials roughly break down into the 13 weeks of the standard academic semester. Readings and videos are available for most course concepts.
 
-
 ## 0: Introduction
 
 * Readings:
-	* [Introduction](readings/Introduction.md)
-	* [Teamwork](readings/Teamwork.md)
-	* [Languages](readings/Languages.md)
-	* [Async](readings/Async.md)
-	* [Async Cookbook](readings/cookbooks/async.md)
-	* [Git Cookbook](readings/cookbooks/git.md)
+  * [Introduction](readings/Introduction.md)
+  * [Teamwork](readings/Teamwork.md)
+  * [Languages](readings/Languages.md)
+  * [Async](readings/Async.md)
+  * [Async Cookbook](readings/cookbooks/async.md)
+  * [Git Cookbook](readings/cookbooks/git.md)
 * Videos:
-	* [Course Introduction](http://www.youtube.com/watch?v=3tXzYUVQlrM)
-	* [Capstone Project Overview](http://www.youtube.com/watch?v=NQCyiD-Fh9Q)
-	* [Running Example Introduction](http://www.youtube.com/watch?v=S4GEa6JMo4I)
-	* [Programming Language Introduction](http://www.youtube.com/watch?v=U-ihh6bsDz4)  
-	* [Introduction to Concurrency and Asynchronous Development: Part 1](http://www.youtube.com/watch?v=T__CJfXswbA)  
-	* [Introduction to Concurrency and Asynchronous Development: Part 2](http://www.youtube.com/watch?v=ZyiLFip7nqk)  
-	* [Introduction to Concurrency and Asynchronous Development: Part 3](http://www.youtube.com/watch?v=xwSUBY2tIm4)  
+  * [Course Introduction](http://www.youtube.com/watch?v=3tXzYUVQlrM)
+  * [Capstone Project Overview](http://www.youtube.com/watch?v=NQCyiD-Fh9Q)
+  * [Running Example Introduction](http://www.youtube.com/watch?v=S4GEa6JMo4I)
+  * [Programming Language Introduction](http://www.youtube.com/watch?v=U-ihh6bsDz4)  
+  * [Introduction to Concurrency and Asynchronous Development: Part 1](http://www.youtube.com/watch?v=T__CJfXswbA)  
+  * [Introduction to Concurrency and Asynchronous Development: Part 2](http://www.youtube.com/watch?v=ZyiLFip7nqk)  
+  * [Introduction to Concurrency and Asynchronous Development: Part 3](http://www.youtube.com/watch?v=xwSUBY2tIm4)  
 
-## 1: Testing 1
+## 1: Testing
 
 * Readings:
-	* [Testing](readings/Testing.md)
-	<!-- TODO: Black Box Testing -->
-	* [White Box Testing](readings/WhiteBoxTesting.md)
-	<!-- TODO: Mutation Testing -->	
-	* [Fuzz Testing](readings/AutomatedTestingFuzzing.md)
-	
+  * [Testing](readings/Testing.md)
+  <!-- TODO: Black Box Testing -->
+  * [White Box Testing](readings/WhiteBoxTesting.md)
+  <!-- TODO: Mutation Testing -->	
+  * [Fuzz Testing](readings/AutomatedTestingFuzzing.md)
+  * [Testability & Assertions](readings/TestabilityAssertions.md)
+  <!-- TODO: * [Black box testing](readings/BlackBoxTesting.md) -->
+
 * Videos:
-	* [Why Test?](http://www.youtube.com/watch?v=Uamo4Ej0tWk)
-	* [Terminology](http://www.youtube.com/watch?v=WKrvx7qCUDI)
-	* [Properties of Tests](http://www.youtube.com/watch?v=ll1k3Pks3ZA)
-	* [Kinds of Tests](http://www.youtube.com/watch?v=_Th3f9vks_w)
-	* [Unit and System Properties](http://www.youtube.com/watch?v=x2DWjxDiOQo)
-	* [Red Green Refactor](http://www.youtube.com/watch?v=v0q1MKhSQVM)
-	* White box testing:
-		* [Introduction to Coverage](http://www.youtube.com/watch?v=iujQEm9oono)  
-		* [Line and Statement Coverage](http://www.youtube.com/watch?v=SC7R-QixRaU)  
-		* [Branch and Path Coverage](http://www.youtube.com/watch?v=YBiHn5vgKnM)  
-		* [Coverage Wrap-Up](http://www.youtube.com/watch?v=2EBi66DYF5w)  
+  * [Why Test?](http://www.youtube.com/watch?v=Uamo4Ej0tWk)
+  * [Terminology](http://www.youtube.com/watch?v=WKrvx7qCUDI)
+  * [Properties of Tests](http://www.youtube.com/watch?v=ll1k3Pks3ZA)
+  * [Kinds of Tests](http://www.youtube.com/watch?v=_Th3f9vks_w)
+  * [Unit and System Properties](http://www.youtube.com/watch?v=x2DWjxDiOQo)
+  * [Red Green Refactor](http://www.youtube.com/watch?v=v0q1MKhSQVM)
+  * White box testing:
+    * [Introduction to Coverage](http://www.youtube.com/watch?v=iujQEm9oono)  
+    * [Line and Statement Coverage](http://www.youtube.com/watch?v=SC7R-QixRaU)  
+    * [Branch and Path Coverage](http://www.youtube.com/watch?v=YBiHn5vgKnM)  
+    * [Coverage Wrap-Up](http://www.youtube.com/watch?v=2EBi66DYF5w)  
+  * Testability:
+    * [Introduction to Testability](http://www.youtube.com/watch?v=jwL1vkl-CoY)  
+    * [Controllability](http://www.youtube.com/watch?v=y0zrTdDuYv0)  
+    * [Observability](http://www.youtube.com/watch?v=CJhJibMCTUM)  
+    * [Isolateability: Part 1](http://www.youtube.com/watch?v=Z93-c4ngxGw)  
+    * [Isolateability: Part 2](http://www.youtube.com/watch?v=NMuhE-XnFe8)  
+    * [Automatability](http://www.youtube.com/watch?v=Q83W5zH8LUY)  
+    * [Testability Wrap-Up](http://www.youtube.com/watch?v=d2WjviF50HA)  
+  * Black Box Testing:
+    * [Equivalence Class Partitioning](http://www.youtube.com/watch?v=ttAAsNSPiXw)  
+    * [Input Partitioning](http://www.youtube.com/watch?v=5PtxXnwyU3Y)  
+    * [Output Partitioning](http://www.youtube.com/watch?v=0yvHDKI-DSA)  
+    * [Boundary Value Analysis](http://www.youtube.com/watch?v=IRQU_fHKUa0)  
+    * [Assertions](http://www.youtube.com/watch?v=DCAFxgUXM4I)  
+    * [Assertions Example](http://www.youtube.com/watch?v=Y0GEftJ5MB0)
 
 ## 2: Process
 
 * Readings:
-	* [Process & Agile](readings/Process.md)
+  * [Process & Agile](readings/Process.md)
+  * [Specifications](readings/Specifications.md)
+  * [User Stories](readingsSpecificationsUserStories.md)
 * Videos:
-	* [Why Process?](http://www.youtube.com/watch?v=dtK561i_wX4)
-	* [Waterfall](http://www.youtube.com/watch?v=1pQ9-BNTvgs)  
-	* [Spiral](http://www.youtube.com/watch?v=Zq6EXTSzf84)  
-	* [Extreme Programming](http://www.youtube.com/watch?v=axcRa3YoCQ0)  
-	* [Test Driven Development](http://www.youtube.com/watch?v=Ux9QMfEK9Eg)  
-	* [Scrum](http://www.youtube.com/watch?v=mjphDWlRQ2c)  
+  * Process
+    * [Why Process?](http://www.youtube.com/watch?v=dtK561i_wX4)
+    * [Waterfall](http://www.youtube.com/watch?v=1pQ9-BNTvgs)  
+    * [Spiral](http://www.youtube.com/watch?v=Zq6EXTSzf84)  
+    * [Extreme Programming](http://www.youtube.com/watch?v=axcRa3YoCQ0)  
+    * [Test Driven Development](http://www.youtube.com/watch?v=Ux9QMfEK9Eg)  
+    * [Scrum](http://www.youtube.com/watch?v=mjphDWlRQ2c)  
+  * [Introduction to Specifications](http://www.youtube.com/watch?v=1rqWeAQ8onI)  
+    * [Requirements Process](http://www.youtube.com/watch?v=7r9vXTSSTVc)  
+    * [Requirements Properties](http://www.youtube.com/watch?v=9z9T0dxMLJU)  
+    * [Requirements Elicitation](http://www.youtube.com/watch?v=PGuPVkNeqJQ)  
+    * [Additional Requirements](http://www.youtube.com/watch?v=mUQOuglR6ss)  
+    * [Validating Requirements](http://www.youtube.com/watch?v=H4V_lwuznVY)  
+  * [User Stories](http://www.youtube.com/watch?v=Y7E56dD7Jxw)  
+    * [INVEST Guidelines](http://www.youtube.com/watch?v=fqknLz6rdGE)  
+    * [User Story and INVEST Example](http://www.youtube.com/watch?v=3b63NxSCxPw)  
+    * [Decomposing User Stories: Part 1](http://www.youtube.com/watch?v=qDpfRXGwbG0)  
+    * [Decomposing User Stories: Part 2](http://www.youtube.com/watch?v=mKAPOzwK_wM)  
+    * [Decomposing User Stories: Part 3](http://www.youtube.com/watch?v=1E-9qzKi1Fc)  
+    * [Decomposing User Stories: Part 4](http://www.youtube.com/watch?v=d8zp_-RZNOo)  
+    * [Decomposing User Stories: Part 5](http://www.youtube.com/watch?v=1ZPPmmXE_wM)  
 
-## 3: Specifications & User Stories
-
-* Readings:
-	* [Specifications](readings/Specifications.md)
-	* [User Stories](readings/SpecificationsUserStories.md)       
-* Videos:
-	* [Introduction to Specifications](http://www.youtube.com/watch?v=1rqWeAQ8onI)  
-		* [Requirements Process](http://www.youtube.com/watch?v=7r9vXTSSTVc)  
-		* [Requirements Properties](http://www.youtube.com/watch?v=9z9T0dxMLJU)  
-		* [Requirements Elicitation](http://www.youtube.com/watch?v=PGuPVkNeqJQ)  
-		* [Additional Requirements](http://www.youtube.com/watch?v=mUQOuglR6ss)  
-		* [Validating Requirements](http://www.youtube.com/watch?v=H4V_lwuznVY)  
-	* [User Stories](http://www.youtube.com/watch?v=Y7E56dD7Jxw)  
-		* [INVEST Guidelines](http://www.youtube.com/watch?v=fqknLz6rdGE)  
-		* [User Story and INVEST Example](http://www.youtube.com/watch?v=3b63NxSCxPw)  
-		* [Decomposing User Stories: Part 1](http://www.youtube.com/watch?v=qDpfRXGwbG0)  
-		* [Decomposing User Stories: Part 2](http://www.youtube.com/watch?v=mKAPOzwK_wM)  
-		* [Decomposing User Stories: Part 3](http://www.youtube.com/watch?v=1E-9qzKi1Fc)  
-		* [Decomposing User Stories: Part 4](http://www.youtube.com/watch?v=d8zp_-RZNOo)  
-		* [Decomposing User Stories: Part 5](http://www.youtube.com/watch?v=1ZPPmmXE_wM)  
-
-## 4: Testability
-
-* Readings:
-	* [Testability & Assertions](readings/TestabilityAssertions.md)
-	<!-- TODO: * [Black box testing](readings/BlackBoxTesting.md) -->
-* Videos:
-	* Testability:
-		* [Introduction to Testability](http://www.youtube.com/watch?v=jwL1vkl-CoY)  
-		* [Controllability](http://www.youtube.com/watch?v=y0zrTdDuYv0)  
-		* [Observability](http://www.youtube.com/watch?v=CJhJibMCTUM)  
-		* [Isolateability: Part 1](http://www.youtube.com/watch?v=Z93-c4ngxGw)  
-		* [Isolateability: Part 2](http://www.youtube.com/watch?v=NMuhE-XnFe8)  
-		* [Automatability](http://www.youtube.com/watch?v=Q83W5zH8LUY)  
-		* [Testability Wrap-Up](http://www.youtube.com/watch?v=d2WjviF50HA)  
-	* Black Box Testing:
-		* [Equivalence Class Partitioning](http://www.youtube.com/watch?v=ttAAsNSPiXw)  
-		* [Input Partitioning](http://www.youtube.com/watch?v=5PtxXnwyU3Y)  
-		* [Output Partitioning](http://www.youtube.com/watch?v=0yvHDKI-DSA)  
-		* [Boundary Value Analysis](http://www.youtube.com/watch?v=IRQU_fHKUa0)  
-		* [Assertions](http://www.youtube.com/watch?v=DCAFxgUXM4I)  
-		* [Assertions Example](http://www.youtube.com/watch?v=Y0GEftJ5MB0)
-
-## 5: High Level Design 1
+## 3: High Level Design
 
 * Readings:
 	* [High Level Design](readings/HighLevelDesign.md)
 	* [Technical Representations](readings/Representations.md)
 	* [APIs](readings/API.md)
+	* [Design Principles](readings/DesignPrinciples.md)
 * Videos:
 	* [Introduction to Abstraction](http://www.youtube.com/watch?v=HW_b8S2rD4o)  
 	* [Structured Programming](http://www.youtube.com/watch?v=lfzQcwWAh18)  
@@ -132,12 +123,6 @@ The materials roughly break down into the 13 weeks of the standard academic seme
 		* [API Design Process](http://www.youtube.com/watch?v=mdiP6xO51w0)  
 		* [API Usability](http://www.youtube.com/watch?v=2rSTWAZxTns)  
 		* [API Platforms and Summary](http://www.youtube.com/watch?v=1nQyHE1uMXE)
-
-## 6: High Level Design 2
-
-* Readings:
-	* [Design Principles](readings/DesignPrinciples.md)
-* Videos:
 	* Coupling & Cohesion:
 		* [Coupling: Part 1](http://www.youtube.com/watch?v=I9rEvxiWF9I)  
 		* [Coupling: Part 2](http://www.youtube.com/watch?v=QZAacpnjVVg)  
@@ -151,15 +136,12 @@ The materials roughly break down into the 13 weeks of the standard academic seme
 		* [Interface Segregation Principle](http://www.youtube.com/watch?v=x_9QJ83oj2k)  
 		* [Dependency Inversion Principle](http://www.youtube.com/watch?v=BJr2yG-Hn7g)
 
-## 7: Midterm
-
-No readings or videos.
-
-## 8: Low Level Design 1
+## 4: Low Level Design
 
 * Readings:
 	* [Low Level Design](readings/LowLevelDesign.md) 
 	* [Design Patterns](readings/DesignPatterns.md)
+	* [MV*](readings/MVStar.md)
 * Videos:
 	* Design Patterns:
 		* [Introduction to Low Level Design](http://www.youtube.com/watch?v=wJ-xnK9O-nU)  
@@ -168,20 +150,30 @@ No readings or videos.
 		* [Strategy](http://www.youtube.com/watch?v=1MJ_Lj8mebU)  
 		* [State](http://www.youtube.com/watch?v=uB4OQ4Am3Rw)  
 		* [State and Strategy](http://www.youtube.com/watch?v=Ccpg656MUxE)  
+		* [Facade](http://www.youtube.com/watch?v=MdMaHrKQBsU)  
+		* [Decorator](http://www.youtube.com/watch?v=la2Jzb8jmqo)  
+		* [MVC](http://www.youtube.com/watch?v=regs2s8HMi4)  
+		* [MVP](http://www.youtube.com/watch?v=3ULFKSXeLM8)  
+		* [MVC and MVP](http://www.youtube.com/watch?v=O-__G6CKICk)
 
-## 9: Low Level Design 2
+## 5: Construction
 
 * Readings:
-	* [Design Patterns](readings/DesignPatterns.md)
-	* [MV*](readings/MVStar.md)
+	* [Automation](readings/Automation.md)
+	* [Refactoring](readings/Refactoring.md)
+	* [REST](readings/REST.md)
 * Videos:
-	* [Facade](http://www.youtube.com/watch?v=MdMaHrKQBsU)  
-	* [Decorator](http://www.youtube.com/watch?v=la2Jzb8jmqo)  
-	* [MVC](http://www.youtube.com/watch?v=regs2s8HMi4)  
-	* [MVP](http://www.youtube.com/watch?v=3ULFKSXeLM8)  
-	* [MVC and MVP](http://www.youtube.com/watch?v=O-__G6CKICk)
+	* [Introduction to Construction](http://www.youtube.com/watch?v=z-Q2CIfshcw)  
+	* [Non-Structural Properties: Readability](http://www.youtube.com/watch?v=TZ7mfKJa7Sw)  
+	* [Static Analysis and Linters](http://www.youtube.com/watch?v=QKK9XAdleFg)  
+	* [Automation](http://www.youtube.com/watch?v=HMtyshK3LNU)
+	* [Code Smells](http://www.youtube.com/watch?v=oqqaDaQ3m24)
+	* [Refactoring](http://www.youtube.com/watch?v=bHKyMxvZFXY)
+	* [REST Development: Part 1](http://www.youtube.com/watch?v=Y8AYxFgwmJk)  
+	* [REST Development: Part 2](http://www.youtube.com/watch?v=Aoms-MrqW3g)  
+	* [REST Development: Part 3](http://www.youtube.com/watch?v=JiojH8HfUps)  
 
-## 10: Information Security, IP, & Ethics
+## 6: Information Security, IP, & Ethics
 
 * Readings:
 	* [InfoSec](readings/Security.md)
@@ -210,27 +202,6 @@ No readings or videos.
 		* [Intellectual Property: Licenses](http://www.youtube.com/watch?v=3uW9_AGtRVg)  
 		* [Intellectual Property Summary](http://www.youtube.com/watch?v=7bcDEDn9CeM)
 
-## 11: REST
-
-* Readings:
-	* [REST](readings/REST.md)
-* Videos:
-	* [REST Development: Part 1](http://www.youtube.com/watch?v=Y8AYxFgwmJk)  
-	* [REST Development: Part 2](http://www.youtube.com/watch?v=Aoms-MrqW3g)  
-	* [REST Development: Part 3](http://www.youtube.com/watch?v=JiojH8HfUps)  
-
-## 12: Construction
-
-* Readings:
-	* [Automation](readings/Automation.md)
-	* [Refactoring](readings/Refactoring.md)
-* Videos:
-	* [Introduction to Construction](http://www.youtube.com/watch?v=z-Q2CIfshcw)  
-	* [Non-Structural Properties: Readability](http://www.youtube.com/watch?v=TZ7mfKJa7Sw)  
-	* [Static Analysis and Linters](http://www.youtube.com/watch?v=QKK9XAdleFg)  
-	* [Automation](http://www.youtube.com/watch?v=HMtyshK3LNU)
-	* [Code Smells](http://www.youtube.com/watch?v=oqqaDaQ3m24)
-	* [Refactoring](http://www.youtube.com/watch?v=bHKyMxvZFXY)
 
 ### License
 
