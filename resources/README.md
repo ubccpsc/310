@@ -7,7 +7,7 @@ These are the resources used for CPSC 310 at the University of British Columbia.
 The materials have been adapted over several years of use, although each section of the course may use different subsets of the readings and videos. 
 This is a high-level overview of what the course will be about. Expect this list to change, although we will commit to freezing the schedule and videos for each upcoming week by the end of the previous Thursday so you will be able to watch the correct videos and complete the survey for that week.
 
-The materials roughly break down into the 13 weeks of the standard academic semester. Readings and videos are available for most course concepts.
+The materials roughly break down into 6 high-level modules that are spread across the 13 week of standard academic semester at UBC. Readings and videos are available for most course concepts.
 
 ## 0: Introduction
 
