@@ -18,6 +18,7 @@ The materials roughly break down into 6 high-level modules that are spread acros
   * [Async](readings/Async.md)
   * [Async Cookbook](readings/cookbooks/async.md)
   * [Git Cookbook](readings/cookbooks/git.md)
+
 * Videos:
   * [Course Introduction](http://www.youtube.com/watch?v=3tXzYUVQlrM)
   * [Capstone Project Overview](http://www.youtube.com/watch?v=NQCyiD-Fh9Q)
@@ -31,12 +32,12 @@ The materials roughly break down into 6 high-level modules that are spread acros
 
 * Readings:  
   * [Testing](readings/Testing.md)
-  <!-- TODO: Black Box Testing -->
   * [White Box Testing](readings/WhiteBoxTesting.md)
-  <!-- TODO: Mutation Testing -->	
   * [Fuzz Testing](readings/AutomatedTestingFuzzing.md)
   * [Testability & Assertions](readings/TestabilityAssertions.md)
-  <!-- TODO: * [Black box testing](readings/BlackBoxTesting.md) -->
+<!-- TODO: Black Box Testing -->
+<!-- TODO: Mutation Testing -->	
+<!-- TODO: [Black box testing](readings/BlackBoxTesting.md) -->
 
 * Videos:  
   * Testing overview:
@@ -73,6 +74,7 @@ The materials roughly break down into 6 high-level modules that are spread acros
   * [Process & Agile](readings/Process.md)
   * [Specifications](readings/Specifications.md)
   * [User Stories](readingsSpecificationsUserStories.md)
+
 * Videos:
   * Process
       * [Why Process?](http://www.youtube.com/watch?v=dtK561i_wX4)
@@ -105,6 +107,7 @@ The materials roughly break down into 6 high-level modules that are spread acros
 	* [Technical Representations](readings/Representations.md)
 	* [APIs](readings/API.md)
 	* [Design Principles](readings/DesignPrinciples.md)
+
 * Videos:
 	* Design overview
       * [Introduction to Abstraction](http://www.youtube.com/watch?v=HW_b8S2rD4o)  
@@ -146,6 +149,7 @@ The materials roughly break down into 6 high-level modules that are spread acros
 	* [Low Level Design](readings/LowLevelDesign.md) 
 	* [Design Patterns](readings/DesignPatterns.md)
 	* [MV*](readings/MVStar.md)
+
 * Videos:
 	* Design Patterns:
       * [Introduction to Low Level Design](http://www.youtube.com/watch?v=wJ-xnK9O-nU)  
@@ -166,6 +170,7 @@ The materials roughly break down into 6 high-level modules that are spread acros
 	* [Automation](readings/Automation.md)
 	* [Refactoring](readings/Refactoring.md)
 	* [REST](readings/REST.md)
+
 * Videos:
   * Construction
       * [Introduction to Construction](http://www.youtube.com/watch?v=z-Q2CIfshcw)  
