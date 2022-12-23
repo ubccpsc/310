@@ -39,32 +39,33 @@ The materials roughly break down into 6 high-level modules that are spread acros
   <!-- TODO: * [Black box testing](readings/BlackBoxTesting.md) -->
 
 * Videos:
-  * [Why Test?](http://www.youtube.com/watch?v=Uamo4Ej0tWk)
-  * [Terminology](http://www.youtube.com/watch?v=WKrvx7qCUDI)
-  * [Properties of Tests](http://www.youtube.com/watch?v=ll1k3Pks3ZA)
-  * [Kinds of Tests](http://www.youtube.com/watch?v=_Th3f9vks_w)
-  * [Unit and System Properties](http://www.youtube.com/watch?v=x2DWjxDiOQo)
-  * [Red Green Refactor](http://www.youtube.com/watch?v=v0q1MKhSQVM)
+  * Testing overview:
+      * [Why Test?](http://www.youtube.com/watch?v=Uamo4Ej0tWk)
+      * [Terminology](http://www.youtube.com/watch?v=WKrvx7qCUDI)
+      * [Properties of Tests](http://www.youtube.com/watch?v=ll1k3Pks3ZA)
+      * [Kinds of Tests](http://www.youtube.com/watch?v=_Th3f9vks_w)
+      * [Unit and System Properties](http://www.youtube.com/watch?v=x2DWjxDiOQo)
+      * [Red Green Refactor](http://www.youtube.com/watch?v=v0q1MKhSQVM)
   * White box testing:
-    * [Introduction to Coverage](http://www.youtube.com/watch?v=iujQEm9oono)  
-    * [Line and Statement Coverage](http://www.youtube.com/watch?v=SC7R-QixRaU)  
-    * [Branch and Path Coverage](http://www.youtube.com/watch?v=YBiHn5vgKnM)  
-    * [Coverage Wrap-Up](http://www.youtube.com/watch?v=2EBi66DYF5w)  
+      * [Introduction to Coverage](http://www.youtube.com/watch?v=iujQEm9oono)  
+      * [Line and Statement Coverage](http://www.youtube.com/watch?v=SC7R-QixRaU)  
+      * [Branch and Path Coverage](http://www.youtube.com/watch?v=YBiHn5vgKnM)  
+      * [Coverage Wrap-Up](http://www.youtube.com/watch?v=2EBi66DYF5w)  
   * Testability:
-    * [Introduction to Testability](http://www.youtube.com/watch?v=jwL1vkl-CoY)  
-    * [Controllability](http://www.youtube.com/watch?v=y0zrTdDuYv0)  
-    * [Observability](http://www.youtube.com/watch?v=CJhJibMCTUM)  
-    * [Isolateability: Part 1](http://www.youtube.com/watch?v=Z93-c4ngxGw)  
-    * [Isolateability: Part 2](http://www.youtube.com/watch?v=NMuhE-XnFe8)  
-    * [Automatability](http://www.youtube.com/watch?v=Q83W5zH8LUY)  
-    * [Testability Wrap-Up](http://www.youtube.com/watch?v=d2WjviF50HA)  
+      * [Introduction to Testability](http://www.youtube.com/watch?v=jwL1vkl-CoY)  
+      * [Controllability](http://www.youtube.com/watch?v=y0zrTdDuYv0)  
+      * [Observability](http://www.youtube.com/watch?v=CJhJibMCTUM)  
+      * [Isolateability: Part 1](http://www.youtube.com/watch?v=Z93-c4ngxGw)  
+      * [Isolateability: Part 2](http://www.youtube.com/watch?v=NMuhE-XnFe8)  
+      * [Automatability](http://www.youtube.com/watch?v=Q83W5zH8LUY)  
+      * [Testability Wrap-Up](http://www.youtube.com/watch?v=d2WjviF50HA)  
   * Black Box Testing:
-    * [Equivalence Class Partitioning](http://www.youtube.com/watch?v=ttAAsNSPiXw)  
-    * [Input Partitioning](http://www.youtube.com/watch?v=5PtxXnwyU3Y)  
-    * [Output Partitioning](http://www.youtube.com/watch?v=0yvHDKI-DSA)  
-    * [Boundary Value Analysis](http://www.youtube.com/watch?v=IRQU_fHKUa0)  
-    * [Assertions](http://www.youtube.com/watch?v=DCAFxgUXM4I)  
-    * [Assertions Example](http://www.youtube.com/watch?v=Y0GEftJ5MB0)
+      * [Equivalence Class Partitioning](http://www.youtube.com/watch?v=ttAAsNSPiXw)  
+      * [Input Partitioning](http://www.youtube.com/watch?v=5PtxXnwyU3Y)  
+      * [Output Partitioning](http://www.youtube.com/watch?v=0yvHDKI-DSA)  
+      * [Boundary Value Analysis](http://www.youtube.com/watch?v=IRQU_fHKUa0)  
+      * [Assertions](http://www.youtube.com/watch?v=DCAFxgUXM4I)  
+      * [Assertions Example](http://www.youtube.com/watch?v=Y0GEftJ5MB0)
 
 ## 2: Process
 
