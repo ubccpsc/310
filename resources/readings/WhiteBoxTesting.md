@@ -64,6 +64,10 @@ eval(0, false, true);
 
 The stronger the coverage criteria, the more stringently we can say the code was covered by the test suite. The greatest shortcoming of coverage however is that while it clearly shows that the suite _executes_ the code under test, it does not show that the code under test is _correct_. This can be clearly seen by our tests above, none of them check that the output from ```eval``` is correct for the inputs given. It is extremely important to keep this shortcoming in mind when thinking about coverage because ultimately we really do care about the correctness of the system over how comprehensively a test suite might execute it. This is one of the main reasons why why defects are frequently found in code that is covered by the test suite: specifying and checking assertions of correctness on code is often harder than deriving the inputs required to cover it in the first place.
 
+<!--
+TODO: Mutation testing
+### Mutation testing
+-->
 
 ### References
 
