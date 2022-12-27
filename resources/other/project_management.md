@@ -1,4 +1,4 @@
-###### GitHub Project Management
+# Project Management
 
 _Why do you need a project management tool?_
 
@@ -151,5 +151,6 @@ Additional Resources:
 - [Create buggy issues](https://help.testlio.com/en/articles/113252-what-does-a-good-bug-report-look-like)
 
 
-
+---
+[![](../readings/figures/CCSA.png "Creative Commons: Attribution-ShareAlike")](https://creativecommons.org/licenses/by-sa/3.0/) [Syed Ishtiaque Ahmad](https://github.com/ishtiaque05)
 
