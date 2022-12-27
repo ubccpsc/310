@@ -95,6 +95,8 @@ When you try to share this new branch for the first time, you will have to tell 
 
 Once this branch is on the git server, you can create a pull request using the GitHub web interface.
 
+Managing branches is a complex topic; a more detailed 310-centric view of branching can be found in the [branches tutorial](https://github.com/ubccpsc/310/blob/main/resources/other/branches.md).
+
 <a name="recovery"></a>
 ## Recovering from bad git state
 
