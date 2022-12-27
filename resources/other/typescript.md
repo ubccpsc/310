@@ -21,68 +21,68 @@ Some things to watch out for:
   - `for`
 
      ```TS
-        const arr: string[] = ["a", "b", "c"];
-        const obj: {[key: string]: string} = { "key1": "a", "key2": "b", "key3": "c" };
+     const arr: string[] = ["a", "b", "c"];
+     const obj: {[key: string]: string} = { "key1": "a", "key2": "b", "key3": "c" };
 
-        // Print the values in arr
-        for (let i = 0; i < arr.length; i++) {
-                console.log(arr[i]);
-        }
+     // Print the values in arr
+     for (let i = 0; i < arr.length; i++) {
+         console.log(arr[i]);
+     }
 
-        // Print the key/value pairs in obj
-        const keys: string[] = Object.keys(obj);
-        for (let i = 0; i < keys.length; i++) {
-                const key: string = keys[i];
-                const value: string = obj[key];
-                console.log(key, value);
-        }
+     // Print the key/value pairs in obj
+     const keys: string[] = Object.keys(obj);
+     for (let i = 0; i < keys.length; i++) {
+         const key: string = keys[i];
+         const value: string = obj[key];
+         console.log(key, value);
+     }
      ```
   - `for...in`:
 
      ```TS
-        const arr: string[] = ["a", "b", "c"];
-        const obj: {[key: string]: string} = { "key1": "a", "key2": "b", "key3": "c" };
+     const arr: string[] = ["a", "b", "c"];
+     const obj: {[key: string]: string} = { "key1": "a", "key2": "b", "key3": "c" };
 
-        // Prints the array index (e.g. 0, 1, 2. Probably not what you want)
-        for (let key in arr) {
-                console.log(key);
-        }
+     // Prints the array index (e.g. 0, 1, 2. Probably not what you want)
+     for (let key in arr) {
+         console.log(key);
+     }
 
-        // Prints the object's keys:
-        for (let key in obj) {
-                console.log(key);
-        }
+     // Prints the object's keys:
+     for (let key in obj) {
+         console.log(key);
+     }
      ```
   - `for...of`:
 
      ```TS
-        const arr: string[] = ["a", "b", "c"];
-        const obj: {[key: string]: string} = { "key1": "a", "key2": "b", "key3": "c" };
+     const arr: string[] = ["a", "b", "c"];
+     const obj: {[key: string]: string} = { "key1": "a", "key2": "b", "key3": "c" };
 
-        // Prints the values of arr
-        for (let value of arr) {
-                console.log(value);
-        }
+     // Prints the values of arr
+     for (let value of arr) {
+         console.log(value);
+     }
 
-        // INVALID
-        for (let value of obj) {
-                console.log(value);
-        }
+     // INVALID
+     for (let value of obj) {
+         console.log(value);
+     }
 
-        // To get the object values, use
-        for (let key in obj) {
-                console.log(obj[key]);
-        }
+     // To get the object values, use
+     for (let key in obj) {
+         console.log(obj[key]);
+     }
 
-        // Or, use
-        for (let key of Object.keys(obj)) {
-                console.log(obj[key]);
-        }
+     // Or, use
+     for (let key of Object.keys(obj)) {
+         console.log(obj[key]);
+     }
 
-        // Or, use
-        for (let value of Object.values(obj)) {
-                console.log(value);
-        }
+     // Or, use
+     for (let value of Object.values(obj)) {
+         console.log(value);
+     }
     ```
 
 A few notes specific to TypeScript.
@@ -91,16 +91,16 @@ A few notes specific to TypeScript.
 - **Interfaces for objects** For example, if you wanted to specify an object that has string keys with number values, you would do:
 
     ```TS
-        interface Obj {
-                [key: string]: number;
-        }
+    interface Obj {
+        [key: string]: number;
+    }
     ```
   which would let you create objects like `const obj: Obj = { "key1": 1, "xyz": 2, "abc": -5 }`. Contrast this with
 
     ```TS
-        interface Obj2 {
-                key: string;
-                value: number;
-        }
+    interface Obj2 {
+        key: string;
+        value: number;
+   }
     ```
   which would only let you create objects like `const obj: Obj2 = { "key": "key1", "value": 1 }`.
