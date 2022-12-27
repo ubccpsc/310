@@ -133,3 +133,6 @@ $ git checkout --track origin/hotfix/remove-dataset
 ## Further Reading
 - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
 - [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
+
+---
+[![](../readings/figures/CCSA.png "Creative Commons: Attribution-ShareAlike")](https://creativecommons.org/licenses/by-sa/3.0/) [Braxton Hall](https://braxtonhall.ca/) [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
