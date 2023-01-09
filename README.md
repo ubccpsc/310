@@ -4,9 +4,9 @@
 
 * [Software Engineering Course Readings](https://github.com/ubccpsc/310/tree/main/resources)
 
-## Future Term
+## Current Term
 
-* 2023 January (2022W2) Course site will be linked here early-January 2022.
+* [2023 January (2022W2)](https://sites.google.com/view/ubc-cpsc310-22w2/home)
 
 ### Past Terms
 
