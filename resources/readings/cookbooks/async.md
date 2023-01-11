@@ -610,10 +610,14 @@ myPromise.then(successFoo).catch(failureFoo);
 ```
 -->
 
----
-
 ## Resources
 
 * [Avoiding Async Hell](https://medium.com/@pyrolistical/how-to-get-out-of-promise-hell-8c20e0ab0513)
-
 * [Parallel vs Concurrent Execution in Node](https://bytearcher.com/articles/parallel-vs-concurrent/)
+* Nolan Lawson has some great examples about async handling in PouchDB: 
+  * [Tricky promises](https://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html)
+  * [From promises to async/await](https://pouchdb.com/2015/03/05/taming-the-async-beast-with-es7.html)
+
+
+---
+[![](../figures/CCSA.png "Creative Commons: Attribution-ShareAlike")](https://creativecommons.org/licenses/by-sa/3.0/) [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
