@@ -136,7 +136,7 @@ While JavaScript started as an interpreted language, all modern JavaScript imple
 
 #### Static vs. dynamic types
 
-Another important language design question is whether the language uses static or dynamic type checking. In languages that are statically type checked, _variables_ are given types and a compiler checks that assignments to and usages of these variables are do not violate the type declaration. For example, in Java:
+Another important language design question is whether the language uses static or dynamic type checking. In languages that are statically type checked, _variables_ are given types, and a compiler checks that assignments to and usages of these variables do not violate the type declaration. For example, in Java:
 
 ```java
 int age; // age is declared to be an int
