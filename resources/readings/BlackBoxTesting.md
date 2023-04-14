@@ -1,6 +1,6 @@
 # Black box testing
 
-Black box testing approaches are used when the tester does not have (or is electing not to use) any knowledge about the implementation of the system under test. Instead of deriving test cases by examining the implementation as in white box testing, in black box testing the tester uses the specification for the code under test and validates that that the output is correct (according to the specification) for a given set of inputs.
+Black box testing approaches are used when the tester does not have (or is electing not to use) any knowledge about the implementation of the system under test. Instead of deriving test cases by examining the implementation as in white box testing, in black box testing the tester uses the specification for the code under test and validates that the output is correct (according to the specification) for a given set of inputs.
 
 There are a variety of black box testing approaches that are used in practice:
 
@@ -22,9 +22,9 @@ user: {
 
 * `State transition testing`. This kind of black box testing requires the tester to identify the states, or modes, the program will assume at runtime, determine how the program flows between these states, and then test that the program behaves as expected during these transitions.
 
-    For example, imagine a system for an electronic lock. Such as system would have two natural states: `open` and `closed`. The only valid transition from `closed->open` is through the provisioning of a valid credential, while `open->closed` may happen when the door is closed or after some timeout. In state transition testing, each of these behaviours are validated through explicit test cases.
+    For example, imagine a system for an electronic lock. Such as system would have two natural states: `open` and `closed`. The only valid transition from `closed->open` is through the provisioning of a valid credential, while `open->closed` may happen when the door is closed or after some timeout. In state transition testing, each of these behaviours is validated through explicit test cases.
  
-* `Use case testing`: Finally, use case testing is a form of black box testing that tries, as much as possible, to simulate user interaction with the system. While use case testing often validates the *happy path* where the most common and expected inputs are validated to ensure the system behaves as expected. Use case tests though can also simulate both *untrained an adversarial* users to try to exercise the system in ways these users might as well in an effort to ensure both expected and unexpected use cases are handled in a way that makes sense from a user's perspective.
+* `Use case testing`: Finally, use case testing is a form of black box testing that tries, as much as possible, to simulate user interaction with the system. While use case testing often validates the *happy path* where the most common and expected inputs are validated to ensure the system behaves as expected. Use case tests though can also simulate both *untrained and adversarial* users to try to exercise the system in ways these users might as well in an effort to ensure both expected and unexpected use cases are handled in a way that makes sense from a user's perspective.
 
 <!--
 INPUT / OUTPUT Partitioning here
