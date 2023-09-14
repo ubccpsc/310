@@ -438,6 +438,20 @@ it("Test single async failure", async function () {
 });
 ```
 
+The most verbose, but easiest to debug (because you can set breakpoints at all the locations of interest to inspect the execution at runtime) is to await that the code is correct:
+
+```typescript
+it("Test single async failure in a breakpoint-friendly way", async function () {
+    const invalidExpression = "INVALID";
+    const expected = "400 - \"Error: Undefined symbol INVALID\"";
+    try {
+        const result = await math.calcAsync(invalidExpression);
+        expect(result).to.be.undefined; // since the line above should fail, this should never happen   
+    } catch(err) {
+        expect(err.message).to.equal(expected); // check the message to differentiate between the assertion above failing
+    }    
+});
+```
 <a name="testHybrid"></a>
 ### Testing Hybrid 
 
