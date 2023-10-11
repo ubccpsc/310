@@ -1,9 +1,6 @@
-# Automated testing
-
-Testing is a laborious and error-prone process. The idea behind automated testing is to automated some aspects of the test *writing* process. One automated testing strategy that is popular in industry is called fuzz testing, or fuzzing.
-
 # Fuzz testing
 
+Fuzz testing is a testing approach that seeks to automate some aspects of the test *writing* process.
 Fuzz testing concerns itself with programmatically generating inputs to a system/code under test (SUT/CUT) in a way that uses some elements of randomness. Some fuzzing strategies are black-box. This means that they require no information about the SUT. Most advanced fuzzing strategies, however, are grey-box or glass-box. These strategies use feedback about the execution of the SUT, such as code coverage, to improve their input generation process.
 
 Fuzzing is often used to test a simple specification of the SUT: that the system does not crash. That is, fuzzing is used to find segmentation faults or other types of runtime errors. Additional specifications are necessary for fuzzing to check more advanced types of correctness properties, such as whether or not the SUT computes the right value.
