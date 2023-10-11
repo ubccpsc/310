@@ -438,6 +438,20 @@ it("Test single async failure", async function () {
 });
 ```
 
+The most verbose, but easiest to debug (because you can set breakpoints at all the locations of interest to inspect the execution at runtime) is to await that the code is correct:
+
+```typescript
+it("Test single async failure in a breakpoint-friendly way", async function () {
+    const invalidExpression = "INVALID";
+    const expected = "400 - \"Error: Undefined symbol INVALID\"";
+    try {
+        const result = await math.calcAsync(invalidExpression);
+        expect(result).to.be.undefined; // since the line above should fail, this should never happen   
+    } catch(err) {
+        expect(err.message).to.equal(expected); // check the message to differentiate between the assertion above failing
+    }    
+});
+```
 <a name="testHybrid"></a>
 ### Testing Hybrid 
 
@@ -610,10 +624,14 @@ myPromise.then(successFoo).catch(failureFoo);
 ```
 -->
 
----
-
 ## Resources
 
 * [Avoiding Async Hell](https://medium.com/@pyrolistical/how-to-get-out-of-promise-hell-8c20e0ab0513)
-
 * [Parallel vs Concurrent Execution in Node](https://bytearcher.com/articles/parallel-vs-concurrent/)
+* Nolan Lawson has some great examples about async handling in PouchDB: 
+  * [Tricky promises](https://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html)
+  * [From promises to async/await](https://pouchdb.com/2015/03/05/taming-the-async-beast-with-es7.html)
+
+
+---
+[![](../figures/CCSA.png "Creative Commons: Attribution-ShareAlike")](https://creativecommons.org/licenses/by-sa/3.0/) [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)

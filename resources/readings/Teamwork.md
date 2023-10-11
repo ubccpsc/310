@@ -78,7 +78,7 @@ The [Phoenix project](https://www.amazon.ca/Phoenix-Project-DevOps-Helping-Busin
 
 ### Teamwork and the course project
 
-The course project represents a challenging development activity that must be completed in groups. To support this we provide the follow pieces of concrete advice based on past student experiences in the course.
+The course project represents a challenging development activity that must be completed in groups. To support this, we provide the following pieces of concrete advice based on past student experiences in the course.
 
 It is extremely important to be clear about roles and responsibilities of each team member. Assumptions about scheduling, motivation, and communication are frequently challenging and are often not discovered until late in the term. You should be meeting with your partner regularly (this should be easy with three lectures and a lab each week); take a few minutes in each of these touch points to catch up and make sure you are both proceeding according to your shared plan.
 

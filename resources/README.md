@@ -33,7 +33,7 @@ The materials roughly break down into 6 high-level modules that are spread acros
 * Readings:  
   * [Testing](readings/Testing.md)
   * [Testability & Assertions](readings/TestabilityAssertions.md)
-  * [White Box Testing](readings/WhiteBoxTesting.md)
+  * [Glass Box Testing](readings/GlassBoxTesting.md)
   * [Fuzz Testing](readings/AutomatedTestingFuzzing.md)
 <!-- TODO: Black Box Testing -->
 <!-- TODO: Mutation Testing -->	
@@ -73,7 +73,7 @@ The materials roughly break down into 6 high-level modules that are spread acros
 * Readings:
   * [Process & Agile](readings/Process.md)
   * [Specifications](readings/Specifications.md)
-  * [User Stories](readingsSpecificationsUserStories.md)
+  * [User Stories](readings/SpecificationsUserStories.md)
 
 * Videos:
   * Process:
