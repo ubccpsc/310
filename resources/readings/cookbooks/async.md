@@ -414,7 +414,7 @@ it("Test single promise failure", async function () {
 <a name="testAsync"></a>
 ### Testing Async 
 
-The succinct format below is identical for both promises and async/await. This super-short format relies on the `chai-as-promised` package. Note, the `return` is crucial to ensure Mocha waits for the promise to be resolved. If you wish to test multiple assertions, you can do so with `return Promise.all([..])`, although this is not shown as the main benefit of this approach is its brevity.
+The succinct format below is identical for both promises and async/await. This super-short format relies on the `chai-as-promised` package. Note, the `return` is crucial to ensure Mocha waits for the promise to be resolved. If you wish to test multiple assertions, you can do so with `return Promise.all([..])`, although this is not shown as the main benefit of this approach is its brevity. One *huge* downside of the `eventually` syntax is that it is not amenable to validating test cases with the debugger; if you are encountering challenges with your tests not behaving as expected, using `await` is always recommended practice as it can be more easily debugged.
 
 ```typescript
 it("Test single async success", async function () {
