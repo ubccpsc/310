@@ -32,7 +32,7 @@ Steps 2/7 may not happen on small teams or when testing happens solely on a sing
 A number of different terms are commonly used in the testing space:
 
 * ```SUT/CUT```: System / code under test. This is the thing that you are actually trying to validate.
-* ```White box testing```: When testing in a white box manner one typically carefully examines the program source code in order to identify potentially problematic sets of inputs or control flow paths. More details can be found in the [White box testing](WhiteBoxTesting.md) reading.
+* ```Glass box testing```: When testing in a glass box manner one typically carefully examines the program source code in order to identify potentially problematic sets of inputs or control flow paths. More details can be found in the [Glass box testing](GlassBoxTesting.md) reading.
 * ```Black box testing```: Black box testing validates programs without any knowledge of how the system is implemented. This form of testing relies heavily on predicting problematic inputs by examining public API signatures and any available documentation for the CUT. More details can be found in the [Black box testing](BlackBoxTesting.md) reading.
 * ```Effectiveness```: The simplest way to reason about the effectiveness of a test or test suite is to measure the probability the test will find a real fault (per unit of effort, which can be something like developer creation / maintenance time or number of test executions).
 * ```Higher/lower testability```: Some systems are significantly easier to test than others due to the way they are constructed. A highly testable system will enable more effective tests for the same cost than a system whose tests are largely ineffective (or require an outsized amount of creation and maintenance effort).
