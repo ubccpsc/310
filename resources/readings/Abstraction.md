@@ -15,7 +15,7 @@ Here is a concrete example of data abstraction from [CPSC 210](https://sites.goo
 // Requires: A non-empty and unused name.
 // Modifies: Team database.
 // Effects:  Returns whether a team was created.
- public createTeam(name: string):boolean {...} 
+ public createTeam(name: string): boolean {...} 
 ```
 
 By explicitly describing the data the method requires, modifies, and its side effects, client code can be completely oblivious of the underlying implementation used by ```createTeam(..)```. What we are really trying to do in this example is define the method's contract, that is its preconditions (expects), postconditions (provides), and invariants (must always be true). Correctly and adequately documenting these abstractions is important because state-based errors are a common source of difficult-to-diagnose faults in modern systems that type systems provide little defence against.
