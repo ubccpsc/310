@@ -8,7 +8,7 @@ The figure below shows a coarse-grained view of the broad steps required to get 
 
 Software systems are increasingly large, distributed, and heterogeneous. Successfully building, testing, and deploying them requires coordinating a huge stack of tools, environments, and systems. This requires a high degree of craftsmanship and has historically involved many manual, laborious, time consuming, and error prone steps to translate source code into a shippable executable. The goal of automation is to transform this unsustainable way of building software into a process that is:
 
-* **Repeatable**: The process of building a product should not vary between different versions of the software (modulo minor improvements over time). A unified building process provides a mechanism for building the system the same way, every time with minimal (prefereably no) human intervention required.
+* **Repeatable**: The process of building a product should not vary between different versions of the software (modulo minor improvements over time). A unified building process provides a mechanism for building the system the same way, every time with minimal (preferably no) human intervention required.
 * **Reliable**: If the build process was repeatable but was subject to many non-determinstic failures it would not have value. Being able to trust that the repeatable process will run to its successful completion is crucial, although naturally test failures are sometimes to be expected and are not considered a build automation reliability failure (unless the tests themselves are flaky).
 * **Revertible**: The build process should make it possible to quickly and transparently revert out of any change. If a build is deployed and is found to have an error in production, it should be possible to automatically revert to a prior build in a quick and transparent way.
 
@@ -39,6 +39,37 @@ yarn run test
 ```
 
 By enforcing each step to be executable on the command line without developer intervention, the entire process can happen automatically in the background. For example, after every push to a project's VCS the whole process can be automatically performed and the results sent to the engineer if any problems are detected.
+
+## Package Versioning
+
+As a part of automated build processes, new software versions are constantly being created. Communicating the meaning of these changes in valuable to all consumers of a software package. Additionally, how packages _your_ software depends upon have changed can also have important ramifications for your upgrade decisions. 
+
+Semantic Versioning, often referred to as SemVer, is a versioning scheme that is commonly used to convey meaning about the underlying changes in a release. Semantic version numbers consist of three parts: `MAJOR.MINOR.PATCH`. Each part is an integer that can only be incremented. Leading 0s are not permitted, unless the part is actually 0 (e.g. 1.02.2 is invalid, but 1.0.2 is fine).
+
+* **MAJOR:** Incrementing the major version indicates that there are incompatible changes in the API which may affect any client of the package. For example, it is not uncommon for a major version change to cause existing clients of a package to fail to compile.
+
+* **MINOR:** Incrementing the minor version indicates that new features have been added, but these should not affect the compilation (or operation) of existing clients. Minor versions often introduce new APIs.
+
+* **PATCH:** Incrementing patch versions should never affect any clients and are typically used to distribute bug fixes.
+
+When the `MAJOR` version is 0, a package is considered pre-release and any version change should be treated as a breaking change. It is common to add a suffix after the `PATCH` version, separated by a `+`, for example `2.12.7+20251123`. These suffixes are often used to capture new builds that do not necessarily even contain changes that reach the threshold of a `PATCH` (e.g., documentation or logging changes).
+
+### Upgrading and Downgrading Versions
+
+**Upgrading:** You can safely upgrade the `MINOR` and `PATCH` versions as they are backwards-compatible. Upgrading the `MAJOR` version requires careful consideration as it may introduce breaking changes. In terms of risk, upgrading `PATCH` versions should always be safe and upgrading `MAJOR` versions is frequently not safe.
+
+**Downgrading:** Downgrading the `PATCH` version is generally safe as it only involves bug fixes. Downgrading `MINOR` versions can be safe, as long as you have not taken a dependency on an API that was added to the `MINOR` version you are depending upon. 
+Downgrading to a library with a preceding `MAJOR` version is likely to cause problems. In general, downgrading `MAJOR` and `MINOR` versions carries risk and is generally avoided.
+
+Upgrade policies are often captured in metadata files for a project. For example, the following three lines describe alternative upgrade paths:
+
+```json
+"parse5": "^7.1.1",
+"typescript": "~5.3.2",
+"mocha": "10.0.2"
+```
+
+In this example, the `^` for parse5 specifies that upgrades to `MINOR` and `PATCH` versions are permitted. The `~` for typescript specifies that upgrades to only the `PATCH` field is permitted. The declaration for mocha specifies that only that single version is acceptable.
 
 ### References
 
