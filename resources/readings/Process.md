@@ -109,9 +109,16 @@ Scrum employs three broad ceremonies:
 * **Sprint review**: After each sprint, a review meeting is held for the team to demonstrate their features to the product owner or other stakeholders. This is possible because the output of each sprint is supposed to be a potentially-shippable product. These meetings are light-weight and are usually time limited to under two hours. The team also takes this opportunity to evaluate how much progress has been made on the sprint backlog.
 * **Retrospective**: Every product and team is unique, so it is important that the team take time to reflect on how the sprint worked out. Usually this comes in the form of identifying activities the team should start doing, stop doing, or continue doing. This retrospective is a good opportunity to make sure the process is providing value for the team and to find opportunities to improve and refine the activities the team is performing.
 
+#### Kanban
+
+Kanban is a pull-based software process framework that aims to emphasize continuous delivery and flexibility. To do this, Kanban encourages teams to think about the flow of work. Kanban teams make heavy use of agile boards to visualize and track work as it happens. While there is a lot of flexibility in how this board is structured, almost all teams have columns that at least capture the `backlog` (all available work), `doing` (the work that is currently being performed), `review` (work that is ready for sharing and review by the team), and `done` (work that has been reviewed and completed).
+
+Rather than focus on an explicitly-scheduled iterative process as in Scrum, Kanban teams manage their work by setting WiP (Work in Progress) limits on the `doing` and `review` columns on their agile board; this is done to reduce the chances of the team being overwhelmed or work not getting pushed through to completion. While a strength of scrum relative to prior methodologies is that it drives teams to deliver smaller quanta of software (with the goal of being able to deliver after every sprint), Kanban tries to reduce this risk even further by further emphasizing the continuous development of features. In this way, any time an item moves to the `done` part of the agile board a Kanban-based team may ship the feature, without having to wait for a sprint to end.
+
+Every team must choose the process that works for them. Kanban arose from teams who felt that agile methodologies were helpful for their productivity and quality, but felt constrained by the rigid-feeling aspects of scrum with their explicit schedules, planning, and ceremonies. That said, Kanban and Scrum do have significant similarities as well with both leveraging daily standup meetings to ensure teams are always aware of how they are doing as well as relying on smaller units of work defined in user stories.
+
 <!--
 TODO (from phoenix project):
-* Kanbans
 * Lean (Plan, do, check, act)
 -->
 
