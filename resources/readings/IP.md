@@ -27,7 +27,7 @@ At the same time, IP regulations also try to consider the public good. This is b
 
 ### Licenses
 
-Licenses are widely applied in the software ecosystem to define how software products can be used. All source code is protected by copyright: licenses clarify how the code can be used, and whether it can be modified and distributed by others. Below we concentrate on a few popular Open Source licenses and their specific properties.
+Licenses are widely applied in the software ecosystem to define how software products can be used. All source code is protected by copyright: licenses clarify how the code can be used and whether it can be modified and distributed by others. Below we concentrate on a few popular Open Source licenses and their specific properties.
 
 ***GPLv3*** The General Public License (GPLv3) has been designed to enable software to be used, shared, and modified. This is a *copyleft* license which means that the license must be maintained with the code is modified and/or distributed. Additionally, projects that use GPLv3 code cannot us a less-restrictive license on their own product.
 
