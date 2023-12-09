@@ -148,6 +148,19 @@ To ameliorate this, they talk to the developers responsible for the PIM code and
 
 <img src="./figures/patterns_facade-example_after.png" width="512px" alt="facade diagram">
 
+### Adapter: Simplifying interactions with incompatible types.
+
+The Adapter pattern is widely used, especially in the context of legacy systems that cannot be easily modified, to enable objects to more easily interact with each other. Adapters often act as translators, enabling the objects and implementations used in one design to be converted to a format that is more amenable to another design. While adapters are often relatively straightforward, if the differences between the two designs is large, they can become more complex.
+
+In the most common cases, Adapter objects simply act as a wrapper for another object. Concretely: the adapter contains a field of the wrapped type, and exposes a set of methods that make sense for a given design. Any requests to these methods are then _adapted_ to the interface required of the adapted object. This often involves transforming both the parameters to invoke the wrapped object as well as transforming any returned values to match the exposed interface.
+
+The main benefit of the Adapter pattern is that it allows clients of the adapters to remain oblivious of the design of the wrapped object, while still taking advantage of its functionality. Although client objects could do these translation steps themselves, they would then be coupled to the wrapped object and would have to take on the responsibilities necessary to perform the translation themselves.
+
+<img src="./figures/patterns_adapter-example.png" width="512px" alt="adapter diagram">
+
+In the example above, the `Client` needs to use functionality from the `MP3Player` and `AACMedia` frameworks, neither of which they are able to directly modify. But they would like them to have a consistent interface, despite the fact that they both have different requirements for actually performing the action (executing `play(fName: string)` that the `Client` actually wants). The adapter objects each only know how to deal with their adapted type to provide the desired functionality. While in this example both Adapters implement `FormatAdapter`, this is not strictly required by the pattern.
+
+
 ### Decorator: Dynamically adding responsibilities to objects.
 
 The Decorator pattern is another structural pattern that provides a means to dynamically augment an object's responsibilities. With the decorator pattern it is important to distinguish between an _object_ and a _class_. A class is the structural template from which object instances are created. That is, an object is a single instance of a class and a class can have many different instances. Each object can have different field values, but the fields, methods, and parent types they have are all defined by the class they are instantiated from.
@@ -212,7 +225,7 @@ public getBudget():number {
 }
 ```
 
-Menwhile, the implementation of `Manager::getBudget()` would also capture the budget of their reports (some of whom could themselves be `Manager`s):
+Meanwhile, the implementation of `Manager::getBudget()` would also capture the budget of their reports (some of whom could themselves be `Manager`s):
 
 ```typescript
 public getBudget():number {
