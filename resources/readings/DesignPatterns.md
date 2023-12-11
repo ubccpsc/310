@@ -160,6 +160,45 @@ The main benefit of the Adapter pattern is that it allows clients of the adapter
 
 In the example above, the `Client` needs to use functionality from the `MP3Player` and `AACMedia` frameworks, neither of which they are able to directly modify. But they would like them to have a consistent interface, despite the fact that they both have different requirements for actually performing the action (executing `play(fName: string)` that the `Client` actually wants). The adapter objects each only know how to deal with their adapted type to provide the desired functionality. While in this example both Adapters implement `FormatAdapter`, this is not strictly required by the pattern.
 
+### Factory: Creating objects.
+
+The design advice _depend on abstractions, not implementations_ is widely used, but it is impossible to instantiate an abstraction. An object must be created before it can be used, and when an object is created we must reference (and be coupled to) the exact concrete implementation that we want to have a reference to. Creational design patterns provide a means for enabling the creation of objects to be encapsulated within a specific object. While this object will have to know about the concrete types they are creating, they allow their callers to depend on their abstractions (assuming the instantiated objects have a more meaningful supertype). Providing a means for client programs to remain oblivious of the concrete types they are using is crucial to enable the open/closed principle to be applied fully within a design. 
+
+<img src="./figures/dp_factory1.png" width="320px" alt="factoryless diagram">
+
+In the class diagram above, we can see the shortcomings of the factory-less design as `Bank` is coupled to all three subtypes of `Account` so that it can instantiate the kind of object it needs, despite maintaining a reference to `Account` itself. 
+
+<img src="./figures/dp_factory2.png" width="320px" alt="factory diagram">
+
+The above design has been improved by having the `Bank` depend on a `BankFactory` instance. In this way the `Bank` remains oblivious of the concrete implementation of the `Account` they are using. This design does have some drawbacks though: every time a new `Account` is added the `AccountFactory`, which all clients depend upon, will need to be modified.
+
+<img src="./figures/dp_factory3.png" width="320px" alt="abstract factory diagram">
+
+This final design is called an _Abstract Factory_. In this design the client code depends on a factory that itself implements an `AccountFactory` interface. This means that the client can be specialized with the kind of factory that is relevant to them. It also means that as new types of `Account` are added, only the factories that the new `Account` is relevant for need to be modified.
+ 
+### Singleton: Ensuring only one of an object exists.
+
+It is not an uncommon design constraint to only want to have one instance of some kinds of objects. The Singleton design pattern exists to fulfill this role. The Singleton is also a creational design pattern as it is involved with mediating the creation of an object. While the Singleton is relatively widely used, it is frequently misused and its shortcomings should be understood before choosing to adopt this pattern.
+
+Singletons are the simplest pattern in practice (although more care is required when implementing the pattern in languages that allow true multi-threading):
+
+```typescript
+class Database {
+	private static instance: Database | null = null;
+	private constructor() { }
+	public static getInstance(): Database {
+		if (Database.instance === null) {
+			Database.instance = new Database();
+		}
+		return Database.instance;
+	}
+	// rest of Database
+}
+```
+
+The `private constructor()` declaration ensures that nobody can instantiate a `Database` except for the `Database` itself. By checking to see if the `static instance` has been assigned before creating the instance, the class is able to ensure that only one copy is ever assigned. The pattern is extremely easy for other types to use, as they simply need to call `Database.getInstance()` to get an instantiated reference to the same instance of a `Database` as all other clients are using. Of course, this also highlights one of the key shortcomings of the Singleton: the Singleton itself acts as a global variable because every class in the system has the ability to get a reference to this type. This ease-of-access tends to lead to undisciplined use of Singleton types, leading to concrete references (because all client references must reference the static `getInstance()` method which must be declared on a concrete type).
+
+<img src="./figures/dp_singleton.png" width="320px" alt="singleton diagram">
 
 ### Decorator: Dynamically adding responsibilities to objects.
 

@@ -35,8 +35,7 @@ The materials roughly break down into 6 high-level modules that are spread acros
   * [Testability & Assertions](readings/TestabilityAssertions.md)
   * [Glass Box Testing](readings/GlassBoxTesting.md)
   * [Black Box Testing](readings/BlackBoxTesting.md)
-  * [Fuzz Testing](readings/FuzzTesting.md)
-<!-- TODO: Mutation Testing -->	
+  * [Fuzz & Mutation Testing](readings/AdvancedTesting.md)
 
 * Videos:  
   * Testing overview:
