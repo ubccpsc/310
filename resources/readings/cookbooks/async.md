@@ -413,7 +413,7 @@ it("Test single promise failure", async function () {
 <a name="testAsync"></a>
 ### Testing Async 
 
-The succinct format below is identical for both promises and async/await. This super-short format relies on the `chai-as-promised` package. Note, the `return` is crucial to ensure Mocha waits for the promise to be resolved. If you wish to test multiple assertions, you can do so with `return Promise.all([..])`, although this is not shown as the main benefit of this approach is its brevity. While these tests could be written more succinctly with the `eventually` syntax, the tests would not be amenable to debugging. If you are encountering challenges with your tests not behaving as expected, using `await` is always recommended practice as it can be more easily inspected in the debugger.
+The below examples are best-practice approaches for testing your async code. These are preferred because you can set breakpoints at any point in the test: when the CUT is being invoked, after, in the catch, or when the assertions are being checked. These tests can be written more succinctly using the `chai-as-promised` package, but we strongly recommend not doing this as these tests often do not behave as you think they do. 
 
 ```typescript
 it("Test single async success", async function () {
@@ -481,7 +481,7 @@ it("Test concurrent hybrid success", async function () {
 });
 ```
 
-Of course, you could still use `chai-as-promised` and return the promise as well, as shown here in the failure case.
+While in the above example an error would fail the one assertion, sometimes it is desireable to validate that your error cases are also failing in the expected way, as can be seen in the following example:
 
 ```typescript
 it("Test concurrent hybrid failure", async function () {
