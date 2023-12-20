@@ -52,8 +52,7 @@ public async calcAsync(expression: string): Promise<string>
 
 ```typescript
 public calcCB(expression: string, 
-              callback: (err: string, result: string) => void
-              ): void
+              callback: (err: string, result: string) => void): void
 ``` 
 
 For all examples below, you can assume you have access to a field called `private math: MathJS` that provides both methods declared above. Additionally, a string expression (e.g., `300+10`) is provided in the `exp` variable.
@@ -414,44 +413,43 @@ it("Test single promise failure", async function () {
 <a name="testAsync"></a>
 ### Testing Async 
 
-The succinct format below is identical for both promises and async/await. This super-short format relies on the `chai-as-promised` package. Note, the `return` is crucial to ensure Mocha waits for the promise to be resolved. If you wish to test multiple assertions, you can do so with `return Promise.all([..])`, although this is not shown as the main benefit of this approach is its brevity. One *huge* downside of the `eventually` syntax is that it is not amenable to validating test cases with the debugger; if you are encountering challenges with your tests not behaving as expected, using `await` is always recommended practice as it can be more easily debugged.
+The succinct format below is identical for both promises and async/await. This super-short format relies on the `chai-as-promised` package. Note, the `return` is crucial to ensure Mocha waits for the promise to be resolved. If you wish to test multiple assertions, you can do so with `return Promise.all([..])`, although this is not shown as the main benefit of this approach is its brevity. While these tests could be written more succinctly with the `eventually` syntax, the tests would not be amenable to debugging. If you are encountering challenges with your tests not behaving as expected, using `await` is always recommended practice as it can be more easily inspected in the debugger.
 
 ```typescript
 it("Test single async success", async function () {
-    const expression = "155*2";
-    const expected = "310";
+		const expression = "155*2";
+		const expected = "310";
 
-    const result = math.calcAsync(expression);
-    return expect(result).to.eventually.equal(expected); // return is required!
-});
+		let result;
+		try {
+			result = await math.calcAsync(expression);
+		} catch (err) {
+			result = err;
+		} finally {
+			expect(result).to.equal(expected);
+		}
+	});
 ```
 
 While the failing path could be tested with `try...catch`, it is also possible to specify directly that the code under test is expected to throw, and to ensure that the error message provided is correct.
 
 ```typescript
 it("Test single async failure", async function () {
-    const expression = "INVALID";
-    const expected = "400 - \"Error: Undefined symbol INVALID\"";
+	const expression = "INVALID";
+		const expected = "400 - \"Error: Undefined symbol INVALID\"";
 
-    const result = math.calcAsync(expression);
-    return expect(result).to.eventually.be.rejectedWith(expected); // return is required!
+		let result;
+		try {
+			result = await math.calcAsync(expression);
+		} catch (err) {
+			result = err;
+		} finally {
+			expect(result).to.be.instanceOf(StatusCodeError);
+			expect(result.message).to.equal(expected);
+		}
 });
 ```
 
-The most verbose, but easiest to debug (because you can set breakpoints at all the locations of interest to inspect the execution at runtime) is to await that the code is correct:
-
-```typescript
-it("Test single async failure in a breakpoint-friendly way", async function () {
-    const invalidExpression = "INVALID";
-    const expected = "400 - \"Error: Undefined symbol INVALID\"";
-    try {
-        const result = await math.calcAsync(invalidExpression);
-        expect(result).to.be.undefined; // since the line above should fail, this should never happen   
-    } catch(err) {
-        expect(err.message).to.equal(expected); // check the message to differentiate between the assertion above failing
-    }    
-});
-```
 <a name="testHybrid"></a>
 ### Testing Hybrid 
 
@@ -487,21 +485,28 @@ Of course, you could still use `chai-as-promised` and return the promise as well
 
 ```typescript
 it("Test concurrent hybrid failure", async function () {
-    const expression = "INVALID";
-    const expected = "400 - \"Error: Undefined symbol INVALID\"";
+const expression = "INVALID";
+		const expected = "400 - \"Error: Undefined symbol INVALID\"";
 
-    let jobs = [];
-    const opts = [13, 3, 2, 5, 54];
+		let jobResults;
+		try {
+			let jobs = [];
+			const opts = [13, 3, 2, 5, 54];
 
-    // create a list of asynchronous work
-    for (const o of opts) {
-        jobs.push(math.calcAsync(o + "+" + expression + "+" + (o + 1)));
-    }
+			// create a list of asynchronous work
+			for (const o of opts) {
+				jobs.push(math.calcAsync(o + "+" + expression + "+" + (o + 1)));
+			}
 
-    // wait for all asynchronous work to finish
-    const jobResults = Promise.all(jobs);
+			// wait for all asynchronous work to finish
+			jobResults = await Promise.all(jobs);
 
-    return expect(jobResults).to.eventually.be.rejectedWith(expected); // return is required!
+		} catch (err) {
+			jobResults = err;
+		} finally {
+			expect(jobResults).to.be.instanceOf(StatusCodeError);
+			expect(jobResults.message).to.equal(expected);
+		}
 });
 ```
 
