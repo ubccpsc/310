@@ -417,36 +417,36 @@ The succinct format below is identical for both promises and async/await. This s
 
 ```typescript
 it("Test single async success", async function () {
-		const expression = "155*2";
-		const expected = "310";
+    const expression = "155*2";
+    const expected = "310";
 
-		let result;
-		try {
-			result = await math.calcAsync(expression);
-		} catch (err) {
-			result = err;
-		} finally {
-			expect(result).to.equal(expected);
-		}
-	});
+    let result;
+    try {
+        result = await math.calcAsync(expression);
+    } catch (err) {
+        result = err;
+    } finally {
+        expect(result).to.equal(expected);
+    }
+});
 ```
 
 While the failing path could be tested with `try...catch`, it is also possible to specify directly that the code under test is expected to throw, and to ensure that the error message provided is correct.
 
 ```typescript
 it("Test single async failure", async function () {
-	const expression = "INVALID";
-		const expected = "400 - \"Error: Undefined symbol INVALID\"";
+    const expression = "INVALID";
+    const expected = "400 - \"Error: Undefined symbol INVALID\"";
 
-		let result;
-		try {
-			result = await math.calcAsync(expression);
-		} catch (err) {
-			result = err;
-		} finally {
-			expect(result).to.be.instanceOf(StatusCodeError);
-			expect(result.message).to.equal(expected);
-		}
+    let result;
+    try {
+        result = await math.calcAsync(expression);
+    } catch (err) {
+        result = err;
+    } finally {
+        expect(result).to.be.instanceOf(StatusCodeError);
+        expect(result.message).to.equal(expected);
+    }
 });
 ```
 
@@ -485,28 +485,28 @@ Of course, you could still use `chai-as-promised` and return the promise as well
 
 ```typescript
 it("Test concurrent hybrid failure", async function () {
-const expression = "INVALID";
-		const expected = "400 - \"Error: Undefined symbol INVALID\"";
+    const expression = "INVALID";
+    const expected = "400 - \"Error: Undefined symbol INVALID\"";
 
-		let jobResults;
-		try {
-			let jobs = [];
-			const opts = [13, 3, 2, 5, 54];
+    let jobResults;
+    try {
+        let jobs = [];
+        const opts = [13, 3, 2, 5, 54];
 
-			// create a list of asynchronous work
-			for (const o of opts) {
-				jobs.push(math.calcAsync(o + "+" + expression + "+" + (o + 1)));
-			}
+        // create a list of asynchronous work
+        for (const o of opts) {
+            jobs.push(math.calcAsync(o + "+" + expression + "+" + (o + 1)));
+        }
 
-			// wait for all asynchronous work to finish
-			jobResults = await Promise.all(jobs);
+        // wait for all asynchronous work to finish
+        jobResults = await Promise.all(jobs);
 
-		} catch (err) {
-			jobResults = err;
-		} finally {
-			expect(jobResults).to.be.instanceOf(StatusCodeError);
-			expect(jobResults.message).to.equal(expected);
-		}
+    } catch (err) {
+        jobResults = err;
+    } finally {
+        expect(jobResults).to.be.instanceOf(StatusCodeError);
+        expect(jobResults.message).to.equal(expected);
+    }
 });
 ```
 
