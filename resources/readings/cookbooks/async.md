@@ -72,7 +72,7 @@ setTimeout( () => {
 console.log(' after');
 ```
 
-While reading this code from top to bottom, you might expect it to print ` before during after`, at runtime it actually prints ` before after during`. This is because the `setTimeout` method is asynchronous and does not execute its anonymous callback until after `console.log(' after');` has executed.
+While reading this code from top to bottom, you might expect it to print ` before during after`, at runtime it actually prints ` before after during`. This is because the `setTimeout` method is asynchronous and its anonymous callback is not executed in the callback queue (sometimes called the task queue) until after `console.log(' after');` has executed, or in other words, until the call stack is empty. To learn more about the callback queue and call stacks, you can refer to [this in-depth video](https://www.youtube.com/watch?v=8aGhZQkoFbQ) by Philip Roberts.
 
 Three predominant mechanisms exist for executing asynchronous work in Typescript: callbacks, promises, and async/await. Each have their benefits and drawbacks.
 
