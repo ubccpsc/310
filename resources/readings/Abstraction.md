@@ -8,7 +8,7 @@ Data abstraction is the process of explicitly separating the abstract properties
 
 For example, a ```Vector``` in Java is implemented using an array, but the JDK authors could choose to change this implementation (say to a linked list) without impacting client programs. A Java ```HashMap``` is stored as an array of linked lists. In both cases, client code can be oblivious of the underlying implementation as long as they understand the behaviour of the methods provided by ```Vector``` and ```HashMap```. 
 
-Here is a concrete example of data abstraction from [CPSC 210](https://sites.google.com/site/ubccpsc2102015s2/schedule/ubc-cpsc-210-robust-classes.pdf?attredirects=0&d=1):
+Here is a concrete example of data abstraction: <!-- from [CPSC 210](https://sites.google.com/site/ubccpsc2102015s2/schedule/ubc-cpsc-210-robust-classes.pdf?attredirects=0&d=1):-->
 
 ```typescript
 // Creates a new team.
