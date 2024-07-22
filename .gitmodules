@@ -1,0 +1,3 @@
+[submodule "reader/themes/hugo-theme-relearn"]
+	path = reader/themes/hugo-theme-relearn
+	url = https://github.com/McShelby/hugo-theme-relearn.git

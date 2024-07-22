@@ -1,0 +1,37 @@
+baseURL = 'https://example.org/'
+relativeURLs = true
+languageCode = 'en-ca'
+title = 'CPSC 310 Course Reader'
+theme = 'hugo-theme-relearn'
+
+
+[security]
+enableInlineShortcodes = false
+
+[security.exec]
+allow = ["^dart-sass-embedded$", "^go$", "^npx$", "^postcss$", "^asciidoctor$"]
+osEnv = ["(?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM|RUBYLIB)$"]
+
+[security.funcs]
+getenv = ["^HUGO_"]
+
+[security.http]
+methods = ["(?i)GET|POST"]
+urls = [".*"]
+
+[markup]
+[markup.asciidocExt]
+[markup.asciidocExt.attributes]
+imagesdir = '/images'
+
+
+
+[params]
+disableLandingPageButton = true
+collapsibleMenu = true
+showVisitedLinks = true
+author.name = 'Reid Holmes'
+
+
+[outputs]
+home = ['html', 'rss', 'search', 'searchpage']
