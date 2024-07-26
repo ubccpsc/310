@@ -1,0 +1,14 @@
+baseURL = 'https://ubccpsc.github.io/'
+languageCode = 'en-ca'
+title = 'CPSC 310 Course Reader'
+theme = 'hugo-theme-relearn'
+
+[params]
+disableLandingPageButton = true
+collapsibleMenu = true
+showVisitedLinks = true
+author.name = 'Reid Holmes'
+
+
+[outputs]
+home = ['html', 'rss', 'search', 'searchpage']
