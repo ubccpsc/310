@@ -57,7 +57,7 @@ jobs:
           TZ: America/Vancouver
         run: |
           cd reader \
-          hugo \
+          && hugo \
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.host }}/"
