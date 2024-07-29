@@ -3,8 +3,16 @@ languageCode = 'en-ca'
 title = 'CPSC 310 Course Reader'
 theme = 'hugo-theme-relearn'
 
+
+#[markup]
+#[tableOfContents]
+#endLevel = 3
+#ordered = false
+#startLevel = 2
+
 [params]
 disableLandingPageButton = true
+disableInlineCopyToClipBoard = true
 collapsibleMenu = true
 showVisitedLinks = true
 author.name = 'Reid Holmes'
