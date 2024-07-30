@@ -231,6 +231,3 @@ TODO: This should be added next year
 Article about some rationalization about moving away from OO:
 https://medium.com/@cscalfani/goodbye-object-oriented-programming-a59cda4c0e53#.xtqu1scch
 --->
-
----
-[![](figures/CCSA.png "Creative Commons: Attribution-ShareAlike")](https://creativecommons.org/licenses/by-sa/3.0/) [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
