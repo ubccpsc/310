@@ -7,6 +7,8 @@ Patterns are rarely used in isolation. MVC is a widely used meta-pattern that em
 
 ## MVC
 
+{{< youtube regs2s8HMi4 >}}
+
 Model View Controller (MVC) was first popularized with the Smalltalk-80 language. MVC was created to help developers think about how to decouple responsibilities within Smalltalk applications. This guidance has proven so successful that it has been widely adopted by many modern UI frameworks. 
 
 Since interfaces change more frequently than their backend data models and business logic, it is helpful for front-end development to be more decoupled from other development activities. This is especially important once front-end and back-end tasks are being performed by different teams (which is common given the particular skills required for each). By decoupling views and logic, MVC enables front-end teams (including designers) to work independently from the rest of the team. MVC splits responsibilities into three broad groups: the model, the view, and the controller.
@@ -51,6 +53,8 @@ That said, MVC does enable:
 1. Enhanced testability by trying to isolate application logic within the controller.
 
 ## MVP
+
+{{< youtube 3ULFKSXeLM8 >}}
 
 Model View Presenter (MVP) was popularized by Google and was heavily used within its GWT framework (and has subsequently been extended to many other web-based UI frameworks). The primary difference in MVP from MVC is that the Model is isolated from the View, and Views are more stringently minimal in MVP than in MVC to enhance testability and avoid heavyweight views.
 
@@ -99,6 +103,10 @@ At runtime, MVP works as follows (for a user View update).
 1. The Presenter determines how the View should be updated and refreshes it as required, although again only with primitive values.
 
 {{< figure src="patterns_mvp-example.png" alt="mvp" >}}
+
+### Comparison of MVC and MVP
+
+{{< youtube O-__G6CKICk >}}
 
 Compared to MVC, MVP is more testable, and minimizes bloated views. Also while MVP still uses the observer to track changes to the Model, the EventBus makes it easier to keep track of updates within the system (as does the fact that the views are not receiving these updates directly). MVP's main downside is that the views tend to contain a lot of boilerplate primitive code that just updates UI widgets with values and calls methods within the Presenter in response to user actions. 
 

@@ -3,6 +3,8 @@ title: "Design Patterns"
 weight: 1
 ---
 
+{{< youtube BHFk5yt_DEs >}}
+
 Several design patterns are designed below, these descriptions are not exhaustive.
 
 ## Observer: Simplifying state update notifications.
@@ -58,6 +60,8 @@ http://www.codeproject.com/Articles/12183/Design-Your-Soccer-Engine-and-Learn-Ho
 
 ## Strategy: Encapsulating algorithms.
 
+{{< youtube 1MJ_Lj8mebU >}}
+
 The Strategy design pattern enables encapsulation of algorithms. This lets client programs depend on the algorithmic interface without having to depend (or know about) the concrete underlying implementation being used. This allows new algorithms to be easily defined and added to a system without changing any client code.
 
 The strategy pattern is often used to avoid subclassing the client. In our example below, you could imagine `Client` being extended by `CelsiusStrategy`, `KelvinStrategy`, and `FahrenheitStrategy`. While this would work, it would mean that `Client` would have to be changed to add a new form of temperature conversion. The pattern also supplants the even simpler approach whereby the code would have a series of conditional statements to choose the right temperature multiplier (which would also require `Client` changes to extend):
@@ -88,6 +92,8 @@ http://www.codeproject.com/Articles/13229/Implementing-Observer-Strategy-and-Dec
 {{< figure src="patterns_strategy-example.png" alt="strategy diagram" >}}
 
 ## State: Dynamically changing behaviour based on internal state.
+
+{{< youtube uB4OQ4Am3Rw >}}
 
 The state design pattern provides a composition-based approach for clients to manage their behaviour dynamically as their internal state changes. The current state of the system is dictated by a reference to a state object; the reference is dynamically updated as conditions change. Rather than having one large `if` or `switch` statement controlling state transitions, transition decisions are left to the state objects which only need to reason about their valid transitions, not all global transitions. 
 
@@ -120,6 +126,10 @@ if (last == null || last == '') {
 }
 ```
 
+### Comparing Strategy and State
+
+{{< youtube Ccpg656MUxE >}}
+
 Clearly the State and Strategy patterns look structurally identical. And, except for the `setState` method and the fact that every state object has a reference to its context (so it can call `setState`) they are identical. The difference lies more in the _intent_ of the pattern. Strategies are fixed at the start of execution, whereas the States change repeatedly and often during runtime. This distinction further reenforces that the most important aspect of patterns is not their structure and form, but what they _do_ and how they promote encapsulation and evolution within the system. 
 
 <!--
@@ -135,6 +145,8 @@ https://sourcemaking.com/design_patterns/state/java/1
 -->
 
 ## Facade: Making common tasks easy.
+
+{{< youtube MdMaHrKQBsU >}}
 
 The Facade is a structural pattern to provide a unified set of interfaces for a subsystem. Subsystems can contain a large amount of code that even if well designed can be difficult for a client to learn to correctly use. Facades provide coherent simplifications of modules for performing common tasks. It is not uncommon for a subsystem to have multiple facades for different client use cases. Facades are usually easy to implement once you have a complex subsystem that you want to provide a more unified high-level interface to. 
 
@@ -182,6 +194,8 @@ This final design is called an _Abstract Factory_. In this design the client cod
  
 ## Singleton: Ensuring only one of an object exists.
 
+{{< youtube V_WbZClazDw >}}
+
 It is not an uncommon design constraint to only want to have one instance of some kinds of objects. The Singleton design pattern exists to fulfill this role. The Singleton is also a creational design pattern as it is involved with mediating the creation of an object. While the Singleton is relatively widely used, it is frequently misused and its shortcomings should be understood before choosing to adopt this pattern.
 
 Singletons are the simplest pattern in practice (although more care is required when implementing the pattern in languages that allow true multi-threading):
@@ -205,6 +219,8 @@ The `private constructor()` declaration ensures that nobody can instantiate a `D
 {{< figure src="dp_singleton.png" alt="singleton diagram" >}}
 
 ## Decorator: Dynamically adding responsibilities to objects.
+
+{{< youtube la2Jzb8jmqo >}}
 
 The Decorator pattern is another structural pattern that provides a means to dynamically augment an object's responsibilities. With the decorator pattern it is important to distinguish between an _object_ and a _class_. A class is the structural template from which object instances are created. That is, an object is a single instance of a class and a class can have many different instances. Each object can have different field values, but the fields, methods, and parent types they have are all defined by the class they are instantiated from.
 

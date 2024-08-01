@@ -4,6 +4,8 @@ title: "Low-Level Design"
 weight: 5
 ---
 
+{{< youtube wJ-xnK9O-nU >}}
+
 While high level design principles (like an emphasis on low coupling and high cohesion) provide broad guidance while considering design decisions, lower level design is about deriving concrete designs that can be directly implemented in programming languages. To accomplish this, low level design relies on more specific design guidance, although this guidance can be easily associated with the [high level design](readings/DesignPrinciples.md) principles that they codify. Three commonly used low level design principles are:
 
 * _Encapsulate what varies_: A central low level design goal is to identify parts of the system prone to future modification, likely to need future extension, or could be reused in other contexts and encapsulate them to ease these future tasks.
