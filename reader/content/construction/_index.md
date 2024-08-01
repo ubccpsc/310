@@ -4,6 +4,8 @@ title: "Software Construction"
 weight: 6
 ---
 
+{{< youtube z-Q2CIfshcw >}}
+
 In this chapter, we explore three key aspects of constructing robust and maintainable code:
 1. Refactoring: Enhancing code quality by systematically improving existing code without altering its external behavior.
 2. Automation: Streamlining repetitive tasks through build automation, continuous integration (CI), and scripting. Automated pipelines ensure consistent, error-free processes.

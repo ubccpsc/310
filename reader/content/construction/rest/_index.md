@@ -1,17 +1,23 @@
 ---
-title: "REST"
+title: "REST Architecture"
 weight: 5
 ---
 
-[REST](https://en.wikipedia.org/wiki/Representational_state_transfer) is an architectural style heavily used in web-based systems for providing services between different systems (and interfaces).  REST defines a means of connecting systems together that focuses on their interfaces rather than their implementations using self-descriptive messages. In this way, REST provides a language to define a specific kind of [APIs](API.md) for communicating across a network. REST services are transported over the network using the [HTTP protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol).
 
-{{< figure src="REST_network.png" alt="REST topology" >}}
+{{< youtube Y8AYxFgwmJk >}}
 
-REST services define their resources using uniform resource identifiers (URIs). URIs differ from URLs in that a URI does not define its network location and access mechanism (e.g., ```/dataset``` is a URI while ```http://foo.com/dataset``` is a URL).
+[REST](https://en.wikipedia.org/wiki/Representational_state_transfer) is an architectural style heavily used in web-based systems for providing services between different systems (and interfaces).  REST defines a means of connecting systems together that focuses on their interfaces rather than their implementations using self-descriptive messages. In this way, REST provides a language to define a specific kind of [APIs]({{% ref "apis" %}}) for communicating across a network. REST services are transported over the network using the [HTTP protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol).
+
+{{< figure src="REST_network.png" alt="REST topology" width="350px" >}}
+
+
+## Nouns and Verbs
+
+{{< youtube Aoms-MrqW3g >}}
+
+REST services define their resources, as nouns, using uniform resource identifiers (URIs). URIs differ from URLs in that a URI does not define its network location and access mechanism (e.g., ```/dataset``` is a URI while ```http://foo.com/dataset``` is a URL).
 
 Additional data can be sent to a REST endpoint in the form of HTTP headers or in the HTTP body. It is idiomatic for headers to not contain any information about the location of the resource (this should be in the URI) or to carry any data about the request (this should be in the body); headers are mainly for sending metadata (e.g., to request the response data format or encoding or to provide authorization credentials).
-
-## Verbs
 
 REST describes how HTTP verbs should be used when communicating with REST services. REST services respond with payloads (typically JSON or XML) and an integer-based response code. Each REST request uses only one verb and receives only one response.
 
@@ -25,7 +31,7 @@ REST describes how HTTP verbs should be used when communicating with REST servic
 
 * ```PATCH```  Used to modify (not completely replace or delete) a resource. Not idempotent. This is the least-frequently used verb. Typical response codes are 200 (ok), 204 (no content), 404 (not found).
 
-A simple set of [quick tips](http://www.restapitutorial.com/lessons/restquicktips.html) and [http status codes](httpstatuses.com) can be helpful for your reference.
+A simple set of [quick tips](http://www.restapitutorial.com/lessons/restquicktips.html) and [http status codes](https://httpstatuses.com) can be helpful for your reference.
 
 REST services almost universally respond to requests with XML or JSON requests. XML documents are more verbose, harder to read and write by hand, and are more difficult to parse.
 
@@ -62,15 +68,20 @@ The pushback against XML can be more clearly understood when looking at a SOAP e
 
 ## Statelessness
 
+{{< youtube JiojH8HfUps >}}
+
 REST services are often viewed as highly scalable. The main reason for this is that there is an expectation that the client maintains state instead of the server. This means that a client can interact with several different servers for a single set of requests (e.g., if one server gets overloaded requests can be transparently migrated). 
 
 As a concrete example, if a client is trying to undertake a complex multi-step operation, it is the client's responsibility to keep track of where they are, not the server's responsibility. 
 
-Servers are responsible for sending back detailed information about the resources they are returning so that clients have the ability to make further requests of the server with the correct URIs. For example, while could might expect the GitHub ```POST /user/:repo``` endpoint to simply return ```{success: true}``` if a repository was successfully created, it instead returns a wide variety of information that can be used by the user to construct any subsequent requests:
+Servers are responsible for sending back detailed information about the resources they are returning so that clients have the ability to make further requests of the server with the correct URIs. For example, while you might expect the GitHub ```POST /user/:repo``` endpoint to simply return ```{success: true}``` if a repository was successfully created, it instead returns a wide variety of information that can be used by the user to construct any subsequent requests:
 
-```json
+```plaintext {title="Response Header"}
 Status: 201 Created
 Location: https://api.github.com/repos/octocat/Hello-World
+```
+
+```json {title="Response Body"}
 {
   "id": 1296269,
   "owner": {
@@ -173,7 +184,7 @@ The first is that the API must provide a _valuable_ service. Without this value,
 
 APIs should also be sufficiently _flexible_ to work in a wide variety of circumstances. This might mean providing multiple data formats, supporting different protocols, or versions. Additionally, enabling batch or update operations can also ease common developer tasks that might otherwise be hard to perform. This often involves considering the bootstrap process and how long it takes a developer from visiting an API document to successfully making a query (often referred to as the time-to-hello-world). 
 
-Effectively _measuring_ your APIs is also important for understanding how your customers are using your system. When an API is servicing hundreds of thousands of requests per day, it is important to understand how your endpoints are being used and how they are generating errors. These measurements are useful both to the API developer to monitor the API, but also for API clients so they can check on the API if they are having any difficulties. Many API platforms have status pages where you can check how the [platform](https://api.twitterstat.us/) [is](https://status.stripe.com/) [performing](https://status.github.com/). 
+Effectively _measuring_ your APIs is also important for understanding how your customers are using your system. When an API is servicing hundreds of thousands of requests per day, it is important to understand how your endpoints are being used and how they are generating errors. These measurements are useful both to the API developer to monitor the API, but also for API clients, so they can check on the API if they are having any difficulties. Many API platforms have status pages where you can check how the [platform](https://api.twitterstat.us/) [is](https://status.stripe.com/) [performing](https://status.github.com/). 
 
 Finally, effective API _documentation_ is key for helping developers understand how to use any API. These documents should clearly describe what the API does, what parameters it expects, and the structure of its return document. Concrete examples showing how the API can be used are also extremely helpful in this context. Many [great](https://developer.github.com/v3/) [examples](https://strava.github.io/api/) can be found online demonstrating effective REST API documentation.
 

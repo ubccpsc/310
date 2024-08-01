@@ -209,6 +209,10 @@ TODO: This should be added next year
 --->
 
 
+## Static Analysis and Linters
+
+{{< youtube QKK9XAdleFg >}}
+
 ## References
 
 * Gerald Sussman's [role of programming](https://www.youtube.com/watch?v=arMH5GjBwUQ) talk.

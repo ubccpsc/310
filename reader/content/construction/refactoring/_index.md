@@ -3,6 +3,8 @@ title: "Refactoring"
 weight: 3
 ---
 
+{{< youtube bHKyMxvZFXY >}}
+
 Refactoring is the process of improving on the implementation of an existing design by restructuring the source code to alleviate existing shortcomings and ease future development. Conceptually, refactoring tasks do not change the semantics of the program (e.g., add new features or fix defects) but instead make the code more amenable to future feature additions and defect fixes. Most refactoring operations consolidate duplicate code, reduce coupling, move elements to make them more cohesive, or otherwise improve the understandability and maintainability of the system. Refactoring is one mechanism used to handle emergent design: as a system evolves, we learn more about what kinds of abstractions are most appropriate. Through refactoring we can incorporate these emergent abstractions into a system's design.
 
 Development teams often think of refactorings as a mechanism for paying technical debt. Technical debt is a metaphor for thinking about how development decisions can influence the long-term viability of a software system. The technical debt metaphor acknowledges that while quick and cheap solutions are often attractive (and the right thing to do), they accrue debt in the overall maintainability of the system by degrading or obfuscating the original design. Technical debt often triggers developers to think about refactoring in one of three main situations:
@@ -113,7 +115,13 @@ class CourseParser implements IParser {
 }
 ```
 
+## Code Readability
+{{< youtube TZ7mfKJa7Sw >}}
+
+
 ## Code smells
+
+{{< youtube oqqaDaQ3m24 >}}
 
 In order to be useful, software must:
 
