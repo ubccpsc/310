@@ -1,6 +1,6 @@
 ---
 title: "Automation"
-weight: 1
+weight: 4
 ---
 
 Our expectations for modern software systems demand delivering a level of velocity that was not possible in the past. Gone are the days when delivering once every 3-5 years was considered acceptable. Being able to deliver changes on a weekly, daily, or minute-by-minute basis allows software teams to more quickly deliver new products to market or provide more timely bug fixes. 
