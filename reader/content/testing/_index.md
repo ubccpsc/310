@@ -5,32 +5,23 @@ title: "Software Testing"
 ---
 
 
-{{% notice default "Learning Outcomes" "graduation-cap" %}}
-By the end of this chapter you should:
+[//]: # ({{% notice default "Learning Outcomes" "graduation-cap" %}})
 
-* [x] Identify
-* [x] [Interpreted vs Complied Languages]({{< ref "languages#interpreted-vs-compiled" >}})
-* [x] Static vs Dynamic Representations of the System
-* [x] [Static vs Dynamic Types]({{< ref "languages#static-vs-dynamic-types" >}})
-  {{% /notice %}}
+[//]: # (By the end of this chapter you should:)
+
+[//]: # ()
+[//]: # (* [x] Identify)
+
+[//]: # (* [x] [Interpreted vs Complied Languages]&#40;{{< ref "languages#interpreted-vs-compiled" >}}&#41;)
+
+[//]: # (* [x] Static vs Dynamic Representations of the System)
+
+[//]: # (* [x] [Static vs Dynamic Types]&#40;{{< ref "languages#static-vs-dynamic-types" >}}&#41;)
+
+[//]: # (  {{% /notice %}})
 
 
 {{< youtube Uamo4Ej0tWk >}}
-
-
-{{< youtube ll1k3Pks3ZA >}}
-
-     * [Properties of Tests]&#40;http://www.youtube.com/watch?v=ll1k3Pks3ZA)
-
-[//]: # (      * [Kinds of Tests]&#40;http://www.youtube.com/watch?v=_Th3f9vks_w&#41;)
-
-[//]: # (      * [Unit and System Properties]&#40;http://www.youtube.com/watch?v=x2DWjxDiOQo&#41;)
-
-[//]: # (      * [Red Green Refactor]&#40;http://www.youtube.com/watch?v=v0q1MKhSQVM&#41;)
-
-{{< youtube x2DWjxDiOQo >}}
-
-{{< youtube v0q1MKhSQVM >}}
 
 
 Software systems are only useful if they do what they are supposed to do. This is increasingly important given the vital safety-critical roles modern software systems play. Unfortunately, proving that a system is correct is exceedingly difficult and expensive for large software systems. This leads to the fundamental tradeoff at the heart of most commonly applied testing approaches:
@@ -42,6 +33,10 @@ Given the constraints above, the most prevalent quality validation approach in u
 > Program testing can be used to show the presence of bugs, but never to show their absence! [Edsger Dijkstra]
 
 This is because what we are evaluating is whether the probability that there are no bugs in a system given that the tests pass is not actually 0. Since tests themselves are programs (and can have bugs) and specifications are often incomplete or imprecise we therefore must admit that the chance of a defect slipping through a set of tests is > 0 [(online discussion)](http://tonyxzt.blogspot.ca/2010/01/tests-can-show-presence-of-bugs-not.html).
+
+## Testing Process
+
+{{< youtube v0q1MKhSQVM >}}
 
 The modern test cycle is summarized below. The cycle between steps 1-7 can occur many times before the code is ready to commit. 
 
@@ -60,19 +55,27 @@ Steps 2/7 may not happen on small teams or when testing happens solely on a sing
 
 {{< figure src="test-cycle.png" >}}
 
-### Terminology
+## Terminology
 
 {{< youtube WKrvx7qCUDI >}}
 
 A number of different terms are commonly used in the testing space:
 
 * ```SUT/CUT```: System / code under test. This is the thing that you are actually trying to validate.
-* ```Glass box testing```: When testing in a glass box manner one typically carefully examines the program source code in order to identify potentially problematic sets of inputs or control flow paths. More details can be found in the [Glass box testing](GlassBoxTesting.md) reading.
-* ```Black box testing```: Black box testing validates programs without any knowledge of how the system is implemented. This form of testing relies heavily on predicting problematic inputs by examining public API signatures and any available documentation for the CUT. More details can be found in the [Black box testing](BlackBoxTesting.md) reading.
+* ```Glass box testing```: When testing in a glass box manner one typically carefully examines the program source code in order to identify potentially problematic sets of inputs or control flow paths. More details can be found in the [Glass box testing]({{% ref "glassbox" %}}) reading.
+* ```Black box testing```: Black box testing validates programs without any knowledge of how the system is implemented. This form of testing relies heavily on predicting problematic inputs by examining public API signatures and any available documentation for the CUT. More details can be found in the [Black box testing]({{% ref "blackbox" %}}) reading.
 * ```Effectiveness```: The simplest way to reason about the effectiveness of a test or test suite is to measure the probability the test will find a real fault (per unit of effort, which can be something like developer creation / maintenance time or number of test executions).
-* ```Higher/lower testability```: Some systems are significantly easier to test than others due to the way they are constructed. A highly testable system will enable more effective tests for the same cost than a system whose tests are largely ineffective (or require an outsized amount of creation and maintenance effort). More details can be found in the [Testability](TestabilityAssertions.md) reading.
+* ```Testability```: Some systems are significantly easier to test than others due to the way they are constructed. A highly testable system will enable more effective tests for the same cost than a system whose tests are largely ineffective (or require an outsized amount of creation and maintenance effort). More details can be found in the [Testability]({{% ref "testability" %}}) reading.
 * ```Repeatability```: The likelihood that running the same test twice under the same conditions will yield the same result.
 
+
+## Properties of tests
+
+{{< youtube ll1k3Pks3ZA >}}
+
+## Kinds of tests
+
+{{< youtube _Th3f9vks_w >}}
 
 There are a number of different *levels* of test; these range in size, complexity, execution duration, repeatability, along with how easy they are to write, maintain, and debug.
 
@@ -84,9 +87,13 @@ There are a number of different *levels* of test; these range in size, complexit
 
 {{< figure src="test-levels.png" >}}
 
+{{< expand title="Comparing unit and system tests" >}}
+{{% youtube x2DWjxDiOQo %}}
+{{< /expand >}}
+
 For additional reference, take a look at this in-depth talk about how [Google tests](https://www.infoq.com/presentations/Continuous-Testing-Build-Cloud) their systems.
 
-### Why not test?
+## Why not test?
 
 There are a number of reasons why software systems are not tested with automated suites. These range from "bad design" to "slow", "boring", "doesn't catch bugs" and "that's QA's job". Ultimately, testing does have a cost: tests are programs too and take time to write, debug, and execute and must also be evolved along with the system. 
 
@@ -94,7 +101,7 @@ One core paradox of automated test suites is how they are used. If you think tha
 
 An area of interesting future research would be to figure out how often a suite needs to fail to impart trust, while also figuring out how few passing tests you could run to have a sense of confidence in your automated suite. 
 
-### Common testing assumptions
+## Common testing assumptions
 
 It has been long held that the cost of fixing a fault rises exponentially with how late in the development process (e.g., requirements, design, implementation, deployment) the fault is detected. This statement arises from several influential studies Barry Bohem performed in the 60s and 70s. A more in-depth description of these costs can be found [here](http://www.agilemodeling.com/essays/costOfChange.htm) or [here](http://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20100036670.pdf). 
 
@@ -106,7 +113,7 @@ It is also important to accurately consider the costs of automated testing. Writ
 Testing as an engineering discipline notes
 -->
 
-### References
+## References
 
 * Another great talk about how [Google stores](https://www.youtube.com/watch?v=W71BTkUbdqE) its source code.
 

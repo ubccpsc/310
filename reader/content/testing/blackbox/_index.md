@@ -32,8 +32,7 @@ There are a variety of black box testing approaches that are used in practice:
 
 	Use case testing is similar to a customer validating a user story by evaluating the definitions of done for a story in a sprint review. In this way use case testing and user story testing form a kind of user acceptance test.
 
-<a name="input"></a>
-## Input partitioning
+## Input partitioning {id="input"}
 
 {{< youtube 5PtxXnwyU3Y >}}
 
@@ -109,8 +108,7 @@ number). The final step is combining the sets to arrive at four test cases, as e
 * Sometimes the inputs to a function are less interesting than the outputs; in these cases, output partitioning may be a better choice.
 * Defects often arise at the boundaries of partitions. Input partitioning is often combined with boundary value analysis to cover these cases more comprehensively.
   
-<a name="output"></a>
-## Output partitioning 
+## Output partitioning {id="output"}
 
 {{< youtube 0yvHDKI-DSA >}}
 
@@ -166,9 +164,3 @@ The inputs to these functions are just both non-negative numbers. But the output
 
 * Functions usually have fewer outputs than inputs (simplistically a function has a single output value and can have many input parameters). This usually drives testers to explore 'easier' input space more thoroughly than the output space (although it should be noted that the complexity of the output space is often underestimated, and the 'single' return value could in fact be a complex object or side effecting operation).
 * The effort required to derive inputs to achieve a given output is often challenging. This can be especially observed in erroneous situations (e.g., an output behaviour dictates how a system should behave when disk space is exhausted, but actually testing this can be hard).
-
-  
----
-[![](figures/CCSA.png "Creative Commons: Attribution-ShareAlike")](https://creativecommons.org/licenses/by-sa/3.0/) [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/)
-
-

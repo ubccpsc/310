@@ -12,6 +12,12 @@ This is a high-level overview of what the course will be about.
 The materials roughly break down into 6 high-level modules that are spread across the 13 week of standard academic semester at UBC.
 Readings and videos are available for most course concepts.
 
+Videos throughout the reader provide additional explanations of the course material. The video below introduces the codebase that is used throughout the course reader. 
+
+{{< expand title="Introduction to running example" >}}
+{{% youtube S4GEa6JMo4I %}}
+{{< /expand >}}
+
 ## License
 
 The readings for this course are licensed using [CC-by-SA](https://creativecommons.org/licenses/by-sa/3.0/). However, it is important to note that the deliverable descriptions, code implementing the deliverables, exams, and exam solutions are considered private materials. We go to considerable lengths to make the project an interesting and useful learning experience for this course. This is a great deal of work, and while future students may be tempted by your solutions, posting them does not do them any real favours. Please be considerate with these private materials and not pass them along to others, make your repos public, or post them to other sites online.
