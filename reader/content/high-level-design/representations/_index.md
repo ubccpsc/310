@@ -9,7 +9,7 @@ Many software systems 'fail' because the wrong product is created. One of the pr
 
 {{< youtube Y4oyXMt1cAw >}}
 
-These diagrams provide a means for communicating using [abstractions](Abstraction.md); representations provide concrete details about some aspects of a system while eliding other parts. This decreases the opacity of decision-making and enables more concrete discussion. Because of this, it is important that these representations are not ambiguous (open to more than one interpretation), are accurate (correct within some given tolerance), and are precise (so the correct system can be built repeatably from the same abstraction).
+These diagrams provide a means for communicating using [abstractions]({{% ref "high-level-design#Abstraction" %}}); representations provide concrete details about some aspects of a system while eliding other parts. This decreases the opacity of decision-making and enables more concrete discussion. Because of this, it is important that these representations are not ambiguous (open to more than one interpretation), are accurate (correct within some given tolerance), and are precise (so the correct system can be built repeatably from the same abstraction).
 
 {{< youtube 2v3IBQr5Yvw >}}
 
@@ -19,7 +19,6 @@ Each representation (diagram) can be considered a _view_ of the system. Views of
 
 The Unified Modelling Language ([UML](http://www.uml.org/)) was developed to provide a standard set of representations for software systems. While UML supports a [wide variety](https://en.wikipedia.org/wiki/Unified_Modeling_Language#/media/File:UML_diagrams_overview.svg) of diagrams they can be broadly decomposed into structural and behavioural diagrams. Structural diagrams capture the key elements and their relationships within the system while behavioural diagrams model how the system components interact with each other dynamically at runtime. These two kinds of views are important because while systems are developed statically, their runtime behaviour is often considerably different and being able to reason about both models is crucial to avoiding unexpected problems during development.
 
-<img src="./figures/uml-overview.png" width="512px" alt="uml diagram overview">
 {{< figure src="uml-overview.png" alt="uml diagram overview" >}}
 
 Unfortunately, given the ambitious goals UML tries to achieve, it has become an extremely complex standard that is rarely used in its complete form in practice. At the same time, technical stakeholders often create visualizations of their intended systems, so being able to interpret, understand, and generate some key diagrams is often helpful in practice. In this reading we will provide an overview of a small subset of UML that is often practically useful without being overwhelming.
@@ -77,9 +76,9 @@ class QueryControllerSpec {
 Translating from class diagrams to/from code is fairly straightforward. A more common use case is to translate from a textual description to a potential class diagram. For example the class diagram and high-level descriptions below are different representations of the same task.
 
 <!--
-> Design a system for drawing UML class and sequence diagrams. Class diagrams should support inheritance, composition, aggregation, and dependency relationships. Sequence diagrams only support sync & async calls and responses. 
+ Design a system for drawing UML class and sequence diagrams. Class diagrams should support inheritance, composition, aggregation, and dependency relationships. Sequence diagrams only support sync & async calls and responses. 
 
-<img src="./figures/uml-class-editor.png" width="512px" alt="class diagram">
+[//]: # (<img src="./figures/uml-class-editor.png" width="512px" alt="class diagram">)
 -->
 
 ## Deployment diagrams
@@ -89,8 +88,6 @@ Translating from class diagrams to/from code is fairly straightforward. A more c
 Deployment diagrams overlay static class diagrams onto the execution containers and physical machines upon which they will reside. Identifying how and where a program will run is particularly important for mobile, distributed, and cloud-based applications. Key stakeholders typically include developers, operations, dev/ops, QA, and infrastructure teams.
 
 Simple deployment diagrams might only concentrate on mapping modules (or classes) onto machines, but in more sophisticated environments could include mapping the software into specific execution containers (e.g., virtual machines, container images, etc.).
-
-<img src="./figures/uml-deploy.png" width="512px" alt="promise states">
 
 {{< figure src="uml-deploy.png" alt="promise-states" >}}
 
