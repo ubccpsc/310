@@ -1,6 +1,9 @@
 ---
 title: "User Stories"
+weight: 2
 ---
+
+{{< youtube Y7E56dD7Jxw >}}
 
 User stories are lightweight descriptors of features that are often used by engineers to specify software development tasks. Stories provide a concrete description that can be used by various project stakeholders to discuss features, their value, how they can be validated, and their cost. These representations are an easy way to increase cohesion between product owners and engineers and are an effective way to reduce uncertainty within the development process.
 
@@ -20,6 +23,7 @@ Next, any specific engineering notes required can be added to the story. Enginee
 
 Finally, an effort estimate is typically attached. While some development teams specifically avoid specifying effort in terms of hours or days, others do this explicitly. When 'points' are used, these are typically equated to developer-hours for a task. The Fibonacci sequence is often used when assigning a point value to stories to reflect the fact that the larger the story the worse we will probably be at estimated it. For instance, with the sequence `1, 2, 3, 5, 8, 13, 21, 34, 55, 89` we believe we can differentiate between a one-hour task and a two-hour task pretty well, but we acknowledge that differentiating between large stories that will take over a week (e.g., 55 or 89) is much harder, which is why larger gaps exist. _Planning poker_ is sometimes used whereby during point estimation team members will be given cards with the Fibonacci values on them and will simultaneously reveal their estimate of a task's point value; any discrepancies can then be discussed.
 
+{{< youtube fqknLz6rdGE >}}
 A set of guidelines called INVEST is often used to evaluate user stories:
 
 * **I**ndependent: Stories need to be independent and self-contained, so they can be reordered and implemented as needed. 
@@ -30,7 +34,7 @@ A set of guidelines called INVEST is often used to evaluate user stories:
 * **T**estable: The definition of done is fundamentally important so all stakeholders understand the ways in which the story will be evaluated. This brings quality concerns to the forefront before development even starts and encourages that features be built in a verifiable manner.
 
 ## Example
-
+{{< youtube 3b63NxSCxPw >}}
 A short example of a user story is given below:
 
 * As a _prof_, I want to be able to _create_ a repository for a 310 team, so they can _start_ working on the project.
@@ -52,8 +56,3 @@ User stories are not an excuse for writing unclear or incomplete descriptions of
 * Implement `TeamCreator`.
 * Design team creation interface.
 * Add extra tests.
-
-## References
-
-* TBD
-

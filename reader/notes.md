@@ -1,0 +1,2 @@
+- I did not include [Structured Programming](http://www.youtube.com/watch?v=lfzQcwWAh18). Should it go in languages rather than high-level design overview?
+- I did not include the Decomposing User Stories saga (it seemed like there may have been an intention to include it in the high-level design chapter)

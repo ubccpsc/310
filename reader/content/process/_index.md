@@ -4,6 +4,8 @@ weight: 3
 title: "Software Process"
 ---
 
+{{< youtube dtK561i_wX4 >}}
+
 Software processes enable us to structure the diverse set of activities needed to create and maintain a successful software project. The goal of all software processes is the same: to define the who, what, when, and how for enabling a project to succeed.
 
 These processes are really about enabling various stakeholders to communicate, discuss, and improve the overall system. Software systems involve a diverse set of stakeholders, including (but not limited to):
@@ -36,6 +38,8 @@ The core role of software process is to increase transparency about the software
 
 ## Traditional approaches
 
+{{< youtube 1pQ9-BNTvgs >}}
+
 Waterfall is the 'classic' software development model. This model was adapted from previously-successful engineering processes. In waterfall, each project phase flows into the next with explicit stakeholder sign-off before the next phase begins.
 
 [//]: # (<img src="./figures/process_waterfall.png" width="512px" alt="waterfall overview">)
@@ -46,6 +50,8 @@ Because the phases are distinct and linear, there are extremely clear hand-offs 
 <!---
 TODO: spiral figure
 --->
+
+{{< youtube Zq6EXTSzf84 >}}
 
 The Spiral model emerged in the 1980s to try to increase the responsiveness of waterfall-based processes. In contrast to Waterfall, the Spiral model revisits each system phase on each iteration. This process can be split into four main phases:
 
@@ -75,6 +81,8 @@ A wide variety of agile methodologies are practiced in industrial settings; thes
 
 ### XP
 
+{{< youtube axcRa3YoCQ0 >}}
+
 Extreme Programming (XP) was one of the first widely influential agile methodologies. XP mandated that systems should always be buildable and that developers should be willing to start small and adapt and refactor their systems as the need arose, rather than investing in huge up-front engineering efforts. Teams using XP follow five key principles:
 
 * **Communication**: Enabling open and continual communication between all stakeholders can help projects stay on track and make sure that all stakeholders are aware of the schedule impact various alternative decisions could have.
@@ -84,6 +92,8 @@ Extreme Programming (XP) was one of the first widely influential agile methodolo
 * **Respect**: The focus on a system always being executable means that committing changes that 'break the build' is unacceptable as it slows down your teammates and hurts velocity. Respect also means focusing on the long-term understandability of your code by respecting the time a future developer would have to invest in understanding how your code works. 
 
 ### TDD
+
+{{< youtube Ux9QMfEK9Eg >}}
 
 Test-driven development (TDD) emerged from the agile movement as an approach to ensure that automated testing was always a key part of the development process. This focus on automated testing was important because agile approaches rely heavily on being able to quickly refactor a piece of code and refactoring is often risky if the end-state of a refactoring cannot be easily validated relative to the input state. 
 
@@ -97,6 +107,8 @@ TDD follows a simple linear set of steps:
 TDD is not often used in practice in its explicit form as developers have a hard time writing all their tests before starting development. That said, many experienced developers *do* write test skeletons before they start writing the implementations of their features as this can be a helpful way to ensure that the code provides the APIs needed to effectively validate the system. In addition to validation, this also ensures that *clients* will have access to the necessary API to use the new feature effectively.
 
 ### Scrum
+
+{{< youtube mjphDWlRQ2c >}}
 
 [//]: # (<img src="./figures/process_scrum.png" width="512px" alt="scrum overview">)
 {{< figure src="process_scrum.png" >}}

@@ -1,6 +1,8 @@
 ---
 title: "Specifications"
+weight: 1
 ---
+{{< youtube 1rqWeAQ8onI >}}
 
 A 'wicked problem' is one that can only be clearly defined and understood by solving it. Peters and Tripp observe that,
 
@@ -29,6 +31,8 @@ At their core, all software specifications are abstractions that abstract away s
 
 ## Requirements
 
+{{< youtube 7r9vXTSSTVc >}}
+
 There are two broad categories of requirements:
 
 * **Functional requirements:** These describe what the system must *do*.  For example, "The system shall let the user logout with a single click" provides a specific feature the system must have.
@@ -39,6 +43,8 @@ It is important to remember that requirements describe *what* a system is to do,
 Non-functional properties play important roles in most systems. These include the 'ilities' like reliability, security, usability, complexity, evolvability, performance, etc. Like functional properties, these also often conflict with one another. For example, designing a system that has low complexity, high performance, and good usability is extremely challenging, while designing a system that has only two of those properties is significantly easier. By engaging stakeholders in discussions about requirements we can help them to understand which are most important for the successful operation of the system.
 
 That software failures are costly has been [well](http://spectrum.ieee.org/computing/software/why-software-fails) [described](http://www.cse.psu.edu/~gxt29/bug/softwarebug.html) [in](http://www.devtopics.com/20-famous-software-disasters/) [practice](http://www.tricentis.com/blog/2014/12/18/top-10-software-fails-of-2014/). One of the most common reasons behind these failures can be summarized as "specification failures". Because of this, correctly capturing and understanding requirements is fundamental for projects being successful; this is also why Agile methodologies incorporate customers onto development teams to try to decrease requirements misunderstandings. 
+
+{{< youtube 9z9T0dxMLJU >}}
 
 While there are many properties stakeholders should keep in mind when recording software specifications, these four are especially important.
 
@@ -51,8 +57,9 @@ During the requirements elicitation process several different types of requireme
 
 * Design constraints: Organizations typically have design constraints that must be imposed on software systems; these can include regulatory compliance, budget, languages and frameworks, and development/security process requirements.
 * Environmental constraints: Software systems do not exist in isolation; environmental constraints ensure that the new system will work with existing systems. These constraints often the mandate execution environment (e.g., the operating system, library limitations, services that can be consumed and must be provided) and operational expectations (e.g., expected input, performance constraints, disaster recovery).
-* Preferences: Not all requirements are equal, preferences provide a mechanism to explicitly rank requirements should they come in conflict. 
+* Preferences: Not all requirements are equal, preferences provide a mechanism to explicitly rank requirements should they come in conflict.
 
+{{< youtube PGuPVkNeqJQ >}}
 The process of finalizing a specification is inherently iterative as the various stakeholders gain greater understanding of interdependencies between requirements and technical limitations start to emerge. Building a  spec can often be thought of as a pipeline process:
 
 [//]: # (<img src="./figures/specification_process.png" width="512px" alt="scrum overview">)
@@ -61,6 +68,8 @@ The process of finalizing a specification is inherently iterative as the various
 During this process requirements are first elicited (gathered) from various project stakeholders. Next these requirements are modelled to gain a more concrete understanding of what is actually needed. If any further clarifications are needed here it is often quickest to go back to the stakeholder at this point. Once the requirements are understood they are recorded in a format all stakeholders can understand after which point the document can be validated for the four properties listed above.
 
 ## Validating requirements
+
+{{< youtube H4V_lwuznVY >}}
 
 Lord Kelvin said,
 
