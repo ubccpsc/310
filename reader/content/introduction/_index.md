@@ -10,15 +10,6 @@ Software engineering is a broad and relatively young field. Here we will briefly
 {{< youtube 3tXzYUVQlrM >}}
 
 
-{{% notice default "Learning Outcomes" "graduation-cap" %}}
-After completing this chapter, you should understand the following differences
-
-* [x] [Syntax vs Semantics]({{< ref "languages#language-properties" >}})
-* [x] [Interpreted vs Complied Languages]({{< ref "languages#interpreted-vs-compiled" >}})
-* [x] Static vs Dynamic Representations of the System
-* [x] [Static vs Dynamic Types]({{< ref "languages#static-vs-dynamic-types" >}})
-{{% /notice %}}
-
 
 ## What is software?
 
