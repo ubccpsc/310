@@ -14,7 +14,10 @@ The design process is highly iterative, but can often be thought of as two broad
 
 ## Abstraction
 
+{{< youtube HW_b8S2rD4o >}}
+
 Abstraction is the fundamental technique used by software engineers to be able to manage the complexity of their systems. Abstraction enables engineers to focus on the _key_ information for a given task while eliding unnecessary detail. (e.g., a UX designer might focus on UI flows, but would not reason about backend cryptographic protocols). The 'right' abstraction will vary from task to task. The most high-level and common kinds of abstractions relate to control and data abstraction.
+
 
 ### Data abstraction
 
@@ -86,6 +89,8 @@ makeTeam(teamName: string, memberName: string) {
 
 ## Decomposition
 
+{{< youtube R3qWYSa2OyU >}}
+
 Decomposition is the process of taking a complex high-level entity and splitting it into more manageable smaller pieces. One of the main goals during decomposition is to make simple tasks simple while ensuring that exceptional tasks are still possible. There are many kinds of decomposition strategies (e.g., based around program units, algorithms, subsystems, etc.) but the most general (and common) is top-down decomposition. 
 
 In top-down composition a description is broken up into pieces starting at the top and working to greater level of detail. Initially this will mean that many important details will be represented by 'black boxes' (which can represent systems, modules, or any other relevant level of abstraction) that can be filled in in the future through either further decomposition of the box or by providing final details of what the piece does. Working top-down is a great way to have global awareness about the full system but can be challenging once terminal boxes develop constraints that necessitate revisiting prior decisions.
@@ -100,6 +105,8 @@ An alternative (also common) approach is working bottom-up. In this way decision
 
 ## Information hiding 
 
+{{< youtube f6H2w874TKc >}}
+
 Software engineers often talk about abstraction in terms of _information hiding_.  Information hiding was first proposed by David Parnas in 1972 as a means for separating the parts of the program that are most likely to change from those parts that are more static. Information hiding is a high-level motivation for APIs: by describing the expected behaviour of the API you can "hide" the implementation behind it. 
 
 Information hiding is a specific, common, and important form of abstraction that intentionally seeks to identify 'that which varies' from 'that which stays the same'. This is important, because all abstractions in code come with a cost: trying to understand a system with unnecessary abstractions can add complexity and difficulty, while balancing this complexity against trying to evolve a system lacking necessary abstractions is a challenging task.
@@ -107,11 +114,15 @@ Information hiding is a specific, common, and important form of abstraction that
 
 ## Encapsulation
 
+{{< youtube aPTqsdbyhcQ >}}
+
 Encapsulation is related to information hiding and is practiced most concretely in object-oriented programming languages like Java, C#/C++, TypeScript, etc..  Encapsulation is concerned with delineating the contractual interface with its implementation. The most common language feature for supporting encapsulation is the interface whereby the interface describes the public contract an object will provide and the concrete class describes the implementation of the interface (along with any supporting private methods and fields).
 
 ## Constant change
 
-As Jeff Dean noted in his [WSDM 2009 Keynote](http://static.googleusercontent.com/media/research.google.com/en//people/jeff/WSDM09-keynote.pdf) it is important to recognize the parameters that lead to the abstractions you choose will change over time, and often by many orders of magnitude. The right design for one system will probably be different at 10X load or 100X load. While it can be tempting to try to design for the 'end game' there are high real costs associated with premature optimization. In his talk, Jeff advocates designing for 10x load with the expectation that a rewrite would be required at 100x load. While one could view this process as wasteful, an alternative viewpoint is that in the time between 10x and 100x you will learn things about your system you would not have known in advance (and would thus not solved your 100x problem from the start anyways).
+{{< youtube a-vT-01x4TI >}}
+
+As Jeff Dean noted in his [WSDM 2009 Keynote](http://static.googleusercontent.com/media/research.google.com/en//people/jeff/WSDM09-keynote.pdf) it is important to recognize the parameters that lead to the abstractions you choose will change over time, and often by many orders of magnitude. The right design for one system will probably be different at 10X load or 100X load. While it can be tempting to try to design for the 'end game' there are high real costs associated with premature optimization. In his talk, Jeff advocates designing for 10x load with the expectation that a rewrite would be required at 100x load. While one could view this process as wasteful, an alternative viewpoint is that in the time between 10x and 100x you will learn things about your system you would not have known in advance (and would thus not solve your 100x problem from the start anyway).
 
 Thinking about change is also related to encapsulation in that thinking concretely about what parts of the system are likely to change in the short and medium terms are more likely to lead to useful and valuable abstraction layers than taking an 'anything can change' view to design.
 

@@ -11,6 +11,8 @@ Designing systems in a flexible manner is crucial, given that all successful sys
 
 ### Coupling
 
+{{< youtube I9rEvxiWF9I >}}
+
 Coupling is a property that indicates the strength of connections between different program elements. Strong coupling is problematic because it negatively influences the evolvability and maintainability of a program. There are several reasons for this:
 
 * Coupled code makes it easier for errors in one part of the system to propagate to other unrelated parts of the system.
@@ -33,12 +35,16 @@ The flow chart below can be helpful for reasoning about the coupling between pro
 
 {{< figure src="coupling_flow.png" alt="Coupling flowchart" >}}
 
+{{< youtube QZAacpnjVVg >}}
 
 <!-- TODO: describe levels -->
 
 ### Cohesion
 
-Cohesion is a property that indicates how focused our program elements are on performing a single complete task. This is easiest thought of in terms of classes in object-oriented design. In this space, cohesion measures how well the elements within a class belong together. Classes with low cohesion are responsible for a wide variety of tasks; these classes are harder to reason about as they often have many competing concerns within their implementation that might conflict. This can cause maintenance problems because changes to fix one defect within a class might actually be by design for another feature provided by the class. The larger a class grows in scope, the more likely this kind of problem is to be be encountered.
+{{< youtube oMJNS6mvhQU >}}
+
+
+Cohesion is a property that indicates how focused our program elements are on performing a single complete task. This is best thought of in terms of classes in object-oriented design. In this space, cohesion measures how well the elements within a class belong together. Classes with low cohesion are responsible for a wide variety of tasks; these classes are harder to reason about as they often have many competing concerns within their implementation that might conflict. This can cause maintenance problems because changes to fix one defect within a class might actually be by design for another feature provided by the class. The larger a class grows in scope, the more likely this kind of problem is to be encountered.
 
 Cohesive classes generally have a small set of private fields that make sense to the majority of the public methods within the class; if there are fields within the class that are only used by a small fraction of the public methods it may be a sign that the functionality provided by those methods and the private field may not be cohesive with the overall functionality of the class.
 
@@ -49,6 +55,10 @@ The flow chart below can be used to reason about the kind of cohesion within a d
 
 {{< figure src="cohesion_flow.png" alt="Cohesion flowchart" >}}
 
+{{< youtube gkCIOUbu81o >}}
+
+## Design Symptoms
+{{< youtube _Eb5bAgpgQg >}}
 <!-- TODO: cognitive dimensions -->
 
 <!-- TODO: describe levels -->
@@ -63,6 +73,8 @@ Design principles provide guidelines to help us reason about specific properties
 There are many catalogues of design principles. While some of these are broadly applicable, others will be unique to specific domains. One of the most commonly-used catalogs are the SOLID design principles.
 
 ### Single responsibility
+
+{{< youtube QQ26-dkzEdM >}}
 
 As systems grow it becomes harder to understand them, fix defects within them, and add new features to them. The single responsibility principle says:
 
@@ -80,6 +92,8 @@ Many design patterns have been explicitly crafted to encourage designs that adhe
 
 ### Open/closed
 
+{{< youtube 815hXPR_kHo >}}
+
 The open/closed principle states that modules should be:
 
 > Open to extension but closed to modification.
@@ -95,6 +109,8 @@ One common code smell for violating the open/closed principle are `instanceof` o
 
 ### Liskov substitution
 
+{{< youtube 8UG6P1a8rKg >}}
+
 The Liskov substitution principle says:
 
 > Any object can be interchanged with any other object that has the same parent type. 
@@ -102,6 +118,8 @@ The Liskov substitution principle says:
 For a complete coverage of this design principle. Since this has been covered in prior courses, we will not discuss it further here, but you are encouraged to watch [Elisa Baniassad's video](https://www.youtube.com/watch?v=j6jbTMpZkWQ) for a more complete description.
 
 ### Interface segregation
+
+{{< youtube x_9QJ83oj2k >}}
 
 The interface segregation principle says:
 
@@ -111,6 +129,8 @@ This principle exists because as we evolve our systems we often do so by adding 
 
 ### Dependency inversion
 
+{{< youtube BJr2yG-Hn7g >}}
+
 The dependency inversion principle says:
 
 > Classes should depend on abstractions, not implementations.
@@ -119,7 +139,5 @@ This principle helps engineers to design implementations that are as decoupled f
 
 When we refactor an existing system to encourage extensibility, we often do it through dependency inversion. Specifically, we introduce a new interface and make the existing code implement the interface. This makes the post-refactor code both easier to reuse and extend.
 
-## References
-
-* TBD
+[//]: # (## References)
 

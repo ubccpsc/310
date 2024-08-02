@@ -15,7 +15,7 @@ At a high-level, some common ways software engineering considerations intersect 
 
 * ***Data.*** Software systems can collect and aggregate large volumes of data on individuals. These data can include names, demographic information, health records, financial records, and information about online activities. Collecting these data may be appealing from a business-perspective, but must be within the framework of both the law and the consent solicited from users. Privacy-preservation is often more challenging than is appreciated at a high-level, especially when motivated groups seek to break privacy protections.
 
-* ***IP.*** Software systems are the byproduct of the (often expensive) expenditure of intellectual effort. To protect the investments of these efforts, individuals and companies rely on intellectual property mechanisms to protect their intellectual efforts. More details on these mechanisms can be found in the [IP reading](IP.md).
+* ***IP.*** Software systems are the byproduct of the (often expensive) expenditure of intellectual effort. To protect the investments of these efforts, individuals and companies rely on intellectual property mechanisms to protect their intellectual efforts. More details on these mechanisms can be found in the [IP reading]({{% ref "ip" %}}).
 
 Ultimately, the impact software engineers can have on society requires that engineers also carefully consider the ethical ramifications of their actions.
 

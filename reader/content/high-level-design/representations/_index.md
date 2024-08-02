@@ -3,11 +3,19 @@ title: "Technical Representations"
 weight: 3
 ---
 
+{{< youtube 6LoW1iu05z4 >}}
+
 Many software systems 'fail' because the wrong product is created. One of the primary reasons for this is because of a lack of precision within the requirements. This arises because requirements are often specified entirely using natural language. Expressing requirements using other mechanisms is one common mechanism for reducing ambiguity during requirements elicitation and early design activities; these representations can ensure all stakeholders have a consistent view of how the system will end up being built. These representations can also be used for understanding existing systems during maintenance activities. 
+
+{{< youtube Y4oyXMt1cAw >}}
 
 These diagrams provide a means for communicating using [abstractions](Abstraction.md); representations provide concrete details about some aspects of a system while eliding other parts. This decreases the opacity of decision-making and enables more concrete discussion. Because of this, it is important that these representations are not ambiguous (open to more than one interpretation), are accurate (correct within some given tolerance), and are precise (so the correct system can be built repeatably from the same abstraction).
 
+{{< youtube 2v3IBQr5Yvw >}}
+
 Each representation (diagram) can be considered a _view_ of the system. Views often have specific goals, focusing on subsets of elements or relationships. The views also typically concentrate on specific concerns, scenarios, or stakeholders. This means that choosing the right kind of diagram is important to ensure stakeholders can effectively communicate about the attributes that are most relevant to them. Since views focus on subsets of a system, it is important to keep in mind that they typically overlap. Maintaining consistency between different views is important, but can also serve to identify potential problems that may arise when the system is actually built.
+
+{{< youtube 0jes604qWfE >}}
 
 The Unified Modelling Language ([UML](http://www.uml.org/)) was developed to provide a standard set of representations for software systems. While UML supports a [wide variety](https://en.wikipedia.org/wiki/Unified_Modeling_Language#/media/File:UML_diagrams_overview.svg) of diagrams they can be broadly decomposed into structural and behavioural diagrams. Structural diagrams capture the key elements and their relationships within the system while behavioural diagrams model how the system components interact with each other dynamically at runtime. These two kinds of views are important because while systems are developed statically, their runtime behaviour is often considerably different and being able to reason about both models is crucial to avoiding unexpected problems during development.
 
@@ -76,6 +84,8 @@ Translating from class diagrams to/from code is fairly straightforward. A more c
 
 ## Deployment diagrams
 
+{{< youtube MX7XzEUVc4Y >}}
+
 Deployment diagrams overlay static class diagrams onto the execution containers and physical machines upon which they will reside. Identifying how and where a program will run is particularly important for mobile, distributed, and cloud-based applications. Key stakeholders typically include developers, operations, dev/ops, QA, and infrastructure teams.
 
 Simple deployment diagrams might only concentrate on mapping modules (or classes) onto machines, but in more sophisticated environments could include mapping the software into specific execution containers (e.g., virtual machines, container images, etc.).
@@ -98,6 +108,8 @@ For example:
 -->
 
 ## State machine diagrams
+
+{{< youtube XaacVyfZ3ds >}}
 
 State machines are another representation for capturing dynamic interactions. They are extremely helpful for modelling event-based systems, which accounts for most user interfaces. One of the hidden powers of state machines is they enable state complexity to be actively reasoned about and reduced by explicitly considering the 'key' interactions rather than trying to support all possible interactions. 
 
