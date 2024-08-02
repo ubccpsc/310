@@ -3,6 +3,8 @@ title: "Ethics"
 weight: 2
 ---
 
+{{< youtube ZuQm5GJfADY >}}
+
 Due to the breadth and impact of software, it is unsurprising that the decisions software engineers make frequently require careful ethical consideration. The field of ethics involves the study of moral principles and values. Ethics intersects with software engineering across the product lifecycle including during requirements analysis, system design, implementation, validation, and after deployment.
 
 At a high-level, some common ways software engineering considerations intersect ethical considerations include:
@@ -25,7 +27,7 @@ The first section, *general principles*, details the high-level ethical guidelin
 
 The second section, *professional responsibilities*, describes how software engineers should work in a professional team-based setting to accomplish the guidelines outlined in the first section. The final section, *professional leadership responsibilities*, outlines the additional responsibilities incumbent on those in leadership roles within technical organizations. These roles include not just traditional managers, but all members of teams that have influence over technical decision making.
 
-## Ethical decision making
+## Ethical decision-making
 
 The trolley problem is a thought experiment that can be used to reason about ethical situations. In the trolley problem, a person is faced with a situation where a trolley is rolling down a track and will result in the death of multiple people, or the person can divert the train onto a different track, but will result in the death of a single person.
 
@@ -38,16 +40,17 @@ These concerns have grown in importance in recent years through the increased re
 While most software engineers will not contribute to self-driving vehicle platforms, the expanding applications of software and their entanglement with society increases the likelihood that systems will be deployed in safety-critical situations. Additionally, almost all software engineers will develop systems that end up providing information to users, and thus the biases and discrimination that those systems confer must be carefully identified and controlled.
 
 
-<!--
-
 ## Privacy
 
-TODO
+{{< youtube 2QblEuD_M-c >}}
 
-k-anonymity
+[//]: # (TODO: k-anonymity)
 
+## Summary
 
+{{< youtube hgYVHXpwmpk >}}
 
+<!--
 ### References 
 
 * [TITLE](LINK)

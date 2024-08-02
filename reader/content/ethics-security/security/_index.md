@@ -1,7 +1,10 @@
 ---
-title: "Security"
+linkTitle: "InfoSec"
+title: "Information Security"
 weight: 1
 ---
+
+{{< youtube PprrpG7S3gc >}}
 
 Software security is a pervasive cross-cutting design concern of grave importance to modern software systems. Security concerns are not just about bad actors but also include unlucky users, untrained users, or malicious insiders. While there are obvious monetary costs associated with security (for instance through money being stolen directly), personnel costs, customer loss, and legal violations also have important indirect costs. Additionally, reputation, privacy, and customer satisfaction can all be influenced by the security of a system. This reading provides only the briefest of glimpses into the field of security.
 
@@ -32,12 +35,16 @@ In a security context, _assets_ are the systems and data being secured. _Subject
 There are four high-level steps involved in securing systems:
 
 1. ***Understanding***: Before we can secure a system we need to understand the system and its context.
+{{< youtube PmpkftNf5IA >}}
 
-1. ***Analysis***: The longest phase involves taking our understanding of the system and building meaningful threat models to understand how and why a subject would want to violate the system's security policies.
+1. ***Analysis***: The longest phase involves taking our understanding of the system and building meaningful threat models to understand how and why a subject would want to violate the system's security policies. 
+{{< youtube r0Hb_cqd5Dw >}}
 
 1. ***Mitigation***: Once this understanding has been built, the work of actually securing the system begins. At its simplest, this involves reducing the amount of system surface available to unauthorized parties while maintaining authorized user access.
+{{< youtube TbqJfiFUM2g >}}
 
 1. ***Validation***: Finally, testing and security reviews are crucial to check the mitigation steps have been successful.
+{{< youtube 97pHO22Frpc >}}
 
 There are various kinds (personas) of unauthorized users, all of whom may have different motivations for compromising a system.
 
@@ -62,6 +69,8 @@ Each of these personas will have different motivations, goals, tools, and experi
 
 ## Security principles
 
+{{< youtube mZ3_8wjqxFI >}}
+
 Several security principles have been developed to help mitigate some of these vectors (this is an incredibly incomplete list):
 
 * ***Defence in depth***: A small violation should not easily lead to a big one. This means that security should not only be implemented at the perimeter of the system and internal controls should still be present. Varying internal security measures can further help avoiding failure propagation. As with most security countermeasures this negatively impacts system complexity and can decrease system usability (as is true for many of these principles). 
@@ -75,7 +84,7 @@ Several security principles have been developed to help mitigate some of these v
 * ***Non-repudiation***: System users must be held accountable. Non-repudiation means auditing system behaviour to track how the system is being used. Auditing is an essential tool for tracking the extent to which unauthorized parties have accessed the system and what they have done. It is also useful for ensuring that authorized parties know their usage of the system is being traced. One downside of this approach is that audit logs themselves can contain sensitive information (or point to it) and must themselves be carefully secured.
 
 
-## Mitigation strategies
+### Mitigation strategies
 
 After a system has been modelled and its threats understood, we can start to design mitigation strategies. Rather than step through an abstract list of strategies, here we will discuss more concretely the kinds of steps Google undertakes. These are covered in a great [white paper](https://cloud.google.com/security/security-design/) if you want additional detail.
 
@@ -99,6 +108,9 @@ Google's security strategy revolves around providing a secure infrastructure for
 * Operational security: Engineers practice safe coding practices (such as security code reviews, using static and dynamic analyses, and employing security-aware frameworks and libraries). Google also works with the OSS projects that its tech stack relies on to find vulnerabilities in code they are using that could compromise their own services.
 
 At their core, these mitigation strategies are a great example of defence in depth (multiple layers of countermeasures that does not solely rely on border security), least privilege (employees are strictly limited in the services and data they can access, as are the services themselves from one another), strong authentication (universal 2FA authentication that not only grants access to systems but is passed along with individual service calls), and non-repudiation (extensive logging and unusual activity detection). 
+
+## Summary
+{{< youtube E2ybKiecj2I >}}
 
 ## References
 
