@@ -1,3 +1,6 @@
 [submodule "reader/themes/hugo-theme-relearn"]
 	path = reader/themes/hugo-theme-relearn
 	url = https://github.com/McShelby/hugo-theme-relearn.git
+[submodule "cookbook/themes/hugo-theme-relearn"]
+	path = cookbook/themes/hugo-theme-relearn
+	url = https://github.com/McShelby/hugo-theme-relearn.git
