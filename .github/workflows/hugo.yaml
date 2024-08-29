@@ -61,6 +61,10 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Upload reader site content
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: reader/public
       - name: Build cookbook with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
@@ -72,12 +76,10 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
-      - name: Upload artifact
+      - name: Upload cookbook site content
         uses: actions/upload-pages-artifact@v3
         with:
-          path: |
-            reader/public
-            cookbook/public
+          path: cookbook/public
 
   # Deployment job
   deploy:
