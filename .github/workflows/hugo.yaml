@@ -76,8 +76,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: |
-            ./reader/public
-            ./cookbook/public
+            reader/public
+            cookbook/public
 
   # Deployment job
   deploy:
