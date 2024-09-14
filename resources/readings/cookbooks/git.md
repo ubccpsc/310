@@ -66,7 +66,7 @@ So far your commits just exist on your local machine. To share your changes with
 
 `git push`
 
-Note: if the server version has been updated since you last received work, you will have to perform a `git pull` before the `git push` will work.
+Note: if the server version has been updated since you last received work, you will have to perform a `git pull` before the `git push` will work. Also, it can be frustruating to your team when your push references files that are not under version control; to avoid this, it is often a good idea to use `git status` to make sure the untracked files in your local directory are all resources you do not intend to share with your team.
 
 <a name="list"></a>
 ## Listing existing branch names
