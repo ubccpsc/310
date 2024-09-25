@@ -107,7 +107,13 @@ It has been long held that the cost of fixing a fault rises exponentially with h
 
 There is a more [modern discussion](http://www.sicpers.info/2012/09/an-apology-to-readers-of-test-driven-ios-development/) however that openly wonders if these costs are not relevant for more modern-styles of software development and programming languages.
 
-It is also important to accurately consider the costs of automated testing. Writing tests takes time. Executing tests takes time. Diagnosing failing tests take time. Fixing tests that were incorrect takes time (tests are programs too!). But catching real faults can save money, as can increased velocity enabled through better understanding how shippable your code is. While it is easier to account for the costs than the benefits, most large teams have invested heavily in automated test suites, although many large teams are actively investigating test prioritization and minimization schemes to reduce the delay between making a change and having a meaningful test result.
+It is also important to accurately consider the costs of automated test suites.
+Writing tests takes time.
+Executing tests takes time.
+Diagnosing failing tests take time.
+Fixing tests that were incorrect takes time (tests are programs too!).
+But catching real faults can save money, as can increase velocity enabled through better understanding how shippable your code is.
+While it is easier to account for the costs than the benefits, most large teams have invested heavily in automated test suites, although many large teams are actively investigating test prioritization and minimization schemes to reduce the delay between making a change and having a meaningful test result.
 
 <!--- TODO:
 Testing as an engineering discipline notes
