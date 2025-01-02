@@ -6,13 +6,14 @@
 
 ## Current Term
 
-* [2024 September (2024W1)](https://sites.google.com/view/ubccpsc310-24w1/home)
+* 2025 January (2024W2)
 
 ## Future Term
 
 * 2025 January (2024W2)
 
 ## Past Terms
+* [2024 September (2024W1)](https://sites.google.com/view/ubccpsc310-24w1/home)
 * 2024 May (2023S1)
 * [2024 January (2023W2)](https://sites.google.com/view/ubccpsc310-23w2/home)
 * [2023 September (2023W1)](https://sites.google.com/view/ubccpsc310-23w1/home)
