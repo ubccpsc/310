@@ -10,7 +10,7 @@
 
 ## Future Term
 
-* 2025 January (2024W2)
+* TBD
 
 ## Past Terms
 * [2024 September (2024W1)](https://sites.google.com/view/ubccpsc310-24w1/home)
