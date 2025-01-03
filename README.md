@@ -6,7 +6,7 @@
 
 ## Current Term
 
-* 2025 January (2024W2)
+* [2025 January (2024W2)](https://sites.google.com/view/ubccpsc310-24w2/home)
 
 ## Future Term
 
