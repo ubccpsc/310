@@ -37,3 +37,7 @@
 * [2014 September (2014W1)](http://www.ugrad.cs.ubc.ca/~cs310/2014W1/])
 * [2014 May (2013S)](http://www.ugrad.cs.ubc.ca/~cs310/2014S1/)
 * [2014 January (2013W2)](http://www.ugrad.cs.ubc.ca/~cs310/2013W2/)
+
+## Project License
+
+CPSC 310 project implementatoins **are considered private materials**. Please do not post or share your project solutions. If you have found one of these solutions online, it is in contravention of this license. The course staff expend considerable effort to make the project an interesting and useful learning experience for this course. This is a great deal of work, and while future students may be tempted by your solutions, posting them does not do them any real favours. Please be considerate with these private materials and not pass them along to others, make your repos public, or post them to other sites online.
