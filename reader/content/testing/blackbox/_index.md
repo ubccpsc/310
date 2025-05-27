@@ -11,13 +11,15 @@ There are a variety of black box testing approaches that are used in practice:
 
 * **Boundary value analysis (BVA)**: Most functions can take an unbounded number of inputs. BVA seeks to identify which of those are most valuable to test. The intuition behind this process is that inputs at the *boundary* of an input domain are more likely to be problematic than those that are not. 
 
-  For example, when testing a numeric input that accepts values `1..10`, natural inputs outside the boundary would include `0` and `11` while natural inputs within the boundary could include `1` and `10`. BVA can also be applied to more complex types, such as dates with specified formats (e.g., `YYYY-MM-DD`). Similarly, BVA can also take place on objects. For example: 
-   ```typescript
-	 const user: {
-	   username: string;
-	   password: string;
-	 }
-   ```
+  For example, when testing a numeric input that accepts values `1..10`, natural inputs outside the boundary would include `0` and `11` while natural inputs within the boundary could include `1` and `10`. BVA can also be applied to more complex types, such as dates with specified formats (e.g., `YYYY-MM-DD`) or objects with multiple fields. For example: 
+```typescript
+interface User {
+    // Must not be more than 6 chars
+    username: string,
+    // Must contain at least one uppercase char
+    password: string,
+}
+```
    Where `username` and `password` have specific restrictions on what inputs are valid. {{< youtube IRQU_fHKUa0 >}}
 
 * **Equivalence class partitioning (ECP)**: While testing at the boundaries is useful and often uncovers subtle defects, it is also useful to test more commonly expected inputs to ensure that the code under test is behaving as expected. As with boundary value analysis, equivalence class partitioning seeks to decrease the input space from all possible inputs to a reasonable subset of inputs. To do this, inputs are decomposed into *classes*, and testers ensure that at least one input from each class is validated.  
