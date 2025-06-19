@@ -43,9 +43,9 @@ At the same time, IP regulations also try to consider the public good. This is b
 
 Licenses are widely applied in the software ecosystem to define how software products can be used. All source code is protected by copyright: licenses clarify how the code can be used and whether it can be modified and distributed by others. Below we concentrate on a few popular Open Source licenses and their specific properties.
 
-***GPLv3*** The General Public License (GPLv3) has been designed to enable software to be used, shared, and modified. This is a *copyleft* license which means that the license must be maintained with the code is modified and/or distributed. Additionally, projects that use GPLv3 code cannot us a less-restrictive license on their own product.
+***GPLv3*** The General Public License (GPLv3) has been designed to enable software to be used, shared, and modified. This is a *copyleft* license which means that the license must be maintained with the code is modified and/or distributed. Additionally, projects that use GPLv3 code cannot use a less-restrictive license on their own product.
 
-***LGPLv3*** The Lesser General Public License (LGPLv3), while still a copyleft license, is a more flexible license (than GPLv3). While it requires that changes to code licensed under LGPLv2 to be shared, when used as a library by a product the product itself need not be shared. LGPLv3 allows that software using LGPL libraries can be shared under a more restrictive license than the libraries it uses.
+***LGPLv3*** The Lesser General Public License (LGPLv3), while still a copyleft license, is a more flexible license (than GPLv3). While it requires that changes to code licensed under LGPLv3 to be shared, when used as a library by a product the product itself need not be shared. LGPLv3 allows that software using LGPL libraries can be shared under a more restrictive license than the libraries it uses.
 
 ***MPLv2*** The Mozilla Public License (MPLv2) is another copyleft license that aims for increased flexibility over the LGPLv3 in that it only mandates changes to _files_ licensed MPL to be released (in contrast to the GPL and LGPL which require changes to the _library_ to be released).
 
