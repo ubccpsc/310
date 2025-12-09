@@ -25,9 +25,101 @@ Unfortunately, given the ambitious goals UML tries to achieve, it has become an 
 
 ## Class diagrams
 
-Class diagrams are the most common form of technical abstraction for software systems. Class diagrams are static representations of the software elements and their relationships within a system. For object-oriented systems class diagrams detail the key classes,  fields, and methods within a system and how they relate to each other statically. While class diagrams can contain all program elements, they typically focus on a key subset of elements (especially with respect to fields and methods); this does not mean that only public API should be shown, but also API that are intentionally not private. These diagrams are an excellent abstraction for developers to reason about and discuss various design alternatives. Class diagrams can be translated fairly directly into code skeletons (and vice versa).
+Class diagrams are the most common form of technical abstraction for software systems.
+Class diagrams are static representations of the software elements and their relationships within a system.
+For object-oriented systems class diagrams detail the key classes, fields, and methods within a system and how they relate to each other statically.
+While class diagrams can contain all program elements, they typically focus on a key subset of elements (especially with respect to fields and methods); this does not mean that only public API should be shown, but also API that are intentionally not private.
+These diagrams are an excellent abstraction for developers to reason about and discuss various design alternatives. Class diagrams can be translated fairly directly into code skeletons (and vice versa).
 
-Classes and interfaces are represented by simple rectangles that detail their names, fields, and methods. Method and field visibility can be clarified by prepending names with + (public), # (protected), and - (private). Three primary classes of edges exist in class diagrams. Large hollow arrows represent inheritance relationships. Dotted lines with simple arrowheads represent dependencies (typically through method calls and field references). Solid lines with filled diamonds represent composition relationships; these relationships indicate that the class on the diamond-end creates and is primarily responsible for the lifecycle of one or more variables of the linked type.
+Classes and interfaces are represented by simple rectangles that detail their names, fields, and methods.
+Method and field visibility can be clarified by prepending names with + (public), # (protected), and - (private).
+Three primary classes of edges exist in class diagrams. Large hollow arrows represent inheritance relationships.
+Dotted lines with simple arrowheads represent dependencies (typically through method calls and field references).
+Solid lines with filled diamonds represent composition relationships; these relationships indicate that the class on the diamond-end creates and is primarily responsible for the lifecycle of one or more variables of the linked type.
+
+A common way UML class diagrams are used is to translate a verbal description of a requirement or system component into a potential class diagram.
+For example, a class diagram for a system that lets students enroll in course offerings, and instructors manage rosters and grades, could be the following.
+
+{{< figure src="uml-class-enrolment.png" alt="UML Class Diagram modeling course enrolment." >}}
+<!-- Mermaid code
+
+classDiagram
+direction LR
+
+class Person {
+  +id
+  +name
+}
+
+class Student {
+  +enroll
+  +drop
+}
+
+class Instructor {
+  +assignGrade
+}
+
+class Course {
+  +code
+  +title
+  +createOffering
+}
+
+class CourseOffering {
+  +offeringId
+  +term
+  #capacity
+  +addEnrollment
+  +getRoster
+}
+
+class Enrollment {
+  +enrollmentId
+  +status
+  -createdAt
+}
+
+class EnrollmentService {
+  +enrollStudent
+  +dropStudent
+  -processor
+  -notifier
+}
+
+class PaymentProcessor {
+  +charge
+}
+
+class NotificationService {
+  +send
+}
+
+Person <|-- Student
+Person <|-- Instructor
+
+Course *-- CourseOffering
+CourseOffering *-- Enrollment
+
+Enrollment ..> Student
+Enrollment ..> CourseOffering
+
+EnrollmentService ..> PaymentProcessor
+EnrollmentService ..> NotificationService
+EnrollmentService ..> Student
+EnrollmentService ..> CourseOffering
+
+Instructor ..> CourseOffering
+-->
+
+
+In the UML Class diagram:
+
+* Rectangles represent classes (`Person`, `Student`, `Instructor`, `Course`, etc.).
+* Visibility markers are shown: `+` (public), `#` (protected), `−` (private).
+* Inheritance is modeled with hollow arrows: `Person` is a base class for `Student` and `Instructor`.
+* Composition uses filled diamonds: a `Course` composes its `CourseOfferings`, and a `CourseOffering` composes its `Enrollment` records (it owns their lifecycle).
+* Dependencies use dotted arrows: `EnrollmentService` depends on `PaymentProcessor` and `NotificationService`, and interacts with `Student` and `CourseOffering`.
 
 <!-- 
 For example, the class diagram below could be used to generate the text that follows.
@@ -35,7 +127,7 @@ For example, the class diagram below could be used to generate the text that fol
 <img src="./figures/uml-class.png" width="512px" alt="class diagram">
 
 -->
-
+<!--
 ```typescript
 interface IInsightFacade {
 	addDataset(id: string, content: string);
@@ -61,7 +153,7 @@ class Log {
 	trace(msg: string) { }
 	info(msg: string) { }
 	warn(msg: string) { }
-	error(msg: string, stack?:Stack) { } 
+	error(msg: string, stack?:Stack) { }
 }
 
 class InsightFacadeSpec {
@@ -74,7 +166,7 @@ class QueryControllerSpec {
 ```
 
 Translating from class diagrams to/from code is fairly straightforward. A more common use case is to translate from a textual description to a potential class diagram. For example the class diagram and high-level descriptions below are different representations of the same task.
-
+-->
 <!--
  Design a system for drawing UML class and sequence diagrams. Class diagrams should support inheritance, composition, aggregation, and dependency relationships. Sequence diagrams only support sync & async calls and responses. 
 
