@@ -7,5 +7,5 @@ Prerequisites: All of CPSC 213 and CPSC 221; Credit Exclusions: DSCI 310 (CS maj
 
 | Week | Date  | Topic                          | Tasks |
 | ---- | ----- | -----                          | ----- |
-| [1](./schedule.md#week-1) | Jan  5 | [Introduction](./01-intro.md)  | PWS1 Jan 11 |
+| [1](./schedule.md#week-1) | Jan  5 | [Introduction](pages/01-intro)  | PWS1 Jan 11 |
 | [2](./schedule.md#week-2) | Jan 12 | Requirements | PWS2 Jan 18 |
