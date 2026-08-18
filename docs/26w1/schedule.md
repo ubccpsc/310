@@ -1,11 +1,11 @@
 # Schedule
 
-Lectures are in-person **Tuesday and Thursday** on the dates listed below. Slides are posted before each lecture, linked from the lecture title. **Readings** live on the unit pages, linked from the Unit column.
-
-**Lab blocks run Friday to Thursday**, starting *Friday September 11* (week 1). Each assignment is due at the start of your next lab, which is one week later for every section. The full lab policy — release timing, late work, and the dropped mark — is in the [Syllabus](syllabus.md#labs).
-
 > This page answers **when**. For what the course covers and why it's ordered this way, see the
 > [course materials overview](./materials/). Full policies are in the [Syllabus](syllabus.md).
+
+Lectures are **Tuesday and Thursday** on the dates listed below. Slides are posted before each lecture, linked from the lecture title. **Readings** live on the unit pages, linked from the Unit column.
+
+**Lab blocks run Friday to Thursday**, starting *Friday September 11* (week 1). Each assignment is due at the start of your next lab, which is one week later for every section. The full lab policy is in the [Syllabus](syllabus.md#labs).
 
 ## 📌 At a glance
 

@@ -1,4 +1,4 @@
-# Unit 2 — Boundaries
+# Unit 2 — Layers & interfaces
 
 **Weeks 6–7.** What happens to the same discipline when the boundaries get big enough to have names
 and consequences.
@@ -21,10 +21,10 @@ only the implementation can move — and a layer boundary is exactly what lets i
 
 | Lecture | What it answers | Read before |
 | :--- | :--- | :--- |
-| Layered architecture | What do you get when the same moves are applied everywhere? | *TBD* |
-| The testing pyramid | Given real layers, which one should a test actually run through? | *TBD* |
-| API design | What is an API, and what do you lose the moment it's published? | *TBD* |
-| Evolving a published API | How do you change a promise without breaking it? | *TBD* |
+| Layered architecture | What do you get when the same moves are applied everywhere? | [High-Level Design](/textbook/high-level-design/) |
+| The testing pyramid | Given real layers, which one should a test actually run through? | [Software Testing](/textbook/testing/) |
+| API design | What is an API, and what do you lose the moment it's published? | [APIs](/textbook/high-level-design/apis/) · [REST Architecture](/textbook/construction/rest/) |
+| Evolving a published API | How do you change a promise without breaking it? | [APIs](/textbook/high-level-design/apis/) *(versioning only)* |
 
 Slides are posted on the [schedule](../../schedule.md) as we go.
 

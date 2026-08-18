@@ -114,7 +114,7 @@ yet. Describe what happened to you.
 
 ## How this is graded
 
-| | |
+| Assessed by | What it covers |
 | :--- | :--- |
 | Autograded | The feature meets all four requirements; the inherited v1/v2 suite still passes |
 | Judgment | Whether items 3, 6, 7, and 8 are **specific** |

@@ -101,7 +101,7 @@ That last question is the one the whole term has been building toward. Answer it
 
 ## How this is graded
 
-| | |
+| Assessed by | What it covers |
 | :--- | :--- |
 | Autograded | Your implementation conforms to **your own** D3 specification; the inherited v1 and v2 suites still pass |
 | Judgment | Whether the code behind your endpoints reflects the design principles from the course, plus the retrospective |

@@ -272,7 +272,7 @@ validators have in common in your design, and why did you draw the line there?
 
 ## How this is graded
 
-| | |
+| Assessed by | What it covers |
 | :--- | :--- |
 | Autograded | Your OpenAPI document parses and validates |
 | Judgment | The adoption review, the convention inventory, the departures, the sharing decision, and whether the specification is complete enough to build from |

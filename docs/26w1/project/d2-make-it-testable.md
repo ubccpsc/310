@@ -360,7 +360,7 @@ you can say what those tests would have caught.
 
 ## How this is graded
 
-| | |
+| Assessed by | What it covers |
 | :--- | :--- |
 | Autograded | Your suite passes with the network unavailable; mutants run against it; the inherited suites still pass |
 | Judgment | The step 1 report, where you cut and what the interface hides, your riskiest step, your mutation reasoning, and the D1 comparison |

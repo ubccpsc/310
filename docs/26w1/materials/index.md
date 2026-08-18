@@ -12,7 +12,7 @@ between them is how much you still control.
 | Unit | Weeks | Scale | What's different |
 | :--- | :--- | :--- | :--- |
 | [Unit 1 — Design in the small](unit-01/) | 1–5 | Inside a codebase you own | Every caller is in your diff. Measure a change, name what makes it expensive, repair it safely, make it testable — then name the moves as patterns |
-| [Unit 2 — Boundaries](unit-02/) | 6–7 | At its boundaries | The same discipline at module scale (layers), then at a contract you've published and can no longer move |
+| [Unit 2 — Layers & interfaces](unit-02/) | 6–7 | At its boundaries | The same discipline at module scale (layers), then at a contract you've published and can no longer move |
 | [Unit 3 — Requirements & specification](unit-03/) | 9–11 | Before the code exists | Where the thing you're building comes from, and how to say what it must do precisely enough to check |
 | [Unit 4 — Software process](unit-04/) | 12–13 | Across a team | How several people change one codebase without breaking each other, and what has to be automated for that to hold |
 
@@ -30,7 +30,7 @@ inversion · patterns as named combinations of all of it.
 You can see everything and change everything, so a mistake is cheap enough to undo. That's what makes
 it the right place to learn the vocabulary.
 
-**[Unit 2 — Boundaries](unit-02/)** · weeks 6–7 · four lectures
+**[Unit 2 — Layers & interfaces](unit-02/)** · weeks 6–7 · four lectures
 
 Layered architecture · the testing pyramid · API design · evolving a published API.
 

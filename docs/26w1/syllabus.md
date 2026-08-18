@@ -1,20 +1,18 @@
 # Course Syllabus
 
 **CPSC 310 — Introduction to Software Engineering**
-2026 Winter Term 1 (September–December 2026)
+2026 Winter Term 1 (September–December 2026) · 4 credits
 
-| | |
-| :--- | :--- |
-| **Credits** | 4 |
-| **Sections** | 101 3:30--5:00pm in LSK 201; 102 2:00--3:30pm in LSK 201; 103 12:30--2:00pm in LSK 201 |
-| **Delivery** | Lectures in person and not recorded; labs online. |
-| **Prerequisites** | All of CPSC 213 and CPSC 221; Credit Exclusions: DSCI 310 (CS majors MUST take CPSC 310). |
-| **Labs** | Weekly online, starting week 1 — see [Labs](#labs). |
+| Lecture section | Time | Room |
+| :--- | :--- | :--- |
+| 101 | 3:30–5:00 pm | LSK 201 |
+| 102 | 2:00–3:30 pm | LSK 201 |
+| 103 | 12:30–2:00 pm | LSK 201 |
 
-**Last updated:** *(TBD: date this document before distribution.)*
+Labs are held online — see [Labs](#labs).
 
-This syllabus will be provided within the first week of class. If anything changes after the drop
-deadline, you will get a revised, dated version with an explanation of what changed and why.
+**Prerequisites.** All of CPSC 213 and CPSC 221. Credit exclusion: DSCI 310 — CS majors must take
+CPSC 310.
 
 ## Instructors and Course Staff
 
@@ -62,12 +60,11 @@ In this course, you will learn to:
 
 ## Learning Materials
 
-The [course reader](/textbook/) written for this course is freely available on this site, and is licensed CC BY-SA 3.0.
-Readings for each lecture are listed on the [unit pages](./materials/).
+Readings for each lecture are listed on the [unit pages](./materials/) and are available in the [course reader](/textbook/).
 
 You will need accounts on **Piazza** (questions and announcements), **PrairieLearn** (lab assignments
 and project questions), **iClicker** (in-lecture participation), **Canvas** (grades), and **GitHub
-Enterprise** (project repositories — sign in with your CWL). Sign-in links for all of these are on
+Enterprise** (project repositories). Sign-in links for all of these are on
 the [course home page](./).
 
 You will need a computer capable of running Node.js and a modern editor.
@@ -89,8 +86,7 @@ Every lecture will have **at least two iClicker questions**. Respond to at least
 that lecture is credited.
 
 Questions are graded by **response, not correctness**. They are your opportunity to engage with the
-material at the moment the concept is trying to stick, so a real attempt is worth more to you than a
-safe one — but a wrong answer costs you nothing.
+material at the moment the concept is trying to stick, so it is worth spending the time to really think through the question.
 
 - Your **four lowest lectures are dropped**. That covers illness, interviews, conflicts, a dead phone battery, and the lecture where the app misbehaves. You do not need to tell us about any of these.
 - You earn credit regardless of which section you attend.
@@ -238,28 +234,19 @@ on the midterm or the final, which are on paper, invigilated, and permit no devi
 
 That gap is the entire policy, and it is worth understanding rather than just following.
 
-**On code.** Use whatever helps. You remain accountable for what you submit — its correctness, its
-licensing, its security — and you must be able to explain why any change is in your pull request.
-"The model wrote it" is not an answer to *why is this here?*, and it is not a defence for a bug.
+**On code.** Use whatever helps. You remain accountable for what you submit and you must be able to
+explain why any change is in your pull request. "The model wrote it" is not an answer to *why is
+this here?*, and it is not a defence for a bug.
 
 **On your reasoning.** Every deliverable asks you to write down what you changed, what you rejected,
 and what it cost. Writing that down **is the practice** for the exams, where the questions have the
-same shape and the tool is not in the room. Hand that part to a model and the code still ships, but
-you have skipped the repetition — and you find out in October whether that mattered.
+same shape and the tool is not in the room. We are not looking for a polished piece of writing, we
+are looking for evidence of your thinking, communicated clearly. Hand that part to a model and the
+code still ships, but you have skipped the practice — and you find out on the midterm whether that
+mattered.
 
-Getting help with phrasing is fine. Polishing something you wrote is fine. The thing that costs you
-is not doing the thinking in the first place.
-
-And it is worth being plain about this: **we are not grading prose.** We are not looking for a
-polished piece of writing, we are looking for evidence of your thinking, communicated clearly. A
-blunt paragraph that names the real tradeoff beats a fluent page that avoids it. There is not much
-for polish to buy here.
-
-Where a tool made a substantive contribution to a design decision, say so in your rationale. That is
-provenance, which is the thing this course actually cares about.
-
-**On enforcement.** We are not going to police this. What we will do is ask you about your
-decisions — in labs, at check-ins, and on the exams — and your answers are what we grade.
+**On citation.** Where a tool contributed substantively to a design decision, say so in your
+rationale, the same way you would cite any other source you did not arrive at yourself.
 
 ### Academic Concession {#academic-concession}
 
