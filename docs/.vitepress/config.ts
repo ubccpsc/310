@@ -47,7 +47,7 @@ export default defineConfig({
             { text: 'Unit 1 — Design in the small', link: '/26w1/materials/unit-01/' },
             { text: 'Unit 2 — Boundaries', link: '/26w1/materials/unit-02/' },
             { text: 'Unit 3 — Requirements & specification', link: '/26w1/materials/unit-03/' },
-            { text: 'Unit 4 — Process, CI & DevOps', link: '/26w1/materials/unit-04/' },
+            { text: 'Unit 4 — Software process', link: '/26w1/materials/unit-04/' },
           ],
         },
         {

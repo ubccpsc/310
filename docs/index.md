@@ -22,5 +22,6 @@ features:
     details: Four deliverables on an inherited codebase. Add a feature, make it testable, design a third API version, then build it.
     link: /26w1/project/
   - title: Course reader
-    details: The reference text for the course, organized by topic. Coming soon.
+    details: The reference text for the course, organized by topic.
+    link: /textbook
 ---

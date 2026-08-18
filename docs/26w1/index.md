@@ -5,9 +5,11 @@ Welcome to the main course website where you can find the everything you need to
 ## 📌 Quick Links
 
 - [Read Course Syllabus](./syllabus.md) -- Course policies, expectations, and grading scheme.
-- [Go to Canvas Dashboard](#) -- See assignment deadlines and grades.
-- [PrairieLearn](#) -- Submit lab assignments, quizzes, and the midterm.
-- [iClicker](#)
+- [Join Piazza](#) -- Questions and announcements.
+- [GitHub Enterprise](#) -- access your term project repo using your CWL account.
+- [Go to Canvas Dashboard](#) -- See grades.
+- [PrairieLearn](#) -- Submit lab assignments, and project questions.
+- [iClicker](#) -- Respond to in-class polls.
 
 ## 🗓️ Semester Roadmap
 
@@ -21,7 +23,7 @@ together over time. Every unit answers the same question at a wider radius —
 | **[Unit 1: Design in the small](materials/unit-01/)** | 1–5 |
 | [Unit 2: Boundaries](materials/unit-02/) | 6–7 |
 | [Unit 3: Requirements & specification](materials/unit-03/) | 9–11 |
-| [Unit 4: Process, CI & DevOps](materials/unit-04/) | 12–13 |
+| [Unit 4: Software process](materials/unit-04/) | 12–13 |
 
 **[Course materials overview](materials/)** — what each unit covers and why it's
 ordered this way. **[Schedule](./schedule.md)** — dates, slides, labs, and deadlines.
