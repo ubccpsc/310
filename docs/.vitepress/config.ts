@@ -44,10 +44,10 @@ export default defineConfig({
           text: 'Course materials',
           link: '/26w1/materials/',
           items: [
-            { text: 'Part 1 — Design in the small', link: '/26w1/materials/part-01/' },
-            { text: 'Part 2 — Boundaries', link: '/26w1/materials/part-02/' },
-            { text: 'Part 3 — Requirements & specification', link: '/26w1/materials/part-03/' },
-            { text: 'Part 4 — Process, CI & DevOps', link: '/26w1/materials/part-04/' },
+            { text: 'Unit 1 — Design in the small', link: '/26w1/materials/unit-01/' },
+            { text: 'Unit 2 — Boundaries', link: '/26w1/materials/unit-02/' },
+            { text: 'Unit 3 — Requirements & specification', link: '/26w1/materials/unit-03/' },
+            { text: 'Unit 4 — Process, CI & DevOps', link: '/26w1/materials/unit-04/' },
           ],
         },
         {

@@ -1,4 +1,4 @@
-# Part 1 — Design in the small
+# Unit 1 — Design in the small
 
 **Weeks 1–5.** Reading code you didn't write, naming what's wrong with it, and changing it without
 breaking it.
@@ -7,9 +7,9 @@ A bridge is finished. Software never is — we expect to modify it for as long a
 usually by people who weren't there when it was written. So the question that matters isn't *does it
 work?* but **what will the next change cost?**
 
-This part answers that at the smallest scale, where every caller is still in your diff. You can
+This unit answers that at the smallest scale, where every caller is still in your diff. You can
 see everything, you can change everything, and you can fix every call site in the same pull request.
-That's a luxury — part 2 takes it away — but it's the right place to learn the vocabulary, because
+That's a luxury — unit 2 takes it away — but it's the right place to learn the vocabulary, because
 here a mistake is cheap enough to undo.
 
 It makes cost of change **measurable** first, then does something about it.
@@ -30,7 +30,7 @@ It makes cost of change **measurable** first, then does something about it.
 
 Slides are posted on the [schedule](../../schedule.md) as we go.
 
-## By the end of this part you can
+## By the end of this unit you can
 
 **Measure a change**
 
@@ -97,4 +97,4 @@ Composite · Factory · Decorator
 ## Where this is going
 
 By the end of week 5 you can diagnose a design, repair it safely, and test the result — all inside a
-codebase you own completely. [Part 2](../part-02/) asks what changes when you don't.
+codebase you own completely. [Unit 2](../unit-02/) asks what changes when you don't.

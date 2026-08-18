@@ -13,17 +13,17 @@ Welcome to the main course website where you can find the everything you need to
 
 The course moves outward: from design decisions inside a single class, to the
 boundaries between modules, to the systems and processes that hold a codebase
-together over time. Every part answers the same question at a wider radius —
+together over time. Every unit answers the same question at a wider radius —
 **what does it cost to change this, and why?**
 
-| Part | Weeks |
+| Unit | Weeks |
 | :--- | :--- |
-| **[Part 1: Design in the small](materials/part-01/)** | 1–5 |
-| [Part 2: Boundaries](materials/part-02/) | 6–7 |
-| [Part 3: Requirements & specification](materials/part-03/) | 9–11 |
-| [Part 4: Process, CI & DevOps](materials/part-04/) | 12–13 |
+| **[Unit 1: Design in the small](materials/unit-01/)** | 1–5 |
+| [Unit 2: Boundaries](materials/unit-02/) | 6–7 |
+| [Unit 3: Requirements & specification](materials/unit-03/) | 9–11 |
+| [Unit 4: Process, CI & DevOps](materials/unit-04/) | 12–13 |
 
-**[Course materials overview](materials/)** — what each part covers and why it's
+**[Course materials overview](materials/)** — what each unit covers and why it's
 ordered this way. **[Schedule](./schedule.md)** — dates, slides, labs, and deadlines.
 
 ## 🛠️ Project at a Glance

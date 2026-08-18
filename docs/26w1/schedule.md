@@ -1,6 +1,6 @@
 # Schedule
 
-Lectures are in-person **Tuesday and Thursday** on the dates listed below. Slides are posted before each lecture, linked from the lecture title. **Readings** live on the part pages, linked from the Part column.
+Lectures are in-person **Tuesday and Thursday** on the dates listed below. Slides are posted before each lecture, linked from the lecture title. **Readings** live on the unit pages, linked from the Unit column.
 
 **Lab blocks run Friday to Thursday.** The first lab sections start on *Friday Septemeber 11* (week 1) and run according to the schedule below. Lab assignments are due by the start of your next lab giving you one week to complete them. Late assignments will not be graded although the instructional team would be happy to answer any questions you might have.
 
@@ -28,20 +28,20 @@ Lectures are in-person **Tuesday and Thursday** on the dates listed below. Slide
 
 ## 🗓️ Week by week
 
-| Wk | Dates | Part | Lectures | Lab | Due |
+| Wk | Dates | Unit | Lectures | Lab | Due |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | Sep 8, 10 | [Part 1](#/materials/part-01/) | *(no Tuesday class)* · The cost of change | [Lab 0](#) — Onboarding *(Sep 11–17)* | — |
+| 1 | Sep 8, 10 | [Unit 1](#/materials/unit-01/) | *(no Tuesday class)* · The cost of change | [Lab 0](#) — Onboarding *(Sep 11–17)* | — |
 | 2 | Sep 15, 17 | | Measuring a change · Cohesion & connascence | [Lab 1](#) — cohesion & connascence *(Sep 18–24)* | — |
 | 3 | Sep 22, 24 | | Refactoring as a discipline · Polymorphism & LSP | [Lab 2](#) — refactoring & LSP *(Sep 25–Oct 1)* ⚠ Wed Sep 30 | **D1** Fri Sep 25 |
 | 4 | Sep 29, Oct 1 | | What makes code testable · Seams & dependency inversion | [Lab 3](#) — testability & seams *(Oct 2–8)* | — |
 | 5 | Oct 6, 8 | | Patterns: Adapter & Composite · Patterns: Factory & Decorator | [Lab 4](#) — design patterns *(Oct 9–15)* ⚠ Mon Oct 12 | — |
-| 6 | Oct 13, 15 | [Part 2](#/materials/part-02/) | Layered architecture · The testing pyramid | [Lab 5](#) — layers & test strategy *(Oct 16–22)* | **D2** Fri Oct 16 |
+| 6 | Oct 13, 15 | [Unit 2](#/materials/unit-02/) | Layered architecture · The testing pyramid | [Lab 5](#) — layers & test strategy *(Oct 16–22)* | **D2** Fri Oct 16 |
 | 7 | Oct 20, 22 | | API design · Evolving a published API | Review — ungraded *(Oct 23–29)* | — |
 | 8 | Oct 27, 29 | — | Pricing a change — synthesis & midterm review · *(no Thursday class)* | Project time — team check-in *(Oct 30–Nov 5)* | **Midterm** Thu Oct 29 |
-| 9 | Nov 3, 5 | [Part 3](#/materials/part-03/) | Requirements & implications · Information security | **No lab** — fall break *(Nov 9–11)* | **D3** Fri Nov 6 |
+| 9 | Nov 3, 5 | [Unit 3](#/materials/unit-03/) | Requirements & implications · Information security | **No lab** — fall break *(Nov 9–11)* | **D3** Fri Nov 6 |
 | 10 | Nov 10, 12 | | *(no Tuesday class)* · Specification & modeling | [Lab 6](#) — requirements & specification *(Nov 13–19)* | — |
 | 11 | Nov 17, 19 | | *Specification is Right* · CI, review & static analysis | [Lab 7](#) — spec, review & static analysis *(Nov 20–26)* | — |
-| 12 | Nov 24, 26 | [Part 4](#/materials/part-04/) | Software process I · Software process II | [Lab 8](#) — software process *(Nov 27–Dec 3)* | **D4** Fri Nov 27 |
+| 12 | Nov 24, 26 | [Unit 4](#/materials/unit-04/) | Software process I · Software process II | [Lab 8](#) — software process *(Nov 27–Dec 3)* | **D4** Fri Nov 27 |
 | 13 | Dec 1, 3 | | DevOps · IP & licensing | — | — |
 
 ⚠ **Labs are cancelled on Wednesday September 30th and Monday October 12th.** You may attend any other lab section if your section is cancelled. Lab assignments are still due by your next regularly scheduled lab.
@@ -51,7 +51,7 @@ Lectures are in-person **Tuesday and Thursday** on the dates listed below. Slide
 | You want | Go to |
 | :--- | :--- |
 | Slides from a specific lecture | This page — click the lecture title |
-| Supporting material for a lecture | The part page — click the Part column |
+| Supporting material for a lecture | The unit page — click the Unit column |
 | A lab assignment | This page — the Lab column |
 | A project deliverable spec | [Project](#/project/) |
 | Deadlines, weights, policies | [Syllabus](syllabus.md) |

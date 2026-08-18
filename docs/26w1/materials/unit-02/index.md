@@ -1,13 +1,13 @@
-# Part 2 — Boundaries
+# Unit 2 — Boundaries
 
 **Weeks 6–7.** What happens to the same discipline when the boundaries get big enough to have names
 and consequences.
 
-[Part 1](../part-01/) worked inside a codebase you own completely. Every interface you built —
+[Unit 1](../unit-01/) worked inside a codebase you own completely. Every interface you built —
 every seam, every pattern — had a caller you could still reach: if the shape turned out wrong, you
 refactored it and fixed every call site in the same pull request.
 
-This part takes that away, in two steps. First at **module scale**: apply week 4's seam discipline
+This unit takes that away, in two steps. First at **module scale**: apply week 4's seam discipline
 consistently, to whole categories of responsibility instead of one collaborator, and you get layers —
 which is what the courses slice of the project repo has been the whole time, and finally explains why
 week 1's two slices carried such different prices. Then at the **system boundary**: publish an API,
@@ -28,7 +28,7 @@ only the implementation can move — and a layer boundary is exactly what lets i
 
 Slides are posted on the [schedule](../../schedule.md) as we go.
 
-## By the end of this part you can
+## By the end of this unit you can
 
 **Design in layers**
 
@@ -79,6 +79,6 @@ deprecation
 
 ## Where this is going
 
-Part 1 gave you the tools; this part scaled them up to a boundary you can't take back. What
-neither part asked is where the requirements came from in the first place, or how a team changes
+Unit 1 gave you the tools; this unit scaled them up to a boundary you can't take back. What
+neither unit asked is where the requirements came from in the first place, or how a team changes
 one codebase without breaking each other. That's the second half.

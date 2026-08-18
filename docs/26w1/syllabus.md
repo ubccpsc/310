@@ -33,7 +33,7 @@ In this course, you will learn to:
 
 Lectures will take place in-person and will not be recorded.
 
-Attending lecture is important for both your own benefit and for the benefit of the classroom community. Many lectures will have opportunities for active learning where you will be able to exchange ideas and learn from your peers. To prepare for lecture, you should complete the readings listed on the [part page](schedule.md) for that week. Slides will be posted before each lecture.
+Attending lecture is important for both your own benefit and for the benefit of the classroom community. Many lectures will have opportunities for active learning where you will be able to exchange ideas and learn from your peers. To prepare for lecture, you should complete the readings listed on the [unit page](schedule.md) for that week. Slides will be posted before each lecture.
 
 #### Participation
 
