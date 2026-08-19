@@ -18,8 +18,8 @@ CPSC 310.
 
 | Role | Name | Contact | Office hours |
 | :--- | :--- | :--- | :--- |
-| Instructor | Nick Bradley | ncbrad@cs.ubc.ca | *TBD* |
-| Instructor | Kyle Chin | kdchin@cs.ubc.ca | *TBD* |
+| Instructor | Nick Bradley | [ncbrad@cs.ubc.ca](mailto:ncbrad@cs.ubc.ca) | *TBD* |
+| Instructor | Kyle Chin | [kdchin@cs.ubc.ca](mailto:kdchin@cs.ubc.ca) | *TBD* |
 | Course Coordinator | Irene Yuan | [cpsc310-admin@cs.ubc.ca](mailto:cpsc310-admin@cs.ubc.ca) | — |
 | Teaching Assistants | *(TBD: list or link)* | Via Piazza | In your lab section |
 
@@ -85,8 +85,10 @@ listed on the [unit page](./materials/) for that week. Slides will be posted bef
 Every lecture will have **at least two iClicker questions**. Respond to at least one of them and
 that lecture is credited.
 
-Questions are graded by **response, not correctness**. They are your opportunity to engage with the
-material at the moment the concept is trying to stick, so it is worth spending the time to really think through the question.
+Questions are graded by **response, not correctness** — a wrong answer costs you nothing. So think
+each one through and commit to an answer even when you are unsure; being unsure is exactly when the
+question is doing its job. These are your chance to engage with the material at the moment the
+concept is trying to stick.
 
 - Your **four lowest lectures are dropped**. That covers illness, interviews, conflicts, a dead phone battery, and the lecture where the app misbehaves. You do not need to tell us about any of these.
 - You earn credit regardless of which section you attend.
@@ -96,6 +98,10 @@ material at the moment the concept is trying to stick, so it is worth spending t
 
 **Labs are held online**, weekly, starting in week 1, and run in blocks from **Friday to Thursday**.
 There are no rooms assigned; join links are on the [course home page](./).
+
+**A lab session** opens with a **tutorial** on material from that week's lectures. You then have a
+work period for that week's assignment, with TAs available to answer questions. You are not expected
+to finish during the lab although you should be able to make significant progress.
 
 **There are eight graded lab assignments (Lab 0 through Lab 7)**, running in weeks 1–6 and again in
 weeks 10–11. Each is small, directed, and tied to that week's lectures. They are marked largely for
@@ -114,9 +120,16 @@ is deliberate: it is your runway for D3.
 marks. But it is the only rehearsal you get for the Unit 4 material, and the final exam emphasises
 everything from week 8 onward — so it is worth doing for exactly the reason the graded ones are.
 
-**A lab session** opens with a **tutorial** on material from that week's lectures. You then have a
-work period for the assignment, with TAs available to answer questions. You are not expected to
-finish during the lab.
+**Deadlines.** Lab assignments are due **by the start of your next lab**, giving you one week to
+complete them. Because the deadline is relative to your own section, it falls on a different day
+depending on which lab you are registered in — but every section gets the same seven days, and
+assignments are released so that no section is disadvantaged by meeting later in the block.
+
+**Late assignments will not be graded**, although the instructional team is happy to answer
+questions about them afterwards.
+
+**Your lowest lab mark is dropped.** Because of this, no additional accommodations are granted for
+missed labs — see [Academic Concession](#academic-concession).
 
 **From week 8 onward your team also has a check-in** inside the lab block, with a standing agenda:
 
@@ -129,17 +142,6 @@ week's assignment, and later your team check-in. There is not enough room in it 
 project work, and it is not designed to hold any. Once pairs form during the Oct 16–22 lab, you and
 your partner will need to arrange your own working time — that is a real scheduling commitment, and
 it is worth agreeing on it in the first week you are paired rather than the week D4 is due.
-
-**Deadlines.** Lab assignments are due **by the start of your next lab**, giving you one week to
-complete them. Because the deadline is relative to your own section, it falls on a different day
-depending on which lab you are registered in — but every section gets the same seven days, and
-assignments are released so that no section is disadvantaged by meeting later in the block.
-
-**Late assignments will not be graded**, although the instructional team is happy to answer
-questions about them afterwards.
-
-**Your lowest lab mark is dropped.** Because of this, no additional accommodations are granted for
-missed labs — see [Academic Concession](#academic-concession).
 
 Attendance is expected from week 1 onward. If you must miss a lab once teams have formed, post an
 issue to your team repo beforehand outlining what you have completed and what remains.
@@ -160,13 +162,14 @@ from most courses you have taken.
 
 Every deliverable ships **three** artifacts:
 
-1. **Code** — feature-scoped pull requests, with commits relevant to the feature
+1. **The work itself** — code for D1, D2, and D4; a specification for D3
 2. **Design rationale** — what you changed, what you rejected, and what it cost
-3. **Process evidence** — the pull requests, the commit sequence, the specification, the tests
+3. **Process evidence** — the pull requests, the commit sequence, the reviews you left, the tests
 
-A submission that is functionally correct but arrives with no rationale and no process evidence will
-land in the lower band. We are assessing your engineering judgment, and judgment is only visible in
-the argument you make for your decisions.
+Each deliverable is assessed on two fronts: what can be checked automatically, and what requires
+judgment. A submission that passes every automated check but arrives with no rationale and no
+process evidence loses the judgment half. We are assessing your engineering judgment, and judgment
+is only visible in the argument you make for your decisions.
 
 This is not busywork. In practice, nobody will ask you whether your code passes — they will ask why
 you built it that way, and whether it can absorb the change they want next.
@@ -252,7 +255,7 @@ rationale, the same way you would cite any other source you did not arrive at yo
 
 Concessions are considered under UBC's
 [Grounds for Academic Concession](https://vancouver.calendar.ubc.ca/campus-wide-policies-and-regulations/academic-concession).
-To request one, contact the Course Coordinator at [cpsc310-admin@cs.ubc.ca](mailto:cpsc310-admin@cs.ubc.ca), describing which
+To request one, email the Course Coordinator with a description of which
 assessment the request concerns and the relevant circumstances.
 
 Concessions vary by assessment:

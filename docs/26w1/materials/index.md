@@ -48,7 +48,7 @@ because a requirements mistake is priced in everything downstream, not just in r
 
 **[Unit 4 — Software process](unit-04/)** · weeks 12–13 · four lectures
 
-CI and integration · how teams coordinate · process metrics · GenAI and where the cost moves.
+Continuous integration · how teams coordinate · process metrics · GenAI and where the cost moves.
 
 Everything before this you could have done alone. Once several people change one codebase, the
 expensive thing is the interference between changes — which shows up in no single diff.

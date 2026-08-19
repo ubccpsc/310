@@ -34,7 +34,7 @@ Lectures are **Tuesday and Thursday** on the dates listed below. Slides are post
 | 9 | Nov 3, 5 | [Unit 3](./materials/unit-03/) | Where requirements come from · Ethics & IP | **No lab** — fall break *(Nov 9–11)* | **D3** Fri Nov 6 |
 | 10 | Nov 10, 12 | | *(no Tuesday class)* · Information security | [Lab 6](#) — requirements & constraints *(Nov 13–19)* | — |
 | 11 | Nov 17, 19 | | Specification & modeling · *Specification is Right* | [Lab 7](#) — specification *(Nov 20–26)* | — |
-| 12 | Nov 24, 26 | [Unit 4](./materials/unit-04/) | CI & integration · How teams coordinate | [Lab 8](#) — process & metrics — ungraded *(Nov 27–Dec 3)* | **D4** Fri Nov 27 |
+| 12 | Nov 24, 26 | [Unit 4](./materials/unit-04/) | Continuous integration · How teams coordinate | [Lab 8](#) — process & metrics — ungraded *(Nov 27–Dec 3)* | **D4** Fri Nov 27 |
 | 13 | Dec 1, 3 | | Process metrics · GenAI & where the cost moves | — | — |
 
 ⚠ **Labs are cancelled on Wednesday September 30th and Monday October 12th.** You may attend any other lab section if your section is cancelled. Lab assignments are still due by your next regularly scheduled lab.
