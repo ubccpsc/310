@@ -13,7 +13,7 @@ Lectures are **Tuesday and Thursday** on the dates listed below. Slides are post
 | :--- | :--- | :--- |
 | **D1** | Fri 25 Sep, 18:00 | Drop in a feature *(solo)* |
 | **D2** | Fri 16 Oct, 18:00 | Make it testable *(solo)* |
-| **Midterm** | **Thu 29 Oct, 19:00–21:00** | In person, paper. Covers through Thu 22 Oct |
+| **Midterm** | **Thu 29 Oct, 19:00–21:00** | In person, paper. Covers through Thu 15 Oct |
 | *Pairs form* | During the Oct 16–22 lab | Register with your TA, same lab section |
 | **D3** | Fri 6 Nov, 18:00 | Design v3 *(pairs)* |
 | **D4** | Fri 27 Nov, 18:00 | Build it *(pairs)* |
@@ -29,12 +29,12 @@ Lectures are **Tuesday and Thursday** on the dates listed below. Slides are post
 | 4 | Sep 29, Oct 1 | | What makes code testable · Seams & dependency inversion | [Lab 4](#) — testability & seams *(Oct 2–8)* | — |
 | 5 | Oct 6, 8 | | Patterns: Adapter & Composite · Patterns: Factory & Decorator | [Lab 5](#) — design patterns *(Oct 9–15)* ⚠ Mon Oct 12 | — |
 | 6 | Oct 13, 15 | [Unit 2](./materials/unit-02/) | Layered architecture · The testing pyramid | [Lab 6](#) — layers, test strategy & code review *(Oct 16–22)* | **D2** Fri Oct 16 |
-| 7 | Oct 20, 22 | | API design · Evolving a published API | Review — ungraded *(Oct 23–29)* | — |
+| 7 | Oct 20, 22 | | API design · Evolving a published API | [Lab 7](#) — API design & evolution — ungraded *(Oct 23–29)* | — |
 | 8 | Oct 27, 29 | — | Pricing a change — synthesis & midterm review · *(no Thursday class)* | Project time — team check-in *(Oct 30–Nov 5)* | **Midterm** Thu Oct 29 |
 | 9 | Nov 3, 5 | [Unit 3](./materials/unit-03/) | Where requirements come from · Ethics & IP | **No lab** — fall break *(Nov 9–11)* | **D3** Fri Nov 6 |
-| 10 | Nov 10, 12 | | *(no Tuesday class)* · Information security | [Lab 7](#) — requirements & constraints *(Nov 13–19)* | — |
-| 11 | Nov 17, 19 | | Specification & modeling · *Specification is Right* | [Lab 8](#) — specification *(Nov 20–26)* | — |
-| 12 | Nov 24, 26 | [Unit 4](./materials/unit-04/) | Continuous integration · How teams coordinate | [Lab 9](#) — process & metrics — ungraded *(Nov 27–Dec 3)* | **D4** Fri Nov 27 |
+| 10 | Nov 10, 12 | | *(no Tuesday class)* · Information security | [Lab 8](#) — requirements & constraints *(Nov 13–19)* | — |
+| 11 | Nov 17, 19 | | Specification & modeling · *Specification is Right* | [Lab 9](#) — specification *(Nov 20–26)* | — |
+| 12 | Nov 24, 26 | [Unit 4](./materials/unit-04/) | Continuous integration · How teams coordinate | [Lab 10](#) — process & metrics — ungraded *(Nov 27–Dec 3)* | **D4** Fri Nov 27 |
 | 13 | Dec 1, 3 | | Process metrics · GenAI & where the cost moves | — | — |
 
 ⚠ **Labs are cancelled on Wednesday September 30th and Monday October 12th.** You may attend any other lab section if your section is cancelled. Lab assignments are still due by your next regularly scheduled lab.

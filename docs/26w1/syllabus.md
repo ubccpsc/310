@@ -92,7 +92,13 @@ concept is trying to stick.
 
 - Your **four lowest lectures are dropped**. That covers illness, interviews, conflicts, a dead phone battery, and the lecture where the app misbehaves. You do not need to tell us about any of these.
 - You earn credit regardless of which section you attend.
-- The bonus is `5 × min(1, credited lectures / (total lectures − 4))`.
+- Your participation mark is `min(1, credited lectures / (total lectures − 4))`, worth **5% of
+  your final grade**.
+
+**Opting out.** Participation is optional. Email the Course Coordinator by **Friday 18 September,
+18:00** to request the that your 5% be moved to the final exam, making it worth 45% instead of
+40%. The choice applies to the whole term and cannot be reversed after that date. If you do
+nothing, participation counts.
 
 ### Labs {#labs}
 
@@ -103,22 +109,31 @@ There are no rooms assigned; join links are on the [course home page](./).
 work period for that week's assignment, with TAs available to answer questions. You are not expected
 to finish during the lab although you should be able to make significant progress.
 
-**There are eight graded lab assignments (Lab 1 through Lab 8)**, running in weeks 1–6 and again in
+**There are eight graded lab assignments — Labs 1–6, 8, and 9**, running in weeks 1–6 and again in
 weeks 10–11. Each is small, directed, and tied to that week's lectures. They are marked largely for
 completion — the point is that you attempt them, not that you get them right the first time.
 
 Together they are worth 10% of your grade, and that number understates them. The exams are worth
-70%, and their questions have the same shape as the lab assignments: here is some code, identify the
-design problem, propose a change, justify it. **The labs are where you rehearse that**, with help on
-hand and very little at stake. Treat them as practice for the exams rather than as 10% of your grade
-and you will be spending your time correctly.
+70%, and they ask you to do what the lab assignments ask: take code or a design you have not seen,
+say what is wrong with it, and justify what you would change. **The labs are where you rehearse
+that**, with help on hand and very little at stake. Treat them as practice for the exams rather than
+as 10% of your grade and you will be spending your time correctly.
 
-Weeks 7–9 have no assignment — a review week, a project working block, and fall break — and that gap
-is deliberate: it is your runway for D3.
+Weeks 8–9 have no assignment — a project working block and fall break — and that gap is deliberate:
+it is your runway for D3.
 
-**Lab 9, in week 12, is ungraded practice.** It lands the same week D4 is due, so it carries no
-marks. But it is the only rehearsal you get for the Unit 4 material, and the final exam emphasises
-everything from week 8 onward — so it is worth doing for exactly the reason the graded ones are.
+**Two labs carry no marks: Lab 7 in week 7, and Lab 10 in week 12.** Both are worth doing for
+exactly the reason the graded ones are.
+
+**Lab 7** rehearses API design and evolution. That material is not on the midterm — see below for
+why — so this lab is the only rehearsal you get for a topic the final exam does emphasise, and it
+is the one Unit 2 topic with no graded assignment of its own. It also carries the tutorial on
+writing and validating an OpenAPI document, which you will need for D3 — the deliverable is due
+before the specification lectures, so this is where the mechanics are taught.
+
+**Lab 10** lands the same week D4 is due, which is why it carries nothing. But it is the only
+rehearsal you get for the Unit 4 material, and the final exam emphasises everything from week 7
+onward.
 
 **Deadlines.** Lab assignments are due **by the start of your next lab**, giving you one week to
 complete them. Because the deadline is relative to your own section, it falls on a different day
@@ -180,35 +195,34 @@ Lectures, labs, and the project are all formative approaches designed to help yo
 material. To assess your understanding, you will write two paper-based formal assessments. Both are
 invigilated, and no external notes or devices are permitted.
 
+Exams test whether you can apply the course's ideas to material you have not seen before.
+Memorizing definitions will not be sufficient. Expect several kinds of questions, but in
+all of them you will be asked to justify your answer, not merely to give it. Additional details
+about the format of the exams will be provided closer to the exam date..
+
 #### Midterm
 
 There is one in-person midterm scheduled for **Thursday October 29th, 19:00–21:00** *(TBD: location)*
-covering all content up to and including the end of Week 7 (Thursday, October 22nd).
-
-Questions will be the same shape as those in lab and the reflection questions in the project: you
-are shown code and asked to identify a design problem, propose a change, and justify it. Memorizing
-definitions will not be sufficient; recognizing a problem in unfamiliar code will be.
+covering all content up to and including the end of Week 6 (Thursday, October 15th).
 
 #### Final Exam
 
 The final exam is scheduled by the university and is 2.5 hours in duration. It is cumulative, with
-an emphasis on material covered in Week 8 onwards. Questions will be similar in style to the
-midterm.
+an emphasis on material covered in Week 7 onwards.
 
 ## Grading
 
 | Component | Weight |
 | :--- | :--- |
+| Participation | 5% |
 | Lab assignments | 10% |
 | Project | 20% |
-| Midterm | 30% |
+| Midterm | 25% |
 | Final exam | 40% |
 
-**In-class participation** earns up to a **5% bonus on your final exam grade**, to a maximum grade
-of 100%. See [Participation](#participation) for how it is calculated.
-
-The full week-by-week breakdown of topics, readings, labs, and deadlines is on the
-[schedule](./schedule).
+If you opt out of participation in the first two weeks, the 5% moves to the final exam, which is
+then worth 45%. See [Participation](#participation) for how the mark is calculated and how to opt
+out.
 
 ## Policies
 
@@ -242,8 +256,8 @@ explain why any change is in your pull request. "The model wrote it" is not an a
 this here?*, and it is not a defence for a bug.
 
 **On your reasoning.** Every deliverable asks you to write down what you changed, what you rejected,
-and what it cost. Writing that down **is the practice** for the exams, where the questions have the
-same shape and the tool is not in the room. We are not looking for a polished piece of writing, we
+and what it cost. Writing that down **is the practice** for the exams, where you are asked the same
+thing and the tool is not in the room. We are not looking for a polished piece of writing, we
 are looking for evidence of your thinking, communicated clearly. Hand that part to a model and the
 code still ships, but you have skipped the practice — and you find out on the midterm whether that
 mattered.
@@ -260,6 +274,7 @@ assessment the request concerns and the relevant circumstances.
 
 Concessions vary by assessment:
 
+- **Participation:** we are unable to offer concessions for participation — four lectures are already dropped, and you may opt out entirely in the first two weeks. See [Participation](#participation).
 - **A missed lab:** we are unable to offer concessions for missed labs — your lowest lab mark is already dropped. See the [lab policy](#labs).
 - **A missed project deliverable:** contact the Course Coordinator within one week of the deadline. If granted, the weight shifts to the final exam. As the project is cumulative, you will still be expected to make up the work.
 - **A missed midterm:** contact the Course Coordinator within one week of the midterm. If granted, the weight shifts to the final exam.
