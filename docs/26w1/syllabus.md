@@ -103,7 +103,7 @@ There are no rooms assigned; join links are on the [course home page](./).
 work period for that week's assignment, with TAs available to answer questions. You are not expected
 to finish during the lab although you should be able to make significant progress.
 
-**There are eight graded lab assignments (Lab 0 through Lab 7)**, running in weeks 1–6 and again in
+**There are eight graded lab assignments (Lab 1 through Lab 8)**, running in weeks 1–6 and again in
 weeks 10–11. Each is small, directed, and tied to that week's lectures. They are marked largely for
 completion — the point is that you attempt them, not that you get them right the first time.
 
@@ -116,7 +116,7 @@ and you will be spending your time correctly.
 Weeks 7–9 have no assignment — a review week, a project working block, and fall break — and that gap
 is deliberate: it is your runway for D3.
 
-**Lab 8, in week 12, is ungraded practice.** It lands the same week D4 is due, so it carries no
+**Lab 9, in week 12, is ungraded practice.** It lands the same week D4 is due, so it carries no
 marks. But it is the only rehearsal you get for the Unit 4 material, and the final exam emphasises
 everything from week 8 onward — so it is worth doing for exactly the reason the graded ones are.
 
