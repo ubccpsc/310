@@ -50,13 +50,18 @@ structures the term.
 
 In this course, you will learn to:
 
-1. Evaluate software engineering processes used to build modern industrial-calibre systems by justifying their benefits and tradeoffs.
+1. Measure the cost of change of code and reason about how low-level code design influences cost of change.
+2. Extend emergent design patterns to system-level API designs and evolve APIs safely.
+3. Elicit, deconstruct, and refine requirements and devise software architectures to support functional requirements and quality attributes.
+4. Analyze the tradeoffs present in modern collaborative software engineering processes by evaluating their socio-technical outcomes.
+
+<!-- 1. Evaluate software engineering processes used to build modern industrial-calibre systems by justifying their benefits and tradeoffs.
 2. Elicit, deconstruct, and refine functional requirements and quality attributes such that they are described succinctly, completely, and precisely.
 3. Devise and justify high- and low-level designs to support a given set of requirements and in support of future evolutionary needs.
 4. Iteratively derive implementations of a design of reasonable complexity incorporating emergent design implications, and applying code-level restructuring for the sake of facilitating changes.
 5. Carry out the implementation of a design incorporating ethical and security implications of code-level choices and software process and methodological approaches.
 6. Independently acquire and apply modern and unfamiliar technology and language stacks.
-7. Validate systems using both black-box and glass-box approaches to reason about, and improve the quality of a software system.
+7. Validate systems using both black-box and glass-box approaches to reason about, and improve the quality of a software system. -->
 
 ## Learning Materials
 
@@ -71,14 +76,29 @@ You will need a computer capable of running Node.js and a modern editor.
 
 ## Course Structure
 
+Learning is only possible by thinking, doing, and reflecting.
+This philosophy is backed up by science: the more you practice, the more you learn.
+Conversely, the more you offload to AI, the less you learn.
+CPSC310 is structured to support this philosophy: all work you do in lecture, lab, or on the project is directly correlated with (or sometimes even exactly the same as) the type of problem you will see on any assessment.
+Each problem follows a similar recipe:
+1. Analyze the situation using a particular analysis framework.
+2. Consider several alternative solutions and their tradeoffs.
+3. Implement what you deem to be the best solution.
+4. Reflect and discuss the process and results.
+
+Most of our practice is low stakes and marked primarily for completion: meaning, you will get out of the problem as much as you choose to engage with and practice it in earnest.
+
 ### Lectures
 
-Lectures take place in person and are not recorded.
+Lectures take place in person, are not recorded, and are mandatory to attend.
+Each lecture will contain practice opportunities in the form of interactive activities and iClicker qustions.
+These activities and questions will be similarly or exactly structured like questions you will see on assessments.
+Thus, active attendance and engagement is crucial for you to receive the learning benefits.
 
-Attending lecture is important for both your own benefit and for the benefit of the classroom
+<!-- Attending lecture is important for both your own benefit and for the benefit of the classroom
 community. Many lectures will have opportunities for active learning where you will be able to
 exchange ideas and learn from your peers. To prepare for lecture, you should complete the readings
-listed on the [unit page](./materials/) for that week. Slides will be posted before each lecture.
+listed on the [unit page](./materials/) for that week. Slides will be posted before each lecture. -->
 
 #### Participation
 
@@ -90,55 +110,45 @@ each one through and commit to an answer even when you are unsure; being unsure 
 question is doing its job. These are your chance to engage with the material at the moment the
 concept is trying to stick.
 
+We understand that life happens, and attending CPSC310 may not be the most important thing you have going on:
 - Your **four lowest lectures are dropped**. That covers illness, interviews, conflicts, a dead phone battery, and the lecture where the app misbehaves. You do not need to tell us about any of these.
-- You earn credit regardless of which section you attend.
+<!-- - You earn credit regardless of which section you attend. -->
 - Your participation mark is `min(1, credited lectures / (total lectures − 4))`, worth **5% of
   your final grade**.
-
-**Opting out.** Participation is optional. Email the Course Coordinator by **Friday 18 September,
-18:00** to request the that your 5% be moved to the final exam, making it worth 45% instead of
-40%. The choice applies to the whole term and cannot be reversed after that date. If you do
-nothing, participation counts.
+- If you find that attending lecture does not fit your needs, you may request the that your 5% participation weight be moved to the final exam instead, making the final worth 45% of your course grade. To do this, email the Course Coordinator by **Friday 18 September,
+18:00**. The choice applies to the whole term and cannot be reversed after that date. 
 
 ### Labs {#labs}
 
 **Labs are held online**, weekly, starting in week 1, and run in blocks from **Friday to Thursday**.
-There are no rooms assigned; join links are on the [course home page](./).
+There are no rooms assigned; join links are on the [course home page](./) and attendance is mandatory.
 
 **A lab session** opens with a **tutorial** on material from that week's lectures. You then have a
 work period for that week's assignment, with TAs available to answer questions. You are not expected
 to finish during the lab although you should be able to make significant progress.
 
 **There are eight graded lab assignments — Labs 1–6, 8, and 9**, running in weeks 1–6 and again in
-weeks 10–11. Each is small, directed, and tied to that week's lectures. They are marked largely for
-completion — the point is that you attempt them, not that you get them right the first time.
-
-Together they are worth 10% of your grade, and that number understates them. The exams are worth
-70%, and they ask you to do what the lab assignments ask: take code or a design you have not seen,
-say what is wrong with it, and justify what you would change. **The labs are where you rehearse
-that**, with help on hand and very little at stake. Treat them as practice for the exams rather than
-as 10% of your grade and you will be spending your time correctly.
-
-Weeks 8–9 have no assignment — a project working block and fall break — and that gap is deliberate:
-it is your runway for D3.
-
-**Two labs carry no marks: Lab 7 in week 7, and Lab 10 in week 12.** Both are worth doing for
-exactly the reason the graded ones are.
-
-**Lab 7** rehearses API design and evolution. That material is not on the midterm — see below for
-why — so this lab is the only rehearsal you get for a topic the final exam does emphasise, and it
-is the one Unit 2 topic with no graded assignment of its own. It also carries the tutorial on
-writing and validating an OpenAPI document, which you will need for D3 — the deliverable is due
-before the specification lectures, so this is where the mechanics are taught.
-
-**Lab 10** lands the same week D4 is due, which is why it carries nothing. But it is the only
-rehearsal you get for the Unit 4 material, and the final exam emphasises everything from week 7
-onward.
+weeks 10–11. Each is small, directed, and tied to that week's lectures.
 
 **Deadlines.** Lab assignments are due **by the start of your next lab**, giving you one week to
 complete them. Because the deadline is relative to your own section, it falls on a different day
 depending on which lab you are registered in — but every section gets the same seven days, and
 assignments are released so that no section is disadvantaged by meeting later in the block.
+
+**Marking.**
+The purpose of labs is to give you opportunities to practice and work through your confusions with your peers and TAs, not that you get them all correct the first time.
+Lab assignments are marked largely for completion and are worth just 10% of your course grade.
+We encourage you to use them as learning opportunities and ask TAs and your peers about confusions or for feedback.
+
+The exams are worth
+70%, and they ask you to do what the lab assignments ask: take code or a design you have not seen,
+say what is wrong with it, and justify what you would change.
+**The labs are where you rehearse
+that**, with help on hand and very little at stake.
+Treat them as practice for the exams rather than
+as 10% of your grade and you will be spending your time correctly.
+
+
 
 **Late assignments will not be graded**, although the instructional team is happy to answer
 questions about them afterwards.
@@ -157,9 +167,6 @@ week's assignment, and later your team check-in. There is not enough room in it 
 project work, and it is not designed to hold any. Once pairs form during the Oct 16–22 lab, you and
 your partner will need to arrange your own working time — that is a real scheduling commitment, and
 it is worth agreeing on it in the first week you are paired rather than the week D4 is due.
-
-Attendance is expected from week 1 onward. If you must miss a lab once teams have formed, post an
-issue to your team repo beforehand outlining what you have completed and what remains.
 
 ### Project
 
@@ -195,10 +202,16 @@ Lectures, labs, and the project are all formative approaches designed to help yo
 material. To assess your understanding, you will write two paper-based formal assessments. Both are
 invigilated, and no external notes or devices are permitted.
 
-Exams test whether you can apply the course's ideas to material you have not seen before.
-Memorizing definitions will not be sufficient. Expect several kinds of questions, but in
-all of them you will be asked to justify your answer, not merely to give it. Additional details
-about the format of the exams will be provided closer to the exam date..
+Exams test whether you can apply the course's concepts to material you have not seen before.
+Memorizing definitions will not be sufficient: you will need to be able to read and comprehend code, apply concepts, and articulate the tradeoffs you considered.
+Expect several kinds of questions, but in
+all of them you will be asked to justify your answer, not merely to give it.
+Each kind of question will be something you have practiced in lecture, lab tutorials, lab assignments or the project.
+Additional details
+about the format of the exams will be provided closer to the exam date.
+
+Because we are assessing what you have learned (not what you can create), these assessments will occur on paper (and notably, without access to AI).
+
 
 #### Midterm
 
@@ -246,20 +259,20 @@ course and notation on your transcript. The official policies are at:
 
 ### Use of Generative AI
 
-**You may use generative AI tools on lab assignments and project deliverables.** You cannot use them
+**You may use generative AI tools on lab assignments and project deliverables at your own risk.** You cannot use them
 on the midterm or the final, which are on paper, invigilated, and permit no devices.
 
-That gap is the entire policy, and it is worth understanding rather than just following.
 
-**On code.** Use whatever helps. You remain accountable for what you submit and you must be able to
+**On code.** Like you will in industry, you remain accountable for what you submit and you must be able to
 explain why any change is in your pull request. "The model wrote it" is not an answer to *why is
-this here?*, and it is not a defence for a bug.
+this here?*, and it is not a defence for a bug. Keep in mind you will be responsible for both reading and writing code on the assessments without AI tools. In these, time is of the essence! The more you have practiced reading and writing code yourself, the less time pressure you will feel.
 
 **On your reasoning.** Every deliverable asks you to write down what you changed, what you rejected,
-and what it cost. Writing that down **is the practice** for the exams, where you are asked the same
-thing and the tool is not in the room. We are not looking for a polished piece of writing, we
-are looking for evidence of your thinking, communicated clearly. Hand that part to a model and the
-code still ships, but you have skipped the practice — and you find out on the midterm whether that
+and what it cost.
+Writing that down is only the output: the true practice of this exercise happens when you do the thinking and reasoning yourself.
+We are not looking for a polished piece of writing, we
+are looking for evidence of your thinking, communicated clearly.
+Using AI to generate your reasoning and you have skipped the practice — and you find out on the midterm whether that
 mattered.
 
 **On citation.** Where a tool contributed substantively to a design decision, say so in your
