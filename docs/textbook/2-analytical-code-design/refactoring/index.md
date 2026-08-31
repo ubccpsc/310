@@ -22,6 +22,13 @@ Technical debt often triggers developers to think about refactoring in one of th
 These all represent changes that _should_ be easy, but it turns out to be challenging.
 The technical debt metaphor encourages longer-range thinking about system health while allowing the quick path to be taken sometimes when it is deemed to be worth the future risk. 
 
+One way to avoid extraneous refactorings is to think about the 'rule of three.'
+This says that the first time you add a new feature, you just do it the simplest way you can.
+The second time you need to make the same kind of change, you do it again (but you cry inside and make a mental note of the duplicate change).
+The third time you encounter the same change, you refactor.
+This prevents preemptive refactoring, which can sometimes make the system harder to understand, even if it makes it easier to extend in the future (this can be thought of as just-in-time abstraction).
+
+### How to refactor
 Refactoring is a risky activity: the internal structure of the system is being changed (sometimes drastically) without adding any new features or fixes.
 From a customer's perspective, this means refactoring is all risk and no reward as the direct beneficiaries of a refactoring are usually only the development team itself.
 Effective testing is crucial for being able to confidently perform refactorings.
@@ -32,21 +39,16 @@ The typical refactoring process looks like the following:
 3. Perform the refactoring.
 4. Run the full test suite again and ensure the system is functioning the same as before the refactoring.
 
+### Downsides of refactoring
 Beyond customer risk, there are other negative consequences for performing a refactoring:
 
 * Refactorings can impair existing developer mental models of the system (wide-ranging refactorings can impact many people) and can make the system harder to understand if they add new abstraction layers.
 * Refactorings are expensive since they take developer time that could otherwise be spent developing new features.
 * It is easy to get carried away when refactoring (similar to the second-system effect). Instead of a simple refactoring, a developer can engage in a refactoring campaign that can become much larger than is necessary to provide the original intended benefits.
 
-One way to avoid extraneous refactorings is to think about the 'rule of three.'
-This says that the first time you add a new feature, you just do it the simplest way you can.
-The second time you need to make the same kind of change, you do it again (but you cry inside and make a mental note of the duplicate change).
-The third time you encounter the same change, you refactor.
-This prevents preemptive refactoring, which can sometimes make the system harder to understand, even if it makes it easier to extend in the future (this can be thought of as just-in-time abstraction).
-
-Most development environments provide extensive support for refactoring tools.
+<!-- Most development environments provide extensive support for refactoring tools.
 The degree of support depends on the language and is generally best for statically typed languages (like Java and C#) as it makes it easier for the IDE to find all relevant program locations for making a change.
-While IDE support is great, and you should use it, in practice the most commonly used refactoring tool is for _rename_ refactoring; most other refactorings end up being undertaken manually (usually due to a lack of knowledge about the tools, but often because of the perception that the tools do not save that much time).
+While IDE support is great, and you should use it, in practice the most commonly used refactoring tool is for _rename_ refactoring; most other refactorings end up being undertaken manually (usually due to a lack of knowledge about the tools, but often because of the perception that the tools do not save that much time). -->
 
 ## Kinds of Refactors
 
@@ -139,11 +141,22 @@ class CourseParser implements IParser {
 }
 ```
 
+Each refactor is motivated by and affects cohesion, coupling, or both.
+For example, in the `Invoice` example, the main problem is cohesion: `printOwing()` executes two concepts (printing the banner and calculating `owing` that linked by *logic* because they should happen at the same time, and `timing`, because the banner should be printed before the `owing`).
+However, the calculation of the `owing` only owes cohesion to the printing of the `owing` and not the printing of the banner.
+This motivates our refactor, which is to extract the calculation of the owing to its own method and improve our cohesion.
+
+The refactoring 
+In the `IParser`, the main problem is coupling.
+The refactoring creates `RoomsParser` and `CourseParser` which are linked to any client code by a connascence of `Type`: any client code now only has a bond to the `IParser` type, instead of each individual parser's code. 
+Therefore, we can say that the coupling has improved (become *less* tightly coupled).
+
+
 ## Code Readability
 <Youtube id="TZ7mfKJa7Sw" />
 
 
-## Code smells
+<!-- ## Code smells
 
 <Youtube id="oqqaDaQ3m24" />
 
@@ -189,7 +202,7 @@ Some common smells are listed below, along with the _refactorings_ that are ofte
 
 Software is built iteratively over a long period of time.
 Even good past design decisions will need to be updated as requirements change or the environment changes.
-Smells are just one way to identify such problems, and refactorings are only one way (although a common one) to improve the structure of a system.
+Smells are just one way to identify such problems, and refactorings are only one way (although a common one) to improve the structure of a system. -->
 
 ## References
 

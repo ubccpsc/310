@@ -1,5 +1,5 @@
 ---
-weight: 1
+weight: 4
 title: "Design Principles"
 ---
 
@@ -8,52 +8,6 @@ Design principles are high level guidelines that can help ensure our designs are
 ## Designing for evolution
 
 Designing systems in a flexible manner is crucial, given that all successful systems evolve over time. Making intentional decisions about the coupling within our system and cohesion between program elements can help guide us towards ensuring that our designs are amenable to future evolution and defect fixing.
-
-### Coupling
-
-<Youtube id="I9rEvxiWF9I" />
-
-Coupling is a property that indicates the strength of connections between different program elements. Strong coupling is problematic because it negatively influences the evolvability and maintainability of a program. There are several reasons for this:
-
-* Coupled code makes it easier for errors in one part of the system to propagate to other unrelated parts of the system.
-
-* Coupling increases the degree to which a single bug fix or feature addition is scattered across the codebase.
-
-* Code that is tightly coupled is much harder to reuse independently than code which is loosely coupled.
-
-* It is harder to understand a source code element that is coupled to other elements because individual elements cannot be considered (and understood) in isolation.
-
-Two program elements are considered independent if they can function without the presence of the other. It is important to remember that any non-trivial system _requires_ that there be some coupling between elements. The goal is not to eliminate it but to make the coupling be as loose as possible. There are three primary ways to decrease the coupling between program elements:
-
-* **Minimize the number of interfaces between elements**: The more interfaces two program elements need to share, the more tightly they are coupled to each other. 
-
-* **Minimize the complexity of interfaces**: Since some coupling is often needed, reducing the complexity of this coupling to its core elements can make the interaction between the program elements clearer and easier to reason about and evolve.
-
-* **Avoid control flow coupling**: It can often be convenient to pass objects that control the flow of computation within another element.  While this is ok if the element being passed is some type of data structure, it can be more problematic if the control flow is being influenced by simple control flow flags (e.g., some kind of `boolean` flag that takes one program path over another).
-
-The flow chart below can be helpful for reasoning about the coupling between program elements. One thing to note is that not all coupling is equally detrimental: coupling elements by simple data types is less problematic than coupling them through global variables (common coupling) or internal field access (content coupling).
-
-![Coupling flowchart](coupling_flow.png)
-
-<Youtube id="QZAacpnjVVg" />
-
-<!-- TODO: describe levels -->
-
-### Cohesion
-
-<Youtube id="oMJNS6mvhQU" />
-
-
-Cohesion is a property that indicates how focused our program elements are on performing a single complete task. This is best thought of in terms of classes in object-oriented design. In this space, cohesion measures how well the elements within a class belong together. Classes with low cohesion are responsible for a wide variety of tasks; these classes are harder to reason about as they often have many competing concerns within their implementation that might conflict. This can cause maintenance problems because changes to fix one defect within a class might actually be by design for another feature provided by the class. The larger a class grows in scope, the more likely this kind of problem is to be encountered.
-
-Cohesive classes generally have a small set of private fields that make sense to the majority of the public methods within the class; if there are fields within the class that are only used by a small fraction of the public methods it may be a sign that the functionality provided by those methods and the private field may not be cohesive with the overall functionality of the class.
-
-Since cohesive classes are smaller, they lead to a proliferation of classes within a system. While this might make it harder to find the right class within the system, it greatly eases how hard it is to understand that class and simplifies any future bug fixes or feature additions that may be required.
-
-The flow chart below can be used to reason about the kind of cohesion within a design. As with the coupling flow chart above, some kinds of cohesion are better than others. Thinking about the cohesiveness of our program elements can help us to understand when further decomposition of our designs might be helpful and will also motivate the organization of our program elements into their most appropriate subsystems.
-
-
-![Cohesion flowchart](cohesion_flow.png)
 
 <Youtube id="gkCIOUbu81o" />
 

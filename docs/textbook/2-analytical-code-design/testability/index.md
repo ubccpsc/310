@@ -1,6 +1,6 @@
 ---
 title: "Testability"
-weight: 2
+weight: 6
 ---
 
 <Youtube id="jwL1vkl-CoY" />
@@ -27,7 +27,8 @@ Sometimes the CUT can be invoked by a test but its outcome cannot be observed. F
 
 <Youtube id="Z93-c4ngxGw" />
 
-Being able to isolate a fault within the code under test is crucial to be able to quickly determine what has caused a failure so it can be resolved. This is challenging in large modern systems due to the number of (often third party) dependencies software systems have. For example, if a data access routine fails is it the logic in the routine or is it a failure in the underlying database? At its simplest level, isolateability can be increased by decomposing larger functions into smaller more self-contained functions that can be tested independently.
+Together, controllability and observability give us what we really want: isolatability, or the ability to isolate a fault within the code under test.
+Isolatability is crucial to be able to quickly determine what has caused a failure so it can be resolved. This is challenging in large modern systems due to the number of (often third party) dependencies software systems have. For example, if a data access routine fails is it the logic in the routine or is it a failure in the underlying database? At its simplest level, isolateability can be increased by decomposing larger functions into smaller more self-contained functions that can be tested independently.
 
 Sometimes code will have complex dependencies, requiring isolation through simulation. In simulation-based environments code dependencies are _mocked_ or _stubbed_ whereby they are replaced with developer-created fake components that take known inputs and return known values (e.g., a ```MockLoginRejectController```) would always return false for a ```login(user, pass)``` without needing to check a user store, database, or external system. In this way the developer can test their code that uses ```login(..)``` and ensure it handles the false case correctly without fear that a bug in the real login controller may return an incorrect or inconsistent value. In addition to isolation, mocking also greatly increases performance and makes components less prone to non-determinism as the result being returned is usually fixed and not dependent on some external complex computation. Mocking can also make it possible to test program states that would otherwise be hard to trigger in practice (for instance if you want to test a situation where a remote service is down you can have a ```MockTimeoutService``` that just does not respond to requests).
 
@@ -35,11 +36,12 @@ Sometimes code will have complex dependencies, requiring isolation through simul
  <Youtube id="NMuhE-XnFe8" /> 
 :::
 
-### Automatability
+<!-- TODO: move to testing pyramid -->
+<!-- ### Automatability
 
 <Youtube id="Q83W5zH8LUY" />
 
-The above properties all aim to support making it possible to automate the execution of the test suite. Suites that can run without human intervention are much more likely to be executed than those that must be manually performed. They are also more likely to be run after a system has been released in the form of a regression suite to ensure that a system continues to execute as expected. All systems exist within organizations, even if the software does not change, external dependencies, libraries, frameworks, and computing infrastructure will which will require continuous validation of even deployed systems. The economic benefits or automation are also clear: even if it takes 5 hours to configure an automated test case that can be performed in 30 minutes, the suite will break-even (in terms of time) after only 10 test iterations. Automated suites can be run online as changes are made to a system, after every commit, nightly, or weekly, depending on the needs of the system. These suites also provide global visibility of the state of the system; if the suite has been 'green' for a week a team might feel more comfortable about deploying it than for a system whose suite has been failing for the same period of time.
+The above properties all aim to support making it possible to automate the execution of the test suite. Suites that can run without human intervention are much more likely to be executed than those that must be manually performed. They are also more likely to be run after a system has been released in the form of a regression suite to ensure that a system continues to execute as expected. All systems exist within organizations, even if the software does not change, external dependencies, libraries, frameworks, and computing infrastructure will which will require continuous validation of even deployed systems. The economic benefits or automation are also clear: even if it takes 5 hours to configure an automated test case that can be performed in 30 minutes, the suite will break-even (in terms of time) after only 10 test iterations. Automated suites can be run online as changes are made to a system, after every commit, nightly, or weekly, depending on the needs of the system. These suites also provide global visibility of the state of the system; if the suite has been 'green' for a week a team might feel more comfortable about deploying it than for a system whose suite has been failing for the same period of time. -->
 
 ### Summary
 

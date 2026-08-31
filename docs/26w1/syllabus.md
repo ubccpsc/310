@@ -85,6 +85,9 @@ Most of our practice is low stakes and marked primarily for completion: meaning,
 Lectures take place in person, are not recorded, and your attendance is expected.
 Each lecture will contain practice opportunities in the form of interactive activities and iClicker qustions that will be similar to what you will see on assessments.
 Thus, active attendance and engagement is crucial for you to receive the learning benefits.
+Lecture will not comprehensively cover everything you will be responsible for on an assessment.
+Our goal is to give you practice with the underlying core concepts so you can apply them to similar examples.
+The course [textbook](../textbook/) gives full definitions for topics introduced in lecture.
 
 #### Participation
 
@@ -266,8 +269,7 @@ rationale, the same way you would cite any other source you did not arrive at yo
 
 Concessions are considered under UBC's
 [Grounds for Academic Concession](https://vancouver.calendar.ubc.ca/campus-wide-policies-and-regulations/academic-concession).
-To request one, email the Course Coordinator with a description of which
-assessment the request concerns and the relevant circumstances.
+To request one, please fill out [this form](https://ubc.ca1.qualtrics.com/jfe/form/SV_556JGIKU0jaNmLk) and we will respond to you as soon as possible.
 
 Concessions vary by assessment:
 
