@@ -50,10 +50,10 @@ structures the term.
 
 In this course, you will learn to:
 
-1. Measure the cost of change of code and reason about how low-level code design influences cost of change.
-2. Extend emergent design patterns to system-level API designs and evolve APIs safely.
-3. Elicit, deconstruct, and refine requirements and devise software architectures to support functional requirements and quality attributes.
-4. Analyze the tradeoffs present in modern collaborative software engineering processes by evaluating their socio-technical outcomes.
+1. Reason about how a codebase's structure influences the cost of changing it.
+2. Use abstraction to make changing a system cheaper at increasingly larger scales.
+3. Elicit, deconstruct, and refine requirements, and write specifications precise enough to check.
+4. Evaluate the socio-technical trade-offs in collaborative software engineering processes.
 
 ## Learning Materials
 
