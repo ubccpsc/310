@@ -7,7 +7,7 @@ weight: 1
 
 Several design patterns are designed below, these descriptions are not exhaustive.
 
-## Observer: Simplifying state update notifications.
+<!-- ## Observer: Simplifying state update notifications.
 
 When a user makes a change to a program, they expect the change to be consistently reflected across the entire system. For example, if you delete an image file from a photo viewer, one would expect the thumbnail to disappear, the photo to be removed from the gallery view, and the total number of files in the status bar to be updated to reflect the deletion. A poor initial design for this problem can be seen in the figure below. While for this one action this design might not seem like a big deal, for a real application with hundreds of actions and dozens of views, the design could require dozens of classes to be modified each time a new view was added.
 
@@ -22,7 +22,7 @@ In this system, many different model elements would likely be `Observable`: PDF 
 
 ![observer-based delete](dp_observer2.png)
 
-It is important to note that there is still _some_ coupling in this design: observable objects must know about the `Observer` interface so they know how to notify their observers, and all observers must know about the objects they are observing. But one crucial aspect of the coupling is removed: the `Observable` objects do not know anything about the concrete subtypes of `Observer`. This means new observers can be dynamically added to an object at runtime (for instance if a new view was opened in a user interface), or the system could be extended by adding a new subtype of `Observer` without changing any of the model elements that the new observer might want to watch for state changes. 
+It is important to note that there is still _some_ coupling in this design: observable objects must know about the `Observer` interface so they know how to notify their observers, and all observers must know about the objects they are observing. But one crucial aspect of the coupling is removed: the `Observable` objects do not know anything about the concrete subtypes of `Observer`. This means new observers can be dynamically added to an object at runtime (for instance if a new view was opened in a user interface), or the system could be extended by adding a new subtype of `Observer` without changing any of the model elements that the new observer might want to watch for state changes.  -->
 
 <!-- TODO: push vs pull observation -->
 
@@ -142,25 +142,25 @@ with before/after code:
 https://sourcemaking.com/design_patterns/state/java/1
 -->
 
-## Facade: Making common tasks easy.
+<!-- ## Facade: Making common tasks easy.
 
 <Youtube id="MdMaHrKQBsU" />
 
 The Facade is a structural pattern to provide a unified set of interfaces for a subsystem. Subsystems can contain a large amount of code that even if well designed can be difficult for a client to learn to correctly use. Facades provide coherent simplifications of modules for performing common tasks. It is not uncommon for a subsystem to have multiple facades for different client use cases. Facades are usually easy to implement once you have a complex subsystem that you want to provide a more unified high-level interface to. 
 
-One important note is that while a facade can simplify a subsystem, it does not prohibit clients from accessing features within the subsystem directly. Facades are mainly a pattern of convenience to make it easier for clients without restricting their options; however, if a client does only use the facade to access the subsystem they are also more insulated from structural changes within the subsystem as only the facade itself should have to be updated to support these, rather than the client themselves. One way to think about facades is that they essentially insert a layer into the design between the client and the subsystem. In architectural terms this is a 'non-strict' layer, since the client can bypass the facade to access the internals.
+One important note is that while a facade can simplify a subsystem, it does not prohibit clients from accessing features within the subsystem directly. Facades are mainly a pattern of convenience to make it easier for clients without restricting their options; however, if a client does only use the facade to access the subsystem they are also more insulated from structural changes within the subsystem as only the facade itself should have to be updated to support these, rather than the client themselves. One way to think about facades is that they essentially insert a layer into the design between the client and the subsystem. In architectural terms this is a 'non-strict' layer, since the client can bypass the facade to access the internals. -->
 
 <!--
 <img src="./figures/patterns-facade.png" width="512px" alt="facade diagram">
 -->
 
-Consider the following `WebmailClient`. This class is tightly bound to all of the subsystem code; if it wants to compose an email with an attachment or an appointment it needs to collaborate with many different classes. The author of `WebmailClient` is almost certainly a different developer than the creator of all of those classes so they need to learn a large set of APIs (both which APIs to all, and in what order) to complete their task. Additionally, any changes to those APIs could impact their code; since there are so many direct dependencies the chances of a change impacting their system is not small.
+<!-- Consider the following `WebmailClient`. This class is tightly bound to all of the subsystem code; if it wants to compose an email with an attachment or an appointment it needs to collaborate with many different classes. The author of `WebmailClient` is almost certainly a different developer than the creator of all of those classes so they need to learn a large set of APIs (both which APIs to all, and in what order) to complete their task. Additionally, any changes to those APIs could impact their code; since there are so many direct dependencies the chances of a change impacting their system is not small.
 
 ![facade diagram](patterns_facade-example_before.png)
 
 To ameliorate this, they talk to the developers responsible for the PIM code and ask them to create a Facade that is easier for them to use for these common tasks. The PIM owner creates `PIMFacade` that hides the internal details of the PIM subsystem and allows `WebmailClient` to have only a single dependency. This decreases coupling between the client and the PIM classes, and adds a layer of abstraction so the PIM subsystem owner can simply update the `PIMFacade` if any of their internal classes change in a way that could propagate to the client. This both simplifies modification tasks for the owner of `WebmailClient` as they are insulated from these changes, but also for the owner of `PIMFacade` because they know they can make larger changes as long as they do not need to change the facade API.
 
-![facade diagram](patterns_facade-example_after.png)
+![facade diagram](patterns_facade-example_after.png) -->
 
 ## Adapter: Simplifying interactions with incompatible types.
 
@@ -190,7 +190,7 @@ The above design has been improved by having the `Bank` depend on a `BankFactory
 
 This final design is called an _Abstract Factory_. In this design the client code depends on a factory that itself implements an `AccountFactory` interface. This means that the client can be specialized with the kind of factory that is relevant to them. It also means that as new types of `Account` are added, only the factories that the new `Account` is relevant for need to be modified.
  
-## Singleton: Ensuring only one of an object exists.
+<!-- ## Singleton: Ensuring only one of an object exists.
 
 <Youtube id="V_WbZClazDw" />
 
@@ -214,7 +214,7 @@ class Database {
 
 The `private constructor()` declaration ensures that nobody can instantiate a `Database` except for the `Database` itself. By checking to see if the `static instance` has been assigned before creating the instance, the class is able to ensure that only one copy is ever assigned. The pattern is extremely easy for other types to use, as they simply need to call `Database.getInstance()` to get an instantiated reference to the same instance of a `Database` as all other clients are using. Of course, this also highlights one of the key shortcomings of the Singleton: the Singleton itself acts as a global variable because every class in the system has the ability to get a reference to this type. This ease-of-access tends to lead to undisciplined use of Singleton types, leading to concrete references (because all client references must reference the static `getInstance()` method which must be declared on a concrete type).
 
-![singleton diagram](dp_singleton.png)
+![singleton diagram](dp_singleton.png) -->
 
 ## Decorator: Dynamically adding responsibilities to objects.
 

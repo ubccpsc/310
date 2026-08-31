@@ -39,9 +39,9 @@ APIs should not be designed in a vacuum. Starting with a one-page spec that desc
 
 <Youtube id="c7yYrjt6Db4" />
 
-Some high-level API design advice includes: 
+High-level API design advice is usually related to improving cohesion: 
 
-* APIs should do one thing, and do it well (also known as the single responsibility principle).
+* APIs should do one thing, and do it well.
 
 * APIs should be kept as small and simple as possible; once an API is released it is hard to remove.
 
@@ -49,11 +49,13 @@ Some high-level API design advice includes:
 
 * The 'usability' of a system to another engineer is dictated by the quality of the API. This means names should be well considered and consistent and the APIs, their constraints, and their pre- and post-conditions should be documented. Consistent APIs reduce developer surprise and helps them to naturally move from one API to the next.
 
+Think about each of these pieces of advice and how they relate to the analytical attributes of cohesion.
+
 <Youtube id="OqXw62LWEos" />
 
-Some low-level API design advice includes:
+Low-level API design advice is usually related to reducing coupling:
 
-* Avoid long parameter lists since clients can easily mix up the parameters.
+* Avoid long parameter lists since clients can easily mix up the parameters. 
 
 * Return descriptive objects rather than primitive types. This simplifies API documentation and enables additional fields to be included. Clients can also consume the return value directly without implementing robust parsing of primitive types.
 
@@ -64,6 +66,8 @@ Some low-level API design advice includes:
 * The values returned by an API should be _immutable_ to prevent unintended changes between the client and producer.
 
 * Limit the surface of an API to avoid clients from depending on internal classes, fields, and methods.
+
+Think about each one of these pieces of advice and consider how they are motivated by coupling and connascence.
 
 ## Usability
 
