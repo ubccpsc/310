@@ -100,7 +100,7 @@ We understand that life happens, and attending CPSC310 may not be the most impor
 - Your **four lowest lectures are dropped**. That covers illness, interviews, conflicts, a dead phone battery, and the lecture where the app misbehaves. You do not need to tell us about any of these.
 - Your participation mark is `min(1, credited lectures / (total lectures − 4))`, worth **5% of
   your final grade**.
-- If you find that attending lecture does not fit your needs, you may request the that your 5% participation weight be moved to the final exam instead, making the final worth 45% of your course grade. To do this, email the Course Coordinator by **Friday 18 September,
+- If you find that attending lecture does not fit your needs, you may request that your 5% participation weight be moved to the final exam instead, making the final worth 45% of your course grade. To do this, email the Course Coordinator by **Friday 18 September,
 18:00**. The choice applies to the whole term and cannot be reversed after that date. 
 
 ### Labs {#labs}
@@ -117,7 +117,7 @@ weeks 10–11. Each is small, directed, and tied to that week's lectures.
 
 **Deadlines.** Lab assignments are due **by the start of your next lab**, giving you one week to
 complete them. Because the deadline is relative to your own section, it falls on a different day
-depending on which lab you are registered in — but every section gets the same seven days, and
+depending on which lab you are registered in. But every section gets the same seven days, and
 assignments are released so that no section is disadvantaged by meeting later in the block.
 
 **Marking.**
@@ -256,7 +256,7 @@ and what it cost.
 Writing that down is only the output: the true practice of this exercise happens when you do the thinking and reasoning yourself.
 We are not looking for a polished piece of writing, we
 are looking for evidence of your thinking, communicated clearly.
-Using AI to generate your reasoning and you have skipped the practice — and you find out on the midterm whether that
+Using AI to generate your reasoning means you have skipped the practice, and you find out on the midterm whether that
 mattered.
 
 **On citation.** Where a tool contributed substantively to a design decision, say so in your
