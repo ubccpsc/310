@@ -50,10 +50,10 @@ structures the term.
 
 In this course, you will learn to:
 
-1. Measure the cost of change of code and reason about how low-level code design influences cost of change.
-2. Extend emergent design patterns to system-level API designs and evolve APIs safely.
-3. Elicit, deconstruct, and refine requirements and devise software architectures to support functional requirements and quality attributes.
-4. Analyze the tradeoffs present in modern collaborative software engineering processes by evaluating their socio-technical outcomes.
+1. Reason about how a codebase's structure influences the cost of changing it.
+2. Use abstraction to make changing a system cheaper at increasingly larger scales.
+3. Elicit, deconstruct, and refine requirements, and write specifications precise enough to check.
+4. Evaluate the socio-technical trade-offs in collaborative software engineering processes.
 
 ## Learning Materials
 
@@ -103,7 +103,7 @@ We understand that life happens, and attending CPSC310 may not be the most impor
 - Your **four lowest lectures are dropped**. That covers illness, interviews, conflicts, a dead phone battery, and the lecture where the app misbehaves. You do not need to tell us about any of these.
 - Your participation mark is `min(1, credited lectures / (total lectures − 4))`, worth **5% of
   your final grade**.
-- If you find that attending lecture does not fit your needs, you may request the that your 5% participation weight be moved to the final exam instead, making the final worth 45% of your course grade. To do this, email the Course Coordinator by **Friday 18 September,
+- If you find that attending lecture does not fit your needs, you may request that your 5% participation weight be moved to the final exam instead, making the final worth 45% of your course grade. To do this, email the Course Coordinator by **Friday 18 September,
 18:00**. The choice applies to the whole term and cannot be reversed after that date. 
 
 ### Labs {#labs}
@@ -120,7 +120,7 @@ weeks 10–11. Each is small, directed, and tied to that week's lectures.
 
 **Deadlines.** Lab assignments are due **by the start of your next lab**, giving you one week to
 complete them. Because the deadline is relative to your own section, it falls on a different day
-depending on which lab you are registered in — but every section gets the same seven days, and
+depending on which lab you are registered in. But every section gets the same seven days, and
 assignments are released so that no section is disadvantaged by meeting later in the block.
 
 **Marking.**
@@ -207,8 +207,7 @@ covering all content up to and including the end of Week 6 (Thursday, October 15
 
 #### Final Exam
 
-The final exam is scheduled by the university and is 2.5 hours in duration. It is cumulative, with
-an emphasis on material covered in Week 7 onwards.
+The final exam is scheduled by the university and is 2.5 hours in duration. It is cumulative covering all material in the course.
 
 ## Grading
 
@@ -249,7 +248,6 @@ course and notation on your transcript. The official policies are at:
 **You may use generative AI tools on lab assignments and project deliverables at your own risk.** You cannot use them
 on the midterm or the final, which are on paper, invigilated, and permit no devices.
 
-
 **On code.** You remain accountable for what you submit and you must be able to
 explain why any change is in your pull request. "The model wrote it" is not an answer to *why is
 this here?*, and it is not a defence for a bug. Keep in mind you will be responsible for both reading and writing code on the assessments without AI tools.
@@ -259,7 +257,7 @@ and what it cost.
 Writing that down is only the output: the true practice of this exercise happens when you do the thinking and reasoning yourself.
 We are not looking for a polished piece of writing, we
 are looking for evidence of your thinking, communicated clearly.
-Using AI to generate your reasoning and you have skipped the practice — and you find out on the midterm whether that
+Using AI to generate your reasoning means you have skipped the practice, and you find out on the midterm whether that
 mattered.
 
 **On citation.** Where a tool contributed substantively to a design decision, say so in your
@@ -269,14 +267,15 @@ rationale, the same way you would cite any other source you did not arrive at yo
 
 Concessions are considered under UBC's
 [Grounds for Academic Concession](https://vancouver.calendar.ubc.ca/campus-wide-policies-and-regulations/academic-concession).
-To request one, please fill out [this form](https://ubc.ca1.qualtrics.com/jfe/form/SV_556JGIKU0jaNmLk) and we will respond to you as soon as possible.
+To request one, complete the [concession form](https://ubc.ca1.qualtrics.com/jfe/form/SV_556JGIKU0jaNmLk) by the deadline indicated
+below with a description of which assessment the request concerns and the relevant circumstances.
 
 Concessions vary by assessment:
 
 - **Participation:** we are unable to offer concessions for participation — four lectures are already dropped, and you may opt out entirely in the first two weeks. See [Participation](#participation).
 - **A missed lab:** we are unable to offer concessions for missed labs — your lowest lab mark is already dropped. See the [lab policy](#labs).
-- **A missed project deliverable:** contact the Course Coordinator within one week of the deadline. If granted, the weight shifts to the final exam. As the project is cumulative, you will still be expected to make up the work.
-- **A missed midterm:** contact the Course Coordinator within one week of the midterm. If granted, the weight shifts to the final exam.
+- **A missed project deliverable:** submit the concession form within one week of the deadline. If granted, the weight shifts to the final exam. As the project is cumulative, you will still be expected to make up the work.
+- **A missed midterm:** submit the concession form within one week of the midterm. If granted, the weight shifts to the final exam.
 - **A missed final:** contact your faculty's advising office to request standing deferred status; you will write the exam at a later date.
 
 ### Accessibility and Accommodation
