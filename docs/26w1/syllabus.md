@@ -204,8 +204,7 @@ covering all content up to and including the end of Week 6 (Thursday, October 15
 
 #### Final Exam
 
-The final exam is scheduled by the university and is 2.5 hours in duration. It is cumulative, with
-an emphasis on material covered in Week 7 onwards.
+The final exam is scheduled by the university and is 2.5 hours in duration. It is cumulative covering all material in the course.
 
 ## Grading
 
@@ -246,7 +245,6 @@ course and notation on your transcript. The official policies are at:
 **You may use generative AI tools on lab assignments and project deliverables at your own risk.** You cannot use them
 on the midterm or the final, which are on paper, invigilated, and permit no devices.
 
-
 **On code.** You remain accountable for what you submit and you must be able to
 explain why any change is in your pull request. "The model wrote it" is not an answer to *why is
 this here?*, and it is not a defence for a bug. Keep in mind you will be responsible for both reading and writing code on the assessments without AI tools.
@@ -266,15 +264,15 @@ rationale, the same way you would cite any other source you did not arrive at yo
 
 Concessions are considered under UBC's
 [Grounds for Academic Concession](https://vancouver.calendar.ubc.ca/campus-wide-policies-and-regulations/academic-concession).
-To request one, email the Course Coordinator with a description of which
-assessment the request concerns and the relevant circumstances.
+To request one, complete the [concession form](https://ubc.ca1.qualtrics.com/jfe/form/SV_556JGIKU0jaNmLk) by the deadline indicated
+below with a description of which assessment the request concerns and the relevant circumstances.
 
 Concessions vary by assessment:
 
 - **Participation:** we are unable to offer concessions for participation — four lectures are already dropped, and you may opt out entirely in the first two weeks. See [Participation](#participation).
 - **A missed lab:** we are unable to offer concessions for missed labs — your lowest lab mark is already dropped. See the [lab policy](#labs).
-- **A missed project deliverable:** contact the Course Coordinator within one week of the deadline. If granted, the weight shifts to the final exam. As the project is cumulative, you will still be expected to make up the work.
-- **A missed midterm:** contact the Course Coordinator within one week of the midterm. If granted, the weight shifts to the final exam.
+- **A missed project deliverable:** submit the concession form within one week of the deadline. If granted, the weight shifts to the final exam. As the project is cumulative, you will still be expected to make up the work.
+- **A missed midterm:** submit the concession form within one week of the midterm. If granted, the weight shifts to the final exam.
 - **A missed final:** contact your faculty's advising office to request standing deferred status; you will write the exam at a later date.
 
 ### Accessibility and Accommodation
