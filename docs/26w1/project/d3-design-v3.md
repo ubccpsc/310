@@ -22,12 +22,24 @@ REQUIRES (not yet built)
   Two example documents (student timetable, draft term schedule) + 8-10 worked scenarios with
   ground-truth answers. Publish the scenarios; students who can self-diagnose don't appeal.
   Unresolved: where section enrolment comes from for the overflow rule.
+  Also: a v3 skeleton YAML + the validator command, both handed out in the Oct 23-29 lab, which
+  carries the OpenAPI tutorial. That lab is the ONLY place the mechanics are taught before this is
+  due - the specification lectures land Nov 17, eleven days after. If the lab moves, this breaks.
+
+GRADED ON SOMETHING NOT YET TAUGHT
+  "Complete enough to build from" is assessed here; Specification & modeling teaches it later. That
+  ordering is deliberate (struggle, then procedure - the spec swap collects on it). It does mean the
+  handout owes students a completeness bar to aim at, in the weak-vs-strong contrast form D1 and D2
+  use. Not yet written.
 -->
 
-# D3 — Design v3
+# Deliverable 3 — Design v3
 
-**Due Friday 6 November, 18:00 · pairs · submit on GitHub**
+**Due Friday 6 November, 18:00 · pairs · submit on GitHub and PrairieLearn**
 
+Details will be released after the D2 deadline.
+
+<!--
 You are going to specify a new major version of InsightUBC. **You will not implement any of it** —
 that's [D4](d4-build-it.md). This deliverable produces a document that another team could build
 from, and a set of decisions you can defend.
@@ -194,10 +206,11 @@ staying. Read the specification rather than assuming that "v1" means "obsolete."
 
 ## The conventions you're inheriting
 
-Read the v1 and v2 specifications carefully before designing anything, because they are more
-consistent than they first appear. The courses tree and the buildings tree use the same pagination
-envelope, the same `links` shape, the same status codes for the same situations, and literally the
-same error schemas.
+Read the specification carefully before designing anything, because it is more consistent than it
+first appears. It documents both live contracts in one document — `/api/v1` and `/api/v2` are served
+side by side, not one after the other — and the courses tree and the buildings tree use the same
+pagination envelope, the same `links` shape, the same status codes for the same situations, and
+literally the same error schemas.
 
 **Nobody wrote those conventions down as rules.** Part of your job is to work out what they are,
 state them explicitly, and then apply them to a domain — scheduling — that the original authors
@@ -265,6 +278,10 @@ so; that's a legitimate answer.
 **4. The specification** — a complete OpenAPI document for v3: every path, every schema, every
 status code, including the error cases. **It must validate.**
 
+Authoring the document and running the validator are covered in lab, with a skeleton to start
+from. Have that skeleton validating before your first team check-in — discovering the tooling the
+night before is an avoidable way to lose marks on this.
+
 **5. Extension choice**, with a sentence on why.
 
 **6. The sharing decision** — a paragraph on requirements 2 and 3. What, if anything, do your two
@@ -283,3 +300,4 @@ everything and no reason for either. Matching the house style beats a better-in-
 alternative, and we grade the argument, not the aesthetics.
 
 You will build exactly what you specify here. Choose accordingly.
+-->

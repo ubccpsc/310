@@ -56,7 +56,7 @@ PLATFORM
 
 # Deliverable 1 — Drop in a feature
 
-**Due Friday 25 September, 18:00 · individual · submit on PrairieLearn**
+**Due Friday 25 September, 18:00 · individual · submit on GitHub and PrairieLearn**
 
 You've inherited a working system. Somebody else built it, it passes its tests, and it satisfies the
 spec. Now you have to change it.

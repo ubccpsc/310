@@ -10,7 +10,7 @@ DATES — the whole scope warning is calendar-derived, so recount it every term
 
 SCALE — 2026W1 was ~200 pairs
   Demos at 10 min/pair is ~33 TA-hours against ~40 hours of lab capacity in that block, and
-  only fits because demos run alongside Lab 8. There is no slack; the 10 minutes has to be
+  only fits because demos run alongside Lab 10. There is no slack; the 10 minutes has to be
   enforced. Recompute if enrolment changes.
 
 SCOPE LEVER
@@ -25,8 +25,11 @@ REQUIRES (not yet built)
 
 # D4 — Build it
 
-**Due Friday 27 November, 18:00 · pairs · submit on GitHub**
+**Due Friday 27 November, 18:00 · pairs · submit on GitHub and PrairieLearn**
 
+Details will be release after the D3 deadline.
+
+<!--
 Build the v3 you specified in [D3](d3-design-v3.md). Don't break v1 or v2 doing it.
 
 This is the largest deliverable in the course, and it spans the fall break — you have roughly two
@@ -130,3 +133,4 @@ this is running. The extension you picked in D3 is the piece most likely to run 
 **Ship a complete core with a working extension rather than an ambitious core with a broken one.**
 If something has to give, tell us in the retrospective what you dropped and why — a deliberate,
 documented cut is an engineering decision and is graded as one. Silent incompleteness is not.
+-->

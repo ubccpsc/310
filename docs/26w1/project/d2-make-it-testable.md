@@ -34,8 +34,8 @@ BASE REPO — verified against project_team133, 2026W1
 
 MUTATION TESTING
   Stryker. No config exists in the base repo yet — that is setup work. It MUST be scoped to the
-  extracted module; running it over a 2,489-line App.ts against a 12,245-line suite is impractical.
-  Taught as tool use in Lab 3 (Oct 2-8), which lands before this deadline. If labs move, check
+  extracted module; running it over a 2,489-line App.ts against a 12,187-line suite is impractical.
+  Taught as tool use in Lab 4 (Oct 2-8), which lands before this deadline. If labs move, check
   that ordering — students must not meet Stryker for the first time here.
   UNVERIFIED: whether the inherited suite genuinely has low mutation detection on the paths
   students will touch. D2's step 5 assumes it does. MEASURE THIS EARLY; if detection is already
@@ -60,10 +60,13 @@ SUBMISSION MECHANICS
   hypothetical one.
 -->
 
-# D2 — Make it testable
+# Deliverable 2 — Make it testable
 
 **Due Friday 16 October, 18:00 · individual · submit on GitHub and PrairieLearn**
 
+Details will be released after the D1 deadline.
+
+<!--
 In D1 you changed this system however seemed right to you. This time you get a procedure.
 
 There is a part of InsightUBC that is close to untestable, and you are going to fix that.
@@ -90,7 +93,7 @@ When a facilities dataset is uploaded, the system reads building addresses out o
 turns each one into coordinates by calling an external geocoding service. Coordinates matter: they
 are what makes it possible to ask how far apart two buildings are.
 
-The inherited suite — all **12,245 lines of it** — does exercise that path. Several tests upload a
+The inherited suite — all **12,187 lines of it** — does exercise that path. Several tests upload a
 facilities dataset, and geocoding runs every time. So it is covered, in the sense that somebody would
 notice if it stopped working entirely.
 
@@ -110,7 +113,7 @@ They implemented it. Find the geocoding call in `App.ts` and you'll see the cond
 coordinates present and no error, or the building never gets added. That is the requirement, working
 as specified.
 
-**Nothing in 12,245 lines of tests demonstrates that it works.** Nobody can show that a building
+**Nothing in 12,187 lines of tests demonstrates that it works.** Nobody can show that a building
 with an unresolvable address is skipped, or that its rooms go with it. The requirement is met, and
 unverifiable.
 
@@ -284,7 +287,7 @@ behave like the real implementation, including when the real implementation fail
 
 ## Step 6 — Find out whether your tests detect anything
 
-**You don't write the mutants.** Stryker generates them — the tool you used in Lab 3. You run it and
+**You don't write the mutants.** Stryker generates them — the tool you used in Lab 4. You run it and
 read the report.
 
 A mutant is a small automatic change to your production code: an operator flipped, a boundary moved,
@@ -398,3 +401,5 @@ to change for reasons outside your control.
 
 Question 7 asks what your interface hides. If the honest answer is "nothing, really," you have found
 a seam that didn't need to exist.
+
+-->
