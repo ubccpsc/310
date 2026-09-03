@@ -21,10 +21,10 @@ only the implementation can move — and a layer boundary is exactly what lets i
 
 | Lecture | What it answers | Read before |
 | :--- | :--- | :--- |
-| Layered architecture | What do you get when the same moves are applied everywhere? | [High-Level Design](/textbook/high-level-design/) |
-| The testing pyramid | Given real layers, which one should a test actually run through? | [Software Testing](/textbook/testing/) |
-| API design | What is an API, and what do you lose the moment it's published? | [APIs](/textbook/high-level-design/apis/) · [REST Architecture](/textbook/construction/rest/) |
-| Evolving a published API | How do you change a promise without breaking it? | [APIs](/textbook/high-level-design/apis/) *(versioning only)* |
+| Layered architecture | What do you get when the same moves are applied everywhere? | [Design Principles](/textbook/2-analytical-code-design/principles/) |
+| The testing pyramid | Given real layers, which one should a test actually run through? | [Testing Pyramid](/textbook/3-software-design/testing-pyramid/) |
+| API design | What is an API, and what do you lose the moment it's published? | [APIs](/textbook/3-software-design/apis/) · [REST Architecture](/textbook/1-construction-basics/rest/) |
+| Evolving a published API | How do you change a promise without breaking it? | [Safe Versioning](/textbook/3-software-design/versioning/) |
 
 Slides are posted on the [schedule](../../schedule.md) as we go.
 

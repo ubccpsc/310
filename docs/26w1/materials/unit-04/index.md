@@ -19,8 +19,8 @@ whether it's working.
 
 | Lecture | What it answers | Read before |
 | :--- | :--- | :--- |
-| Continuous integration | Why does a branch get more expensive the longer it lives? | [Automation](/textbook/process/automation/) |
-| How teams coordinate | How does work actually move through a team in a week? | [Software Process](/textbook/process/) |
+| Continuous integration | Why does a branch get more expensive the longer it lives? | [Automation](/textbook/8-unplaced/process/automation/) |
+| How teams coordinate | How does work actually move through a team in a week? | [Software Process](/textbook/8-unplaced/process/) |
 | Process metrics | How would you know whether any of this is working? | *TBD* |
 | GenAI & where the cost moves | If writing code gets cheap, what gets expensive? | *TBD* |
 
