@@ -1,8 +1,5 @@
 # Schedule
 
-> This page answers **when**. For what the course covers and why it's ordered this way, see the
-> [course materials overview](./materials/). Full policies are in the [Syllabus](syllabus.md).
-
 Lectures are **Tuesday and Thursday** on the dates listed below. Slides are posted before each lecture, linked from the lecture title. **Readings** live on the unit pages, linked from the Unit column.
 
 **Lab blocks run Friday to Thursday**, starting *Friday September 11* (week 1). Each assignment is due at the start of your next lab, which is one week later for every section. The full lab policy is in the [Syllabus](syllabus.md#labs).
@@ -21,16 +18,18 @@ Lectures are **Tuesday and Thursday** on the dates listed below. Slides are post
 
 ## 🗓️ Week by week
 
+Dates and topics subject to change!
+
 | Wk | Dates | Unit | Lectures | Lab | Due |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1 | Sep 8, 10 | [Unit 1](./materials/unit-01/) | *(no Tuesday class)* · The cost of change | [Lab 1](#) — Onboarding *(Sep 11–17)* | — |
 | 2 | Sep 15, 17 | | Measuring a change · Cohesion & connascence | [Lab 2](#) — cohesion & connascence *(Sep 18–24)* | — |
 | 3 | Sep 22, 24 | | Refactoring as a discipline · Polymorphism & LSP | [Lab 3](#) — refactoring & LSP *(Sep 25–Oct 1)* ⚠ Wed Sep 30 | **D1** Fri Sep 25 |
 | 4 | Sep 29, Oct 1 | | What makes code testable · Seams & dependency inversion | [Lab 4](#) — testability & seams *(Oct 2–8)* | — |
-| 5 | Oct 6, 8 | | Patterns: Adapter & Composite · Patterns: Factory & Decorator | [Lab 5](#) — design patterns *(Oct 9–15)* ⚠ Mon Oct 12 | — |
-| 6 | Oct 13, 15 | [Unit 2](./materials/unit-02/) | Layered architecture · The testing pyramid | [Lab 6](#) — layers, test strategy & code review *(Oct 16–22)* | **D2** Fri Oct 16 |
-| 7 | Oct 20, 22 | | API design · Evolving a published API | [Lab 7](#) — API design & evolution — ungraded *(Oct 23–29)* | — |
-| 8 | Oct 27, 29 | — | Pricing a change — synthesis & midterm review · *(no Thursday class)* | Project time — team check-in *(Oct 30–Nov 5)* | **Midterm** Thu Oct 29 |
+| 5 | Oct 6, 8 | [Unit 2](./materials/unit-02/) | Patterns: Adapter & Composite · Patterns: Factory & Decorator | [Lab 5](#) — design patterns *(Oct 9–15)* ⚠ Mon Oct 12 | — |
+| 6 | Oct 13, 15 | | API Change severity & versioning · API design  | [Lab 6](#) — API design & evolution & code review *(Oct 16–22)* | **D2** Fri Oct 16 |
+| 7 | Oct 20, 22 | |  The testing pyramid · Layered architecture | [Lab 7](#) — layers, test strategy — ungraded *(Oct 23–29)* | — |
+| 8 | Oct 27, 29 | — | Module 1 & 2 synthesis & midterm review · *(no Thursday class)* | Project time — team check-in *(Oct 30–Nov 5)* | **Midterm** Thu Oct 29 |
 | 9 | Nov 3, 5 | [Unit 3](./materials/unit-03/) | Where requirements come from · Ethics & IP | **No lab** — fall break *(Nov 9–11)* | **D3** Fri Nov 6 |
 | 10 | Nov 10, 12 | | *(no Tuesday class)* · Information security | [Lab 8](#) — requirements & constraints *(Nov 13–19)* | — |
 | 11 | Nov 17, 19 | | Specification & modeling · *Specification is Right* | [Lab 9](#) — specification *(Nov 20–26)* | — |
@@ -39,7 +38,7 @@ Lectures are **Tuesday and Thursday** on the dates listed below. Slides are post
 
 ⚠ **Labs are cancelled on Wednesday September 30th and Monday October 12th.** You may attend any other lab section if your section is cancelled. Lab assignments are still due by your next regularly scheduled lab.
 
-## Where things live
+<!-- ## Where things live
 
 | You want | Go to |
 | :--- | :--- |
@@ -47,4 +46,4 @@ Lectures are **Tuesday and Thursday** on the dates listed below. Slides are post
 | Supporting material for a lecture | The unit page — click the Unit column |
 | A lab assignment | This page — the Lab column |
 | A project deliverable spec | [Project](./project/) |
-| Deadlines, weights, policies | [Syllabus](syllabus.md) |
+| Deadlines, weights, policies | [Syllabus](syllabus.md) | -->

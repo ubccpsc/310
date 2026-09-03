@@ -6,7 +6,7 @@ weight: 5
 
 <Youtube id="Y8AYxFgwmJk" />
 
-[REST](https://en.wikipedia.org/wiki/Representational_state_transfer) is an architectural style heavily used in web-based systems for providing services between different systems (and interfaces).  REST defines a means of connecting systems together that focuses on their interfaces rather than their implementations using self-descriptive messages. In this way, REST provides a language to define a specific kind of [APIs](/textbook/high-level-design/apis/) for communicating across a network. REST services are transported over the network using the [HTTP protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol).
+[REST](https://en.wikipedia.org/wiki/Representational_state_transfer) is an architectural style heavily used in web-based systems for providing services between different systems (and interfaces).  REST defines a means of connecting systems together that focuses on their interfaces rather than their implementations using self-descriptive messages. In this way, REST provides a language to define a specific kind of [APIs](/textbook/3-software-design/apis/) for communicating across a network. REST services are transported over the network using the [HTTP protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol).
 
 <img src="./REST_network.png" alt="REST topology" width="350px">
 
