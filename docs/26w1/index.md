@@ -22,8 +22,8 @@ together over time. Every unit answers the same question at a wider radius —
 | :--- | :--- |
 | [Unit 1: Design in the small](materials/unit-01/) | 1–5 |
 | [Unit 2: Layers & interfaces](materials/unit-02/) | 6–7 |
-| [Unit 3: Requirements & specification](materials/unit-03/) | 9–11 |
-| [Unit 4: Software process](materials/unit-04/) | 12–13 |
+| [Unit 3: Requirements & specification](#) TBA | 9–11 |
+| [Unit 4: Software process](#) TBA | 12–13 |
 
 **[Course materials overview](materials/)** — what each unit covers and why it's
 ordered this way. **[Schedule](./schedule.md)** — dates, slides, labs, and deadlines.

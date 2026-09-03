@@ -25,7 +25,7 @@ Dates and topics subject to change!
 | 1 | Sep 8, 10 | [Unit 1](./materials/unit-01/) | *(no Tuesday class)* · The cost of change | [Lab 1](#) — Onboarding *(Sep 11–17)* | — |
 | 2 | Sep 15, 17 | | Measuring a change · Cohesion & connascence | [Lab 2](#) — cohesion & connascence *(Sep 18–24)* | — |
 | 3 | Sep 22, 24 | | Refactoring as a discipline · Polymorphism & LSP | [Lab 3](#) — refactoring & LSP *(Sep 25–Oct 1)* ⚠ Wed Sep 30 | **D1** Fri Sep 25 |
-| 4 | Sep 29, Oct 1 | | What makes code testable · Seams & dependency inversion | [Lab 4](#) — testability & seams *(Oct 2–8)* | — |
+| 4 | Sep 29, Oct 1 | | What makes code testable · Test Doubles & dependency inversion | [Lab 4](#) — testability & seams *(Oct 2–8)* | — |
 | 5 | Oct 6, 8 | [Unit 2](./materials/unit-02/) | Patterns: Adapter & Composite · Patterns: Factory & Decorator | [Lab 5](#) — design patterns *(Oct 9–15)* ⚠ Mon Oct 12 | — |
 | 6 | Oct 13, 15 | | API Change severity & versioning · API design  | [Lab 6](#) — API design & evolution & code review *(Oct 16–22)* | **D2** Fri Oct 16 |
 | 7 | Oct 20, 22 | |  The testing pyramid · Layered architecture | [Lab 7](#) — layers, test strategy — ungraded *(Oct 23–29)* | — |

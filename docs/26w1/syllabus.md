@@ -19,7 +19,7 @@ CPSC 310.
 | Role | Name | Contact | Office hours |
 | :--- | :--- | :--- | :--- |
 | Instructor | Nick Bradley | [ncbrad@cs.ubc.ca](mailto:ncbrad@cs.ubc.ca) | *TBD* |
-| Instructor | Kyle Chin | [kdchin@cs.ubc.ca](mailto:kdchin@cs.ubc.ca) | *TBD* |
+| Instructor | Kyle Chin | [kdchin@cs.ubc.ca](mailto:kdchin@cs.ubc.ca) | Wednesdays @ 2-3pm in ICCS 306 |
 | Course Coordinator | Irene Yuan | [cpsc310-admin@cs.ubc.ca](mailto:cpsc310-admin@cs.ubc.ca) | — |
 | Teaching Assistants | *(TBD: list or link)* | Via Piazza | In your lab section |
 
@@ -87,7 +87,7 @@ Each lecture will contain practice opportunities in the form of interactive acti
 Thus, active attendance and engagement is crucial for you to receive the learning benefits.
 Lecture will not comprehensively cover everything you will be responsible for on an assessment.
 Our goal is to give you practice with the underlying core concepts so you can apply them to similar examples.
-The course [textbook](../textbook/) gives full definitions for topics introduced in lecture.
+The course [reader](../textbook/) gives full definitions for topics introduced in lecture.
 
 #### Participation
 
