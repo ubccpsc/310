@@ -85,6 +85,9 @@ Most of our practice is low stakes and marked primarily for completion: meaning,
 Lectures take place in person, are not recorded, and your attendance is expected.
 Each lecture will contain practice opportunities in the form of interactive activities and iClicker qustions that will be similar to what you will see on assessments.
 Thus, active attendance and engagement is crucial for you to receive the learning benefits.
+Lecture will not comprehensively cover everything you will be responsible for on an assessment.
+Our goal is to give you practice with the underlying core concepts so you can apply them to similar examples.
+The course [textbook](../textbook/) gives full definitions for topics introduced in lecture.
 
 #### Participation
 

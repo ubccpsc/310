@@ -1,25 +1,29 @@
 ---
-archetype: "chapter"
 weight: 4
-title: "High-Level Design"
+title: "Design Principles"
 ---
 
-Software design is a key translational step in the software development process. During design, requirements are transformed into a format that can be implemented directly. More concretely, the input to the design process is a list of requirements and the output is a set of classes, methods, and fields that must be implemented. 
+Design principles are high level guidelines that can help ensure our designs are robust in the face of defect fixes and feature additions. There are a great many design principles, here we only address a small subset of those. One thing to keep in mind is that these principles are not absolute: sometimes you will violate them, but if you do, you should be careful to do so in a considered manner.
 
-The design process is highly iterative, but can often be thought of as two broad activities:
+## Designing for evolution
 
-* **High Level Design:** During high level design the key architecture, abstractions, and relationships required to build the system are identified. This often involves evaluating different ways the system might need to evolve in the future and evaluating the relative merits of alternative architectural decisions. The decisions made in high level design guides the low level design process. Many design principles and properties can also be captured at a high level and broadly influence both high level and low level design.
+Designing systems in a flexible manner is crucial, given that all successful systems evolve over time. Making intentional decisions about the coupling within our system and cohesion between program elements can help guide us towards ensuring that our designs are amenable to future evolution and defect fixing.
 
-* **Low Level Design:** While high level design can be thought of as identifying key subsystems, abstractions, and relationships, the low level design process defines the concrete public interfaces, classes, and methods that will be needed to build the system. Design patterns are often applied during the low level design process to ensure the design will be amenable to future evolution.
+<Youtube id="gkCIOUbu81o" />
 
-## Abstraction
+
+## Tools
+
+To help us design for evolution (and enable us to improve our code's coupling, cohesion, and testability) we rely on several tools within our programming languages.
+
+### Abstraction
 
 <Youtube id="HW_b8S2rD4o" />
 
 Abstraction is the fundamental technique used by software engineers to be able to manage the complexity of their systems. Abstraction enables engineers to focus on the _key_ information for a given task while eliding unnecessary detail. (e.g., a UX designer might focus on UI flows, but would not reason about backend cryptographic protocols). The 'right' abstraction will vary from task to task. The most high-level and common kinds of abstractions relate to control and data abstraction.
 
 
-### Data abstraction
+#### Data abstraction
 
 Data abstraction is the process of explicitly separating the abstract properties of a data type and its concrete implementation. The primary benefit of data abstraction is that it enables client code to be oblivious of the underlying implementation of a data type allowing it to be upgraded and improved without impacting client code.
 
@@ -32,12 +36,12 @@ Here is a concrete example of data abstraction from [CPSC 210](https://sites.goo
 // Requires: A non-empty and unused name.
 // Modifies: Team database.
 // Effects:  Returns whether a team was created.
- public createTeam(name: string):boolean {...} 
+public createTeam(name: string):boolean {...}
 ```
 
 By explicitly describing the data the method requires, modifies, and its side effects, client code can be completely oblivious of the underlying implementation used by ```createTeam(..)```. What we are really trying to do in this example is define the method's contract, that is its preconditions (expects), postconditions (provides), and invariants (must always be true). Correctly and adequately documenting these abstractions is important because state-based errors are a common source of difficult-to-diagnose faults in modern systems that type systems provide little defence against.
 
-### Control abstraction
+#### Control abstraction
 
 One of the major benefits of modern programming languages is that they provide an abstraction layer between the developer expressing themselves and how a machine will interpret and execute their instructions. Abstracting away how the code will execute is called *control abstraction* and was one of the early advances in software engineering productivity (as described by Fred Books in [No Silver Bullet](http://worrydream.com/refs/Brooks-NoSilverBullet.pdf)). An easy way to think about control abstraction is that it allows an engineer to consider *what* they are doing without becoming overwhelmed with *how* they are going to do it.
 
@@ -76,7 +80,7 @@ Language constructs are continually evolving to enable developers to better focu
 makeTeam(teamName: string, memberName: string) {
   var that = this;
   // create team
-   that.createTeam(teamName).then(function (teamId) { // createTeam is async
+  that.createTeam(teamName).then(function (teamId) { // createTeam is async
   // add member
   return that.addMember(teamId, memberName); // addMember is async
 }).then(function (success) {
@@ -87,7 +91,7 @@ makeTeam(teamName: string, memberName: string) {
 }
 ```
 
-## Decomposition
+### Decomposition
 
 <Youtube id="R3qWYSa2OyU" />
 
@@ -103,7 +107,7 @@ An alternative (also common) approach is working bottom-up. In this way decision
 
 <!-- MEDTODO: decomposition levels -->
 
-## Information hiding 
+### Information hiding 
 
 <Youtube id="f6H2w874TKc" />
 
@@ -112,13 +116,13 @@ Software engineers often talk about abstraction in terms of _information hiding_
 Information hiding is a specific, common, and important form of abstraction that intentionally seeks to identify 'that which varies' from 'that which stays the same'. This is important, because all abstractions in code come with a cost: trying to understand a system with unnecessary abstractions can add complexity and difficulty, while balancing this complexity against trying to evolve a system lacking necessary abstractions is a challenging task.
 
 
-## Encapsulation
+### Encapsulation
 
 <Youtube id="aPTqsdbyhcQ" />
 
 Encapsulation is related to information hiding and is practiced most concretely in object-oriented programming languages like Java, C#/C++, TypeScript, etc..  Encapsulation is concerned with delineating the contractual interface with its implementation. The most common language feature for supporting encapsulation is the interface whereby the interface describes the public contract an object will provide and the concrete class describes the implementation of the interface (along with any supporting private methods and fields).
 
-## Constant change
+### Constant change
 
 <Youtube id="a-vT-01x4TI" />
 
@@ -126,7 +130,93 @@ As Jeff Dean noted in his [WSDM 2009 Keynote](http://static.googleusercontent.co
 
 Thinking about change is also related to encapsulation in that thinking concretely about what parts of the system are likely to change in the short and medium terms are more likely to lead to useful and valuable abstraction layers than taking an 'anything can change' view to design.
 
-## References
+### References
 
 * Original [information hiding](http://www.cs.umd.edu/class/spring2003/cmsc838p/Design/criteria.pdf) paper.
+
+
+
+## Design Symptoms
+<Youtube id="_Eb5bAgpgQg" />
+<!-- TODO: cognitive dimensions -->
+
+<!-- TODO: describe levels -->
+
+<!-- TODO: include design guidance and symptoms -->
+<!-- rigidity, fragility, immobility, viscosity, complexity, repetition, opacity -->
+
+## SOLID
+
+Design principles provide guidelines to help us reason about specific properties within our designs. It might be tempting to treat design guidelines as rules, but that is not their intent: designs will often contravene well-established guidelines; in fact, many guidelines themselves are often in tension with one another forcing engineers to think about their systems to determine which principles are more important to their system. 
+
+There are many catalogues of design principles. While some of these are broadly applicable, others will be unique to specific domains. One of the most commonly-used catalogs are the SOLID design principles.
+
+### Single responsibility
+
+<Youtube id="QQ26-dkzEdM" />
+
+As systems grow it becomes harder to understand them, fix defects within them, and add new features to them. The single responsibility principle says:
+
+> A software module should do one thing and do it well.
+
+One reason this becomes problematic as systems grow is that it often seems easier to add code to an existing module than to create a new module from scratch. This means that code gets added in places where it might not fit well and this mismatch can make the module harder to evolve.
+
+Many design patterns have been explicitly crafted to encourage designs that adhere to the single responsibilty principle. For example:
+
+* Strategy pattern: In this pattern, modules encapsulate algorithms; this means we create modules that _only_ implement a specific algorithm.
+
+* Command pattern: This pattern separates the notion of an action that can be performed from its implementation. This results in small modules that only provide the features needed for a specific action.
+
+* State pattern: Systems often depend differently according to their internal state. Rather than having large modules that need to reason globally about all states, this pattern encapsulates the behaviours for a single state in a single module resulting in smaller, more targetted code.
+
+### Open/closed
+
+<Youtube id="815hXPR_kHo" />
+
+The open/closed principle states that modules should be:
+
+> Open to extension but closed to modification.
+
+This principle encourages software engineers to design their code that is more amenable to future change. Specifically, the open/closed principle encourages engineers to think explicitly about what parts of their systems should enable future feature additions and which parts of the system should not. This distinction is important, because extension points typically add abstraction to a system which makes them harder to understand. We might want to explicitly inhibit some kinds of extensions as well due to negative performance or security implications. By explicitly planning for future extension, new features can be added in a way that does not cause existing code to be modified.
+
+This design principle is explicitly supported by most design patterns as these predominantly describe explicit extension points (e.g., by adding new strategies, states, commands, decorators, observers, etc.) that can be extended while existing code remains oblivious to the new features.
+
+One of the biggest challenges with this principle is knowing _when_ to enable extension; this usually takes explicit discussions with system stakeholders to reason about the explicit costs and benefits of such an extension mechanism.
+
+One common code smell for violating the open/closed principle are `instanceof` or `typeof` checks within the code. These checks mean that if a system is extended with a new feature, client code will probably need to be updated as well so that the type checks also check for the new features. This is one of the primary reasons to be wary of this kind of runtime type checking. <!-- private super fields -->
+
+
+### Liskov substitution
+
+<Youtube id="8UG6P1a8rKg" />
+
+The Liskov substitution principle says:
+
+> Any object can be interchanged with any other object that has the same parent type. 
+ 
+For a complete coverage of this design principle. Since this has been covered in prior courses, we will not discuss it further here, but you are encouraged to watch [Elisa Baniassad's video](https://www.youtube.com/watch?v=j6jbTMpZkWQ) for a more complete description.
+
+### Interface segregation
+
+<Youtube id="x_9QJ83oj2k" />
+
+The interface segregation principle says:
+
+> Clients should not be forced to depend on interfaces they do not use.
+
+This principle exists because as we evolve our systems we often do so by adding new methods to our interfaces rather than by creating new ones to succinctly capture the added feature additions. This principle can be thought of as applying the single responsibility principle to interfaces (instead of to classes) as it really pushes us to design our interfaces to be as small and well-focused as possible.
+
+### Dependency inversion
+
+<Youtube id="BJr2yG-Hn7g" />
+
+The dependency inversion principle says:
+
+> Classes should depend on abstractions, not implementations.
+
+This principle helps engineers to design implementations that are as decoupled from one another as possible. This usually happens by injecting an interface between the two concrete classes and having the classes take dependencies on the interface instead. While this might seem like a small difference, it means that if you wanted to reuse one of the classes you would also only have to reuse the interface rather than the concrete class and all of its concrete dependencies.
+
+When we refactor an existing system to encourage extensibility, we often do it through dependency inversion. Specifically, we introduce a new interface and make the existing code implement the interface. This makes the post-refactor code both easier to reuse and extend.
+
+[//]: # (## References)
 
