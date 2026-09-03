@@ -18,7 +18,7 @@ precisely enough that someone else could check it.
 
 ## Lectures
 
-| Lecture | What it answers | Read before |
+| Lecture | What it answers | Readings |
 | :--- | :--- | :--- |
 | Where requirements come from | How much do you decide up front — and what does deciding early cost? | [Software Process](/textbook/8-unplaced/process/) · [User Stories](/textbook/8-unplaced/process/user-stories/) |
 | Ethics & IP | Who does this affect, and what are you permitted to build with? | [Ethics](/textbook/8-unplaced/ethics-security/ethics/) · [Intellectual Property](/textbook/8-unplaced/ethics-security/ip/) |

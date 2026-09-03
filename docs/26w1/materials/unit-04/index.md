@@ -17,7 +17,7 @@ whether it's working.
 
 ## Lectures
 
-| Lecture | What it answers | Read before |
+| Lecture | What it answers | Readings |
 | :--- | :--- | :--- |
 | Continuous integration | Why does a branch get more expensive the longer it lives? | [Automation](/textbook/8-unplaced/process/automation/) |
 | How teams coordinate | How does work actually move through a team in a week? | [Software Process](/textbook/8-unplaced/process/) |

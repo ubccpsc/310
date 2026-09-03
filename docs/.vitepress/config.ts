@@ -33,7 +33,7 @@ export default defineConfig({
 				link: `/${CURRENT_TERM}/project/`,
 				activeMatch: `/${CURRENT_TERM}/project/`,
 			},
-			{ text: "Textbook", link: "/textbook/", activeMatch: "/textbook/" },
+			{ text: "Course Reader", link: "/textbook/", activeMatch: "/textbook/" },
 		],
 
 		// Keyed by path prefix: each section shows only its own sidebar, so the
@@ -87,7 +87,7 @@ export default defineConfig({
 						{ text: "AutoTest", link: "/26w1/project/AutoTest" },
 					],
 				},
-				{ text: "📖 Textbook →", link: "/textbook/" },
+				{ text: "📖 Course Reader →", link: "/textbook/" },
 			],
 
 			// Generated from the reader's own Hugo `weight` front matter, so the
