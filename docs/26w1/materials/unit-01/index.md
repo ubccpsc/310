@@ -9,8 +9,8 @@ This unit explores how to measure cost of change, identify code elements that co
 
 | Lecture | What it answers | Readings |
 | :--- | :--- | :--- |
-| The cost of change | Why does change cost anything? | [What is Software Engineering](/textbook/0-introduction) · [Analytical Code Design](/textbook/2-analytical-code-design) |
-| Measuring a change | How big was that change — and which dimension actually hurts? | [Cost of Change](/textbook/2-analytical-code-design/cost-of-change)|
+| The cost of change | Why does change cost anything? | [What is Software Engineering](/textbook/0-introduction/) · [Analytical Code Design](/textbook/2-analytical-code-design/) |
+| Measuring a change | How big was that change — and which dimension actually hurts? | [Cost of Change](/textbook/2-analytical-code-design/cost-of-change/)|
 | Cohesion & connascence | What belongs together, and what kind of agreement makes change hard? | [Change Difficulty](/textbook/2-analytical-code-design/change-difficulty/) |
 | Refactoring as a discipline | How do I change it safely? | [Refactoring](/textbook/2-analytical-code-design/refactoring/) |
 | Polymorphism & LSP | When is it safe to substitute one thing for another? | [Design Principles](/textbook/2-analytical-code-design/principles/) *(SOLID)* |
