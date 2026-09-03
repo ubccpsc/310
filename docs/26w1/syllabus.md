@@ -110,13 +110,11 @@ We understand that life happens, and attending CPSC310 may not be the most impor
 
 **Labs are held online**, weekly, starting in week 1, and run in blocks from **Friday to Thursday**.
 There are no rooms assigned; join links are on the [course home page](./) and attendance is required.
+Each is small, directed, and tied to the lecture of the corresponding week (i.e. lab 3 will cover week 3 material, which will be the same week for friday labs and the prior week for all other labs).
 
 **A lab session** opens with a **tutorial** on material from that week's lectures. You then have a
 work period for that week's assignment, with TAs available to answer questions. You are not expected
 to finish during the lab although you should be able to make significant progress.
-
-**There are eight graded lab assignments — Labs 1–6, 8, and 9**, running in weeks 1–6 and again in
-weeks 10–11. Each is small, directed, and tied to that week's lectures.
 
 **Deadlines.** Lab assignments are due **by the start of your next lab**, giving you one week to
 complete them. Because the deadline is relative to your own section, it falls on a different day
@@ -134,7 +132,6 @@ say what is wrong with it, and justify what you would change.
 that**, with help on hand and very little at stake.
 Treat them as practice for the exams rather than
 as 10% of your grade and you will be spending your time correctly.
-
 
 
 **Late assignments will not be graded**, although the instructional team is happy to answer
@@ -218,10 +215,6 @@ The final exam is scheduled by the university and is 2.5 hours in duration. It i
 | Project | 20% |
 | Midterm | 25% |
 | Final exam | 40% |
-
-If you opt out of participation in the first two weeks, the 5% moves to the final exam, which is
-then worth 45%. See [Participation](#participation) for how the mark is calculated and how to opt
-out.
 
 ## Policies
 
