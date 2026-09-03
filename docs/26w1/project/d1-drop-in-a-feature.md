@@ -8,26 +8,28 @@ DATES
 
 BASE REPO — anything here breaks if the repo changes
   Feature: add `campus` to buildings. Chosen because it costs ~10 lines across 8 sites in
-  App.ts: PUT handler (~124), Model.setBuilding (~549), validateBuildingParams (~2390),
-  Building constructor (~1633), getJSONLinks (~1643), getJSONFull (~1657),
-  getJSONForDelete (~1668), buildBuilding (~1679).
-  The trap is buildBuilding: getJSONFull doubles as the on-disk format (~211), so a student
-  who misses it has a feature that works until the server restarts. Requirement 4 exists to
-  force that discovery. If you change repo or feature, re-verify the trap still exists.
+  App.ts: the PUT /api/v2/buildings/:buildingId route handler, Model.setBuilding,
+  validateBuildingParams, the Building class constructor, and Building's getJSONLinks,
+  getJSONFull, getJSONForDelete, and buildBuilding.
+  The trap is buildBuilding: getJSONFull doubles as the on-disk format (Model.writeBuildings
+  serializes buildings through it), so a student who misses it has a feature that works until
+  the server restarts. Requirement 4 exists to force that discovery. If you change repo or
+  feature, re-verify the trap still exists — that it's still ~8 sites, and that
+  getJSONFull is still the on-disk format.
   Also repo-specific: port 4321, `frontend/` dir told to ignore, yarn script names.
 
 WARM-UP CHANGE — new for 2026W1; verify with the same care as the campus trap
   The starter ships with `GET /api/v2/buildings/:buildingId/rooms` REMOVED — both the route
-  registration (~142) and `Model.getRooms` (~602). Its ~20 tests in App.spec.ts are removed
+  registration in createApp and `Model.getRooms`. Its ~20 tests in App.spec.ts are removed
   too, so a fresh clone is green and the starter doesn't advertise the deletion. THE
   AUTOGRADER KEEPS THEM.
-  Why this endpoint. Model.getBuildings (~498) survives as a near-exact template: same
+  Why this endpoint. Model.getBuildings survives as a near-exact template: same
   validateGetParams, same {total, limit, offset, items} envelope, same getJSONLinks mapping,
-  and getBuildingById (~532) twelve lines below supplies the 404 block. Imitation is a
+  and getBuildingById immediately below it supplies the 404 block. Imitation is a
   COMPLETE strategy here and is not one for campus, which is the entire reason the two are
   paired. It is tested as itself and is a fixture for nothing, so removal doesn't cascade.
-  The frontend calls it at frontend/public/index.html:1093, so the symptom is visible: click
-  a building, no rooms.
+  The frontend calls it in frontend/public/index.html (search for the rooms fetch), so the
+  symptom is visible: click a building, no rooms.
   Collides with nothing: Lab 1 traces DELETE and uses PUT/GET-by-id; D2's target is geocoding
   in extractBuildings. One repo variant serves both.
   ORDER MATTERS. The endpoint goes first, while students still don't know the codebase. If
@@ -36,8 +38,9 @@ WARM-UP CHANGE — new for 2026W1; verify with the same care as the campus trap
   Removing both impls but leaving the route would be a compile error, which hands over the
   location. Remove both so it compiles clean and fails as a 404.
   Q5 now collects TWO numbers. The week-2 lecture opens on the paired distribution.
-  KNOCK-ON: Lab 1 project-intro quotes "469 tests" and an App.spec.ts insertion point at
-  ~10896. Recount both after the deletion.
+  KNOCK-ON: Lab 1 project-intro quotes a "469 tests" count and an App.spec.ts insertion
+  point for its walkthrough. Recount both after the deletion — don't trust either number
+  without checking the current file.
 
 SUBMISSION MECHANICS
   Single surface: PrairieLearn, with the PR link as an answer field. Rationale is split by
