@@ -32,15 +32,12 @@ It has shipped twice:
 - **v2** added facilities. Buildings, rooms, geocoded locations, and search that spans both kinds of
   data.
 
-Both versions are still live. Both have consumers. That last fact is going to matter more than
-anything else in this document.
-
 ## How you got it
 
 The previous team built it.
 
 They were students, they built it across a single term against fixed checkpoint deadlines, and they
-delivered. Their submission passed the grading suite. It satisfies both published specifications.
+delivered. Their submission passed the grading suite. It satisfies both published API versions.
 By the only measure anyone applied at the time, they did the job.
 
 Then the term ended, and they left.
@@ -101,7 +98,8 @@ requests into a specification.
 
 That job is harder than it sounds. The existing API has conventions — about error shapes,
 pagination, links, and status codes — that nobody ever wrote down as rules; you have to read them
-out of the specification and then apply them to a domain their authors never imagined. And v3 is a
+out of the [specification](/26w1/project/spec.html) and then apply them to a domain their authors
+never imagined. And v3 is a
 *major* version for a reason that has nothing to do with scheduling: when v2 shipped, three
 endpoints were marked deprecated rather than deleted. v3 is where that promise comes due.
 
