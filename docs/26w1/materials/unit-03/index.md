@@ -20,10 +20,10 @@ precisely enough that someone else could check it.
 
 | Lecture | What it answers | Read before |
 | :--- | :--- | :--- |
-| Where requirements come from | How much do you decide up front — and what does deciding early cost? | [Software Process](/textbook/process/) · [User Stories](/textbook/process/user-stories/) |
-| Ethics & IP | Who does this affect, and what are you permitted to build with? | [Ethics](/textbook/ethics-security/ethics/) · [Intellectual Property](/textbook/ethics-security/ip/) |
-| Information security | What must the system guarantee, and to whom? | [Information Security](/textbook/ethics-security/security/) |
-| Specification & modeling | How do you say what it must do precisely enough to check? | [Specifications](/textbook/process/specifications/) · [Technical Representations](/textbook/high-level-design/representations/) |
+| Where requirements come from | How much do you decide up front — and what does deciding early cost? | [Software Process](/textbook/8-unplaced/process/) · [User Stories](/textbook/8-unplaced/process/user-stories/) |
+| Ethics & IP | Who does this affect, and what are you permitted to build with? | [Ethics](/textbook/8-unplaced/ethics-security/ethics/) · [Intellectual Property](/textbook/8-unplaced/ethics-security/ip/) |
+| Information security | What must the system guarantee, and to whom? | [Information Security](/textbook/8-unplaced/ethics-security/security/) |
+| Specification & modeling | How do you say what it must do precisely enough to check? | [Specifications](/textbook/8-unplaced/process/specifications/) · [Technical Representations](/textbook/9-deprecated/representations/) |
 | *Specification is Right* | Can you tell a good specification from a plausible one? | — |
 
 Slides are posted on the [schedule](../../schedule.md) as we go.

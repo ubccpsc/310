@@ -99,7 +99,7 @@ Test-driven development (TDD) emerged from the agile movement as an approach to 
 
 TDD follows a simple linear set of steps:
 
-1. **Add a test:** the first step in TDD is always to write tests. By thinking about testing from the outset, developers are more likely to build [controllable and observable](/textbook/testing/testability/) code. This also helps to shift emphasis from implementing the body of functions to their API signatures.
+1. **Add a test:** the first step in TDD is always to write tests. By thinking about testing from the outset, developers are more likely to build [controllable and observable](/textbook/2-analytical-code-design/testability/) code. This also helps to shift emphasis from implementing the body of functions to their API signatures.
 1. **Run the tests to ensure they fail:** While this step might seem silly, it is important to know, before you refactor, that the only failures in a test suite are the ones you expect (e.g., from the tests you just created for code that does not yet exist). 
 1. **Write the code/run the tests:** Next the code is written so that the tests can be made to pass. The emphasis in this phase is on the tests passing correctly, extraneous functionality is explicitly avoided (with the intuition being that if it was not extraneous, there would be a test for it).
 1. **Refactor the code:** Since the developer now has a set of passing tests, they can refactor as needed to make improvements to the existing implementation that may be required from the knowledge gained while writing the code in the previous step.

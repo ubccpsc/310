@@ -20,13 +20,13 @@ It makes cost of change **measurable** first, then does something about it.
 | :--- | :--- | :--- |
 | The cost of change | Why does change cost anything? | *TBD* |
 | Measuring a change | How big was that change — and which dimension actually hurts? | *TBD* |
-| Cohesion & connascence | What belongs together, and what kind of agreement makes change hard? | [Design Principles](/textbook/high-level-design/principles/) *(cohesion only)* |
-| Refactoring as a discipline | How do I change it safely? | [Refactoring](/textbook/construction/refactoring/) |
-| Polymorphism & LSP | When is it safe to substitute one thing for another? | [Design Principles](/textbook/high-level-design/principles/) *(SOLID)* |
-| What makes code testable | Why does code resist testing? | [Testability](/textbook/testing/testability/) |
-| Seams & dependency inversion | How do I get control of something I don't construct? | [Testability](/textbook/testing/testability/) · [Design Principles](/textbook/high-level-design/principles/) *(SOLID)* |
-| Patterns: Adapter & Composite | What does polymorphism buy at a boundary you don't own? | [Design Patterns](/textbook/low-level-design/design-patterns/) |
-| Patterns: Factory & Decorator | What does delegation buy once it goes through an interface? | [Design Patterns](/textbook/low-level-design/design-patterns/) |
+| Cohesion & connascence | What belongs together, and what kind of agreement makes change hard? | [Change Difficulty](/textbook/2-analytical-code-design/change-difficulty/) |
+| Refactoring as a discipline | How do I change it safely? | [Refactoring](/textbook/2-analytical-code-design/refactoring/) |
+| Polymorphism & LSP | When is it safe to substitute one thing for another? | [Design Principles](/textbook/2-analytical-code-design/principles/) *(SOLID)* |
+| What makes code testable | Why does code resist testing? | [Testability](/textbook/2-analytical-code-design/testability/) |
+| Seams & dependency inversion | How do I get control of something I don't construct? | [Testability](/textbook/2-analytical-code-design/testability/) · [Design Principles](/textbook/2-analytical-code-design/principles/) *(SOLID)* |
+| Patterns: Adapter & Composite | What does polymorphism buy at a boundary you don't own? | [Design Patterns](/textbook/3-software-design/design-patterns/) |
+| Patterns: Factory & Decorator | What does delegation buy once it goes through an interface? | [Design Patterns](/textbook/3-software-design/design-patterns/) |
 
 Slides are posted on the [schedule](../../schedule.md) as we go.
 

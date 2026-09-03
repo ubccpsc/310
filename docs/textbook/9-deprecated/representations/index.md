@@ -9,7 +9,7 @@ Many software systems 'fail' because the wrong product is created. One of the pr
 
 <Youtube id="Y4oyXMt1cAw" />
 
-These diagrams provide a means for communicating using [abstractions](/textbook/high-level-design/#abstraction); representations provide concrete details about some aspects of a system while eliding other parts. This decreases the opacity of decision-making and enables more concrete discussion. Because of this, it is important that these representations are not ambiguous (open to more than one interpretation), are accurate (correct within some given tolerance), and are precise (so the correct system can be built repeatably from the same abstraction).
+These diagrams provide a means for communicating using [abstractions](/textbook/2-analytical-code-design/principles/#abstraction); representations provide concrete details about some aspects of a system while eliding other parts. This decreases the opacity of decision-making and enables more concrete discussion. Because of this, it is important that these representations are not ambiguous (open to more than one interpretation), are accurate (correct within some given tolerance), and are precise (so the correct system can be built repeatably from the same abstraction).
 
 <Youtube id="2v3IBQr5Yvw" />
 
