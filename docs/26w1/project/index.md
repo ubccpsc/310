@@ -2,8 +2,7 @@
 
 The project is where this course's ideas meet a system you didn't write: it exists to teach you to
 work confidently in unfamiliar code, to judge a design by what the *next* change to it will cost, to
-get untestable code under test and know whether those tests are worth anything, and to design an
-interface other people can safely depend on.
+get untestable code under test, and to design an interface other people can safely depend on.
 
 InsightUBC is not trivial, and it has a history — one that explains most of what you'll find when you
 open the repository. That background, and where the project is headed, are set out below.
@@ -38,8 +37,8 @@ The full specification for InsightUBC can be found <a href="/310/26w1/project/sp
 
 The previous team built it.
 
-They were students, they built it across a single term against fixed checkpoint deadlines, and they
-delivered. Their submission passed the grading suite. It satisfies both published API versions.
+They were students, they built it across a single term against fixed deliverable deadlines, and they
+delivered. Their submission satisfied the spec and passed the grading suite.
 By the only measure anyone applied at the time, they did the job.
 
 Then the term ended, and they left.
@@ -50,10 +49,10 @@ available to answer questions, and the Registrar's Office would like to know whe
 ## Why the code is the way it is
 
 You will open this repository and find things that make you wince. Before you conclude the previous
-team was careless, understand what actually produced it — because the same forces will be acting on
-you, and this is the part worth learning.
+team was careless, understand what actually produced it, since the same forces will be acting on
+you.
 
-**They were measured on whether it worked.** Every checkpoint asked whether the endpoints returned
+**They were measured on whether it worked.** Every deliverable asked whether the endpoints returned
 the right answers. None of them asked whether the next change would be cheap. So when a deadline got
 close — and they always do — the rational move was to make it work, and design lost every time it
 competed with shipping.
@@ -63,7 +62,7 @@ sections. Facilities arrived later, with a different shape and a different data 
 added to a structure that hadn't anticipated it. That is the normal life of a successful system:
 requirements that arrive after the design is set.
 
-**They started a cleanup and ran out of term.** In their last checkpoint the previous team was asked
+**They started a cleanup and ran out of term.** In their last deliverable the previous team was asked
 to improve the design without changing behaviour. They got through the courses and sections slice —
 you'll find it split into routers, controllers, services, and repositories — and then time ran out.
 Everything else still lives where it always did, in one very large file.
@@ -101,9 +100,7 @@ requests into a specification.
 That job is harder than it sounds. The existing API has conventions — about error shapes,
 pagination, links, and status codes — that nobody ever wrote down as rules; you have to read them
 out of the <a href="/310/26w1/project/spec.html" target="_blank">specification</a> and then apply them to a domain their authors
-never imagined. And v3 is a
-*major* version for a reason that has nothing to do with scheduling: when v2 shipped, three
-endpoints were marked deprecated rather than deleted. v3 is where that promise comes due.
+never imagined.
 
 **Then you build it** — without breaking v1 or v2, whose consumers did not agree to be disrupted
 because you wanted a cleaner design.
