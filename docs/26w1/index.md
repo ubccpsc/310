@@ -4,12 +4,12 @@ Welcome to the main course website where you can find the everything you need to
 
 ## 📌 Quick Links
 
-- [Read Course Syllabus](./syllabus.md) -- Course policies, expectations, and grading scheme.
-- [Join Piazza](#) -- Questions and announcements.
-- [GitHub Enterprise](#) -- access your term project repo using your CWL account.
-- [Go to Canvas Dashboard](#) -- See grades.
-- [PrairieLearn](#) -- Submit lab assignments, and project questions.
-- [iClicker](#) -- Respond to in-class polls.
+- [Read Course Syllabus](./syllabus.md) which lists course policies, expectations, and grading scheme.
+- [Join Piazza](https://piazza.com/ubc.ca/winterterm12026/cpsc_v310101102103/home) for questions and announcements.
+- [GitHub Enterprise](https://github.students.cs.ubc.ca/CPSC310-2026W-T1) to access your term project repo using your CWL account (you must be connected to the VPN).
+- [Canvas](https://canvas.ubc.ca/courses/192903) for grades.
+- [PrairieLearn](https://us.prairielearn.com/pl/course_instance/231184) to work on lab assignments, and submit project questions.
+- Join iClicker for your section [101](https://join.iclicker.com/SSXL), [102](https://join.iclicker.com/YSQU), [103](https://join.iclicker.com/NBOE) to respond to in-class polls.
 
 ## 🗓️ Semester Roadmap
 
