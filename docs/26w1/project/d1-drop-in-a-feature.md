@@ -1,120 +1,45 @@
-<!--
-PER-TERM NOTES — 2026W1. Re-check every item before publishing.
-
-DATES
-  Due Fri 25 Sep, 18:00. Must land AFTER the footprint vocabulary lecture (wk 2) so the
-  reflection isn't asking for terms students don't have yet, and EARLY enough that a stuck
-  student is visible with most of the term left to act on it.
-
-BASE REPO — anything here breaks if the repo changes
-  Feature: add `campus` to buildings. Chosen because it costs ~10 lines across 8 sites in
-  App.ts: the PUT /api/v2/buildings/:buildingId route handler, Model.setBuilding,
-  validateBuildingParams, the Building class constructor, and Building's getJSONLinks,
-  getJSONFull, getJSONForDelete, and buildBuilding.
-  The trap is buildBuilding: getJSONFull doubles as the on-disk format (Model.writeBuildings
-  serializes buildings through it), so a student who misses it has a feature that works until
-  the server restarts. Requirement 4 exists to force that discovery. If you change repo or
-  feature, re-verify the trap still exists — that it's still ~8 sites, and that
-  getJSONFull is still the on-disk format.
-  Also repo-specific: port 4321, `frontend/` dir told to ignore, yarn script names.
-
-WARM-UP CHANGE — new for 2026W1; verify with the same care as the campus trap
-  The starter ships with `GET /api/v2/buildings/:buildingId/rooms` REMOVED — both the route
-  registration in createApp and `Model.getRooms`. Its ~20 tests in App.spec.ts are removed
-  too, so a fresh clone is green and the starter doesn't advertise the deletion. THE
-  AUTOGRADER KEEPS THEM.
-  Why this endpoint. Model.getBuildings survives as a near-exact template: same
-  validateGetParams, same {total, limit, offset, items} envelope, same getJSONLinks mapping,
-  and getBuildingById immediately below it supplies the 404 block. Imitation is a
-  COMPLETE strategy here and is not one for campus, which is the entire reason the two are
-  paired. It is tested as itself and is a fixture for nothing, so removal doesn't cascade.
-  The frontend calls it in frontend/public/index.html (search for the rooms fetch), so the
-  symptom is visible: click a building, no rooms.
-  Collides with nothing: Lab 1 traces DELETE and uses PUT/GET-by-id; D2's target is geocoding
-  in extractBuildings. One repo variant serves both.
-  ORDER MATTERS. The endpoint goes first, while students still don't know the codebase. If
-  campus goes first, the endpoint is cheap partly through familiarity and question 8's
-  comparison is confounded.
-  Removing both impls but leaving the route would be a compile error, which hands over the
-  location. Remove both so it compiles clean and fails as a 404.
-  Q5 now collects TWO numbers. The week-2 lecture opens on the paired distribution.
-  KNOCK-ON: Lab 1 project-intro quotes a "469 tests" count and an App.spec.ts insertion
-  point for its walkthrough. Recount both after the deletion — don't trust either number
-  without checking the current file.
-
-SUBMISSION MECHANICS
-  Single surface: PrairieLearn, with the PR link as an answer field. Rationale is split by
-  audience — PR description carries only what a code reviewer needs (short, professional
-  register); inventory/trace/reflection go to PL where they can be rubric-graded with written
-  feedback. At ~400 individual submissions, TAs grading in GitHub is the thing to avoid.
-  Q5 ("how many files?") is deliberately a NUMBER, not prose: it feeds the week-2 lecture,
-  which opens on the cohort's own distribution rather than asking the room to shout guesses.
-  Keep it numeric even if the feature changes.
-  No inline PR review at D1 — nothing here is graded on design quality, and inconsistent TA
-  commenting across 400 students is a fairness problem. Code review starts at D2.
-
-PLATFORM
-  "post on Piazza" — update if the course changes forum.
--->
-
 # Deliverable 1 — Drop in a feature
 
 **Due Friday 25 September, 18:00 · individual · submit on GitHub and PrairieLearn**
 
-You've inherited a working system. Somebody else built it, it passes its tests, and it satisfies the
-spec. Now you have to change it.
-
 This is a small and a deliberately open deliverable.
 In particular, **there is no prescribed procedure** for how you should approach making the changes.
-The goal is to experience first hand what it costs to change an existing system, and to build some intuition about why change can be hard.
+The goal is to experience first hand what it costs to change an existing system, and to build some
+intuition about why change can be hard.
 
 ## Before you start
 
-The repository is a real CPSC 310 submission from a previous term, anonymized. It is not a reference
-solution and it is not a model of good design; it is a system that works.
-
-::: warning You need the UBC VPN to run the tests
-Several tests upload a facilities dataset, and every building address gets turned into coordinates
-by a geocoding service hosted on the UBC network. That service is unreachable from the open
-internet, so **connect to the UBC VPN before running `yarn test`** — otherwise those tests hang and
-then fail with timeouts and socket errors, and nothing about the failure will mention the network.
-:::
-
-```bash
-yarn install
-yarn build      # compiles and checks formatting
-yarn test       # the inherited test suite — it should be green before you touch anything
-yarn start      # serves on http://localhost:4321
-```
-
-**Get the inherited suite green before you change a line.** If it isn't green on a fresh clone,
-post on Piazza before doing anything else.
+Be sure to read the [Project Overview](./index.md) for the background.
+Instructions for getting your environment configured are provided in the first part of Lab 1, and you should complete it before changing any code.
+As a reminder, you must be connected to the UBC VPN to successfully run the tests — several tests upload a facilities dataset, and every building address gets turned into coordinates by a geocoding service which is only available on the VPN.
 
 ## The change
 
-Buildings currently have an `id`, a `name`, an `address`, and coordinates. Add one more field:
-**`campus`**.
+Buildings currently have an `id`, a `name`, an `address`, and coordinates. Your job is to add one more: an optional
+`campus` field.
 
-Specifically:
+**The requirement:** `PUT /api/v2/buildings/:buildingId` should accept `campus` in the request body,
+treated as an *optional* string. A client that doesn't send one must get the same status code, the
+same errors, and the same values for every other field as it always has.
 
-1. **`PUT /api/v2/buildings/:buildingId` should accept `campus` in the request body.** It should be treated as an *optional*
-   string. A request that doesn't send one must behave exactly as it does today.
-2. **Validation should match the existing convention.** When `campus` is present but isn't a string,
-   produce the same `422` shape the other fields produce, with `"expected a string"`. Look at how
-   `name` and `address` are handled and do the same thing.
-3. **`campus` should appear everywhere a building is returned** including the buildings list, a single building,
-   and the body returned when a building is deleted.
-4. **It should survive a restart.** Set a campus, stop the server, start it again, read the building back.
-   The value is still there.
+Implementing the requirement completely means:
 
-Importantly, **v1 and v2 behaviour must not change.** A client that doesn't send `campus` gets exactly what it
-got before, which is why the field is optional: making it required would break every existing
-caller.
+- **Validation follows the existing convention.** When `campus` is present but isn't a string,
+  produce the same `422` shape the other fields produce, with `"expected a string"`. Look at how
+  `name` and `address` are handled and do the same thing.
+- **`campus` appears everywhere a building is returned**, including the buildings list, a
+  single building, and the body returned when a building is deleted.
+- **`openapi.yml` describes the new `campus` field.** Add it to the `Building` schema and to the `422`
+  validation shape above, matching whatever you decided for how absence is represented. `campus`
+  isn't required the way `name` and `address` are, so its entry will look similar but not identical.
+  Run `yarn docs:build` and open `openapi.html` to see your changes rendered.
+- **The inherited suite stays green.** Your change may cause some existing tests to fail. If that happens,
+  fix the assertion, and only the assertion — don't touch a test's setup or intent to make it pass. If nothing breaks, there's nothing
+  to do here. Either way, `yarn test` should be green when you're done, same as it was before you
+  started. Keep track of anything you had to touch; questions 6, 8, and 9 all ask about it.
 
-Some inherited tests will fail anyway. A handful of them assert the *exact* shape of a building
-response, so they break the moment a field is added — even though no real consumer would notice.
-**You may update those assertions, and only those.** Keep track of which ones you had to touch;
-question 8 asks about it.
+Read every question in **What to submit** before you touch the code. Some of them are asking about
+decisions you'll make along the way, not just things to report once you're done.
 
 ## What to submit
 
@@ -124,7 +49,7 @@ question 8 asks about it.
 
 **1. Your change, working**, on a branch and merged into your `main` **via a pull request**.
 
-**2. One test** proving the `campus` value survives a restart.
+**2. At least one test** proving the `campus` value survives a restart.
 
 **3. A pull request description** which focuses on the technical aspects of the change.
 It should be three or four sentences written for a reviewer: say what changed, why it changed,
@@ -136,7 +61,7 @@ changelog.
 
 **4. The link to your pull request.**
 
-**5. How many files did you have to change?** This is just a number. We'll be talking about the implications in lecture.
+**5. How many files did you have to change?** This is just a number but you'll reflect on what it means below.
 
 **6. Every file and function you touched, and how you found each one.** Searching for keywords? Following a call
 chain? Running it and reading the error? Guessing? Include the places you changed something and then
@@ -146,11 +71,15 @@ had to change it back — those are the interesting ones.
 to the point where data is written to disk, naming each part it passes through. A numbered list is
 fine.
 
-**8. Reflection — half a page, in your own words.** Describe in plain language what made this change harder than it should have
-been. Say what had to agree with what, what surprised you, and why that made the feature more
-work than the code size suggests. Do not worry about using precise terminology for this deliverable.
+**8. How did you represent "no campus"?** When a building has no campus set, does your response omit
+the key, send it as `null`, or something else? Say what you chose and why, and whether it changed
+anything elsewhere — a test that broke, or something in `openapi.yml` you had to adjust to match.
 
-**9. Looking ahead — one paragraph.** If you had 60-90 minutes to make this kind of feature cheaper
+**9. Reflection — half a page, in your own words.** Describe in plain language what made this change harder than it should have
+been. Say what had to agree with what, what surprised you, and why that made the feature more
+work than the change suggests. Do not worry about using precise terminology for this deliverable.
+
+**10. Looking ahead — one paragraph.** If you had 60-90 minutes to make this kind of feature cheaper
 next time, what one structural change would you make? Name the part of the code you would change,
 how that edit it would make future changes cheaper, and one tradeoff or risk your change introduces.
 
@@ -158,8 +87,8 @@ how that edit it would make future changes cheaper, and one tradeoff or risk you
 
 | Assessed by | What it covers |
 | :--- | :--- |
-| Autograded (50%) | The feature meets all four requirements; the inherited v1/v2 suite still passes |
-| Judgment (50%) | Whether items 3, 6, 7, 8, and 9 are **specific** |
+| Autograded (50%) | The requirement is completely implemented |
+| Judgment (50%) | Whether items 3, 6, 7, 8, 9, and 10 are **specific** |
 
 **We are not grading the design quality of your change.** There is no expected shape, no pattern
 you were supposed to use, and no penalty for whatever you did. A change that works and is honestly
@@ -179,9 +108,9 @@ places than you expect for the amount of code you actually write, and at least a
 ship something subtly broken because two of those places have to agree and nothing checks that they
 do.
 
-That experience is the point. Lectures will shortly give you the vocabulary for what you're about
-to feel, and in D2 you'll do a comparable job with an actual procedure — and be asked what the
-procedure bought you. Neither conversation works if you haven't done this part first, unaided.
+That experience is the point. Lectures will give you the vocabulary for what you feel, and in D2 you'll
+do a comparable job with an actual procedure — and be asked what the procedure bought you.
+Neither conversation works if you haven't done this part first, unaided.
 
 So: don't optimize. Don't try to guess the "right" design. Make it work, write down honestly what it
 cost you, and keep your notes.
