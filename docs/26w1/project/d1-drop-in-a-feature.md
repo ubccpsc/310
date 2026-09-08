@@ -13,6 +13,23 @@ Be sure to read the [Project Overview](./index.md) for the background.
 Instructions for getting your environment configured are provided in the first part of Lab 1, and you should complete it before changing any code.
 As a reminder, you must be connected to the UBC VPN to successfully run the tests — several tests upload a facilities dataset, and every building address gets turned into coordinates by a geocoding service which is only available on the VPN.
 
+One more thing before you touch any code: you will not be able to push directly to `main`. Work on
+a branch from the start.
+
+```bash
+git checkout -b campus
+```
+
+Commit as you go, then push the branch and open a pull request (PR) on GitHub. Each push triggers a
+check that tells you whether your code is *gradeable*; to acutally recieve credit you **must merge
+your PR into `main` before the deadline**. Your grade will be provided after the deadline, so be sure
+you check your PR carefully before merging. If you need to fix something after merging, you can open
+another PR on the same branch, and then merge it before the deadline.
+
+The goal is to get you comfortable with the mechanics of working on a branch, pushing, opening
+and merging your own PR before D3 and D4, where your partner has to approve a PR before it can be
+merged.
+
 ## The change
 
 Buildings currently have an `id`, a `name`, an `address`, and coordinates. Your job is to add one more: an optional
@@ -27,8 +44,8 @@ Implementing the requirement completely means:
 - **Validation follows the existing convention.** When `campus` is present but isn't a string,
   produce the same `422` shape the other fields produce, with `"expected a string"`. Look at how
   `name` and `address` are handled and do the same thing.
-- **`campus` appears everywhere a building is returned**, including the buildings list, a
-  single building, and the body returned when a building is deleted.
+- **`campus` appears in the buildings list, a single building, and the body returned when a
+  building is deleted.**
 - **`openapi.yml` describes the new `campus` field.** Add it to the `Building` schema and to the `422`
   validation shape above, matching whatever you decided for how absence is represented. `campus`
   isn't required the way `name` and `address` are, so its entry will look similar but not identical.
@@ -47,7 +64,11 @@ decisions you'll make along the way, not just things to report once you're done.
 
 ### In your repository
 
-**1. Your change, working**, on a branch and merged into your `main` **via a pull request**.
+**1. Your change, working**, on a branch and merged into your `main`. One pull request is the
+goal; if you end up with more than one, that's fine too — you can always open another small one
+later. There is no review step at this stage: nobody is waiting to approve anything, so merge it
+yourself as soon as you're ready. Only what's on `main` before the deadline is graded, so a pull
+request left open is work nobody will see.
 
 **2. At least one test** proving the `campus` value survives a restart.
 
@@ -55,11 +76,12 @@ decisions you'll make along the way, not just things to report once you're done.
 It should be three or four sentences written for a reviewer: say what changed, why it changed,
 and whether there is any risk or wrinkle worth checking. Point to the main area of the codebase
 the reviewer should look at, but do not list every file or function and do not write a step-by-step
-changelog.
+changelog. The test(s) should be obvious in the PR diff.
 
 ### In PrairieLearn
 
-**4. The link to your pull request.**
+**4. The link to your pull request** (whichever one carries your final, merged work, if you ended
+up with more than one).
 
 **5. How many files did you have to change?** This is just a number but you'll reflect on what it means below.
 
