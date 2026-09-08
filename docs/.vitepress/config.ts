@@ -84,7 +84,7 @@ export default defineConfig({
 						// },
 						// { text: "D3 — Design v3", link: "/26w1/project/d3-design-v3" },
 						// { text: "D4 — Build it", link: "/26w1/project/d4-build-it" },
-						{ text: "AutoTest", link: "/26w1/project/AutoTest" },
+						// { text: "AutoTest", link: "/26w1/project/AutoTest" },
 					],
 				},
 				{ text: "📖 Course Reader →", link: "/textbook/" },
