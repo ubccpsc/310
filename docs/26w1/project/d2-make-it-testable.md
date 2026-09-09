@@ -1,65 +1,3 @@
-<!--
-PER-TERM NOTES — 2026W1. Re-check every item before publishing.
-
-DATES
-  Due Fri 16 Oct, 18:00. Must land AFTER the seams/dependency-inversion lecture (wk 4) — step 3
-  is the first time students meet the concept, and the whole struggle-then-procedure structure
-  collapses if it's taught earlier. Pairs form in the Oct 16-22 lab block, immediately after.
-
-BASE REPO — verified against project_team133, 2026W1
-  Target: geocoding, a bare fetch() at App.ts:1077, inside an anonymous arrow inside a
-  Promise.all inside `private async extractBuildings(table)` (App.ts:1040). URL prefix is a
-  module const `api_pre` at App.ts:774. Response type `CoordResponseFormat {lat?, lon?, error?}`
-  at App.ts:768.
-  Why this target: there is no object to inject — it's a bare fetch with no seam of any kind,
-  buried three layers deep in HTML parsing, so reaching it in a test means running a whole zip
-  upload. Extracting it requires identifying the capability first, which is the actual lesson.
-  THE SKIP-ON-FAILURE BEHAVIOUR IS SPECIFIED, NOT A BUG. The original spec said "if geolocation
-  fails, skip that building and all its rooms." Do not frame it as a defect — the point is that a
-  correctly-implemented requirement cannot be demonstrated, which is a better argument for
-  testability than bug-hunting is.
-  Step 1 is reachable-but-expensive, not impossible: the service 404s on an unknown address, so a
-  crafted zip with a bogus address triggers the skip path end-to-end. Reward that, don't penalise
-  it. It costs a fixture plus a slow full upload, exercises the whole pipeline rather than the
-  decision, and reaches exactly ONE failure mode. Service-down, timeout, and malformed-response
-  still require a seam. Grade the "what can you still not reach" answer.
-  CORRECTED: the inherited suite DOES exercise this path — it uploads campus.zip with
-  kind:"facilities" (85 refs in App.spec.ts), so geocoding runs on every suite run. What's true is
-  that nothing ISOLATES it and nothing names it. Step 2 relies on that distinction; don't restore
-  the earlier "zero tests" claim.
-  CONSEQUENCE: `yarn test` hits the live geocoding service, ~60 calls per campus upload, several
-  uploads per run. See RATE LIMIT below — this is unresolved.
-  NOTE: api_pre is team-specific (.../project_team133/). Decide whether the course geocoding
-  service accepts any path segment or whether this needs rewriting before distribution.
-
-MUTATION TESTING
-  Stryker. No config exists in the base repo yet — that is setup work. It MUST be scoped to the
-  extracted module; running it over a 2,489-line App.ts against a 12,187-line suite is impractical.
-  Taught as tool use in Lab 4 (Oct 2-8), which lands before this deadline. If labs move, check
-  that ordering — students must not meet Stryker for the first time here.
-  UNVERIFIED: whether the inherited suite genuinely has low mutation detection on the paths
-  students will touch. D2's step 5 assumes it does. MEASURE THIS EARLY; if detection is already
-  high, the mutant set must be degraded, and that is the one place hand-seeding is unavoidable.
-
-SLOW GEOCODER — the pressure instrument, introduced between D1 and D2
-  From D2 onward the course geocoding service adds ~1-2s of latency per request. Narrative for
-  students: after D1's traffic the provider throttled us. This is what makes step 1 fail for real.
-  LATENCY, NOT A HARD LIMIT, and the distinction matters. A ~100/hr quota would make the INHERITED
-  SUITE unrunnable — it uploads campus.zip repeatedly, ~60 geocode calls each, plausibly hundreds
-  per `yarn test`. Students would be blocked in D1, weeks before they know what a seam is, with no
-  way to fix it. Latency gives identical pressure (one campus upload ~1-2 min, a full suite run
-  intolerable to repeat) and CANNOT block anyone, so there are no unfair failures and no appeals.
-  Keep a generous hard limit underneath purely as an abuse backstop, set where no honest student
-  reaches it.
-  D1 must stay fast. The whole point is that the pressure arrives after they've felt the problem.
-  Autograder always uses a stub, never the live service.
-
-SUBMISSION MECHANICS
-  Same as D1: PrairieLearn is the single surface, PR link as an answer field. This is the diff
-  their D3 partner reviews, which is worth telling students — it is a real reader, not a
-  hypothetical one.
--->
-
 # Deliverable 2 — Make it testable
 
 **Due Friday 16 October, 18:00 · individual · submit on GitHub and PrairieLearn**
@@ -67,25 +5,16 @@ SUBMISSION MECHANICS
 Details will be released after the D1 deadline.
 
 <!--
-In D1 you changed this system however seemed right to you. This time you get a procedure.
-
 There is a part of InsightUBC that is close to untestable, and you are going to fix that.
 
-But the fix isn't really the point. **The point is that you'll have worked on this codebase twice, in
-two different ways.**
+You've now worked on this codebase twice: once in D1 with no procedure at all, and now with the
+seams and dependency-inversion material from lecture in hand. This deliverable asks you to put that
+to use — extract the untestable part behind an interface, get it under test with the network
+unplugged, and land the result as a clean, reviewable diff. What's graded is mostly the outcome: do
+your tests actually pass without the network, and could a reviewer follow what you did.
 
-In D1 you had no procedure, so you did the natural thing: found the places that looked relevant and
-edited them until it worked, discovering the shape of the change as you went. It got you there. What
-it doesn't do is scale — not to a codebase too large to hold in your head, not to a team where
-somebody else has to review what you did, and not to a deadline where "it works now" has to survive
-the next change.
-
-This time you'll work the way it's done when it's done well: **form a hypothesis about what needs to
-change, make the smallest change that would tell you whether you're right, and check before going
-further.** Same system, same person, two ways of working.
-
-At the end you'll be asked which bought you what. That question is only answerable because you've now
-done both.
+You'll close with a short comparison to D1 — not because the process itself is the point, but
+because you now have two honest attempts at the same codebase and it's worth noticing what changed.
 
 ## The target
 
@@ -93,13 +22,27 @@ When a facilities dataset is uploaded, the system reads building addresses out o
 turns each one into coordinates by calling an external geocoding service. Coordinates matter: they
 are what makes it possible to ask how far apart two buildings are.
 
-The inherited suite — all **12,187 lines of it** — does exercise that path. Several tests upload a
+The inherited suite — all **12,146 lines of it** — does exercise that path. Several tests upload a
 facilities dataset, and geocoding runs every time. So it is covered, in the sense that somebody would
 notice if it stopped working entirely.
 
 What it has no test for is anything *specific*. Not one test isolates geocoding from the zip handling
 and HTML parsing around it, and not one test verifies what happens when geocoding **fails** — even
 though that behaviour was explicitly required. That second gap is where you're going to start.
+
+## Warm-up — one more place campus needed to go
+
+D1 asked you to make `campus` appear in three responses: the buildings list, a single building,
+and the body returned when a building is deleted. That was the whole requirement but it wasn't the whole system.
+
+`POST /api/v2/search` can filter and return building-derived fields too, and right now `campus`
+isn't one of them. Nothing in D1 told you that, because it wasn't part of D1. It's part of this
+deliverable, and it's the same kind of gap D1 already showed you can exist without anything
+flagging it.
+
+**Time-boxed to 30 minutes.** Make `campus` searchable. Land it as its own pull request, separate
+from everything else below — small and self-contained enough that a reviewer could check it in
+isolation.
 
 ## Step 1 — Try to verify a requirement
 
@@ -113,7 +56,7 @@ They implemented it. Find the geocoding call in `App.ts` and you'll see the cond
 coordinates present and no error, or the building never gets added. That is the requirement, working
 as specified.
 
-**Nothing in 12,187 lines of tests demonstrates that it works.** Nobody can show that a building
+**Nothing in 12,146 lines of tests demonstrates that it works.** Nobody can show that a building
 with an unresolvable address is skipped, or that its rooms go with it. The requirement is met, and
 unverifiable.
 
@@ -161,7 +104,7 @@ behaviour in this deliverable. A refactor that also fixes a bug is a refactor no
 
 ## Step 3 — Decide where to cut
 
-Now the procedure. It starts with a decision, and the decision is yours.
+Now the actual decision, and it's yours to make.
 
 A **seam** is a place where you can change what code does without editing it in that place. The
 geocoding call has no seam: it happens directly, inline, with nothing outside able to supply a
@@ -196,36 +139,17 @@ What that looks like:
 The difference isn't length or polish. The first names a pattern. The second names a **reason**, a
 **rejected alternative**, and a **thing deliberately not done**.
 
-## Step 4 — Cut it, in steps that stay green
+## Step 4 — Cut it
 
-Do it in moves small enough that you are never more than one revert away from safety. After each one,
-run the suite from step 2. Commit when it's green.
+Work incrementally enough that you're never more than a step or two from a green suite, and commit
+when it's green. You don't need to narrate every micro-move — what's graded is the result: a clean
+diff, and tests that pass with the network unplugged.
 
-**Small isn't the same as purposeful.** Each move should be testing something you believe — *"I think
-this call can be replaced by an interface method without anything else noticing"* — and the suite
-run is how you find out whether you were right. A sequence of tiny aimless edits is just a slow
-version of the same tangle. Know what each step is for before you make it.
-
-That means the extraction is a *sequence*, not an event: introduce the interface, move the code behind
-it, thread it through the callers, supply the real implementation at the edge, then write the fake.
-Some of those steps leave the system working; some don't compile until the next one lands. Knowing
-which is which is the skill.
-
-**Yes, this is slower than just doing it.** Especially now, with every geocoding call costing a
-second or two — running that suite is not free, and you will be tempted to batch five changes together
-and check once at the end. Resist it. The value of one commit at a time is that you always know what
-your next goal is, and you never end up lost in a tangle of half-finished edits with no idea which one
-broke things. It feels laborious the first few times and becomes second nature, which is the whole
-reason to practise it on something this size.
-
-**One piece of strategy: get your fake working early.** Your loop is slow only while the real service
-is still in the path. As soon as the seam exists and a fake can go in, running your tests costs
-milliseconds instead of minutes — and every remaining step in your sequence gets cheap. The refactor
-pays for itself before you've even finished it. Notice when that happens; it's the most direct
-evidence you'll get this term that this stuff is worth doing.
-
-**Your commit history is the evidence.** Not a reconstruction written afterwards — the actual
-sequence, with messages that say what each step did.
+**One thing worth doing early: get your fake working as soon as the seam exists.** Your loop is
+slow only while the real service is still in the path — once a fake can stand in for it, running
+your tests costs milliseconds instead of minutes, and everything remaining gets cheap to check.
+Notice when that happens; it's the most direct evidence you'll get this term that this is worth
+doing.
 
 Define the interface around what the calling code *needs*, not around how geocoding happens to work
 today.
@@ -285,35 +209,14 @@ Your fake is a **claim about the real thing**. If the real service returns an er
 address and your fake always succeeds, your tests will pass while telling you nothing. Make the fake
 behave like the real implementation, including when the real implementation fails.
 
-## Step 6 — Find out whether your tests detect anything
+## Step 6 — Compare it with D1
 
-**You don't write the mutants.** Stryker generates them — the tool you used in Lab 4. You run it and
-read the report.
+A few sentences. You've now made a change to this system twice — once with nothing to go on but
+your own judgment, once with lecture material and an interface in hand.
 
-A mutant is a small automatic change to your production code: an operator flipped, a boundary moved,
-a return value swapped. If your tests are worth anything, they fail. If they pass, the mutant
-*survived*, and you have found a gap in your suite rather than a bug in your code.
-
-Run it scoped to the code you extracted, not the whole repository — mutation testing is slow, and
-the geocoding seam is what you actually changed.
-
-Report your before-and-after numbers and pick two survivors to discuss. For each: is this a real gap
-you should close, or is the mutant **equivalent** — a change that doesn't actually alter behaviour,
-so no test could possibly catch it? Identifying one equivalent mutant correctly is worth more here
-than killing three trivial ones.
-
-**We grade the delta and your reasoning about it, never the raw score.**
-
-## Step 7 — Compare it with D1
-
-Half a page. In D1 you had no procedure and made a change; here you had one and made another.
-
-- What did the procedure buy you that your D1 approach didn't?
-- What did it cost?
-- Was there a point where you wanted to skip a step? Which one, and what would have happened?
-
-This is not a question about whether the procedure is good. It's a question about two attempts you made
-yourself, five weeks apart.
+What was actually different this time — not "did I follow a procedure," but what changed in how
+confident you were that it worked, how fast you could tell if something broke, or what a reviewer
+could get out of your diff.
 
 ## What to submit
 
@@ -323,29 +226,37 @@ yourself, five weeks apart.
 
 **2. Your tests**, which must pass with the network unplugged.
 
-**3. A commit sequence showing the extraction in steps**, with the suite green at each point it could
-be.
+**3. A clean commit history for the extraction.** The suite should be green at points along the way;
+we're not grading the sequence itself, just the result.
 
-**4. Separate pull requests, in order: structure, then tests.** The extraction lands on its own,
-with the inherited suite still green to prove behaviour didn't move. Your new tests follow. Mixing
-them means nobody — including you — can tell whether the refactor was safe or whether the tests were
-written to fit whatever it turned into.
+**4. Three separate pull requests, in order: the search warm-up, then structure, then tests — each
+merged by you.** The warm-up is its own small, self-contained fix. The extraction lands on its own
+after that, with the inherited suite still green to prove behaviour didn't move. Your new tests
+follow. Mixing structure and tests together means nobody — including you — can tell whether the
+refactor was safe or whether the tests were written to fit whatever it turned into.
+
+There's no review step at this stage, and nobody is waiting to approve any of these before you
+merge them — only what's on `main` when you submit gets graded. A pull request left open, however
+good, is work nobody will see.
 
 **5. A pull request description a reviewer can use.** Someone you haven't met yet is going to read
-this: in D3 you'll be paired up, and your partner reviews this diff to help decide whose repository
-the two of you carry forward. Write it for them.
+this eventually: in D3 you'll be paired up, and your partner reviews this diff — after the fact, to
+help decide whose repository the two of you carry forward, not before you're allowed to merge it
+now. Write the description for them, but don't wait for them.
 
 ### In PrairieLearn
 
-**6. Your step 1 report.** What you tried, how far you got, what it cost, and which failure modes
+**6. Links to your three pull requests** — search warm-up, structure, tests.
+
+**7. Your step 1 report.** What you tried, how far you got, what it cost, and which failure modes
 you still couldn't reach.
 
-**7. Where you cut, and what your interface hides.** Which of step 3's options you took and why you
-rejected the others. Then paste the interface: Paste the interface. Then: what does a caller learn about
-how geocoding actually works? What could you swap underneath it without any caller noticing?
+**8. Where you cut, and what your interface hides.** Which of step 3's options you took and why you
+rejected the others. Then paste the interface. What does a caller learn about how geocoding actually
+works? What could you swap underneath it without any caller noticing?
 
-**8. Your riskiest step.** Which move in your sequence was most likely to break something silently,
-and how did you know it hadn't?
+**9. Your riskiest step.** Which move was most likely to break something silently, and how did you
+know it hadn't?
 
 > **Thin.** *"Moving the fetch call was the riskiest part but the tests passed."*
 >
@@ -357,20 +268,18 @@ and how did you know it hadn't?
 The question is *how you knew*, not which step felt scariest. "The tests passed" is only an answer if
 you can say what those tests would have caught.
 
-**9. Mutation results** — before and after, plus your two survivors and what you concluded.
-
-**10. Step 7, the comparison with D1.**
+**10. Step 6, the comparison with D1.**
 
 ## How this is graded
 
 | Assessed by | What it covers |
 | :--- | :--- |
-| Autograded | Your suite passes with the network unavailable; mutants run against it; the inherited suites still pass |
-| Judgment | The step 1 report, where you cut and what the interface hides, your riskiest step, your mutation reasoning, and the D1 comparison |
+| Autograded | The search warm-up works; your suite passes with the network unavailable; the inherited suites still pass |
+| Judgment | The step 1 report, where you cut and what the interface hides, your riskiest step, and the D1 comparison |
 
-Note the first autograded item. It doesn't check that you built a *particular* seam — it checks that
-you built one at all, by taking the network away and seeing whether your tests still work. What shape
-it takes is your decision, and that part is graded by a human.
+Note the network-unavailable check specifically. It doesn't check that you built a *particular*
+seam — it checks that you built one at all, by taking the network away and seeing whether your tests
+still work. What shape it takes is your decision, and that part is graded by a human.
 
 ## On the amount of writing
 
@@ -399,7 +308,7 @@ knowing what runs. Add one when an axis is actually failing and you have a reaso
 to run without the network, or a second implementation genuinely exists, or the dependency is likely
 to change for reasons outside your control.
 
-Question 7 asks what your interface hides. If the honest answer is "nothing, really," you have found
+Question 8 asks what your interface hides. If the honest answer is "nothing, really," you have found
 a seam that didn't need to exist.
 
 -->
