@@ -9,7 +9,7 @@ intuition about why change can be hard.
 
 ## Before you start
 
-Be sure to read the [Project Overview](./index.md) for the background.
+Be sure to read the [Project Overview](./index.md) first!
 Instructions for getting your environment configured are provided in the first part of Lab 1, and you should complete it before changing any code.
 As a reminder, you must be connected to the UBC VPN to successfully run the tests — several tests upload a facilities dataset, and every building address gets turned into coordinates by a geocoding service which is only available on the VPN.
 
@@ -21,8 +21,8 @@ git checkout -b campus
 ```
 
 Commit as you go, then push the branch and open a pull request (PR) on GitHub. Each push triggers a
-check that tells you whether your code is *gradeable*; to acutally recieve credit you **must merge
-your PR into `main` before the deadline**. Your grade will be provided after the deadline, so be sure
+check that tells you whether your code is *gradeable*; to actually recieve credit you **must merge
+your PR into `main` before the deadline**. Your autograded grade will be provided after the deadline, so be sure
 you check your PR carefully before merging. If you need to fix something after merging, you can open
 another PR on the same branch, and then merge it before the deadline.
 
@@ -120,10 +120,8 @@ What loses marks is vagueness. *"I edited a few files and it was confusing"* tel
 *"I added the field to the constructor and the two JSON methods, ran it, and it worked — then I
 restarted the server and the value was gone, which sent me to a fourth place I hadn't found yet"* is
 a complete answer.
-
+<!-- 
 ## Why it's shaped this way
-
-This is a setup, and it would be unfair not to tell you.
 
 We picked this feature because the current design handles it badly. You are going to touch more
 places than you expect for the amount of code you actually write, and at least a few of you will
@@ -135,4 +133,4 @@ do a comparable job with an actual procedure — and be asked what the procedure
 Neither conversation works if you haven't done this part first, unaided.
 
 So: don't optimize. Don't try to guess the "right" design. Make it work, write down honestly what it
-cost you, and keep your notes.
+cost you, and keep your notes. -->
