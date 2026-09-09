@@ -148,9 +148,8 @@ missed labs — see [Academic Concession](#academic-concession).
 
 **Plan to work on the project outside the lab slot.** The lab block is taken up by the tutorial, the
 week's assignment, and later your team check-in. There is not enough room in it for substantive
-project work, and it is not designed to hold any. Once pairs form during the Oct 16–22 lab, you and
-your partner will need to arrange your own working time — that is a real scheduling commitment, and
-it is worth agreeing on it in the first week you are paired rather than the week D4 is due.
+project work. Once pairs form during the Oct 16–22 lab, you and
+your partner will need to arrange your own working time outside of class to ensure you are making steady progress on the project before the deadlines.
 
 ### Project
 
@@ -173,11 +172,11 @@ Every deliverable ships **three** artifacts:
 3. **Process evidence** — the pull requests, the commit sequence, the reviews you left, the tests
 
 Each deliverable is assessed on two fronts: what can be checked automatically, and what requires
-judgment. A submission that passes every automated check but arrives with no rationale and no
-process evidence loses the judgment half. We are assessing your engineering judgment, and judgment
+judgment. A submission that passes every automated check but lacks rationale
+process evidence is incomplete: we are assessing your engineering judgment, and judgment
 is only visible in the argument you make for your decisions.
 
-This is not busywork. In practice, nobody will ask you whether your code passes — they will ask why
+This is not busywork. In practice, nobody will ask you whether your code passes because that is a given. They will ask why
 you built it that way, and whether it can absorb the change they want next.
 
 ### Assessments
