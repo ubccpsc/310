@@ -21,7 +21,7 @@ CPSC 310.
 | Instructor | Nick Bradley | [ncbrad@cs.ubc.ca](mailto:ncbrad@cs.ubc.ca) | Mondays @ 1:30-2:30pm in ICCS 238 |
 | Instructor | Kyle Chin | [kdchin@cs.ubc.ca](mailto:kdchin@cs.ubc.ca) | Wednesdays @ 2-3pm in ICCS 306 |
 | Course Coordinator | Irene Yuan | [cpsc310-admin@cs.ubc.ca](mailto:cpsc310-admin@cs.ubc.ca) | — |
-| Teaching Assistants | *(TBD: list or link)* | Via Piazza | In your lab section |
+| Teaching Assistants |  | Via Piazza | In your lab section |
 
 **Who to contact for what.** Use **Piazza** for anything about course content, the project, or lab
 assignments — questions there get answered fastest and everyone benefits from the answer. Use the
@@ -109,7 +109,7 @@ We understand that life happens, and attending CPSC310 may not be the most impor
 ### Labs {#labs}
 
 **Labs are held online**, weekly, starting in week 1, and run in blocks from **Friday to Thursday**.
-There are no rooms assigned; join links are on the [course home page](./) and attendance is required.
+There are no rooms assigned; join links are on Piazza and attendance is required.
 Each is small, directed, and tied to the lecture of the corresponding week (i.e. lab 3 will cover week 3 material, which will be the same week for friday labs and the prior week for all other labs).
 
 **A lab session** opens with a **tutorial** on material from that week's lectures. You then have a
