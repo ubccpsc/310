@@ -34,7 +34,6 @@ The full REST API specification for InsightUBC can be found <a href="/310/26w1/p
 ## How you got it
 A real team of students built this initial InsightUBC system across a single term against fixed deliverable deadlines.
 Their submission satisfied the spec and passed the grading suite.
-<!-- By the only measure anyone applied at the time (the test suite), they did the job. -->
 
 Then the term ended, and they left.
 
@@ -71,14 +70,11 @@ fingerprints of every deadline that shaped it.
 
 ## Where this is going
 
-The Registrar's Office wants **v3**, and you're going to design and build it. But you don't start
-there, because you can't responsibly change a system you don't understand.
+The Registrar's Office wants **v3**, and you're going to design and build it!
 
-The term runs in four moves:
-
-**First, you find out what you're dealing with.** [D1](d1-drop-in-a-feature.md) asks for one small
-feature, added however seems right to you. No procedure, no guidance. The point is to learn what
-changing this system actually costs, in your hands, before anyone hands you vocabulary for it.
+**First, you find out what you're dealing with.** [D1](d1-drop-in-a-feature.md) asks for two small
+features that will help you get acquainted with the codebase. The point is to experience and reflect on what
+changing an inherited software system actually costs.
 
 **Then you get it under control.** D2 points at a part of the system that
 reaches out to the network (making it difficult to test) which the inherited test suite
@@ -87,13 +83,6 @@ does not test. You'll fix that by changing your system to be testable and then a
 **Then you design v3.** D3 and D4 require you and a partner to put the software into the real world by considering 
 (sometimes vague) requirements from stakeholders, transforming them into a specification, and then
 implementing the software to match.
-<!-- Students want to know whether a
-proposed timetable actually works — whether the sections clash, and whether it's physically possible
-to cross campus in the ten minutes between them. The Registrar wants to know whether a draft term
-schedule works — whether any room is double-booked, or any class assigned somewhere it doesn't fit.
-Both are asking InsightUBC to check something another system produced.
-You'll pair up and turn those
-requests into a specification. -->
 
 That job is harder than it sounds. The existing API has conventions that nobody ever wrote down as rules. You will have to read them
 out of the <a href="/310/26w1/project/spec.html" target="_blank">specification</a> and then apply them to new requirements
