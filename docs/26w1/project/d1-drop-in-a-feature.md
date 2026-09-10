@@ -2,7 +2,7 @@
 
 **Due Friday 25 September, 18:00 · individual · submit on GitHub and PrairieLearn**
 
-This is a small and a deliberately open deliverable.
+This is a deliberately open deliverable.
 In particular, **there is no prescribed procedure** for how you should approach making the changes.
 The goal is to experience first hand what it costs to change an existing system, and to build some
 intuition about why change can be hard.
@@ -30,47 +30,45 @@ The goal is to get you comfortable with the mechanics of working on a branch, pu
 and merging your own PR before D3 and D4, where your partner has to approve a PR before it can be
 merged.
 
-## The change
+## Request 1: Adding `campus`
 
 Buildings currently have an `id`, a `name`, an `address`, and coordinates. Your job is to add one more: an optional
-`campus` field.
+`campus` field. This requires you to modify three parts of the existing codebase:
 
-**The requirement:** `PUT /api/v2/buildings/:buildingId` should accept `campus` in the request body,
-treated as an *optional* string. A client that doesn't send one must get the same status code, the
-same errors, and the same values for every other field as it always has.
+1. Parse the campus field (currently all `"vancouver campus"`) from the header of each building's `.htm` file. It may not appear in all of the files, so is not a required field.
+2. Support modifying each building's `campus` field via the `PUT /api/v2/buildings/:buildingId` endpoint.
+3. Allow users to search by `campus` via the `POST /api/v2/search` endpoint.
 
-Implementing the requirement completely means:
+Finally, you must add tests that specifically test each of the three features.
 
-- **Validation follows the existing convention.** When `campus` is present but isn't a string,
-  produce the same `422` shape the other fields produce, with `"expected a string"`. Look at how
-  `name` and `address` are handled and do the same thing.
-- **`campus` appears in the buildings list, a single building, and the body returned when a
-  building is deleted.**
-- **`openapi.yml` describes the new `campus` field.** Add it to the `Building` schema and to the `422`
-  validation shape above, matching whatever you decided for how absence is represented. `campus`
-  isn't required the way `name` and `address` are, so its entry will look similar but not identical.
-  Run `yarn docs:build` and open `openapi.html` to see your changes rendered.
-- **The inherited suite stays green.** Your change may cause some existing tests to fail. If that happens,
-  fix the assertion, and only the assertion — don't touch a test's setup or intent to make it pass. If nothing breaks, there's nothing
-  to do here. Either way, `yarn test` should be green when you're done, same as it was before you
-  started. Keep track of anything you had to touch; questions 6, 8, and 9 all ask about it.
+Implementing these requirements completely means that `campus` appears and can be used just like any other existing building field, except that it is optional instead of required.
+Additionally, you must update `openapi.yml` documentation to the `Building` schema and all the above endpoints, and ensure that all existing tests still pass.
 
 Read every question in **What to submit** before you touch the code. Some of them are asking about
 decisions you'll make along the way, not just things to report once you're done.
 
+## Request 2: Implementing aggregation
+
+The previous team *almooooooost* finished the aggregation implementation of the `POST /api/v2/search` querying endpoint.
+They finished the validation and tests, and even some tests for the aggregation itself, but ran out of time before they could finish the actual aggregation code itself.
+Your task here is to implement aggregation so it satisfies the spec as described in the `openapi.yml` specification for `POST /api/v2/search`!
+Hint: there is one specific method you will need to implement!
+
 ## What to submit
 
-**Everything is submitted through PrairieLearn**, including a link to your pull request.
+**Everything is submitted through PrairieLearn**, including the link to your pull requests.
 
 ### In your repository
 
-**1. Your change, working**, on a branch and merged into your `main`. One pull request is the
+**1. Your changes**, one branch per feature (4 total) merged into your `main` branch.
+One pull request per feature is the
 goal; if you end up with more than one, that's fine too — you can always open another small one
-later. There is no review step at this stage: nobody is waiting to approve anything, so merge it
-yourself as soon as you're ready. Only what's on `main` before the deadline is graded, so a pull
-request left open is work nobody will see.
+later.
+There is no review step at this stage: nobody is waiting to approve anything, so merge it
+yourself as soon as you're ready.
+Only what's on `main` before the deadline is graded, even if it is on a different branch before the deadline!
 
-**2. At least one test** proving the `campus` value survives a restart.
+**2. At least two test cases** per feature proving that your feature works as intended.
 
 **3. A pull request description** which focuses on the technical aspects of the change.
 It should be three or four sentences written for a reviewer: say what changed, why it changed,
@@ -80,30 +78,30 @@ changelog. The test(s) should be obvious in the PR diff.
 
 ### In PrairieLearn
 
-**4. The link to your pull request** (whichever one carries your final, merged work, if you ended
+Submit each of the following for each of the four pull requests corresponding to the above features:
+
+**4. Links to your pull requests** (whichever one carries the bulk of your work if you ended
 up with more than one).
 
 **5. How many files did you have to change?** This is just a number but you'll reflect on what it means below.
 
-**6. Every file and function you touched, and how you found each one.** Searching for keywords? Following a call
-chain? Running it and reading the error? Guessing? Include the places you changed something and then
+**6. Every class and function you touched, and how you found each one.** Searching for keywords? Following a call
+chain? Running it and reading the error? Guessing? (or even, **gasps**, AI?) Include the places you changed something and then
 had to change it back — those are the interesting ones.
 
-**7. A trace of one request.** Follow `PUT /api/v2/buildings/:buildingId` from the route registration
+**7. A trace of one request.** For example, follow `PUT /api/v2/buildings/:buildingId` from the route registration
 to the point where data is written to disk, naming each part it passes through. A numbered list is
 fine.
+
+Finally, you will submit one longer reflection total:
 
 **8. How did you represent "no campus"?** When a building has no campus set, does your response omit
 the key, send it as `null`, or something else? Say what you chose and why, and whether it changed
 anything elsewhere — a test that broke, or something in `openapi.yml` you had to adjust to match.
 
-**9. Reflection — half a page, in your own words.** Describe in plain language what made this change harder than it should have
-been. Say what had to agree with what, what surprised you, and why that made the feature more
-work than the change suggests. Do not worry about using precise terminology for this deliverable.
-
-**10. Looking ahead — one paragraph.** If you had 60-90 minutes to make this kind of feature cheaper
-next time, what one structural change would you make? Name the part of the code you would change,
-how that edit it would make future changes cheaper, and one tradeoff or risk your change introduces.
+**9. Reflection — half a page, in your own words.** Using the analysis you did in the prior steps, describe what made these changes harder than they should have
+been. Say what had to agree with what, what surprised you, and why that made each feature more
+work than the initial change would have suggested. Was request 1 easier or harder to do than request 2? Why or why not? Do not worry about using precise terminology for this deliverable.
 
 ## How this is graded
 
