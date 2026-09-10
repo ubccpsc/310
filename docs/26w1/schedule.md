@@ -22,7 +22,7 @@ Dates and topics subject to change!
 
 | Wk | Dates | Unit | Lectures | Lab | Due |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | Sep 8, 10 | [Unit 1](./materials/unit-01/) | *(no Tuesday class)* · The cost of change | [Lab 1](#) — Onboarding *(Sep 11–17)* | — |
+| 1 | Sep 8, 10 | [Unit 1](./materials/unit-01/) | *(no Tuesday class)* · <a href="/310/26w1/lectures/01-course_introduction.pdf" target="_blank">Introduction</a> | [Lab 1](#) — Onboarding *(Sep 11–17)* | — |
 | 2 | Sep 15, 17 | | Measuring a change · Cohesion & connascence | [Lab 2](#) — cohesion & connascence *(Sep 18–24)* | — |
 | 3 | Sep 22, 24 | | Refactoring as a discipline · Polymorphism & LSP | [Lab 3](#) — refactoring & LSP *(Sep 25–Oct 1)* ⚠ Wed Sep 30 | **D1** Fri Sep 25 |
 | 4 | Sep 29, Oct 1 | | What makes code testable · Test Doubles & dependency inversion | [Lab 4](#) — testability & seams *(Oct 2–8)* | — |

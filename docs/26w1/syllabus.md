@@ -58,6 +58,7 @@ In this course, you will learn to:
 ## Learning Materials
 
 Readings for each lecture are listed on the [unit pages](./materials/) and are available in the [course reader](/textbook/).
+Slides are linked on the [schedule page](./schedule.md).
 
 You will need accounts on **Piazza** (questions and announcements), **PrairieLearn** (lab assignments
 and project questions), **iClicker** (in-lecture participation), **Canvas** (grades), and **GitHub
