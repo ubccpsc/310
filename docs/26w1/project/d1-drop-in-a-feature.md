@@ -40,12 +40,12 @@ Hint: there is one specific method you will need to implement!
 
 Submit a reflection on PrairieLearn by answering the following questions:
 
-**1. A trace of one request.** For example, follow `PUT /api/v2/buildings/:buildingId` from the route registration
+**1. How did you represent "no campus"?** When a building has no campus set, does your response omit
+the key, send it as `null`, or something else? What is the behaviour of a PUT request when it modifies a building with a campus but the request omits `campus`? Say what you chose and why, and how it affected the other features of Request 1.
+
+**2. A trace of one request.** Follow `PUT /api/v2/buildings/:buildingId` from the route registration
 to the point where data is written to disk, naming each part it passes through. A numbered list is
 fine.
-
-**2. How did you represent "no campus"?** When a building has no campus set, does your response omit
-the key, send it as `null`, or something else? Say what you chose and why, and how it affected the other features of Request 1.
 
 **3. For your changes to the `PUT /api/v2/buildings/:buildingId`, identify each class and function you touched, and how you found each one.** Searching for keywords? Following a call
 chain? Running it and reading the error? Guessing? (or even, **gasps**, AI?). You can also include the places you changed something and then
