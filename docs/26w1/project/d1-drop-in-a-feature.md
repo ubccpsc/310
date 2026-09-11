@@ -1,4 +1,4 @@
-# Deliverable 1 — Drop in a feature
+# Deliverable 1: Drop in a feature
 
 **Due Friday 25 September, 18:00 · individual · submit on GitHub and PrairieLearn**
 
@@ -13,29 +13,12 @@ Be sure to read the [Project Overview](./index.md) first!
 Instructions for getting your environment configured are provided in the first part of Lab 1, and you should complete it before changing any code.
 As a reminder, you must be connected to the UBC VPN to successfully run the tests — several tests upload a facilities dataset, and every building address gets turned into coordinates by a geocoding service which is only available on the VPN.
 
-One more thing before you touch any code: you will not be able to push directly to `main`. Work on
-a branch from the start.
-
-```bash
-git checkout -b campus
-```
-
-Commit as you go, then push the branch and open a pull request (PR) on GitHub. Each push triggers a
-check that tells you whether your code is *gradeable*; to actually recieve credit you **must merge
-your PR into `main` before the deadline**. Your autograded grade will be provided after the deadline, so be sure
-you check your PR carefully before merging. If you need to fix something after merging, you can open
-another PR on the same branch, and then merge it before the deadline.
-
-The goal is to get you comfortable with the mechanics of working on a branch, pushing, opening
-and merging your own PR before D3 and D4, where your partner has to approve a PR before it can be
-merged.
-
 ## Request 1: Adding `campus`
 
 Buildings currently have an `id`, a `name`, an `address`, and coordinates. Your job is to add one more: an optional
 `campus` field. This requires you to modify three parts of the existing codebase:
 
-1. Parse the campus field (currently all `"vancouver campus"`) from the header of each building's `.htm` file. It may not appear in all of the files, so is not a required field.
+1. Parse the campus field (currently all `"vancouver campus"`) from the header of each building's `.htm` file. It may not appear in all of the files, so is not a required field. This change needs to be implemented in the `POST /api/v2/datasets` endpoint when a facilities dataset is uploaded.
 2. Support modifying each building's `campus` field via the `PUT /api/v2/buildings/:buildingId` endpoint.
 3. Allow users to search by `campus` via the `POST /api/v2/search` endpoint.
 
@@ -44,37 +27,44 @@ Finally, you must add tests that specifically test each of the three features.
 Implementing these requirements completely means that `campus` appears and can be used just like any other existing building field, except that it is optional instead of required.
 Additionally, you must update `openapi.yml` documentation to the `Building` schema and all the above endpoints, and ensure that all existing tests still pass.
 
-Read every question in **What to submit** before you touch the code. Some of them are asking about
-decisions you'll make along the way, not just things to report once you're done.
+Read the questions in the reflection section before you touch the code. Question 3 in particular asks about the process you used to identify the locations in your code that you had to change.
 
 ## Request 2: Implementing aggregation
 
 The previous team *almooooooost* finished the aggregation implementation of the `POST /api/v2/search` querying endpoint.
 They finished the validation and tests for validation, but ran out of time before they could finish the actual aggregation code implementation and its tests.
-Your task here is to implement aggregation so it satisfies the spec as described in the `openapi.yml` specification for `POST /api/v2/search`!
+Your task here is to implement aggregation so it satisfies the spec as described in the `openapi.yml` specification for `POST /api/v2/search`. You will want to test that your implementation works as specified.
 Hint: there is one specific method you will need to implement!
 
-## What to submit
+## Reflection
 
-**Everything is submitted through PrairieLearn**, including the link to your pull requests.
+Submit a reflection on PrairieLearn by answering the following questions:
 
-### In your repository
+**1. A trace of one request.** For example, follow `PUT /api/v2/buildings/:buildingId` from the route registration
+to the point where data is written to disk, naming each part it passes through. A numbered list is
+fine.
 
-**1. Your changes**, one branch per feature (4 total) merged into your `main` branch.
-One pull request per feature is the
-goal; if you end up with more than one, that's fine too — you can always open another small one
-later.
-There is no review step at this stage: nobody is waiting to approve anything, so merge it
-yourself as soon as you're ready.
-Only what's on `main` before the deadline is graded, even if it is on a different branch before the deadline!
+**2. How did you represent "no campus"?** When a building has no campus set, does your response omit
+the key, send it as `null`, or something else? Say what you chose and why, and how it affected the other features of Request 1.
 
-**2. At least two test cases** per feature proving that your feature works as intended.
+**3. For your changes to the `PUT /api/v2/buildings/:buildingId`, identify each class and function you touched, and how you found each one.** Searching for keywords? Following a call
+chain? Running it and reading the error? Guessing? (or even, **gasps**, AI?). You can also include the places you changed something and then
+had to change it back.
 
-**3. A pull request description** which focuses on the technical aspects of the change.
-It should be three or four sentences written for a reviewer: say what changed, why it changed,
-and whether there is any risk or wrinkle worth checking. Point to the main area of the codebase
-the reviewer should look at, but do not list every file or function and do not write a step-by-step
-changelog. The test(s) should be obvious in the PR diff.
+**4. Write a short reflection on the changes you had to make to the `PUT /api/v2/buildings/:buildingId` endpoint.**
+Describe what aspects of the existing code made these changes harder than they should have been.
+Say what had to agree with what, what surprised you, and why that made each feature more work than the initial change would have suggested.
+Compare those changes with the ones you had to make for request 2.
+Were they easier or harder to implement? Why or why not?
+
+## Grading
+
+This deliverable has both autograded and manully graded components, each worth 50% of your grade.
+
+- The code you submit for Request 1 and 2 will be autograded. Every commit you push to the `main` branch of your repo is automatically graded, and you highest scoring commit before the deadline is used as your final grade.
+- Your reflection will be manually grdaed by the TAs on PrairieLearn after the deadline.
+
+<!--
 
 ### In PrairieLearn
 
@@ -107,17 +97,16 @@ work than the initial change would have suggested. Was request 1 easier or harde
 
 | Assessed by | What it covers |
 | :--- | :--- |
-| Autograded (50%) | The requirement is completely implemented |
-| Judgment (50%) | The reasoning and process shown for the requirement |
+| Autograded (50%) | The requirements are completely implemented |
+| Judgment (50%) | Whether items 3, 6, 7, 8, 9, and 10 are **specific** |
 
-**We are not grading the design quality of your change.** There is no expected shape, no pattern
-you were supposed to use, and no penalty for whatever you did. A change that works and is honestly
-described gets full marks.
-
-What loses marks is vagueness. *"I edited a few files and it was confusing"* tells us nothing.
+**We are not grading the design quality of your change.**
+The goal of this deliverable is get experience working in an unfamiliar codebase and being able to describe why you made the changes you did. For written answers, be specific and describe exactly what you did.
+-->
+<!-- What loses marks is vagueness. *"I edited a few files and it was confusing"* tells us nothing.
 *"I added the field to the constructor and the two JSON methods, ran it, and it worked — then I
 restarted the server and the value was gone, which sent me to a fourth place I hadn't found yet"* is
-a complete answer.
+a complete answer. -->
 <!-- 
 ## Why it's shaped this way
 
