@@ -50,7 +50,7 @@ decisions you'll make along the way, not just things to report once you're done.
 ## Request 2: Implementing aggregation
 
 The previous team *almooooooost* finished the aggregation implementation of the `POST /api/v2/search` querying endpoint.
-They finished the validation and tests, and even some tests for the aggregation itself, but ran out of time before they could finish the actual aggregation code itself.
+They finished the validation and tests for validation, but ran out of time before they could finish the actual aggregation code implementation and its tests.
 Your task here is to implement aggregation so it satisfies the spec as described in the `openapi.yml` specification for `POST /api/v2/search`!
 Hint: there is one specific method you will need to implement!
 
@@ -108,7 +108,7 @@ work than the initial change would have suggested. Was request 1 easier or harde
 | Assessed by | What it covers |
 | :--- | :--- |
 | Autograded (50%) | The requirement is completely implemented |
-| Judgment (50%) | Whether items 3, 6, 7, 8, 9, and 10 are **specific** |
+| Judgment (50%) | The reasoning and process shown for the requirement |
 
 **We are not grading the design quality of your change.** There is no expected shape, no pattern
 you were supposed to use, and no penalty for whatever you did. A change that works and is honestly
