@@ -11,14 +11,14 @@ intuition about why change can be hard.
 
 Be sure to read the [Project Overview](./index.md) first!
 Instructions for getting your environment configured are provided in the first part of Lab 1, and you should complete it before changing any code.
-As a reminder, you must be connected to the UBC VPN to successfully run the tests — several tests upload a facilities dataset, and every building address gets turned into coordinates by a geocoding service which is only available on the VPN.
+As a reminder, you must be connected to the UBC VPN to successfully run the tests since they invoke code that calls a geocoder web service hosted at UBC.
 
 ## Request 1: Adding `campus`
 
 Buildings currently have an `id`, a `name`, an `address`, and coordinates. Your job is to add one more: an optional
 `campus` field. This requires you to modify three parts of the existing codebase:
 
-1. Parse the campus field (currently all `"vancouver campus"`) from the header of each building's `.htm` file. It may not appear in all of the files, so is not a required field. This change needs to be implemented in the `POST /api/v2/datasets` endpoint when a facilities dataset is uploaded.
+1. Update how the `POST /api/v2/datasets` endpoint handles parsing of uploaded facilities datasets so that it extracts the campus name when processing each building's `.htm` file. The value should come from the page's header, if present (in the the campus.zip dataset the value is always `"vancouver campus"`).
 2. Support modifying each building's `campus` field via the `PUT /api/v2/buildings/:buildingId` endpoint.
 3. Allow users to search by `campus` via the `POST /api/v2/search` endpoint.
 
@@ -36,9 +36,9 @@ They finished the validation and tests for validation, but ran out of time befor
 Your task here is to implement aggregation so it satisfies the spec as described in the `openapi.yml` specification for `POST /api/v2/search`. You will want to test that your implementation works as specified.
 Hint: there is one specific method you will need to implement!
 
-## Reflection
+## Design Analysis
 
-Submit a reflection on PrairieLearn by answering the following questions:
+Answer the following questions on PrairieLearn in [DELIV1 Design Analsyis](https://us.prairielearn.com/pl/course_instance/231184/assessment/2728754) before the deadline:
 
 **1. How did you represent "no campus"?** When a building has no campus set, does your response omit
 the key, send it as `null`, or something else? What is the behaviour of a PUT request when it modifies a building with a campus but the request omits `campus`? Say what you chose and why, and how it affected the other features of Request 1.
@@ -62,7 +62,7 @@ Were they easier or harder to implement? Why or why not?
 This deliverable has both autograded and manully graded components, each worth 50% of your grade.
 
 - The code you submit for Request 1 and 2 will be autograded. Every commit you push to the `main` branch of your repo is automatically graded, and you highest scoring commit before the deadline is used as your final grade.
-- Your reflection will be manually grdaed by the TAs on PrairieLearn after the deadline.
+- Your analysis will be manually grdaed by the TAs on PrairieLearn after the deadline.
 
 <!--
 
