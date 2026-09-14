@@ -15,7 +15,7 @@ Welcome to the main course website where you can find the everything you need to
 
 The course moves outward: from design decisions inside a single class, to the
 boundaries between modules, to the systems and processes that hold a codebase
-together over time. Every unit answers the same question at a wider radius —
+together over time. Every unit answers the same question at a wider radius:
 **what does it cost to change this, and why?**
 
 | Unit | Weeks |
@@ -25,18 +25,14 @@ together over time. Every unit answers the same question at a wider radius —
 | [Unit 3: Requirements & specification](materials/unit-03/) | 9–11 |
 | [Unit 4: Software process](materials/unit-04/) | 12–13 |
 
-**[Course materials overview](materials/)** — what each unit covers and why it's
-ordered this way. **[Schedule](./schedule.md)** — dates, slides, labs, and deadlines.
+Full details for each unit are provided in the **[Course materials overview](materials/)**.
 
-## 🛠️ Project at a Glance
+## 🛠️ Course Project
 
-You will not be starting from a blank repository. You inherit a working system
-that already satisfies two published API versions — and then you have to change it.
+You will extend [InsightUBC](./project/index.md), an existing system that provides a REST API for managing courses and buildings at UBC.
+The work is divided across four deliverables (dates on the [schedule](./schedule.md)), starting individually before partnering up for the second half.
 
-Four deliverables, escalating in scope: add a feature and feel where the design
-fights you, make it testable, design a third API version with a partner, then
-build it. Dates are on the [schedule](./schedule.md).
-
-> **Code is necessary but not sufficient.** Every deliverable ships three things:
-> the code, the design rationale behind it, and the process evidence showing how
-> it came to be. See the [syllabus](./syllabus.md) for how this is graded.
+The project is smaller in scale than real software development, but aims to keep
+much of its substance. Beyond writing and testing code, you'll justify design decisions,
+specify and scope new features, and follow the process discipline — reviews,
+documentation, and workflows — that professional teams rely on to ship reliably.
