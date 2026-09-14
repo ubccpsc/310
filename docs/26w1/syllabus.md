@@ -18,7 +18,7 @@ CPSC 310.
 
 | Role | Name | Contact | Office hours |
 | :--- | :--- | :--- | :--- |
-| Instructor | Nick Bradley | [ncbrad@cs.ubc.ca](mailto:ncbrad@cs.ubc.ca) | Mondays @ 1:30-2:30pm in ICCS 238 |
+| Instructor | Nick Bradley | [ncbrad@cs.ubc.ca](mailto:ncbrad@cs.ubc.ca) | Mondays @ 1:30-2:30pm in ICCS 229 |
 | Instructor | Kyle Chin | [kdchin@cs.ubc.ca](mailto:kdchin@cs.ubc.ca) | Wednesdays @ 2-3pm in ICCS 306 |
 | Course Coordinator | Irene Yuan | [cpsc310-admin@cs.ubc.ca](mailto:cpsc310-admin@cs.ubc.ca) | — |
 | Teaching Assistants |  | Via Piazza | In your lab section |
