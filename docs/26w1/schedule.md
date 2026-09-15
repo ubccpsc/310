@@ -23,7 +23,7 @@ Dates and topics subject to change!
 | Wk | Dates | Unit | Lectures | Lab | Due |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1 | Sep 8, 10 | [Unit 1](./materials/unit-01/) | *(no Tuesday class)* · <a href="/310/26w1/lectures/01-course_introduction.pdf" target="_blank">Introduction</a> | [Lab 1](#) — Onboarding *(Sep 11–17)* | — |
-| 2 | Sep 15, 17 | | Measuring a change · Cohesion & connascence | [Lab 2](#) — cohesion & connascence *(Sep 18–24)* | — |
+| 2 | Sep 15, 17 | | <a href="/310/26w1/lectures/02a-coupling.pdf" target="_blank">Coupling</a> · Cohesion | [Lab 2](#) — cohesion & connascence *(Sep 18–24)* | — |
 | 3 | Sep 22, 24 | | Refactoring as a discipline · Polymorphism & LSP | [Lab 3](#) — refactoring & LSP *(Sep 25–Oct 1)* ⚠ Wed Sep 30 | **D1** Fri Sep 25 |
 | 4 | Sep 29, Oct 1 | | What makes code testable · Test Doubles & dependency inversion | [Lab 4](#) — testability & seams *(Oct 2–8)* | — |
 | 5 | Oct 6, 8 | [Unit 2](./materials/unit-02/) | Patterns: Adapter & Composite · Patterns: Factory & Decorator | [Lab 5](#) — design patterns *(Oct 9–15)* ⚠ Mon Oct 12 | — |
