@@ -61,7 +61,7 @@ Were they easier or harder to implement? Why or why not?
 
 This deliverable has both autograded and manully graded components, each worth 50% of your grade.
 
-- The code you submit for Request 1 and 2 will be autograded. Every commit you push to the `main` branch of your repo is automatically graded, and you highest scoring commit before the deadline is used as your final grade.
+- The code you submit for Request 1 and 2 will be autograded. Every commit you push to the `main` branch of your repo is automatically graded, and you highest scoring commit before the deadline is used as your final grade. To request feedback on a commit, enter the following in the commit comment: `@310-bot #d1`. Be sure to read the full details of the [autograder](./autotest.md). In particular, note that the number of times you can request feedback is limited each day.
 - Your analysis will be manually grdaed by the TAs on PrairieLearn after the deadline.
 
 <!--
