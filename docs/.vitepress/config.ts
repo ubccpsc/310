@@ -78,6 +78,10 @@ export default defineConfig({
 							text: "D1 — Drop in a feature",
 							link: "/26w1/project/d1-drop-in-a-feature",
 						},
+						{
+							text: "AutoTest",
+							link: "/26w1/project/autotest"
+						}
 						// {
 						// 	text: "D2 — Make it testable",
 						// 	link: "/26w1/project/d2-make-it-testable",
