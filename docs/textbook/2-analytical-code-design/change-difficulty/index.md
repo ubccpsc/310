@@ -37,6 +37,24 @@ We can measure coupling between two groups of code along the following attribute
 
 Notes on connascense based on [here](https://practicingruby.com/articles/connascence) which contains more explanations and examples.
 
+#### Example
+
+```typescript
+function mysteriousOperation(x: number, y: number) {
+    return x - y;
+}
+
+function inverseOperation(x: number, y: number) {
+    return mysteriousOperation(x, y);
+}
+```
+
+In this example, `mysteriousOperation` and `inverseOperation` are coupled with a connascence of *Position*: when `inverseOperation` calls `mysteriousOperation`, it must specify `x` and `y` in a particular order to receive the expected output.
+If `mysteriousOperation` changed it's return to `return y - x`, then `inverseOperation` would have to change the position of the arguments it supplies in its call.
+Two things to note:
+1. This is an *implicit* coupling, since the compiler wouldn't catch the error (since both are number types). It would fail silently at runtime!
+2. There are other levels of connascence present here too (for example, they must agree on the *name* `mysteriousOperation`). However, the strongest connascence is of *position*, so that is the most significant one.
+
 #### Risks & Difficulties
 Coupling puts the developer at risk of missing necessary updates to coupled code.
 This is especially dangerous if a coupling is implicit.
@@ -95,6 +113,25 @@ If the method you are editing addresses five tasks but you are editing just one 
 
 Similarly, low cohesion indueces *difficulties* by forcing the developer to read lots of code to understand where to make a change.
 You have probably experienced this before if you have seen a class that is hundreds of lines of code long and could not find where you actually needed to make your edit!
+
+#### Example
+
+```typescript
+function f(x: number) {
+    let y = 0;                 // (1)
+    if (x > 100) {             // (2)
+        y += 5;                // (3)
+        console.log("woohoo"); // (4)
+    }
+    return y;                  // (5)
+}
+```
+In this example, lines 1 and 2 are bound by:
+- Data: No. Line 1 uses `y` only, and Line 2 uses `x` only.
+- Logic: Yes. Both lines are invoked whenever `f` is called.
+- Ordering: No. Looking at just these two lines, it does not matter what order they are invoked. However, Lines 1 and 3 *do* have an ordering binding.
+
+**Exercise for home**: For each pair of lines, determine which cohesion bindings they hold!
 
 <!-- The flow chart below can be used to reason about the kind of cohesion within a design. As with the coupling flow chart above, some kinds of cohesion are better than others. Thinking about the cohesiveness of our program elements can help us to understand when further decomposition of our designs might be helpful and will also motivate the organization of our program elements into their most appropriate subsystems.
 
