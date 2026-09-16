@@ -22,18 +22,18 @@ Dates and topics subject to change!
 
 | Wk | Dates | Unit | Lectures | Lab | Due |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | Sep 8, 10 | [Unit 1](./materials/unit-01/) | *(no Tuesday class)* · <a href="/310/26w1/lectures/01-course_introduction.pdf" target="_blank">Introduction</a> | [Lab 1](#) — Onboarding *(Sep 11–17)* | — |
-| 2 | Sep 15, 17 | | <a href="/310/26w1/lectures/02a-coupling.pdf" target="_blank">Coupling</a> · Cohesion | [Lab 2](#) — cohesion & connascence *(Sep 18–24)* | — |
-| 3 | Sep 22, 24 | | Refactoring as a discipline · Polymorphism & LSP | [Lab 3](#) — refactoring & LSP *(Sep 25–Oct 1)* ⚠ Wed Sep 30 | **D1** Fri Sep 25 |
-| 4 | Sep 29, Oct 1 | | What makes code testable · Test Doubles & dependency inversion | [Lab 4](#) — testability & seams *(Oct 2–8)* | — |
-| 5 | Oct 6, 8 | [Unit 2](./materials/unit-02/) | Patterns: Adapter & Composite · Patterns: Factory & Decorator | [Lab 5](#) — design patterns *(Oct 9–15)* ⚠ Mon Oct 12 | — |
-| 6 | Oct 13, 15 | | API Change severity & versioning · API design  | [Lab 6](#) — API design & evolution & code review *(Oct 16–22)* | **D2** Fri Oct 16 |
-| 7 | Oct 20, 22 | |  The testing pyramid · Layered architecture | [Lab 7](#) — layers, test strategy *(Oct 23–29)* | — |
+| 1 | Sep 8, 10 | [Unit 1](./materials/unit-01/) | *(no Tuesday class)* · <a href="/310/26w1/lectures/01-course_introduction.pdf" target="_blank">Introduction</a> | Lab 1 — Onboarding *(Sep 11–17)* | — |
+| 2 | Sep 15, 17 | | <a href="/310/26w1/lectures/02a-coupling.pdf" target="_blank">Coupling</a> · Cohesion & Refactoring | Lab 2 — coupling & cohesion *(Sep 18–24)* | — |
+| 3 | Sep 22, 24 | | Polymorphism & LSP · Testability | Lab 3 — refactoring & testability *(Sep 25–Oct 1)* ⚠ Wed Sep 30 | **D1** Fri Sep 25 |
+| 4 | Sep 29, Oct 1 | | Test Doubles & dependency inversion · Patterns: Adapter & Composite | Lab 4 — seams & patterns *(Oct 2–8)* | — |
+| 5 | Oct 6, 8 | [Unit 2](./materials/unit-02/) | Patterns: Strategy & State · Patterns: Factory & Decorator | Lab 5 — design patterns *(Oct 9–15)* ⚠ Mon Oct 12 | — |
+| 6 | Oct 13, 15 | | API Change severity & versioning · API design  | Lab 6 — API design & evolution & code review *(Oct 16–22)* | **D2** Fri Oct 16 |
+| 7 | Oct 20, 22 | |  The testing pyramid · Layered architecture | Lab 7 — layers, test strategy *(Oct 23–29)* | — |
 | 8 | Oct 27, 29 | — | Module 1 & 2 synthesis & midterm review · *(no Thursday class)* | Project time — team check-in *(Oct 30–Nov 5)* | **Midterm** Thu Oct 29 |
 | 9 | Nov 3, 5 | [Unit 3](./materials/unit-03/) | Where requirements come from · Ethics & IP | **No lab** — fall break *(Nov 9–11)* | **D3** Fri Nov 6 |
-| 10 | Nov 10, 12 | | *(no Tuesday class)* · Information security | [Lab 8](#) — requirements & constraints *(Nov 13–19)* | — |
-| 11 | Nov 17, 19 | | Specification & modeling · *Specification is Right* | [Lab 9](#) — specification *(Nov 20–26)* | — |
-| 12 | Nov 24, 26 | [Unit 4](./materials/unit-04/) | Continuous integration · How teams coordinate | [Lab 10](#) — process & metrics *(Nov 27–Dec 3)* | **D4** Fri Nov 27 |
+| 10 | Nov 10, 12 | | *(no Tuesday class)* · Information security | Lab 8 — requirements & constraints *(Nov 13–19)* | — |
+| 11 | Nov 17, 19 | | Specification & modeling · *Specification is Right* | Lab 9 — specification *(Nov 20–26)* | — |
+| 12 | Nov 24, 26 | [Unit 4](./materials/unit-04/) | Continuous integration · How teams coordinate | Lab 10 — process & metrics *(Nov 27–Dec 3)* | **D4** Fri Nov 27 |
 | 13 | Dec 1, 3 | | Process metrics · GenAI & where the cost moves | — | — |
 
 ⚠ **Labs are cancelled on Wednesday September 30th and Monday October 12th.** You may attend any other lab section if your section is cancelled. Lab assignments are still due by your next regularly scheduled lab.
