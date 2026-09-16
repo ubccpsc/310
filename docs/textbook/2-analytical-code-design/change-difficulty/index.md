@@ -3,39 +3,10 @@ weight: 2
 title: "Change Difficulty"
 ---
 
-You now understand the cost of making a change, but what parts of code actually contribute to these costs?
-We examine two axes by which to analyze code: *cohesion* and *coupling*.
 
-### Cohesion
-
-<Youtube id="oMJNS6mvhQU" />
-
-Cohesion is a property that indicates how focused our program elements are on performing a single complete task. This is best thought of in terms of classes in object-oriented design. In this space, cohesion measures how well the elements within a class belong together. Classes with low cohesion are responsible for a wide variety of tasks; these classes are harder to reason about because they often have many competing concerns within their implementation that might conflict. This can cause maintenance problems because changes to fix one defect within a class might actually be by design for another feature provided by the class. The larger a class grows in scope, the more likely this kind of problem is to be encountered.
-
-Cohesive classes generally have a small set of private fields that make sense to the majority of the public methods within the class; if there are fields within the class that are only used by a small fraction of the public methods it may be a sign that the functionality provided by those methods and the private field may not be cohesive with the overall functionality of the class.
-
-Since cohesive classes are smaller, they lead to a proliferation of classes within a system. While this might make it harder to find the right class within the system, it greatly eases how hard it is to understand that class and simplifies any future bug fixes or feature additions that may be required.
-
-We measure cohesion in terms of the following properties:
-1. *Reasons*: the number of concepts are present in a grouping of code
-2. *Type*: how a pair of concepts is related (by *data*, *logic*, and/or *timing*)
-
-The table below shows TypeScript examples of code that is related by different *Type*s:
-
-| Type | Example | Explanation |
-| --- | --- | --- |
-| Data | `const subtotal = price * quantity; const total = subtotal + tax;` | line 2 uses data from the previous line |
-| Logic | `if (user.isAdmin) { grantAccess(); } else { denyAccess(); raiseAlarm() }` | `denyAccess()` and `raiseAlarm()` are grouped by the same logic |
-| Timing | `clearCanvas(); redrawCharacters();` | `clearCanvas()` needs to be called before `redrawCharacters()` for it to display properly|
-
-Using these properties helps us reason about which code should be grouped together, and which code can be extracted apart.
-
-<!-- The flow chart below can be used to reason about the kind of cohesion within a design. As with the coupling flow chart above, some kinds of cohesion are better than others. Thinking about the cohesiveness of our program elements can help us to understand when further decomposition of our designs might be helpful and will also motivate the organization of our program elements into their most appropriate subsystems.
-
-
-![Cohesion flowchart](cohesion_flow.png) -->
-
-<Youtube id="gkCIOUbu81o" />
+Cost of change gave us a model for how to reason about the difficulties and risks of evolving code.
+But how do we describe the sources of these costs in actual code?
+What features of our code make it so we incur these costs?
 
 ### Coupling
 
@@ -58,15 +29,21 @@ We can measure coupling between two groups of code along the following attribute
 
  Connascence type | Two things must agree on | Example |
 | --- | --- | --- |
-| **Name** | What something is called | A `userId` is passed around as a plain string, and several functions expect it to match the naming used by `findUserById`. If one part renames the field or API parameter without updating all call sites, the code still compiles but lookups silently fail. |
-| **Type** | The shape of the data | A function receives a tuple like `[customerId, productId, quantity, price]`, and multiple callers assume the same 4-field structure. If one side changes the tuple to include a discount field, the rest of the system keeps working until runtime errors or incorrect totals appear. |
-| **Value** | A specific literal | The app hard-codes the string `"pending"` in several places, including validation, reporting, and UI labels. If the status is renamed to `"in-review"`, every location must change in sync or the system shows inconsistent behaviour. |
+| **Name** | What something is called | A method or class name (e.g. `findUserById`). Updates to the method name mean all uses must also change to use the new name. |
+| **Type** | The shape of the data | A type signature or shape of the data. If the type changes (e.g. to add a new required field) then all callers must ensure field exists in their call. |
+| **Value** | A specific literal | The app hard-codes the string `"pending"` in several places, including validation, reporting, and UI labels. If the status is renamed to `"in-review"`, every location must change in sync or the system shows inconsistent behaviour. "Magic numbers" are a special case of connascence of value with number-type values. |
 | **Position** | Argument order | A helper like `createInvoice(customerId, startDate, endDate, total, tax)` is used by several modules. If one caller swaps `total` and `tax`, the code still compiles and tests may pass, but invoices are calculated with the wrong values. |
-| **Algorithm** | A computation done the same way | Four different modules each compute a discounted price with slightly different logic: one rounds before tax, another rounds after tax, and a third uses a flat discount. The system appears consistent until a customer sees mismatched totals across invoices, reports, and the dashboard. |
+| **Algorithm** | A computation done the same way | One class encodes the encrypted data using one algorithm means any consumer class must decode it using the same algorithm. |
 
 Notes on connascense based on [here](https://practicingruby.com/articles/connascence) which contains more explanations and examples.
-Coupling can be either implicit or explicit: for example, a method call or class import is a sign of explicit coupling, while a use a specific "magic" value across the codebase or a duplication of an algorithm is usually implicit coupling.
-In general, implicit coupling is more dangerous because it is more difficult to understand if a change is editing the complete scope of the coupled code.
+
+#### Risks & Difficulties
+Coupling puts the developer at risk of missing necessary updates to coupled code.
+This is especially dangerous if a coupling is implicit.
+For example, the use a specific "magic" value across the codebase requires that the developer finds every usage of the magic number and updating them.
+
+Coupling incurs difficulties the larger its degree and locality: the larger the degree, the more locations a developer must read and/or write with each change.
+For example, the explicit coupling of calling an object's method in 20 locations across the codebase means that an update to the method's signature means going to each of the 20 locations, reading the code to decide how to make the change, and making the change.
 
 #### Addressing Coupling
 
@@ -87,6 +64,45 @@ It is important to remember that any non-trivial system _requires_ that there be
 <Youtube id="QZAacpnjVVg" />
 
 <!-- TODO: describe levels -->
+
+### Cohesion
+
+<Youtube id="oMJNS6mvhQU" />
+
+Cohesion is a property that indicates how focused our program elements are on performing a single complete task. This is best thought of in terms of classes in object-oriented design. In this space, cohesion measures how well the elements within a class belong together. Classes with low cohesion are responsible for a wide variety of tasks; these classes are harder to reason about because they often have many competing concerns within their implementation that might conflict. This can cause maintenance problems because changes to fix one defect within a class might actually be by design for another feature provided by the class. The larger a class grows in scope, the more likely this kind of problem is to be encountered.
+
+Cohesive classes generally have a small set of private fields that make sense to the majority of the public methods within the class; if there are fields within the class that are only used by a small fraction of the public methods it may be a sign that the functionality provided by those methods and the private field may not be cohesive with the overall functionality of the class.
+
+Since cohesive classes are smaller, they lead to a proliferation of classes within a system. While this might make it harder to find the right class within the system, it greatly eases how hard it is to understand that class and simplifies any future bug fixes or feature additions that may be required.
+
+We measure cohesion between pairs of groupings of code (e.g. lines, blocks, methods).
+Each pair may contain 
+*bindings* -- or how a pair of concepts is related by *data*, *logic*, and/or *timing*.
+
+The table below shows TypeScript examples of code that is related by different *Binding*s:
+
+| Binding | Example | Explanation |
+| --- | --- | --- |
+| Data | `const subtotal = price * quantity; const total = subtotal + tax;` | line 2 uses data from the previous line |
+| Logic | `if (user.isAdmin) { grantAccess(); } else { denyAccess(); raiseAlarm() }` | `denyAccess()` and `raiseAlarm()` are grouped by the same logic |
+| Order | `const total = subtotal + tax; if(total > 100) console.log("big total");` | `total` needs to be calculated before, so the conditional is evaluated correctly |
+
+Using these properties helps us reason about which code should be grouped together, and which code can be extracted apart.
+
+#### Risks & Difficulties
+Code with low cohesion *risks* having edits affecting seemingly unrelated code.
+If the method you are editing addresses five tasks but you are editing just one of them, you risk interfering with the other four tasks as well.
+
+Similarly, low cohesion indueces *difficulties* by forcing the developer to read lots of code to understand where to make a change.
+You have probably experienced this before if you have seen a class that is hundreds of lines of code long and could not find where you actually needed to make your edit!
+
+<!-- The flow chart below can be used to reason about the kind of cohesion within a design. As with the coupling flow chart above, some kinds of cohesion are better than others. Thinking about the cohesiveness of our program elements can help us to understand when further decomposition of our designs might be helpful and will also motivate the organization of our program elements into their most appropriate subsystems.
+
+
+![Cohesion flowchart](cohesion_flow.png) -->
+
+<Youtube id="gkCIOUbu81o" />
+
 
 
 ## Design Symptoms

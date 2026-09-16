@@ -17,6 +17,8 @@ One way to do it is to examine *magnitude* and *footprint*:
 1. **Magnitude**: measures how large a change is (usually in terms of lines of code).
 2. **Footprint**: measures how widespread a change is (how many methods, classes, files, modules, or services a change touches).
 
+These costs can be incurred from either reading and/or writing: reading a lot of code in many places is a high-footprint cost too!
+
 Between the two of these metrics, **footprint** is more indicative of difficult-to-evolve software.
 Consider the scenario where your teammate creates a 500-line-of-code change.
 Those 500 lines of code must be added to your codebase somehow, would you as the reviewer prefer that they are added to one new file, or divided among eight different ones?
@@ -26,6 +28,26 @@ Another way to view this is via *conceptual drift*: we have a *concept* that we 
 
 This is the intuition behind why typically we typically consider the footprint of a code change to be more costly than its magnitude.
 We incur these costs every time we want to update the code.
+
+## Risk
+Using magnitude and footprint tracks how much effort it is to make changes, but that does not fully capture the difficulty in editing software.
+Software is abstract and therefore it is hard to track and verify what needs to be changed.
+
+```typescript
+function mysteriousOperation(x: number, y: number) {
+    return x - y;
+}
+
+function inverseOperation(x: number, y: number) {
+    return mysteriousOperation(x, y);
+}
+```
+
+For example, if you changed `mysteriousOperation` to instead `return y - x`, nothing in the code enforces that you update `inverserOperation` as well.
+The editor would need to know about (or discover) `inverseOperation` and make the requisite edits to avoid changes that break the behaviour of the code.
+Updates to `mysteriousOperation` represent risk in two ways:
+1. Requiring corresponding edits to seemingly unrelated code
+2. Developers missing making said updates
 
 ## Code Smells
 
