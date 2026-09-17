@@ -22,8 +22,8 @@ together over time. Every unit answers the same question at a wider radius:
 | :--- | :--- |
 | [Unit 1: Design in the small](materials/unit-01/) | 1–5 |
 | [Unit 2: Layers & interfaces](materials/unit-02/) | 6–7 |
-| [Unit 3: Requirements & specification](materials/unit-03/) | 9–11 |
-| [Unit 4: Software process](materials/unit-04/) | 12–13 |
+| Unit 3: Requirements & specification | 9–11 |
+| Unit 4: Software process | 12–13 |
 
 Full details for each unit are provided in the **[Course materials overview](materials/)**.
 

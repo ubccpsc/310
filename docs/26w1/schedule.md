@@ -30,10 +30,10 @@ Dates and topics subject to change!
 | 6 | Oct 13, 15 | | API Change severity & versioning · API design  | Lab 6 — API design & evolution & code review *(Oct 16–22)* | **D2** Fri Oct 16 |
 | 7 | Oct 20, 22 | |  The testing pyramid · Layered architecture | Lab 7 — layers, test strategy *(Oct 23–29)* | — |
 | 8 | Oct 27, 29 | — | Module 1 & 2 synthesis & midterm review · *(no Thursday class)* | Project time — team check-in *(Oct 30–Nov 5)* | **Midterm** Thu Oct 29 |
-| 9 | Nov 3, 5 | [Unit 3](./materials/unit-03/) | Where requirements come from · Ethics & IP | **No lab** — fall break *(Nov 9–11)* | **D3** Fri Nov 6 |
+| 9 | Nov 3, 5 | Unit 3 | Where requirements come from · Ethics & IP | **No lab** — fall break *(Nov 9–11)* | **D3** Fri Nov 6 |
 | 10 | Nov 10, 12 | | *(no Tuesday class)* · Information security | Lab 8 — requirements & constraints *(Nov 13–19)* | — |
 | 11 | Nov 17, 19 | | Specification & modeling · *Specification is Right* | Lab 9 — specification *(Nov 20–26)* | — |
-| 12 | Nov 24, 26 | [Unit 4](./materials/unit-04/) | Continuous integration · How teams coordinate | Lab 10 — process & metrics *(Nov 27–Dec 3)* | **D4** Fri Nov 27 |
+| 12 | Nov 24, 26 | Unit 4 | Continuous integration · How teams coordinate | Lab 10 — process & metrics *(Nov 27–Dec 3)* | **D4** Fri Nov 27 |
 | 13 | Dec 1, 3 | | Process metrics · GenAI & where the cost moves | — | — |
 
 ⚠ **Labs are cancelled on Wednesday September 30th and Monday October 12th.** You may attend any other lab section if your section is cancelled. Lab assignments are still due by your next regularly scheduled lab.
