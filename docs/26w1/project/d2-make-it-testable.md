@@ -1,8 +1,120 @@
-# Deliverable 2 — Make it testable
+# Deliverable 2: Make it testable
 
 **Due Friday 16 October, 18:00 · individual · submit on GitHub and PrairieLearn**
 
-Details will be released after the D1 deadline.
+## Part 1: Localize Query Handling
+
+The registrar is getting tired of writing complex queries of the form `{ "OR": [ {"IS": { "dept": "math" }}, {"IS": {"dept": "hist"}}] }`.
+You have decided that you can simplify the query using a new `IN` operator which accepts an SKEY and a list of words that should match exactly.
+For example, `{ "IN": { "dept": ["math", "hist"] }}`.
+
+Adding it directly to the current would require editing duplicated logic across `filterSections`,
+`filterRooms`, and `Model.searchV2`. Instead:
+
+**1. Extract.** Pull the WHERE/OPTIONS/TRANSFORMATIONS handling currently inline in
+`Model.searchV2` (and duplicated between `filterSections`/`filterRooms`) out behind:
+
+```ts
+export class QueryValidationError extends Error {}
+
+export interface IQueryEngine<T> {
+  filter(where: unknown, data: T[]): T[];
+  run(query: unknown, data: T[]): unknown[];
+}
+```
+
+`run` takes the query and the entities for one domain — sections or rooms, never both — and returns
+the rows `Model.searchV2` sends back. `Model.searchV2` may keep only its request-shape checks
+(`kind`, `query` presence); everything else must go through `run`.
+
+`filter` is the piece `searchV1` and `searchV2` already share today, both calling `filterSections`/
+`filterRooms` directly. `searchSectionsV1` never had `TRANSFORMATIONS`, only ever supported a string
+`ORDER`, and reports column-mixing mistakes differently — it doesn't fit `run`'s contract and
+shouldn't be forced through it. Have `searchSectionsV1` call `filter` in place of its current
+`filterSections`/`filterRooms` call, and leave its own COLUMNS/ORDER handling exactly as it is.
+
+On invalid input, `filter` and `run` throw `QueryValidationError`, with `message` set to exactly the
+text that must reach the client (the same strings the inherited suite already checks for — "Unknown
+key in COLUMNS", "Cannot mix course_offerings and facilities fields in one query", and so on).
+`Model` catches `QueryValidationError` and passes `.message` into the existing `errorBadRequest`
+response; anything else thrown is a bug, not a validation failure, and should propagate. Neither
+method may signal failure by returning a value — an empty result and a rejected query must not look
+the same.
+
+Whether you split projecting out further, how you structure your own internals, whether the class is
+generic — your call.
+
+Implement it as `export class QueryEngine<T> implements IQueryEngine<T>` in `src/QueryEngine.ts`.
+The class must be constructible with no required arguments (`new QueryEngine()`) — we construct it
+directly to grade `run`, without knowing anything else about how you built it.
+
+**2. Add `IN`.** `{ IN: { <SKEY>: string[] } }` matches an entity if its value for `<SKEY>` equals
+any string in the array. The array must be non-empty.
+
+**Requirements:**
+
+- The inherited test suite stays green since you're relocating behaviour, not changing it. `IN` is the
+  only new behaviour.
+- WHERE-handling must leave `filterSections`/`filterRooms` entirely — both `searchSectionsV1` and
+  `searchV2` call `filter` instead. `searchV2`'s OPTIONS/TRANSFORMATIONS handling must leave
+  `Model`/`App.ts` too, replaced by a call to `run`. `searchSectionsV1`'s own COLUMNS/ORDER handling
+  is unaffected.
+
+**Graded on:** the inherited suite still passing, and `IN` working — checked by calling
+`IQueryEngine` directly, not only through the HTTP layer.
+
+### Getting started
+
+There are many ways that you can 
+
+1. **Feel the shape of the problem first.** Sketch how you'd add `IN` to `filterSections`/
+   `filterRooms` as they stand today. Notice how many places it touches.
+2. **Replace the operator chain with a lookup table.** Each operator becomes one entry instead of
+   one `if`/`else if` branch:
+
+   ```ts
+   type OperatorHandler<T> = (args: unknown, entities: T[]) => T[];
+
+   const handlers: Record<string, OperatorHandler<T>> = {
+     NOT: (args, entities) => {
+       const inner = dispatch(args, entities); // recurses through the same table
+       return entities.filter((e) => !inner.includes(e));
+     },
+     // AND, OR, LT, GT, EQ, IS: yours
+   };
+   ```
+
+   `NOT` is shown because it's the smallest combinator and the one idea worth seeing once: a
+   combinator calls back into the same table it's registered in. `AND`/`OR` follow the same shape.
+3. **Add `IN` as one more entry.** If step 2 is done, this is small. If it isn't, this is where
+   you'll feel it.
+4. **Move COLUMNS/ORDER/TRANSFORMATIONS out of `Model.searchV2`** into whatever finishes `run`.
+
+## Part 2: Enable Testing with Mocks
+
+When a facilities dataset is uploaded, the system reads building addresses out of an HTML table and
+turns each one into coordinates by calling an external geocoding service, inline, with no seam —
+nothing outside the call can supply a different implementation, which is why it can't be tested
+without a live network.
+
+Extract the geocoding call behind an interface designed around what the caller needs (turning an
+address into coordinates), not around today's mechanism (an HTTP request). Provide two
+implementations: the real one, and a fake usable in tests. Your interface must state what happens
+when geocoding fails — throws, returns nothing, or an explicit failure value — and both
+implementations must honour that choice identically.
+
+**Requirements:**
+
+- The inherited suite stays green throughout since you are simply restructuring the code. If you
+  notice something behaving wrong, leave it and note it in your PR rather than changing it.
+- Your own tests must pass with your wifi turned off.
+- Your tests must demonstrate: a building whose address fails to geocode is skipped, and its rooms
+  are skipped with it.
+- Your tests must also cover the failure contract you decided on for your interface (service
+  unreachable, slow, or returning something malformed) — not just the one failure case the original
+  spec named.
+- Your fake must fail the same way your real implementation does; a fake that always succeeds while
+  the real implementation can fail makes your tests meaningless.
 
 <!--
 There is a part of InsightUBC that is close to untestable, and you are going to fix that.
@@ -30,19 +142,7 @@ What it has no test for is anything *specific*. Not one test isolates geocoding 
 and HTML parsing around it, and not one test verifies what happens when geocoding **fails** — even
 though that behaviour was explicitly required. That second gap is where you're going to start.
 
-## Warm-up — one more place campus needed to go
 
-D1 asked you to make `campus` appear in three responses: the buildings list, a single building,
-and the body returned when a building is deleted. That was the whole requirement but it wasn't the whole system.
-
-`POST /api/v2/search` can filter and return building-derived fields too, and right now `campus`
-isn't one of them. Nothing in D1 told you that, because it wasn't part of D1. It's part of this
-deliverable, and it's the same kind of gap D1 already showed you can exist without anything
-flagging it.
-
-**Time-boxed to 30 minutes.** Make `campus` searchable. Land it as its own pull request, separate
-from everything else below — small and self-contained enough that a reviewer could check it in
-isolation.
 
 ## Step 1 — Try to verify a requirement
 
