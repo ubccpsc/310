@@ -23,8 +23,8 @@ Dates and topics subject to change!
 | Wk | Dates | Unit | Lectures | Lab | Due |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1 | Sep 8, 10 | [Unit 1](./materials/unit-01/) | *(no Tuesday class)* · <a href="/310/26w1/lectures/01-course_introduction.pdf" target="_blank">Introduction</a> | Lab 1 — Onboarding *(Sep 11–17)* | — |
-| 2 | Sep 15, 17 | | <a href="/310/26w1/lectures/02a-coupling.pdf" target="_blank">Coupling</a> · <a href="/310/26w1/lectures/02b-cohesion-refactoring.pdf" target="_blank">Cohesion & Refactoring</a> | Lab 2 — coupling & cohesion *(Sep 18–24)* | — |
-| 3 | Sep 22, 24 | | Polymorphism & LSP · Testability | Lab 3 — refactoring & testability *(Sep 25–Oct 1)* ⚠ Wed Sep 30 | **D1** Fri Sep 25 |
+| 2 | Sep 15, 17 | | <a href="/310/26w1/lectures/02a-coupling.pdf" target="_blank">Coupling</a> · <a href="/310/26w1/lectures/02b-cohesion-refactoring.pdf" target="_blank">Cohesion</a> | Lab 2 — coupling & cohesion *(Sep 18–24)* | — |
+| 3 | Sep 22, 24 | | <a href="/310/26w1/lectures/03a-refactoring.pdf" target="_blank">Refactoring</a> · Testability | Lab 3 — refactoring & testability *(Sep 25–Oct 1)* ⚠ Wed Sep 30 | **D1** Fri Sep 25 |
 | 4 | Sep 29, Oct 1 | | Test Doubles & dependency inversion · Patterns: Adapter & Composite | Lab 4 — seams & patterns *(Oct 2–8)* | — |
 | 5 | Oct 6, 8 | [Unit 2](./materials/unit-02/) | Patterns: Strategy & State · Patterns: Factory & Decorator | Lab 5 — design patterns *(Oct 9–15)* ⚠ Mon Oct 12 | — |
 | 6 | Oct 13, 15 | | API Change severity & versioning · API design  | Lab 6 — API design & evolution & code review *(Oct 16–22)* | **D2** Fri Oct 16 |
