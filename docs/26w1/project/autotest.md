@@ -59,7 +59,7 @@ AutoTest reports your progress using one of the following buckets, based on how 
 - **Proficient** [85--94] Submission implements support for basic and complex functionality.
 - **Extending** [95--100] Submission implements most or all requirements and is functional and robust.
 
-You can interpret the reported bucket as an indication of your progress (and the minimum grade your submission received). Your actual score will be reported separately after the deadline.
+You can interpret the reported bucket as an indication of your progress. Your actual score will be reported separately after the deadline.
 
 ## Adding unit tests
 
