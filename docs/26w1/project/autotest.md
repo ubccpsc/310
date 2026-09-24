@@ -51,15 +51,15 @@ In general, the feedback will include your overall score as a bucket and potenti
 
 ### Bucket Grades
 
-AutoTest reports your progress using one of the following buckets grades based on completely your submission satifies the requirements:
+AutoTest reports your progress using one of the following buckets, based on how completely your submission satifies the requirements:
 
-- **Beginning** Submission has just been started, or is otherwise incomplete.
-- **Acquiring** Submission demonstrates support for basic or rudimentary functionality.
-- **Developing** Submission demonstrates support for basic and some complex functionality.
-- **Proficient** Submission implements support for basic and complex functionality.
-- **Extending** Submission implements most or all requirements and is functional and robust.
+- **Beginning** [0--54] Submission has just been started, or is otherwise incomplete.
+- **Acquiring** [55--71] Submission demonstrates support for basic or rudimentary functionality.
+- **Developing** [72--84] Submission demonstrates support for basic and some complex functionality.
+- **Proficient** [85--94] Submission implements support for basic and complex functionality.
+- **Extending** [95--100] Submission implements most or all requirements and is functional and robust.
 
-You can interpret the reported bucket as an indication of your progress, and to confirm that your code is actually being graded successfully. Your actual score will be reported separately after the deadline.
+You can interpret the reported bucket as an indication of your progress (and the minimum grade your submission received). Your actual score will be reported separately after the deadline.
 
 ## Adding unit tests
 
