@@ -39,6 +39,42 @@ GRADED ON SOMETHING NOT YET TAUGHT
 
 Details will be released after the D2 deadline.
 
+
+<!-- ## Part 2: Enable Testing with Fakes
+
+When a facilities dataset is uploaded, the system reads building addresses out of an HTML table and
+turns each one into coordinates by calling an external geocoding service.
+This violates some of our testability principles because we are not able to test some important behaviours.
+In this phase, you will refactor your code to allow us to test these behaviours in addition to writing the tests themselves.
+The behaviours you need to write tests for:
+1. If the geolocation service is unreachable, then the building should be skipped. (wifi off)
+2. If the geolocation service is reachable, then the building should be populated with the lat/lon. (wifi off)
+3. A test if the geolocation service is online. (wifi on)
+
+These sound simple, but we have no way to actually test these--at least as the code is currently written!
+
+**Requirements:**
+1. You must have one test for each of the behaviours specified above.
+2. For the wifi-off tests, you must implement a test double in the form of a *fake* that ascribes to an interface you designed called `IGeoLocator`.
+3. `IGeoLocator` may look however you want as long as it allows you to test these behaviours.
+4. This design allows you to use DIP to inject either a real `GeoLocator` (at runtime) or a fake `FakeGeoLocator` (at test time), by providing it as a part of the `AppConfig` type. You will need to implement both of these concrete classes.
+
+```typescript
+/**
+ * Configuration options for the application.
+ */
+export type AppConfig = {
+	readonly datadir: string; // existing
+	geolocator: IGeoLocator;  // new!
+};
+```
+
+
+**Deliverables:**
+1. **Pre-Analysis:** Why are these behaviours hard to test? Use testability terminology like controllability, observability, and/or automatability.
+2. **A link** to the commit hash, merged pull request, or code **for each** of the requirements above.
+3. **Post-Analysis:** How did using DIP affect the testability concerns from the pre-analysis? How many classes did you have to touch to do this? Is this an acceptable amount? If yes, justify in terms of future cost of change (risk/difficulty). If not, propose a high-level refactoring that would help. -->
+
 <!--
 You are going to specify a new major version of InsightUBC. **You will not implement any of it** —
 that's [D4](d4-build-it.md). This deliverable produces a document that another team could build
