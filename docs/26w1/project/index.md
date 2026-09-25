@@ -63,12 +63,10 @@ The Registrar's Office wants **v3**, and you're going to design and build it!
 [D1](d1-drop-in-a-feature.md) asks for two small features that will help you get acquainted with the codebase.
 The point is to experience and reflect on what changing an inherited software system actually costs.
 
-**Then you will make it testable.**
-D2 will have you refactor parts of the system to make it more testable.
-The system currently relies solely on integration tests to verify endpoint behaviour.
-They can tell you something broke, but not where.
-Some are also slow and flaky because they depend on an external web service.
-You'll add unit tests and mocks to make further development faster and less risky.
+**Then you will make it evolvable.**
+D2 will have you refactor parts of the system to make it more evolvable.
+The system currently duplicates logic around the codebase, making it more difficult and risky to add features.
+You will upgrade the design and reflect on the process.
 
 **Then you design v3.**
 D3 will require you and a partner to put the software into the real world by considering (sometimes vague) requirements from stakeholders, transforming them into a specification, and defining a definition of done for the work.
