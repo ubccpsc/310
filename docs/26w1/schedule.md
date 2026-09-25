@@ -9,7 +9,7 @@ Lectures are **Tuesday and Thursday** on the dates listed below. Slides are post
 | Due | Date | What |
 | :--- | :--- | :--- |
 | **D1** | Fri 25 Sep, 18:00 | Drop in a feature *(solo)* |
-| **D2** | Fri 16 Oct, 18:00 | Make it testable *(solo)* |
+| **D2** | Fri 16 Oct, 18:00 | Make it evolvable *(solo)* |
 | **Midterm** | **Thu 29 Oct, 19:00–21:00** | In person, paper. Covers through Thu 22 Oct |
 | *Pairs form* | During the Oct 16–22 lab | Register with your TA, same lab section |
 | **D3** | Fri 6 Nov, 18:00 | Design v3 *(pairs)* |

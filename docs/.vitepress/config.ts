@@ -79,7 +79,7 @@ export default defineConfig({
 							link: "/26w1/project/d1-drop-in-a-feature",
 						},
 						// {
-						// 	text: "D2 — Make it testable",
+						// 	text: "D2 — Make it evolvable",
 						// 	link: "/26w1/project/d2-make-it-evolvable",
 						// },
 						{
