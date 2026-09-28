@@ -24,11 +24,6 @@ export default defineConfig({
 			{ text: "Schedule", link: `/${CURRENT_TERM}/schedule` },
 			{ text: "Syllabus", link: `/${CURRENT_TERM}/syllabus` },
 			{
-				text: "Materials",
-				link: `/${CURRENT_TERM}/materials/`,
-				activeMatch: `/${CURRENT_TERM}/materials/`,
-			},
-			{
 				text: "Project",
 				link: `/${CURRENT_TERM}/project/`,
 				activeMatch: `/${CURRENT_TERM}/project/`,
@@ -46,28 +41,6 @@ export default defineConfig({
 						{ text: "Home", link: "/26w1/" },
 						{ text: "Schedule", link: "/26w1/schedule" },
 						{ text: "Syllabus", link: "/26w1/syllabus" },
-					],
-				},
-				{
-					text: "Course materials",
-					link: "/26w1/materials/",
-					items: [
-						{
-							text: "Unit 1 — Design in the small",
-							link: "/26w1/materials/unit-01/",
-						},
-						{
-							text: "Unit 2 — Layers & interfaces",
-							link: "/26w1/materials/unit-02/",
-						},
-						// {
-						// 	text: "Unit 3 — Requirements & specification",
-						// 	link: "/26w1/materials/unit-03/",
-						// },
-						// {
-						// 	text: "Unit 4 — Software process",
-						// 	link: "/26w1/materials/unit-04/",
-						// },
 					],
 				},
 				{
@@ -148,8 +121,16 @@ export default defineConfig({
 							link: "/textbook/2-analytical-code-design/principles/",
 						},
 						{
-							text: "Testability",
+							text: "Testability & Test Doubles",
 							link: "/textbook/2-analytical-code-design/testability/",
+						},
+						{
+							text: "Blackbox Testing",
+							link: "/textbook/2-analytical-code-design/blackbox/",
+						},
+						{
+							text: "Testability - Automatability",
+							link: "/textbook/2-analytical-code-design/testing-suites/",
 						},
 					],
 				},

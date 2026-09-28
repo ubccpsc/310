@@ -184,7 +184,7 @@ Without the factory pattern, we would need a method in `Bank` that looked like t
  ```
 
 This introduces a tight coupling between `Bank` and concrete `Account` instances.
-This primarily impacts our testability: it becomes difficult to create test fakes for `Account`s since our code violates the dependency inversion principle.
+This primarily impacts our testability: it becomes difficult to create test stubs for `Account`s since our code violates the dependency inversion principle.
 
 ## Strategy: Encapsulating algorithms.
 

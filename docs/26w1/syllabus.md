@@ -43,8 +43,7 @@ validation, evolution and construction of modern software systems, within the co
 and professionally relevant domains such as ethics, intellectual property, and information security.
 
 The course is organized around one question asked at four widening scales: **what will the next
-change cost, and why?** See the [course materials overview](./materials/) for how that question
-structures the term.
+change cost, and why?**
 
 ## Learning Outcomes
 
@@ -57,7 +56,7 @@ In this course, you will learn to:
 
 ## Learning Materials
 
-Readings for each lecture are listed on the [unit pages](./materials/) and are available in the [course reader](/textbook/).
+Readings for each lecture are listed on the [schedule page](./schedule.md) and are available in the [course reader](/textbook/).
 Slides are linked on the [schedule page](./schedule.md).
 
 You will need accounts on **Piazza** (questions and announcements), **PrairieLearn** (lab assignments

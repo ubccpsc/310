@@ -30,11 +30,60 @@ Sometimes the CUT can be invoked by a test but its outcome cannot be observed. F
 Together, controllability and observability give us what we really want: isolatability, or the ability to isolate a fault within the code under test.
 Isolatability is crucial to be able to quickly determine what has caused a failure so it can be resolved. This is challenging in large modern systems due to the number of (often third party) dependencies software systems have. For example, if a data access routine fails is it the logic in the routine or is it a failure in the underlying database? At its simplest level, isolateability can be increased by decomposing larger functions into smaller more self-contained functions that can be tested independently.
 
-Sometimes code will have complex dependencies, requiring isolation through simulation. In simulation-based environments code dependencies are _mocked_ or _faked_ whereby they are replaced with developer-created fake components that take known inputs and return known values (e.g., a ```MockLoginRejectController```) would always return false for a ```login(user, pass)``` without needing to check a user store, database, or external system. In this way the developer can test their code that uses ```login(..)``` and ensure it handles the false case correctly without fear that a bug in the real login controller may return an incorrect or inconsistent value. In addition to isolation, mocking also greatly increases performance and makes components less prone to non-determinism as the result being returned is usually fixed and not dependent on some external complex computation. Mocking can also make it possible to test program states that would otherwise be hard to trigger in practice (for instance if you want to test a situation where a remote service is down you can have a ```MockTimeoutService``` that just does not respond to requests).
+Sometimes code will have complex dependencies, requiring isolation through simulation. In simulation-based environments code dependencies are _stubbed or _spied whereby they are replaced with developer-created fake components that take known inputs and return known values (e.g., a ```MockLoginRejectController```) would always return false for a ```login(user, pass)``` without needing to check a user store, database, or external system. In this way the developer can test their code that uses ```login(..)``` and ensure it handles the false case correctly without fear that a bug in the real login controller may return an incorrect or inconsistent value. In addition to isolation, stubbing also greatly increases performance and makes components less prone to non-determinism as the result being returned is usually fixed and not dependent on some external complex computation. Stubbing can also make it possible to test program states that would otherwise be hard to trigger in practice (for instance if you want to test a situation where a remote service is down you can have a ```MockTimeoutService``` that just does not respond to requests).
 
 ::: details Code Example
  <Youtube id="NMuhE-XnFe8" /> 
 :::
+
+### Test Doubles
+
+In order to enable controllability and observability of our code, we can rely on the dependency inversion principle (DIP) by defining the interface of that hard-to-test code and substituting the real version at test time with a fake implementation.
+If the fake version allows us to more easily supply the test with values (i.e. improving its controllability), then it is called a _stub_.
+If the fake version records the arguments provided to the method calls (thereby allowing us to test them), then it is called a _spy_.
+Consider the following code for a wayfinding service:
+
+```typescript
+interface ILocator {
+    locate(lat: number, lon: number): Pair<number, number>;
+}
+class Wayfinder {
+    constructor(ILocator locator) {}
+    isClose(initialLat: number, initialLong: number): string {
+        // assume handleProjections is declared and modifies initialLat and initialLong in some way.
+        const [projInitialLat, projInitialLong] = handleProjections(initialLat, initialLong);
+        const [closestLat, closestLon] = this.locator.locate(projInitialLat, projInitialLong);
+        if (distance(projInitialLat, projInitialLong, closestLat, closestLon) < 1.0) {
+            return "close enough!";
+        }
+        return "too far :(";
+
+    }
+}
+```
+
+It is hard to test this code because:
+1. Observability. We cannot see what we passed to `locator.locate`, only the overall result of `isClose`. 
+2. Controllability: We cannot reliably manipulate locator to return a value that will determine if `"close enough"` or `"too far :("` is returned.
+Thankfully, we can fix both of these using a fake implementation that stubs out `ILocator`, allowing us to spy on `ILocator::locate`.
+
+```typescript
+class FakeLocator implements ILocator {
+    constructor(lat: number, lon: number) {}
+    public myCalls: Array<Pair<number, number>> = [];
+    locate(lat: number, lon: number): Pair<number, number> {
+        this.myCalls.push(lat, lon);
+        return [this.lat, this.lon];
+    }
+}
+// in tests
+const locator = new FakeLocator(49, 13);
+const wf = new Wayfinder(locator);
+expect(wf.isClose(51, 12)).to.be.equal.to("close enough!");
+expect(locator.myCalls).to.be.equal.to([[50, 14]]); // assuming handleProjections modifies (51, 12) to (50, 14)
+```
+
+With this fake class, we can now observe that we have supplied `locate` with the correct arguments, and also control the output of `isClose`!
 
 <!-- TODO: move to testing pyramid -->
 <!-- ### Automatability

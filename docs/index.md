@@ -15,9 +15,6 @@ hero:
       text: Syllabus
       link: /26w1/syllabus
 features:
-  - title: Course materials
-    details: What each part covers and why it's ordered this way — learning outcomes, vocabulary, and the readings for each lecture.
-    link: /26w1/materials/
   - title: Project
     details: Four deliverables on an inherited codebase. Add a feature, make it evolvable, design a third API version, then build it.
     link: /26w1/project/
