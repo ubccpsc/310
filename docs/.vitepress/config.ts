@@ -78,10 +78,10 @@ export default defineConfig({
 							text: "D1 — Drop in a feature",
 							link: "/26w1/project/d1-drop-in-a-feature",
 						},
-						// {
-						// 	text: "D2 — Make it evolvable",
-						// 	link: "/26w1/project/d2-make-it-evolvable",
-						// },
+						{
+							text: "D2 — Make it evolvable",
+							link: "/26w1/project/d2-make-it-evolvable",
+						},
 						{
 							text: "AutoTest",
 							link: "/26w1/project/autotest",
