@@ -64,7 +64,7 @@ The syntax is `{ "IN": { <sfield>: string[] } }`, and `IN` behaves as follows:
 Submit in DELIV2, Part 3:
 
 1. **A link to a merged pull request** that contains your implementation, tests, and documentation for `IN` and nothing else. Merge this pull request only *after* your refactoring pull request (2.2).
-   - **Tests:** include test cases for each behaviour above. Your tests must exercise the HTTP API (`POST /api/v2/search` using `supertest`, as in the existing tests) rather than calling internal functions directly, so that they test the behaviour users see.
+   - **Tests:** include test cases for each behaviour above. Your tests must exercise the HTTP API (`POST /api/v2/search` using `supertest`, as in the existing tests) rather than calling internal functions directly (use `createApp({ datadir })`, as the existing tests do): we also run your tests against our own implementation to check how many incorrect implementations they catch.
    - **Documentation:** update the `POST /api/v2/search` description in `openapi.yml` (the v1 search does not need to change):
      - add `IN` to the query grammar (EBNF);
      - briefly document how `IN` operates, including that it does not support wildcards;
@@ -77,6 +77,6 @@ This deliverable has both autograded and manually graded components: 40% autogra
 
 - **Autograded (40%).** Every commit you push to the `main` branch of your repo is automatically graded, and your highest-scoring commit before the deadline is used as your final grade. To request feedback on a commit, enter the following in the commit comment: `@310-bot #d2`. Be sure to read the full details of the [autograder](./autotest.md). In particular, note that the number of times you can request feedback is limited each day.
 
-  The autograder checks that `IN` behaves as specified in Section 3, that your refactor meets Section 2 requirements 2 and 3, and that `openapi.yml` documents `IN` in the query grammar and error messages. It also deducts marks if your changes break existing search behaviour. For the refactor and documentation checks, the feedback tells you specifically what is missing.
+  The autograder checks that `IN` behaves as specified in Section 3, that your refactor meets Section 2 requirements 2 and 3, and that `openapi.yml` documents `IN` in the query grammar and error messages. It also runs your tests from 2.1 and 3.1 against our own implementation, with a series of small bugs introduced, to check how well your tests catch them. Finally, it deducts marks if your changes break existing search behaviour. For the refactor and documentation checks, the feedback tells you specifically what is missing.
 
 - **Manually graded (60%).** Your answers on PrairieLearn (DELIV2) and the other deliverables above will be graded by the TAs after the deadline.
