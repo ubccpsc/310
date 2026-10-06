@@ -10,6 +10,14 @@ A design pattern is a description of a common usage of language tools to solve s
 The purpose of a design pattern is not to classify code (e.g. to say code is or is not a particular pattern) but to equip you with more complex ways of using language features to structure code.
 Each design pattern interacts with parts of analytical code design (i.e. coupling, cohesion, and testability).
 
+## Design Pattern Process
+In order to understand what a design pattern is and whether or not we should use it, we follow a specific, 4-step process:
+
+1. **Change:** Identify what part of our code is likely to vary over time.
+2. **Pain:** Reason about what parts of our code impact our ability to make these changes. Typically, this is either a *scattered* change (indicating unnecessary coupling in our code) or a *tangling* of multiple different concepts together (indicating a lack of cohesion).
+3. **Mechanism:** Elicit the parts of the code that are shared or different, and the interface that unifies the concepts. Typically in object-oriented design, this makes use of abstraction and/or polymorphism to better represent the painful concept.
+4. **Cost:** Decide if this change is worth it. Is the effort to fix this problem more or less than the pain we are experiencing today (and how often will we experience it in the future)?
+
 <!-- ## Observer: Simplifying state update notifications.
 
 When a user makes a change to a program, they expect the change to be consistently reflected across the entire system. For example, if you delete an image file from a photo viewer, one would expect the thumbnail to disappear, the photo to be removed from the gallery view, and the total number of files in the status bar to be updated to reflect the deletion. A poor initial design for this problem can be seen in the figure below. While for this one action this design might not seem like a big deal, for a real application with hundreds of actions and dozens of views, the design could require dozens of classes to be modified each time a new view was added.
@@ -75,8 +83,11 @@ In the example above, the `Client` needs to use functionality from the `MP3Playe
 ### Analysis
 Consider the client code without the adapter pattern.
 Any updates to how the client wanted to interact with the song (for example, if they wanted to implement a "skip" button) would need to be duplicated for however each media type handled it.
-This indicates a tight implicit coupling, with a connascence of algorithm.
-By adding an adapter class, the client now only has a connascence of type with any `Player`s: each player only has to adhere to a type interface for a client to use it.
+This results in scattered changes, indicates a tight implicit coupling with a connascence of type or algorithm (depending on usage).
+Additionally, each client would be tangled with both business logic and parsing logic (which are not cohesive).
+By adding an adapter class, the client has a connascence of type with any `Player`s: each player only has to adhere to a type interface for a client to use it.
+However, the main coupling improvement is in *degree*, since each client would depend on only one type interface instead of one per source.
+Thus, the adapter pattern can save quite a bit of pain, especially if actually using the data is widespread througout the codebase.
 
 ## Factory: Creating objects.
 
@@ -207,10 +218,11 @@ if (tempScheme === 'C') {
 ```
 
 ### Analysis
-In this code, any edits to the usage in the client would exhibit Scattered Changes across each of the conditional bodies.
+In this code, any edits to the usage in the client would exhibit scattered changes across each of the conditional bodies.
 This is indicative of code that is tightly and implicitly coupled, with a connascence of algorithm (because the client code duplicates a processing algorithm).
 By implementing a `Strategy` interface, the client now only depends on a type (achieving the weaker connascence of type), and future changes including new strategies, and to the processing code, now only happen in one place.
-This also improves testability: instead of having to test the whole code by repeating tests except by varying `tempScheme`, we can individually test each strategy, and then write just one test that tests the *integration* of just one strategy and the client's processing code, more easily controllable if we use a `FakeStrategy`.
+Strategies also improve our tangling, since we defer the question of "which strategy do I choose?" to the caller, allowing our own class to be oblivious and focus on its own business logic (improving cohesion).
+Finally, this also improves testability: instead of having to test the whole code by repeating tests except by varying `tempScheme`, we can individually test each strategy, and then write just one test that tests the *integration* of just one strategy and the client's processing code, more easily controllable if we use a `FakeStrategy`.
 This could improve either `observability` or `controllability` or both!
 
 <!-- In general, strategies are fairly constant at runtime (e.g., the concrete type of the underlying strategy will not frequently (or ever) change once it has been set). One challenge with the strategy pattern is that the client needs to know about the available strategies to be able to instantiate the one they are to use, although factories or dependency injection can play a role here to help insulate the client from this instantiation step.  -->
@@ -269,9 +281,9 @@ if (last === null || last === '') {
 ```
 
 The main problem with this code is low cohesion: the parent class must deal with all its normal responsibilities in addition to managing the logic for each state and state transition.
-This may result in *divergent changes*: any edits for seemingly unrelated requests may end up touching code in similar locations in the parent class.
+This may result in *tangling*: any edits for seemingly unrelated requests may end up touching code in similar locations in the parent class.
 Secondly, consider wanting to add something that affects each state transition (e.g. logging the current and next state for each transition).
-This results in *scattered changes* (and indicate a connascence of algorithm between state changes).
+This results in *scattered changes* (and indicate an implicit connascence of algorithm between state changes because each state needs to implicitly agree on behaviour and transition logic).
 
 By implementing the state pattern, we solve both of these problems:
 1. by delegating all state-related logic to a separate class, we improve cohesion in the parent class.
@@ -399,8 +411,7 @@ The decorator does have some downsides: it is impossible to control the 'order' 
 
 ### Analysis
 Ultimately the decorator pattern provides excellent support for maintaining the flexibility and extensibility of the system.
-Base classes can be kept simple focusing on their core responsibilities (single responsibility), while additional functionality can be implemented in decorators (open/close).
-This makes each class embody high cohesion.
+Base classes can be kept simple focusing on their core responsibilities (improved cohesion implies reduced risk of tangling), while additional functionality can be implemented in decorators.
 This also means adding new decorators is easy and does not change the base classes, meaning that the classes are more loosely coupled together. 
 This is a textbook demonstration of the flexibility of composition over inheritance. 
 
