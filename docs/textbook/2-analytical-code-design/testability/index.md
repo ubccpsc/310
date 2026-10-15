@@ -48,13 +48,13 @@ interface ILocator {
     locate(lat: number, lon: number): Pair<number, number>;
 }
 class Wayfinder {
-    constructor(ILocator locator) {}
+    constructor(private ILocator locator) {}
     isClose(initialLat: number, initialLong: number): string {
         // assume handleProjections is declared and modifies initialLat and initialLong in some way.
         const [projInitialLat, projInitialLong] = handleProjections(initialLat, initialLong);
-        const [closestLat, closestLon] = this.locator.locate(projInitialLat, projInitialLong);
-        if (distance(projInitialLat, projInitialLong, closestLat, closestLon) < 1.0) {
-            return "close enough!";
+        const [closestLat, closestLon] = this.locator.locate(projInitialLat, projInitialLong); // A
+        if (distance(projInitialLat, projInitialLong, closestLat, closestLon) < 1.0) {         
+            return "close enough!";                                                            // B
         }
         return "too far :(";
 
@@ -62,9 +62,16 @@ class Wayfinder {
 }
 ```
 
-It is hard to test this code because:
-1. Observability. We cannot see what we passed to `locator.locate`, only the overall result of `isClose`. 
-2. Controllability: We cannot reliably manipulate locator to return a value that will determine if `"close enough"` or `"too far :("` is returned.
+For **Line A**, we want to test that we are passing in the correct arguments to `this.locator.locate()`.
+However, we cannot *observe* this result because it calls the real geolocating service.
+We can *control* it though, by providing initialLat and initialLong and understanding how those get transformed by `handleProjections`.
+
+For **Line B**, we want to test that we return `"close enough!"` if the actual distances end up being close enough.
+However, we cannot *control* the code to reach this return because the result of `this.locator.locate()` is external, and therefore we cannot force the conditional to go into either branch.
+We can *observe* the result though, because each branch does return a string value.
+
+Whether or not a line is controllable or observable depends on what we want to test. For line A, we want to test that we pass the correct parameters, but we cannot observe this. For line B, we want to test that we return the correct string based on the distance, but we cannot fully control that computation.
+
 Thankfully, we can fix both of these using a fake implementation that stubs out `ILocator`, allowing us to spy on `ILocator::locate`.
 
 ```typescript
