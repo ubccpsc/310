@@ -17,7 +17,7 @@ DELIV3 once per group.
 ## 1. Choose a codebase
 
 You each have a D2 repository, and you will carry one codebase forward. Before you choose, walk each
-other through your own: what your common interface describes and why you gave it the methods you did,
+other through your own: what your common interface for `Rooms` and `Sections` describes and why you gave it the methods you did,
 and what your tests would catch if a later change broke search.
 
 Then compare your repositories on the same two points:
@@ -34,7 +34,7 @@ across in a pull request.
 Submit in DELIV3, Part 1:
 
 1. **Comparison:** how do your repositories differ in their common interface and in their tests? Point
-   to specific files and functions in each.
+   to specific files and functions in each, and use equivalence classes to refer to tests as appropriate.
 2. **Decision:** what did you carry forward from each repository, and why? If you brought anything
    across, link the pull request.
 
@@ -84,14 +84,15 @@ Requirements:
 5. **No change in behaviour.** All existing tests still pass.
 
 Explain your design in the pull request description: the structure you ended up with, how it differs
-from your plan and why, and its pros and cons, including at least one thing it makes harder. Your
-partner's review should respond to that explanation, not only to the diff.
+from your plan and why, and its pros and cons, including at least one requirement you can think of that is harder 
+after refactoring than before it.
+Your partner's review should respond to that explanation, not only to the diff.
 
 Submit in DELIV3, Part 2A:
 
 1. **Pre-analysis** (before you change any code):
    - **Current dependencies:** what does the facilities code depend on, and what depends on it? Which of
-     those dependencies would make it hard to change, or to use from v3, and which way does each point?
+     those dependencies would make it hard to change or use from v3? Are there tangling, scattering, or testability concerns?
    - **Plan:** the pieces you intend to split it into, what each is responsible for, and which way the
      dependencies between them point. A sketch of the dependency graph is fine.
 2. **A link to the merged pull request**, with your design explanation in its description and your
