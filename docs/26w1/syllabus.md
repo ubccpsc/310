@@ -198,8 +198,8 @@ Because we are assessing what you have learned (not what you can create), these 
 
 #### Midterm
 
-There is one in-person midterm scheduled for **Thursday October 29th, 19:00–21:00** *(TBD: location)*
-covering all content up to and including the end of Week 6 (Thursday, October 15th).
+There is one in-person midterm scheduled for **Thursday October 29th, 19:00–21:00** 
+covering all content up to and including the end of Week 7 (Thursday, October 22nd).
 
 #### Final Exam
 
