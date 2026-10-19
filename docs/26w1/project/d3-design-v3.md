@@ -72,26 +72,25 @@ Courses and sections have already been split into routers, controllers, services
 but it isn't perfect and you are free to choose a different split. Beyond the requirements below, we
 won't grade the structure you choose, but we will grade how well you reason about it.
 
-Requirements:
+**Requirements:**
 
-1. **Out of `Model`.** Buildings and rooms are no longer declared, stored, or managed in `Model` or
-   `App.ts`, and `App.ts` no longer registers the buildings and rooms routes itself. `App.ts` may still
+1. **Out of `Model`.** Buildings and rooms must not be declared, stored, or managed in `Model` or
+   `App.ts`. Additionally, `App.ts` must not register the buildings and rooms routes itself. `App.ts` may still
    create your pieces, connect them, and mount a router, and search may still use rooms, but only through
    your new code. Facilities dataset processing (`BuildingsDataset`) can stay where it is, but it must read
    and write buildings through your new code, not through `Model`.
-2. **Requests and storage apart.** Apart from `App.ts` and `index.ts`, no file in `src/` both imports
-   `express` and imports `fs`. Keep the names `Building` and `Room` (as classes, interfaces, or types),
-   and declare them in files that import neither.
-3. **Ready for v3.** There is a function or method, outside any file that imports `express`, that takes
+2. **Requests and storage apart.** Apart from `App.ts` and `index.ts`, `fs` and `express` must not both appear in the imports for the same file, for any file in `src/` (they are different boundaries!). Keep the names `Building` and `Room` (as classes, interfaces, or types),
+   and declare them in files that import neither (hint: use DIP).
+3. **Ready for v3.** There must be a function or method, outside any file that imports `express`, that takes
    a building id and returns its coordinates.
-4. **Test at the boundary.** Separating requests from rules should mean you can test the rules without a
-   request. Write tests that call your building and room code directly, not through the HTTP API, one for
+4. **Test at the boundary.** Separating request handling from business logic means you can test these business logic rules without making a HTTP
+   API request. Write tests that call your building and room code directly, not through the HTTP API, one for
    each of these rules:
    - a building's coordinates are found by its id, and an unknown id finds nothing (requirement 3);
    - putting a building that already exists replaces it and drops its rooms;
    - deleting a building also deletes its rooms;
    - a room can't be added to a building that doesn't exist.
-5. **No change in behaviour.** All existing tests still pass.
+5. **No change in behaviour.** All existing tests must still pass.
 
 Most of this restructuring is moving code. A single pull request will be hard for your partner to review. We suggest creating three pull requests, though you can divide the work differently:
 
@@ -142,7 +141,7 @@ can't be tested:
 2. If it succeeds, the building gets the `lat` and `lon` the service returned.
 3. If it fails for some buildings, the rest of the dataset still loads.
 
-Requirements:
+**Requirements:**
 
 1. Declare an interface `IGeoLocator`, designed however you like. Dataset processing must depend only on
    this interface.
@@ -151,7 +150,7 @@ Requirements:
 3. Add an optional `geolocator?: IGeoLocator` to `AppConfig`. `createApp({ datadir })` must still work,
    using a `GeoLocator`.
 4. Implement `FakeGeoLocator` in `test/`, and use it to write one test for each behaviour above. These
-   tests go through the HTTP API, like the existing tests.
+   tests must go through the HTTP API, like the existing tests.
 5. Write one test in `test/online/` showing that `GeoLocator` returns coordinates for a known address.
    All other tests must pass with no network access.
 

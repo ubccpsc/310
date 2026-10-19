@@ -48,11 +48,11 @@ export default defineConfig({
 					link: "/26w1/project/",
 					items: [
 						{
-							text: "D1 — Drop in a feature",
+							text: "Deliverable 1",
 							link: "/26w1/project/d1-drop-in-a-feature",
 						},
 						{
-							text: "D2 — Make it evolvable",
+							text: "Deliverable 2",
 							link: "/26w1/project/d2-make-it-evolvable",
 						},
 						{ text: "Deliverable 3", link: "/26w1/project/d3-design-v3" },
