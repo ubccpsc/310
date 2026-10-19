@@ -140,7 +140,7 @@ questions about them afterwards.
 **Your lowest lab mark is dropped.** Because of this, no additional accommodations are granted for
 missed labs — see [Academic Concession](#academic-concession).
 
-**From week 8 onward your team also has a check-in** inside the lab block, with a standing agenda:
+**From week 7 onward your team also has a check-in** inside the lab block, with a standing agenda:
 
 - What merged since last week
 - What is blocked
