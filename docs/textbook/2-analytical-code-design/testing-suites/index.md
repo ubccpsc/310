@@ -21,7 +21,7 @@ Below are some common factors present in software that cause risk toward automat
 For example, consider the following code:
 
 ```typescript
-function placeOrder(): string {
+async function placeOrder(orderId: string): string {
     const response = await axios.post(URL, {
         id: orderId,
         amount: amount,
@@ -61,7 +61,14 @@ These are popular libraries that are (presumably) well tested, so we can probabl
 Just to be extra sure though, we can write an end-to-end test that does not stub any of these modules.
 This gives us assurance that an actually realistic exeuction of our code is being run in our test suite.
 
-**Exercise**: Refactor the code and write a proper test suite using a fake filesystem to stub and spy `fs` where appropriate!
+#### Core and Edges
+Another way to look at the composition of this function is to separate it into the core and edges.
+The core of `placeOrder` is the business logic (i.e. determining if the order was succesfully created and which message to record).
+The edge of `placeOrder` are what need to be done apart from the business logic (i.e. sending the actual request and writing the message to file).
+We should write many unit tests for the core and edges individually in addition to some integration tests that span the integration of the core with an edge.
+Finally, we can write one or two end-to-end tests that test the full execution!
+
+**Exercise**: Refactor the code and write a divided test suite separated into core/edge, using an appropriate amount of unit, integration, and end-to-end tests!
 
 ### How many of each type of test should I have?
 Unit tests are cheap to run (since they stub out anything that negatively affects automatability) and write (because are small and focused).

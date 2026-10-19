@@ -20,14 +20,14 @@ Lectures are **Tuesday and Thursday** on the dates listed below. Slides are post
 
 Dates and topics subject to change!
 
-| Wk | Dates | Unit | Lectures | Lab | Due |
+| Wk | Dates | Readings | Lectures | Lab | Due |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1 | Sep 8, 10 | Unit 1 · [Introduction](/textbook/0-introduction/) | *(no Tuesday class)* · <a href="/310/26w1/lectures/01-course_introduction.pdf" target="_blank">Introduction</a> | Lab 1 — Onboarding *(Sep 11–17)* | — |
 | 2 | Sep 15, 17 | [Cost of Change](/textbook/2-analytical-code-design/cost-of-change/) · [Change Difficulty](/textbook/2-analytical-code-design/change-difficulty/) · [Design Principles](/textbook/2-analytical-code-design/principles/) | <a href="/310/26w1/lectures/02a-coupling.pdf" target="_blank">Coupling</a> · <a href="/310/26w1/lectures/02b-cohesion-refactoring.pdf" target="_blank">Cohesion</a> | Lab 2 — coupling & cohesion *(Sep 18–24)* | — |
 | 3 | Sep 22, 24 | [Refactoring](/textbook/2-analytical-code-design/refactoring/) · [Testability](/textbook/2-analytical-code-design/testability/) | <a href="/310/26w1/lectures/03a-refactoring.pdf" target="_blank">Refactoring</a> · <a href="/310/26w1/lectures/03b-testability.pdf" target="_blank">Testability</a> | Lab 3 — refactoring & testability *(Sep 25–Oct 1)* ⚠ Wed Sep 30 | **D1** Fri Sep 25 |
 | 4 | Sep 29, Oct 1 | [Testability](/textbook/2-analytical-code-design/testability/) · [Design Principles](/textbook/2-analytical-code-design/principles/) | <a href="/310/26w1/lectures/04a-test-doubles.pdf" target="_blank">Test Doubles, DIP & LSP</a> · <a href="/310/26w1/lectures/04b-test-robustness.pdf" target="_blank">Test Robustness</a> | Lab 4 — testability, dip, lsp *(Oct 2–8)* | — |
 | 5 | Oct 6, 8 | Unit 2 · [Design Patterns](/textbook/3-software-design/design-patterns/) | <a href="/310/26w1/lectures/05a-patterns-i.pdf" target="_blank">Patterns: Intro & Adapter</a> · <a href="/310/26w1/lectures/05b-patterns-ii.pdf" target="_blank">Patterns: Composite & Decorator</a> | Lab 5 — design patterns *(Oct 9–15)* ⚠ Mon Oct 12 | — |
-| 6 | Oct 13, 15 | | API Change severity & versioning · API design  | Lab 6 — API design & evolution & code review *(Oct 16–22)* | **D2** Fri Oct 16 |
+| 6 | Oct 13, 15 |  [Design Patterns](/textbook/3-software-design/design-patterns/)  · [Boundaries](/textbook/2-analytical-code-design/testing-suites/) | <a href="/310/26w1/lectures/06a-patterns-iii.pdf" target="_blank">Patterns: State</a> · <a href="/310/26w1/lectures/06b-boundaries.pdf" target="_blank">Boundaries</a> | Lab 6 — Code Analysis & Boundaries *(Oct 16–22)* | **D2** Fri Oct 16 |
 | 7 | Oct 20, 22 | |  The testing pyramid · Layered architecture | Lab 7 — layers, test strategy *(Oct 23–29)* | — |
 | 8 | Oct 27, 29 | — | Module 1 & 2 synthesis & midterm review · *(no Thursday class)* | Project time — team check-in *(Oct 30–Nov 5)* | **Midterm** Thu Oct 29 |
 | 9 | Nov 3, 5 | Unit 3 | Where requirements come from · Ethics & IP | **No lab** — fall break *(Nov 9–11)* | **D3** Fri Nov 6 |
