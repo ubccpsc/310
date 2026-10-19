@@ -1,339 +1,323 @@
-<!--
-PER-TERM NOTES — 2026W1. Re-check every item before publishing.
-
-DATES
-  Due Fri 6 Nov, 18:00. Pairs form in the Oct 16–22 lab block (the one straight after D2).
-  This deliverable deliberately spans the midterm, so it is the LIGHT paired one. If the
-  midterm moves, re-check that the heavy deliverable still isn't the one crossing it.
-
-SPEC-DEPENDENT — verified against insight-ubc-v2.spec.yml, 2026W1
-  Exactly three endpoints carry `deprecated: true`: POST /api/v1/datasets (~34),
-  GET /api/v1/datasets/{id} (~197), POST /api/v1/search (~652). The whole "why is this a
-  major version" argument rests on those three. RE-CHECK IF THE SPEC IS REGENERATED.
-  Everything under /api/v1/courses is NOT deprecated and is meant to stay.
-  Also verified: v1 courses and v2 buildings trees are convention-identical (same pagination
-  envelope, same links shape, same $ref'd NotFoundError/ValidationError). The "infer the house
-  style" work depends on that consistency actually holding.
-
-TUNABLE CONSTANTS
-  Walking speed 5 km/h, straight line. Chosen so feasibility is arithmetic, not routing.
-
-REQUIRES (not yet built)
-  Two example documents (student timetable, draft term schedule) + 8-10 worked scenarios with
-  ground-truth answers. Publish the scenarios; students who can self-diagnose don't appeal.
-  Unresolved: where section enrolment comes from for the overflow rule.
-  Also: a v3 skeleton YAML + the validator command, both handed out in the Oct 23-29 lab, which
-  carries the OpenAPI tutorial. That lab is the ONLY place the mechanics are taught before this is
-  due - the specification lectures land Nov 17, eleven days after. If the lab moves, this breaks.
-
-GRADED ON SOMETHING NOT YET TAUGHT
-  "Complete enough to build from" is assessed here; Specification & modeling teaches it later. That
-  ordering is deliberate (struggle, then procedure - the spec swap collects on it). It does mean the
-  handout owes students a completeness bar to aim at, in the weak-vs-strong contrast form D1 and D2
-  use. Not yet written.
--->
-
-# Deliverable 3 — Design v3
+# Deliverable 3
 
 **Due Friday 6 November, 18:00 · pairs · submit on GitHub and PrairieLearn**
 
-Details will be released after the D2 deadline.
+In this deliverable you will work with a partner to prepare your team's codebase for the next version of InsightUBC (v3), which you will build in D4. There are two parts:
 
+1. **Choose a codebase** (together): compare your D2 repositories and decide what you will use going forward.
+2. **Prepare for v3:** refactor the facilities (2A) and geolocation (2B) code. For groups of three, one member will add geolocation caching (2C).
 
-<!-- ## Part 2: Enable Testing with Fakes
+Each partner leads one of 2A and 2B, and in groups of three the third member leads 2C. The lead writes
+that part's code, opens its pull requests, and answers its questions in DELIV3. Each lead also reviews
+the other's pull requests before they are merged (see [Working as a team](#working-as-a-team)). Submit
+DELIV3 on PrairieLearn once per group.
 
-When a facilities dataset is uploaded, the system reads building addresses out of an HTML table and
-turns each one into coordinates by calling an external geocoding service.
-This violates some of our testability principles because we are not able to test some important behaviours.
-In this phase, you will refactor your code to allow us to test these behaviours in addition to writing the tests themselves.
-The behaviours you need to write tests for:
-1. If the geolocation service is unreachable, then the building should be skipped. (wifi off)
-2. If the geolocation service is reachable, then the building should be populated with the lat/lon. (wifi off)
-3. A test if the geolocation service is online. (wifi on)
+## 1. Choose a codebase
 
-These sound simple, but we have no way to actually test these--at least as the code is currently written!
+You will need to the decide which parts of each of your D2 repositories you will incorporate into your new team repo. Before you choose, walk each
+other through your own repo: what your common interface for `Rooms` and `Sections` describes and why you gave it the methods you did,
+and what your tests would catch if a later change broke search.
 
-**Requirements:**
-1. You must have one test for each of the behaviours specified above.
-2. For the wifi-off tests, you must implement a test double in the form of a *fake* that ascribes to an interface you designed called `IGeoLocator`.
-3. `IGeoLocator` may look however you want as long as it allows you to test these behaviours.
-4. This design allows you to use DIP to inject either a real `GeoLocator` (at runtime) or a fake `FakeGeoLocator` (at test time), by providing it as a part of the `AppConfig` type. You will need to implement both of these concrete classes.
+Then compare your repositories on the same two points:
 
-```typescript
-/**
- * Configuration options for the application.
- */
-export type AppConfig = {
-	readonly datadir: string; // existing
-	geolocator: IGeoLocator;  // new!
-};
+- **The common interface.** What does each one describe? What would a third kind of dataset cost in
+  each: which files would change, and how many places would have to agree?
+- **The tests.** Which behaviours does each suite check that the other doesn't? Both parts of this
+  deliverable are refactors that must not change behaviour, so these tests are your safety net.
+
+You don't have to take everything from one repository. Your team repository starts with the course's
+configuration files. To adopt a codebase, make a branch in it, copy in `src/`, `test/`, and `openapi.yml`
+from the repository you're keeping (not its `.git` folder), and open a pull request for your partner to
+review. Bring in anything else from the other repository, such as its tests, the same way.
+
+As soon as that pull request is merged, request feedback from the bot on `main` (`@310-bot #d3`; see
+[Grading](#grading)). Before you've changed anything, the 2A and 2B sections will fail, which is
+expected, but any regressions are bugs you've inherited from D1 or D2. Regressions count against your D3
+score whether or not they're new, so fix them first. They're also gaps in the safety net your refactors
+depend on.
+
+Submit in DELIV3, Part 1:
+
+1. **Comparison:** how do your repositories differ in their common interface and in their tests? Point
+   to specific files and functions in each, and use equivalence classes to refer to tests as appropriate.
+2. **Decision:** what did you carry forward from each repository, and why? If you brought anything
+   across, link the pull request.
+
+## 2. Prepare for v3
+
+Before you start writing code, create a plan as a GitHub issue.
+It will help you coordinate the work with your partner, and it's what your D3 plan check-in is graded
+on (see [Weekly check-ins](#weekly-check-ins)). A useful plan covers:
+
+- **Who does what.** Who leads each part, and who reviews it.
+- **Order.** 2A and 2B both change the facilities dataset processing code (`BuildingsDataset`): 2A
+  changes how it stores buildings, and 2B how it locates them. Decide which goes first, or how you'll
+  work at the same time without conflicts.
+- **Steps.** Break each part into a checklist of steps small enough to be a commit or two. The
+  steps will be the path that you will take to satisfy the requirements.
+- **Dates.** When each pull request should be ready for review. Leave time for the review and the
+  follow-up commits (and plan around the midterm).
+
+Update your plan if it changes as you start implementing the requirements.
+
+### 2A. Restructure facilities
+
+v3 will need to look up facilities data, such as where a building is, without going through everything
+else `Model` does. Right now the only way to get at it is through `Model`, which also handles requests,
+stores files, and processes datasets, so v3 would depend on all of it. Restructure the buildings and rooms
+code so that v3 has something smaller to depend on, without changing any behaviour.
+
+Courses and sections have already been split into routers, controllers, services, and repositories
+(`src/routers/`, `src/controllers/`, `src/services/`, `src/repositories/`). That is one way to do it,
+but it isn't perfect and you are free to choose a different split. Beyond the requirements below, we
+won't grade the structure you choose, but we will grade how well you reason about it.
+
+Requirements:
+
+1. **Out of `Model`.** Buildings and rooms are no longer declared, stored, or managed in `Model` or
+   `App.ts`, and `App.ts` no longer registers the buildings and rooms routes itself. `App.ts` may still
+   create your pieces, connect them, and mount a router, and search may still use rooms, but only through
+   your new code. Facilities dataset processing (`BuildingsDataset`) can stay where it is, but it must read
+   and write buildings through your new code, not through `Model`.
+2. **Requests and storage apart.** Apart from `App.ts` and `index.ts`, no file in `src/` both imports
+   `express` and imports `fs`. Keep the names `Building` and `Room` (as classes, interfaces, or types),
+   and declare them in files that import neither.
+3. **Ready for v3.** There is a function or method, outside any file that imports `express`, that takes
+   a building id and returns its coordinates.
+4. **Test at the boundary.** Separating requests from rules should mean you can test the rules without a
+   request. Write tests that call your building and room code directly, not through the HTTP API, one for
+   each of these rules:
+   - a building's coordinates are found by its id, and an unknown id finds nothing (requirement 3);
+   - putting a building that already exists replaces it and drops its rooms;
+   - deleting a building also deletes its rooms;
+   - a room can't be added to a building that doesn't exist.
+5. **No change in behaviour.** All existing tests still pass.
+
+Most of this restructuring is moving code. A single pull request will be hard for your partner to review. We suggest creating three pull requests, though you can divide the work differently:
+
+- **Move.** Move code without changing it, for example `Building` and `Room` into their own files. Nothing
+  should behave differently, so this is quick to review. VS Code's **Move to a new file** refactoring
+  (select the class, then press `Ctrl+.` or `Cmd+.`) moves the code and fixes the imports for you.
+- **Restructure.** The routes, request handling, rules, and storage (requirements 1 and 2).
+- **Boundary.** Requirements 3 and 4.
+
+Each description should say what changed and why (see [Working as a team](#working-as-a-team)), and your
+partner's review should respond to it, not only to the diff.
+
+Submit in DELIV3, Part 2A:
+
+1. **Pre-analysis** (before you change any code):
+   - **Current dependencies:** what does the facilities code depend on, and what depends on it? Which of
+     those dependencies would make it hard to change or use from v3? Are there tangling, scattering, or testability concerns?
+   - **Plan:** the pieces you intend to split it into, what each is responsible for, and which way the
+     dependencies between them point. A sketch of the dependency graph is fine.
+2. **A link to one merged pull request for 2A**, the one that best shows how you work, with your
+   partner's review on it.
+3. **Post-analysis:**
+   - **Design:** the structure you ended up with, how it differs from your plan and why, and its pros and
+     cons, including at least one requirement you can think of that is harder after refactoring than
+     before it.
+   - **Sharing:** courses, sections, buildings, and rooms all read `limit` and `offset`, check them, and
+     build the same not-found errors. Does your facilities code share that with courses and sections, or
+     keep its own? Why?
+4. **Where the code lives now.** Give these as permalinks to the lines on `main` after the merge, so we
+   can check your answers by clicking:
+   - **Request trace:** follow `PUT /api/v2/buildings/:buildingId` from where its route is registered to
+     where the building is written to disk, as you did in D1, with a permalink for each step. Then add a
+     permalink to where facilities dataset processing stores the buildings it loads. How does it compare
+     with your D1 trace?
+   - **Ready for v3:** the function or method from requirement 3. What does it depend on, and what would
+     v3 have to depend on to call it?
+   - **Boundary tests:** your requirement 4 test for each rule. Where is the boundary between requests
+     and your rules, and what did writing these tests show about it? Was anything hard to test without a
+     request or a running app?
+
+### 2B. Put geolocation behind an interface
+
+Uploading a facilities dataset calls an external geolocation service for each building (step 6 of
+`POST /api/v2/datasets`). Because that call is buried in the dataset processing code, these behaviours
+can't be tested:
+
+1. If geolocation fails for a building, that building and its rooms are skipped.
+2. If it succeeds, the building gets the `lat` and `lon` the service returned.
+3. If it fails for some buildings, the rest of the dataset still loads.
+
+Requirements:
+
+1. Declare an interface `IGeoLocator`, designed however you like. Dataset processing must depend only on
+   this interface.
+2. Implement `GeoLocator`. It must call the existing service URL with the built-in `fetch`, and it must
+   be the only code in `src/` that calls `fetch`.
+3. Add an optional `geolocator?: IGeoLocator` to `AppConfig`. `createApp({ datadir })` must still work,
+   using a `GeoLocator`.
+4. Implement `FakeGeoLocator` in `test/`, and use it to write one test for each behaviour above. These
+   tests go through the HTTP API, like the existing tests.
+5. Write one test in `test/online/` showing that `GeoLocator` returns coordinates for a known address.
+   All other tests must pass with no network access.
+
+Submit in DELIV3, Part 2B:
+
+1. **Pre-analysis** (before you change any code): why are these behaviours hard to test? Use testability
+   terms such as controllability, observability, and automatability.
+2. **A link to one merged pull request for 2B**, the one that best shows how you work, with your
+   partner's review on it.
+3. **Post-analysis:** how did depending on `IGeoLocator` (DIP) address the problems in your
+   pre-analysis? How many classes did you touch, and is that acceptable in terms of future cost of
+   change? If not, propose a refactoring that would help.
+
+### 2C. Cache geolocation (groups of three only)
+
+The team that runs the geolocation service has noticed that every facilities upload sends a request for
+every building, even when the same campus was uploaded minutes earlier.
+
+1. Add caching as a decorator: a `CachingGeoLocator` that implements your `IGeoLocator`, wraps another
+   `IGeoLocator`, and forwards to it.
+2. Once an address has been located successfully, later requests for it are answered from the cache
+   without calling the wrapped geolocator. Failures are not cached.
+3. Each app returned by `createApp` has its own cache, which starts empty. `createApp({ datadir })` uses
+   a `CachingGeoLocator` around a `GeoLocator`.
+4. Cached entries expire: an address cached more than 24 hours ago is located again, and the new answer
+   is cached.
+5. Test it without the network, including expiry. Your tests can't wait 24 hours, so you'll need a way
+   to control time in them.
+
+This builds on 2B's `IGeoLocator`, so agree on the interface with 2B's lead early.
+
+2C isn't autograded, but once your code declares `CachingGeoLocator`, the bot's feedback has a 2C section
+that checks requirements 2 and 3 (it doesn't count toward the autograded score).
+
+Submit in DELIV3, Part 2C:
+
+1. **A link to one merged pull request for 2C**, the one that best shows how you work, with a partner's
+   review on it.
+2. **Tests:** permalinks to the tests that show requirements 2 and 3, and a link to the bot's feedback on
+   your merged commit.
+3. **Expiry:** a permalink to the test that shows a cached entry is evicted after 24 hours. How does the
+   test control time?
+4. **The interface:** what did your `IGeoLocator` make easy or hard about adding the cache?
+5. **The test double:** what kind of test double did you use to test it, and why that kind?
+
+## Working as a team
+
+How you work together is part of this deliverable. We don't prescribe a process, but your repository
+has to show the following.
+
+- **Issues.** Plan your work as GitHub issues in your team repository, one for each week, and keep
+  them up to date as you work (see [Weekly check-ins](#weekly-check-ins)).
+- **Commits.** Commit in small steps, each doing one thing, with a message that says what changed and
+  why. When refactoring, each step should leave the tests passing. A pull request that is one large
+  commit doesn't meet this requirement.
+- **Pull requests.** Each of 2A, 2B, and 2C is merged through its own pull request(s). Its description
+  says what changed, why, and how you tested it, and links its issue. Before you ask for a
+  review, get the bot's feedback on the pull request's latest commit (see [Grading](#grading)). In DELIV3
+  you link one pull request for each part: pick the one that best shows how you work.
+- **Reviews.** Your partner reviews each pull request before it is merged, with at least one comment on
+  the diff about the design. The author responds to every comment, either with a follow-up commit or
+  with a reply explaining why not.
+
+### Weekly check-ins
+
+From the Oct 23–29 lab until D4 is due, your team meets with your TA for about 15 minutes in each lab.
+The check-in runs on what's in your repository, not on what you remember. You share your screen and
+show us GitHub. Everyone on the team attends and speaks for their own work.
+
+Each deliverable has two graded check-ins:
+
+| Lab | Check-in | Graded on |
+| :--- | :--- | :--- |
+| Oct 23–29 | D3 plan | Your plan issue from Part 2: a checklist with a name on every item, opened before lab, covering who, order, steps, and dates. |
+| Oct 30–Nov 5 | D3 process | The same issue, kept up to date: done items link to the work that did them, and changes to the plan are recorded. |
+| Nov 13–19 | D4 plan | Your D4 plan issue, as for D3. |
+| Nov 20–26 | D4 process | As for D3. |
+
+L1J: your Oct 29 lab is cancelled for the midterm, so your D3 plan check-in is on Oct 22.
+
+The process check-in is graded on whether your issues connect to your work, not on how much of it is
+done.
+
+**Before each lab:**
+
+1. **Update last week's issue.** Tick what's done and put the pull request or commit next to it
+   (you can type `#12` or paste a commit hash and GitHub will create a link). For anything not done, comment on why:
+   it's blocked, the plan changed, or it took longer than expected.
+2. **Open this week's issue.** List the coming week's work as a checklist, with a `@name` on every
+   item, carry over what didn't get done, and link last week's issue. GitHub shows when an issue was
+   opened, and one opened during the check-in doesn't count as a plan.
+
+**As you work,** mention the issue in commit messages and pull request descriptions (`Part of #12`, or
+`Closes #12` when it finishes the issue). Each mention appears on the issue's timeline, so the history
+builds itself.
+
+**In the check-in,** your TA will ask you to:
+
+- show this week's issue, with each of you saying which items are yours and what you'll do first (at a
+  process check-in, this is what's left before the deadline);
+- open the issue you showed last time and click through from a ticked item to the work that did it;
+- show what merged since the last check-in, what is blocked, and which pull request is waiting for
+  review and who is reviewing it.
+
+Only what is on GitHub counts. If you agreed on something in a call or a chat, write it in the issue.
+
+### Examples of good process artifacts
+
+**Weekly issues.** This is last week's issue, updated before lab:
+
+```markdown
+Week of 30 Oct · previous: #5
+
+- [x] Agree on IGeoLocator's signature (@ana, @raj): see comment below
+- [x] FakeGeoLocator and the three skip/keep tests (@raj): #8
+- [x] Review #8 (@ana)
+- [ ] Move Building and Room out of App.ts (@ana): started in #9, carried over to #11
+      because #8 changed the code it moves
+
+Blocked: nothing.
 ```
 
+**Commit messages.** "fix", "D3 stuff", and "address review" don't say anything. Compare:
 
-**Deliverables:**
-1. **Pre-Analysis:** Why are these behaviours hard to test? Use testability terminology like controllability, observability, and/or automatability.
-2. **A link** to the commit hash, merged pull request, or code **for each** of the requirements above.
-3. **Post-Analysis:** How did using DIP affect the testability concerns from the pre-analysis? How many classes did you have to touch to do this? Is this an acceptable amount? If yes, justify in terms of future cost of change (risk/difficulty). If not, propose a high-level refactoring that would help. -->
+```text
+Extract the geolocation request into GeoLocator
 
-<!--
-You are going to specify a new major version of InsightUBC. **You will not implement any of it** —
-that's [D4](d4-build-it.md). This deliverable produces a document that another team could build
-from, and a set of decisions you can defend.
+Dataset processing still constructs GeoLocator directly; injecting it
+through AppConfig comes next. No behaviour change.
+```
 
-## Finding a partner
+**Pull request descriptions.** Write for a reviewer who hasn't seen your plan:
 
-Pairs form during the **Oct 16–22 lab block**, with someone in your own lab section. Register with
-your TA.
+```markdown
+Closes #4.
 
-You will both bring a working repository out of D2, and you have to carry exactly one of them
-forward. **Read each other's before you decide.**
+**What:** Dataset processing now asks an IGeoLocator for coordinates instead of calling fetch.
+**Why:** The skip-on-failure behaviours couldn't be tested without the network.
+**Testing:** Three new tests use FakeGeoLocator; test/online/ has one against the real service.
+**Open question:** Should a failed lookup be undefined or an error? I chose undefined; see GeoLocator.ts.
+```
 
-Each of you reviews your partner's D2 pull request on GitHub, leaving comments inline on the diff.
-This is the first time you'll see someone else's solution to a problem you just solved yourself, and
-it is the whole basis for the adoption argument you submit below — *"we kept mine"* with no evidence
-is not an argument.
+**Review comments.** "LGTM" says nothing, and a comment about naming or formatting is fine but isn't a
+design comment. A design comment names a consequence and suggests an alternative or asks a question:
 
-**What to look for**, since we haven't taught review process yet — you already have the vocabulary,
-so use it:
+> `locate` returns the service's raw response, so dataset processing still has to know the service's
+> error format, and so does the fake. Could it return coordinates or `undefined` instead?
 
-- Where is the seam, and does the interface describe a *need* or a *mechanism*?
-- What would it cost to add a second caller with a different reason for wanting the same capability?
-- Which of the two of you has fewer places that must agree for a change to be correct?
-- What did they do that you didn't think of?
+## Grading
 
-**Comment on design, not style.** Formatting is not worth a reviewer's attention, and "I'd have done
-this differently" is only useful with a reason attached. Assume competence; ask questions rather than
-issuing instructions.
+This deliverable is 50% autograded and 50% manually graded.
 
-## The brief
+- **Autograded (50%).** As in D2, your highest-scoring commit on `main` before the deadline is the one that counts.
+  Request feedback with `@310-bot #d3`. The autograder checks:
+  - 2A requirements 1 and 2, and 2B requirements 1–3;
+  - that your tests outside `test/online/` pass offline;
+  - that existing behaviour still works, including the buildings and rooms endpoints and the three
+    behaviours in 2B.
 
-Two requests have landed with the Decision Support team in the same month.
+  The feedback has a section for each of 2A and 2B (and 2C, unscored, for groups of three), so each lead
+  can see how their part is doing.
 
-**From the AMS:**
-
-> Students build their timetables by hand every term, and every term some of them end up with two
-> classes at the same time, or with fifteen minutes to cross campus between a lecture in ICCS and one
-> in Buchanan. The registration tool already produces a draft timetable — what students want is
-> something that will *check* it before they commit. And most of them plan two or three options
-> before deciding, so they'd like to keep those around.
-
-**From Scheduling Services:**
-
-> The term schedule isn't produced by one system. Departments submit their own section requests, we
-> assign rooms centrally, and then it gets patched by hand for weeks — a room goes out of service, an
-> instructor swaps a slot, a department splits a section in half. By the time we publish, nobody can
-> say with confidence that the whole thing still holds together, and every year something ships
-> broken: a room booked twice in the same hour, a class of 200 in a room that seats 60, an instructor
-> timetabled in two buildings at once. We'd like to submit the merged draft and get back a list of
-> everything wrong with it.
-
-Neither group wants InsightUBC to *build* a schedule. Both have a system that produces one already.
-What they want is something that will tell them what's wrong with it.
-
-That's the whole brief. It is deliberately written the way requests actually arrive — in terms of
-what someone wants, not in terms of endpoints. **Turning it into a specification is the deliverable.**
-
-### What is fixed
-
-Two documents arrive from other systems, so their shape is not yours to choose. Both are given with
-this deliverable, along with a set of worked examples.
-
-- **A student timetable** lists entries, each naming a section, the days it meets, its start and end
-  times, and the building it meets in.
-- **A draft term schedule** lists assignments, each naming a section, a room, the days it meets, and
-  its start and end times.
-
-Four definitions are also fixed, so that every pair's system can be checked against the same
-scenarios:
-
-- **Two entries clash** if their times overlap on any day they share.
-- **A timetable is reachable** if, for every pair of entries a student attends back to back on the
-  same day, the walking time between their buildings fits in the gap. Assume 5 km/h in a straight
-  line between building coordinates.
-- **A room is double-booked** if two assignments put different sections in it at overlapping times.
-- **An assignment overflows** if the section's enrolment exceeds the room's seat count.
-
-Everything else — the endpoints, the request and response shapes, what a "violation" looks like,
-which status codes you use, how a saved timetable is identified — is yours to design.
-
-### What v3 does not do
-
-**There is no authentication, and v3 is not adding any.** InsightUBC has never had user accounts;
-v1 and v2 don't authenticate anybody, and building an identity system is not what this deliverable
-is about.
-
-So the owner identifier on a saved timetable is a **claim, not a credential.** The system takes the
-caller's word for who they are. Anyone who supplies a given student number can list, read, and
-change that student's timetables.
-
-Say that out loud in your specification rather than leaving it implicit, and be precise about what
-it means:
-
-- An identifier that's hard to guess is **not** access control. It stops a timetable being *found*;
-  it does nothing to stop it being *read* by anyone who obtains it.
-- Knowing *who* a caller claims to be (identification) is a different thing from having *checked*
-  it (authentication), which is a different thing again from deciding *what they may do*
-  (authorization). v3 does the first only.
-
-Being able to state exactly what your system doesn't protect is part of designing it, and we'll
-come back to it in lecture.
-
-If enforced ownership interests you, it's on the extension menu below — and note that even there,
-you are designing the model, not shipping real authentication.
-
-### What you must cover
-
-Your v3 specification must describe:
-
-1. **Saved timetables** — creating, reading, changing, deleting, and listing the timetables kept
-   under a given owner. The owner is a plain identifier supplied by the caller, like a student
-   number; see *What v3 does not do* above.
-2. **Checking a student timetable** — reporting clashes and reachability problems.
-3. **Validating a draft term schedule** — reporting double-bookings, overflows, and instructor
-   conflicts. This one does not need to be stored; Scheduling Services submits a draft and wants an
-   answer.
-4. **One extension of your choice**, from the list below.
-
-### The design decision we will be looking for
-
-Requirements 2 and 3 are both "take a document, return everything wrong with it." They overlap —
-both care about times overlapping — and they differ, in what they're given and what counts as a
-problem.
-
-**Do they share machinery, or not?** One validation service or two? A common shape for a violation,
-or a different one for each? The overlap check written once, or twice?
-
-There is no right answer here, and we are not looking for a particular one. We are looking for a
-decision you made deliberately and can defend — including "we duplicated it on purpose, and here's
-why that was cheaper than the abstraction."
-
-### Choose one extension
-
-Each is about a week of work in D4 and each forces a different design question. Pick on the basis of
-which question you'd rather argue about.
-
-| Extension | The design question it forces |
-| :--- | :--- |
-| **Ranking candidates** | A student submits several timetables and wants the one with the least walking. How do you express ranking, and what happens to ties? |
-| **Time-window preferences** | How do you express a constraint like "nothing before 10am" in a request without inventing a query language? |
-| **Timetable comparison** | Is a diff a resource, or an operation on two resources? |
-| **Sharing & access** | If ownership were enforced rather than asserted, what would change? Design the model — who may read, who may edit, how a timetable gets shared — not a production auth system |
-| **Alternate sections** | Given a clash, what could replace it? Suggestions are a list, so: ordering, limits, and pagination, all over again |
-
-## Why this is a new major version
-
-Adding endpoints doesn't break anybody, and by the versioning rules from lecture that makes it a
-*minor* change.
-So if all v3 did was add scheduling, `v2.1` would be the honest label.
-
-Two things make it major. First, **v3 removes what v2 deprecated** — `POST /api/v1/datasets`,
-`GET /api/v1/datasets/{id}`, and `POST /api/v1/search`. Each has a v2 counterpart and the migration
-is just a change of URL, but a consumer who ignored the deprecation notice gets a 404 the day v3
-ships. Easy to migrate and breaking are not the same property. Deprecation is a promise that
-something will stop working; a major version is where that promise comes due.
-
-Second, and worth separating carefully: **`/api/v1` and `/api/v2` are not semantic versions.** They
-are paths — a way of serving two contracts side by side so consumers migrate on their own schedule.
-`MAJOR.MINOR.PATCH` describes how much a contract changed. The two mechanisms are related but
-different, and conflating them is why this question feels slippery.
-
-Note also what is **not** deprecated: everything under `/api/v1/courses` is live, supported, and
-staying. Read the specification rather than assuming that "v1" means "obsolete."
-
-## The conventions you're inheriting
-
-Read the specification carefully before designing anything, because it is more consistent than it
-first appears. It documents both live contracts in one document — `/api/v1` and `/api/v2` are served
-side by side, not one after the other — and the courses tree and the buildings tree use the same
-pagination envelope, the same `links` shape, the same status codes for the same situations, and
-literally the same error schemas.
-
-**Nobody wrote those conventions down as rules.** Part of your job is to work out what they are,
-state them explicitly, and then apply them to a domain — scheduling — that the original authors
-never considered.
-
-Where the existing conventions genuinely don't answer a question your design raises, you decide, and
-you say that you decided. Departing from precedent is allowed; departing from it silently is not.
-
-**One question the house style does not settle, and you will have to.** Almost every endpoint in the
-existing API manipulates a stored thing: `GET`, `PUT`, and `DELETE` over courses, sections,
-buildings, rooms. Two endpoints don't — `POST /datasets` and `POST /search` both take a document and
-do something with it.
-
-Checking a timetable is the second kind. So is it an operation, in the style of `POST /search`? Or
-is a check a *resource* — something you create, that has an identity and a result you can fetch
-later?
-
-This is a question about what the client needs, not about REST trivia: **does anyone ever need to
-look at a past check again?** Answer that and the shape follows.
-
-We are not grading which one you pick. We're grading whether you can say **what would have made the
-other answer right** — *"we made it an operation; we'd have made it a resource if the check were
-expensive enough to run asynchronously, or if anything else needed to refer to a past result."*
-Naming the condition that would flip a decision is most of what design judgment is.
-
-**A second one, where no answer is free.** Students want to check a timetable *before* they commit
-to it, and they also keep two or three saved ones they'll want checked. So does your check accept a
-submitted document, the id of a saved timetable, or both?
-
-Both is tempting, and it leaves you with two paths computing the same answer — you know by now what
-that costs. Document-only means you can't check something you already saved without sending it
-again. Id-only means you have to save before you can find out whether it's any good. Pick, and say
-what you gave up.
-
-Whichever way both of these go, the argument belongs in your departures.
-
-We don't lecture on REST conventions, so here is the baseline underneath all of this — you'll find
-the existing specification already obeys every line:
-
-- Resources are plural nouns; identifiers go in the path, not the query string.
-- `GET` never changes anything. `PUT` with the same body twice leaves the same result as once.
-- `200` for a successful read, `201` when you created something, `204` when there's nothing to
-  return, `404` when the thing doesn't exist, `422` when the request was well-formed but its
-  contents were invalid.
-- Errors have the same body shape at every endpoint, and collections are paginated the same way
-  everywhere.
-
-We are **not** grading you on REST trivia. We're grading whether your specification is complete,
-consistent with what it extends, and defensible — and in D4, on the design of the code behind it.
-
-## What to submit
-
-**1. Adoption review** — half a page, plus a link to each of the two reviews you left on each
-other's D2 pull requests. Which repository you're carrying forward, what the adopted one does
-better, what it does worse, and what you're fixing first. Cite what you found in review.
-
-**2. Convention inventory** — the house style, written down. Pagination, error bodies, link
-structure, naming, and which status code means what. Cite where in the existing specification you
-found each one.
-
-**3. Departures** — every place your v3 design does *not* follow the inherited convention, with the
-reason. Include the resource-versus-operation decision above. If there are no other departures, say
-so; that's a legitimate answer.
-
-**4. The specification** — a complete OpenAPI document for v3: every path, every schema, every
-status code, including the error cases. **It must validate.**
-
-Authoring the document and running the validator are covered in lab, with a skeleton to start
-from. Have that skeleton validating before your first team check-in — discovering the tooling the
-night before is an avoidable way to lose marks on this.
-
-**5. Extension choice**, with a sentence on why.
-
-**6. The sharing decision** — a paragraph on requirements 2 and 3. What, if anything, do your two
-validators have in common in your design, and why did you draw the line there?
-
-## How this is graded
-
-| Assessed by | What it covers |
-| :--- | :--- |
-| Autograded | Your OpenAPI document parses and validates |
-| Judgment | The adoption review, the convention inventory, the departures, the sharing decision, and whether the specification is complete enough to build from |
-
-**The failure mode to avoid:** designing v3 "properly" from scratch. A pair that invents its own
-error shape, its own pagination, and its own link style has produced a system with two ways of doing
-everything and no reason for either. Matching the house style beats a better-in-isolation
-alternative, and we grade the argument, not the aesthetics.
-
-You will build exactly what you specify here. Choose accordingly.
--->
+  **Get feedback before you merge.** The bot runs on any commit, not only on `main`, but it doesn't respond
+  to comments on a pull request. To check a pull request before merging it, open its **Commits** tab, click
+  the latest commit, and comment `@310-bot #d3` at the bottom of that page (see [AutoTest](./autotest.md)).
+  Only commits on `main` count toward your grade.
+- **Manually graded (50%).** Your DELIV3 answers; the pull request you link for each part, with its
+  commits and review (see [Working as a team](#working-as-a-team)); and 2C for groups of three. Your D3 plan and process
+  [check-ins](#weekly-check-ins) count as part of this.
