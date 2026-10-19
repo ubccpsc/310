@@ -2,22 +2,20 @@
 
 **Due Friday 6 November, 18:00 · pairs · submit on GitHub and PrairieLearn**
 
-In this deliverable you prepare your team's codebase for the next version of InsightUBC (v3), which
-you will build in D4. There are two parts:
+In this deliverable you will work with a partner to prepare your team's codebase for the next version of InsightUBC (v3), which you will build in D4. There are two parts:
 
-1. **Choose a codebase** (together): compare your D2 repositories and decide what to carry forward.
-2. **Prepare for v3:** two refactors that must not change behaviour, 2A (restructure the facilities
-   code) and 2B (put geolocation behind an interface), plus 2C (cache geolocation) for groups of three.
+1. **Choose a codebase** (together): compare your D2 repositories and decide what you will use going forward.
+2. **Prepare for v3:** refactor the facilities (2A) and geolocation (2B) code. For groups of three, one member will add geolocation caching (2C).
 
 Each partner leads one of 2A and 2B, and in groups of three the third member leads 2C. The lead writes
 that part's code, opens its pull requests, and answers its questions in DELIV3. Each lead also reviews
 the other's pull requests before they are merged (see [Working as a team](#working-as-a-team)). Submit
-DELIV3 once per group.
+DELIV3 on PrairieLearn once per group.
 
 ## 1. Choose a codebase
 
-You each have a D2 repository, and you will carry one codebase forward. Before you choose, walk each
-other through your own: what your common interface for `Rooms` and `Sections` describes and why you gave it the methods you did,
+You will need to the decide which parts of each of your D2 repositories you will incorporate into your new team repo. Before you choose, walk each
+other through your own repo: what your common interface for `Rooms` and `Sections` describes and why you gave it the methods you did,
 and what your tests would catch if a later change broke search.
 
 Then compare your repositories on the same two points:
@@ -27,9 +25,16 @@ Then compare your repositories on the same two points:
 - **The tests.** Which behaviours does each suite check that the other doesn't? Both parts of this
   deliverable are refactors that must not change behaviour, so these tests are your safety net.
 
-You don't have to take everything from one repository. Push the `main` of the one whose code you want
-to keep to your team repository. If another has something worth keeping, such as its tests, bring it
-across in a pull request.
+You don't have to take everything from one repository. Your team repository starts with the course's
+configuration files. To adopt a codebase, make a branch in it, copy in `src/`, `test/`, and `openapi.yml`
+from the repository you're keeping (not its `.git` folder), and open a pull request for your partner to
+review. Bring in anything else from the other repository, such as its tests, the same way.
+
+As soon as that pull request is merged, request feedback from the bot on `main` (`@310-bot #d3`; see
+[Grading](#grading)). Before you've changed anything, the 2A and 2B sections will fail, which is
+expected, but any regressions are bugs you've inherited from D1 or D2. Regressions count against your D3
+score whether or not they're new, so fix them first. They're also gaps in the safety net your refactors
+depend on.
 
 Submit in DELIV3, Part 1:
 
@@ -40,29 +45,27 @@ Submit in DELIV3, Part 1:
 
 ## 2. Prepare for v3
 
-Before anyone writes code, plan the work together and write the plan down as your first GitHub issue.
-We won't grade it, but it's the cheapest place to find out that you disagree, and it can be the issue
-you show your TA in your next lab (see [Working as a team](#working-as-a-team)). A useful plan
-covers:
+Before you start writing code, create a plan as a GitHub issue.
+It will help you coordinate the work with your partner, and it's what your D3 plan check-in is graded
+on (see [Weekly check-ins](#weekly-check-ins)). A useful plan covers:
 
 - **Who does what.** Who leads each part, and who reviews it.
-- **Order.** 2A and 2B both change the facilities dataset processing code. Decide which goes first, or
-  how you'll work at the same time without conflicts, for example by agreeing on `IGeoLocator` before 2A
-  moves the code that calls it.
+- **Order.** 2A and 2B both change the facilities dataset processing code (`BuildingsDataset`): 2A
+  changes how it stores buildings, and 2B how it locates them. Decide which goes first, or how you'll
+  work at the same time without conflicts.
 - **Steps.** Break each part into a checklist of steps small enough to be a commit or two. The
-  requirements say what has to be true at the end; the steps are how you get there.
+  steps will be the path that you will take to satisfy the requirements.
 - **Dates.** When each pull request should be ready for review. Leave time for the review and the
-  follow-up commits, and plan around the midterm.
+  follow-up commits (and plan around the midterm).
 
-Expect the plan to change. When it does, update the issue rather than starting a new one: an issue
-whose history shows what you learned is more useful than one that was right the first time.
+Update your plan if it changes as you start implementing the requirements.
 
 ### 2A. Restructure facilities
 
 v3 will need to look up facilities data, such as where a building is, without going through everything
 else `Model` does. Right now the only way to get at it is through `Model`, which also handles requests,
-stores files, and processes datasets, so v3 would depend on all of it. Restructure the buildings, rooms,
-and facilities datasets code so that v3 has something smaller to depend on, without changing any behaviour.
+stores files, and processes datasets, so v3 would depend on all of it. Restructure the buildings and rooms
+code so that v3 has something smaller to depend on, without changing any behaviour.
 
 Courses and sections have already been split into routers, controllers, services, and repositories
 (`src/routers/`, `src/controllers/`, `src/services/`, `src/repositories/`). That is one way to do it,
@@ -71,22 +74,35 @@ won't grade the structure you choose, but we will grade how well you reason abou
 
 Requirements:
 
-1. **Out of `Model`.** Buildings, rooms, and facilities datasets are no longer declared, stored, or
-   processed in `Model` or `App.ts`. `App.ts` may still create your pieces and connect them, and search
-   may still use rooms, but only through your new code.
-2. **Storage in one place.** Exactly one file in `src/` reads and writes the stored buildings
-   (`buildings.json`).
-3. **Requests and storage apart.** Apart from `App.ts` and `index.ts`, no file in `src/` both imports
-   `express` and imports `fs`. The files that declare `Building` and `Room` import neither.
-4. **Ready for v3.** There is a function or method, outside any file that imports `express`, that takes
-   a building id and returns its coordinates. Write one test that calls it directly rather than through
-   the HTTP API.
+1. **Out of `Model`.** Buildings and rooms are no longer declared, stored, or managed in `Model` or
+   `App.ts`, and `App.ts` no longer registers the buildings and rooms routes itself. `App.ts` may still
+   create your pieces, connect them, and mount a router, and search may still use rooms, but only through
+   your new code. Facilities dataset processing (`BuildingsDataset`) can stay where it is, but it must read
+   and write buildings through your new code, not through `Model`.
+2. **Requests and storage apart.** Apart from `App.ts` and `index.ts`, no file in `src/` both imports
+   `express` and imports `fs`. Keep the names `Building` and `Room` (as classes, interfaces, or types),
+   and declare them in files that import neither.
+3. **Ready for v3.** There is a function or method, outside any file that imports `express`, that takes
+   a building id and returns its coordinates.
+4. **Test at the boundary.** Separating requests from rules should mean you can test the rules without a
+   request. Write tests that call your building and room code directly, not through the HTTP API, one for
+   each of these rules:
+   - a building's coordinates are found by its id, and an unknown id finds nothing (requirement 3);
+   - putting a building that already exists replaces it and drops its rooms;
+   - deleting a building also deletes its rooms;
+   - a room can't be added to a building that doesn't exist.
 5. **No change in behaviour.** All existing tests still pass.
 
-Explain your design in the pull request description: the structure you ended up with, how it differs
-from your plan and why, and its pros and cons, including at least one requirement you can think of that is harder 
-after refactoring than before it.
-Your partner's review should respond to that explanation, not only to the diff.
+Most of this restructuring is moving code. A single pull request will be hard for your partner to review. We suggest creating three pull requests, though you can divide the work differently:
+
+- **Move.** Move code without changing it, for example `Building` and `Room` into their own files. Nothing
+  should behave differently, so this is quick to review. VS Code's **Move to a new file** refactoring
+  (select the class, then press `Ctrl+.` or `Cmd+.`) moves the code and fixes the imports for you.
+- **Restructure.** The routes, request handling, rules, and storage (requirements 1 and 2).
+- **Boundary.** Requirements 3 and 4.
+
+Each description should say what changed and why (see [Working as a team](#working-as-a-team)), and your
+partner's review should respond to it, not only to the diff.
 
 Submit in DELIV3, Part 2A:
 
@@ -95,10 +111,26 @@ Submit in DELIV3, Part 2A:
      those dependencies would make it hard to change or use from v3? Are there tangling, scattering, or testability concerns?
    - **Plan:** the pieces you intend to split it into, what each is responsible for, and which way the
      dependencies between them point. A sketch of the dependency graph is fine.
-2. **A link to the merged pull request**, with your design explanation in its description and your
+2. **A link to one merged pull request for 2A**, the one that best shows how you work, with your
    partner's review on it.
-3. **Ready for v3:** a link to the function or method from requirement 4. What does it depend on, and
-   what would v3 have to depend on to call it?
+3. **Post-analysis:**
+   - **Design:** the structure you ended up with, how it differs from your plan and why, and its pros and
+     cons, including at least one requirement you can think of that is harder after refactoring than
+     before it.
+   - **Sharing:** courses, sections, buildings, and rooms all read `limit` and `offset`, check them, and
+     build the same not-found errors. Does your facilities code share that with courses and sections, or
+     keep its own? Why?
+4. **Where the code lives now.** Give these as permalinks to the lines on `main` after the merge, so we
+   can check your answers by clicking:
+   - **Request trace:** follow `PUT /api/v2/buildings/:buildingId` from where its route is registered to
+     where the building is written to disk, as you did in D1, with a permalink for each step. Then add a
+     permalink to where facilities dataset processing stores the buildings it loads. How does it compare
+     with your D1 trace?
+   - **Ready for v3:** the function or method from requirement 3. What does it depend on, and what would
+     v3 have to depend on to call it?
+   - **Boundary tests:** your requirement 4 test for each rule. Where is the boundary between requests
+     and your rules, and what did writing these tests show about it? Was anything hard to test without a
+     request or a running app?
 
 ### 2B. Put geolocation behind an interface
 
@@ -127,7 +159,8 @@ Submit in DELIV3, Part 2B:
 
 1. **Pre-analysis** (before you change any code): why are these behaviours hard to test? Use testability
    terms such as controllability, observability, and automatability.
-2. **A link to the merged pull request**, with your partner's review on it.
+2. **A link to one merged pull request for 2B**, the one that best shows how you work, with your
+   partner's review on it.
 3. **Post-analysis:** how did depending on `IGeoLocator` (DIP) address the problems in your
    pre-analysis? How many classes did you touch, and is that acceptable in terms of future cost of
    change? If not, propose a refactoring that would help.
@@ -143,35 +176,103 @@ every building, even when the same campus was uploaded minutes earlier.
    without calling the wrapped geolocator. Failures are not cached.
 3. Each app returned by `createApp` has its own cache, which starts empty. `createApp({ datadir })` uses
    a `CachingGeoLocator` around a `GeoLocator`.
-4. Test it without the network.
+4. Cached entries expire: an address cached more than 24 hours ago is located again, and the new answer
+   is cached.
+5. Test it without the network, including expiry. Your tests can't wait 24 hours, so you'll need a way
+   to control time in them.
 
 This builds on 2B's `IGeoLocator`, so agree on the interface with 2B's lead early.
 
+2C isn't autograded, but once your code declares `CachingGeoLocator`, the bot's feedback has a 2C section
+that checks requirements 2 and 3 (it doesn't count toward the autograded score).
+
 Submit in DELIV3, Part 2C:
 
-1. **A link to the merged pull request**, with a partner's review on it.
-2. **Tests:** links to the tests that show requirements 2 and 3.
-3. **The interface:** what did your `IGeoLocator` make easy or hard about adding the cache?
-4. **The test double:** what kind of test double did you use to test it, and why that kind?
+1. **A link to one merged pull request for 2C**, the one that best shows how you work, with a partner's
+   review on it.
+2. **Tests:** permalinks to the tests that show requirements 2 and 3, and a link to the bot's feedback on
+   your merged commit.
+3. **Expiry:** a permalink to the test that shows a cached entry is evicted after 24 hours. How does the
+   test control time?
+4. **The interface:** what did your `IGeoLocator` make easy or hard about adding the cache?
+5. **The test double:** what kind of test double did you use to test it, and why that kind?
 
 ## Working as a team
 
 How you work together is part of this deliverable. We don't prescribe a process, but your repository
 has to show the following.
 
-- **Issues.** Plan your work as GitHub issues in your team repository. Before each lab, open an issue
-  for the work you'll do in the coming week, with the work broken into a checklist and a name on each
-  item. In lab, your TA will ask you to show it, and to walk through the history of an earlier one.
+- **Issues.** Plan your work as GitHub issues in your team repository, one for each week, and keep
+  them up to date as you work (see [Weekly check-ins](#weekly-check-ins)).
 - **Commits.** Commit in small steps, each doing one thing, with a message that says what changed and
   why. When refactoring, each step should leave the tests passing. A pull request that is one large
   commit doesn't meet this requirement.
 - **Pull requests.** Each of 2A, 2B, and 2C is merged through its own pull request(s). Its description
-  says what changed, why, and how you tested it, and links the issue it closes.
+  says what changed, why, and how you tested it, and links its issue. Before you ask for a
+  review, get the bot's feedback on the pull request's latest commit (see [Grading](#grading)). In DELIV3
+  you link one pull request for each part: pick the one that best shows how you work.
 - **Reviews.** Your partner reviews each pull request before it is merged, with at least one comment on
   the diff about the design. The author responds to every comment, either with a follow-up commit or
   with a reply explaining why not.
 
-### What good looks like
+### Weekly check-ins
+
+From the Oct 23–29 lab until D4 is due, your team meets with your TA for about 15 minutes in each lab.
+The check-in runs on what's in your repository, not on what you remember. You share your screen and
+show us GitHub. Everyone on the team attends and speaks for their own work.
+
+Each deliverable has two graded check-ins:
+
+| Lab | Check-in | Graded on |
+| :--- | :--- | :--- |
+| Oct 23–29 | D3 plan | Your plan issue from Part 2: a checklist with a name on every item, opened before lab, covering who, order, steps, and dates. |
+| Oct 30–Nov 5 | D3 process | The same issue, kept up to date: done items link to the work that did them, and changes to the plan are recorded. |
+| Nov 13–19 | D4 plan | Your D4 plan issue, as for D3. |
+| Nov 20–26 | D4 process | As for D3. |
+
+L1J: your Oct 29 lab is cancelled for the midterm, so your D3 plan check-in is on Oct 22.
+
+The process check-in is graded on whether your issues connect to your work, not on how much of it is
+done.
+
+**Before each lab:**
+
+1. **Update last week's issue.** Tick what's done and put the pull request or commit next to it
+   (you can type `#12` or paste a commit hash and GitHub will create a link). For anything not done, comment on why:
+   it's blocked, the plan changed, or it took longer than expected.
+2. **Open this week's issue.** List the coming week's work as a checklist, with a `@name` on every
+   item, carry over what didn't get done, and link last week's issue. GitHub shows when an issue was
+   opened, and one opened during the check-in doesn't count as a plan.
+
+**As you work,** mention the issue in commit messages and pull request descriptions (`Part of #12`, or
+`Closes #12` when it finishes the issue). Each mention appears on the issue's timeline, so the history
+builds itself.
+
+**In the check-in,** your TA will ask you to:
+
+- show this week's issue, with each of you saying which items are yours and what you'll do first (at a
+  process check-in, this is what's left before the deadline);
+- open the issue you showed last time and click through from a ticked item to the work that did it;
+- show what merged since the last check-in, what is blocked, and which pull request is waiting for
+  review and who is reviewing it.
+
+Only what is on GitHub counts. If you agreed on something in a call or a chat, write it in the issue.
+
+### Examples of good process artifacts
+
+**Weekly issues.** This is last week's issue, updated before lab:
+
+```markdown
+Week of 30 Oct · previous: #5
+
+- [x] Agree on IGeoLocator's signature (@ana, @raj): see comment below
+- [x] FakeGeoLocator and the three skip/keep tests (@raj): #8
+- [x] Review #8 (@ana)
+- [ ] Move Building and Room out of App.ts (@ana): started in #9, carried over to #11
+      because #8 changed the code it moves
+
+Blocked: nothing.
+```
 
 **Commit messages.** "fix", "D3 stuff", and "address review" don't say anything. Compare:
 
@@ -203,11 +304,20 @@ design comment. A design comment names a consequence and suggests an alternative
 
 This deliverable is 50% autograded and 50% manually graded.
 
-- **Autograded (50%).** As in D2, your highest-scoring commit on `main` before the deadline counts.
+- **Autograded (50%).** As in D2, your highest-scoring commit on `main` before the deadline is the one that counts.
   Request feedback with `@310-bot #d3`. The autograder checks:
-  - 2B requirements 1–3;
+  - 2A requirements 1 and 2, and 2B requirements 1–3;
   - that your tests outside `test/online/` pass offline;
-  - that existing behaviour still works, including the three behaviours in 2B.
-- **Manually graded (50%).** Your DELIV3 answers, your pull requests, commits, and reviews (see
-  [Working as a team](#working-as-a-team)), the design explanation on your 2A pull request, and 2C for
-  groups of three. Issues are checked in lab.
+  - that existing behaviour still works, including the buildings and rooms endpoints and the three
+    behaviours in 2B.
+
+  The feedback has a section for each of 2A and 2B (and 2C, unscored, for groups of three), so each lead
+  can see how their part is doing.
+
+  **Get feedback before you merge.** The bot runs on any commit, not only on `main`, but it doesn't respond
+  to comments on a pull request. To check a pull request before merging it, open its **Commits** tab, click
+  the latest commit, and comment `@310-bot #d3` at the bottom of that page (see [AutoTest](./autotest.md)).
+  Only commits on `main` count toward your grade.
+- **Manually graded (50%).** Your DELIV3 answers; the pull request you link for each part, with its
+  commits and review (see [Working as a team](#working-as-a-team)); and 2C for groups of three. Your D3 plan and process
+  [check-ins](#weekly-check-ins) count as part of this.
