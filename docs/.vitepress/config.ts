@@ -55,6 +55,7 @@ export default defineConfig({
 							text: "D2 — Make it evolvable",
 							link: "/26w1/project/d2-make-it-evolvable",
 						},
+						{ text: "Deliverable 3", link: "/26w1/project/d3-design-v3" },
 						{
 							text: "AutoTest",
 							link: "/26w1/project/autotest",
