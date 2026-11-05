@@ -107,6 +107,7 @@ The table below shows TypeScript examples of code that is related by different *
 
 Using these properties helps us reason about which code should be grouped together, and which code can be extracted apart.
 
+
 #### Risks & Difficulties
 Code with low cohesion *risks* having edits affecting seemingly unrelated code.
 If the method you are editing addresses five tasks but you are editing just one of them, you risk interfering with the other four tasks as well.
@@ -132,6 +133,48 @@ In this example, lines 1 and 2 are bound by:
 - Ordering: No. Looking at just these two lines, it does not matter what order they are invoked. However, Lines 1 and 3 *do* have an ordering binding.
 
 **Exercise for home**: For each pair of lines, determine which cohesion bindings they hold!
+
+
+#### A Larger Example
+```typescript
+for (const row of REGISTRATIONS) {
+		const offering = findOffering(row[0]);
+		if (offering === undefined) continue;
+		// Block A: registration
+		for (const id of row[1].split(" ").filter((each) => each.length > 0)) {
+			const customer = people.find((candidate) => candidate.id === id);
+			if (customer !== undefined) {
+				offering.registrations.push(customer);   // (1)
+				if (!customer.interests.includes(offering.program.category)) {   // (2)
+					customer.interests.push(offering.program.category);   // (3)
+					if (customer.interests.length >= 5) {   // (4)
+						customer.status = "Community Champion"; // (5)
+					} else if (customer.interests.length >= 3) {
+						customer.status = "Frequent Customer";  // (6)
+					}}}}
+
+		// Block B: waitlist
+		for (const id of row[2].split(" ").filter((each) => each.length > 0)) {
+			const customer = people.find((candidate) => candidate.id === id);
+			if (customer !== undefined) {
+				offering.waitlist.push(customer);
+				if (!customer.interests.includes(offering.program.category)) {
+					customer.interests.push(offering.program.category);
+					if (customer.interests.length >= 5) {
+						customer.status = "Community Champion";
+					} else if (customer.interests.length >= 3) {
+						customer.status = "Frequent Customer";
+					}}}}}
+```
+
+*Analysis:*
+- Lines 1 & 2: Bound by data (`offering` & `customer`), logic (both executed if `customer !== undefined`) but not order (can swap order and behaviour is the same)
+- Lines 2 & 3: Bound by data (`offering` & `customer`), and order (line 3 would definitely affect line 2 if it had occurred before) but not logic (3 only executes if 2 evaluates to `true`)
+- Lines 3 & 4: Bound by data, logic and order
+- Lines 5 & 6: Bound by data (`customer`) but not order nor logic (different branches of the same conditional mean order is N/A and that they necessarily are executed under different conditions). 
+- Block A & B: Bound by data (`row`, `people`), logic (both executed under the same conditions) but not order (customer status algorithm) isn't affected by ordering in this case.
+
+
 
 <!-- The flow chart below can be used to reason about the kind of cohesion within a design. As with the coupling flow chart above, some kinds of cohesion are better than others. Thinking about the cohesiveness of our program elements can help us to understand when further decomposition of our designs might be helpful and will also motivate the organization of our program elements into their most appropriate subsystems.
 
