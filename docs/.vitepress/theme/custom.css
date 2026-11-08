@@ -1,0 +1,4 @@
+/* The default theme zeroes paragraph margins inside blockquotes, so multi-paragraph quotes run together. */
+.vp-doc blockquote > p + p {
+  margin-top: 16px;
+}
