@@ -36,9 +36,9 @@ As in D3, each of you leads one part, split along the line you drew in D3:
 - **2B: Core scheduler:** everything behind the routes, from scheduling to saving.
 - **2C: Editing schedules (groups of three):** changing a saved schedule.
 
-The boundary is one function: 2A's route calls a function of 2B's with the year, departments, and rooms,
-and turns its result into a response. Agree on it early; until 2B's code is merged, 2A can build against
-a fake, as with `FakeGeoLocator` in D3.
+The boundary is one function: the call to 2A's route should be thin in that it only calls a function of 2B's
+and turns its result into a response. Agree on this interface early so 2A can build against
+a test fake even while 2B's code is still being developed and isn't merged yet.
 
 Work as in D3: weekly issues, small commits, and every pull request reviewed before merging (see
 [Working as a team](d3-design-v3.md#working-as-a-team) and the
@@ -71,17 +71,17 @@ Work as in D3: weekly issues, small commits, and every pull request reviewed bef
 
 ## 2B: Core scheduler
 
-1. Implement `checkSchedule` and `schedule` in `src/scheduling/`. The rules are in the doc comments. A
-   greedy scheduler is enough.
+1. Implement `checkSchedule` and `schedule` in `src/scheduling/` as specified by the rules in the doc comments. You
+    choose or create any scheduling algorithm so long as it satisfies the rules!
 2. Implement the function 2A's route calls: look up the chosen departments' sections for the year and the
    chosen rooms through the existing courses and facilities code, turn them into the scheduler's inputs,
    and schedule them.
 3. Save every schedule to disk, and provide a way for schedules to be listed, read, and deleted.
 4. Write tests that call this code directly, not through the HTTP API, including that a schedule saved by
    one instance can be read by a new one on the same directory. Put the tests for `checkSchedule` and
-   `schedule` in `test/scheduling/`: we run them against our own implementation, and against versions
-   with bugs in them, to check they are complete and thorough. Our `schedule` makes different valid
-   choices each time it runs, so test what every correct scheduler must do, not what yours happens to do.
+   `schedule` in `test/scheduling/`: we will run your tests against buggy implementations to check they are complete and thorough.
+   Note that our `schedule` implementation follows the rules, but may follow a different algorithm than your!
+   **Thus, ensure your tests match the specification and not your specific implementation.**
 
 <!-- ### Optional: the leaderboard
 
@@ -105,8 +105,9 @@ scheduler left out.
 ## Demo video
 
 Record a video demo of your feature that includes each of the points below.
-It must be one _continuous_ recording that is at most five minutes long (six for groups of three).
-You may want to rehearse once but we are not looking for a polished work of art.
+It must be one _continuous_ recording that is **at most five minutes long (six for groups of three)**.
+The TA marking your video will only watch the first 5 (or 6) minutes.
+You will want to rehearse but we are not looking for a polished work of art.
 Each lead must narrate their own part (the exact order of the steps is up to you).
 
 The 2A lead:
