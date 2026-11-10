@@ -49,8 +49,7 @@ Work as in D3: weekly issues, small commits, and every pull request reviewed bef
 1. **Add the provided files.** Make the three changes listed in the [Appendix](#appendix). Don't modify
    `src/scheduling/types.ts` or `.redocly.yaml` afterwards.
 2. **Copy in the frontend.** Copy `frontend/` from one of your D2 repositories, if you didn't do it in D3.
-3. **Launch it.** After `yarn start`, the frontend should be at `http://localhost:<port>/`. `App.ts`
-   serves it with `express.static("frontend/public")`; if that line went missing in D2 or D3, put it back.
+3. **Launch it.** After `yarn start`, the frontend should be at `http://localhost:4321/`.
 
 ## 2A: API and frontend
 
@@ -136,14 +135,12 @@ Each of you is marked on your own answers about the work you completed as the le
 
 ## Submit in DELIV4
 
-1. **Demo video:** a link to it (see [Demo video](#demo-video)). Make sure course staff can open the link.
-2. **Specification:** a permalink to your final `openapi.yml`.
-3. **Pull requests:** each lead links to the merged pull request that best shows their work.
-4. **One specification decision:** a choice you made in your API and an alternative you rejected.
-5. **Retrospective:** this is the first feature you built from the browser to the disk.
-   Where did what you learned about the existing system in D1 to D3 save you work (how its endpoints
-   handle validation, pagination, errors, and storage), and where did you have to work around it or change
-   it? Link to code.
+1. **Specification:** a permalink to your final `openapi.yml`.
+2. **Pull requests:** each lead links to the merged pull request that best shows their work.
+3. **One specification decision:** a choice you made in your API and an alternative you rejected.
+4. **Retrospective:** individual reflection about building out a full feature from the browser to the disk. You will identify where existing code, or what you learned about it in D1 to D3, saved you work, and where you had to work around it or change it? Looking back over the whole project,
+   what is the most significant thing you learned?
+5. **Demo video:** a link to it (see [Demo video](#demo-video)). Make sure course staff can open the link.
 
 ## Grading
 
@@ -159,7 +156,7 @@ before the deadline counts.
     sections that can't be placed are reported, your error responses (including an unknown schedule), and
     whether it covers every operation the tab uses.
   - **DELIV4 and check-ins (20%):** your pull requests and reviews, your specification decision and
-    retrospective, and your D4 plan and process check-ins.
+    retrospectives, and your D4 plan and process check-ins.
   - **Demo video (30%):** each item in the [checklist](#demo-video).
   - **Design viva (30%):** each of you, on your own part.
 
