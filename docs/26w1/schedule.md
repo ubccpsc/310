@@ -14,7 +14,7 @@ Lectures are **Tuesday and Thursday** on the dates listed below. Slides are post
 | *Pairs form* | During the Oct 16–22 lab | Register with your TA, same lab section |
 | **D3** | Fri 6 Nov, 18:00 | Design v3 *(pairs)* |
 | **D4** | Fri 27 Nov, 18:00 | Build it *(pairs)* |
-| **Final** | Scheduled by the university | 2.5 hours, cumulative |
+| **Final** | Friday, Dec 18, 12:00 | 2.5 hours, cumulative |
 
 ## 🗓️ Week by week
 
