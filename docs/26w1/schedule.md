@@ -14,7 +14,7 @@ Lectures are **Tuesday and Thursday** on the dates listed below. Slides are post
 | *Pairs form* | During the Oct 16–22 lab | Register with your TA, same lab section |
 | **D3** | Fri 6 Nov, 18:00 | Design v3 *(pairs)* |
 | **D4** | Fri 27 Nov, 18:00 | Build it *(pairs)* |
-| **Final** | Scheduled by the university | 2.5 hours, cumulative |
+| **Final** | Fri 18 Dec, 12:00 | 2.5 hours, cumulative |
 
 ## 🗓️ Week by week
 
@@ -31,7 +31,7 @@ Dates and topics subject to change!
 | 7 | Oct 20, 22 | [API Design](/textbook/3-software-design/apis/) · [Versioning](/textbook/3-software-design/versioning/) · [REST](/textbook/3-software-design/rest/) | <a href="/310/26w1/lectures/07a-api-design-evolution.pdf" target="_blank">API Design & Evolution</a> · <a href="/310/26w1/lectures/07b-rest-api.pdf" target="_blank">REST API Design</a> | Lab 7 — Check-in #1 api design & versioning, practice midterm *(Oct 23–29)* | — |
 | 8 | Oct 27, 29 | — | <a href="/310/26w1/lectures/08a-midterm-review.pdf" target="_blank">Midterm review</a> · *(no Thursday class)* | Check-in #2 & Project time  *(Oct 30–Nov 5)* | **Midterm** Thu Oct 29 |
 | 9 | Nov 3, 5 | [API Design](/textbook/3-software-design/apis/) · [REST](/textbook/3-software-design/rest/) | <a href="/310/26w1/lectures/07b-rest-api.pdf" target="_blank">REST API Design (Cont.)</a> · <a href="/310/26w1/lectures/09b-model-specs.pdf" target="_blank">Modelling & Specification</a> | **No lab** — fall break *(Nov 9–11)* | **D3** Fri Nov 6 |
-| 10 | Nov 10, 12 | | *(no Tuesday class)* · *Specification is Right*  | Lab 8 — Check-in #3, requirements & constraints *(Nov 13–19)* | — |
+| 10 | Nov 10, 12 | | *(no Tuesday class)* · <a href="/310/26w1/lectures/10b-scenarios.pdf" target="_blank">Modelling: Scenarios</a>  | Lab 8 — Check-in #3, requirements & constraints *(Nov 13–19)* | — |
 | 11 | Nov 17, 19 | | Modeling · Architecture | Lab 9 — Check-in #4, specification *(Nov 20–26)* | — |
 | 12 | Nov 24, 26 | Unit 4 | Security I · Security II | Lab 10 — process & metrics *(Nov 27–Dec 3)* | **D4** Fri Nov 27 |
 | 13 | Dec 1, 3 | | Process & Ethics · AI in SE & Final Review| — | — |
