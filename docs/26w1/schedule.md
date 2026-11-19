@@ -32,7 +32,7 @@ Dates and topics subject to change!
 | 8 | Oct 27, 29 | — | <a href="/310/26w1/lectures/08a-midterm-review.pdf" target="_blank">Midterm review</a> · *(no Thursday class)* | Check-in #2 & Project time  *(Oct 30–Nov 5)* | **Midterm** Thu Oct 29 |
 | 9 | Nov 3, 5 | [API Design](/textbook/3-software-design/apis/) · [REST](/textbook/3-software-design/rest/) | <a href="/310/26w1/lectures/07b-rest-api.pdf" target="_blank">REST API Design (Cont.)</a> · <a href="/310/26w1/lectures/09b-model-specs.pdf" target="_blank">Modelling & Specification</a> | **No lab** — fall break *(Nov 9–11)* | **D3** Fri Nov 6 |
 | 10 | Nov 10, 12 | [Scenarios](/textbook/4-modelling/scenarios/)  | *(no Tuesday class)* · <a href="/310/26w1/lectures/10b-scenarios.pdf" target="_blank">Modelling: Scenarios</a>  | Lab 8 — Check-in #3, requirements & constraints *(Nov 13–19)* | — |
-| 11 | Nov 17, 19 | [Data Modelling](/textbook/4-modelling/data-models/) | <a href="/310/26w1/lectures/11a-data-specs.pdf" target="_blank">Modelling: Data</a> · Implementations & Specifications Testing | Lab 9 — Check-in #4, specification *(Nov 20–26)* | — |
+| 11 | Nov 17, 19 | [Data Modelling](/textbook/4-modelling/data-models/) | <a href="/310/26w1/lectures/11a-data-specs.pdf" target="_blank">Modelling: Data</a> · <a href="/310/26w1/lectures/11b-specs.pdf" target="_blank">Specification Validation</a> | Lab 9 — Check-in #4, specification *(Nov 20–26)* | — |
 | 12 | Nov 24, 26 | | Non-Functional Requirements · Architecture | Lab 10 — process & metrics *(Nov 27–Dec 3)* | **D4** Fri Nov 27 |
 | 13 | Dec 1, 3 | | SE in the Wild  · Course Review | — | — |
 
