@@ -33,8 +33,8 @@ Dates and topics subject to change!
 | 9 | Nov 3, 5 | [API Design](/textbook/3-software-design/apis/) · [REST](/textbook/3-software-design/rest/) | <a href="/310/26w1/lectures/07b-rest-api.pdf" target="_blank">REST API Design (Cont.)</a> · <a href="/310/26w1/lectures/09b-model-specs.pdf" target="_blank">Modelling & Specification</a> | **No lab** — fall break *(Nov 9–11)* | **D3** Fri Nov 6 |
 | 10 | Nov 10, 12 | [Scenarios](/textbook/4-modelling/scenarios/)  | *(no Tuesday class)* · <a href="/310/26w1/lectures/10b-scenarios.pdf" target="_blank">Modelling: Scenarios</a>  | Lab 8 — Check-in #3, requirements & constraints *(Nov 13–19)* | — |
 | 11 | Nov 17, 19 | [Data Modelling](/textbook/4-modelling/data-models/) | <a href="/310/26w1/lectures/11a-data-specs.pdf" target="_blank">Modelling: Data</a> · <a href="/310/26w1/lectures/11b-specs.pdf" target="_blank">Specification Validation</a> | Lab 9 — Check-in #4, specification *(Nov 20–26)* | — |
-| 12 | Nov 24, 26 | | <a href="/310/26w1/lectures/12a-non-func-reqs.pdf" target="_blank">Non-Functional Requirements</a> · Architecture | D4 Viva *(Nov 27–Dec 3)* | **D4** Fri Nov 27 |
-| 13 | Dec 1, 3 | | SE in the Wild  · Course Review | — | — |
+| 12 | Nov 24, 26 | [Requirements](/textbook/4-modelling/specifications) | <a href="/310/26w1/lectures/12a-non-func-reqs.pdf" target="_blank">Non-Functional Requirements</a> · Architecture | D4 Viva *(Nov 27–Dec 3)* | **D4** Fri Nov 27 |
+| 13 | Dec 1, 3 | | Modern Software Collaboration & AI · Course Review | — | — |
 
 ⚠ **Labs are cancelled on Wednesday September 30th and Monday October 12th.** You may attend any other lab section if your section is cancelled. Lab assignments are still due by your next regularly scheduled lab.
 

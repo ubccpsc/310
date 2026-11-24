@@ -169,6 +169,10 @@ export default defineConfig({
 							text: "Data Modelling",
 							link: "/textbook/4-modelling/data-models",
 						},
+						{
+							text: "Requirements and Specifications",
+							link: "/textbook/4-modelling/specifications",
+						},
 					],
 				},
 			],
