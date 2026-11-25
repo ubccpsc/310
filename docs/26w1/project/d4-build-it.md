@@ -129,9 +129,14 @@ The 2C lead (groups of three):
 
 ## Design viva
 
-In your Nov 27–Dec 3 lab, your team will meet with your TA for about 15 minutes to talk about your design.
+In your Nov 30–Dec 4 lab, your team will meet with your TA for about 15 minutes to talk about your design.
 This is not a demo but a conversation about what you did and why.
 Each of you is marked on your own answers about the work you completed as the lead.
+**Please note that for this last lab block, we will be starting the block on Monday, Nov 30 (instead of the prior Friday) so all labs can do the viva post-deadline. **
+
+Be prepared to answer questions not just about how you designed your code and why, but also discuss alternative designs and how your design might respond to additional feature requests.
+For full marks, you must demonstrate that you understand your code to the depth that you would be able to extend it to handle unknown future requirements (much like you will need to do in your future jobs!).
+This is a synthesis of all of CPSC310, and hopefully you will be able to connect some in-class concepts to your project work this term.
 
 ## Submit in DELIV4
 
